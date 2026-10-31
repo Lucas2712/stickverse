@@ -1,234 +1,125 @@
-# ÚLTIMO SINAL — Temporada 1
+# ÚLTIMO SINAL — Episódio 1: "DIA 1"
 
 Série de sobrevivência em apocalipse zumbi, no formato dos vídeos analisados em
-`desmontagem/14-floors-up.md`: narração em "você", um episódio por dia, ~80 s,
-PT-BR, e uma escolha do público no final de cada episódio.
+`desmontagem/14-floors-up.md`: narração em "você", ~85 s, PT-BR, e uma escolha
+do público no final.
 
-Referência de clima: *The Last of Us* (cidade abandonada, sobrevivência íntima,
-dupla que não confia uma na outra, dilemas morais). A história, os personagens e as
-regras são originais.
-
----
-
-## 1. Premissa
-
-Faz 23 dias que um vírus transformou a cidade de **Millbrook** num cemitério.
-Você sobreviveu sozinho. Até que um rádio velho capta uma voz:
-**"O último barco sai do porto de Eastbay em 9 dias."**
-
-No mesmo dia, uma estranha salva sua vida. Ela sabe onde fica o barco. Você sabe
-como atravessar a cidade. Nenhum dos dois chega sozinho, e ela esconde alguma
-coisa debaixo da faixa no pulso.
-
-**Objetivo da temporada:** chegar ao porto antes do Dia 10.
-**Pergunta da temporada:** em quem você pode confiar quando todo mundo tem um preço?
+Referência de clima: *The Last of Us* (o primeiro dia do surto visto de perto, uma
+cidade comum que desaba em uma noite). História, personagens e regras são originais.
 
 ---
 
-## 2. Personagens
+## 1. O mundo
 
-### KAI, o "você" (protagonista)
-Referência: `roteiros/personagens/kai.png`
-- Cabeça redonda branca, cabelo preto ondulado e bagunçado, sobrancelhas grossas,
-  olhar de lado, meio sorriso. Moletom preto com capuz e cordões. Pescoço e corpo de
-  boneco palito (linhas finas).
-- 19 anos. Cresceu em Millbrook e conhece cada atalho. Sarcástico por fora, com
-  medo por dentro. Perdeu a mãe na ponte no Dia 1 da infecção e não sabe o que
-  aconteceu com ela.
-- A narração nunca fala o nome dele; só os outros personagens o chamam de "Kai".
+### A cidade: Millbrook (EUA)
+Cidade média à beira de um rio, ligada ao continente pela **Ponte Harlan**. Prédios
+de tijolo, metrô elevado, letreiros de neon, um hospital grande no centro (St. Agnes).
 
-### MARA, a estranha
-- Capuz cinza, cabelo curto escuro, cicatriz fina na sobrancelha, mochila militar.
-  **O pulso esquerdo está sempre enfaixado.**
-- Fala pouco, atira bem, nunca dorme primeiro.
-- **Segredo:** era da *Unidade 9*, a tropa que fechou a ponte de Millbrook no Dia 1
-  e deixou milhares de pessoas para trás, entre elas a mãe de Kai. Ela desertou e
-  arrancou com uma faca o chip de rastreio do pulso. A Unidade 9 caça desertores.
+**Como a cidade muda ao longo do episódio:**
 
-### Os infectados ("os Surdos")
-Vírus clássico, com algumas regras próprias:
-- Mordida = transformação em **2 a 6 horas**. Arranhão: ninguém sabe ao certo.
-- **Correm à noite e ficam lentos sob o sol.**
-- Quase cegos; **se guiam pelo som**. Quando ouvem algo, travam e viram a cabeça
-  devagar, e é aí que você tem 3 segundos.
+| Hora | Estado da cidade | Cor da cena |
+|---|---|---|
+| 5:58 PM | Normal. Pôr do sol, trânsito, gente na rua. Sirenes distantes que ninguém leva a sério. | Laranja quente |
+| 6:14 PM | **Apagão.** Os bairros apagam um por um até o horizonte. | Azul-escuro |
+| 6:16 PM | Gritos, um carro bate num hidrante, pessoas correndo sem saber de quê. | Azul + faróis |
+| 6:20 PM | Helicópteros, incêndios no horizonte, luzes militares fechando a Ponte Harlan. | Azul + laranja do fogo |
+| 6:31 PM | Silêncio estranho. Só alarmes de carro e passos no corredor. | Quase preto, luz de celular |
 
-### Unidade 9
-Soldados com máscara de gás e lanterna no capacete. Querem Mara de volta e controlam
-o porto.
+### Onde você mora: Apartamento 4B
+- Quarto andar de um prédio velho de tijolo, **em cima da Lavanderia do Sr. Oswald**
+  (letreiro de neon "LAVANDERIA 24H", com o "24H" queimado).
+- Apartamento pequeno: sofá gasto, TV antiga, janela grande com escada de incêndio,
+  porta com olho mágico e duas trancas.
+- Você mora com a **sua mãe, enfermeira no Hospital St. Agnes**. Hoje ela está de
+  plantão.
+- O **Sr. Oswald** é o vizinho do 4A e dono da lavanderia. Tem uns 70 anos e conhece
+  você desde criança: te dava moedas pra máquina de fliperama.
 
----
-
-## 3. Regras da temporada
-
-Cada regra é a frase de efeito do episódio e aparece no selo vermelho.
-
-| # | Regra |
-|---|---|
-| 1 | Quem esconde as mãos… esconde o resto também. |
-| 2 | No escuro, o barulho mais alto é o seu coração. |
-| 3 | Comida compra uma noite. Confiança custa mais caro. |
-| 4 | Febre não pergunta se você é forte. |
-| 5 | Papel não mente. Gente sim. |
-| 6 | Todo mundo foi alguém antes do Dia 1. |
-| 7 | Um arranhão é só um arranhão… até não ser. |
-| 8 | Quem esconde as mãos… agora é você. |
-| 9 | O sinal mais forte nem sempre é o verdadeiro. |
-| 10 | Sobreviver é fácil. Difícil é continuar sendo você. |
-
-A Regra #8 retoma a #1 de propósito: no Dia 1 você desconfia dela por esconder o
-pulso, e no Dia 8 é você quem esconde um arranhão.
+### O vírus
+- Começa nos hospitais. A TV fala em "casos de agressão".
+- Mordida = transformação em **minutos a poucas horas** (no Dia 1 ninguém sabe ao certo).
+- Infectados **se guiam pelo som** e travam antes de atacar, virando a cabeça devagar.
 
 ---
 
-## 4. Identidade visual da série
+## 2. Personagens do episódio
 
-- **HUD:** `● DIA 1` / `6:42 PM` / local (MERCADO, METRÔ, HOSPITAL, PONTE, PORTO).
-- **Cor por fase:**
-  - Dias 1–3: azul-frio com lanterna âmbar (cidade morta)
-  - Dias 4–6: verde-hospitalar doentio
-  - Dias 7–8: vermelho (ponte e horda)
-  - Dias 9–10: cinza-neblina do porto, com holofotes brancos
-- **Etiquetas de falante:** `MARA · ???` (até ela dizer o nome, aparece como
-  `ESTRANHA · CAPUZ`), `RÁDIO · 91.7 FM`, `UNIDADE 9 · MÁSCARA`, `KAI` (só quando ele fala).
-- **Objeto-símbolo:** o **rádio** (o sinal) e o **pulso enfaixado** (o segredo).
-  Use close nos dois sempre que o assunto voltar.
-- **Cartela:** `ÚLTIMO SINAL` em fonte condensada espaçada + `DIA 1` gigante em
-  vermelho com brilho + `SIGA PARA O DIA 2`.
+| Personagem | Visual | Etiqueta na tela |
+|---|---|---|
+| **Kai** (o "você") | Ver `roteiros/personagens/kai.png`: cabeça redonda branca, cabelo preto ondulado e bagunçado, moletom preto com capuz. 19 anos. | `KAI` (só quando fala) |
+| **Mãe** | Só aparece por mensagem, ligação e numa foto na geladeira (de uniforme de enfermeira). | `MÃE · ST. AGNES` |
+| **Sr. Oswald** | Senhor de cabelo branco ralo, óculos grossos, avental azul da lavanderia. | `SR. OSWALD · 4A` |
+| **Âncora de TV** | Só voz e imagem na TV chiando. | `TV · CANAL 8` |
 
 ---
 
-## 5. EPISÓDIO 1 — "DIA 1" (roteiro completo, ~82 s)
+## 3. Roteiro completo (~88 s)
 
-Narração com cerca de 200 palavras. **Negrito** marca a palavra destacada em
+Narração com cerca de 220 palavras. **Negrito** marca a palavra destacada em
 verde-limão na legenda.
 
 | Tempo | Narração / fala | Imagem | Tela / áudio |
 |---|---|---|---|
-| 0–3 s | "Vinte e três dias… sem ouvir uma **voz** humana." | Kai sentado no chão de um mercado escuro, lata aberta na mão, lanterna apoiada na prateleira. Zoom lento. | HUD `● DIA 1 · 6:42 PM · MERCADO`. Drone grave. |
-| 3–6 s | "Até **agora**." | Close num rádio velho no balcão: o mostrador acende sozinho. | SFX: chiado alto. |
-| 6–12 s | RÁDIO (voz feminina, filtro): "…se alguém ouvir… porto de **Eastbay**… o último barco sai em **nove dias**…" | Close no mostrador `91.7`; a luz pisca com a voz. | Etiqueta `RÁDIO · 91.7 FM`. |
-| 12–15 s | — | Cartela sobre a cena: `ÚLTIMO SINAL / DIA 1`. | Boom grave. |
-| 15–20 s | "O rádio está alto **demais**. Lá fora… algo **para** de andar." | Vitrine embaçada: silhuetas na rua param e viram a cabeça devagar. | Chiado continua. |
-| 20–25 s | "Você gira o volume. **Tarde** demais." | POV: mão de Kai no botão. O vidro da vitrine racha em teia. | HUD `6:43 PM`. SFX: estalo de vidro. |
-| 25–30 s | "O vidro **estoura**. Eles entram." | Silhuetas correndo entre prateleiras, latas voando, lanterna tremendo. Corta antes do impacto. | Vermelho pisca na borda. |
-| 30–35 s | "Uma mão te **puxa** pro escuro." | POV puxado para trás; a porta da câmara fria se fecha. Escuro total por 0,5 s. | SFX: porta metálica batendo. |
-| 35–40 s | "Uma garota. **Capuz**. Arma apontada pra porta." | Luz azul da câmara fria; ela de perfil, respiração visível no frio. | Etiqueta `ESTRANHA · CAPUZ`. |
-| 40–45 s | ESTRANHA: "Você também ouviu o **sinal**." | Ela tira da mochila um rádio igual ao dele. | |
-| 45–52 s | ESTRANHA: "Eu sei onde fica o **barco**. Você conhece a cidade. Sozinho… você **não** chega." | Close no rosto dela, depois no de Kai (olhar de lado, sem o sorriso). | |
-| 52–58 s | "Então você **vê**. O pulso dela… **enfaixado**." | Close lento no pulso esquerdo. | Música corta para um tom agudo. |
-| 58–62 s | "Uma mancha escura… **atravessando** o pano." | Close extremo: mancha vermelho-escura se espalhando na faixa. | |
-| 62–68 s | "Regra número **um**." | Selo vermelho. | **REGRA #1** — "QUEM ESCONDE AS MÃOS… / ESCONDE O RESTO TAMBÉM." Boom. |
-| 68–72 s | "Eles batem na **porta**." ESTRANHA: "Decide. **Agora**." | A porta amassa para dentro a cada pancada; ela puxa a manga sobre a faixa. | HUD `6:47 PM`. SFX: pancadas. |
-| 72–78 s | "Você **confia** nela… ou exige ver o **pulso**?" | Plano dos dois na câmara fria, a porta tremendo atrás. | Tela de escolha: **CONFIAR NELA?** — botões `CONFIAR NELA` (vermelho) / `VER O PULSO` (azul) + `COMENTE ABAIXO ↓`. |
-| 78–82 s | — | Cartela final. | `ÚLTIMO SINAL · DIA 1 · 6:47 PM · SIGA PARA O DIA 2`. |
+| 0–4 s | "Ninguém sabia… que aquele era o **Dia 1**." | Kai jogado no sofá do 4B, fone no pescoço, celular na mão. Pela janela, a cidade normal no pôr do sol. | HUD `● DIA 1 · 5:58 PM · APTO 4B`. Trilha calma com um drone grave por baixo. |
+| 4–9 s | TV: "…casos de **agressão** em hospitais… autoridades pedem calma…" | A TV ao fundo, imagem chiando: ambulâncias na frente de um hospital. Kai nem olha. | Etiqueta `TV · CANAL 8`. |
+| 9–13 s | MÃE (mensagem): "Plantão vai atrasar. **Tranca** a porta. Te amo." | Close no celular: mensagem de "Mãe 🏥". Kai sorri de lado e responde "ok". | SFX: notificação. |
+| 13–16 s | — | Cartela sobre a janela: `ÚLTIMO SINAL / DIA 1`. | Boom grave. |
+| 16–21 s | "Você mora no quarto andar… em cima da **lavanderia** do Sr. Oswald." | Plano externo do prédio de tijolo; o neon "LAVANDERIA 24H" pisca, com o "24H" queimado. | |
+| 21–26 s | "Às seis e catorze… a cidade **apaga**." | Da janela: os bairros apagam um por um até o horizonte. O 4B fica escuro. | HUD `6:14 PM`. SFX: zumbido elétrico morrendo. |
+| 26–31 s | "Lá embaixo… alguém **grita**." | POV na janela: um carro bate num hidrante e a água jorra. Pessoas correm em todas as direções. | SFX: batida, alarme de carro. |
+| 31–36 s | "Um homem **pula** em outro. No meio da rua." | Silhuetas sob o farol do carro batido; uma derruba a outra. Corta antes do impacto. | Vermelho pisca na borda da tela. |
+| 36–42 s | "Helicópteros. Fogo no horizonte. E na **ponte**… luzes militares." | Plano aberto da cidade: helicópteros com holofotes, fumaça laranja, e a Ponte Harlan com barreiras e luzes piscando. | HUD `6:20 PM`. SFX: hélices passando. |
+| 42–47 s | — | Close no celular: alerta vermelho de tela cheia. | Texto do alerta: **"ALERTA DE EMERGÊNCIA: FIQUE EM CASA. NÃO ABRA A PORTA PARA NINGUÉM."** SFX: tom de alerta. |
+| 47–52 s | "Você liga pra sua **mãe**. Chama… chama… caixa postal." | Close no rosto de Kai iluminado pela tela; ao fundo, a foto dela de uniforme na geladeira. | SFX: toque de chamada, bipe da caixa postal. |
+| 52–56 s | "Então… três **batidas** na porta." | A porta do 4B no escuro; uma fresta de luz de lanterna por baixo. | SFX: toc… toc… toc. Música para. |
+| 56–60 s | "Pelo olho mágico… o **Sr. Oswald**." | Visão distorcida do olho mágico: o Sr. Oswald suado, de óculos tortos, segurando o braço. | |
+| 60–65 s | SR. OSWALD: "Kai… me deixa entrar. Um deles me **pegou**." | Close nele: o braço enrolado no avental azul, com uma mancha escura crescendo. | Etiqueta `SR. OSWALD · 4A`. |
+| 65–71 s | "Regra número **um**." | Selo vermelho sobre a porta. | **REGRA #1** — "NO DIA 1… / TODO MUNDO AINDA PARECE GENTE." Boom. |
+| 71–76 s | TV (falhando): "…os mordidos… mudam em **minutos**…" | A TV liga de novo com o gerador do prédio, chia e apaga. | Chiado alto e corte seco. |
+| 76–80 s | "Do outro lado… a respiração dele **muda**." | Olho mágico: o Sr. Oswald de cabeça baixa, imóvel. | SFX: respiração ficando rouca. HUD `6:31 PM`. |
+| 80–84 s | SR. OSWALD (rouco): "Kai… por **favor**." | A mão dele espalmada na porta, deslizando devagar. | |
+| 84–88 s | "Ele te conhece desde que você era **criança**. Você abre?" | Kai com a mão na tranca, olhando de lado para a câmera. | Tela de escolha: **ABRIR A PORTA?** — botões `ABRIR A PORTA` (vermelho) / `DEIXAR ELE LÁ FORA` (azul) + `COMENTE ABAIXO ↓`. |
+| 88–92 s | — | Cartela final. | `ÚLTIMO SINAL · DIA 1 · 6:31 PM · SIGA PARA O DIA 2`. |
 
-**Legenda do post:** "Você confiaria nela? 👇 CONFIAR ou VER O PULSO"
+**Legenda do post:** "Você abriria a porta? 👇 ABRIR ou DEIXAR LÁ FORA"
 
-### Lista de planos do Ep. 1 (para gerar as imagens)
+---
+
+## 4. Lista de planos (para gerar as imagens)
 
 Prompt base para manter o personagem igual em todas as cenas:
 
 > Personagem estilo cartoon minimalista: cabeça redonda branca, cabelo preto ondulado
 > e bagunçado, sobrancelhas grossas pretas, olhos ovais pretos, moletom preto com
 > capuz e cordões, corpo de boneco palito com linhas finas, contorno preto grosso,
-> ilustração vetorial 2D, fundo escuro cinematográfico, iluminação dramática,
-> formato vertical 9:16.
+> ilustração vetorial 2D, iluminação cinematográfica, formato vertical 9:16.
 
-| Plano | Prompt (acrescente ao prompt base) |
-|---|---|
-| P1 | sentado no chão de um supermercado abandonado à noite, lata na mão, lanterna iluminando prateleiras vazias, tons azul-frio |
-| P2 | close de rádio antigo num balcão, mostrador "91.7" brilhando âmbar, poeira no ar |
-| P3 | vitrine embaçada de supermercado, silhuetas de infectados paradas na rua escura virando a cabeça |
-| P4 | POV: mão girando botão de volume do rádio, vidro rachando ao fundo |
-| P5 | silhuetas escuras correndo entre prateleiras, latas caindo, feixe de lanterna tremido |
-| P6 | interior de câmara frigorífica, luz azul, garota de capuz cinza e cabelo curto apontando pistola para a porta, respiração visível |
-| P7 | close do pulso esquerdo da garota com faixa e mancha vermelho-escura |
-| P8 | os dois personagens dentro da câmara fria, porta metálica amassando com pancadas |
-
----
-
-## 6. Plano da temporada (Dias 2–10)
-
-Cada episódio abre com "A MAIORIA DE VOCÊS DISSE…" e a opção vencedora. Os ramos
-voltam a convergir para a temporada caber em 10 episódios. A escolha muda **como**
-as coisas acontecem e **o que Kai sabe**, não o destino final.
-
-### DIA 2 — "Os Trilhos" · Regra #2
-- **Se CONFIAR:** ela diz o nome, "Mara", e não fala mais nada. A confiança dela
-  aumenta (ela vai salvar Kai no Dia 7).
-- **Se VER O PULSO:** Kai arranca a faixa. Não é mordida, é um **corte fundo e
-  recente**: ela arrancou alguma coisa da própria pele. Mara fica fria com ele.
-- **Comum:** fuga pela saída dos fundos. Kai conhece um túnel de metrô até o centro.
-  No escuro, um Surdo trava a 1 metro, e vocês prendem a respiração.
-- **Escolha:** `SEGUIR PELO METRÔ` (escuro, rápido) ou `SUBIR PRA RODOVIA`
-  (luz do dia, longa e exposta).
-
-### DIA 3 — "Os Faróis" · Regra #3
-- Um grupo de sobreviventes com faróis de carro na entrada oferece comida e uma noite
-  segura. O líder quer o rádio em troca e reconhece a mochila militar de Mara.
-- **Escolha:** `ENTREGAR O RÁDIO` ou `FUGIR À NOITE`.
-
-### DIA 4 — "Febre" · Regra #4
-- O corte no pulso de Mara infeccionou (infecção comum, não o vírus, mas Kai não
-  sabe disso). Ela treme e esconde o pulso. Kai começa a desconfiar de mordida.
-- **Escolha:** `IR AO HOSPITAL` (antibiótico, lotado de Surdos) ou
-  `ESPERAR A FEBRE PASSAR`.
-
-### DIA 5 — "O Prontuário" · Regra #5 · **VIRADA DO MEIO**
-- No hospital (ou numa ambulância, se escolheram esperar), Kai acha uma prancheta
-  militar: lista da **Unidade 9 – Operação Ponte**. Uma das fotos é de Mara.
-- Close no papel: "PONTE FECHADA 6:12 PM – DIA 1 – CIVIS RETIDOS: 3.400".
-  Foi ali que Kai perdeu a mãe.
-- **Escolha:** `DEIXAR MARA PRA TRÁS` ou `OUVIR A VERSÃO DELA`.
-
-### DIA 6 — "Antes do Dia 1" · Regra #6
-- **Se OUVIR:** Mara conta que desobedeceu a ordem, abriu o portão para dezenas de
-  pessoas e desertou. Arrancou o chip do pulso para não ser rastreada.
-- **Se DEIXAR:** Kai vai sozinho, mas um helicóptero da Unidade 9 o encontra e
-  oferece **um lugar no barco** em troca da localização de Mara.
-- **Comum:** o helicóptero sobrevoa os dois (ou só Kai).
-- **Escolha:** `ESCONDER MARA` ou `ENTREGAR MARA`.
-
-### DIA 7 — "A Ponte" · Regra #7
-- O único caminho até Eastbay é a mesma ponte do Dia 1, coberta de carros e de
-  Surdos dormindo. Vocês atravessam em silêncio total, até um alarme de carro disparar.
-- Na fuga, **algo arranha o braço de Kai**. Mara não vê.
-- Se Mara foi entregue no Dia 6, ela reaparece aqui e salva Kai mesmo assim.
-- **Escolha:** `CONTAR PRA MARA` ou `ESCONDER O ARRANHÃO`.
-
-### DIA 8 — "Mangas Compridas" · Regra #8
-- Kai puxa a manga do moletom sobre o arranhão, o mesmo gesto de Mara no Dia 1.
-- Se ele esconder: Mara percebe sozinha e aponta a arma para ele, numa inversão da
-  cena do Dia 1.
-- Se ele contar: ela divide o último antibiótico e fica de vigia a noite toda.
-- **Escolha:** `CORRER PRO PORTO AGORA` (à noite, Surdos rápidos) ou
-  `ESPERAR AMANHECER` (pode não dar tempo).
-
-### DIA 9 — "Eastbay" · Regra #9
-- O porto existe. O barco existe. Mas a voz do rádio é uma **gravação em loop**, e
-  a Unidade 9 controla o embarque com um teste de sangue na fila.
-- O arranhão de Kai: o teste dá **inconclusivo**. Mara é reconhecida por um soldado.
-- **Escolha:** `EMBARCAR SOZINHO` ou `FICAR COM MARA`.
-
-### DIA 10 — "Último Sinal" · Regra #10 · **FINAL DA TEMPORADA**
-- O final depende do voto do Dia 9:
-  - **EMBARCAR:** o barco parte. Mara fica no cais olhando. Kai liga o rádio no barco…
-  - **FICAR:** os dois fogem pela neblina enquanto o barco parte sem eles. Kai liga o
-    rádio…
-- **Gancho para a Temporada 2 (igual nos dois finais):** uma voz nova, ao vivo, não
-  gravada: *"Kai? Se for você… eu tô viva. Eu não atravessei a ponte."* É a **mãe dele**.
-- Cartela: `ÚLTIMO SINAL · FIM DA TEMPORADA 1 · COMENTE: ELA ESTÁ MESMO VIVA?`
+| Plano | Tempo | Prompt (acrescente ao prompt base) |
+|---|---|---|
+| P1 | 0–4 s | deitado num sofá gasto de apartamento pequeno, celular na mão, fone no pescoço, janela grande mostrando cidade americana no pôr do sol, luz laranja |
+| P2 | 4–9 s | TV antiga de tubo chiando mostrando ambulâncias em frente a hospital, sala escura ao redor |
+| P3 | 9–13 s | close de mão segurando celular com mensagem "Plantão vai atrasar. Tranca a porta. Te amo." |
+| P4 | 16–21 s | prédio velho de tijolo de 5 andares à noite, escada de incêndio, letreiro neon "LAVANDERIA 24H" piscando no térreo (sem personagem) |
+| P5 | 21–26 s | vista da janela: horizonte de cidade apagando bairro por bairro, céu azul-escuro (sem personagem) |
+| P6 | 26–36 s | rua vista de cima à noite, carro batido num hidrante jorrando água, silhuetas correndo, faróis (sem personagem) |
+| P7 | 36–42 s | plano aberto de cidade em caos, helicópteros com holofotes, incêndios laranja, ponte ao fundo com barreiras militares e luzes vermelhas (sem personagem) |
+| P8 | 42–52 s | rosto do personagem iluminado pela tela do celular no escuro, foto de enfermeira presa na geladeira ao fundo |
+| P9 | 52–56 s | porta de apartamento com duas trancas no escuro, luz de lanterna passando pela fresta de baixo |
+| P10 | 56–80 s | visão de olho mágico (distorção olho de peixe) mostrando senhor idoso de óculos grossos e avental azul segurando o braço enrolado, corredor escuro |
+| P11 | 80–84 s | mão de idoso espalmada do lado de fora de uma porta, deslizando, luz fraca |
+| P12 | 84–88 s | personagem com a mão na tranca da porta, olhando de lado, tenso, sala escura |
 
 ---
 
-## 7. Checklist de produção por episódio
+## 5. Notas de edição
 
-- [ ] Abre com "A MAIORIA DE VOCÊS DISSE…" (a partir do Dia 2)
-- [ ] Gancho sonoro nos primeiros 5 s
-- [ ] Cartela `ÚLTIMO SINAL / DIA X` até os 15 s
-- [ ] Uma revelação mostrada por **objeto** (rádio, pulso, prancheta, teste de sangue)
-- [ ] Regra do dia no selo vermelho
-- [ ] Relógio do HUD avançando
-- [ ] Escolha com 2 botões + "COMENTE ABAIXO ↓"
-- [ ] Cartela "SIGA PARA O DIA X+1"
-- [ ] 75–85 s, cerca de 200 palavras de narração
+- **Contraste é a força deste episódio:** os primeiros 20 s são quentes e calmos. A
+  partir do apagão (21 s), tudo fica azul-escuro e a trilha vira tensão.
+- **O relógio do HUD conta a história:** 5:58 → 6:14 → 6:20 → 6:31. Em 33 minutos a
+  cidade acabou.
+- **Silêncio antes das batidas** (52 s): corte a trilha por completo. É o momento
+  mais tenso.
+- **Sem sangue explícito:** a mordida e o ferimento aparecem só como silhueta e
+  mancha escura no pano.
+- **Plantar para depois:** a mãe no hospital e as luzes militares na ponte são
+  ganchos para os próximos episódios.
