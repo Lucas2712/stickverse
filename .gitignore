@@ -1,2 +1,5 @@
 roteiros/tts/saida/
 __pycache__/
+video/ep01/*.mp4
+video/ep01/sfx.wav
+video/ep01/render.log
