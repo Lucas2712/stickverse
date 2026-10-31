@@ -489,7 +489,7 @@ def main():
         "loudnorm=I=-14:TP=-1.5:LRA=11[a]",
         "-map", "0:v", "-map", "[a]", "-t", str(fim - ini),
         "-c:v", "libx264", "-preset", "slow", "-crf", "22", "-pix_fmt", "yuv420p",
-        "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", saida,
+        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", saida,
     ]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     total = int((fim - ini) * FPS)
