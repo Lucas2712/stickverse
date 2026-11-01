@@ -3,3 +3,7 @@ __pycache__/
 video/ep01/*.mp4
 video/ep01/sfx.wav
 video/ep01/render.log
+video/*/*.mp4
+video/*/sfx.wav
+video/*/render.log
+__pycache__/
