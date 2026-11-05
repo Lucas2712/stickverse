@@ -7,3 +7,4 @@ video/*/*.mp4
 video/*/sfx.wav
 video/*/render.log
 __pycache__/
+video/comercial-ia/comercial-ia.html
