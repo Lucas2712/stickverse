@@ -1,0 +1,268 @@
+<title>Storyboard IA Muda Tudo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: uma coluna de leitura no celular; mapa de ritmo como barra do tempo; uma ficha por cena. Visual dark de propósito (é a identidade do vídeo). */
+:root{
+  --bg:#0A0B0F; --surface:#12141A; --line:#22252E; --ink:#F2F3F5; --ink2:#9AA0AB; --ac:#C8FF3C;
+  --display:"Archivo", "Arial Narrow", Arial, sans-serif;
+  --body:"Geist", "Helvetica Neue", Arial, sans-serif;
+  --mono:"Geist Mono", ui-monospace, Menlo, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body);margin:0}
+main{max-width:760px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));display:flex;flex-direction:column;gap:40px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.02em}
+h1{font-size:clamp(34px,9vw,58px);font-weight:900;font-stretch:72%;line-height:.95;text-transform:uppercase}
+h1 em{font-style:normal;color:var(--ac);font-stretch:125%}
+h2{font-size:22px;font-weight:800;font-stretch:90%;text-transform:uppercase;letter-spacing:.01em}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);display:flex;align-items:center;gap:8px}
+.cur{display:inline-block;width:9px;height:15px;background:var(--ac);animation:pisca 1s steps(1) infinite}
+@keyframes pisca{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.cur{animation:none}}
+.lead{color:var(--ink2);margin:0;max-width:60ch}
+.status{border:1px solid var(--ac);color:var(--ink);padding:14px 16px;border-radius:6px;font-size:15px}
+.status b{color:var(--ac)}
+section{display:flex;flex-direction:column;gap:16px}
+dl.ficha{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:0}
+dl.ficha dt{font:500 12px/1.6 var(--mono);color:var(--ink2);text-transform:uppercase;letter-spacing:.08em;padding-top:2px}
+dl.ficha dd{margin:0;min-width:0}
+@media (max-width:520px){dl.ficha{grid-template-columns:1fr;gap:2px}dl.ficha dd{margin-bottom:12px}}
+.sw{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-1px;margin-right:4px;border:1px solid var(--line)}
+/* barra do tempo */
+.tempo{position:relative;height:56px;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--surface)}
+.tempo .seg{position:absolute;top:0;bottom:0;border-right:1px solid var(--bg);display:flex;align-items:center;justify-content:center;font:600 13px var(--mono);color:var(--ink)}
+.tempo .seg:nth-child(odd){background:#1A1D25}
+.tempo .marca{position:absolute;top:0;bottom:0;width:2px;background:var(--ac)}
+.tempo-leg{display:flex;justify-content:space-between;font:12px var(--mono);color:var(--ink2);margin-top:6px}
+.marcas-leg{font:13px var(--mono);color:var(--ink2);margin:0}
+.marcas-leg span{color:var(--ac)}
+.tabela{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--ink2)}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+/* cenas */
+.cena{border-top:1px solid var(--line);padding-top:22px;display:flex;flex-direction:column;gap:12px}
+.cena header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.cena .num{font:900 44px/1 var(--display);font-stretch:62%;color:var(--ac)}
+.cena h3{font-size:24px;font-weight:800;font-stretch:85%;text-transform:uppercase}
+.cena .t{font:500 13px var(--mono);color:var(--ink2);font-variant-numeric:tabular-nums}
+.comp{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--bg);background:var(--ink);padding:3px 8px;border-radius:3px;align-self:flex-start}
+blockquote{margin:0;padding-left:14px;border-left:2px solid var(--ac);font-size:18px;line-height:1.4}
+.cena p{margin:0;color:var(--ink);max-width:65ch}
+.cena .rot{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--ink2);display:block;margin-bottom:4px}
+.sync{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.sync li{display:grid;grid-template-columns:64px 1fr;gap:10px}
+.sync .s{font:500 13px var(--mono);color:var(--ac);font-variant-numeric:tabular-nums;padding-top:2px}
+.extra{display:flex;flex-wrap:wrap;gap:8px 16px;font:13px var(--mono);color:var(--ink2)}
+.extra b{color:var(--ink);font-weight:500}
+.pend{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+.pend li{padding:12px 14px;background:var(--surface);border-radius:6px;border:1px solid var(--line)}
+.pend li b{color:var(--ac)}
+</style>
+
+<main>
+  <header style="display:flex;flex-direction:column;gap:14px">
+    <div class="kicker"><span class="cur"></span> storyboard · projetos/ia-muda-tudo</div>
+    <h1>A inteligência artificial está mudando <em>tudo</em></h1>
+    <p class="lead">Reels vertical 1080×1920, 30 fps, 28,6 s. Narração de 24,76 s sincronizada palavra por palavra, música eletrônica de 128 BPM.</p>
+    <div class="status"><b>Aguardando sua aprovação.</b> Nada foi programado ainda. Peça ajustes cena por cena ou aprove para eu começar a produção.</div>
+  </header>
+
+  <section>
+    <h2>Identidade</h2>
+    <dl class="ficha">
+      <dt>Cores</dt><dd><span class="sw" style="background:#0A0B0F"></span>fundo grafite quase preto · <span class="sw" style="background:#F2F3F5"></span>texto claro · <span class="sw" style="background:#C8FF3C"></span>verde-ácido como único destaque (no máximo 10% do quadro)</dd>
+      <dt>Fontes</dt><dd>Archivo nos títulos (a largura condensa e expande no ritmo) · Geist no texto · Geist Mono em rótulos de interface</dd>
+      <dt>Fio condutor</dt><dd>O cursor verde ▍ de um campo de texto de IA. Ele abre o vídeo e vira traço, nó, barra de progresso, marcador "agora", o quadrado "você" e, no fim, o contorno do botão.</dd>
+      <dt>Diferente do anterior</dt><dd>O comercial-ia era branco, laranja e Geist. Aqui nada disso se repete.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Mapa de ritmo</h2>
+    <div>
+      <div class="tempo" aria-label="Linha do tempo das 9 cenas">
+        <div class="seg" style="left:0%;width:10.1%">1</div>
+        <div class="seg" style="left:10.1%;width:15.4%">2</div>
+        <div class="seg" style="left:25.5%;width:18.2%">3</div>
+        <div class="seg" style="left:43.7%;width:10.1%">4</div>
+        <div class="seg" style="left:53.8%;width:8.1%">5</div>
+        <div class="seg" style="left:61.9%;width:9.6%">6</div>
+        <div class="seg" style="left:71.5%;width:6.3%">7</div>
+        <div class="seg" style="left:77.8%;width:9.3%">8</div>
+        <div class="seg" style="left:87.1%;width:12.9%">9</div>
+        <div class="marca" style="left:54.2%" title="grave entra 15,5 s"></div>
+        <div class="marca" style="left:77%" title="energia sobe 22,0 s"></div>
+      </div>
+      <div class="tempo-leg"><span>0 s</span><span>14,3 s</span><span>28,6 s</span></div>
+    </div>
+    <p class="marcas-leg"><span>│</span> marcas verdes: o grave da música entra em 15,5 s (cena 5) e a energia sobe em 22,0 s (cena 8)</p>
+    <div class="tabela">
+      <table>
+        <thead><tr><th>Cena</th><th>Tempo</th><th>Composição</th><th>Saída</th></tr></thead>
+        <tbody>
+          <tr><td class="n">1</td><td class="n">0,0–2,9</td><td>Tipografia central gigante</td><td>«tudo» explode em pixels</td></tr>
+          <tr><td class="n">2</td><td class="n">2,8–7,3</td><td>Mosaico em profundidade</td><td>recuo, o cursor fica</td></tr>
+          <tr><td class="n">3</td><td class="n">7,2–12,5</td><td>Card central → constelação</td><td>chicote para cima</td></tr>
+          <tr><td class="n">4</td><td class="n">12,4–15,4</td><td>Celular</td><td>zoom pela tela, no grave</td></tr>
+          <tr><td class="n">5</td><td class="n">15,3–17,6</td><td>Tipografia deslocada</td><td>letras viram rabiscos</td></tr>
+          <tr><td class="n">6</td><td class="n">17,5–20,3</td><td>Card: rascunho → interface</td><td>vira o ponto "agora"</td></tr>
+          <tr><td class="n">7</td><td class="n">20,2–22,2</td><td>Linha do tempo</td><td>corte na batida + flash</td></tr>
+          <tr><td class="n">8</td><td class="n">22,0–24,9</td><td>Grade / repetição</td><td>"você" vira o cursor</td></tr>
+          <tr><td class="n">9</td><td class="n">24,8–28,6</td><td>Cartela final</td><td>fade</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cenas</h2>
+
+    <article class="cena">
+      <header><span class="num">1</span><h3>Abertura</h3><span class="t">0,0–2,9 s</span></header>
+      <span class="comp">Tipografia central gigante</span>
+      <blockquote>"A inteligência artificial está mudando tudo."</blockquote>
+      <p><span class="rot">Na tela</span>O cursor pisca no escuro e digita "A INTELIGÊNCIA". Depois entram "ARTIFICIAL" (grande), "está mudando" (pequeno, cinza) e <b>TUDO</b> enorme em verde, com as letras se alargando.</p>
+      <ul class="sync">
+        <li><span class="s">0,16 s</span>«inteligência»: as letras saem do cursor</li>
+        <li><span class="s">0,70 s</span>«artificial»: a linha sobe e se expande</li>
+        <li><span class="s">1,98 s</span>«tudo»: palavra gigante em cascata, junto com a batida da música</li>
+        <li><span class="s">2,55 s</span>«TUDO» quebra em quadradinhos que voam para a cena 2</li>
+      </ul>
+      <div class="extra"><span><b>Efeitos</b> teclas · boom 1,98 · whoosh 2,6</span><span><b>Legenda</b> não</span></div>
+    </article>
+
+    <article class="cena">
+      <header><span class="num">2</span><h3>Tudo muda</h3><span class="t">2,8–7,3 s</span></header>
+      <span class="comp">Mosaico em profundidade</span>
+      <blockquote>"O jeito de trabalhar, criar, aprender e até ganhar dinheiro."</blockquote>
+      <p><span class="rot">Na tela</span>"O jeito de" em mono no topo. Quatro cards entram empilhados em profundidade, um por verbo, cada um com uma mini-interface: tarefas marcadas, um traço sendo desenhado, uma barra de aula enchendo e um gráfico subindo (sem números).</p>
+      <ul class="sync">
+        <li><span class="s">3,40 s</span>«trabalhar»: card 1, dois itens recebem ✓</li>
+        <li><span class="s">4,24 s</span>«criar»: card 2, o cursor desenha</li>
+        <li><span class="s">4,96 s</span>«aprender»: card 3, barra 0 → 100%</li>
+        <li><span class="s">5,98 s</span>«ganhar»: card 4 na frente; em 6,32 «dinheiro» a seta aponta para cima</li>
+      </ul>
+      <div class="extra"><span><b>Efeitos</b> pop em cada card · tick · swell 6,9</span><span><b>Legenda</b> sim</span></div>
+    </article>
+
+    <article class="cena">
+      <header><span class="num">3</span><h3>Ferramentas</h3><span class="t">7,2–12,5 s</span></header>
+      <span class="comp">Card central → constelação</span>
+      <blockquote>"E ferramentas como Claude estão abrindo possibilidades que muita gente ainda nem conhece."</blockquote>
+      <p><span class="rot">Na tela</span>Uma janela de chat genérica, sem logotipo. Acima dela aparece a palavra <b>Claude</b>, só como texto, e no campo vai sendo digitado "me ajuda a criar…". A janela se abre como uma porta e vira um nó com chips em volta: textos, imagens, código, vídeos, estudos, negócios. Num anel de fora, chips "?" se acendem.</p>
+      <ul class="sync">
+        <li><span class="s">8,14 s</span>«Claude»: o nome sobe em verde e a digitação começa</li>
+        <li><span class="s">8,90 s</span>«abrindo»: a janela se parte e abre</li>
+        <li><span class="s">9,26 s</span>«possibilidades»: seis chips saem do centro</li>
+        <li><span class="s">10,20 s</span>«muita gente»: a câmera recua e revela o anel</li>
+        <li><span class="s">11,12 s</span>«nem conhece»: os chips "?" se acendem</li>
+      </ul>
+      <div class="extra"><span><b>Efeitos</b> teclas · flip 8,90 · blips · swoosh 12,25</span><span><b>Legenda</b> sim</span></div>
+    </article>
+
+    <article class="cena">
+      <header><span class="num">4</span><h3>Aqui</h3><span class="t">12,4–15,4 s</span></header>
+      <span class="comp">Celular</span>
+      <blockquote>"Aqui você vai descobrir novas tecnologias,"</blockquote>
+      <p><span class="rot">Na tela</span><b>AQUI</b> grande em verde sobre um celular genérico inclinado, com o feed do canal: "nova ferramenta", "tutorial", "teste na prática", "novidade da semana".</p>
+      <ul class="sync">
+        <li><span class="s">12,64 s</span>«Aqui»: o celular sobe e a palavra bate</li>
+        <li><span class="s">13,38 s</span>«descobrir»: selo "NOVO" no primeiro post</li>
+        <li><span class="s">13,70 s</span>«novas tecnologias»: o feed rola rápido</li>
+        <li><span class="s">15,47 s</span>zoom pela tela no momento em que o grave entra</li>
+      </ul>
+      <div class="extra"><span><b>Efeitos</b> pop · swoosh · riser até 15,47</span><span><b>Legenda</b> sim</span></div>
+    </article>
+
+    <article class="cena">
+      <header><span class="num">5</span><h3>Aprender a usar</h3><span class="t">15,3–17,6 s · drop</span></header>
+      <span class="comp">Tipografia deslocada</span>
+      <blockquote>"aprender a usar inteligência artificial"</blockquote>
+      <p><span class="rot">Na tela</span>Texto alinhado à esquerda, uma linha por batida: APRENDER / A USAR / <b>INTELIGÊNCIA ARTIFICIAL</b> em verde. À direita, o cursor vira uma barra que sobe a cada batida.</p>
+      <ul class="sync">
+        <li><span class="s">15,47 s</span>grave + «aprender»: impacto, a câmera treme</li>
+        <li><span class="s">15,94 s</span>batida + «usar»</li>
+        <li><span class="s">16,41 s</span>batida + «inteligência»</li>
+        <li><span class="s">16,88 s</span>batida + «artificial»: a barra chega a 100%</li>
+      </ul>
+      <div class="extra"><span><b>Efeitos</b> hit 15,47 · blips baixos</span><span><b>Legenda</b> não</span></div>
+    </article>
+
+    <article class="cena">
+      <header><span class="num">6</span><h3>Ideias viram projetos</h3><span class="t">17,5–20,3 s</span></header>
+      <span class="comp">Card: rascunho → interface</span>
+      <blockquote>"e transformar ideias em projetos reais."</blockquote>
+      <p><span class="rot">Na tela</span>Rabiscos se juntam num rascunho tracejado ("ideia"). Uma varredura verde transforma o rascunho numa interface pronta ("projeto real") com o selo "● no ar".</p>
+      <ul class="sync">
+        <li><span class="s">18,24 s</span>«ideias»: o rascunho se desenha</li>
+        <li><span class="s">18,94 s</span>«projetos»: a varredura preenche bloco por bloco</li>
+        <li><span class="s">19,46 s</span>«reais»: o selo "no ar" estala</li>
+      </ul>
+      <div class="extra"><span><b>Efeitos</b> swoosh · whoosh · chime 19,46</span><span><b>Legenda</b> sim</span></div>
+    </article>
+
+    <article class="cena">
+      <header><span class="num">7</span><h3>O futuro</h3><span class="t">20,2–22,2 s</span></header>
+      <span class="comp">Linha do tempo</span>
+      <blockquote>"O futuro já começou."</blockquote>
+      <p><span class="rot">Na tela</span>O fio vira uma linha do tempo horizontal: à esquerda cinza, à direita acesa em verde. <b>FUTURO</b> grande acima e o marcador "agora" cruzando para o lado aceso.</p>
+      <ul class="sync">
+        <li><span class="s">20,66 s</span>«futuro»: a palavra se expande e a câmera desliza</li>
+        <li><span class="s">21,04 s</span>«já»: o marcador cruza</li>
+        <li><span class="s">21,36 s</span>«começou»: a linha acende até a borda</li>
+        <li><span class="s">22,03 s</span>corte na batida em que a música sobe</li>
+      </ul>
+      <div class="extra"><span><b>Efeitos</b> whoosh · swell · swoosh no corte</span><span><b>Legenda</b> sim</span></div>
+    </article>
+
+    <article class="cena">
+      <header><span class="num">8</span><h3>A pergunta</h3><span class="t">22,0–24,9 s</span></header>
+      <span class="comp">Grade / repetição</span>
+      <blockquote>"A pergunta é: você vai ficar de fora?"</blockquote>
+      <p><span class="rot">Na tela</span>Uma grade de quadradinhos verdes acesos (quem já está dentro) e um único quadrado cinza afastado: "você". Por cima, <b>VOCÊ</b> enorme e <b>DE FORA?</b> em verde. A grade desliza e deixa o quadrado cinza sozinho.</p>
+      <ul class="sync">
+        <li><span class="s">22,03 s</span>batida: a grade acende em onda</li>
+        <li><span class="s">23,48 s</span>«você»: palavra gigante, o quadrado pisca</li>
+        <li><span class="s">23,84 s</span>«ficar»: a grade se afasta</li>
+        <li><span class="s">24,22 s</span>«de fora?»: entra em verde</li>
+      </ul>
+      <div class="extra"><span><b>Efeitos</b> blip · teclas · boom 23,48</span><span><b>Legenda</b> não</span></div>
+    </article>
+
+    <article class="cena">
+      <header><span class="num">9</span><h3>Cartela final</h3><span class="t">24,8–28,6 s</span></header>
+      <span class="comp">Cartela</span>
+      <blockquote>(sem fala)</blockquote>
+      <p><span class="rot">Na tela</span>O cursor digita <b>"Não fique de fora."</b> Um botão verde "SEGUIR" sobe, o traço verde o contorna, um cursor de mouse clica e ele vira "SEGUINDO ✓". Abaixo, o @ do canal, se você me passar.</p>
+      <div class="extra"><span><b>Efeitos</b> teclas · pop · click · chime</span><span><b>Música</b> fade-out até 28,6 s</span></div>
+    </article>
+  </section>
+
+  <section>
+    <h2>Áudio</h2>
+    <div class="tabela">
+      <table>
+        <thead><tr><th>Canal</th><th>Volume</th><th>Como</th></tr></thead>
+        <tbody>
+          <tr><td>Narração</td><td class="n">100%</td><td>arquivo do ElevenLabs</td></tr>
+          <tr><td>Música</td><td class="n">30%</td><td>começa no 0 s, cai para 40% durante a fala, fade-out até 28,6 s</td></tr>
+          <tr><td>Efeitos</td><td class="n">40%</td><td>mais baixos porque a música já marca o ritmo; 3 impactos: 1,98 · 15,47 · 23,48</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Preciso de você</h2>
+    <ul class="pend">
+      <li><b>@ do canal</b> para a cartela final. Sem ele, a cartela fica só com a chamada e o botão.</li>
+      <li><b>Aprovação</b> ou ajustes de qualquer cena.</li>
+      <li>Claude aparece só como palavra: sem logotipo e sem copiar a interface real. O gráfico de "ganhar dinheiro" não tem números, porque o roteiro não traz dados.</li>
+    </ul>
+  </section>
+</main>
