@@ -1,0 +1,56 @@
+{
+  "titulo": "O Futuro Já Começou",
+  "descricao": "Comercial de 30 s sobre inteligência artificial. Projeto de referência do estúdio.",
+  "tema": "Inteligência artificial abrindo possibilidades",
+  "duracao": 30,
+  "fps": 30,
+  "fontes": [
+    "geist",
+    "geist-mono"
+  ],
+  "poster": 11.6,
+  "legendas": {
+    "ativo": true,
+    "y": 1430,
+    "tamanho": 64,
+    "peso": 600,
+    "destaques": [
+      "trabalhar",
+      "criar",
+      "dinheiro",
+      "Claude",
+      "possibilidades",
+      "gente",
+      "conhece",
+      "descobrir",
+      "tecnologias",
+      "aprender",
+      "artificial",
+      "ideias",
+      "reais"
+    ],
+    "ocultar": [
+      [
+        0,
+        2.9
+      ],
+      [
+        20.4,
+        30
+      ]
+    ]
+  },
+  "audio": {
+    "volumes": {
+      "narracao": 1.0,
+      "musica": 0.3,
+      "efeitos": 0.5
+    },
+    "musica": null,
+    "ducking": {
+      "ativo": true,
+      "reducao": 0.4
+    }
+  },
+  "perfil": ""
+}

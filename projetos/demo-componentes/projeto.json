@@ -1,0 +1,33 @@
+{
+  "titulo": "Demo dos componentes",
+  "descricao": "Vitrine técnica: cada componente do estúdio em uso. Serve de teste automático do sistema.",
+  "tema": "",
+  "duracao": 18,
+  "fps": 30,
+  "fontes": [
+    "geist",
+    "geist-mono",
+    "archivo"
+  ],
+  "poster": 7.5,
+  "legendas": {
+    "ativo": false,
+    "y": 1430,
+    "tamanho": 64,
+    "peso": 600,
+    "destaques": [],
+    "ocultar": []
+  },
+  "audio": {
+    "volumes": {
+      "narracao": 1.0,
+      "musica": 0.3,
+      "efeitos": 0.5
+    },
+    "musica": null,
+    "ducking": {
+      "ativo": true,
+      "reducao": 0.4
+    }
+  }
+}
