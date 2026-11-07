@@ -6,7 +6,7 @@
   "fps": 30,
   "fontes": ["geist", "geist-mono", "archivo", "instrument-serif-italico"],
   "poster": 18.95,
-  "perfil": "@matteu.ia",
+  "perfil": "Studio Matteu",
   "legendas": { "ativo": false },
   "audio": {
     "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.35 },

@@ -91,7 +91,7 @@ blockquote{{margin:0;font:italic 400 22px/1.3 var(--serif)}} .cena p{{margin:0;m
 .tr{{color:var(--ink2);font-size:15px}} ul.lista{{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}}
 </style>
 <main>
-<header style="display:flex;flex-direction:column;gap:14px"><h2>storyboard · @matteu.ia</h2><h1>{D.get("chamada") or e(D["titulo"])}</h1>
+<header style="display:flex;flex-direction:column;gap:14px"><h2>storyboard · Studio Matteu</h2><h1>{D.get("chamada") or e(D["titulo"])}</h1>
 <p class="lead">{e(D.get("resumo", ""))}</p><div class="status"><b>Aguardando sua aprovação.</b> Nada foi programado ainda.</div></header>
 <section><h2>Direção de arte</h2><dl>{ident}</dl></section>
 <section><h2>Mapa de ritmo</h2><div><div class="tempo">{segs}{mk}</div><div class="leg"><span>0 s</span><span>{mkl}</span><span>{v(TOT)} s</span></div></div></section>

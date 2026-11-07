@@ -10,7 +10,7 @@
     { "familia": "JetBrains Mono", "arquivo": "fontes/jetbrains-mono.woff2", "descritores": "font-weight:100 800" }
   ],
   "poster": 28.6,
-  "perfil": "@matteu.ia",
+  "perfil": "Studio Matteu",
   "legendas": { "ativo": false },
   "audio": {
     "volumes": { "narracao": 1.0, "musica": 0, "efeitos": 0.45 },

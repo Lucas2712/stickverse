@@ -494,7 +494,7 @@
       anim(gl, [[70.55, { o: 0, s: .6 }], [71.2, { o: 1, s: 1 }, "out"]]);
       const lg = h("div", "abs", S, null, `left:${540 - LW / 2}px;top:${820 - LH / 2}px;width:${LW}px;height:${LH}px;background:#fff;-webkit-mask:url(${LOGO}) center/contain no-repeat;mask:url(${LOGO}) center/contain no-repeat`);
       anim(lg, [[70.6, { o: 0, s: 1.15, b: 16 }], [71.1, { o: 1, s: 1, b: 0 }, "expo"]]);
-      L(S, 1060, TIT(70), [["Siga", 71.3], [MDS.PROJETO.perfil || "@matteu.ia", 71.4, "grad"]]);
+      L(S, 1060, TIT(70), [["Siga", 71.3], [MDS.PROJETO.perfil || "Studio Matteu", 71.4, "grad"]]);
       L(S, 1170, TXT(42, G2, 400), [["Parte", 71.7], ["2", 71.78], ["em", 71.86], ["breve", 71.94]]);
       anim(S, [...corte(70.5), [70.5, { s: 1 }], [74, { s: 1.03 }, "lin"]]);
     },

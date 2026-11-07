@@ -47,7 +47,7 @@ Regras do storyboard:
 - Ritmo: troca de composição a cada 2 a 5 s; nenhuma cena acima de 6 s sem mudança visual forte.
 - Nunca duas cenas seguidas com a mesma composição (catálogo em `referencias/linguagem-visual.md`).
 - Escreva antes a **direção de arte exclusiva** do vídeo (`referencias/estilo-canal.md`, seção 2) e confira
-  `referencias/direcoes-usadas.md`: nunca repita paleta, fontes, fundos, layouts ou sequência de animações.
+  `referencias/direcoes-usadas.md`: nunca repita paleta, fundos, layouts ou sequência de animações; a tipografia segue a preferência permanente (`referencias/estilo-canal.md`).
 - Dados, números e nomes só do roteiro ou de fonte que o usuário deu. Nunca invente estatística.
 - Sem logotipos ou interfaces idênticas de empresas reais: UI genérica da categoria.
 
