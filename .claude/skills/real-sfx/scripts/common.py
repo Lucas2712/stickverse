@@ -212,7 +212,54 @@ def load_config():
     p = config_path()
     if not p.exists():
         sys.exit(f"config not found: {p}  (run: python scripts/setup.py --help)")
-    return json.loads(read_text_any(p))
+    cfg = json.loads(read_text_any(p))
+    # Studio Matteu: a relative library path is resolved against the folder of config.json, so the repo can live
+    # anywhere (e.g. "../../../studio/sons"). Absolute paths behave exactly as before.
+    for lib in cfg.get("libraries", []):
+        lp = lib.get("path")
+        if lp and not Path(os.path.expanduser(lp)).is_absolute():
+            lib["path"] = str((p.resolve().parent / lp).resolve())
+    return cfg
+
+
+def _relocate_index(idx, cfg):
+    """Studio Matteu: when the repo moved (index written under another root), rewrite the stored sound paths of
+    each library to its current root, in library_index.json and library_embeddings.json, keeping all measures/tags."""
+    if not idx.exists():
+        return
+    try:
+        data = json.loads(idx.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return
+    now = {lib["name"]: lib["path"] for lib in cfg.get("libraries", []) if lib.get("name") and lib.get("path")}
+    moves = {}
+    for lib in data.get("libraries", []):
+        new = now.get(lib.get("name"))
+        if new and lib.get("path") and lib["path"] != new and not Path(lib["path"]).is_dir() and Path(new).is_dir():
+            moves[lib["path"].rstrip("/\\")] = new.rstrip("/\\")
+            lib["path"] = new
+    if not moves:
+        return
+
+    def fix(pth):
+        for old, new in moves.items():
+            if pth == old or pth.startswith(old + "/") or pth.startswith(old + "\\"):
+                return new + pth[len(old):]
+        return pth
+
+    for s in data.get("sounds", []):
+        if isinstance(s.get("path"), str):
+            s["path"] = fix(s["path"])
+    idx.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    emb = idx.parent / "library_embeddings.json"
+    if emb.exists():
+        try:
+            e = json.loads(emb.read_text(encoding="utf-8"))
+            e["paths"] = [fix(x) for x in e.get("paths", [])]
+            emb.write_text(json.dumps(e), encoding="utf-8")
+        except (OSError, ValueError):
+            pass
+    print("real-sfx: index relocated -> " + ", ".join(sorted(set(moves.values()))), file=sys.stderr)
 
 
 def index_path(cfg=None):
@@ -221,7 +268,9 @@ def index_path(cfg=None):
         return Path(env)
     cfg = cfg or load_config()
     p = Path(cfg.get("index_path", "library_index.json"))
-    return p if p.is_absolute() else SKILL_DIR / p
+    p = p if p.is_absolute() else SKILL_DIR / p
+    _relocate_index(p, cfg)
+    return p
 
 
 def require_tools(*names):

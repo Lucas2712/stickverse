@@ -3,7 +3,7 @@
  "libraries": [
   {
    "name": "estudio",
-   "path": "/home/user/stickverse/studio/sons",
+   "path": "/workspace/stickverse/studio/sons",
    "tier": "main",
    "files": 252,
    "catalog": true
@@ -13,7 +13,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-round.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-round.flac",
    "folder": "pop / pro pop in",
    "name": "round",
    "pack_type": "pop",
@@ -41,6 +41,15 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.17,
+   "tags": [
+    "Speech",
+    "Music"
+   ],
+   "tag_scores": [
+    0.13,
+    0.1
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -50,21 +59,12 @@
     "short",
     "dry"
    ],
-   "id": 0,
-   "tags_v": 3,
-   "tags": [
-    "Speech",
-    "Music"
-   ],
-   "tag_scores": [
-    0.13,
-    0.1
-   ]
+   "id": 0
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-blip.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-blip.flac",
    "folder": "pop / ui pop",
    "name": "blip",
    "pack_type": "pop",
@@ -92,6 +92,9 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -101,15 +104,12 @@
     "tiny",
     "dry"
    ],
-   "id": 1,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 1
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-deep.flac",
    "folder": "pop / pro pop in",
    "name": "deep",
    "pack_type": "pop",
@@ -137,6 +137,13 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -146,19 +153,12 @@
     "tiny",
     "dry"
    ],
-   "id": 2,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 2
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_drip-tiny.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_drip-tiny.flac",
    "folder": "pop / drip",
    "name": "tiny",
    "pack_type": "pop",
@@ -187,17 +187,6 @@
    "flat": 0.073,
    "bumps": 0.0,
    "active_dur": 0.12,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 3,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Ding",
@@ -211,12 +200,23 @@
     0.26,
     0.23,
     0.21
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 3
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-fall.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-fall.flac",
    "folder": "pop / ui pop",
    "name": "fall",
    "pack_type": "pop",
@@ -244,6 +244,13 @@
    "flat": 0.008,
    "bumps": 0.0,
    "active_dur": 0.18,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.67
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -253,19 +260,12 @@
     "short",
     "dry"
    ],
-   "id": 4,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.67
-   ]
+   "id": 4
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pop-3.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pop-3.flac",
    "folder": "pop / pop",
    "name": "3",
    "pack_type": "pop",
@@ -293,17 +293,6 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.08,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 5,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Telephone",
@@ -317,12 +306,23 @@
     0.24,
     0.23,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 5
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-double.flac",
    "folder": "pop / pro pop in",
    "name": "double",
    "pack_type": "pop",
@@ -350,17 +350,6 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.13,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "sub",
-    "heavy",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 6,
-   "tags_v": 3,
    "tags": [
     "Knock",
     "Thunk",
@@ -374,12 +363,23 @@
     0.22,
     0.19,
     0.17
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "sub",
+    "heavy",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 6
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-boop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-boop.flac",
    "folder": "pop / ui pop",
    "name": "boop",
    "pack_type": "pop",
@@ -407,6 +407,13 @@
    "flat": 0.002,
    "bumps": 3.3,
    "active_dur": 0.15,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.67
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -416,19 +423,12 @@
     "short",
     "dry"
    ],
-   "id": 7,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.67
-   ]
+   "id": 7
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-boop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-boop.flac",
    "folder": "pop / pro pop",
    "name": "boop",
    "pack_type": "pop",
@@ -456,6 +456,13 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.1,
+   "tags": [
+    "Plop"
+   ],
+   "tag_scores": [
+    0.38
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -464,19 +471,12 @@
     "tiny",
     "dry"
    ],
-   "id": 8,
-   "tags_v": 3,
-   "tags": [
-    "Plop"
-   ],
-   "tag_scores": [
-    0.38
-   ]
+   "id": 8
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-knock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-knock.flac",
    "folder": "pop / pro pop in",
    "name": "knock",
    "pack_type": "pop",
@@ -504,6 +504,13 @@
    "flat": 0.003,
    "bumps": 0.0,
    "active_dur": 0.07,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.08
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -513,19 +520,12 @@
     "tiny",
     "dry"
    ],
-   "id": 9,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.08
-   ]
+   "id": 9
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-tink.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-tink.flac",
    "folder": "pop / pro pop",
    "name": "tink",
    "pack_type": "pop",
@@ -553,17 +553,6 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.08,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 10,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Beep, bleep",
@@ -577,12 +566,23 @@
     0.2,
     0.17,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 10
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pop-2.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pop-2.flac",
    "folder": "pop / pop",
    "name": "2",
    "pack_type": "pop",
@@ -610,6 +610,15 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.19,
+   "tags": [
+    "Plop",
+    "Ding"
+   ],
+   "tag_scores": [
+    0.96,
+    0.25
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -619,21 +628,12 @@
     "short",
     "dry"
    ],
-   "id": 11,
-   "tags_v": 3,
-   "tags": [
-    "Plop",
-    "Ding"
-   ],
-   "tag_scores": [
-    0.96,
-    0.25
-   ]
+   "id": 11
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_fit-pop-mouth-plop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_fit-pop-mouth-plop.flac",
    "folder": "pop / fit/pop",
    "name": "mouth plop",
    "pack_type": "pop",
@@ -661,6 +661,13 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.13,
+   "tags": [
+    "Plop"
+   ],
+   "tag_scores": [
+    0.99
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -670,19 +677,12 @@
     "tiny",
     "dry"
    ],
-   "id": 12,
-   "tags_v": 3,
-   "tags": [
-    "Plop"
-   ],
-   "tag_scores": [
-    0.99
-   ]
+   "id": 12
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-chirp.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-chirp.flac",
    "folder": "pop / pro pop",
    "name": "chirp",
    "pack_type": "pop",
@@ -710,17 +710,6 @@
    "flat": 0.434,
    "bumps": 3.3,
    "active_dur": 0.14,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 13,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Chink, clink",
@@ -734,12 +723,23 @@
     0.19,
     0.19,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 13
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-airy.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-airy.flac",
    "folder": "pop / pro pop in",
    "name": "airy",
    "pack_type": "pop",
@@ -767,6 +767,13 @@
    "flat": 0.002,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.22
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -776,19 +783,12 @@
     "tiny",
     "dry"
    ],
-   "id": 14,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.22
-   ]
+   "id": 14
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-bloop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-bloop.flac",
    "folder": "pop / pro pop",
    "name": "bloop",
    "pack_type": "pop",
@@ -816,17 +816,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.11,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 15,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Alarm",
@@ -840,12 +829,23 @@
     0.11,
     0.11,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 15
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_drip-drop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_drip-drop.flac",
    "folder": "pop / drip",
    "name": "drop",
    "pack_type": "pop",
@@ -874,16 +874,6 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.24,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 16,
-   "tags_v": 3,
    "tags": [
     "Cowbell",
     "Wood block",
@@ -895,12 +885,22 @@
     0.17,
     0.16,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 16
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-double.flac",
    "folder": "pop / pro pop",
    "name": "double",
    "pack_type": "pop",
@@ -928,6 +928,15 @@
    "flat": 0.002,
    "bumps": 0.0,
    "active_dur": 0.14,
+   "tags": [
+    "Plop",
+    "Tick"
+   ],
+   "tag_scores": [
+    0.84,
+    0.11
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -937,21 +946,12 @@
     "tiny",
     "dry"
    ],
-   "id": 17,
-   "tags_v": 3,
-   "tags": [
-    "Plop",
-    "Tick"
-   ],
-   "tag_scores": [
-    0.84,
-    0.11
-   ]
+   "id": 17
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_drip-plink.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_drip-plink.flac",
    "folder": "pop / drip",
    "name": "plink",
    "pack_type": "pop",
@@ -980,17 +980,6 @@
    "flat": 0.001,
    "bumps": 3.3,
    "active_dur": 0.2,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 18,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Clang",
@@ -1004,12 +993,23 @@
     0.46,
     0.36,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 18
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pop-1.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pop-1.flac",
    "folder": "pop / pop",
    "name": "1",
    "pack_type": "pop",
@@ -1037,6 +1037,15 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "tags": [
+    "Tick",
+    "Rodents, rats, mice"
+   ],
+   "tag_scores": [
+    0.13,
+    0.09
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -1046,21 +1055,12 @@
     "tiny",
     "dry"
    ],
-   "id": 19,
-   "tags_v": 3,
-   "tags": [
-    "Tick",
-    "Rodents, rats, mice"
-   ],
-   "tag_scores": [
-    0.13,
-    0.09
-   ]
+   "id": 19
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pop-4.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pop-4.flac",
    "folder": "pop / pop",
    "name": "4",
    "pack_type": "pop",
@@ -1088,17 +1088,6 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.12,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 20,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Telephone",
@@ -1108,12 +1097,23 @@
     0.88,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 20
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_fit-pop-lip-pop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_fit-pop-lip-pop.flac",
    "folder": "pop / fit/pop",
    "name": "lip pop",
    "pack_type": "pop",
@@ -1141,16 +1141,6 @@
    "flat": 0.003,
    "bumps": 0.0,
    "active_dur": 0.18,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 21,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Hiccup",
@@ -1164,12 +1154,22 @@
     0.19,
     0.17,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 21
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-step.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-step.flac",
    "folder": "pop / ui pop",
    "name": "step",
    "pack_type": "pop",
@@ -1197,17 +1197,6 @@
    "flat": 0.001,
    "bumps": 3.3,
    "active_dur": 0.16,
-   "onset_count": 0,
-   "words": [
-    "soft-attack",
-    "warm",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 22,
-   "tags_v": 3,
    "tags": [
     "Dial tone",
     "Telephone",
@@ -1217,12 +1206,23 @@
     0.15,
     0.14,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "soft-attack",
+    "warm",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 22
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-soft.flac",
    "folder": "pop / ui pop",
    "name": "soft",
    "pack_type": "pop",
@@ -1250,6 +1250,15 @@
    "flat": 0.001,
    "bumps": 3.3,
    "active_dur": 0.16,
+   "tags": [
+    "Music",
+    "Beep, bleep"
+   ],
+   "tag_scores": [
+    0.1,
+    0.08
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -1259,21 +1268,12 @@
     "short",
     "dry"
    ],
-   "id": 23,
-   "tags_v": 3,
-   "tags": [
-    "Music",
-    "Beep, bleep"
-   ],
-   "tag_scores": [
-    0.1,
-    0.08
-   ]
+   "id": 23
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-thup.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-thup.flac",
    "folder": "pop / pro pop",
    "name": "thup",
    "pack_type": "pop",
@@ -1301,6 +1301,13 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.11
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -1309,19 +1316,12 @@
     "tiny",
     "dry"
    ],
-   "id": 24,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.11
-   ]
+   "id": 24
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_drip-bubble.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_drip-bubble.flac",
    "folder": "pop / drip",
    "name": "bubble",
    "pack_type": "pop",
@@ -1350,6 +1350,13 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.22,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.17
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -1358,19 +1365,12 @@
     "tonal",
     "short"
    ],
-   "id": 25,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.17
-   ]
+   "id": 25
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-wide.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-wide.flac",
    "folder": "pop / ui pop",
    "name": "wide",
    "pack_type": "pop",
@@ -1398,17 +1398,6 @@
    "flat": 0.012,
    "bumps": 3.3,
    "active_dur": 0.16,
-   "onset_count": 0,
-   "words": [
-    "soft-attack",
-    "warm",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 26,
-   "tags_v": 3,
    "tags": [
     "Vehicle horn, car horn, honking",
     "Music",
@@ -1418,12 +1407,23 @@
     0.12,
     0.1,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "soft-attack",
+    "warm",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 26
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_drip-bloop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_drip-bloop.flac",
    "folder": "pop / drip",
    "name": "bloop",
    "pack_type": "pop",
@@ -1452,16 +1452,6 @@
    "flat": 0.01,
    "bumps": 3.3,
    "active_dur": 0.28,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 27,
-   "tags_v": 3,
    "tags": [
     "Glass",
     "Ding",
@@ -1473,12 +1463,22 @@
     0.22,
     0.21,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 27
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pop-0.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pop-0.flac",
    "folder": "pop / pop",
    "name": "0",
    "pack_type": "pop",
@@ -1506,17 +1506,6 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.11,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 28,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Alarm",
@@ -1526,12 +1515,23 @@
     0.93,
     0.1,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 28
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_tap-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_tap-soft.flac",
    "folder": "foley / tap",
    "name": "soft",
    "pack_type": "foley",
@@ -1558,17 +1558,6 @@
    "flat": 0.004,
    "bumps": 0.0,
    "active_dur": 0.09,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "sub",
-    "heavy",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 29,
-   "tags_v": 3,
    "tags": [
     "Animal",
     "Mosquito",
@@ -1580,12 +1569,23 @@
     0.11,
     0.1,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "sub",
+    "heavy",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 29
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_pro-tap-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_pro-tap-glass.flac",
    "folder": "foley / pro tap",
    "name": "glass",
    "pack_type": "foley",
@@ -1612,6 +1612,13 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.11
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -1621,19 +1628,12 @@
     "tiny",
     "dry"
    ],
-   "id": 30,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.11
-   ]
+   "id": 30
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_knock-wood.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_knock-wood.flac",
    "folder": "foley / knock",
    "name": "wood",
    "pack_type": "foley",
@@ -1660,17 +1660,6 @@
    "flat": 0.01,
    "bumps": 0.0,
    "active_dur": 0.13,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 31,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Ding",
@@ -1684,12 +1673,23 @@
     0.09,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 31
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_knock-plastic.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_knock-plastic.flac",
    "folder": "foley / knock",
    "name": "plastic",
    "pack_type": "foley",
@@ -1716,17 +1716,6 @@
    "flat": 0.086,
    "bumps": 3.3,
    "active_dur": 0.12,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 32,
-   "tags_v": 3,
    "tags": [
     "Glass",
     "Chink, clink",
@@ -1736,12 +1725,23 @@
     0.12,
     0.11,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 32
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_pro-tap-finger.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_pro-tap-finger.flac",
    "folder": "foley / pro tap",
    "name": "finger",
    "pack_type": "foley",
@@ -1768,6 +1768,13 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.17
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -1777,19 +1784,12 @@
     "tiny",
     "dry"
    ],
-   "id": 33,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.17
-   ]
+   "id": 33
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_tap-finger.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_tap-finger.flac",
    "folder": "foley / tap",
    "name": "finger",
    "pack_type": "foley",
@@ -1816,6 +1816,13 @@
    "flat": 0.002,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.1
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -1825,19 +1832,12 @@
     "tiny",
     "dry"
    ],
-   "id": 34,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.1
-   ]
+   "id": 34
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_tap-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_tap-glass.flac",
    "folder": "foley / tap",
    "name": "glass",
    "pack_type": "foley",
@@ -1864,17 +1864,6 @@
    "flat": 0.002,
    "bumps": 0.0,
    "active_dur": 0.09,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 35,
-   "tags_v": 3,
    "tags": [
     "Insect",
     "Buzz",
@@ -1888,12 +1877,23 @@
     0.11,
     0.1,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 35
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_pro-tap-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_pro-tap-double.flac",
    "folder": "foley / pro tap",
    "name": "double",
    "pack_type": "foley",
@@ -1920,6 +1920,15 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.11,
+   "tags": [
+    "Music",
+    "Beep, bleep"
+   ],
+   "tag_scores": [
+    0.1,
+    0.08
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -1929,21 +1938,12 @@
     "tiny",
     "dry"
    ],
-   "id": 36,
-   "tags_v": 3,
-   "tags": [
-    "Music",
-    "Beep, bleep"
-   ],
-   "tag_scores": [
-    0.1,
-    0.08
-   ]
+   "id": 36
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_knock-snap.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_knock-snap.flac",
    "folder": "foley / knock",
    "name": "snap",
    "pack_type": "foley",
@@ -1970,17 +1970,6 @@
    "flat": 0.294,
    "bumps": 3.3,
    "active_dur": 0.11,
-   "onset_count": 1,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 37,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -1990,12 +1979,23 @@
     0.2,
     0.14,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 37
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_fit-land-light-finger-wood.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_fit-land-light-finger-wood.flac",
    "folder": "foley / fit/land.light",
    "name": "finger wood",
    "pack_type": "foley",
@@ -2022,6 +2022,13 @@
    "flat": 0.007,
    "bumps": 0.0,
    "active_dur": 0.22,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.28
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -2030,19 +2037,12 @@
     "tonal",
     "short"
    ],
-   "id": 38,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.28
-   ]
+   "id": 38
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_pro-tap-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_pro-tap-soft.flac",
    "folder": "foley / pro tap",
    "name": "soft",
    "pack_type": "foley",
@@ -2069,6 +2069,13 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.07,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.25
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -2078,19 +2085,12 @@
     "tiny",
     "dry"
    ],
-   "id": 39,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.25
-   ]
+   "id": 39
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_tap-table.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_tap-table.flac",
    "folder": "foley / tap",
    "name": "table",
    "pack_type": "foley",
@@ -2117,17 +2117,6 @@
    "flat": 0.016,
    "bumps": 0.0,
    "active_dur": 0.09,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 40,
-   "tags_v": 3,
    "tags": [
     "Door",
     "Meow",
@@ -2141,12 +2130,23 @@
     0.09,
     0.09,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 40
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_fit-land-light-fingertip-book.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_fit-land-light-fingertip-book.flac",
    "folder": "foley / fit/land.light",
    "name": "fingertip book",
    "pack_type": "foley",
@@ -2173,17 +2173,6 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.2,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 41,
-   "tags_v": 3,
    "tags": [
     "Thump, thud",
     "Thunk",
@@ -2197,12 +2186,23 @@
     0.15,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 41
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_pro-tap-knock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_pro-tap-knock.flac",
    "folder": "foley / pro tap",
    "name": "knock",
    "pack_type": "foley",
@@ -2229,6 +2229,13 @@
    "flat": 0.003,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.14
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -2238,19 +2245,12 @@
     "tiny",
     "dry"
    ],
-   "id": 42,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.14
-   ]
+   "id": 42
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_knock-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_knock-double.flac",
    "folder": "foley / knock",
    "name": "double",
    "pack_type": "foley",
@@ -2277,16 +2277,6 @@
    "flat": 0.056,
    "bumps": 3.3,
    "active_dur": 0.12,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 43,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Telephone",
@@ -2296,12 +2286,22 @@
     0.24,
     0.11,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "warm",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 43
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_fit-land-light-finger-phone.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_fit-land-light-finger-phone.flac",
    "folder": "foley / fit/land.light",
    "name": "finger phone",
    "pack_type": "foley",
@@ -2328,6 +2328,13 @@
    "flat": 0.003,
    "bumps": 0.0,
    "active_dur": 0.17,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.1
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -2337,19 +2344,12 @@
     "short",
     "dry"
    ],
-   "id": 44,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.1
-   ]
+   "id": 44
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_tap-knuckle.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_tap-knuckle.flac",
    "folder": "foley / tap",
    "name": "knuckle",
    "pack_type": "foley",
@@ -2376,17 +2376,6 @@
    "flat": 0.005,
    "bumps": 0.0,
    "active_dur": 0.11,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 45,
-   "tags_v": 3,
    "tags": [
     "Insect",
     "Mosquito",
@@ -2400,12 +2389,23 @@
     0.12,
     0.12,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 45
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_knock-desk.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_knock-desk.flac",
    "folder": "foley / knock",
    "name": "desk",
    "pack_type": "foley",
@@ -2432,6 +2432,13 @@
    "flat": 0.061,
    "bumps": 3.3,
    "active_dur": 0.15,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.26
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -2441,19 +2448,12 @@
     "short",
     "dry"
    ],
-   "id": 46,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.26
-   ]
+   "id": 46
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-laptop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-laptop.flac",
    "folder": "typing / typing key",
    "name": "laptop",
    "pack_type": "typing",
@@ -2480,6 +2480,13 @@
    "flat": 0.161,
    "bumps": 0.0,
    "active_dur": 0.19,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "onset_count": 2,
    "words": [
     "punchy",
@@ -2488,19 +2495,12 @@
     "short",
     "dry"
    ],
-   "id": 47,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 47
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-crackle.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-crackle.flac",
    "folder": "typing / pro typing key",
    "name": "crackle",
    "pack_type": "typing",
@@ -2527,17 +2527,6 @@
    "flat": 0.031,
    "bumps": 0.0,
    "active_dur": 0.07,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "airy",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 48,
-   "tags_v": 3,
    "tags": [
     "Rodents, rats, mice",
     "Liquid",
@@ -2547,12 +2536,23 @@
     0.1,
     0.08,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "airy",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 48
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-light.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-light.flac",
    "folder": "typing / typing key",
    "name": "light",
    "pack_type": "typing",
@@ -2579,6 +2579,9 @@
    "flat": 0.302,
    "bumps": 0.0,
    "active_dur": 0.16,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -2587,15 +2590,12 @@
     "short",
     "dry"
    ],
-   "id": 49,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 49
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-crisp.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-crisp.flac",
    "folder": "typing / typing key",
    "name": "crisp",
    "pack_type": "typing",
@@ -2622,6 +2622,15 @@
    "flat": 0.235,
    "bumps": 0.0,
    "active_dur": 0.19,
+   "tags": [
+    "Speech",
+    "Tick"
+   ],
+   "tag_scores": [
+    0.13,
+    0.1
+   ],
+   "tags_v": 3,
    "onset_count": 2,
    "words": [
     "punchy",
@@ -2630,21 +2639,12 @@
     "short",
     "dry"
    ],
-   "id": 50,
-   "tags_v": 3,
-   "tags": [
-    "Speech",
-    "Tick"
-   ],
-   "tag_scores": [
-    0.13,
-    0.1
-   ]
+   "id": 50
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_fit-key-thock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_fit-key-thock.flac",
    "folder": "typing / fit/key",
    "name": "thock",
    "pack_type": "typing",
@@ -2671,16 +2671,6 @@
    "flat": 0.153,
    "bumps": 3.3,
    "active_dur": 0.31,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "textured",
-    "short"
-   ],
-   "id": 51,
-   "tags_v": 3,
    "tags": [
     "Glass",
     "Chink, clink",
@@ -2694,12 +2684,22 @@
     0.15,
     0.13,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "textured",
+    "short"
+   ],
+   "id": 51
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-standard.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-standard.flac",
    "folder": "typing / pro typing run",
    "name": "standard",
    "pack_type": "typing",
@@ -2726,16 +2726,6 @@
    "flat": 0.047,
    "bumps": 0.0,
    "active_dur": 1.36,
-   "onset_count": 14,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 52,
-   "tags_v": 3,
    "tags": [
     "Wild animals",
     "Rattle",
@@ -2749,12 +2739,22 @@
     0.31,
     0.23,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 14,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 52
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-clicky.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-clicky.flac",
    "folder": "typing / typing key",
    "name": "clicky",
    "pack_type": "typing",
@@ -2781,16 +2781,6 @@
    "flat": 0.278,
    "bumps": 3.3,
    "active_dur": 0.19,
-   "onset_count": 2,
-   "words": [
-    "punchy",
-    "mid",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 53,
-   "tags_v": 3,
    "tags": [
     "Chink, clink",
     "Tick",
@@ -2804,12 +2794,22 @@
     0.21,
     0.19,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 2,
+   "words": [
+    "punchy",
+    "mid",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 53
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-glass.flac",
    "folder": "typing / pro typing run",
    "name": "glass",
    "pack_type": "typing",
@@ -2837,16 +2837,6 @@
    "flat": 0.057,
    "bumps": 0.0,
    "active_dur": 1.38,
-   "onset_count": 14,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 54,
-   "tags_v": 3,
    "tags": [
     "Rodents, rats, mice",
     "Mouse",
@@ -2860,12 +2850,22 @@
     0.29,
     0.25,
     0.22
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 14,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 54
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_fit-key-space-thock-space.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_fit-key-space-thock-space.flac",
    "folder": "typing / fit/key.space",
    "name": "thock space",
    "pack_type": "typing",
@@ -2892,15 +2892,6 @@
    "flat": 0.346,
    "bumps": 3.3,
    "active_dur": 0.28,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "textured",
-    "short"
-   ],
-   "id": 55,
-   "tags_v": 3,
    "tags": [
     "Mechanisms",
     "Typing",
@@ -2912,12 +2903,21 @@
     0.12,
     0.12,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "warm",
+    "textured",
+    "short"
+   ],
+   "id": 55
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_fit-key-lubed.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_fit-key-lubed.flac",
    "folder": "typing / fit/key",
    "name": "lubed",
    "pack_type": "typing",
@@ -2944,15 +2944,6 @@
    "flat": 0.12,
    "bumps": 6.7,
    "active_dur": 0.32,
-   "onset_count": 3,
-   "words": [
-    "punchy",
-    "mid",
-    "tonal",
-    "short"
-   ],
-   "id": 56,
-   "tags_v": 3,
    "tags": [
     "Chink, clink",
     "Glass",
@@ -2966,12 +2957,21 @@
     0.28,
     0.25,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "tonal",
+    "short"
+   ],
+   "id": 56
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-deep.flac",
    "folder": "typing / typing key",
    "name": "deep",
    "pack_type": "typing",
@@ -2998,16 +2998,6 @@
    "flat": 0.387,
    "bumps": 3.3,
    "active_dur": 0.24,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "textured",
-    "short"
-   ],
-   "id": 57,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Drip",
@@ -3021,12 +3011,22 @@
     0.1,
     0.1,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "textured",
+    "short"
+   ],
+   "id": 57
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-glass.flac",
    "folder": "typing / pro typing key",
    "name": "glass",
    "pack_type": "typing",
@@ -3054,17 +3054,6 @@
    "flat": 0.049,
    "bumps": 0.0,
    "active_dur": 0.06,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "airy",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 58,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Single-lens reflex camera",
@@ -3078,12 +3067,23 @@
     0.11,
     0.11,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "airy",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 58
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-blip.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-blip.flac",
    "folder": "typing / pro typing run",
    "name": "blip",
    "pack_type": "typing",
@@ -3110,16 +3110,6 @@
    "flat": 0.054,
    "bumps": 6.7,
    "active_dur": 1.43,
-   "onset_count": 14,
-   "words": [
-    "swelling",
-    "bright",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 59,
-   "tags_v": 3,
    "tags": [
     "Wild animals",
     "Animal",
@@ -3133,12 +3123,22 @@
     0.41,
     0.37,
     0.36
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 14,
+   "words": [
+    "swelling",
+    "bright",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 59
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-tick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-tick.flac",
    "folder": "typing / pro typing key",
    "name": "tick",
    "pack_type": "typing",
@@ -3165,17 +3165,6 @@
    "flat": 0.028,
    "bumps": 0.0,
    "active_dur": 0.06,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "airy",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 60,
-   "tags_v": 3,
    "tags": [
     "Rodents, rats, mice",
     "Mouse",
@@ -3185,12 +3174,23 @@
     0.14,
     0.13,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "airy",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 60
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-double.flac",
    "folder": "typing / pro typing key",
    "name": "double",
    "pack_type": "typing",
@@ -3217,17 +3217,6 @@
    "flat": 0.044,
    "bumps": 0.0,
    "active_dur": 0.09,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "airy",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 61,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Tick",
@@ -3241,12 +3230,23 @@
     0.12,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "airy",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 61
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-double.flac",
    "folder": "typing / pro typing run",
    "name": "double",
    "pack_type": "typing",
@@ -3273,16 +3273,6 @@
    "flat": 0.043,
    "bumps": 2.9,
    "active_dur": 1.53,
-   "onset_count": 20,
-   "words": [
-    "punchy",
-    "airy",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 62,
-   "tags_v": 3,
    "tags": [
     "Rattle",
     "Animal",
@@ -3296,12 +3286,22 @@
     0.18,
     0.16,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 20,
+   "words": [
+    "punchy",
+    "airy",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 62
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-tick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-tick.flac",
    "folder": "typing / pro typing run",
    "name": "tick",
    "pack_type": "typing",
@@ -3328,16 +3328,6 @@
    "flat": 0.059,
    "bumps": 3.3,
    "active_dur": 1.19,
-   "onset_count": 16,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 63,
-   "tags_v": 3,
    "tags": [
     "Typing",
     "Computer keyboard",
@@ -3351,12 +3341,22 @@
     0.14,
     0.14,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 16,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 63
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-thock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-thock.flac",
    "folder": "typing / typing key",
    "name": "thock",
    "pack_type": "typing",
@@ -3383,6 +3383,13 @@
    "flat": 0.214,
    "bumps": 0.0,
    "active_dur": 0.18,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.2
+   ],
+   "tags_v": 3,
    "onset_count": 2,
    "words": [
     "punchy",
@@ -3391,19 +3398,12 @@
     "short",
     "dry"
    ],
-   "id": 64,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.2
-   ]
+   "id": 64
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_fit-key-medium.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_fit-key-medium.flac",
    "folder": "typing / fit/key",
    "name": "medium",
    "pack_type": "typing",
@@ -3430,6 +3430,15 @@
    "flat": 0.291,
    "bumps": 3.3,
    "active_dur": 0.39,
+   "tags": [
+    "Typing",
+    "Computer keyboard"
+   ],
+   "tag_scores": [
+    0.17,
+    0.13
+   ],
+   "tags_v": 3,
    "onset_count": 2,
    "words": [
     "punchy",
@@ -3438,21 +3447,12 @@
     "short",
     "dry"
    ],
-   "id": 65,
-   "tags_v": 3,
-   "tags": [
-    "Typing",
-    "Computer keyboard"
-   ],
-   "tag_scores": [
-    0.17,
-    0.13
-   ]
+   "id": 65
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-soft.flac",
    "folder": "typing / pro typing run",
    "name": "soft",
    "pack_type": "typing",
@@ -3479,17 +3479,6 @@
    "flat": 0.078,
    "bumps": 11.4,
    "active_dur": 1.67,
-   "onset_count": 16,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "long",
-    "pulsing"
-   ],
-   "id": 66,
-   "tags_v": 3,
    "tags": [
     "Bird",
     "Wild animals",
@@ -3503,12 +3492,23 @@
     0.84,
     0.36,
     0.29
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 16,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "long",
+    "pulsing"
+   ],
+   "id": 66
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-soft.flac",
    "folder": "typing / pro typing key",
    "name": "soft",
    "pack_type": "typing",
@@ -3535,6 +3535,15 @@
    "flat": 0.035,
    "bumps": 0.0,
    "active_dur": 0.07,
+   "tags": [
+    "Animal",
+    "Bird"
+   ],
+   "tag_scores": [
+    0.09,
+    0.09
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -3544,21 +3553,12 @@
     "tiny",
     "dry"
    ],
-   "id": 67,
-   "tags_v": 3,
-   "tags": [
-    "Animal",
-    "Bird"
-   ],
-   "tag_scores": [
-    0.09,
-    0.09
-   ]
+   "id": 67
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-blip.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-blip.flac",
    "folder": "typing / pro typing key",
    "name": "blip",
    "pack_type": "typing",
@@ -3585,6 +3585,13 @@
    "flat": 0.023,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -3594,19 +3601,12 @@
     "tiny",
     "dry"
    ],
-   "id": 68,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 68
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-scramble.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-scramble.flac",
    "folder": "glitch / glitch",
    "name": "scramble",
    "pack_type": "glitch",
@@ -3633,6 +3633,9 @@
    "flat": 0.376,
    "bumps": 12.0,
    "active_dur": 0.59,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 3,
    "words": [
     "slow-build",
@@ -3642,15 +3645,12 @@
     "pulsing",
     "dry"
    ],
-   "id": 69,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 69
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-standard.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-standard.flac",
    "folder": "glitch / pro glitch",
    "name": "standard",
    "pack_type": "glitch",
@@ -3677,18 +3677,6 @@
    "flat": 0.155,
    "bumps": 10.0,
    "active_dur": 0.71,
-   "onset_count": 8,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "textured",
-    "medium",
-    "pulsing",
-    "dry"
-   ],
-   "id": 70,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Scissors",
@@ -3702,12 +3690,24 @@
     0.45,
     0.42,
     0.42
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 8,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "textured",
+    "medium",
+    "pulsing",
+    "dry"
+   ],
+   "id": 70
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-crunchy.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-crunchy.flac",
    "folder": "glitch / pro glitch",
    "name": "crunchy",
    "pack_type": "glitch",
@@ -3734,17 +3734,6 @@
    "flat": 0.208,
    "bumps": 6.7,
    "active_dur": 0.71,
-   "onset_count": 10,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "textured",
-    "medium",
-    "dry"
-   ],
-   "id": 71,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Shuffling cards",
@@ -3758,12 +3747,23 @@
     0.32,
     0.3,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 10,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "textured",
+    "medium",
+    "dry"
+   ],
+   "id": 71
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-dropout.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-dropout.flac",
    "folder": "glitch / glitch",
    "name": "dropout",
    "pack_type": "glitch",
@@ -3790,6 +3790,9 @@
    "flat": 0.428,
    "bumps": 13.2,
    "active_dur": 0.74,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 8,
    "words": [
     "slow-build",
@@ -3799,15 +3802,12 @@
     "pulsing",
     "dry"
    ],
-   "id": 72,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 72
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-mid.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-mid.flac",
    "folder": "glitch / glitch",
    "name": "mid",
    "pack_type": "glitch",
@@ -3834,6 +3834,13 @@
    "flat": 0.093,
    "bumps": 6.7,
    "active_dur": 0.24,
+   "tags": [
+    "Ping"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "onset_count": 3,
    "words": [
     "punchy",
@@ -3843,19 +3850,12 @@
     "short",
     "dry"
    ],
-   "id": 73,
-   "tags_v": 3,
-   "tags": [
-    "Ping"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 73
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-fastroll.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-fastroll.flac",
    "folder": "glitch / pro glitch",
    "name": "fastroll",
    "pack_type": "glitch",
@@ -3882,17 +3882,6 @@
    "flat": 0.167,
    "bumps": 6.7,
    "active_dur": 0.55,
-   "onset_count": 8,
-   "words": [
-    "swelling",
-    "airy",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 74,
-   "tags_v": 3,
    "tags": [
     "Ratchet, pawl",
     "Gears",
@@ -3906,12 +3895,23 @@
     0.48,
     0.44,
     0.34
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 8,
+   "words": [
+    "swelling",
+    "airy",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 74
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-stutter.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-stutter.flac",
    "folder": "glitch / glitch",
    "name": "stutter",
    "pack_type": "glitch",
@@ -3938,17 +3938,6 @@
    "flat": 0.591,
    "bumps": 11.5,
    "active_dur": 0.63,
-   "onset_count": 3,
-   "words": [
-    "swelling",
-    "mid",
-    "thin",
-    "noisy",
-    "medium",
-    "pulsing"
-   ],
-   "id": 75,
-   "tags_v": 3,
    "tags": [
     "Whack, thwack",
     "Arrow",
@@ -3962,12 +3951,23 @@
     0.29,
     0.29,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "thin",
+    "noisy",
+    "medium",
+    "pulsing"
+   ],
+   "id": 75
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-crush.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-crush.flac",
    "folder": "glitch / glitch",
    "name": "crush",
    "pack_type": "glitch",
@@ -3994,17 +3994,6 @@
    "flat": 0.572,
    "bumps": 10.5,
    "active_dur": 0.54,
-   "onset_count": 5,
-   "words": [
-    "swelling",
-    "mid",
-    "noisy",
-    "short",
-    "pulsing",
-    "dry"
-   ],
-   "id": 76,
-   "tags_v": 3,
    "tags": [
     "Burst, pop",
     "Breaking",
@@ -4018,12 +4007,23 @@
     0.16,
     0.11,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 5,
+   "words": [
+    "swelling",
+    "mid",
+    "noisy",
+    "short",
+    "pulsing",
+    "dry"
+   ],
+   "id": 76
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-framelock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-framelock.flac",
    "folder": "glitch / pro glitch",
    "name": "framelock",
    "pack_type": "glitch",
@@ -4050,17 +4050,6 @@
    "flat": 0.102,
    "bumps": 3.3,
    "active_dur": 0.73,
-   "onset_count": 6,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "medium",
-    "dry"
-   ],
-   "id": 77,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Single-lens reflex camera",
@@ -4074,12 +4063,23 @@
     0.33,
     0.32,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 6,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "medium",
+    "dry"
+   ],
+   "id": 77
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-data.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-data.flac",
    "folder": "glitch / glitch",
    "name": "data",
    "pack_type": "glitch",
@@ -4106,6 +4106,15 @@
    "flat": 0.437,
    "bumps": 10.3,
    "active_dur": 0.48,
+   "tags": [
+    "Liquid",
+    "Water"
+   ],
+   "tag_scores": [
+    0.1,
+    0.09
+   ],
+   "tags_v": 3,
    "onset_count": 5,
    "words": [
     "swelling",
@@ -4114,21 +4123,12 @@
     "textured",
     "short"
    ],
-   "id": 78,
-   "tags_v": 3,
-   "tags": [
-    "Liquid",
-    "Water"
-   ],
-   "tag_scores": [
-    0.1,
-    0.09
-   ]
+   "id": 78
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-sparse.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-sparse.flac",
    "folder": "glitch / pro glitch",
    "name": "sparse",
    "pack_type": "glitch",
@@ -4155,17 +4155,6 @@
    "flat": 0.108,
    "bumps": 3.3,
    "active_dur": 0.75,
-   "onset_count": 9,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "medium",
-    "dry"
-   ],
-   "id": 79,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Single-lens reflex camera",
@@ -4179,12 +4168,23 @@
     0.3,
     0.25,
     0.25
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 9,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "medium",
+    "dry"
+   ],
+   "id": 79
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-hit.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-hit.flac",
    "folder": "glitch / glitch",
    "name": "hit",
    "pack_type": "glitch",
@@ -4211,6 +4211,13 @@
    "flat": 0.299,
    "bumps": 6.7,
    "active_dur": 0.34,
+   "tags": [
+    "Burst, pop"
+   ],
+   "tag_scores": [
+    0.12
+   ],
+   "tags_v": 3,
    "onset_count": 2,
    "words": [
     "swelling",
@@ -4219,19 +4226,12 @@
     "short",
     "dry"
    ],
-   "id": 80,
-   "tags_v": 3,
-   "tags": [
-    "Burst, pop"
-   ],
-   "tag_scores": [
-    0.12
-   ]
+   "id": 80
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-burst.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-burst.flac",
    "folder": "glitch / glitch",
    "name": "burst",
    "pack_type": "glitch",
@@ -4258,6 +4258,9 @@
    "flat": 0.439,
    "bumps": 6.7,
    "active_dur": 0.74,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 5,
    "words": [
     "punchy",
@@ -4266,15 +4269,12 @@
     "textured",
     "medium"
    ],
-   "id": 81,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 81
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-data.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-data.flac",
    "folder": "glitch / pro glitch",
    "name": "data",
    "pack_type": "glitch",
@@ -4301,17 +4301,6 @@
    "flat": 0.135,
    "bumps": 3.3,
    "active_dur": 0.67,
-   "onset_count": 9,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "textured",
-    "medium",
-    "dry"
-   ],
-   "id": 82,
-   "tags_v": 3,
    "tags": [
     "Ratchet, pawl",
     "Gears",
@@ -4325,12 +4314,23 @@
     0.54,
     0.5,
     0.37
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 9,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "textured",
+    "medium",
+    "dry"
+   ],
+   "id": 82
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-chirp.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-chirp.flac",
    "folder": "glitch / glitch",
    "name": "chirp",
    "pack_type": "glitch",
@@ -4357,16 +4357,6 @@
    "flat": 0.066,
    "bumps": 3.3,
    "active_dur": 0.3,
-   "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 83,
-   "tags_v": 3,
    "tags": [
     "Hiccup",
     "Cough",
@@ -4376,12 +4366,22 @@
     0.26,
     0.23,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 83
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-shepard-fall.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-shepard-fall.flac",
    "folder": "impact / downlifter",
    "name": "shepard fall",
    "pack_type": "impact",
@@ -4408,15 +4408,6 @@
    "flat": 0.148,
    "bumps": 1.2,
    "active_dur": 3.04,
-   "words": [
-    "swelling",
-    "warm",
-    "textured",
-    "long",
-    "long-tail"
-   ],
-   "id": 84,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Groan",
@@ -4430,12 +4421,21 @@
     0.12,
     0.12,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "textured",
+    "long",
+    "long-tail"
+   ],
+   "id": 84
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-sub-sink.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-sub-sink.flac",
    "folder": "impact / downlifter",
    "name": "sub sink",
    "pack_type": "impact",
@@ -4462,16 +4462,6 @@
    "flat": 0.074,
    "bumps": 1.9,
    "active_dur": 1.63,
-   "words": [
-    "soft-attack",
-    "sub",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 85,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Timpani",
@@ -4485,12 +4475,22 @@
     0.66,
     0.58,
     0.38
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "sub",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 85
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-swell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-swell.flac",
    "folder": "impact / impact",
    "name": "swell",
    "pack_type": "impact",
@@ -4517,16 +4517,6 @@
    "flat": 0.057,
    "bumps": 2.7,
    "active_dur": 4.2,
-   "words": [
-    "swelling",
-    "dark",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 86,
-   "tags_v": 3,
    "tags": [
     "Artillery fire",
     "Explosion",
@@ -4540,12 +4530,22 @@
     0.49,
     0.39,
     0.38
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 86
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-deep.flac",
    "folder": "impact / impact",
    "name": "deep",
    "pack_type": "impact",
@@ -4572,16 +4572,6 @@
    "flat": 0.059,
    "bumps": 2.7,
    "active_dur": 3.92,
-   "words": [
-    "soft-attack",
-    "sub",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 87,
-   "tags_v": 3,
    "tags": [
     "Explosion",
     "Burst, pop",
@@ -4595,12 +4585,22 @@
     0.27,
     0.17,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "sub",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 87
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-impact-swell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-impact-swell.flac",
    "folder": "impact / pro impact",
    "name": "swell",
    "pack_type": "impact",
@@ -4627,15 +4627,6 @@
    "flat": 0.16,
    "bumps": 6.4,
    "active_dur": 1.1,
-   "words": [
-    "swelling",
-    "dark",
-    "heavy",
-    "textured",
-    "medium"
-   ],
-   "id": 88,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Explosion",
@@ -4649,12 +4640,21 @@
     0.22,
     0.21,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "heavy",
+    "textured",
+    "medium"
+   ],
+   "id": 88
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-quick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-quick.flac",
    "folder": "impact / pro sub drop",
    "name": "quick",
    "pack_type": "impact",
@@ -4681,15 +4681,6 @@
    "flat": 0.0,
    "bumps": 1.8,
    "active_dur": 0.94,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 89,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Bass guitar"
@@ -4697,12 +4688,21 @@
    "tag_scores": [
     0.94,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 89
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-synth-fall.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-synth-fall.flac",
    "folder": "impact / downlifter",
    "name": "synth fall",
    "pack_type": "impact",
@@ -4729,16 +4729,6 @@
    "flat": 0.009,
    "bumps": 3.5,
    "active_dur": 2.71,
-   "words": [
-    "swelling",
-    "warm",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 90,
-   "tags_v": 3,
    "tags": [
     "Siren",
     "Alarm",
@@ -4752,12 +4742,22 @@
     0.41,
     0.35,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 90
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-tape.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-tape.flac",
    "folder": "impact / downlifter",
    "name": "tape",
    "pack_type": "impact",
@@ -4784,15 +4784,6 @@
    "flat": 0.051,
    "bumps": 2.2,
    "active_dur": 1.26,
-   "words": [
-    "soft-attack",
-    "warm",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 91,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Synthesizer",
@@ -4806,12 +4797,21 @@
     0.13,
     0.11,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 91
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_sub-drop-808.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_sub-drop-808.flac",
    "folder": "impact / sub drop",
    "name": "808",
    "pack_type": "impact",
@@ -4838,16 +4838,6 @@
    "flat": 0.0,
    "bumps": 1.4,
    "active_dur": 1.43,
-   "words": [
-    "punchy",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 92,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Bass guitar",
@@ -4861,12 +4851,22 @@
     0.15,
     0.14,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 92
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-bright.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-bright.flac",
    "folder": "impact / pro sub drop",
    "name": "bright",
    "pack_type": "impact",
@@ -4893,6 +4893,13 @@
    "flat": 0.0,
    "bumps": 1.4,
    "active_dur": 1.16,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.94
+   ],
+   "tags_v": 3,
    "words": [
     "swelling",
     "sub",
@@ -4900,19 +4907,12 @@
     "tonal",
     "medium"
    ],
-   "id": 93,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.94
-   ]
+   "id": 93
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-impact-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-impact-air.flac",
    "folder": "impact / pro impact",
    "name": "air",
    "pack_type": "impact",
@@ -4939,16 +4939,6 @@
    "flat": 0.025,
    "bumps": 8.5,
    "active_dur": 0.84,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "pulsing"
-   ],
-   "id": 94,
-   "tags_v": 3,
    "tags": [
     "Heart murmur",
     "Explosion",
@@ -4962,12 +4952,22 @@
     0.15,
     0.14,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "pulsing"
+   ],
+   "id": 94
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-ref.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-ref.flac",
    "folder": "impact / pro sub drop",
    "name": "ref",
    "pack_type": "impact",
@@ -4994,15 +4994,6 @@
    "flat": 0.0,
    "bumps": 1.3,
    "active_dur": 1.32,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 95,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Bass guitar",
@@ -5016,12 +5007,21 @@
     0.09,
     0.09,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 95
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-low.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-low.flac",
    "folder": "impact / pro sub drop",
    "name": "low",
    "pack_type": "impact",
@@ -5048,15 +5048,6 @@
    "flat": 0.0,
    "bumps": 1.2,
    "active_dur": 1.1,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 96,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Bass guitar"
@@ -5064,12 +5055,21 @@
    "tag_scores": [
     0.95,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 96
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_sub-drop-long.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_sub-drop-long.flac",
    "folder": "impact / sub drop",
    "name": "long",
    "pack_type": "impact",
@@ -5096,16 +5096,6 @@
    "flat": 0.0,
    "bumps": 2.6,
    "active_dur": 1.93,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 97,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Bass guitar",
@@ -5119,12 +5109,22 @@
     0.16,
     0.13,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 97
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-flange-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-flange-air.flac",
    "folder": "impact / downlifter",
    "name": "flange air",
    "pack_type": "impact",
@@ -5151,15 +5151,6 @@
    "flat": 0.614,
    "bumps": 0.8,
    "active_dur": 2.5,
-   "words": [
-    "swelling",
-    "mid",
-    "noisy",
-    "long",
-    "long-tail"
-   ],
-   "id": 98,
-   "tags_v": 3,
    "tags": [
     "Gunshot, gunfire",
     "Explosion",
@@ -5173,12 +5164,21 @@
     0.37,
     0.2,
     0.18
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "noisy",
+    "long",
+    "long-tail"
+   ],
+   "id": 98
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_cut-hit-punch.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_cut-hit-punch.flac",
    "folder": "impact / cut hit",
    "name": "punch",
    "pack_type": "impact",
@@ -5205,6 +5205,13 @@
    "flat": 0.019,
    "bumps": 3.3,
    "active_dur": 0.28,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.55
+   ],
+   "tags_v": 3,
    "words": [
     "soft-attack",
     "dark",
@@ -5213,19 +5220,12 @@
     "short",
     "dry"
    ],
-   "id": 99,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.55
-   ]
+   "id": 99
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_sub-drop-punch.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_sub-drop-punch.flac",
    "folder": "impact / sub drop",
    "name": "punch",
    "pack_type": "impact",
@@ -5252,15 +5252,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.56,
-   "words": [
-    "punchy",
-    "sub",
-    "heavy",
-    "tonal",
-    "short"
-   ],
-   "id": 100,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Percussion",
@@ -5274,12 +5265,21 @@
     0.23,
     0.21,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "sub",
+    "heavy",
+    "tonal",
+    "short"
+   ],
+   "id": 100
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-classic.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-classic.flac",
    "folder": "impact / impact",
    "name": "classic",
    "pack_type": "impact",
@@ -5306,16 +5306,6 @@
    "flat": 0.067,
    "bumps": 3.6,
    "active_dur": 2.95,
-   "words": [
-    "soft-attack",
-    "dark",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 101,
-   "tags_v": 3,
    "tags": [
     "Explosion",
     "Burst, pop",
@@ -5329,12 +5319,22 @@
     0.31,
     0.23,
     0.23
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 101
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-blast.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-blast.flac",
    "folder": "impact / impact",
    "name": "blast",
    "pack_type": "impact",
@@ -5361,16 +5361,6 @@
    "flat": 0.118,
    "bumps": 2.0,
    "active_dur": 3.59,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 102,
-   "tags_v": 3,
    "tags": [
     "Explosion",
     "Fireworks",
@@ -5384,12 +5374,22 @@
     0.53,
     0.52,
     0.5
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 102
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_sub-drop-pro.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_sub-drop-pro.flac",
    "folder": "impact / sub drop",
    "name": "pro",
    "pack_type": "impact",
@@ -5416,16 +5416,6 @@
    "flat": 0.0,
    "bumps": 1.2,
    "active_dur": 1.39,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 103,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Bass guitar",
@@ -5439,12 +5429,22 @@
     0.14,
     0.14,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 103
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-metal.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-metal.flac",
    "folder": "impact / impact",
    "name": "metal",
    "pack_type": "impact",
@@ -5471,16 +5471,6 @@
    "flat": 0.109,
    "bumps": 4.9,
    "active_dur": 3.12,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 104,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Percussion",
@@ -5494,12 +5484,22 @@
     0.46,
     0.38,
     0.33
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 104
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_fit-hit-bamboo-tok.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_fit-hit-bamboo-tok.flac",
    "folder": "impact / fit/hit",
    "name": "bamboo tok",
    "pack_type": "impact",
@@ -5526,6 +5526,13 @@
    "flat": 0.364,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.14
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -5534,19 +5541,12 @@
     "tiny",
     "dry"
    ],
-   "id": 105,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.14
-   ]
+   "id": 105
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_cut-hit-kick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_cut-hit-kick.flac",
    "folder": "impact / cut hit",
    "name": "kick",
    "pack_type": "impact",
@@ -5573,15 +5573,6 @@
    "flat": 0.003,
    "bumps": 0.0,
    "active_dur": 0.21,
-   "words": [
-    "punchy",
-    "dark",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 106,
-   "tags_v": 3,
    "tags": [
     "Knock",
     "Whack, thwack"
@@ -5589,12 +5580,21 @@
    "tag_scores": [
     0.16,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 106
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-impact-short.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-impact-short.flac",
    "folder": "impact / pro impact",
    "name": "short",
    "pack_type": "impact",
@@ -5621,6 +5621,13 @@
    "flat": 0.013,
    "bumps": 11.3,
    "active_dur": 0.66,
+   "tags": [
+    "Synthesizer"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "words": [
     "swelling",
     "sub",
@@ -5629,19 +5636,12 @@
     "medium",
     "pulsing"
    ],
-   "id": 107,
-   "tags_v": 3,
-   "tags": [
-    "Synthesizer"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 107
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-impact-rumble.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-impact-rumble.flac",
    "folder": "impact / pro impact",
    "name": "rumble",
    "pack_type": "impact",
@@ -5668,15 +5668,6 @@
    "flat": 0.024,
    "bumps": 5.9,
    "active_dur": 0.98,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 108,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Drum machine",
@@ -5690,12 +5681,21 @@
     0.13,
     0.12,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 108
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-punch.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-punch.flac",
    "folder": "impact / impact",
    "name": "punch",
    "pack_type": "impact",
@@ -5722,16 +5722,6 @@
    "flat": 0.05,
    "bumps": 2.9,
    "active_dur": 1.7,
-   "words": [
-    "soft-attack",
-    "dark",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 109,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Music",
@@ -5745,12 +5735,22 @@
     0.51,
     0.22,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 109
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_sub-drop-gritty.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_sub-drop-gritty.flac",
    "folder": "impact / sub drop",
    "name": "gritty",
    "pack_type": "impact",
@@ -5777,15 +5777,6 @@
    "flat": 0.0,
    "bumps": 4.7,
    "active_dur": 1.36,
-   "words": [
-    "soft-attack",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 110,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Bass guitar",
@@ -5799,12 +5790,21 @@
     0.26,
     0.25,
     0.23
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 110
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-impact-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-impact-deep.flac",
    "folder": "impact / pro impact",
    "name": "deep",
    "pack_type": "impact",
@@ -5831,16 +5831,6 @@
    "flat": 0.035,
    "bumps": 4.7,
    "active_dur": 1.23,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 111,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Drum machine",
@@ -5854,12 +5844,22 @@
     0.2,
     0.15,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 111
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-air-fall.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-air-fall.flac",
    "folder": "impact / downlifter",
    "name": "air fall",
    "pack_type": "impact",
@@ -5886,15 +5886,6 @@
    "flat": 0.824,
    "bumps": 1.5,
    "active_dur": 1.72,
-   "words": [
-    "soft-attack",
-    "bright",
-    "noisy",
-    "long",
-    "long-tail"
-   ],
-   "id": 112,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow",
@@ -5908,12 +5899,21 @@
     0.34,
     0.2,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "bright",
+    "noisy",
+    "long",
+    "long-tail"
+   ],
+   "id": 112
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_cut-hit-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_cut-hit-air.flac",
    "folder": "impact / cut hit",
    "name": "air",
    "pack_type": "impact",
@@ -5940,16 +5940,6 @@
    "flat": 0.003,
    "bumps": 3.3,
    "active_dur": 0.4,
-   "words": [
-    "soft-attack",
-    "sub",
-    "heavy",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 113,
-   "tags_v": 3,
    "tags": [
     "Heart sounds, heartbeat",
     "Heart murmur",
@@ -5961,12 +5951,22 @@
     0.18,
     0.09,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "sub",
+    "heavy",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 113
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_cut-hit-rumble.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_cut-hit-rumble.flac",
    "folder": "impact / cut hit",
    "name": "rumble",
    "pack_type": "impact",
@@ -5993,15 +5993,6 @@
    "flat": 0.011,
    "bumps": 2.0,
    "active_dur": 1.4,
-   "words": [
-    "soft-attack",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 114,
-   "tags_v": 3,
    "tags": [
     "Heart sounds, heartbeat",
     "Heart murmur",
@@ -6015,12 +6006,21 @@
     0.43,
     0.29,
     0.24
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 114
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-soft.flac",
    "folder": "impact / pro sub drop",
    "name": "soft",
    "pack_type": "impact",
@@ -6047,16 +6047,6 @@
    "flat": 0.0,
    "bumps": 2.0,
    "active_dur": 1.42,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 115,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Musical instrument",
@@ -6068,12 +6058,22 @@
     0.15,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 115
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_cut-hit-sub.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_cut-hit-sub.flac",
    "folder": "impact / cut hit",
    "name": "sub",
    "pack_type": "impact",
@@ -6100,15 +6100,6 @@
    "flat": 0.002,
    "bumps": 0.0,
    "active_dur": 0.27,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "short"
-   ],
-   "id": 116,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow",
@@ -6122,12 +6113,21 @@
     0.13,
     0.11,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "short"
+   ],
+   "id": 116
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_toggle-on.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_toggle-on.flac",
    "folder": "other / toggle",
    "name": "on",
    "pack_type": "other",
@@ -6152,16 +6152,6 @@
    "flat": 0.338,
    "bumps": 0.0,
    "active_dur": 0.11,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 117,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -6175,12 +6165,22 @@
     0.17,
     0.16,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 117
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_shutter-dslr.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_shutter-dslr.flac",
    "folder": "other / shutter",
    "name": "dslr",
    "pack_type": "other",
@@ -6207,16 +6207,6 @@
    "flat": 0.114,
    "bumps": 3.3,
    "active_dur": 0.16,
-   "onset_count": 1,
-   "words": [
-    "soft-attack",
-    "warm",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 118,
-   "tags_v": 3,
    "tags": [
     "Knock",
     "Whack, thwack",
@@ -6230,12 +6220,22 @@
     0.14,
     0.12,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 1,
+   "words": [
+    "soft-attack",
+    "warm",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 118
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_fit-snap-switch-flip.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_fit-snap-switch-flip.flac",
    "folder": "other / fit/snap",
    "name": "switch flip",
    "pack_type": "other",
@@ -6262,6 +6262,13 @@
    "flat": 0.483,
    "bumps": 3.3,
    "active_dur": 0.13,
+   "tags": [
+    "Telephone"
+   ],
+   "tag_scores": [
+    0.1
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -6271,19 +6278,12 @@
     "tiny",
     "dry"
    ],
-   "id": 119,
-   "tags_v": 3,
-   "tags": [
-    "Telephone"
-   ],
-   "tag_scores": [
-    0.1
-   ]
+   "id": 119
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_toggle-latch.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_toggle-latch.flac",
    "folder": "other / toggle",
    "name": "latch",
    "pack_type": "other",
@@ -6308,16 +6308,6 @@
    "flat": 0.405,
    "bumps": 3.3,
    "active_dur": 0.19,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 120,
-   "tags_v": 3,
    "tags": [
     "Glass",
     "Chink, clink",
@@ -6331,12 +6321,22 @@
     0.18,
     0.15,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 120
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_shutter-mirror.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_shutter-mirror.flac",
    "folder": "other / shutter",
    "name": "mirror",
    "pack_type": "other",
@@ -6363,16 +6363,6 @@
    "flat": 0.133,
    "bumps": 3.3,
    "active_dur": 0.24,
-   "onset_count": 2,
-   "words": [
-    "soft-attack",
-    "warm",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 121,
-   "tags_v": 3,
    "tags": [
     "Whack, thwack",
     "Speech",
@@ -6386,12 +6376,22 @@
     0.17,
     0.14,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 2,
+   "words": [
+    "soft-attack",
+    "warm",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 121
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_shutter-quick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_shutter-quick.flac",
    "folder": "other / shutter",
    "name": "quick",
    "pack_type": "other",
@@ -6418,6 +6418,15 @@
    "flat": 0.137,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "tags": [
+    "Tick",
+    "Plop"
+   ],
+   "tag_scores": [
+    0.09,
+    0.08
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -6426,21 +6435,12 @@
     "tiny",
     "dry"
    ],
-   "id": 122,
-   "tags_v": 3,
-   "tags": [
-    "Tick",
-    "Plop"
-   ],
-   "tag_scores": [
-    0.09,
-    0.08
-   ]
+   "id": 122
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_shutter-snap.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_shutter-snap.flac",
    "folder": "other / shutter",
    "name": "snap",
    "pack_type": "other",
@@ -6468,6 +6468,15 @@
    "flat": 0.347,
    "bumps": 3.3,
    "active_dur": 0.11,
+   "tags": [
+    "Beep, bleep",
+    "Tick"
+   ],
+   "tag_scores": [
+    0.13,
+    0.1
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "soft-attack",
@@ -6476,21 +6485,12 @@
     "tiny",
     "dry"
    ],
-   "id": 123,
-   "tags_v": 3,
-   "tags": [
-    "Beep, bleep",
-    "Tick"
-   ],
-   "tag_scores": [
-    0.13,
-    0.1
-   ]
+   "id": 123
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_shutter-film.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_shutter-film.flac",
    "folder": "other / shutter",
    "name": "film",
    "pack_type": "other",
@@ -6517,6 +6517,15 @@
    "flat": 0.014,
    "bumps": 3.3,
    "active_dur": 0.25,
+   "tags": [
+    "Music",
+    "Plop"
+   ],
+   "tag_scores": [
+    0.15,
+    0.14
+   ],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "soft-attack",
@@ -6525,21 +6534,12 @@
     "short",
     "dry"
    ],
-   "id": 124,
-   "tags_v": 3,
-   "tags": [
-    "Music",
-    "Plop"
-   ],
-   "tag_scores": [
-    0.15,
-    0.14
-   ]
+   "id": 124
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_toggle-micro.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_toggle-micro.flac",
    "folder": "other / toggle",
    "name": "micro",
    "pack_type": "other",
@@ -6564,16 +6564,6 @@
    "flat": 0.534,
    "bumps": 0.0,
    "active_dur": 0.07,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "noisy",
-    "tiny",
-    "dry"
-   ],
-   "id": 125,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -6585,12 +6575,22 @@
     0.4,
     0.37,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "noisy",
+    "tiny",
+    "dry"
+   ],
+   "id": 125
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_toggle-off.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_toggle-off.flac",
    "folder": "other / toggle",
    "name": "off",
    "pack_type": "other",
@@ -6615,6 +6615,13 @@
    "flat": 0.258,
    "bumps": 0.0,
    "active_dur": 0.13,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -6623,19 +6630,12 @@
     "tiny",
     "dry"
    ],
-   "id": 126,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 126
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_toggle-rocker.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_toggle-rocker.flac",
    "folder": "other / toggle",
    "name": "rocker",
    "pack_type": "other",
@@ -6660,16 +6660,6 @@
    "flat": 0.206,
    "bumps": 3.3,
    "active_dur": 0.16,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 127,
-   "tags_v": 3,
    "tags": [
     "Chink, clink",
     "Glass",
@@ -6683,12 +6673,22 @@
     0.2,
     0.19,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 127
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_reverse-swell-dark.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_reverse-swell-dark.flac",
    "folder": "riser / reverse swell",
    "name": "dark",
    "pack_type": "riser",
@@ -6715,14 +6715,6 @@
    "flat": 0.004,
    "bumps": 2.6,
    "active_dur": 0.82,
-   "words": [
-    "swelling",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 128,
-   "tags_v": 3,
    "tags": [
     "Explosion",
     "Eruption",
@@ -6736,12 +6728,20 @@
     0.29,
     0.27,
     0.21
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 128
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-swell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-swell.flac",
    "folder": "riser / riser",
    "name": "swell",
    "pack_type": "riser",
@@ -6768,15 +6768,6 @@
    "flat": 0.41,
    "bumps": 1.7,
    "active_dur": 2.2,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "textured",
-    "long"
-   ],
-   "id": 129,
-   "tags_v": 3,
    "tags": [
     "Tools",
     "Whoosh, swoosh, swish",
@@ -6790,12 +6781,21 @@
     0.26,
     0.24,
     0.21
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "textured",
+    "long"
+   ],
+   "id": 129
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_pro-riser-nblips.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_pro-riser-nblips.flac",
    "folder": "riser / pro riser",
    "name": "nblips",
    "pack_type": "riser",
@@ -6822,14 +6822,6 @@
    "flat": 0.676,
    "bumps": 3.0,
    "active_dur": 1.0,
-   "words": [
-    "slow-build",
-    "bright",
-    "noisy",
-    "medium"
-   ],
-   "id": 130,
-   "tags_v": 3,
    "tags": [
     "Rattle",
     "Snake",
@@ -6843,12 +6835,20 @@
     0.2,
     0.2,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "noisy",
+    "medium"
+   ],
+   "id": 130
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_pro-riser-chop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_pro-riser-chop.flac",
    "folder": "riser / pro riser",
    "name": "chop",
    "pack_type": "riser",
@@ -6875,15 +6875,6 @@
    "flat": 0.868,
    "bumps": 2.1,
    "active_dur": 1.0,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "noisy",
-    "medium"
-   ],
-   "id": 131,
-   "tags_v": 3,
    "tags": [
     "Fart",
     "Cacophony"
@@ -6891,12 +6882,21 @@
    "tag_scores": [
     0.71,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "noisy",
+    "medium"
+   ],
+   "id": 131
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-dark.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-dark.flac",
    "folder": "riser / riser",
    "name": "dark",
    "pack_type": "riser",
@@ -6923,14 +6923,6 @@
    "flat": 0.024,
    "bumps": 7.8,
    "active_dur": 0.93,
-   "words": [
-    "slow-build",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 132,
-   "tags_v": 3,
    "tags": [
     "Fire",
     "Crackle",
@@ -6944,12 +6936,20 @@
     0.17,
     0.16,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 132
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-tension.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-tension.flac",
    "folder": "riser / riser",
    "name": "tension",
    "pack_type": "riser",
@@ -6976,15 +6976,6 @@
    "flat": 0.453,
    "bumps": 3.0,
    "active_dur": 2.8,
-   "words": [
-    "slow-build",
-    "mid",
-    "thin",
-    "textured",
-    "long"
-   ],
-   "id": 133,
-   "tags_v": 3,
    "tags": [
     "Alarm",
     "Siren",
@@ -6998,12 +6989,21 @@
     0.36,
     0.25,
     0.24
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "mid",
+    "thin",
+    "textured",
+    "long"
+   ],
+   "id": 133
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-shepard.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-shepard.flac",
    "folder": "riser / riser",
    "name": "shepard",
    "pack_type": "riser",
@@ -7030,14 +7030,6 @@
    "flat": 0.239,
    "bumps": 0.0,
    "active_dur": 3.71,
-   "words": [
-    "slow-build",
-    "warm",
-    "textured",
-    "long"
-   ],
-   "id": 134,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Siren",
@@ -7051,12 +7043,20 @@
     0.57,
     0.49,
     0.34
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "warm",
+    "textured",
+    "long"
+   ],
+   "id": 134
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_reverse-swell-cymbal.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_reverse-swell-cymbal.flac",
    "folder": "riser / reverse swell",
    "name": "cymbal",
    "pack_type": "riser",
@@ -7083,16 +7083,6 @@
    "flat": 0.343,
    "bumps": 8.3,
    "active_dur": 0.84,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "textured",
-    "medium",
-    "pulsing"
-   ],
-   "id": 135,
-   "tags_v": 3,
    "tags": [
     "Rattle",
     "Snake",
@@ -7106,12 +7096,22 @@
     0.35,
     0.26,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "textured",
+    "medium",
+    "pulsing"
+   ],
+   "id": 135
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_pro-riser-roll.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_pro-riser-roll.flac",
    "folder": "riser / pro riser",
    "name": "roll",
    "pack_type": "riser",
@@ -7138,15 +7138,6 @@
    "flat": 0.673,
    "bumps": 6.8,
    "active_dur": 1.3,
-   "words": [
-    "slow-build",
-    "mid",
-    "thin",
-    "noisy",
-    "medium"
-   ],
-   "id": 136,
-   "tags_v": 3,
    "tags": [
     "Cacophony",
     "Explosion",
@@ -7160,12 +7151,21 @@
     0.23,
     0.22,
     0.17
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "mid",
+    "thin",
+    "noisy",
+    "medium"
+   ],
+   "id": 136
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_pro-riser-air-gate.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_pro-riser-air-gate.flac",
    "folder": "riser / pro riser",
    "name": "air gate",
    "pack_type": "riser",
@@ -7192,15 +7192,6 @@
    "flat": 0.731,
    "bumps": 6.9,
    "active_dur": 1.2,
-   "words": [
-    "slow-build",
-    "mid",
-    "thin",
-    "noisy",
-    "medium"
-   ],
-   "id": 137,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Synthesizer",
@@ -7214,12 +7205,21 @@
     0.61,
     0.33,
     0.2
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "mid",
+    "thin",
+    "noisy",
+    "medium"
+   ],
+   "id": 137
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_pro-riser-nblips-hi.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_pro-riser-nblips-hi.flac",
    "folder": "riser / pro riser",
    "name": "nblips hi",
    "pack_type": "riser",
@@ -7246,16 +7246,6 @@
    "flat": 0.697,
    "bumps": 9.2,
    "active_dur": 0.85,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "noisy",
-    "medium",
-    "pulsing"
-   ],
-   "id": 138,
-   "tags_v": 3,
    "tags": [
     "Clatter",
     "Vehicle",
@@ -7267,12 +7257,22 @@
     0.11,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "noisy",
+    "medium",
+    "pulsing"
+   ],
+   "id": 138
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-rush.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-rush.flac",
    "folder": "riser / riser",
    "name": "rush",
    "pack_type": "riser",
@@ -7299,15 +7299,6 @@
    "flat": 0.782,
    "bumps": 0.0,
    "active_dur": 1.76,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "noisy",
-    "long"
-   ],
-   "id": 139,
-   "tags_v": 3,
    "tags": [
     "Slosh",
     "Splash, splatter",
@@ -7321,12 +7312,21 @@
     0.31,
     0.26,
     0.25
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "noisy",
+    "long"
+   ],
+   "id": 139
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-air.flac",
    "folder": "riser / riser",
    "name": "air",
    "pack_type": "riser",
@@ -7353,15 +7353,6 @@
    "flat": 0.662,
    "bumps": 0.0,
    "active_dur": 2.4,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "noisy",
-    "long"
-   ],
-   "id": 140,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "White noise",
@@ -7375,12 +7366,21 @@
     0.32,
     0.11,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "noisy",
+    "long"
+   ],
+   "id": 140
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-snatch.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-snatch.flac",
    "folder": "riser / riser",
    "name": "snatch",
    "pack_type": "riser",
@@ -7407,15 +7407,6 @@
    "flat": 0.027,
    "bumps": 8.3,
    "active_dur": 0.64,
-   "words": [
-    "swelling",
-    "dark",
-    "tonal",
-    "medium",
-    "pulsing"
-   ],
-   "id": 141,
-   "tags_v": 3,
    "tags": [
     "Arrow",
     "Explosion",
@@ -7429,12 +7420,21 @@
     0.16,
     0.15,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "tonal",
+    "medium",
+    "pulsing"
+   ],
+   "id": 141
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_reverse-swell-short.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_reverse-swell-short.flac",
    "folder": "riser / reverse swell",
    "name": "short",
    "pack_type": "riser",
@@ -7461,15 +7461,6 @@
    "flat": 0.299,
    "bumps": 3.3,
    "active_dur": 0.51,
-   "words": [
-    "swelling",
-    "bright",
-    "thin",
-    "textured",
-    "short"
-   ],
-   "id": 142,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Mechanisms",
@@ -7481,12 +7472,21 @@
     0.55,
     0.45,
     0.24
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "bright",
+    "thin",
+    "textured",
+    "short"
+   ],
+   "id": 142
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_reverse-swell-breath.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_reverse-swell-breath.flac",
    "folder": "riser / reverse swell",
    "name": "breath",
    "pack_type": "riser",
@@ -7513,15 +7513,6 @@
    "flat": 0.011,
    "bumps": 5.8,
    "active_dur": 1.09,
-   "words": [
-    "swelling",
-    "warm",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 143,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow",
@@ -7531,12 +7522,21 @@
     0.13,
     0.12,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 143
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_reverse-swell-ring.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_reverse-swell-ring.flac",
    "folder": "riser / reverse swell",
    "name": "ring",
    "pack_type": "riser",
@@ -7563,15 +7563,6 @@
    "flat": 0.231,
    "bumps": 4.3,
    "active_dur": 1.41,
-   "words": [
-    "swelling",
-    "mid",
-    "thin",
-    "textured",
-    "medium"
-   ],
-   "id": 144,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Percussion",
@@ -7585,12 +7576,21 @@
     0.13,
     0.1,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "thin",
+    "textured",
+    "medium"
+   ],
+   "id": 144
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-build.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-build.flac",
    "folder": "riser / riser",
    "name": "build",
    "pack_type": "riser",
@@ -7617,15 +7617,6 @@
    "flat": 0.023,
    "bumps": 6.8,
    "active_dur": 1.6,
-   "words": [
-    "slow-build",
-    "sub",
-    "heavy",
-    "tonal",
-    "long"
-   ],
-   "id": 145,
-   "tags_v": 3,
    "tags": [
     "Thunk",
     "Knock",
@@ -7639,12 +7630,21 @@
     0.65,
     0.51,
     0.47
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "sub",
+    "heavy",
+    "tonal",
+    "long"
+   ],
+   "id": 145
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-zing.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-zing.flac",
    "folder": "whoosh / swish",
    "name": "zing",
    "pack_type": "whoosh",
@@ -7671,14 +7671,6 @@
    "flat": 0.01,
    "bumps": 3.3,
    "active_dur": 0.36,
-   "words": [
-    "punchy",
-    "warm",
-    "tonal",
-    "short"
-   ],
-   "id": 146,
-   "tags_v": 3,
    "tags": [
     "Thunk",
     "Arrow",
@@ -7692,12 +7684,20 @@
     0.35,
     0.18,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "tonal",
+    "short"
+   ],
+   "id": 146
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-reverse.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-reverse.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "reverse",
    "pack_type": "whoosh",
@@ -7724,16 +7724,6 @@
    "flat": 0.005,
    "bumps": 5.4,
    "active_dur": 0.86,
-   "words": [
-    "slow-build",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "dry"
-   ],
-   "id": 147,
-   "tags_v": 3,
    "tags": [
     "Heart murmur",
     "Heart sounds, heartbeat",
@@ -7745,12 +7735,22 @@
     0.61,
     0.47,
     0.45
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "dry"
+   ],
+   "id": 147
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-crisp.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-crisp.flac",
    "folder": "whoosh / whoosh fast",
    "name": "crisp",
    "pack_type": "whoosh",
@@ -7777,14 +7777,6 @@
    "flat": 0.032,
    "bumps": 3.3,
    "active_dur": 0.56,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 148,
-   "tags_v": 3,
    "tags": [
     "Explosion",
     "Gunshot, gunfire",
@@ -7794,12 +7786,20 @@
     0.22,
     0.13,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 148
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-bright.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-bright.flac",
    "folder": "whoosh / swish",
    "name": "bright",
    "pack_type": "whoosh",
@@ -7826,16 +7826,6 @@
    "flat": 0.342,
    "bumps": 3.3,
    "active_dur": 0.29,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 149,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Whip",
@@ -7849,12 +7839,22 @@
     0.28,
     0.17,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 149
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-swell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-swell.flac",
    "folder": "whoosh / whoosh big",
    "name": "swell",
    "pack_type": "whoosh",
@@ -7881,14 +7881,6 @@
    "flat": 0.086,
    "bumps": 2.6,
    "active_dur": 1.02,
-   "words": [
-    "swelling",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 150,
-   "tags_v": 3,
    "tags": [
     "Explosion",
     "Arrow",
@@ -7902,12 +7894,20 @@
     0.26,
     0.25,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 150
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-arc.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-arc.flac",
    "folder": "whoosh / pro zip",
    "name": "arc",
    "pack_type": "whoosh",
@@ -7934,15 +7934,6 @@
    "flat": 0.195,
    "bumps": 6.7,
    "active_dur": 0.35,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "short"
-   ],
-   "id": 151,
-   "tags_v": 3,
    "tags": [
     "Beep, bleep",
     "Siren",
@@ -7952,12 +7943,21 @@
     0.13,
     0.12,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "short"
+   ],
+   "id": 151
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-paper.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-paper.flac",
    "folder": "whoosh / swipe",
    "name": "paper",
    "pack_type": "whoosh",
@@ -7984,14 +7984,6 @@
    "flat": 0.105,
    "bumps": 3.3,
    "active_dur": 0.43,
-   "words": [
-    "soft-attack",
-    "warm",
-    "tonal",
-    "short"
-   ],
-   "id": 152,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Crack",
@@ -8005,12 +7997,20 @@
     0.53,
     0.48,
     0.43
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "tonal",
+    "short"
+   ],
+   "id": 152
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-tight.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-tight.flac",
    "folder": "whoosh / whoosh fast",
    "name": "tight",
    "pack_type": "whoosh",
@@ -8037,6 +8037,15 @@
    "flat": 0.034,
    "bumps": 3.3,
    "active_dur": 0.33,
+   "tags": [
+    "Whoosh, swoosh, swish",
+    "Arrow"
+   ],
+   "tag_scores": [
+    0.61,
+    0.5
+   ],
+   "tags_v": 3,
    "words": [
     "soft-attack",
     "warm",
@@ -8045,21 +8054,12 @@
     "short",
     "dry"
    ],
-   "id": 153,
-   "tags_v": 3,
-   "tags": [
-    "Whoosh, swoosh, swish",
-    "Arrow"
-   ],
-   "tag_scores": [
-    0.61,
-    0.5
-   ]
+   "id": 153
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-cloth.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-cloth.flac",
    "folder": "whoosh / swipe",
    "name": "cloth",
    "pack_type": "whoosh",
@@ -8086,14 +8086,6 @@
    "flat": 0.074,
    "bumps": 3.3,
    "active_dur": 0.47,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 154,
-   "tags_v": 3,
    "tags": [
     "Breaking",
     "Shatter",
@@ -8107,12 +8099,20 @@
     0.5,
     0.41,
     0.37
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 154
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-sleeve.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-sleeve.flac",
    "folder": "whoosh / whoosh fast",
    "name": "sleeve",
    "pack_type": "whoosh",
@@ -8139,14 +8139,6 @@
    "flat": 0.033,
    "bumps": 3.3,
    "active_dur": 0.52,
-   "words": [
-    "soft-attack",
-    "warm",
-    "tonal",
-    "short"
-   ],
-   "id": 155,
-   "tags_v": 3,
    "tags": [
     "Breaking",
     "Crack",
@@ -8160,12 +8152,20 @@
     0.46,
     0.32,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "tonal",
+    "short"
+   ],
+   "id": 155
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-jet.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-jet.flac",
    "folder": "whoosh / whoosh big",
    "name": "jet",
    "pack_type": "whoosh",
@@ -8192,14 +8192,6 @@
    "flat": 0.037,
    "bumps": 2.4,
    "active_dur": 1.23,
-   "words": [
-    "swelling",
-    "warm",
-    "tonal",
-    "medium"
-   ],
-   "id": 156,
-   "tags_v": 3,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8213,12 +8205,20 @@
     0.4,
     0.22,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "tonal",
+    "medium"
+   ],
+   "id": 156
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump-airy.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump-airy.flac",
    "folder": "whoosh / whoosh big",
    "name": "thump airy",
    "pack_type": "whoosh",
@@ -8245,14 +8245,6 @@
    "flat": 0.013,
    "bumps": 7.0,
    "active_dur": 0.69,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 157,
-   "tags_v": 3,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8266,12 +8258,20 @@
     0.32,
     0.1,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 157
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-whistle.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-whistle.flac",
    "folder": "whoosh / whoosh fast",
    "name": "whistle",
    "pack_type": "whoosh",
@@ -8298,15 +8298,6 @@
    "flat": 0.018,
    "bumps": 3.3,
    "active_dur": 0.55,
-   "words": [
-    "soft-attack",
-    "dark",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 158,
-   "tags_v": 3,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8320,12 +8311,21 @@
     0.37,
     0.19,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 158
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-velvet.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-velvet.flac",
    "folder": "whoosh / swipe",
    "name": "velvet",
    "pack_type": "whoosh",
@@ -8352,14 +8352,6 @@
    "flat": 0.042,
    "bumps": 6.7,
    "active_dur": 0.71,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 159,
-   "tags_v": 3,
    "tags": [
     "Breaking",
     "Firecracker",
@@ -8373,12 +8365,20 @@
     0.37,
     0.34,
     0.32
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 159
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump-deep.flac",
    "folder": "whoosh / whoosh big",
    "name": "thump deep",
    "pack_type": "whoosh",
@@ -8405,15 +8405,6 @@
    "flat": 0.022,
    "bumps": 6.7,
    "active_dur": 1.14,
-   "words": [
-    "swelling",
-    "dark",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 160,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow",
@@ -8427,12 +8418,21 @@
     0.3,
     0.25,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 160
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-long.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-long.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "long",
    "pack_type": "whoosh",
@@ -8459,15 +8459,6 @@
    "flat": 0.004,
    "bumps": 4.3,
    "active_dur": 0.9,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 161,
-   "tags_v": 3,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8481,12 +8472,21 @@
     0.4,
     0.13,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 161
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-cane.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-cane.flac",
    "folder": "whoosh / swish",
    "name": "cane",
    "pack_type": "whoosh",
@@ -8513,14 +8513,6 @@
    "flat": 0.01,
    "bumps": 3.3,
    "active_dur": 0.42,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 162,
-   "tags_v": 3,
    "tags": [
     "Arrow",
     "Thump, thud",
@@ -8534,12 +8526,20 @@
     0.16,
     0.13,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 162
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-reverse.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-reverse.flac",
    "folder": "whoosh / whoosh big",
    "name": "reverse",
    "pack_type": "whoosh",
@@ -8566,15 +8566,6 @@
    "flat": 0.038,
    "bumps": 2.1,
    "active_dur": 1.18,
-   "words": [
-    "slow-build",
-    "dark",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 163,
-   "tags_v": 3,
    "tags": [
     "Wind",
     "Whoosh, swoosh, swish",
@@ -8588,12 +8579,21 @@
     0.41,
     0.35,
     0.34
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "dark",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 163
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_fit-whoosh-short-bamboo-swish.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_fit-whoosh-short-bamboo-swish.flac",
    "folder": "whoosh / fit/whoosh.short",
    "name": "bamboo swish",
    "pack_type": "whoosh",
@@ -8620,14 +8620,6 @@
    "flat": 0.034,
    "bumps": 3.3,
    "active_dur": 0.36,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 164,
-   "tags_v": 3,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8639,12 +8631,20 @@
     0.34,
     0.21,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 164
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-gust.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-gust.flac",
    "folder": "whoosh / whoosh big",
    "name": "gust",
    "pack_type": "whoosh",
@@ -8671,14 +8671,6 @@
    "flat": 0.146,
    "bumps": 6.8,
    "active_dur": 1.47,
-   "words": [
-    "swelling",
-    "warm",
-    "textured",
-    "medium"
-   ],
-   "id": 165,
-   "tags_v": 3,
    "tags": [
     "Glass",
     "Explosion",
@@ -8692,12 +8684,20 @@
     0.24,
     0.22,
     0.2
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "textured",
+    "medium"
+   ],
+   "id": 165
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump.flac",
    "folder": "whoosh / whoosh big",
    "name": "thump",
    "pack_type": "whoosh",
@@ -8724,15 +8724,6 @@
    "flat": 0.028,
    "bumps": 7.0,
    "active_dur": 0.8,
-   "words": [
-    "soft-attack",
-    "dark",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 166,
-   "tags_v": 3,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8746,12 +8737,21 @@
     0.19,
     0.18,
     0.17
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 166
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-soft.flac",
    "folder": "whoosh / swish",
    "name": "soft",
    "pack_type": "whoosh",
@@ -8778,14 +8778,6 @@
    "flat": 0.045,
    "bumps": 3.3,
    "active_dur": 0.61,
-   "words": [
-    "soft-attack",
-    "warm",
-    "tonal",
-    "medium"
-   ],
-   "id": 167,
-   "tags_v": 3,
    "tags": [
     "Knock",
     "Fart",
@@ -8799,12 +8791,20 @@
     0.16,
     0.16,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "tonal",
+    "medium"
+   ],
+   "id": 167
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-windy.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-windy.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "windy",
    "pack_type": "whoosh",
@@ -8831,15 +8831,6 @@
    "flat": 0.002,
    "bumps": 3.3,
    "active_dur": 0.63,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 168,
-   "tags_v": 3,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8851,12 +8842,21 @@
     0.55,
     0.27,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 168
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-deep.flac",
    "folder": "whoosh / whoosh big",
    "name": "deep",
    "pack_type": "whoosh",
@@ -8883,15 +8883,6 @@
    "flat": 0.025,
    "bumps": 3.2,
    "active_dur": 1.49,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 169,
-   "tags_v": 3,
    "tags": [
     "Thump, thud",
     "Arrow",
@@ -8905,12 +8896,21 @@
     0.38,
     0.32,
     0.27
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 169
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-cape.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-cape.flac",
    "folder": "whoosh / whoosh big",
    "name": "cape",
    "pack_type": "whoosh",
@@ -8937,15 +8937,6 @@
    "flat": 0.044,
    "bumps": 9.4,
    "active_dur": 0.95,
-   "words": [
-    "swelling",
-    "dark",
-    "tonal",
-    "medium",
-    "pulsing"
-   ],
-   "id": 170,
-   "tags_v": 3,
    "tags": [
     "Thunk",
     "Shatter",
@@ -8959,12 +8950,21 @@
     0.66,
     0.65,
     0.51
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "tonal",
+    "medium",
+    "pulsing"
+   ],
+   "id": 170
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-glide.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-glide.flac",
    "folder": "whoosh / swipe",
    "name": "glide",
    "pack_type": "whoosh",
@@ -8991,14 +8991,6 @@
    "flat": 0.065,
    "bumps": 6.7,
    "active_dur": 0.51,
-   "words": [
-    "swelling",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 171,
-   "tags_v": 3,
    "tags": [
     "Thunk",
     "Knock",
@@ -9012,12 +9004,20 @@
     0.46,
     0.32,
     0.26
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 171
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-up.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-up.flac",
    "folder": "whoosh / pro zip",
    "name": "up",
    "pack_type": "whoosh",
@@ -9044,15 +9044,6 @@
    "flat": 0.119,
    "bumps": 6.7,
    "active_dur": 0.25,
-   "words": [
-    "swelling",
-    "warm",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 172,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Whip",
@@ -9066,12 +9057,21 @@
     0.16,
     0.11,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 172
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-down-warm.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-down-warm.flac",
    "folder": "whoosh / pro zip",
    "name": "down warm",
    "pack_type": "whoosh",
@@ -9098,25 +9098,25 @@
    "flat": 0.09,
    "bumps": 3.3,
    "active_dur": 0.32,
+   "tags": [
+    "Plop"
+   ],
+   "tag_scores": [
+    0.96
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
     "tonal",
     "short"
    ],
-   "id": 173,
-   "tags_v": 3,
-   "tags": [
-    "Plop"
-   ],
-   "tag_scores": [
-    0.96
-   ]
+   "id": 173
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-reverse.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-reverse.flac",
    "folder": "whoosh / whoosh fast",
    "name": "reverse",
    "pack_type": "whoosh",
@@ -9143,15 +9143,6 @@
    "flat": 0.021,
    "bumps": 3.3,
    "active_dur": 0.54,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 174,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow",
@@ -9165,12 +9156,21 @@
     0.22,
     0.16,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 174
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-tonal.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-tonal.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "tonal",
    "pack_type": "whoosh",
@@ -9197,15 +9197,6 @@
    "flat": 0.003,
    "bumps": 2.8,
    "active_dur": 0.65,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 175,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow"
@@ -9213,12 +9204,21 @@
    "tag_scores": [
     0.98,
     0.95
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 175
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-whip.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-whip.flac",
    "folder": "whoosh / whoosh fast",
    "name": "whip",
    "pack_type": "whoosh",
@@ -9245,16 +9245,6 @@
    "flat": 0.378,
    "bumps": 8.1,
    "active_dur": 0.64,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "medium",
-    "pulsing"
-   ],
-   "id": 176,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Burst, pop",
@@ -9268,12 +9258,22 @@
     0.13,
     0.12,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "medium",
+    "pulsing"
+   ],
+   "id": 176
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-down.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-down.flac",
    "folder": "whoosh / pro zip",
    "name": "down",
    "pack_type": "whoosh",
@@ -9300,16 +9300,6 @@
    "flat": 0.298,
    "bumps": 3.3,
    "active_dur": 0.24,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 177,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Ding",
@@ -9319,12 +9309,22 @@
     0.47,
     0.34,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 177
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-up-hi.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-up-hi.flac",
    "folder": "whoosh / pro zip",
    "name": "up hi",
    "pack_type": "whoosh",
@@ -9351,15 +9351,6 @@
    "flat": 0.561,
    "bumps": 3.3,
    "active_dur": 0.28,
-   "words": [
-    "swelling",
-    "mid",
-    "noisy",
-    "short",
-    "dry"
-   ],
-   "id": 178,
-   "tags_v": 3,
    "tags": [
     "Chink, clink",
     "Glass",
@@ -9371,12 +9362,21 @@
     0.19,
     0.16,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "noisy",
+    "short",
+    "dry"
+   ],
+   "id": 178
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-flick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-flick.flac",
    "folder": "whoosh / swish",
    "name": "flick",
    "pack_type": "whoosh",
@@ -9403,16 +9403,6 @@
    "flat": 0.453,
    "bumps": 3.3,
    "active_dur": 0.24,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 179,
-   "tags_v": 3,
    "tags": [
     "Gunshot, gunfire",
     "Explosion",
@@ -9426,12 +9416,22 @@
     0.2,
     0.16,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 179
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-heavy.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-heavy.flac",
    "folder": "whoosh / whoosh fast",
    "name": "heavy",
    "pack_type": "whoosh",
@@ -9458,14 +9458,6 @@
    "flat": 0.018,
    "bumps": 3.3,
    "active_dur": 0.48,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 180,
-   "tags_v": 3,
    "tags": [
     "Thump, thud",
     "Arrow",
@@ -9479,12 +9471,20 @@
     0.52,
     0.44,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 180
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-flick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-flick.flac",
    "folder": "whoosh / swipe",
    "name": "flick",
    "pack_type": "whoosh",
@@ -9511,14 +9511,6 @@
    "flat": 0.056,
    "bumps": 3.3,
    "active_dur": 0.37,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 181,
-   "tags_v": 3,
    "tags": [
     "Crack",
     "Breaking",
@@ -9532,12 +9524,20 @@
     0.36,
     0.32,
     0.27
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 181
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-stick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-stick.flac",
    "folder": "whoosh / swish",
    "name": "stick",
    "pack_type": "whoosh",
@@ -9564,14 +9564,6 @@
    "flat": 0.01,
    "bumps": 3.3,
    "active_dur": 0.37,
-   "words": [
-    "punchy",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 182,
-   "tags_v": 3,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -9585,12 +9577,20 @@
     0.43,
     0.23,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 182
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-blade.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-blade.flac",
    "folder": "whoosh / swish",
    "name": "blade",
    "pack_type": "whoosh",
@@ -9617,15 +9617,6 @@
    "flat": 0.052,
    "bumps": 3.3,
    "active_dur": 0.25,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 183,
-   "tags_v": 3,
    "tags": [
     "Chink, clink",
     "Glass",
@@ -9639,12 +9630,21 @@
     0.44,
     0.25,
     0.22
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 183
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-swell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-swell.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "swell",
    "pack_type": "whoosh",
@@ -9671,15 +9671,6 @@
    "flat": 0.006,
    "bumps": 3.1,
    "active_dur": 0.66,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 184,
-   "tags_v": 3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow"
@@ -9687,12 +9678,21 @@
    "tag_scores": [
     0.97,
     0.93
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 184
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-gritty.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-gritty.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "gritty",
    "pack_type": "whoosh",
@@ -9719,15 +9719,6 @@
    "flat": 0.007,
    "bumps": 5.0,
    "active_dur": 0.64,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 185,
-   "tags_v": 3,
    "tags": [
     "Fart",
     "Whack, thwack",
@@ -9741,12 +9732,21 @@
     0.2,
     0.13,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 185
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_hover-tick-detent.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_hover-tick-detent.flac",
    "folder": "click / hover tick",
    "name": "detent",
    "pack_type": "click",
@@ -9773,6 +9773,9 @@
    "flat": 0.154,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -9782,15 +9785,12 @@
     "tiny",
     "dry"
    ],
-   "id": 186,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 186
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_click-tink.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_click-tink.flac",
    "folder": "click / click",
    "name": "tink",
    "pack_type": "click",
@@ -9817,6 +9817,13 @@
    "flat": 0.133,
    "bumps": 0.0,
    "active_dur": 0.07,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.26
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -9826,19 +9833,12 @@
     "tiny",
     "dry"
    ],
-   "id": 187,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.26
-   ]
+   "id": 187
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_hover-tick-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_hover-tick-air.flac",
    "folder": "click / hover tick",
    "name": "air",
    "pack_type": "click",
@@ -9865,6 +9865,9 @@
    "flat": 0.111,
    "bumps": 0.0,
    "active_dur": 0.07,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -9874,15 +9877,12 @@
     "tiny",
     "dry"
    ],
-   "id": 188,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 188
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-click-snap.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-click-snap.flac",
    "folder": "click / pro click",
    "name": "snap",
    "pack_type": "click",
@@ -9909,6 +9909,13 @@
    "flat": 0.111,
    "bumps": 0.0,
    "active_dur": 0.05,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.11
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -9918,19 +9925,12 @@
     "tiny",
     "dry"
    ],
-   "id": 189,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.11
-   ]
+   "id": 189
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_click-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_click-double.flac",
    "folder": "click / click",
    "name": "double",
    "pack_type": "click",
@@ -9957,6 +9957,13 @@
    "flat": 0.287,
    "bumps": 0.0,
    "active_dur": 0.09,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.08
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -9966,19 +9973,12 @@
     "tiny",
     "dry"
    ],
-   "id": 190,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.08
-   ]
+   "id": 190
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_fit-click-floss-lid.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_fit-click-floss-lid.flac",
    "folder": "click / fit/click",
    "name": "floss lid",
    "pack_type": "click",
@@ -10005,6 +10005,13 @@
    "flat": 0.318,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.18
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -10013,19 +10020,12 @@
     "tiny",
     "dry"
    ],
-   "id": 191,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.18
-   ]
+   "id": 191
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_fit-tick-domino.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_fit-tick-domino.flac",
    "folder": "click / fit/tick",
    "name": "domino",
    "pack_type": "click",
@@ -10052,17 +10052,6 @@
    "flat": 0.186,
    "bumps": 0.0,
    "active_dur": 0.09,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 192,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -10074,12 +10063,23 @@
     0.15,
     0.14,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 192
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_click-snap.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_click-snap.flac",
    "folder": "click / click",
    "name": "snap",
    "pack_type": "click",
@@ -10106,6 +10106,9 @@
    "flat": 0.319,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -10115,15 +10118,12 @@
     "tiny",
     "dry"
    ],
-   "id": 193,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 193
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-hover-tick-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-hover-tick-glass.flac",
    "folder": "click / pro hover tick",
    "name": "glass",
    "pack_type": "click",
@@ -10152,6 +10152,9 @@
    "flat": 0.4,
    "bumps": 0.0,
    "active_dur": 0.04,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -10161,15 +10164,12 @@
     "tiny",
     "dry"
    ],
-   "id": 194,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 194
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_click-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_click-soft.flac",
    "folder": "click / click",
    "name": "soft",
    "pack_type": "click",
@@ -10196,6 +10196,13 @@
    "flat": 0.368,
    "bumps": 0.0,
    "active_dur": 0.09,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.12
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -10205,19 +10212,12 @@
     "tiny",
     "dry"
    ],
-   "id": 195,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.12
-   ]
+   "id": 195
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_notify-mid-tine.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_notify-mid-tine.flac",
    "folder": "click / notify",
    "name": "mid tine",
    "pack_type": "click",
@@ -10244,16 +10244,6 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.29,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 196,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Plop",
@@ -10263,12 +10253,22 @@
     0.75,
     0.16,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 196
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-hover-tick-ping.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-hover-tick-ping.flac",
    "folder": "click / pro hover tick",
    "name": "ping",
    "pack_type": "click",
@@ -10295,6 +10295,9 @@
    "flat": 0.238,
    "bumps": 0.0,
    "active_dur": 0.04,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -10304,15 +10307,12 @@
     "tiny",
     "dry"
    ],
-   "id": 197,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 197
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_notify-mid-wood.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_notify-mid-wood.flac",
    "folder": "click / notify",
    "name": "mid wood",
    "pack_type": "click",
@@ -10339,16 +10339,6 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.29,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 198,
-   "tags_v": 3,
    "tags": [
     "Telephone",
     "Alarm",
@@ -10358,12 +10348,22 @@
     0.24,
     0.23,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 198
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-click-mouse.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-click-mouse.flac",
    "folder": "click / pro click",
    "name": "mouse",
    "pack_type": "click",
@@ -10390,17 +10390,6 @@
    "flat": 0.006,
    "bumps": 0.0,
    "active_dur": 0.05,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 199,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -10410,12 +10399,23 @@
     0.18,
     0.1,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 199
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-click-tink.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-click-tink.flac",
    "folder": "click / pro click",
    "name": "tink",
    "pack_type": "click",
@@ -10442,6 +10442,13 @@
    "flat": 0.132,
    "bumps": 0.0,
    "active_dur": 0.04,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.12
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -10451,19 +10458,12 @@
     "tiny",
     "dry"
    ],
-   "id": 200,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.12
-   ]
+   "id": 200
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_hover-tick-ping.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_hover-tick-ping.flac",
    "folder": "click / hover tick",
    "name": "ping",
    "pack_type": "click",
@@ -10490,6 +10490,13 @@
    "flat": 0.38,
    "bumps": 0.0,
    "active_dur": 0.05,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -10499,19 +10506,12 @@
     "tiny",
     "dry"
    ],
-   "id": 201,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 201
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_hover-tick-high.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_hover-tick-high.flac",
    "folder": "click / hover tick",
    "name": "high",
    "pack_type": "click",
@@ -10538,6 +10538,13 @@
    "flat": 0.086,
    "bumps": 0.0,
    "active_dur": 0.05,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.11
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -10547,19 +10554,12 @@
     "tiny",
     "dry"
    ],
-   "id": 202,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.11
-   ]
+   "id": 202
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-hover-tick-detent.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-hover-tick-detent.flac",
    "folder": "click / pro hover tick",
    "name": "detent",
    "pack_type": "click",
@@ -10586,6 +10586,13 @@
    "flat": 0.318,
    "bumps": 0.0,
    "active_dur": 0.04,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.1
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -10595,19 +10602,12 @@
     "tiny",
     "dry"
    ],
-   "id": 203,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.1
-   ]
+   "id": 203
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-click-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-click-soft.flac",
    "folder": "click / pro click",
    "name": "soft",
    "pack_type": "click",
@@ -10634,17 +10634,6 @@
    "flat": 0.026,
    "bumps": 0.0,
    "active_dur": 0.04,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 204,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -10654,12 +10643,23 @@
     0.23,
     0.12,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 204
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_click-thock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_click-thock.flac",
    "folder": "click / click",
    "name": "thock",
    "pack_type": "click",
@@ -10686,6 +10686,13 @@
    "flat": 0.098,
    "bumps": 0.0,
    "active_dur": 0.09,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.12
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -10694,19 +10701,12 @@
     "tiny",
     "dry"
    ],
-   "id": 205,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.12
-   ]
+   "id": 205
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-hover-tick-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-hover-tick-soft.flac",
    "folder": "click / pro hover tick",
    "name": "soft",
    "pack_type": "click",
@@ -10733,6 +10733,9 @@
    "flat": 0.172,
    "bumps": 0.0,
    "active_dur": 0.03,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -10742,15 +10745,12 @@
     "tiny",
     "dry"
    ],
-   "id": 206,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 206
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-hover-tick-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-hover-tick-air.flac",
    "folder": "click / pro hover tick",
    "name": "air",
    "pack_type": "click",
@@ -10778,6 +10778,9 @@
    "flat": 0.309,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "onset_count": 1,
    "words": [
     "punchy",
@@ -10787,15 +10790,12 @@
     "tiny",
     "dry"
    ],
-   "id": 207,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 207
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-click-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-click-glass.flac",
    "folder": "click / pro click",
    "name": "glass",
    "pack_type": "click",
@@ -10823,6 +10823,13 @@
    "flat": 0.26,
    "bumps": 0.0,
    "active_dur": 0.05,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.11
+   ],
+   "tags_v": 3,
    "onset_count": 0,
    "words": [
     "punchy",
@@ -10832,19 +10839,12 @@
     "tiny",
     "dry"
    ],
-   "id": 208,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.11
-   ]
+   "id": 208
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_hover-tick-mid.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_hover-tick-mid.flac",
    "folder": "click / hover tick",
    "name": "mid",
    "pack_type": "click",
@@ -10871,17 +10871,6 @@
    "flat": 0.134,
    "bumps": 0.0,
    "active_dur": 0.08,
-   "onset_count": 0,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 209,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -10895,12 +10884,23 @@
     0.13,
     0.11,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "onset_count": 0,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 209
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_logo-sting-soft-bloom.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_logo-sting-soft-bloom.flac",
    "folder": "chime / logo sting",
    "name": "soft bloom",
    "pack_type": "chime",
@@ -10928,14 +10928,6 @@
    "flat": 0.018,
    "bumps": 2.6,
    "active_dur": 1.06,
-   "words": [
-    "soft-attack",
-    "bright",
-    "tonal",
-    "medium"
-   ],
-   "id": 210,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Jingle, tinkle",
@@ -10949,12 +10941,20 @@
     0.34,
     0.29,
     0.17
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "bright",
+    "tonal",
+    "medium"
+   ],
+   "id": 210
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m5.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m5.flac",
    "folder": "chime / notify",
    "name": "m5",
    "pack_type": "chime",
@@ -10982,16 +10982,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.46,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 211,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Glass",
@@ -11005,12 +10995,22 @@
     0.5,
     0.2,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 211
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m4.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m4.flac",
    "folder": "chime / pro shimmer",
    "name": "m4",
    "pack_type": "chime",
@@ -11038,15 +11038,6 @@
    "flat": 0.061,
    "bumps": 4.3,
    "active_dur": 1.91,
-   "words": [
-    "swelling",
-    "mid",
-    "thin",
-    "tonal",
-    "long"
-   ],
-   "id": 212,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Percussion",
@@ -11060,12 +11051,21 @@
     0.34,
     0.29,
     0.18
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "thin",
+    "tonal",
+    "long"
+   ],
+   "id": 212
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-swell-sting.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-swell-sting.flac",
    "folder": "chime / pro logo sting",
    "name": "swell sting",
    "pack_type": "chime",
@@ -11093,15 +11093,6 @@
    "flat": 0.007,
    "bumps": 2.9,
    "active_dur": 1.15,
-   "words": [
-    "swelling",
-    "dark",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 213,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Ding"
@@ -11109,12 +11100,21 @@
    "tag_scores": [
     0.94,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 213
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-marimba.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-marimba.flac",
    "folder": "chime / mallet",
    "name": "marimba",
    "pack_type": "chime",
@@ -11142,16 +11142,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.33,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 214,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Clang",
@@ -11165,12 +11155,22 @@
     0.12,
     0.11,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 214
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-1822.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-1822.flac",
    "folder": "chime / pro notify",
    "name": "ding 1822",
    "pack_type": "chime",
@@ -11198,16 +11198,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.23,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 215,
-   "tags_v": 3,
    "tags": [
     "Telephone",
     "Alarm",
@@ -11217,12 +11207,22 @@
     0.15,
     0.11,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 215
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m4.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m4.flac",
    "folder": "chime / shimmer",
    "name": "m4",
    "pack_type": "chime",
@@ -11250,16 +11250,6 @@
    "flat": 0.026,
    "bumps": 4.1,
    "active_dur": 3.72,
-   "words": [
-    "swelling",
-    "mid",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 216,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Glockenspiel",
@@ -11273,12 +11263,22 @@
     0.75,
     0.62,
     0.58
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 216
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m2.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m2.flac",
    "folder": "chime / pro shimmer",
    "name": "m2",
    "pack_type": "chime",
@@ -11306,15 +11306,6 @@
    "flat": 0.008,
    "bumps": 5.4,
    "active_dur": 1.65,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "tonal",
-    "long"
-   ],
-   "id": 217,
-   "tags_v": 3,
    "tags": [
     "Telephone",
     "Ringtone",
@@ -11328,12 +11319,21 @@
     0.4,
     0.38,
     0.38
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "tonal",
+    "long"
+   ],
+   "id": 217
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-zap-bloom.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-zap-bloom.flac",
    "folder": "chime / pro logo sting",
    "name": "zap bloom",
    "pack_type": "chime",
@@ -11361,15 +11361,6 @@
    "flat": 0.012,
    "bumps": 2.9,
    "active_dur": 0.85,
-   "words": [
-    "soft-attack",
-    "dark",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 218,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Wood block",
@@ -11383,12 +11374,21 @@
     0.13,
     0.12,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 218
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m1.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m1.flac",
    "folder": "chime / pro shimmer",
    "name": "m1",
    "pack_type": "chime",
@@ -11416,15 +11416,6 @@
    "flat": 0.247,
    "bumps": 3.3,
    "active_dur": 0.98,
-   "words": [
-    "soft-attack",
-    "bright",
-    "thin",
-    "textured",
-    "medium"
-   ],
-   "id": 219,
-   "tags_v": 3,
    "tags": [
     "Glass",
     "Chink, clink",
@@ -11438,12 +11429,21 @@
     0.31,
     0.29,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "bright",
+    "thin",
+    "textured",
+    "medium"
+   ],
+   "id": 219
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m5.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m5.flac",
    "folder": "chime / shimmer",
    "name": "m5",
    "pack_type": "chime",
@@ -11471,16 +11471,6 @@
    "flat": 0.005,
    "bumps": 2.7,
    "active_dur": 3.53,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 220,
-   "tags_v": 3,
    "tags": [
     "Telephone",
     "Ringtone",
@@ -11494,12 +11484,22 @@
     0.84,
     0.53,
     0.2
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 220
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m3.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m3.flac",
    "folder": "chime / pro shimmer",
    "name": "m3",
    "pack_type": "chime",
@@ -11527,16 +11527,6 @@
    "flat": 0.038,
    "bumps": 4.6,
    "active_dur": 1.15,
-   "words": [
-    "soft-attack",
-    "bright",
-    "thin",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 221,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Music for children",
@@ -11546,12 +11536,22 @@
     0.61,
     0.34,
     0.17
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "bright",
+    "thin",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 221
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2167.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2167.flac",
    "folder": "chime / pro notify",
    "name": "ding 2167",
    "pack_type": "chime",
@@ -11579,16 +11579,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.23,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 222,
-   "tags_v": 3,
    "tags": [
     "Ringtone",
     "Telephone",
@@ -11602,12 +11592,22 @@
     0.17,
     0.15,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 222
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_logo-sting-reverse-bloom.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_logo-sting-reverse-bloom.flac",
    "folder": "chime / logo sting",
    "name": "reverse bloom",
    "pack_type": "chime",
@@ -11635,15 +11635,6 @@
    "flat": 0.012,
    "bumps": 1.5,
    "active_dur": 1.43,
-   "words": [
-    "swelling",
-    "mid",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 223,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Clang",
@@ -11657,12 +11648,21 @@
     0.55,
     0.16,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 223
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-flourish.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-flourish.flac",
    "folder": "chime / mallet",
    "name": "flourish",
    "pack_type": "chime",
@@ -11690,15 +11690,6 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.36,
-   "words": [
-    "soft-attack",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 224,
-   "tags_v": 3,
    "tags": [
     "Telephone",
     "Ringtone",
@@ -11712,12 +11703,21 @@
     0.44,
     0.19,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 224
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba-ring.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba-ring.flac",
    "folder": "chime / pluck",
    "name": "kalimba ring",
    "pack_type": "chime",
@@ -11745,15 +11745,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 2.36,
-   "words": [
-    "punchy",
-    "dark",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 225,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Mallet percussion",
@@ -11767,12 +11758,21 @@
     0.33,
     0.31,
     0.3
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 225
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m3.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m3.flac",
    "folder": "chime / notify",
    "name": "m3",
    "pack_type": "chime",
@@ -11800,16 +11800,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 2.07,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 226,
-   "tags_v": 3,
    "tags": [
     "Tuning fork",
     "Sine wave",
@@ -11823,12 +11813,22 @@
     0.2,
     0.12,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 226
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m0.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m0.flac",
    "folder": "chime / pro shimmer",
    "name": "m0",
    "pack_type": "chime",
@@ -11856,16 +11856,6 @@
    "flat": 0.183,
    "bumps": 8.0,
    "active_dur": 1.74,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "textured",
-    "long",
-    "pulsing"
-   ],
-   "id": 227,
-   "tags_v": 3,
    "tags": [
     "Telephone",
     "Ringtone",
@@ -11879,12 +11869,22 @@
     0.16,
     0.16,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "textured",
+    "long",
+    "pulsing"
+   ],
+   "id": 227
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m2.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m2.flac",
    "folder": "chime / notify",
    "name": "m2",
    "pack_type": "chime",
@@ -11912,16 +11912,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.55,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 228,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Mallet percussion",
@@ -11935,12 +11925,22 @@
     0.21,
     0.19,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 228
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_logo-sting-whoosh-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_logo-sting-whoosh-glass.flac",
    "folder": "chime / logo sting",
    "name": "whoosh glass",
    "pack_type": "chime",
@@ -11969,15 +11969,6 @@
    "flat": 0.027,
    "bumps": 2.3,
    "active_dur": 1.1,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 229,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Chink, clink",
@@ -11991,12 +11982,21 @@
     0.7,
     0.43,
     0.37
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 229
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m0.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m0.flac",
    "folder": "chime / shimmer",
    "name": "m0",
    "pack_type": "chime",
@@ -12024,16 +12024,6 @@
    "flat": 0.004,
    "bumps": 2.7,
    "active_dur": 3.17,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 230,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Ding",
@@ -12047,12 +12037,22 @@
     0.21,
     0.15,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 230
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba-soft.flac",
    "folder": "chime / pluck",
    "name": "kalimba soft",
    "pack_type": "chime",
@@ -12080,16 +12080,6 @@
    "flat": 0.0,
    "bumps": 1.2,
    "active_dur": 1.66,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 231,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Ukulele",
@@ -12103,12 +12093,22 @@
     0.2,
     0.16,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 231
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_fit-bell-small-bell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_fit-bell-small-bell.flac",
    "folder": "chime / fit/bell",
    "name": "small bell",
    "pack_type": "chime",
@@ -12136,15 +12136,6 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.74,
-   "words": [
-    "soft-attack",
-    "bright",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 232,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Bell",
@@ -12158,12 +12149,21 @@
     0.4,
     0.29,
     0.24
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "bright",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 232
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m1.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m1.flac",
    "folder": "chime / shimmer",
    "name": "m1",
    "pack_type": "chime",
@@ -12191,16 +12191,6 @@
    "flat": 0.003,
    "bumps": 4.7,
    "active_dur": 3.01,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 233,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Ding",
@@ -12214,12 +12204,22 @@
     0.42,
     0.39,
     0.36
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 233
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2045.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2045.flac",
    "folder": "chime / pro notify",
    "name": "ding 2045",
    "pack_type": "chime",
@@ -12247,16 +12247,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.32,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 234,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Ringtone",
@@ -12270,12 +12260,22 @@
     0.29,
     0.26,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 234
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m1.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m1.flac",
    "folder": "chime / notify",
    "name": "m1",
    "pack_type": "chime",
@@ -12303,16 +12303,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.73,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 235,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Mallet percussion",
@@ -12326,12 +12316,22 @@
     0.11,
     0.1,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 235
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-glock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-glock.flac",
    "folder": "chime / mallet",
    "name": "glock",
    "pack_type": "chime",
@@ -12359,15 +12359,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.33,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 236,
-   "tags_v": 3,
    "tags": [
     "Alarm",
     "Cowbell",
@@ -12381,12 +12372,21 @@
     0.26,
     0.2,
     0.18
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 236
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-1930.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-1930.flac",
    "folder": "chime / pro notify",
    "name": "ding 1930",
    "pack_type": "chime",
@@ -12414,6 +12414,9 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.23,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "mid",
@@ -12422,15 +12425,12 @@
     "short",
     "dry"
    ],
-   "id": 237,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 237
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-sweep-hit.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-sweep-hit.flac",
    "folder": "chime / pro logo sting",
    "name": "sweep hit",
    "pack_type": "chime",
@@ -12458,14 +12458,6 @@
    "flat": 0.182,
    "bumps": 2.4,
    "active_dur": 0.91,
-   "words": [
-    "swelling",
-    "dark",
-    "textured",
-    "medium"
-   ],
-   "id": 238,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Ding"
@@ -12473,12 +12465,20 @@
    "tag_scores": [
     0.19,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "textured",
+    "medium"
+   ],
+   "id": 238
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-chirp-hum.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-chirp-hum.flac",
    "folder": "chime / pro logo sting",
    "name": "chirp hum",
    "pack_type": "chime",
@@ -12506,14 +12506,6 @@
    "flat": 0.001,
    "bumps": 3.3,
    "active_dur": 0.66,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 239,
-   "tags_v": 3,
    "tags": [
     "Thunk",
     "Knock",
@@ -12527,12 +12519,20 @@
     0.38,
     0.34,
     0.3
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 239
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_logo-sting-zip-ping.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_logo-sting-zip-ping.flac",
    "folder": "chime / logo sting",
    "name": "zip ping",
    "pack_type": "chime",
@@ -12560,15 +12560,6 @@
    "flat": 0.009,
    "bumps": 2.4,
    "active_dur": 1.07,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 240,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Glass",
@@ -12582,12 +12573,21 @@
     0.47,
     0.24,
     0.24
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 240
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-taps-tone.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-taps-tone.flac",
    "folder": "chime / pro logo sting",
    "name": "taps tone",
    "pack_type": "chime",
@@ -12615,15 +12615,6 @@
    "flat": 0.001,
    "bumps": 2.6,
    "active_dur": 0.84,
-   "words": [
-    "swelling",
-    "dark",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 241,
-   "tags_v": 3,
    "tags": [
     "Percussion",
     "Musical instrument",
@@ -12637,12 +12628,21 @@
     0.3,
     0.2,
     0.18
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 241
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-up4.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-up4.flac",
    "folder": "chime / mallet",
    "name": "up4",
    "pack_type": "chime",
@@ -12670,15 +12670,6 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.71,
-   "words": [
-    "swelling",
-    "mid",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 242,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Music for children",
@@ -12688,12 +12679,21 @@
     0.34,
     0.19,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 242
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m3.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m3.flac",
    "folder": "chime / shimmer",
    "name": "m3",
    "pack_type": "chime",
@@ -12721,16 +12721,6 @@
    "flat": 0.004,
    "bumps": 4.2,
    "active_dur": 2.6,
-   "words": [
-    "slow-build",
-    "mid",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 243,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Clang",
@@ -12744,12 +12734,22 @@
     0.48,
     0.39,
     0.38
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "mid",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 243
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m2.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m2.flac",
    "folder": "chime / shimmer",
    "name": "m2",
    "pack_type": "chime",
@@ -12777,16 +12777,6 @@
    "flat": 0.005,
    "bumps": 1.8,
    "active_dur": 3.24,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 244,
-   "tags_v": 3,
    "tags": [
     "Chime",
     "Wind chime",
@@ -12800,12 +12790,22 @@
     0.98,
     0.42,
     0.35
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 244
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_logo-sting-spark.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_logo-sting-spark.flac",
    "folder": "chime / logo sting",
    "name": "spark",
    "pack_type": "chime",
@@ -12833,15 +12833,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.09,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 245,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Glass",
@@ -12855,12 +12846,21 @@
     0.56,
     0.41,
     0.21
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 245
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m4.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m4.flac",
    "folder": "chime / notify",
    "name": "m4",
    "pack_type": "chime",
@@ -12888,6 +12888,13 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.57,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.25
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
@@ -12896,19 +12903,12 @@
     "medium",
     "long-tail"
    ],
-   "id": 246,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.25
-   ]
+   "id": 246
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-pluck.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-pluck.flac",
    "folder": "chime / mallet",
    "name": "pluck",
    "pack_type": "chime",
@@ -12936,15 +12936,6 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.29,
-   "words": [
-    "soft-attack",
-    "dark",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 247,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Brass instrument"
@@ -12952,12 +12943,21 @@
    "tag_scores": [
     0.27,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 247
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2296.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2296.flac",
    "folder": "chime / pro notify",
    "name": "ding 2296",
    "pack_type": "chime",
@@ -12985,6 +12985,15 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.25,
+   "tags": [
+    "Beep, bleep",
+    "Ding"
+   ],
+   "tag_scores": [
+    0.53,
+    0.1
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "mid",
@@ -12993,21 +13002,12 @@
     "short",
     "dry"
    ],
-   "id": 248,
-   "tags_v": 3,
-   "tags": [
-    "Beep, bleep",
-    "Ding"
-   ],
-   "tag_scores": [
-    0.53,
-    0.1
-   ]
+   "id": 248
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m0.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m0.flac",
    "folder": "chime / notify",
    "name": "m0",
    "pack_type": "chime",
@@ -13035,16 +13035,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.96,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 249,
-   "tags_v": 3,
    "tags": [
     "Cowbell",
     "Music",
@@ -13058,12 +13048,22 @@
     0.29,
     0.22,
     0.18
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 249
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba.flac",
    "folder": "chime / pluck",
    "name": "kalimba",
    "pack_type": "chime",
@@ -13091,15 +13091,6 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.52,
-   "words": [
-    "punchy",
-    "dark",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 250,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Ukulele",
@@ -13113,12 +13104,21 @@
     0.26,
     0.19,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 250
   },
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-celesta.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-celesta.flac",
    "folder": "chime / mallet",
    "name": "celesta",
    "pack_type": "chime",
@@ -13146,15 +13146,6 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.26,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 251,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Clang",
@@ -13168,7 +13159,16 @@
     0.23,
     0.17,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 251
   }
  ]
 }
