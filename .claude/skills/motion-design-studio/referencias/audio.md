@@ -43,3 +43,10 @@ normalizada para −14 LUFS (padrão das redes).
 
 Regras: todo efeito está colado a um evento visual; no máximo 1 impacto (`boom`/`hit`) a cada ~4 s;
 digitação em `key` com 11–14 teclas/s.
+
+## Narração mais rápida
+1. Guarde o original como `narracao-original.mp3`.
+2. Corte as pausas pelos tempos de `palavras.json`: mantenha até ~0,22 s dentro da frase e ~0,34 s
+   depois de `.`, `?` ou `:` (fades de 12 ms em cada emenda para não estalar).
+3. Aplique `atempo=1.10` a `1.15` (preserva o tom; acima de 1,2 começa a soar acelerado).
+4. Rode `transcrever.py` de novo: todos os tempos mudam.

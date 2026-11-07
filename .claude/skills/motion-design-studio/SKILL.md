@@ -38,6 +38,8 @@ Leia `transcricao.md`: duração, palavras/s, correções feitas pelo roteiro e 
 As pausas de 0,4 s ou mais são os pontos naturais de troca de cena.
 
 ### 2. Storyboard → PARE e peça aprovação
+Antes de escrever, leia `referencias/estilo-canal.md`: é a direção padrão do canal (ritmo, fundos
+claro/escuro, tipografia, transições), tirada dos vídeos de referência do usuário.
 Escreva `projetos/<nome>/storyboard.md` seguindo `referencias/storyboard-modelo.md`, com cada
 cena: tempo, duração, composição, textos na tela, movimentos, transições, sincronização
 (palavra → evento, com o segundo exato) e áudio (efeitos e marcas de música).
@@ -81,6 +83,9 @@ node studio/ferramentas/revisar.js projetos/<nome>     # NODE_PATH=$(npm root -g
    (você não ouve o áudio: diga isso quando falar da mixagem).
 
 ## Áudio (3 canais independentes)
+- Narração mais rápida (quando o usuário pedir ou o estilo exigir): `atempo` do ffmpeg preserva o tom;
+  encurte antes as pausas usando os tempos de `palavras.json` (≈0,22 s dentro da frase, ≈0,34 s entre frases)
+  e transcreva de novo o resultado. Guarde o original como `narracao-original.*`.
 - `projeto.json → audio.volumes`: `narracao`, `musica`, `efeitos` (0 a 1). O player tem um mixer
   com os três; quando o usuário disser "música 25%", ajuste `volumes.musica = 0.25` e exporte de novo.
 - Música: `audio.musica = { arquivo, inicio, corte, fadeIn, fadeOut }`, `audio.ducking = { ativo, reducao }`.

@@ -1,0 +1,188 @@
+<title>Storyboard IA Muda Tudo v2</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap">
+<style>
+/* Layout: coluna única de leitura no celular; barra do tempo com claro/escuro de cada plano; uma ficha por plano. */
+:root{
+  --bg:#EDEDED; --surface:#F7F7F7; --ink:#0B0B0D; --ink2:#5E5E66; --line:#D6D6DA; --ac:#E8590C; --dark:#0B0B0D; --on-dark:#F4F4F5;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif; --body:"Geist","Helvetica Neue",Arial,sans-serif; --mono:"Geist Mono",ui-monospace,Menlo,monospace; --serif:"Instrument Serif",Georgia,serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#111113; --surface:#1A1A1D; --ink:#F4F4F5; --ink2:#A0A0A8; --line:#2C2C31; --ac:#FF7A2E; color-scheme:dark } }
+:root[data-theme="dark"]{ --bg:#111113; --surface:#1A1A1D; --ink:#F4F4F5; --ink2:#A0A0A8; --line:#2C2C31; --ac:#FF7A2E; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body);margin:0}
+main{max-width:760px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));display:flex;flex-direction:column;gap:36px}
+h1{font:300 clamp(30px,8vw,52px)/1.05 var(--body);letter-spacing:-.035em;margin:0;text-wrap:balance}
+h1 b{font:900 1.05em/1 var(--display);letter-spacing:-.02em}
+h1 em{font:italic 400 1.1em var(--serif);color:var(--ac)}
+h2{font:600 13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);margin:0}
+.lead{color:var(--ink2);margin:0;max-width:60ch}
+.status{border-left:3px solid var(--ac);padding:10px 14px;background:var(--surface);border-radius:4px}
+section{display:flex;flex-direction:column;gap:14px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:0}
+dt{font:500 12px/1.7 var(--mono);color:var(--ink2);text-transform:uppercase;letter-spacing:.08em} dd{margin:0;min-width:0}
+@media (max-width:520px){dl{grid-template-columns:1fr;gap:2px} dd{margin-bottom:10px}}
+.sw{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-1px;margin-right:4px;border:1px solid var(--line)}
+.tempo{position:relative;height:52px;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.seg{position:absolute;top:0;bottom:0;display:flex;align-items:center;justify-content:center;font:600 12px var(--mono);border-right:1px solid rgba(128,128,128,.35)}
+.seg.claro{background:#EDEDED;color:#0B0B0D} .seg.escuro{background:#0B0B0D;color:#F4F4F5} .seg.laranja{background:linear-gradient(135deg,#FF6A1A,#FF3D2E);color:#fff}
+.mk{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ac)}
+.leg{display:flex;justify-content:space-between;font:12px var(--mono);color:var(--ink2);margin-top:6px}
+.cena{border-top:1px solid var(--line);padding-top:20px;display:flex;flex-direction:column;gap:10px}
+.cena header{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.num{font:900 40px/1 var(--display);font-stretch:62%;color:var(--ac)}
+.cena h3{font:600 22px var(--body);letter-spacing:-.02em;margin:0}
+.t{font:500 13px var(--mono);color:var(--ink2);font-variant-numeric:tabular-nums}
+.pill{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:999px;border:1px solid var(--line)}
+.pill.escuro{background:#0B0B0D;color:#F4F4F5;border-color:#0B0B0D} .pill.claro{background:#F7F7F7;color:#0B0B0D} .pill.laranja{background:#FF6A1A;color:#fff;border-color:#FF6A1A}
+.comp{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ac)}
+blockquote{margin:0;font:italic 400 22px/1.3 var(--serif)}
+.cena p{margin:0;max-width:65ch}
+.rot{display:block;font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--ink2);margin-bottom:2px}
+.sync{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px;font-size:15px}
+.sync li{display:grid;grid-template-columns:62px 1fr;gap:10px}
+.sync .s{font:500 13px var(--mono);color:var(--ac);font-variant-numeric:tabular-nums;padding-top:2px}
+.tr{color:var(--ink2);font-size:15px}
+ul.lista{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+</style>
+<main>
+<header style="display:flex;flex-direction:column;gap:14px">
+  <h2>storyboard v2 · @matteu.ia</h2>
+  <h1>A inteligência artificial está mudando <b>TUDO</b>, <em>agora mais rápido</em></h1>
+  <p class="lead">Nova edição no estilo dos seus vídeos de referência: 13 planos em 23,2 s, fundo claro e escuro alternando, laranja como destaque, objetos em 3D e cortes presos às batidas da música.</p>
+  <div class="status"><b>Aguardando sua aprovação.</b> Nada foi programado ainda.</div>
+</header>
+<section>
+  <h2>Identidade</h2>
+  <dl>
+    <dt>Cores</dt><dd><span class="sw" style="background:#EDEDED"></span>cinza-papel · <span class="sw" style="background:#0B0B0D"></span>preto · <span class="sw" style="background:#FF6A1A"></span>laranja (gradiente até vermelho só no plano 7)</dd>
+    <dt>Tipografia</dt><dd>Geist leve como base elegante; uma palavra de impacto por frase em Archivo 900 gigante, em neon laranja ou em itálico serifado</dd>
+    <dt>Objetos</dt><dd>celular e cards em 3D com sombra macia, card escuro com luz de borda laranja, órbitas com ícones geométricos, barra de busca com brilho</dd>
+    <dt>Legenda</dt><dd>desligada: o texto animado é a própria narração, como nas referências</dd>
+    <dt>Música</dt><dd>a mesma trilha, começando em 3,30 s do arquivo: o grave cai em «aprender» (12,17 s) e a subida em «você» (18,73 s)</dd>
+  </dl>
+</section>
+<section>
+  <h2>Mapa de ritmo</h2>
+  <div><div class="tempo"><div class="seg escuro" style="left:0.00%;width:7.33%">1</div><div class="seg claro" style="left:7.33%;width:3.02%">2</div><div class="seg claro" style="left:10.34%;width:8.19%">3</div><div class="seg escuro" style="left:18.53%;width:6.03%">4</div><div class="seg claro" style="left:24.57%;width:5.60%">5</div><div class="seg escuro" style="left:30.17%;width:12.07%">6</div><div class="seg laranja" style="left:42.24%;width:3.45%">7</div><div class="seg claro" style="left:45.69%;width:6.90%">8</div><div class="seg escuro" style="left:52.59%;width:7.33%">9</div><div class="seg claro" style="left:59.91%;width:9.91%">10</div><div class="seg escuro" style="left:69.83%;width:6.03%">11</div><div class="seg claro" style="left:75.86%;width:9.48%">12</div><div class="seg escuro" style="left:85.34%;width:14.66%">13</div><div class="mk" style="left:52.46%"></div><div class="mk" style="left:80.73%"></div></div>
+  <div class="leg"><span>0 s</span><span>linhas laranja: grave 12,17 s · subida 18,73 s</span><span>23,2 s</span></div></div>
+</section>
+<section>
+  <h2>Planos</h2>
+  <article class="cena">
+  <header><span class="num">1</span><h3>Abertura</h3><span class="t">0,0–1,7 s</span><span class="pill escuro">escuro</span></header>
+  <span class="comp">Tipografia elegante central</span>
+  <blockquote>"A inteligência artificial está mudando"</blockquote>
+  <p>Fundo quase preto com uma brasa laranja difusa respirando atrás do texto. Palavras em Geist leve (72 px), brancas, entrando uma a uma com desfoque → nítido. Câmera empurrando devagar.</p>
+  <ul class="sync"><li><span class="s">0,00 s</span>«A inteligência»: entra; o brilho laranja acende</li><li><span class="s">0,62 s</span>«artificial»: entra com leve brilho neon laranja</li><li><span class="s">1,06 s</span>«está mudando»: linha menor, cinza, abaixo</li></ul>
+  <p class="tr"><span class="rot">Transição</span>Corte seco na palavra «tudo» (1,72 s): escuro → claro.</p>
+</article>
+<article class="cena">
+  <header><span class="num">2</span><h3>TUDO</h3><span class="t">1,7–2,4 s</span><span class="pill claro">claro</span></header>
+  <span class="comp">Palavra gigante</span>
+  <blockquote>"tudo."</blockquote>
+  <p>Cinza-papel. «TUDO» em Archivo 900 preta ocupando toda a largura, com o ponto final em laranja. Ela bate com escala 1,25 → 1 e um tremor curto.</p>
+  <ul class="sync"><li><span class="s">1,72 s</span>«tudo»: impacto, as letras se alargam</li><li><span class="s">2,15 s</span>as letras deslizam para a esquerda como uma faixa e abrem espaço para a cena 3</li></ul>
+  <p class="tr"><span class="rot">Transição</span>Chicote para a esquerda com desfoque.</p>
+</article>
+<article class="cena">
+  <header><span class="num">3</span><h3>O jeito de…</h3><span class="t">2,4–4,3 s</span><span class="pill claro">claro</span></header>
+  <span class="comp">Card 3D trocando a cada palavra</span>
+  <blockquote>"O jeito de trabalhar, criar, aprender"</blockquote>
+  <p>«O jeito de» pequeno no topo. No centro, UM card de app inclinado em 3D, com sombra macia, que vira outro a cada verbo: lista de tarefas sendo marcada, quadro com traço laranja sendo desenhado, aula com barra de progresso. O verbo aparece grande (Archivo 140 px) sobre o card, e a palavra anterior sai por desfoque.</p>
+  <ul class="sync"><li><span class="s">2,82 s</span>«trabalhar»: card de tarefas gira para a frente, 2 itens marcados</li><li><span class="s">3,30 s</span>«criar»: o card gira (flip) e vira o quadro de desenho</li><li><span class="s">3,74 s</span>«aprender»: flip para o card da aula, barra enche</li></ul>
+  <p class="tr"><span class="rot">Transição</span>O card cai para trás e vira um plano deitado em perspectiva (cena 4).</p>
+</article>
+<article class="cena">
+  <header><span class="num">4</span><h3>Ganhar dinheiro</h3><span class="t">4,3–5,7 s</span><span class="pill escuro">escuro</span></header>
+  <span class="comp">Plano em perspectiva + serifa</span>
+  <blockquote>"e até ganhar dinheiro."</blockquote>
+  <p>Escuro com brilho laranja. Um gráfico deitado em perspectiva (como um mapa no chão) com uma linha laranja brilhante subindo em degraus. Em cima: «até ganhar» em Geist leve e «dinheiro.» em itálico serifado laranja, com brilho. Sem números, porque o roteiro não traz dados.</p>
+  <ul class="sync"><li><span class="s">4,34 s</span>«até ganhar»: palavras entram, o plano gira para a vista</li><li><span class="s">4,90 s</span>«dinheiro»: a linha dispara para cima e a serifa acende</li></ul>
+  <p class="tr"><span class="rot">Transição</span>Zoom através do topo da linha, que vira a tela do celular (cena 5).</p>
+</article>
+<article class="cena">
+  <header><span class="num">5</span><h3>Ferramentas</h3><span class="t">5,7–7,0 s</span><span class="pill claro">claro</span></header>
+  <span class="comp">Celular 3D</span>
+  <blockquote>"E ferramentas como Claude estão"</blockquote>
+  <p>Claro. Um celular genérico sobe girando em 3D (rotateY 35° → 8°), igual à referência, com um app de chat de IA genérico: campo digitando “me ajuda a criar…”. Acima, «Claude» com brilho neon laranja, só como palavra, sem logotipo.</p>
+  <ul class="sync"><li><span class="s">5,74 s</span>«ferramentas»: celular entra girando</li><li><span class="s">6,32 s</span>«Claude»: palavra acende em neon; o campo começa a digitar</li></ul>
+  <p class="tr"><span class="rot">Transição</span>«abrindo» (6,98): a tela do celular se acende e a câmera atravessa para o escuro.</p>
+</article>
+<article class="cena">
+  <header><span class="num">6</span><h3>Possibilidades</h3><span class="t">7,0–9,8 s</span><span class="pill escuro">escuro</span></header>
+  <span class="comp">Card com luz de borda → órbitas</span>
+  <blockquote>"abrindo possibilidades que muita gente ainda nem conhece."</blockquote>
+  <p>Escuro. Um card preto com luz de borda laranja percorrendo a aresta (como na referência). Ele se abre e solta órbitas concêntricas com ícones geométricos próprios (texto, imagem, código, vídeo, áudio, gráfico) girando. Em «muita gente» a câmera recua e aparecem centenas de pontos; em «nem conhece» quase todos os ícones viram “?” desfocados.</p>
+  <ul class="sync"><li><span class="s">6,98 s</span>«abrindo»: a luz corre pela borda e o card se abre</li><li><span class="s">7,28 s</span>«possibilidades»: ícones saem para as órbitas, um por vez</li><li><span class="s">8,12 s</span>«muita gente»: recuo, pontos aparecem</li><li><span class="s">8,92 s</span>«nem conhece»: ícones se apagam e viram “?”</li></ul>
+  <p class="tr"><span class="rot">Transição</span>Íris laranja: um círculo de gradiente laranja cresce do centro em «Aqui».</p>
+</article>
+<article class="cena">
+  <header><span class="num">7</span><h3>Aqui</h3><span class="t">9,8–10,6 s</span><span class="pill laranja">laranja</span></header>
+  <span class="comp">Tela cheia na cor</span>
+  <blockquote>"Aqui você vai"</blockquote>
+  <p>Gradiente laranja → vermelho em tela cheia (o único do vídeo). «Aqui» grande em branco, com «você vai» pequeno.</p>
+  <ul class="sync"><li><span class="s">10,02 s</span>«Aqui»: a íris fecha a tela e a palavra bate</li></ul>
+  <p class="tr"><span class="rot">Transição</span>O laranja encolhe e vira o brilho da barra de busca (cena 8).</p>
+</article>
+<article class="cena">
+  <header><span class="num">8</span><h3>Descobrir</h3><span class="t">10,6–12,2 s</span><span class="pill claro">claro</span></header>
+  <span class="comp">Busca com brilho + cards</span>
+  <blockquote>"descobrir novas tecnologias,"</blockquote>
+  <p>Claro. Uma barra de busca em pílula com brilho laranja embaixo (como na referência) digita “novas tecnologias”. Em seguida, cards de resultado caem em cascata, levemente inclinados: “agentes de IA”, “automação”, “vídeo com IA”, “no-code”.</p>
+  <ul class="sync"><li><span class="s">10,64 s</span>«descobrir»: barra entra e começa a digitar</li><li><span class="s">11,34 s</span>«tecnologias»: 4 cards em cascata</li></ul>
+  <p class="tr"><span class="rot">Transição</span>Na batida do grave (12,17 s), flash e corte seco para o escuro.</p>
+</article>
+<article class="cena">
+  <header><span class="num">9</span><h3>O drop</h3><span class="t">12,2–13,9 s</span><span class="pill escuro">escuro</span></header>
+  <span class="comp">Tipografia gigante no beat</span>
+  <blockquote>"aprender a usar inteligência artificial"</blockquote>
+  <p>Escuro, brilho laranja forte. «APRENDER» gigante (Archivo 900, largura total) bate no grave. Depois, a cada batida, a câmera dá um soco de zoom e entram «a usar», «inteligência», «artificial»; a última palavra fica em laranja com brilho.</p>
+  <ul class="sync"><li><span class="s">12,17 s</span>grave + «aprender»: impacto e flash</li><li><span class="s">12,64 s</span>batida + «a usar»</li><li><span class="s">13,11 s</span>batida + «inteligência»</li><li><span class="s">13,58 s</span>batida + «artificial» em laranja</li></ul>
+  <p class="tr"><span class="rot">Transição</span>As letras se esticam e saem para cima; entra um papel claro (cena 10).</p>
+</article>
+<article class="cena">
+  <header><span class="num">10</span><h3>Ideias → projetos</h3><span class="t">13,9–16,2 s</span><span class="pill claro">claro</span></header>
+  <span class="comp">Documento 3D que vira app</span>
+  <blockquote>"e transformar ideias em projetos reais."</blockquote>
+  <p>Claro. Um rascunho (folha com caixas e rabiscos) flutua inclinado como os documentos da referência. Em «projetos» ele gira 180° e o verso é um app pronto, colorido, com botão laranja. Em «reais» estala um selo laranja “● no ar” e a câmera dá um leve empurrão.</p>
+  <ul class="sync"><li><span class="s">14,26 s</span>«transformar»: folha entra girando</li><li><span class="s">14,74 s</span>«ideias»: rabiscos se desenham</li><li><span class="s">15,36 s</span>«projetos»: flip 3D para o app</li><li><span class="s">15,82 s</span>«reais»: selo + empurrão</li></ul>
+  <p class="tr"><span class="rot">Transição</span>O app encolhe num ponto de luz laranja (cena 11).</p>
+</article>
+<article class="cena">
+  <header><span class="num">11</span><h3>O futuro</h3><span class="t">16,2–17,6 s</span><span class="pill escuro">escuro</span></header>
+  <span class="comp">Horizonte de luz</span>
+  <blockquote>"O futuro já começou."</blockquote>
+  <p>Escuro. Uma linha de horizonte fina; atrás dela um brilho laranja sobe como um nascer do sol. «O futuro» em Geist leve e «já começou.» com «começou» em itálico serifado.</p>
+  <ul class="sync"><li><span class="s">16,46 s</span>«O futuro»: horizonte desenha da esquerda para a direita</li><li><span class="s">17,10 s</span>«começou»: o sol de luz sobe e clareia a tela</li></ul>
+  <p class="tr"><span class="rot">Transição</span>A luz estoura até virar o fundo claro da cena 12.</p>
+</article>
+<article class="cena">
+  <header><span class="num">12</span><h3>A pergunta</h3><span class="t">17,6–19,8 s</span><span class="pill claro">claro</span></header>
+  <span class="comp">Grade de pontos + VOCÊ gigante</span>
+  <blockquote>"A pergunta é: você vai ficar de fora?"</blockquote>
+  <p>Claro. «A pergunta é:» pequeno. Uma grade de pontos pretos (as pessoas) e um único ponto laranja de fora. Na subida da música, «VOCÊ» gigante em preto bate no centro; em «de fora?» a grade se afasta e o ponto laranja fica sozinho.</p>
+  <ul class="sync"><li><span class="s">17,78 s</span>«A pergunta é»: palavras entram</li><li><span class="s">18,64 s</span>«você» (+ subida da música em 18,73): VOCÊ gigante</li><li><span class="s">19,02 s</span>«ficar»: grade desliza</li><li><span class="s">19,22 s</span>«de fora?»: entra em laranja</li></ul>
+  <p class="tr"><span class="rot">Transição</span>O ponto laranja cresce numa íris escura (cena 13).</p>
+</article>
+<article class="cena">
+  <header><span class="num">13</span><h3>Cartela</h3><span class="t">19,8–23,2 s</span><span class="pill escuro">escuro</span></header>
+  <span class="comp">Cartela premium</span>
+  <blockquote>"(sem fala)"</blockquote>
+  <p>Escuro com brasa laranja. «Não fique de fora.» (de fora em laranja). Um card/botão “Seguir” com luz de borda laranja correndo na aresta; clique → “Seguindo ✓”. @matteu.ia embaixo. Fica parada e legível por mais de 2 s.</p>
+  <ul class="sync"><li><span class="s">19,9 s</span>frase entra palavra por palavra</li><li><span class="s">20,8 s</span>botão com luz de borda</li><li><span class="s">21,5 s</span>clique → Seguindo</li></ul>
+  <p class="tr"><span class="rot">Transição</span>Fade da música até 23,2 s.</p>
+</article>
+
+</section>
+<section>
+  <h2>O que muda em relação à v1</h2>
+  <ul class="lista">
+    <li>Narração 1,15x com pausas curtas: 24,8 s → 19,8 s de fala.</li>
+    <li>13 planos em vez de 9; fundo claro e escuro alternando; um momento em laranja de tela cheia.</li>
+    <li>Base tipográfica elegante e uma palavra de impacto por frase.</li>
+    <li>Objetos em 3D com profundidade e luz de borda, no lugar de cards chapados.</li>
+    <li>Sem legenda automática; o roteiro e a mensagem continuam os mesmos.</li>
+  </ul>
+</section>
+</main>
