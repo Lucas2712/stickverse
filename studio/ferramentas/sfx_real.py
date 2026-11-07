@@ -79,6 +79,14 @@ def main():
         run(["node", os.path.join(RAIZ, "studio", "ferramentas", "exportar.js"), proj, "--sem-efeitos", "--sem-musica"], env=env)
     py = sys.executable
     run([py, "scripts/from_cues.py", os.path.join(W, "eventos.json"), "--video", voz, "--out", os.path.join(W, "cues.json")], cwd=RSFX)
+    # voz em primeiro plano: impactos, quedas e glitches perdem o grave (>= 150 Hz) para não somar com a voz
+    cj = os.path.join(W, "cues.json"); d = json.load(open(cj))
+    for c in d["cues"]:
+        rot = (c.get("label", "") + " " + str(c.get("role", ""))).lower()
+        if any(k in rot for k in ("hit", "drop", "glitch", "boom")): c.setdefault("highpass", 150)
+        if any(k in rot for k in ("hit", "drop", "boom")) and not c.get("_grave_ok"):
+            c["gain_db"] = round(c.get("gain_db", 0) - 6, 1); c["_grave_ok"] = 1   # o filtro sozinho deixa grave demais
+    json.dump(d, open(cj, "w"), indent=1)
     final = os.path.join(W, nome + "-sfx-real.mp4")
     run([py, "scripts/mix.py", os.path.join(W, "cues.json"), "--out", final, "--voice-safe"], cwd=RSFX)
     res = os.path.join(W, nome + "-sfx-real_resolved_cues.json"); trk = os.path.join(W, nome + "-sfx-real_sfx_track.wav")

@@ -1,16 +1,20 @@
 {
   "titulo": "IA e a segurança dos seus dados",
-  "descricao": "Reels de 47 s para @matteu.ia: IA encontrando falhas na criptografia. Fundo escuro e claro alternando, laranja como destaque, imagens geradas no OpenArt e efeitos sonoros sincronizados.",
+  "descricao": "Reels de 47 s para @matteu.ia. Direção de arte exclusiva: a segurança como planta técnica (blueprint) azul e branca; a IA é a lupa e a mira; as falhas em vermelho; no ato 3 a planta se inverte em preto e vermelho. Sem música.",
   "tema": "IA e cibersegurança",
   "duracao": 47.2,
   "fps": 30,
-  "fontes": ["geist", "geist-mono", "archivo", "instrument-serif-italico"],
+  "fontes": [],
+  "fontesProjeto": [
+    { "familia": "Martian Mono", "arquivo": "fontes/martian-mono.woff2", "descritores": "font-weight:100 800;font-stretch:75% 112.5%" },
+    { "familia": "Instrument Sans", "arquivo": "fontes/instrument-sans.woff2", "descritores": "font-weight:400 700;font-stretch:75% 100%" }
+  ],
   "poster": 34.9,
   "perfil": "@matteu.ia",
   "legendas": { "ativo": false },
   "audio": {
-    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.45 },
+    "volumes": { "narracao": 1.0, "musica": 0, "efeitos": 0.45 },
     "musica": null,
-    "ducking": { "ativo": true, "reducao": 0.4 }
+    "ducking": { "ativo": false }
   }
 }

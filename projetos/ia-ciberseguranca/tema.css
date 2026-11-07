@@ -1,22 +1,22 @@
-/* Tema · IA e cibersegurança, no estilo do canal (referencias/estilo-canal.md)
-   Cinza-papel / preto / laranja. Geist leve como base, Archivo 900 no impacto, Instrument Serif itálico nos acentos. */
+/* Tema · IA e cibersegurança · direção "planta técnica" (blueprint)
+   Azul cobalto + branco técnico; vermelho só para falhas e ataque; preto no ato 3 (negativo).
+   Martian Mono nos impactos e rótulos; Instrument Sans no texto. Grade suíça alinhada à esquerda, cantos retos. */
 :root{
-  --v-bg:#EDEDED; --v-ink:#0B0B0D; --v-ink2:#5E5E66; --v-mute:#9A9AA2; --v-line:#DCDCE0; --v-soft:#F4F4F5;
-  --v-ac:#FF6A1A; --v-ac2:#FF3D2E;
-  --v-sans:"Geist", "Helvetica Neue", Arial, sans-serif;
-  --v-display:"Archivo", "Arial Narrow", Arial, sans-serif;
-  --v-mono:"Geist Mono", Menlo, monospace;
-  --v-radius:30px;
-  --v-shadow:0 1px 2px rgba(0,0,0,.05), 0 0 0 1px rgba(0,0,0,.05), 0 50px 90px -35px rgba(0,0,0,.38), 0 14px 30px -18px rgba(0,0,0,.2);
+  --v-bg:#1E3BFF; --v-ink:#0B0B0D; --v-ink2:#5A5F6E; --v-mute:#9AA0B4; --v-line:#C9CCD6; --v-soft:#F4F5F7;
+  --v-ac:#1E3BFF; --v-ac2:#FF3B30;
+  --az:#1E3BFF; --br:#F4F5F7; --vm:#FF3B30; --pr:#000000;
+  --v-sans:"Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --v-display:"Martian Mono", "Courier New", monospace;
+  --v-mono:"Martian Mono", "Courier New", monospace;
 }
-#stage{background:#0B0B0D}
-#stage .pw{display:inline-block}
-#stage .ser{font-family:"Instrument Serif", Georgia, serif; font-style:italic; font-weight:400; letter-spacing:-.01em}
-#stage .neon{color:#FFE4D2; text-shadow:0 0 16px #FF6A1A, 0 0 44px rgba(255,106,26,.75), 0 0 90px rgba(255,61,46,.45)}
-#stage .neonC{color:var(--v-ac); text-shadow:0 0 26px rgba(255,106,26,.55), 0 0 60px rgba(255,106,26,.3)}
-#stage .card{background:#FBFBFB}
-#stage .dots i{background:#D4D4D8 !important}
-#stage .wh{font-family:var(--v-mono); font-size:24px}
-#stage .img{position:absolute;background-size:cover;background-position:center}
-#stage .term{font:500 26px/1.5 var(--v-mono);color:#8E8E96;white-space:pre}
-#stage .glitch{text-shadow:-6px 0 rgba(255,61,46,.85), 6px 0 rgba(0,200,255,.55)}
+#stage{background:var(--az);font-family:var(--v-sans)}
+#stage .mono{font-family:var(--v-mono)}
+#stage .vm{color:var(--vm)} #stage .az{color:var(--az)}
+#stage .duo{position:absolute;overflow:hidden}
+#stage .duo img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;display:block;transform-origin:50% 50%}
+#stage .duo.b img{filter:grayscale(1) contrast(1.3) brightness(var(--brilho,1.1))}
+#stage .duo.b::before{content:"";position:absolute;inset:0;background:#1534E0;mix-blend-mode:lighten;z-index:1;pointer-events:none}
+#stage .duo.r img{filter:grayscale(1) contrast(1.35) brightness(var(--brilho,1.05))}
+#stage .duo.r::before{content:"";position:absolute;inset:0;background:#FF3B30;mix-blend-mode:multiply;z-index:1;pointer-events:none}
+#stage .duo::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background-image:radial-gradient(rgba(0,0,0,.22) 1.2px,transparent 1.6px);background-size:7px 7px;mix-blend-mode:multiply}
+#stage .glitch{text-shadow:-6px 0 rgba(255,255,255,.35), 6px 0 rgba(255,59,48,.5)}
