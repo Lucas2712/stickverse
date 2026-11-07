@@ -243,7 +243,7 @@ Nenhuma composição se repete em cenas seguidas. O "card único" aparece na 3 e
 
 **Composição:** cartela final. Fundo escuro, o cursor verde no centro "digita" a chamada; abaixo, um botão. O fio condutor completo, um traço verde, contorna o botão e fecha o quadro.
 
-**Textos na tela:** **"Não fique de fora."** (120 px, Archivo) · botão verde **"SEGUIR"** · abaixo, o @ do canal (**preciso que você me diga qual é**; sem ele, fica só a chamada e o botão).
+**Textos na tela:** **"Não fique de fora."** (120 px, Archivo) · botão verde **"SEGUIR"** · abaixo, **@matteu.ia** (60 px, Geist Mono, cinza claro; entra digitado em 26,2 s).
 
 **Movimentos:**
 - 24,84 s (batida): o cursor digita "Não fique de fora." (14 teclas/s)
@@ -269,7 +269,7 @@ Nenhuma composição se repete em cenas seguidas. O "card único" aparece na 3 e
 
 ## Pontos de atenção
 
-- **@ do canal na cartela:** falta essa informação.
+- **@ do canal na cartela:** @matteu.ia.
 - **"Claude"** aparece só como palavra escrita; nada de logotipo nem cópia da interface oficial. A janela de chat é genérica.
 - **"Ganhar dinheiro"** é mostrado com um gráfico sem números: o roteiro não traz dados, então nada de valores inventados.
 - **Mixagem:** eu não ouço o áudio. O equilíbrio música/voz (30% com ducking) precisa da sua escuta no link ou no MP4.
