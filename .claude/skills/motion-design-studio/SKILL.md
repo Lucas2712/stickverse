@@ -51,6 +51,8 @@ Regras do storyboard:
 - Dados, números e nomes só do roteiro ou de fonte que o usuário deu. Nunca invente estatística.
 - Sem logotipos ou interfaces idênticas de empresas reais: UI genérica da categoria.
 
+Escreva os planos em `storyboard.json` e gere `storyboard.md` + `storyboard.html` com
+`python3 studio/ferramentas/storyboard.py projetos/<nome>` (o HTML é o que vai para o Artifact).
 Apresente o storyboard ao usuário em mensagem (resumo legível no celular: uma seção curta por cena)
 e publique a versão completa como Artifact se ficar longa. **Não programe nada antes da aprovação.**
 Ajustes pedidos → atualize o storyboard e peça aprovação de novo.
