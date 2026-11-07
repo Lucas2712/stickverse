@@ -1,22 +1,23 @@
 {
   "titulo": "A inteligência artificial está mudando tudo",
-  "descricao": "",
-  "tema": "",
-  "duracao": 30,
+  "descricao": "Reels de 28,6 s sobre IA para @matteu.ia: tipografia cinética em Archivo, um cursor verde como fio condutor e cortes presos às batidas da música (128 BPM).",
+  "tema": "A inteligência artificial está mudando tudo",
+  "duracao": 28.6,
   "fps": 30,
-  "fontes": ["geist", "geist-mono"],
-  "poster": null,
+  "fontes": ["geist", "geist-mono", "archivo"],
+  "poster": 23.9,
+  "perfil": "@matteu.ia",
   "legendas": {
     "ativo": true,
     "y": 1430,
     "tamanho": 64,
     "peso": 600,
-    "destaques": [],
-    "ocultar": []
+    "destaques": ["trabalhar", "criar", "aprender", "dinheiro", "Claude", "possibilidades", "conhece", "descobrir", "tecnologias", "ideias", "reais", "futuro"],
+    "ocultar": [[0, 2.9], [15.3, 17.5], [22.0, 28.6]]
   },
   "audio": {
-    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.5 },
-    "musica": null,
+    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.4 },
+    "musica": { "arquivo": "musica.mp3", "inicio": 0.0, "corte": 0.0, "fadeIn": 0.4, "fadeOut": 1.5 },
     "ducking": { "ativo": true, "reducao": 0.4 }
   }
 }

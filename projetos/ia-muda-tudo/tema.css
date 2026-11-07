@@ -1,15 +1,27 @@
-/* Tema do vídeo: identidade própria de cada projeto (cores e fontes do palco).
-   Defina a paleta a partir do assunto do vídeo; não reutilize a do projeto anterior. */
+/* Tema · A inteligência artificial está mudando tudo
+   Noite + verde-ácido. Display Archivo (largura variável), texto Geist, UI em Geist Mono.
+   Fio condutor: o cursor verde (.cur). */
 :root{
-  --v-bg:#FFFFFF;      /* fundo */
-  --v-ink:#100D0A;     /* texto principal */
-  --v-ink2:#5F5852;    /* texto secundário */
-  --v-mute:#A8A098;    /* rótulos apagados */
-  --v-line:#EEEAE6;    /* linhas, trilhos, wireframes */
-  --v-soft:#F4F1EE;    /* superfícies suaves */
-  --v-ac:#FF5A1F;      /* cor de destaque (1 por vídeo) */
-  --v-ac2:#FF8A3D;     /* variação do destaque */
+  --v-bg:#0A0B0F;      /* fundo grafite quase preto */
+  --v-ink:#F2F3F5;     /* texto principal */
+  --v-ink2:#9AA0AB;    /* texto secundário */
+  --v-mute:#5C626E;    /* rótulos apagados */
+  --v-line:#22252E;    /* linhas, trilhos, wireframes */
+  --v-soft:#14161C;    /* superfícies */
+  --v-ac:#C8FF3C;      /* verde-ácido (único destaque) */
+  --v-ac2:#9EE01A;
   --v-sans:"Geist", "Helvetica Neue", Arial, sans-serif;
-  --v-display:"Geist", "Helvetica Neue", Arial, sans-serif;
+  --v-display:"Archivo", "Arial Narrow", Arial, sans-serif;
   --v-mono:"Geist Mono", Menlo, monospace;
+  --v-radius:34px;
+  --v-shadow:0 0 0 2px #22252E, 0 40px 80px -30px rgba(0,0,0,.85);
 }
+#stage .cur{display:inline-block;width:.09em;height:.8em;background:var(--v-ac);vertical-align:-.02em;margin-left:.06em;border-radius:.01em;box-shadow:0 0 .3em rgba(200,255,60,.45)}
+#stage .card{background:#111319}
+#stage .wh{border-bottom-color:var(--v-line);color:var(--v-ink2);font-family:var(--v-mono);font-size:25px}
+#stage .dots i{background:#2A2E38}
+#stage .ck svg path{stroke:#0A0B0F}
+#stage .chip.line{background:#111319;color:var(--v-ink);box-shadow:0 0 0 2px #2A2E38, 0 18px 40px -20px rgba(0,0,0,.8)}
+#stage .phone{background:#0D0F14;border-color:#2A2E38;box-shadow:0 0 0 2px #15171D, 0 60px 120px -40px rgba(0,0,0,.9)}
+#stage .phone .island{background:#2A2E38}
+#stage .disp{font-family:var(--v-display)}
