@@ -91,6 +91,8 @@ e não são reaproveitadas automaticamente.
     huggingface.co/audiomagic/yamnet-onnx (conversão Apache 2.0 do YAMNet do Google, pesos sem alteração), SHA-256 conferido.
   - Cada download tem até 3 tentativas; o resultado fica em `/opt/mds/estado.txt` (`whisper`, `earshot-modelos`,
     `yamnet`: ok ou FALHOU). Os modelos ficam fora do git e são baixados de novo a cada sessão (~1 min).
+  - Diagnóstico de cada preparação (rede, cada tentativa, tipo de erro, validação; sem tokens) em
+    `/opt/mds/preparacao.log`. Na sessão, `preparar_ambiente.sh --testar` refaz os downloads e testa tudo.
 - **Sons:** Real SFX (MIT) com o pacote uisfx (CC0), banco do Earshot (MIT) e Openverse.
   CC0 primeiro; CC BY só sem alternativa CC0 e com atribuição; proibidos NC, ND e SA; a licença de cada
   arquivo é conferida na página de origem; créditos em `studio/sons/creditos.json` e no

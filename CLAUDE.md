@@ -93,6 +93,11 @@ Conferir antes se a ferramenta e as dependências estão presentes (regra 8).
 - Use o ambiente de nuvem **"stickverse"**: o script de preparação instala o transcritor (Whisper),
   o Earshot com seus modelos e o classificador do Real SFX. Se `/opt/mds/whisper-small/model.bin`
   ou `earshot` faltarem, rode `bash studio/ferramentas/preparar_ambiente.sh`.
+- **Início de cada sessão de produção (contingência autorizada):** leia `/opt/mds/estado.txt`. Se
+  `earshot-modelos` ou `yamnet` não estiverem "ok" (ou o arquivo faltar), rode
+  `bash studio/ferramentas/preparar_ambiente.sh --testar` (baixa os modelos de novo, sem dependências novas,
+  confere o SHA-256 do YAMNet e testa Earshot, YAMNet e a biblioteca). Só considere o ambiente pronto com todos
+  os itens "ok"; se algo falhar, mostre `/opt/mds/preparacao.log` e avise o usuário da limitação antes de produzir.
 - Rede liberada: OpenArt (imagens), Openverse, Freesound, Wikimedia, Hugging Face e PyTorch.
   O Freesound bloqueia servidores de nuvem (403): não contornar.
 
