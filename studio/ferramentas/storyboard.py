@@ -24,7 +24,8 @@ e = H.escape
 
 # ---------- markdown ----------
 md = [f"# Storyboard: {D['titulo']}", "", "> Aguardando aprovação. Nada é programado antes dela.", "", D.get("resumo", ""), "",
-      "## Identidade", "", "| | |", "|---|---|"]
+      "## Direção de arte", "", "| | |", "|---|---|"]
+if D.get("paleta"): md.append("| Paleta | " + " · ".join(f"`{c}` {r}" for c, r in D["paleta"]) + " |")
 md += [f"| {k} | {t} |" for k, t in D.get("identidade", [])]
 md += ["", "## Mapa de ritmo", "", "| # | Tempo | Fundo | Composição | Imagem |", "|---|---|---|---|---|"]
 md += [f"| {c['n']} | {v(c['a'])}–{v(c['b'])} | {c['f']} | {c['comp']} | {c.get('img', '')} |" for c in C]
@@ -48,16 +49,18 @@ for c in C:
 <span class="comp">{e(c["comp"])}</span><blockquote>"{e(c["narr"])}"</blockquote><p>{e(c["tela"])}</p><ul class="sync">{sync}</ul>
 <p class="tr"><span class="rot">Transição</span>{e(c["tr"])}</p></article>\n'''
 ident = "".join(f"<dt>{e(k)}</dt><dd>{t}</dd>" for k, t in D.get("identidade", []))
+if D.get("paleta"): ident = "<dt>Paleta</dt><dd>" + " · ".join(f'<span style="display:inline-block;width:12px;height:12px;border-radius:2px;border:1px solid var(--line);vertical-align:-1px;background:{c}"></span> {e(r)}' for c, r in D["paleta"]) + "</dd>" + ident
+AC = D.get("acento", "#D9530B"); AC2 = D.get("acento_escuro", AC)
 notas = "".join(f"<li>{e(n)}</li>" for n in D.get("notas", []))
 page = f'''<title>Storyboard {e(D["titulo"])}</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap">
 <style>
 /* Layout: coluna única de leitura no celular; barra do tempo com o fundo de cada plano; uma ficha por plano. */
-:root{{--bg:#EDEDED;--surface:#F7F7F7;--ink:#0B0B0D;--ink2:#5E5E66;--line:#D6D6DA;--ac:#D9530B;
+:root{{--bg:#EDEDED;--surface:#F7F7F7;--ink:#0B0B0D;--ink2:#5E5E66;--line:#D6D6DA;--ac:{AC};
   --display:"Archivo","Arial Narrow",Arial,sans-serif;--body:"Geist","Helvetica Neue",Arial,sans-serif;--mono:"Geist Mono",ui-monospace,Menlo,monospace;--serif:"Instrument Serif",Georgia,serif}}
-@media (prefers-color-scheme: dark){{:root:not([data-theme="light"]){{--bg:#111113;--surface:#1A1A1D;--ink:#F4F4F5;--ink2:#A0A0A8;--line:#2C2C31;--ac:#FF7A2E;color-scheme:dark}}}}
-:root[data-theme="dark"]{{--bg:#111113;--surface:#1A1A1D;--ink:#F4F4F5;--ink2:#A0A0A8;--line:#2C2C31;--ac:#FF7A2E;color-scheme:dark}}
+@media (prefers-color-scheme: dark){{:root:not([data-theme="light"]){{--bg:#111113;--surface:#1A1A1D;--ink:#F4F4F5;--ink2:#A0A0A8;--line:#2C2C31;--ac:{AC2};color-scheme:dark}}}}
+:root[data-theme="dark"]{{--bg:#111113;--surface:#1A1A1D;--ink:#F4F4F5;--ink2:#A0A0A8;--line:#2C2C31;--ac:{AC2};color-scheme:dark}}
 *{{box-sizing:border-box}} body{{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body);margin:0}}
 main{{max-width:760px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));display:flex;flex-direction:column;gap:36px}}
 h1{{font:300 clamp(30px,8vw,52px)/1.05 var(--body);letter-spacing:-.035em;margin:0;text-wrap:balance}}
@@ -70,7 +73,7 @@ code{{font:13px var(--mono)}}
 @media (max-width:520px){{dl{{grid-template-columns:1fr;gap:2px}} dd{{margin-bottom:10px}}}}
 .tempo{{position:relative;height:52px;border-radius:6px;overflow:hidden;border:1px solid var(--line)}}
 .seg{{position:absolute;top:0;bottom:0;display:flex;align-items:center;justify-content:center;font:600 11px var(--mono);border-right:1px solid rgba(128,128,128,.35)}}
-.seg.claro{{background:#EDEDED;color:#0B0B0D}} .seg.escuro{{background:#0B0B0D;color:#F4F4F5}} .seg.laranja{{background:linear-gradient(135deg,#FF6A1A,#FF3D2E);color:#fff}}
+.seg.claro{{background:#EDEDED;color:#0B0B0D}} .seg.escuro{{background:#0B0B0D;color:#F4F4F5}} .seg.laranja{{background:linear-gradient(135deg,#FF6A1A,#FF3D2E);color:#fff}} .seg.azul{{background:#1E3BFF;color:#fff}} .seg.branco{{background:#F4F5F7;color:#0B0B0D}} .seg.preto{{background:#000;color:#FF3B30}} .seg.vermelho{{background:#FF3B30;color:#fff}}
 .mk{{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ac)}}
 .leg{{display:flex;justify-content:space-between;gap:8px;font:12px var(--mono);color:var(--ink2);margin-top:6px}}
 .cena{{border-top:1px solid var(--line);padding-top:20px;display:flex;flex-direction:column;gap:10px}}
@@ -79,7 +82,7 @@ code{{font:13px var(--mono)}}
 .t{{font:500 13px var(--mono);color:var(--ink2);font-variant-numeric:tabular-nums}}
 .pill{{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:999px;border:1px solid var(--line)}}
 .pill.escuro{{background:#0B0B0D;color:#F4F4F5;border-color:#0B0B0D}} .pill.claro{{background:#F7F7F7;color:#0B0B0D}} .pill.laranja{{background:#FF6A1A;color:#fff;border-color:#FF6A1A}}
-.pill.img{{border-color:var(--ac);color:var(--ac)}}
+.pill.img{{border-color:var(--ac);color:var(--ac)}} .pill.azul{{background:#1E3BFF;color:#fff;border-color:#1E3BFF}} .pill.branco{{background:#F4F5F7;color:#0B0B0D}} .pill.preto{{background:#000;color:#FF3B30;border-color:#000}} .pill.vermelho{{background:#FF3B30;color:#fff;border-color:#FF3B30}}
 .comp{{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ac)}}
 blockquote{{margin:0;font:italic 400 22px/1.3 var(--serif)}} .cena p{{margin:0;max-width:65ch}}
 .rot{{display:block;font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--ink2);margin-bottom:2px}}
@@ -90,7 +93,7 @@ blockquote{{margin:0;font:italic 400 22px/1.3 var(--serif)}} .cena p{{margin:0;m
 <main>
 <header style="display:flex;flex-direction:column;gap:14px"><h2>storyboard · @matteu.ia</h2><h1>{D.get("chamada") or e(D["titulo"])}</h1>
 <p class="lead">{e(D.get("resumo", ""))}</p><div class="status"><b>Aguardando sua aprovação.</b> Nada foi programado ainda.</div></header>
-<section><h2>Identidade</h2><dl>{ident}</dl></section>
+<section><h2>Direção de arte</h2><dl>{ident}</dl></section>
 <section><h2>Mapa de ritmo</h2><div><div class="tempo">{segs}{mk}</div><div class="leg"><span>0 s</span><span>{mkl}</span><span>{v(TOT)} s</span></div></div></section>
 <section><h2>Planos</h2>{cards}</section>
 {"<section><h2>Pontos de atenção</h2><ul class='lista'>" + notas + "</ul></section>" if notas else ""}

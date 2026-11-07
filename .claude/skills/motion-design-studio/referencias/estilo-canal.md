@@ -1,69 +1,63 @@
 # Estilo do canal (@matteu.ia)
 
-Direção padrão de TODOS os vídeos do canal, tirada de dois vídeos de referência que o usuário enviou
-(anúncio de tecnologia em inglês com fundo claro e destaque verde-limão; anúncio de agência com
-celular 3D, cards com luz de borda e gradientes laranja). Leia antes de escrever qualquer storyboard.
-A paleta muda por vídeo se o usuário pedir; o MÉTODO abaixo não muda.
+Regra principal do usuário: **a qualidade, a energia e a velocidade são sempre as mesmas; a cara do
+vídeo nunca é a mesma.** Separe sempre duas coisas:
 
-## 1. O que as referências fazem (medido)
-
-| Medida | Referência 1 | Referência 2 |
+| | O que é | Muda por vídeo? |
 |---|---|---|
-| Duração | 34,8 s | 24,2 s |
-| Troca de fundo claro ↔ escuro | 3 vezes | 6 vezes |
-| Cortes secos | 3 (quase tudo é transição contínua) | 9 |
-| Quadros parados | 10% | 15% |
-| Ritmo de movimento | picos fortes a cada 2–4 s, respiros de ~1 s | picos a cada 1–3 s, respiros curtos |
+| **Linguagem de edição** | ritmo, velocidade, movimento, transições, tipografia cinética, sincronia voz/imagem/efeitos | **Não.** Padrão fixo do canal (seção 1) |
+| **Direção de arte** | paleta, fontes, fundos, layouts, sistema gráfico, tratamento de imagem, assinatura de transição | **Sim, sempre.** Criada do zero para o tema (seção 2) |
 
-Conclusão: a energia não vem de cortar muito. Vem de **algo novo entrando a cada 0,5–1 s**, de
-**transições contínuas** (o objeto da cena vira o da próxima) e de **pulsos**: uma rajada de
-movimento rápido na troca de ideia, depois ~1 s de deriva lenta para o olho ler.
+Os vídeos de referência que o usuário enviou servem **só** como referência de dinâmica e ritmo.
+Não copie deles (nem de vídeos anteriores do canal) paleta, fundos, layouts, fontes ou sequência de animações.
 
-## 2. Regras de linguagem
+## 1. Linguagem de edição (fixa)
 
-**Fundo**
-- Alternar claro (cinza-papel `#ECECEC`/`#F2F2F2`, nunca branco puro chapado) e escuro (`#0B0B0D`
-  com um brilho radial colorido e difuso, tipo brasa, atrás do assunto). Troca a cada 2–5 s.
-- Um momento de **tela cheia na cor de destaque** (gradiente) por vídeo, no clímax ou na virada.
+Medido nas referências: a energia não vem de cortar muito, vem de **algo novo entrando a cada 0,5–1 s**,
+de **transições contínuas** (o objeto de uma cena vira o da próxima) e de **pulsos** (rajada rápida na troca
+de ideia, ~1 s de respiro para ler). Só 10–15% dos quadros ficam parados.
 
-**Tipografia** (é ela que conta a história: o texto na tela É a narração)
-- Base elegante: sans moderna em peso leve/médio (Geist 300–500), 56–90 px, centralizada,
-  palavra por palavra no tempo da fala, entrando com desfoque → nítido (não máscara dura).
-- Impacto: 1 palavra-chave por frase vira GIGANTE (Archivo 900, 250–400 px, ocupando a largura),
-  ou ganha **brilho neon** na cor de destaque, ou vira **itálico serifado** (Instrument Serif) em
-  contraste com a sans.
-- Destaque por **faixa** de cor atrás de uma palavra ou número (marcador).
-- Sem legenda automática: as palavras animadas já são a legenda. Só ligar legenda se o usuário pedir.
-
-**Objetos**
-- Interfaces genéricas e limpas: celular 3D girando em perspectiva, janelas e cards inclinados
-  (rotateX/rotateY de 8–25°) com sombra macia, documentos flutuando, barra de busca com brilho.
-- Cards escuros com **luz de borda** na cor de destaque (rim light) e reflexo.
-- Infográficos simples: número grande com contador, pílulas empilhadas (listas), gráfico em
-  escada/linha, órbitas com ícones geométricos, planos em perspectiva (mapa/gráfico deitado).
-- Um **fio** gráfico (fita, traço com brilho) que atravessa cenas.
-- Nada de marca real nem foto: UI genérica da categoria, ícones geométricos próprios.
-
-**Câmera e transições**
-- Sempre um empurrão lento (zoom de 2–5%) ou deriva; nada parado.
-- Profundidade: o que está atrás fica desfocado; foco puxa para o assunto.
-- Transições preferidas: objeto vira o próximo (match/morph), chicote com desfoque, íris circular
-  na cor de destaque, zoom através de uma tela, corte seco só em batida ou palavra de impacto.
-
-## 3. Ritmo
-
-- Narração com pausas curtas (0,2–0,3 s). Se o áudio vier com pausas longas, propor encurtar
-  (ver `audio.md`, "Narração mais rápida") e pedir aprovação do resultado.
 - Plano novo a cada 1–2,5 s; nenhum plano acima de 3 s sem mudança forte.
-- Alinhar viradas e impactos à música: achar BPM, grave e subidas, e ajustar `musica.corte` para
-  que o drop caia na frase principal.
-- No máximo 1 impacto sonoro forte (`boom`/`hit`) a cada ~4 s; whoosh só em transição de verdade.
+- Movimento constante: câmera sempre empurrando, recuando ou derivando; nada parado.
+- Tipografia cinética sincronizada palavra por palavra; uma palavra de impacto por frase.
+- Variedade de enquadramento: alternar plano aberto / detalhe / tipografia / objeto / imagem.
+- Transições criativas e motivadas (o tema sugere a transição); corte seco só em impacto.
+- **Áudio: sem música de fundo.** Só narração (intacta, a menos que o usuário peça mudança) e
+  **muitos efeitos sonoros**, todos presos a um evento visual. Impacto forte (`boom`/`hit`) no máximo a cada ~4 s.
+- Sem legenda automática: o texto animado já acompanha a narração.
+- Cartela final com a logo do perfil (`imagens/logo.png`, máscara que aceita qualquer cor) e @matteu.ia.
 
-## 4. Fluxo para cada vídeo novo do canal
+## 2. Direção de arte (nova a cada vídeo)
 
-1. Ler este guia + `linguagem-visual.md`.
-2. Analisar narração (transcrever) e música (BPM, drop, subidas).
-3. Storyboard com: lista de planos de 1–2,5 s, claro/escuro de cada plano, palavra de impacto de
-   cada frase e tratamento dela (gigante / neon / serifa / faixa), objeto de cada plano e como ele
-   vira o próximo.
-4. Aprovação → produção → revisão → entrega (fluxo do SKILL.md).
+Antes do storyboard, escreva uma **direção de arte** própria, derivada do assunto e da mensagem:
+
+1. **Conceito** em uma frase: que mundo visual o tema pede e por quê (ex.: notícia → editorial com manchetes
+   e fotos; tutorial de Claude → interfaces, janelas e cursor; descoberta científica → experimental e cinematográfico;
+   IA → futurista e digital). São exemplos, não um cardápio fechado.
+2. **Paleta**: 3 a 5 cores com papel definido. Pode haver arco de cor que acompanha a narrativa.
+3. **Tipografia**: par de fontes escolhido para o tema. Além das fontes do estúdio, há fontes no npm
+   (`@fontsource/<nome>` ou `@fontsource-variable/<nome>`, ex.: Martian Mono, Unbounded, Syne, Fraunces,
+   Big Shoulders Display, IBM Plex Mono, Instrument Sans, Dela Gothic One). Fontes do projeto ficam em
+   `projetos/<nome>/fontes/` e entram em `projeto.json → fontesProjeto`.
+4. **Sistema gráfico**: os elementos recorrentes desse vídeo (ex.: linhas de cota, carimbos, manchetes, janelas, partículas).
+5. **Tratamento de imagem**: como fotos/imagens geradas entram (duotone, recorte, halftone, moldura, máscara).
+6. **Assinatura de transição**: 1 ou 2 transições que nascem do conceito (ex.: folha de papel, varredura, zoom num detalhe).
+
+Confira `direcoes-usadas.md` e **não repita** paleta, par de fontes, fundo ou assinatura de transição de vídeos anteriores.
+Depois de aprovada, registre a nova direção lá.
+
+## 3. Imagens
+
+- Imagens geradas no OpenArt (conta conectada; o ambiente "stickverse" libera `cdn.openart.ai`). Plano Starter:
+  4 imagens por vez. Nano Banana 2: 20 créditos (1K) ou 30 (2K, para tela cheia).
+- Gere já na direção de arte do vídeo (paleta e luz no prompt), ou trate depois (duotone, recorte) para que
+  as imagens pertençam ao vídeo e não pareçam bancos de imagem.
+- Sem logotipos, marcas reais ou pessoas reconhecíveis. Guarde em `projetos/<nome>/imagens/` (JPG ~1200 px);
+  `montar.py` embute tudo e o código usa `MDS.img("nome")`.
+
+## 4. Fluxo para cada vídeo
+
+1. Transcrever a narração (sem alterar a voz).
+2. Escrever a direção de arte (seção 2) + storyboard (`storyboard.json` → `storyboard.py`).
+3. Apresentar os dois e **esperar aprovação**.
+4. Gerar imagens → produzir → revisar → entregar (fluxo do SKILL.md).

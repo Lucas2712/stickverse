@@ -122,6 +122,9 @@
   /* executa f(on) quando o estado muda (troca de texto, cor etc.) */
   MDS.at = (a, f, b = 1e9) => { let st = null; return fx(t => { const on = t >= a && t < b; if (on !== st) { st = on; f(on); } }); };
 
+  /* imagem do projeto (pasta imagens/, embutida por montar.py) como URL data: */
+  MDS.img = nome => { const u = (window.MDS_IMAGENS || {})[nome]; if (!u) throw new Error(`imagem não encontrada: imagens/${nome}.*`); return u; };
+
   /* ---------- cenas e efeitos sonoros ---------- */
   MDS.CENAS = []; MDS.SFX = [];
   /* MDS.cena({ id, nome, inicio, fim, descricao, z, sfx: [["whoosh", 2.6], ...], montar(S) { ... } }) */

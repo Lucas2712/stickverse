@@ -1,21 +1,15 @@
 {
   "titulo": "IA e a segurança dos seus dados",
-  "descricao": "",
-  "tema": "",
-  "duracao": 30,
+  "descricao": "Reels de 47 s para @matteu.ia: IA encontrando falhas na criptografia. Fundo escuro e claro alternando, laranja como destaque, imagens geradas no OpenArt e efeitos sonoros sincronizados.",
+  "tema": "IA e cibersegurança",
+  "duracao": 47.2,
   "fps": 30,
-  "fontes": ["geist", "geist-mono"],
-  "poster": null,
-  "legendas": {
-    "ativo": true,
-    "y": 1430,
-    "tamanho": 64,
-    "peso": 600,
-    "destaques": [],
-    "ocultar": []
-  },
+  "fontes": ["geist", "geist-mono", "archivo", "instrument-serif-italico"],
+  "poster": 34.9,
+  "perfil": "@matteu.ia",
+  "legendas": { "ativo": false },
   "audio": {
-    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.5 },
+    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.45 },
     "musica": null,
     "ducking": { "ativo": true, "reducao": 0.4 }
   }

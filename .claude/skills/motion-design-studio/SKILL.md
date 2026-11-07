@@ -15,8 +15,8 @@ como link interativo (Artifact) e como MP4 (SendUserFile). Fale com ele em portu
 1. **Tema** do vídeo.
 2. **Roteiro** ou notícia (texto exato da narração).
 3. **Narração** do ElevenLabs (mp3/wav/m4a), enviada como anexo.
-4. *(Opcional)* **Música**: só se o usuário enviar o arquivo. Sem arquivo, não existe música:
-   nunca gere, sintetize ou invente uma trilha. Efeitos sonoros curtos sintetizados são permitidos.
+4. **Música: não há.** Regra do canal: sem música de fundo, só narração e muitos efeitos sonoros
+   sincronizados. Nunca gere, sintetize ou invente trilha. Use música só se o usuário pedir explicitamente.
 
 Faltou algo essencial (roteiro ou narração)? Peça antes de seguir. Os uploads chegam em
 `/root/.claude/uploads/...`: copie para o projeto, não edite o original.
@@ -46,8 +46,8 @@ cena: tempo, duração, composição, textos na tela, movimentos, transições, 
 Regras do storyboard:
 - Ritmo: troca de composição a cada 2 a 5 s; nenhuma cena acima de 6 s sem mudança visual forte.
 - Nunca duas cenas seguidas com a mesma composição (catálogo em `referencias/linguagem-visual.md`).
-- Defina a identidade visual do vídeo a partir do tema (paleta, fontes, fio condutor). Não repita a
-  identidade do projeto anterior.
+- Escreva antes a **direção de arte exclusiva** do vídeo (`referencias/estilo-canal.md`, seção 2) e confira
+  `referencias/direcoes-usadas.md`: nunca repita paleta, fontes, fundos, layouts ou sequência de animações.
 - Dados, números e nomes só do roteiro ou de fonte que o usuário deu. Nunca invente estatística.
 - Sem logotipos ou interfaces idênticas de empresas reais: UI genérica da categoria.
 

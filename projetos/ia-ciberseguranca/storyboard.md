@@ -2,220 +2,222 @@
 
 > Aguardando aprovação. Nada é programado antes dela.
 
-Reels de 47 s para @matteu.ia: 20 planos, fundo escuro e claro alternando, laranja como destaque, 7 imagens geradas no OpenArt, muitos efeitos sonoros sincronizados e a logo na cartela.
+Nova direção de arte, exclusiva deste vídeo: o sistema de segurança é mostrado como uma planta técnica (blueprint). A IA examina essa planta, acha as falhas em vermelho e, no fim, a planta se inverte e mostra o outro lado. 20 planos em 47 s, sem música, com muitos efeitos sonoros.
 
-## Identidade
+## Direção de arte
 
 | | |
 |---|---|
-| Cores | preto <code>#0B0B0D</code>, cinza-papel <code>#EDEDED</code> e laranja <code>#FF6A1A</code>; o laranja vira cor de alerta nas cenas de ataque |
-| Tipografia | Geist leve como base, uma palavra de impacto por frase (Archivo 900 gigante, neon laranja ou itálico serifado) e Geist Mono para terminal e código |
-| Imagens | 7 imagens geradas no OpenArt (Nano Banana 2, 20 créditos cada, cerca de 140 créditos no total), todas sem logotipos nem pessoas reais, na paleta preto e laranja, com zoom lento, máscaras e luz |
-| Narração | intacta: 43,5 s, sem mudar velocidade nem pausas |
-| Efeitos | muitos, sempre presos a um evento: digitação de terminal, bipes de varredura, glitches nas falhas, alertas, contadores, impactos nas viradas, whoosh nas transições |
-| Legenda | desligada: o texto animado acompanha a narração palavra por palavra |
+| Paleta | `#1E3BFF` azul cobalto (a planta, o sistema) · `#F4F5F7` branco técnico (as folhas) · `#FF3B30` vermelho sinal (só falhas e ataque) · `#000000` preto (o outro lado, ato 3) |
+| Conceito | <b>Planta técnica sob investigação.</b> Criptografia é engenharia invisível; aqui ela vira desenho técnico, como a planta de um cofre. A IA é a lupa e a mira vermelha que examinam o desenho. O arco de cor conta a história: azul e branco (o sistema), o vermelho invade (as falhas), tudo se inverte para preto e vermelho (o outro lado). |
+| Tipografia | <b>Martian Mono</b> (monoespaçada larga, técnica) nas palavras de impacto e nos rótulos; <b>Instrument Sans</b> no texto corrido. Texto alinhado à esquerda numa grade suíça, nunca centralizado como nos vídeos anteriores. |
+| Sistema gráfico | papel milimetrado, linhas de cota com medidas, rótulos «FIG. 01», desenhos de linha que se traçam como num plotter, carimbos, lupa, mira, tabelas e grades de células. Cantos retos: nada de cards arredondados nem brilhos neon. |
+| Imagens | as 7 imagens já geradas são reaproveitadas, sem gastar créditos, com tratamento <b>duotone</b>: azul e branco nos atos 1 e 2, vermelho e preto no ato 3, com retícula de impressão por cima, como pranchas técnicas impressas. A cor laranja original some. |
+| Transições | assinatura deste vídeo: <b>folhas de prancha</b> que deslizam umas sobre as outras, <b>zoom de lupa</b> num detalhe do desenho e a <b>inversão</b> da planta na virada do ato 3 |
+| Áudio | narração intacta; <b>sem música</b>; muitos efeitos: traço de plotter, carimbos, bipes de varredura, glitches nas falhas, contador, impactos nas viradas, deslizar de papel |
+| Diferente do anterior | a v2 usava cinza-papel, preto e laranja, Geist e Archivo centralizados, cards 3D arredondados, brilho neon e íris laranja. Nada disso volta aqui. |
 
 ## Mapa de ritmo
 
 | # | Tempo | Fundo | Composição | Imagem |
 |---|---|---|---|---|
-| 1 | 0,0–2,1 | escuro | Tipografia elegante |  |
-| 2 | 2,1–4,0 | escuro | Imagem + varredura | cadeado digital |
-| 3 | 4,0–5,5 | claro | Cards de dados em 3D |  |
-| 4 | 5,5–7,1 | claro | Palavra riscada |  |
-| 5 | 7,1–9,0 | escuro | Imagem em janela 3D | laboratório |
-| 6 | 9,0–11,1 | escuro | Terminal com IA varrendo código |  |
-| 7 | 11,1–13,6 | escuro | Palavra gigante + texto cifrado |  |
-| 8 | 13,6–15,1 | claro | Notificações empilhadas |  |
-| 9 | 15,1–17,1 | escuro | Imagem + mira de varredura | agente de IA |
-| 10 | 17,1–19,4 | claro | Número gigante |  |
-| 11 | 19,4–21,8 | escuro | Infográfico de bits |  |
-| 12 | 21,8–23,6 | laranja | Tela cheia na cor |  |
-| 13 | 23,6–26,9 | escuro | Imagem + cards por cima | data center |
-| 14 | 26,9–30,4 | claro | Radar sobre código |  |
-| 15 | 30,4–33,6 | escuro | Imagem + tipografia | escudo |
-| 16 | 33,6–35,7 | escuro | Virada com glitch |  |
-| 17 | 35,7–38,1 | claro/escuro | Tela dividida |  |
-| 18 | 38,1–40,9 | escuro | Imagem + alerta | invasor |
-| 19 | 40,9–43,7 | escuro | Imagem dividida + tipografia | dilema |
-| 20 | 43,7–47,2 | escuro | Cartela com logo |  |
+| 1 | 0,0–2,1 | azul | Grade suíça + plotter |  |
+| 2 | 2,1–4,0 | azul | Desenho técnico + lupa | cadeado (duotone, dentro da lupa) |
+| 3 | 4,0–5,5 | branco | Tabela técnica |  |
+| 4 | 5,5–7,1 | branco | Carimbo |  |
+| 5 | 7,1–9,0 | azul | Prancha com legenda | laboratório (duotone) |
+| 6 | 9,0–11,1 | branco | Código + mira |  |
+| 7 | 11,1–13,6 | azul | Grade de células |  |
+| 8 | 13,6–15,1 | branco | Faixas cinéticas |  |
+| 9 | 15,1–17,1 | azul | Imagem em diafragma | agente de IA (duotone) |
+| 10 | 17,1–19,4 | branco | Número + desenho |  |
+| 11 | 19,4–21,8 | azul | Grade de 1024 células |  |
+| 12 | 21,8–23,6 | vermelho | Tela cheia vermelha |  |
+| 13 | 23,6–26,9 | branco | Coluna de foto + lista | data center (duotone, coluna) |
+| 14 | 26,9–30,4 | azul | Lupa + chamadas |  |
+| 15 | 30,4–33,6 | branco | Imagem + linhas de construção | escudo (duotone) |
+| 16 | 33,6–35,7 | preto | Negativo + espelho |  |
+| 17 | 35,7–38,1 | azul/preto | Composição espelhada |  |
+| 18 | 38,1–40,9 | preto | Imagem + log | invasor (duotone vermelho) |
+| 19 | 40,9–43,7 | azul/preto | Tela partida horizontal | dilema (duotone dividido) |
+| 20 | 43,7–47,2 | azul | Cartela técnica |  |
 
-### 1 · E se eu te dissesse · 0,0–2,1 s
+### 1 · Hipótese · 0,0–2,1 s
 
 **Narração:** "E se eu te dissesse que uma inteligência artificial"
 
-**Fundo:** escuro · **Composição:** Tipografia elegante
+**Fundo:** azul · **Composição:** Grade suíça + plotter
 
-Preto com brasa laranja. As palavras entram uma a uma com desfoque; «inteligência artificial» em neon laranja. Um cursor de terminal pisca no canto.
+Azul cobalto. Uma grade milimetrada branca se desenha como num plotter. Texto alinhado à esquerda: «E se eu te dissesse» em Instrument Sans, depois «INTELIGÊNCIA» e «ARTIFICIAL» em Martian Mono grande, letra por letra. Rótulo «FIG. 00 · HIPÓTESE» no canto.
 
 **Sincronização:**
-- 0,00 s «E se eu te dissesse»: palavras entram
-- 1,14 s «inteligência artificial»: acende em neon
+- 0,00 s grade começa a se traçar
+- 1,14 s «INTELIGÊNCIA» digita letra a letra
+- 1,58 s «ARTIFICIAL»
 
-**Transição:** Zoom para dentro do brilho, que vira a luz do cadeado.
+**Transição:** A grade se fecha num quadrado que vira a moldura da planta do cadeado.
 
 ---
 
-### 2 · Falhas · 2,1–4,0 s
+### 2 · Planta do cadeado · 2,1–4,0 s
 
 **Narração:** "está descobrindo falhas em sistemas"
 
-**Fundo:** escuro · **Composição:** Imagem + varredura · **Imagem:** cadeado digital
+**Fundo:** azul · **Composição:** Desenho técnico + lupa · **Imagem:** cadeado (duotone, dentro da lupa)
 
-IMAGEM 1: cadeado digital de vidro e circuitos, iluminado em laranja. Uma linha de varredura desce sobre ele; em «falhas» aparecem rachaduras desenhadas e um glitch.
+A planta do cadeado se traça em linhas brancas, com cotas e medidas. Uma lupa circular percorre o desenho mostrando a foto do cadeado em duotone. Em «falhas», dois círculos vermelhos marcam pontos com «×» e linhas de chamada.
 
 **Sincronização:**
-- 2,58 s «descobrindo»: varredura começa
-- 3,04 s «falhas»: rachaduras + glitch
+- 2,58 s «descobrindo»: lupa começa a percorrer
+- 3,04 s «falhas»: marcas vermelhas + glitch
 
-**Transição:** Glitch e corte seco para o claro.
+**Transição:** Uma folha branca desliza por cima (prancha).
 
 ---
 
-### 3 · Seus dados · 4,0–5,5 s
+### 3 · Tabela de dados · 4,0–5,5 s
 
 **Narração:** "que protegem seus dados?"
 
-**Fundo:** claro · **Composição:** Cards de dados em 3D
+**Fundo:** branco · **Composição:** Tabela técnica
 
-Claro. Cards inclinados com dados pessoais genéricos: senha (••••••), cartão (**** 4821), mensagens, fotos, cada um com um cadeado laranja. «dados?» em itálico serifado.
+Folha branca com uma tabela de linhas finas: TIPO / VALOR / STATUS (senha ••••••, cartão •••• 4821, mensagens, fotos). Cada linha recebe o status «PROTEGIDO» em azul. «dados?» grande em Martian Mono.
 
 **Sincronização:**
-- 4,04 s «protegem»: cadeados fecham nos cards
+- 4,04 s «protegem»: status aparecem linha a linha
 - 4,70 s «dados?»: palavra grande
 
-**Transição:** Os cards recuam e viram fundo da cena 4.
+**Transição:** Corte para o carimbo.
 
 ---
 
-### 4 · Não é ficção · 5,5–7,1 s
+### 4 · Carimbo · 5,5–7,1 s
 
 **Narração:** "Isso não é ficção científica."
 
-**Fundo:** claro · **Composição:** Palavra riscada
+**Fundo:** branco · **Composição:** Carimbo
 
-«FICÇÃO CIENTÍFICA» gigante em preto; em «científica» um risco laranja atravessa as palavras.
+«ficção científica» em Instrument Sans fino; em «científica» um carimbo vermelho «NÃO É FICÇÃO» bate por cima, inclinado, com impacto e tinta falhada.
 
 **Sincronização:**
-- 5,74 s «não é»: entra pequeno
-- 6,00 s «ficção científica»: palavras gigantes
-- 6,50 s risco laranja + impacto
+- 6,00 s «ficção científica»: texto entra
+- 6,40 s carimbo bate
 
-**Transição:** Chicote para a direita.
+**Transição:** A folha desliza para cima e revela a prancha seguinte.
 
 ---
 
-### 5 · Pesquisadores · 7,1–9,0 s
+### 5 · Prancha FIG. 01 · 7,1–9,0 s
 
 **Narração:** "Pesquisadores do Google DeepMind"
 
-**Fundo:** escuro · **Composição:** Imagem em janela 3D · **Imagem:** laboratório
+**Fundo:** azul · **Composição:** Prancha com legenda · **Imagem:** laboratório (duotone)
 
-IMAGEM 2: pesquisadores de costas em frente a telas com código, luz laranja (sem rostos reconhecíveis). A imagem entra numa janela inclinada; o rótulo «Google DeepMind» aparece só como texto, sem logotipo.
+A foto do laboratório em duotone azul, impressa como prancha com retícula. Barra de legenda técnica: «FIG. 01 · PESQUISADORES · GOOGLE DEEPMIND», só texto, sem logotipo.
 
 **Sincronização:**
-- 7,16 s «Pesquisadores»: janela entra
-- 7,84 s «Google DeepMind»: rótulo de texto
+- 7,16 s «Pesquisadores»: prancha entra deslizando
+- 7,84 s «Google DeepMind»: legenda digita
 
-**Transição:** A câmera entra numa das telas, que vira o terminal da cena 6.
+**Transição:** Zoom de lupa num monitor da foto, que vira a folha de código.
 
 ---
 
-### 6 · Terminal · 9,0–11,1 s
+### 6 · Código sob a mira · 9,0–11,1 s
 
 **Narração:** "estão utilizando inteligência artificial para encontrar"
 
-**Fundo:** escuro · **Composição:** Terminal com IA varrendo código
+**Fundo:** branco · **Composição:** Código + mira
 
-Janela de terminal genérica: linhas de código rolando, um cursor de IA destacando trechos em laranja.
+Folha branca com código em azul sobre a grade. Uma mira vermelha (a IA) pula de um trecho a outro sublinhando em vermelho; em «encontrar» ela trava e escreve «FALHA».
 
 **Sincronização:**
-- 9,08 s «utilizando»: código começa a rolar
-- 10,86 s «encontrar»: trecho destacado
+- 9,08 s mira aparece
+- 10,86 s «encontrar»: trava + FALHA
 
-**Transição:** O trecho destacado cresce e vira a palavra da cena 7.
+**Transição:** As células do código se reorganizam na grade da cena 7.
 
 ---
 
-### 7 · Vulnerabilidades · 11,1–13,6 s
+### 7 · Grade de letras · 11,1–13,6 s
 
 **Narração:** "vulnerabilidades em sistemas de criptografia."
 
-**Fundo:** escuro · **Composição:** Palavra gigante + texto cifrado
+**Fundo:** azul · **Composição:** Grade de células
 
-«VULNERABILIDADES» gigante. Em «criptografia», uma faixa de caracteres cifrados embaralha e se reorganiza.
+«VULNERABILIDADES» em 16 células quadradas (4×4), cada letra virando como um painel de aeroporto. Embaixo, «criptografia» decodifica de caracteres aleatórios.
 
 **Sincronização:**
-- 11,14 s «vulnerabilidades»: palavra bate
-- 12,60 s «criptografia»: caracteres embaralham
+- 11,14 s letras viram em cascata
+- 12,60 s «criptografia» decodifica
 
-**Transição:** Flash e corte para o claro.
+**Transição:** Faixas vermelhas atravessam a tela (cena 8).
 
 ---
 
-### 8 · Chama atenção · 13,6–15,1 s
+### 8 · Faixas de alerta · 13,6–15,1 s
 
 **Narração:** "E a descoberta chama atenção."
 
-**Fundo:** claro · **Composição:** Notificações empilhadas
+**Fundo:** branco · **Composição:** Faixas cinéticas
 
-Claro. Alertas genéricos chegam do topo em sequência («nova descoberta», «segurança», «criptografia»), cada um com um ponto laranja.
+Três faixas diagonais (vermelha, azul, preta) atravessam a tela com «DESCOBERTA · DESCOBERTA ·» e «ATENÇÃO · ATENÇÃO ·» correndo, uma por palavra.
 
 **Sincronização:**
-- 13,78 s «descoberta»: 1º alerta
-- 14,24 s «chama»: 2º alerta
-- 14,42 s «atenção»: 3º alerta + pulso
+- 13,78 s faixa 1
+- 14,24 s faixa 2
+- 14,42 s faixa 3 + pulso
 
-**Transição:** Os alertas sobem e somem; entra o olho da IA.
+**Transição:** As faixas fecham a tela e se abrem como um diafragma.
 
 ---
 
-### 9 · Agentes de IA · 15,1–17,1 s
+### 9 · Abertura de diafragma · 15,1–17,1 s
 
 **Narração:** "Agentes de IA ajudaram a identificar"
 
-**Fundo:** escuro · **Composição:** Imagem + mira de varredura · **Imagem:** agente de IA
+**Fundo:** azul · **Composição:** Imagem em diafragma · **Imagem:** agente de IA (duotone)
 
-IMAGEM 3: núcleo de IA abstrato (esfera de luz e circuitos) como um olho. Uma mira de varredura gira e trava em dois pontos.
+O olho da IA em duotone azul aparece por um diafragma de câmera que se abre; ao redor, anéis finos e leituras de coordenadas que mudam. Em «identificar», duas miras vermelhas travam.
 
 **Sincronização:**
-- 15,18 s «Agentes de IA»: imagem entra com zoom
-- 16,64 s «identificar»: mira trava
+- 15,18 s diafragma abre
+- 16,64 s miras travam
 
-**Transição:** A mira vira o «2» da cena 10.
+**Transição:** As duas miras viram os dois pontos da cena 10.
 
 ---
 
-### 10 · Duas falhas · 17,1–19,4 s
+### 10 · 02 · 17,1–19,4 s
 
 **Narração:** "duas vulnerabilidades relacionadas à criptografia"
 
-**Fundo:** claro · **Composição:** Número gigante
+**Fundo:** branco · **Composição:** Número + desenho
 
-Claro. «2» gigante em laranja, com um diagrama de cadeado e dois pontos de falha piscando.
+«02» gigante em Martian Mono à esquerda e, à direita, o desenho de linha do cadeado com dois pontos vermelhos e chamadas «A» e «B».
 
 **Sincronização:**
-- 17,10 s «duas»: 2 bate
-- 17,38 s «vulnerabilidades»: pontos piscam
+- 17,10 s «02» bate
+- 17,38 s pontos e chamadas
 
-**Transição:** O diagrama gira e vira a chave da cena 11.
+**Transição:** Folha desliza para a esquerda.
 
 ---
 
-### 11 · RSA 1024 · 19,4–21,8 s
+### 11 · A chave de 1024 bits · 19,4–21,8 s
 
 **Narração:** "RSA de 1024 bits."
 
-**Fundo:** escuro · **Composição:** Infográfico de bits
+**Fundo:** azul · **Composição:** Grade de 1024 células
 
-«RSA» grande e um contador que corre até «1024 bits», com uma faixa de bits (0 e 1) passando atrás.
+«RSA» e um contador até 1024 enquanto uma grade de 32×32 quadradinhos (1024 células) se preenche em branco. Em «bits», a grade completa pisca.
 
 **Sincronização:**
-- 19,44 s «RSA»: entra
-- 20,40 s «1024»: contador corre
-- 20,96 s «bits»: trava + impacto
+- 19,44 s «RSA»
+- 20,40 s grade e contador correm
+- 20,96 s 1024 trava
 
-**Transição:** Corte seco para a tela cheia laranja.
+**Transição:** Corte seco para o vermelho.
 
 ---
 
@@ -223,113 +225,112 @@ Claro. «2» gigante em laranja, com um diagrama de cadeado e dois pontos de fal
 
 **Narração:** "Mas por que isso é tão importante?"
 
-**Fundo:** laranja · **Composição:** Tela cheia na cor
+**Fundo:** vermelho · **Composição:** Tela cheia vermelha
 
-Gradiente laranja em tela cheia; «por que isso é tão» em branco leve e «importante?» grande.
+O único momento de tela cheia vermelha: as palavras encaixam numa grade, linha a linha, e «IMPORTANTE?» ocupa a largura.
 
 **Sincronização:**
-- 21,86 s «Mas»: íris laranja
-- 22,66 s «importante?»: palavra bate
+- 21,86 s fundo vermelho bate
+- 22,66 s «IMPORTANTE?»
 
-**Transição:** O laranja encolhe na janela do data center.
+**Transição:** Uma folha branca entra por cima.
 
 ---
 
-### 13 · Proteger informações · 23,6–26,9 s
+### 13 · O que a criptografia protege · 23,6–26,9 s
 
 **Narração:** "Porque essa tecnologia é utilizada para proteger informações digitais."
 
-**Fundo:** escuro · **Composição:** Imagem + cards por cima · **Imagem:** data center
+**Fundo:** branco · **Composição:** Coluna de foto + lista · **Imagem:** data center (duotone, coluna)
 
-IMAGEM 4: corredor de servidores com luz laranja, zoom lento. Por cima, entram cards de app genéricos (banco, mensagens, compras), cada um com um cadeado que fecha.
+Coluna vertical à esquerda com o data center em duotone azul; à direita, lista técnica com ícones de linha: bancos, mensagens, compras, documentos, cada item recebendo um ✓ azul em «proteger».
 
 **Sincronização:**
-- 23,92 s «tecnologia»: imagem entra
-- 25,30 s «proteger»: cadeados fecham
-- 25,84 s «informações digitais»: texto
+- 23,92 s coluna entra
+- 25,30 s «proteger»: ✓ em sequência
 
-**Transição:** Os cards se alinham e viram a tela de varredura da cena 14.
+**Transição:** Zoom de lupa na lista, que vira a grade de código.
 
 ---
 
-### 14 · Encontrar falhas · 26,9–30,4 s
+### 14 · A lupa encontra · 26,9–30,4 s
 
 **Narração:** "E a capacidade da inteligência artificial de encontrar falhas pode"
 
-**Fundo:** claro · **Composição:** Radar sobre código
+**Fundo:** azul · **Composição:** Lupa + chamadas
 
-Claro. Um radar circular varre um bloco de código; a cada volta, marcadores laranja de falha aparecem.
+Grade de código em branco sobre azul; a lupa varre e, em «falhas», três chamadas vermelhas com linhas de cota: «FALHA 01», «02» e «03».
 
 **Sincronização:**
-- 27,50 s «capacidade»: radar começa
-- 29,58 s «falhas»: 3 marcadores
+- 27,50 s lupa começa
+- 29,58 s três chamadas
 
-**Transição:** Os marcadores se juntam e formam o escudo da cena 15.
+**Transição:** As linhas de cota se juntam e constroem o escudo.
 
 ---
 
-### 15 · Futuro da segurança · 30,4–33,6 s
+### 15 · Construção do escudo · 30,4–33,6 s
 
 **Narração:** "transformar completamente o futuro da segurança cibernética."
 
-**Fundo:** escuro · **Composição:** Imagem + tipografia · **Imagem:** escudo
+**Fundo:** branco · **Composição:** Imagem + linhas de construção · **Imagem:** escudo (duotone)
 
-IMAGEM 5: escudo digital luminoso. «transformar completamente» em leve; «segurança cibernética» com «cibernética» em itálico neon.
+O escudo em duotone azul com linhas de construção geométrica (círculos, ângulos, cotas) se desenhando por cima. «SEGURANÇA CIBERNÉTICA» em Martian Mono.
 
 **Sincronização:**
-- 30,48 s «transformar»: escudo se forma
-- 32,32 s «segurança cibernética»: palavras acendem
+- 30,48 s linhas de construção
+- 32,32 s «SEGURANÇA CIBERNÉTICA»
 
-**Transição:** Glitch forte e o escudo vira de lado (o outro lado).
+**Transição:** Inversão: a planta inteira vira negativo (preto e vermelho).
 
 ---
 
-### 16 · O outro lado · 33,6–35,7 s
+### 16 · Inversão · 33,6–35,7 s
 
 **Narração:** "Mas existe um outro lado."
 
-**Fundo:** escuro · **Composição:** Virada com glitch
+**Fundo:** preto · **Composição:** Negativo + espelho
 
-A tela gira 180° como uma moeda; o lado de trás é vermelho-alaranjado escuro. «outro lado» gigante com glitch RGB.
+A tela inverte como um negativo: fundo preto, linhas vermelhas. «OUTRO LADO» aparece espelhado e gira para a leitura certa.
 
 **Sincronização:**
-- 33,68 s «Mas»: impacto + giro
-- 34,76 s «outro lado»: palavra com glitch
+- 33,68 s inversão + impacto
+- 34,76 s texto espelhado gira
 
-**Transição:** Divide a tela ao meio (cena 17).
+**Transição:** A tela se divide num espelho vertical.
 
 ---
 
-### 17 · A mesma tecnologia · 35,7–38,1 s
+### 17 · Espelho · 35,7–38,1 s
 
 **Narração:** "A mesma tecnologia que pode proteger nossos dados"
 
-**Fundo:** claro/escuro · **Composição:** Tela dividida
+**Fundo:** azul/preto · **Composição:** Composição espelhada
 
-Metade clara com um escudo («proteger») e metade escura com um alvo; uma linha laranja separa as duas metades.
+O mesmo desenho do cadeado espelhado: à esquerda, azul e branco com «PROTEGER»; à direita, preto e vermelho com «?». Um eixo de simetria no meio.
 
 **Sincronização:**
-- 35,88 s «mesma tecnologia»: divisão aparece
-- 37,10 s «proteger nossos dados»: escudo acende
+- 35,88 s espelho se forma
+- 37,10 s «PROTEGER»
 
-**Transição:** O lado escuro empurra o claro para fora.
+**Transição:** O lado preto engole o azul.
 
 ---
 
-### 18 · Atacar sistemas · 38,1–40,9 s
+### 18 · Ataque · 38,1–40,9 s
 
 **Narração:** "também pode ser utilizada para atacar sistemas."
 
-**Fundo:** escuro · **Composição:** Imagem + alerta · **Imagem:** invasor
+**Fundo:** preto · **Composição:** Imagem + log · **Imagem:** invasor (duotone vermelho)
 
-IMAGEM 6: silhueta encapuzada anônima diante de telas, luz vermelho-alaranjada. Alertas de «acesso negado» piscam; «ATACAR» gigante com glitch.
+O invasor em duotone vermelho e preto com linhas de interferência; um log em mono rola («[!] tentativa de acesso...»). «ATACAR» bate em vermelho com glitch.
 
 **Sincronização:**
-- 38,18 s «também»: imagem entra
-- 39,80 s «atacar»: alerta + glitch
-- 40,12 s «sistemas»: tela treme
+- 38,18 s imagem entra
+- 39,80 s «ATACAR» + glitch
+- 40,12 s tela treme
 
-**Transição:** Corte para o dilema.
+**Transição:** Corte para a tela partida.
 
 ---
 
@@ -337,16 +338,16 @@ IMAGEM 6: silhueta encapuzada anônima diante de telas, luz vermelho-alaranjada.
 
 **Narração:** "Estamos diante de uma revolução ou de um novo perigo."
 
-**Fundo:** escuro · **Composição:** Imagem dividida + tipografia · **Imagem:** dilema
+**Fundo:** azul/preto · **Composição:** Tela partida horizontal · **Imagem:** dilema (duotone dividido)
 
-IMAGEM 7: cena dividida, metade luz laranja (futuro) e metade sombra (ameaça). «REVOLUÇÃO» de um lado, «PERIGO» do outro, «ou» no meio.
+A imagem do dilema dividida em cima (azul) e embaixo (vermelho e preto): «REVOLUÇÃO» em cima, «OU» na linha do meio, «NOVO PERIGO» embaixo com glitch.
 
 **Sincronização:**
-- 41,72 s «revolução»: lado claro acende
-- 42,20 s «ou»: aparece
-- 42,90 s «perigo»: lado escuro + impacto
+- 41,72 s «REVOLUÇÃO»
+- 42,20 s «OU»
+- 42,90 s «PERIGO»
 
-**Transição:** Íris escura até a cartela.
+**Transição:** A tela volta para o azul da planta.
 
 ---
 
@@ -354,14 +355,14 @@ IMAGEM 7: cena dividida, metade luz laranja (futuro) e metade sombra (ameaça). 
 
 **Narração:** "(sem fala)"
 
-**Fundo:** escuro · **Composição:** Cartela com logo
+**Fundo:** azul · **Composição:** Cartela técnica
 
-As duas metades da logo se encontram em laranja e ficam brancas; «Siga para entender o futuro.» e o botão Seguir com luz de borda; clique; @matteu.ia.
+Papel milimetrado azul; a logo em branco se monta no centro com linhas de cota medindo-a, como numa ficha técnica. «SIGA @matteu.ia» em Martian Mono e um botão retangular «SEGUIR» com clique e carimbo «SEGUINDO».
 
 **Sincronização:**
-- 43,8 s logo se forma
-- 44,8 s frase + botão
-- 45,6 s clique → Seguindo
+- 43,8 s logo + cotas
+- 44,9 s texto + botão
+- 45,6 s clique
 
 **Transição:** Fica parada e legível até o fim.
 
@@ -369,6 +370,7 @@ As duas metades da logo se encontram em laranja e ficam brancas; «Siga para ent
 
 ## Pontos de atenção
 
-- Imagens: geradas no OpenArt depois da sua aprovação (cerca de 140 de 2.980 créditos). Todas sem logotipos, sem pessoas reais e sem rostos reconhecíveis.
-- «Google DeepMind» aparece só como texto, porque está na narração. Não verifiquei a notícia: o vídeo repete o que a narração diz.
-- Música: você não mandou trilha. Pela regra do estúdio, sem arquivo não existe música, e o vídeo fica com narração e efeitos.
+- Imagens: reaproveito as 7 já geradas, sem gastar créditos, com tratamento duotone. Se preferir imagens geradas já na paleta azul e vermelha, custa cerca de 200 créditos.
+- Fontes novas instaladas pelo npm: Martian Mono e Instrument Sans.
+- «Google DeepMind» aparece só como texto, porque está na narração; não verifiquei a notícia.
+- Sem música, só narração e efeitos: agora é regra do canal.

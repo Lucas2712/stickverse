@@ -62,6 +62,11 @@ def main():
         arq, fam, desc = FONTES[f]
         faces.append(f"@font-face{{font-family:\"{fam}\";src:url({data_uri(os.path.join(RAIZ, 'fontes', arq))}) format(\"woff2\");{desc};font-display:block}}")
 
+    # fontes do próprio projeto (ex.: baixadas do npm @fontsource): projeto.json → fontesProjeto
+    #   [{ "familia": "Martian Mono", "arquivo": "fontes/martian-mono.woff2", "descritores": "font-weight:100 800" }]
+    for fp in cfg.get("fontesProjeto", []):
+        faces.append(f"@font-face{{font-family:\"{fp['familia']}\";src:url({data_uri(os.path.join(proj, fp['arquivo']))}) format(\"woff2\");{fp.get('descritores', 'font-weight:100 900')};font-display:block}}")
+
     # áudio
     audio = cfg.setdefault("audio", {})
     narr = achar_narracao(proj)
@@ -73,9 +78,17 @@ def main():
         if not os.path.exists(mp): sys.exit(f"música indicada em projeto.json não encontrada: {mp}")
         mus = f'<audio id="mus" preload="auto" src="{data_uri(mp)}"></audio>'
 
-    dados = ""
+    # imagens do projeto: projetos/<nome>/imagens/*.(jpg|png|webp) → MDS.img("nome")
+    imgs = {}
+    pi = os.path.join(proj, "imagens")
+    if os.path.isdir(pi):
+        for f in sorted(os.listdir(pi)):
+            b, ext = os.path.splitext(f)
+            if ext.lower() in (".jpg", ".jpeg", ".png", ".webp"): imgs[b] = data_uri(os.path.join(pi, f))
+
+    dados = "window.MDS_IMAGENS=" + json.dumps(imgs) + ";"
     if "MDS.mapa" in cenas or "M.mapa" in cenas:
-        dados = "window.MDS_DADOS={paises:" + ler(os.path.join(RAIZ, "dados", "paises-110m.json")) + "};"
+        dados += "window.MDS_DADOS={paises:" + ler(os.path.join(RAIZ, "dados", "paises-110m.json")) + "};"
 
     scripts = [ler(os.path.join(RAIZ, p)) for p in MOTOR + COMPONENTES]
     publico = {k: v for k, v in cfg.items() if k not in ("roteiro",)}
