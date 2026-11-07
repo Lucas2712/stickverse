@@ -1,22 +1,20 @@
 {
-  "titulo": "Tutorial",
-  "descricao": "",
-  "tema": "",
-  "duracao": 30,
+  "titulo": "Tutorial: o estúdio de IA com Claude Code",
+  "descricao": "Tutorial de 74 s para @matteu.ia. Direção de arte exclusiva: apresentação de produto (keynote), Inter Display, preto e cinza-claro com gradiente violeta-rosa-âmbar; janelas, terminal e pastas demonstram cada etapa. Narração intacta, sem música.",
+  "tema": "Tutorial do estúdio com Claude Code",
+  "duracao": 74.0,
   "fps": 30,
-  "fontes": ["geist", "geist-mono"],
-  "poster": null,
-  "legendas": {
-    "ativo": true,
-    "y": 1430,
-    "tamanho": 64,
-    "peso": 600,
-    "destaques": [],
-    "ocultar": []
-  },
+  "fontes": [],
+  "fontesProjeto": [
+    { "familia": "Inter", "arquivo": "fontes/inter.woff2", "descritores": "font-weight:100 900;font-display:block" },
+    { "familia": "JetBrains Mono", "arquivo": "fontes/jetbrains-mono.woff2", "descritores": "font-weight:100 800" }
+  ],
+  "poster": 28.6,
+  "perfil": "@matteu.ia",
+  "legendas": { "ativo": false },
   "audio": {
-    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.5 },
+    "volumes": { "narracao": 1.0, "musica": 0, "efeitos": 0.45 },
     "musica": null,
-    "ducking": { "ativo": true, "reducao": 0.4 }
+    "ducking": { "ativo": false }
   }
 }

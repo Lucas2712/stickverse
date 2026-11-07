@@ -1,15 +1,21 @@
-/* Tema do vídeo: identidade própria de cada projeto (cores e fontes do palco).
-   Defina a paleta a partir do assunto do vídeo; não reutilize a do projeto anterior. */
+/* Tema · tutorial · direção "keynote": preto + cinza-claro Apple-like, gradiente violeta → rosa → âmbar.
+   Inter 4 (tamanho óptico automático: Display nos títulos, Text no corpo) no lugar da SF Pro; JetBrains Mono no terminal. */
 :root{
-  --v-bg:#FFFFFF;      /* fundo */
-  --v-ink:#100D0A;     /* texto principal */
-  --v-ink2:#5F5852;    /* texto secundário */
-  --v-mute:#A8A098;    /* rótulos apagados */
-  --v-line:#EEEAE6;    /* linhas, trilhos, wireframes */
-  --v-soft:#F4F1EE;    /* superfícies suaves */
-  --v-ac:#FF5A1F;      /* cor de destaque (1 por vídeo) */
-  --v-ac2:#FF8A3D;     /* variação do destaque */
-  --v-sans:"Geist", "Helvetica Neue", Arial, sans-serif;
-  --v-display:"Geist", "Helvetica Neue", Arial, sans-serif;
-  --v-mono:"Geist Mono", Menlo, monospace;
+  --v-bg:#000; --v-ink:#1D1D1F; --v-ink2:#86868B; --v-mute:#AEAEB2; --v-line:#D2D2D7; --v-soft:#F5F5F7;
+  --v-ac:#7C5CFF; --v-ac2:#FF4D8D;
+  --v-sans:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --v-display:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --v-mono:"JetBrains Mono", Menlo, monospace;
+  --grad:linear-gradient(90deg,#7C5CFF 0%,#FF4D8D 55%,#FFB020 100%);
 }
+#stage{background:#000;font-family:var(--v-sans);font-optical-sizing:auto}
+#stage .pw{display:inline-block}
+#stage .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
+#stage .jan{position:absolute;border-radius:26px;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,.06), 0 40px 90px -30px rgba(0,0,0,.35), 0 12px 30px -16px rgba(0,0,0,.18)}
+#stage .jan.esc{box-shadow:0 0 0 1px rgba(255,255,255,.08), 0 40px 90px -30px rgba(0,0,0,.9)}
+#stage .barra{height:64px;display:flex;align-items:center;gap:10px;padding:0 24px;font:500 24px var(--v-sans);letter-spacing:-.01em}
+#stage .barra i{width:16px;height:16px;border-radius:50%;display:block}
+#stage .term{font:500 30px/1.55 var(--v-mono);white-space:pre}
+#stage .tog{position:absolute;width:110px;height:66px;border-radius:33px;background:#E5E5EA}
+#stage .tog b{position:absolute;left:4px;top:4px;width:58px;height:58px;border-radius:50%;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.2)}
+#stage .selo{display:inline-flex;align-items:center;gap:14px;height:64px;padding:0 28px;border-radius:32px;font:600 28px var(--v-sans);letter-spacing:-.01em}

@@ -5,7 +5,8 @@ Pega os eventos de som que as cenas já registram (MDS.sfx / sfx: [...]) e entre
 (.claude/skills/real-sfx), que escolhe sons reais da biblioteca do estúdio (studio/sons: Openverse conferido +
 banco do Earshot) e do pacote uisfx (CC0), coloca cada um no quadro exato e mixa com a narração protegida.
 
-Uso: python3 studio/ferramentas/sfx_real.py projetos/<nome> [--sem-exportar]
+Uso: python3 studio/ferramentas/sfx_real.py projetos/<nome> [--sem-exportar] [--realce 6]
+  --realce N  sobe N dB os sons pequenos de interface (vídeos com narração contínua, como tutoriais)
 Antes: montar.py (o HTML do projeto precisa existir).
 
 Gera em projetos/<nome>/saida/:
@@ -86,9 +87,16 @@ def main():
         if any(k in rot for k in ("hit", "drop", "glitch", "boom")): c.setdefault("highpass", 150)
         if any(k in rot for k in ("hit", "drop", "boom")) and not c.get("_grave_ok"):
             c["gain_db"] = round(c.get("gain_db", 0) - 6, 1); c["_grave_ok"] = 1   # o filtro sozinho deixa grave demais
+    # --realce N: sons pequenos de interface (cliques, pops, tiques, teclas, sinos) N dB mais altos; a voz segue protegida
+    rl = float(sys.argv[sys.argv.index("--realce") + 1]) if "--realce" in sys.argv else 0
+    if rl:
+        for c in d["cues"]:
+            rot = (c.get("label", "") + " " + str(c.get("uisfx", "")) + " " + str(c.get("role", ""))).lower()
+            if any(k in rot for k in ("click", "pop", "tick", "key", "chime", "ding", "blip", "press", "select", "progress", "notification")) and not c.get("_realce"):
+                c["gain_db"] = round(c.get("gain_db", 0) + rl, 1); c["_realce"] = rl
     json.dump(d, open(cj, "w"), indent=1)
     final = os.path.join(W, nome + "-sfx-real.mp4")
-    run([py, "scripts/mix.py", os.path.join(W, "cues.json"), "--out", final, "--voice-safe"], cwd=RSFX)
+    run([py, "scripts/mix.py", os.path.join(W, "cues.json"), "--out", final, "--voice-safe"] + (["--no-match-layer"] if "--realce" in sys.argv else []), cwd=RSFX)
     res = os.path.join(W, nome + "-sfx-real_resolved_cues.json"); trk = os.path.join(W, nome + "-sfx-real_sfx_track.wav")
     crit = subprocess.run([py, "scripts/critique.py", res, trk], cwd=RSFX, capture_output=True, text=True)
     open(os.path.join(W, "critica.txt"), "w").write(crit.stdout + crit.stderr)
