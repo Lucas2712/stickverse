@@ -1,0 +1,4 @@
+edbefcbc3474869e6cc1e8a7ca583b0efd0dab7e
+Origem: https://github.com/Clipwing/skills (pasta skills/real-sfx), commit acima, copiado em 2026-11-07.
+Licença: o README da skill declara "Scripts: MIT. uisfx (bundled mp3): code MIT, sounds CC0" (o repositório não traz arquivo LICENSE na raiz).
+Configuração local do estúdio: config.json (bibliotecas em studio/sons).

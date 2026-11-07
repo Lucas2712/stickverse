@@ -78,7 +78,8 @@ node studio/ferramentas/revisar.js projetos/<nome>     # NODE_PATH=$(npm root -g
 
 ### 5. Entrega
 1. Publique o HTML (`saida/<nome>.html`) com a ferramenta Artifact (mesmo caminho a cada versão = mesmo link).
-2. `node studio/ferramentas/exportar.js projetos/<nome>` → envie `saida/<nome>.mp4` com SendUserFile.
+2. `node studio/ferramentas/exportar.js projetos/<nome>`; para a entrega com **efeitos reais em faixa separada**,
+   `python3 studio/ferramentas/sfx_real.py projetos/<nome>` (ver `referencias/audio.md`, "Efeitos sonoros reais"). → envie `saida/<nome>.mp4` com SendUserFile.
    Prévia rápida: `--escala 0.5` ou `--de 10 --ate 18` (gera `-rascunho.mp4`).
 3. Commit e push de `projetos/<nome>/` (a pasta `saida/` não vai para o git).
 4. Na mensagem final: o que foi feito, o que a revisão encontrou e corrigiu, o que não foi verificado
