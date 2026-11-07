@@ -1,22 +1,16 @@
 {
   "titulo": "A inteligência artificial está mudando tudo · v2",
-  "descricao": "",
-  "tema": "",
-  "duracao": 30,
+  "descricao": "Reels de 23,2 s para @matteu.ia no estilo do canal: fundo claro e escuro alternando, laranja como destaque, objetos em 3D e cortes presos às batidas da música (128 BPM).",
+  "tema": "A inteligência artificial está mudando tudo",
+  "duracao": 23.2,
   "fps": 30,
-  "fontes": ["geist", "geist-mono"],
-  "poster": null,
-  "legendas": {
-    "ativo": true,
-    "y": 1430,
-    "tamanho": 64,
-    "peso": 600,
-    "destaques": [],
-    "ocultar": []
-  },
+  "fontes": ["geist", "geist-mono", "archivo", "instrument-serif-italico"],
+  "poster": 18.95,
+  "perfil": "@matteu.ia",
+  "legendas": { "ativo": false },
   "audio": {
-    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.5 },
-    "musica": null,
+    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.35 },
+    "musica": { "arquivo": "musica.mp3", "inicio": 0.0, "corte": 3.30, "fadeIn": 0.3, "fadeOut": 1.5 },
     "ducking": { "ativo": true, "reducao": 0.4 }
   }
 }

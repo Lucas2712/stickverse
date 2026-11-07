@@ -1,15 +1,19 @@
-/* Tema do vídeo: identidade própria de cada projeto (cores e fontes do palco).
-   Defina a paleta a partir do assunto do vídeo; não reutilize a do projeto anterior. */
+/* Tema · v2 no estilo do canal (referencias/estilo-canal.md)
+   Cinza-papel / preto / laranja. Geist leve como base, Archivo 900 no impacto, Instrument Serif itálico nos acentos. */
 :root{
-  --v-bg:#FFFFFF;      /* fundo */
-  --v-ink:#100D0A;     /* texto principal */
-  --v-ink2:#5F5852;    /* texto secundário */
-  --v-mute:#A8A098;    /* rótulos apagados */
-  --v-line:#EEEAE6;    /* linhas, trilhos, wireframes */
-  --v-soft:#F4F1EE;    /* superfícies suaves */
-  --v-ac:#FF5A1F;      /* cor de destaque (1 por vídeo) */
-  --v-ac2:#FF8A3D;     /* variação do destaque */
+  --v-bg:#EDEDED; --v-ink:#0B0B0D; --v-ink2:#5E5E66; --v-mute:#9A9AA2; --v-line:#DCDCE0; --v-soft:#F4F4F5;
+  --v-ac:#FF6A1A; --v-ac2:#FF3D2E;
   --v-sans:"Geist", "Helvetica Neue", Arial, sans-serif;
-  --v-display:"Geist", "Helvetica Neue", Arial, sans-serif;
+  --v-display:"Archivo", "Arial Narrow", Arial, sans-serif;
   --v-mono:"Geist Mono", Menlo, monospace;
+  --v-radius:30px;
+  --v-shadow:0 1px 2px rgba(0,0,0,.05), 0 0 0 1px rgba(0,0,0,.05), 0 50px 90px -35px rgba(0,0,0,.38), 0 14px 30px -18px rgba(0,0,0,.2);
 }
+#stage{background:#0B0B0D}
+#stage .pw{display:inline-block}
+#stage .ser{font-family:"Instrument Serif", Georgia, serif; font-style:italic; font-weight:400; letter-spacing:-.01em}
+#stage .neon{color:#FFE4D2; text-shadow:0 0 16px #FF6A1A, 0 0 44px rgba(255,106,26,.75), 0 0 90px rgba(255,61,46,.45)}
+#stage .neonC{color:var(--v-ac); text-shadow:0 0 26px rgba(255,106,26,.55), 0 0 60px rgba(255,106,26,.3)}
+#stage .card{background:#FBFBFB}
+#stage .dots i{background:#D4D4D8 !important}
+#stage .wh{font-family:var(--v-mono); font-size:24px}
