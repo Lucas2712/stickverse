@@ -87,7 +87,10 @@ e não são reaproveitadas automaticamente.
 - **Instalados pelo script de preparação** (ambiente de nuvem "stickverse"):
   - `faster-whisper` 1.2.1 (MIT) + modelo Whisper small (MIT, ~250 MB, SHA-256 conferido);
   - Earshot 0.4.1 (MIT) com torch para CPU e os modelos CLAP/AST;
-  - classificador YAMNet do Real SFX (`.claude/skills/real-sfx/vendor/venv`, fora do git).
+  - classificador YAMNet do Real SFX (`.claude/skills/real-sfx/vendor/`, fora do git): `yamnet.onnx` de
+    huggingface.co/audiomagic/yamnet-onnx (conversão Apache 2.0 do YAMNet do Google, pesos sem alteração), SHA-256 conferido.
+  - Cada download tem até 3 tentativas; o resultado fica em `/opt/mds/estado.txt` (`whisper`, `earshot-modelos`,
+    `yamnet`: ok ou FALHOU). Os modelos ficam fora do git e são baixados de novo a cada sessão (~1 min).
 - **Sons:** Real SFX (MIT) com o pacote uisfx (CC0), banco do Earshot (MIT) e Openverse.
   CC0 primeiro; CC BY só sem alternativa CC0 e com atribuição; proibidos NC, ND e SA; a licença de cada
   arquivo é conferida na página de origem; créditos em `studio/sons/creditos.json` e no
