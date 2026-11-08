@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "elevenlabs": {
+      "command": "uvx",
+      "args": ["elevenlabs-mcp==0.12.2"],
+      "env": {
+        "ELEVENLABS_API_KEY": "proxy-injected",
+        "ELEVENLABS_MCP_BASE_PATH": "studio/elevenlabs"
+      }
+    }
+  }
+}

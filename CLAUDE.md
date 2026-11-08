@@ -61,7 +61,7 @@ textos, assinaturas), use esse nome; não use nomes antigos ou provisórios da p
 9. **Revisar antes de entregar** (relatório + todas as folhas de quadros) e dizer com franqueza o que
    não foi verificado. Claude não ouve áudio: a mixagem final depende do ouvido do usuário.
 
-10. **Consultar o usuário** antes de gastar créditos (OpenArt), liberar rede ou mudar algo que afete
+10. **Consultar o usuário** antes de gastar créditos (OpenArt, ElevenLabs), liberar rede ou mudar algo que afete
     todos os projetos.
 
 ## Onde fica cada coisa
@@ -98,6 +98,13 @@ Conferir antes se a ferramenta e as dependências estão presentes (regra 8).
   `bash studio/ferramentas/preparar_ambiente.sh --testar` (baixa os modelos de novo, sem dependências novas,
   confere o SHA-256 do YAMNet e testa Earshot, YAMNet e a biblioteca). Só considere o ambiente pronto com todos
   os itens "ok"; se algo falhar, mostre `/opt/mds/preparacao.log` e avise o usuário da limitação antes de produzir.
+- **ElevenLabs** (narração em PT-BR, efeitos sonoros e trilhas): servidor MCP oficial `elevenlabs-mcp` (MIT) em
+  `.mcp.json`, iniciado pelo `uvx`. A chave fica só no cofre do ambiente "stickverse" (o proxy a injeta em
+  `api.elevenlabs.io`); nunca em arquivo, variável ou chat. Antes de **cada** geração: informar a estimativa de créditos
+  e pedir aprovação (as ferramentas que gastam créditos pedem confirmação em `.claude/settings.json`). Consultar o saldo
+  com `check_subscription` antes e depois. Áudios gerados vão para `studio/elevenlabs/` (fora do git) e depois para o
+  projeto. Plano gratuito: conferir a licença de uso comercial antes de publicar. As ferramentas de áudio do estúdio
+  (Real SFX, Earshot, sintetizador do player) continuam valendo; a ElevenLabs é uma opção a mais.
 - Rede liberada: OpenArt (imagens), Openverse, Freesound, Wikimedia, Hugging Face e PyTorch.
   O Freesound bloqueia servidores de nuvem (403): não contornar.
 

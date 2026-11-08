@@ -85,3 +85,13 @@ Não contorne. Alternativa: o usuário baixa no celular e envia, e a licença é
 a biblioteca não tem; `earshot describe/match ARQ` descreve um som em palavras; `earshot timeline SAIDA.mp4 --video ...`
 e `earshot sheet` mostram a escuta sincronizada com a imagem; `earshot critique` compara com filmes profissionais.
 Comandos com modelos levam ~20 s para carregar. Nada disso substitui o ouvido do usuário.
+
+## ElevenLabs (opcional, com aprovação e créditos)
+
+Servidor MCP oficial `elevenlabs-mcp` (MIT), configurado em `.mcp.json`; a chave fica no cofre do ambiente.
+- **Narração PT-BR:** `text_to_speech` (modelos com português: `eleven_v3`, `eleven_multilingual_v2`, `eleven_flash_v2_5`…).
+  Custo aproximado: 1 crédito por caractere do roteiro (modelos flash/turbo costumam custar menos). Depois, `transcrever.py` como sempre.
+- **Efeitos sob medida:** `text_to_sound_effects` (descrição + duração). Entram em `studio/sons/elevenlabs/<tipo>/` com crédito
+  em `creditos.json` (origem ElevenLabs, licença conforme o plano) e o índice do Real SFX é reconstruído (`build_index.py`).
+- **Trilhas:** `compose_music` / `create_composition_plan`. Música continua só quando o usuário pedir.
+- Sempre: estimativa de créditos → aprovação → geração → `check_subscription` para conferir o gasto real.
