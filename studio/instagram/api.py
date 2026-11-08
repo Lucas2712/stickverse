@@ -14,7 +14,7 @@ Segurança
   - Registro de consultas: só data, tipo de consulta e resultado (ok/erro). Nunca IDs de comentários, textos, nomes de
     usuário ou conteúdo de mensagens. Fica em studio/instagram/dados/ (fora do git) e é podado após 30 dias.
 """
-import json, os, re, time, urllib.error, urllib.parse, urllib.request
+import fcntl, json, os, re, stat, sys, time, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
 
 HOST = "graph.instagram.com"
@@ -68,6 +68,14 @@ class ErroAPI(Exception):
         self.status, self.codigo = status, codigo
         super().__init__(limpar(f"HTTP {status} · código {codigo} · {mensagem}"))
 
+    def resumo(self):
+        """Descrição segura para mostrar fora do processo: só status, código e categoria (sem a mensagem da Meta,
+        que pode repetir parâmetros ou identificadores)."""
+        cat = {190: "token inválido ou expirado", 10: "permissão ausente", 200: "permissão ausente", 100: "parâmetro inválido ou objeto inexistente",
+               4: "limite de chamadas", 17: "limite de chamadas", 32: "limite de chamadas", 613: "limite de chamadas", 80002: "limite de chamadas",
+               -1: "resposta inválida"}.get(self.codigo, "erro da API")
+        return f"Erro da API do Instagram: HTTP {self.status}, código {self.codigo} ({cat})."
+
 
 def limpar(texto):
     """Remove tokens de qualquer texto (mensagens de erro, URLs)."""
@@ -78,21 +86,99 @@ def limpar(texto):
     return t
 
 
-# ---------------- registro de consultas (sem conteúdo) ----------------
+# ---------------- arquivos privados (registro e relatórios) ----------------
+def pasta_privada(caminho):
+    """Cria (ou confere) uma pasta só do usuário (700). Recusa link simbólico e pasta de outro dono."""
+    os.makedirs(caminho, mode=0o700, exist_ok=True)
+    st = os.lstat(caminho)
+    if stat.S_ISLNK(st.st_mode) or not stat.S_ISDIR(st.st_mode): raise OSError(f"{caminho} não é uma pasta comum")
+    if st.st_uid != os.getuid(): raise OSError(f"{caminho} pertence a outro usuário")
+    if stat.S_IMODE(st.st_mode) != 0o700: os.chmod(caminho, 0o700)
+    return caminho
+
+
+def gravar_novo(caminho, texto):
+    """Cria um arquivo novo com permissão 600 já na criação (sem janela de leitura por outros) e nunca sobrescreve:
+    O_EXCL falha se o nome existir; O_NOFOLLOW recusa link simbólico. Devolve o caminho efetivamente usado."""
+    base, ext = os.path.splitext(caminho)
+    for n in range(100):
+        alvo = caminho if n == 0 else f"{base}-{n + 1}{ext}"
+        try: fd = os.open(alvo, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, 0o600)
+        except FileExistsError: continue
+        with os.fdopen(fd, "w", encoding="utf-8") as f: f.write(texto); f.flush(); os.fsync(f.fileno())
+        return alvo
+    raise OSError("muitos arquivos com o mesmo nome")
+
+
+def _abrir_registro(flags):
+    return os.open(REGISTRO, flags | os.O_NOFOLLOW, 0o600)
+
+
 def registrar(tipo, resultado, agora=None):
+    """Acrescenta uma linha {quando, consulta, resultado} ao registro, sem nenhum conteúdo.
+
+    Robustez: trava exclusiva (fcntl.flock num arquivo .lock) contra MCP e linha de comando ao mesmo tempo; acréscimo
+    com O_APPEND (nunca reescreve o que já existe); a poda dos >30 dias grava num arquivo temporário 600 e troca de forma
+    atômica (os.replace), então uma falha no meio nunca deixa o registro truncado. Links simbólicos são recusados.
+    Falhas de registro não interrompem a consulta: viram um aviso sem conteúdo em stderr (nunca em stdout, que é do MCP)."""
     agora = agora or datetime.now(timezone.utc)
-    os.makedirs(DADOS, mode=0o700, exist_ok=True)
+    linha = json.dumps({"quando": agora.isoformat(timespec="seconds"), "consulta": str(tipo)[:20], "resultado": str(resultado)[:20]}) + "\n"
+    try:
+        pasta_privada(DADOS)
+        trava = os.open(REGISTRO + ".lock", os.O_RDWR | os.O_CREAT | os.O_NOFOLLOW, 0o600)
+        try:
+            fcntl.flock(trava, fcntl.LOCK_EX)
+            fd = _abrir_registro(os.O_WRONLY | os.O_APPEND | os.O_CREAT)
+            try:
+                os.fchmod(fd, 0o600); os.write(fd, linha.encode("utf-8")); os.fsync(fd)
+            finally: os.close(fd)
+            _podar(agora)
+        finally:
+            os.close(trava)                       # fechar libera a trava
+        return True
+    except OSError as e:
+        print(f"aviso: registro de consultas indisponível ({type(e).__name__})", file=sys.stderr)
+        return False
+
+
+def _podar(agora):
+    """Chamada com a trava já obtida. Só reescreve quando a primeira linha passou da retenção (ou é inválida)."""
     limite = agora - timedelta(days=RETENCAO_DIAS)
-    linhas = []
-    if os.path.exists(REGISTRO):
-        with open(REGISTRO, encoding="utf-8") as f:
-            for l in f:
-                try:
-                    if datetime.fromisoformat(json.loads(l)["quando"]) >= limite: linhas.append(l.rstrip("\n"))
-                except (ValueError, KeyError): pass
-    linhas.append(json.dumps({"quando": agora.isoformat(timespec="seconds"), "consulta": tipo, "resultado": resultado}))
-    with open(REGISTRO, "w", encoding="utf-8") as f: f.write("\n".join(linhas) + "\n")
-    os.chmod(REGISTRO, 0o600)
+    def valida(l):
+        try: return datetime.fromisoformat(json.loads(l)["quando"]) >= limite
+        except (ValueError, KeyError, TypeError): return False
+    fd = _abrir_registro(os.O_RDONLY)
+    with os.fdopen(fd, encoding="utf-8") as f: linhas = f.read().splitlines()
+    if not linhas or valida(linhas[0]): return
+    manter = [l for l in linhas if valida(l)]
+    tmp = f"{REGISTRO}.{os.getpid()}.tmp"
+    fd = os.open(tmp, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, 0o600)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f: f.write("".join(l + "\n" for l in manter)); f.flush(); os.fsync(f.fileno())
+        os.replace(tmp, REGISTRO)
+    except BaseException:
+        if os.path.exists(tmp): os.remove(tmp)
+        raise
+
+
+# ---------------- validação de argumentos (antes de qualquer consulta) ----------------
+def validar_id(valor, nome="id"):
+    """IDs da Meta são numéricos. Aceita só texto de 1 a 30 dígitos (ou inteiro positivo); nada de bool, sinais ou espaços."""
+    if isinstance(valor, bool) or not isinstance(valor, (str, int)): raise Recusado(f"{nome} inválido")
+    s = str(valor)
+    if not re.fullmatch(r"[0-9]{1,30}", s): raise Recusado(f"{nome} inválido: use só dígitos")
+    return s
+
+
+def validar_inteiro(valor, nome, minimo, maximo):
+    if isinstance(valor, bool) or not isinstance(valor, int): raise Recusado(f"{nome} deve ser um número inteiro")
+    if not minimo <= valor <= maximo: raise Recusado(f"{nome} fora do intervalo {minimo}–{maximo}")
+    return valor
+
+
+def validar_bool(valor, nome):
+    if not isinstance(valor, bool): raise Recusado(f"{nome} deve ser verdadeiro ou falso")
+    return valor
 
 
 # ---------------- transportes ----------------
@@ -211,26 +297,29 @@ def perfil(c):
 
 
 def publicacoes(c, limite=12):
-    limite = max(1, min(int(limite), 50))
+    limite = validar_inteiro(limite, "limite", 1, 50)
     return c.get("me/media", fields="id,caption,media_type,media_product_type,permalink,timestamp,like_count,comments_count",
                  limit=limite).get("data", [])[:limite]
 
 
 def metricas_midia(c, midia_id, tipo_produto):
+    midia_id = validar_id(midia_id)
     mets = METRICAS_REELS if tipo_produto == "REELS" else METRICAS_FEED
     r = c.get(f"{midia_id}/insights", metric=",".join(mets))
     return {d["name"]: (d.get("values") or [{}])[0].get("value", d.get("total_value", {}).get("value")) for d in r.get("data", [])}
 
 
 def publicacao(c, midia_id, com_metricas=True):
-    m = c.get(str(midia_id), fields="id,caption,media_type,media_product_type,permalink,timestamp,like_count,comments_count")
+    midia_id = validar_id(midia_id); validar_bool(com_metricas, "metricas")
+    m = c.get(midia_id, fields="id,caption,media_type,media_product_type,permalink,timestamp,like_count,comments_count")
     if com_metricas: m["metricas"] = metricas_midia(c, m["id"], m.get("media_product_type"))
     return m
 
 
 def comentarios(c, midia_id, limite=50):
     """Texto dos comentários só para mostrar no chat: não é gravado em disco nem registrado."""
-    return c.get(f"{midia_id}/comments", fields="id,text,timestamp,username,like_count", limit=max(1, min(int(limite), 50))).get("data", [])
+    midia_id = validar_id(midia_id); limite = validar_inteiro(limite, "limite", 1, 50)
+    return c.get(f"{midia_id}/comments", fields="id,text,timestamp,username,like_count", limit=limite).get("data", [])
 
 
 def _totais(c, ini, fim, metricas):
@@ -241,7 +330,7 @@ def _totais(c, ini, fim, metricas):
 
 def metricas_conta(c, dias=28, comparar=True, agora=None, metricas=None):
     """Totais do período (máx. 30 dias por consulta) e, se pedido, o período anterior de mesmo tamanho com a variação."""
-    dias = max(1, min(int(dias), 30)); agora = agora or datetime.now(timezone.utc); mets = metricas or METRICAS_CONTA_PADRAO
+    dias = validar_inteiro(dias, "dias", 1, 30); validar_bool(comparar, "comparar"); agora = agora or datetime.now(timezone.utc); mets = metricas or METRICAS_CONTA_PADRAO
     fim, ini = agora, agora - timedelta(days=dias)
     out = {"periodo": {"de": ini.date().isoformat(), "ate": fim.date().isoformat(), "dias": dias}, "atual": _totais(c, ini, fim, mets)}
     if comparar:
@@ -264,7 +353,8 @@ def status(c):
 
 
 def relatorio_markdown(c, dias=28, n=12):
-    """Relatório sem nenhum conteúdo de terceiros: só números da conta e das próprias publicações."""
+    """Relatório só com datas, tipos e números: sem legendas, comentários ou qualquer texto de publicação."""
+    n = validar_inteiro(n, "n", 1, 50)
     p, mc, pubs = perfil(c), metricas_conta(c, dias), publicacoes(c, n)
     linhas = [f"# Relatório do Instagram · @{p.get('username')}", "",
               f"Período: {mc['periodo']['de']} a {mc['periodo']['ate']} ({mc['periodo']['dias']} dias), comparado ao período anterior.", "",
@@ -272,13 +362,12 @@ def relatorio_markdown(c, dias=28, n=12):
               "| métrica | período | anterior | variação |", "|---|---|---|---|"]
     for k, v in mc["atual"].items():
         var = mc["variacao_pct"].get(k); linhas.append(f"| {k} | {v} | {mc['anterior'].get(k)} | {'' if var is None else f'{var:+.1f}%'} |")
-    linhas += ["", "## Publicações recentes (por visualizações)", "", "| data | tipo | legenda | views | alcance | curtidas | comentários | compart. | salvos |", "|---|---|---|---|---|---|---|---|---|"]
+    linhas += ["", "## Publicações recentes (por visualizações)", "", "| data | tipo | views | alcance | curtidas | comentários | compart. | salvos |", "|---|---|---|---|---|---|---|---|"]
     lista = []
     for m in pubs:
         mm = metricas_midia(c, m["id"], m.get("media_product_type")); lista.append((mm.get("views") or 0, m, mm))
     for _, m, mm in sorted(lista, key=lambda x: -x[0]):
-        leg = (m.get("caption") or "").replace("\n", " ").replace("|", "/")[:50]
-        linhas.append(f"| {m.get('timestamp', '')[:10]} | {m.get('media_product_type')} | {leg} | {mm.get('views')} | {mm.get('reach')} | "
+        linhas.append(f"| {m.get('timestamp', '')[:10]} | {m.get('media_product_type')} | {mm.get('views')} | {mm.get('reach')} | "
                       f"{mm.get('likes')} | {mm.get('comments')} | {mm.get('shares')} | {mm.get('saved')} |")
     linhas += ["", mc["aviso"]]
     return "\n".join(linhas) + "\n"

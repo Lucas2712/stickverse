@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""STUDIO MATTEU · Instagram · testes OFFLINE (fase 1)
+"""STUDIO MATTEU · Instagram · testes OFFLINE (fase 1, com as correções da auditoria)
 
 Nenhum teste usa a rede: abrir conexão (socket ou urllib) faz o teste falhar. Todas as respostas são simuladas.
 Os registros de teste vão para uma pasta temporária, não para studio/instagram/dados/.
 
   python3 -I studio/instagram/teste_offline.py
 """
-import json, os, socket, subprocess, sys, tempfile, unittest, urllib.parse, urllib.request
+import json, multiprocessing, os, socket, stat, subprocess, sys, tempfile, unittest, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
@@ -59,7 +59,7 @@ class TestLeitura(Base):
         self.assertEqual(r["periodo"]["dias"], 28)
         self.assertEqual(r["atual"]["views"], 52000); self.assertEqual(r["anterior"]["views"], 36400)
         self.assertAlmostEqual(r["variacao_pct"]["views"], 42.9)
-        self.assertEqual(api.metricas_conta(self.cliente(), dias=90)["periodo"]["dias"], 30)   # a API aceita até 30 dias
+        with self.assertRaises(api.Recusado): api.metricas_conta(self.cliente(), dias=90)        # a API aceita até 30 dias
 
     def test_comentarios_e_cota(self):
         c = self.cliente()
@@ -149,7 +149,7 @@ class TestPrivacidade(Base):
 
     def test_relatorio_sem_comentarios(self):
         rel = api.relatorio_markdown(self.cliente(), 28, 3)
-        self.assertIn("Brasil sob temporais", rel); self.assertIn("+42.9%", rel)
+        self.assertIn("+42.9%", rel)
         for proibido in ("Que vídeo", "narração rápida", "pessoa.ficticia"): self.assertNotIn(proibido, rel)
 
 
@@ -158,16 +158,16 @@ class TestServidorMCP(Base):
         servidor_mcp.SIMULADO = True
         try:
             r = servidor_mcp.responder({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2025-06-18"}})
-            self.assertEqual(r["result"]["serverInfo"]["name"], "studio-matteu-instagram")
+            self.assertEqual(r["result"]["serverInfo"]["name"], "studio-matteu-instagram-simulado")
             self.assertIsNone(servidor_mcp.responder({"jsonrpc": "2.0", "method": "notifications/initialized"}))
             nomes = [t["name"] for t in servidor_mcp.responder({"jsonrpc": "2.0", "id": 2, "method": "tools/list"})["result"]["tools"]]
             self.assertEqual(nomes, ["ig_status", "ig_perfil", "ig_publicacoes", "ig_publicacao", "ig_comentarios", "ig_metricas_conta", "ig_cota_publicacao"])
             for proibida in ("publicar", "responder", "enviar", "excluir", "ocultar", "agendar"):
                 self.assertFalse(any(proibida in n for n in nomes))
             r = servidor_mcp.responder({"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "ig_publicacao", "arguments": {"id": "1801"}}})
-            self.assertFalse(r["result"]["isError"]); self.assertEqual(json.loads(r["result"]["content"][0]["text"])["metricas"]["views"], 15400)
+            self.assertFalse(r["result"]["isError"]); self.assertEqual(json.loads(r["result"]["content"][0]["text"].split("\n", 1)[1])["metricas"]["views"], 15400)
             r = servidor_mcp.responder({"jsonrpc": "2.0", "id": 4, "method": "tools/call", "params": {"name": "ig_publicar", "arguments": {}}})
-            self.assertTrue(r["result"]["isError"])
+            self.assertEqual(r["error"]["code"], -32602)
             servidor_mcp.SIMULADO = False
             r = servidor_mcp.responder({"jsonrpc": "2.0", "id": 5, "method": "tools/call", "params": {"name": "ig_perfil", "arguments": {}}})
             self.assertTrue(r["result"]["isError"]); self.assertIn("não autorizada", r["result"]["content"][0]["text"])
@@ -185,7 +185,231 @@ class TestServidorMCP(Base):
         self.assertFalse(os.path.exists(os.path.join(AQUI, "dados")))
         resp = [json.loads(l) for l in p.stdout.splitlines()]
         self.assertEqual([r["id"] for r in resp], [1, 2])
-        self.assertEqual(json.loads(resp[1]["result"]["content"][0]["text"])["periodo"]["dias"], 7)
+        texto = resp[1]["result"]["content"][0]["text"]; self.assertTrue(texto.startswith(servidor_mcp.AVISO_SIMULADO))
+        self.assertEqual(json.loads(texto.split("\n", 1)[1])["periodo"]["dias"], 7)
+
+
+
+# ======================= testes das correções da auditoria =======================
+
+def _escritor(pasta, n, k):                     # processo filho do teste de concorrência (sem rede: só arquivos)
+    api.DADOS = pasta; api.REGISTRO = os.path.join(pasta, "consultas.jsonl")
+    for i in range(n): api.registrar(f"p{k}", "ok")
+
+
+class TestModoSimuladoMCP(Base):
+    def setUp(self):
+        super().setUp(); self._sim = servidor_mcp.SIMULADO
+
+    def tearDown(self):
+        servidor_mcp.SIMULADO = self._sim; super().tearDown()
+
+    def chamar(self, nome, args=None, pid=1):
+        return servidor_mcp.responder({"jsonrpc": "2.0", "id": pid, "method": "tools/call", "params": {"name": nome, "arguments": args or {}}})
+
+    def test_todas_as_ferramentas_no_simulado_marcadas(self):
+        servidor_mcp.SIMULADO = True
+        for nome, args in [("ig_status", {}), ("ig_perfil", {}), ("ig_publicacoes", {"limite": 2}), ("ig_publicacao", {"id": "1801"}),
+                           ("ig_comentarios", {"id": "1801"}), ("ig_metricas_conta", {"dias": 7}), ("ig_cota_publicacao", {})]:
+            with self.subTest(nome=nome):
+                r = self.chamar(nome, args)["result"]
+                self.assertFalse(r["isError"]); self.assertTrue(r["content"][0]["text"].startswith(servidor_mcp.AVISO_SIMULADO))
+        nome = servidor_mcp.responder({"jsonrpc": "2.0", "id": 9, "method": "initialize", "params": {}})["result"]["serverInfo"]["name"]
+        self.assertTrue(nome.endswith("-simulado"))
+
+    def test_padrao_e_real_bloqueado(self):
+        servidor_mcp.SIMULADO = False
+        self.assertIs(servidor_mcp.cliente().transporte, api.transporte_real)
+        r = self.chamar("ig_perfil")["result"]
+        self.assertTrue(r["isError"]); self.assertIn("não autorizada", r["content"][0]["text"]); self.assertNotIn("SIMULADO", r["content"][0]["text"])
+
+    def test_configuracao_mcp(self):
+        raiz = os.path.abspath(os.path.join(AQUI, "..", ".."))
+        with open(os.path.join(raiz, ".mcp.json")) as f: srv = json.load(f)["mcpServers"]
+        self.assertEqual(srv["instagram"]["args"], ["studio/instagram/servidor_mcp.py"])                 # real: sem --simulado
+        self.assertEqual(srv["instagram-simulado"]["args"], ["studio/instagram/servidor_mcp.py", "--simulado"])
+        for k in ("instagram", "instagram-simulado"): self.assertNotIn("env", srv[k])                  # nenhum segredo/variável
+
+
+class TestRegistroRobusto(Base):
+    def linhas(self):
+        with open(api.REGISTRO) as f: return [json.loads(l) for l in f]
+
+    def test_concorrencia_sem_perda_nem_corrupcao(self):
+        ctx = multiprocessing.get_context("fork")
+        ps = [ctx.Process(target=_escritor, args=(self.tmp, 40, k)) for k in range(6)]
+        for p in ps: p.start()
+        for p in ps: p.join(30); self.assertEqual(p.exitcode, 0)
+        ls = self.linhas()
+        self.assertEqual(len(ls), 240)
+        self.assertEqual({l["consulta"] for l in ls}, {f"p{k}" for k in range(6)})
+
+    def test_permissoes_e_correcao_de_modo(self):
+        os.chmod(self.tmp, 0o755)
+        with open(api.REGISTRO, "w") as f: f.write("")
+        os.chmod(api.REGISTRO, 0o644)
+        self.assertTrue(api.registrar("perfil", "ok"))
+        self.assertEqual(stat.S_IMODE(os.stat(self.tmp).st_mode), 0o700)
+        self.assertEqual(stat.S_IMODE(os.stat(api.REGISTRO).st_mode), 0o600)
+        self.assertEqual(stat.S_IMODE(os.stat(api.REGISTRO + ".lock").st_mode), 0o600)
+
+    def test_recusa_link_simbolico(self):
+        alvo = os.path.join(self.tmp, "alvo.txt")
+        with open(alvo, "w") as f: f.write("intocado\n")
+        os.symlink(alvo, api.REGISTRO)
+        self.assertFalse(api.registrar("perfil", "ok"))             # falha segura: não segue o link
+        with open(alvo) as f: self.assertEqual(f.read(), "intocado\n")
+
+    def test_pasta_link_simbolico_recusada(self):
+        real = tempfile.mkdtemp(); link = os.path.join(self.tmp, "dados-link"); os.symlink(real, link)
+        api.DADOS = link; api.REGISTRO = os.path.join(link, "consultas.jsonl")
+        self.assertFalse(api.registrar("perfil", "ok")); self.assertEqual(os.listdir(real), [])
+
+    def test_poda_atomica_e_linhas_invalidas(self):
+        antigo = (datetime.now(timezone.utc) - timedelta(days=40)).isoformat(timespec="seconds")
+        recente = (datetime.now(timezone.utc) - timedelta(days=2)).isoformat(timespec="seconds")
+        with open(api.REGISTRO, "w") as f:
+            f.write(json.dumps({"quando": antigo, "consulta": "perfil", "resultado": "ok"}) + "\nlixo não-json\n" +
+                    json.dumps({"quando": recente, "consulta": "midias", "resultado": "ok"}) + "\n")
+        api.registrar("insights", "ok")
+        self.assertEqual([l["consulta"] for l in self.linhas()], ["midias", "insights"])
+        self.assertEqual([x for x in os.listdir(self.tmp) if x.endswith(".tmp")], [])        # nenhum temporário esquecido
+
+    def test_sem_poda_nao_reescreve(self):
+        api.registrar("perfil", "ok"); ino = os.stat(api.REGISTRO).st_ino
+        api.registrar("midias", "ok")
+        self.assertEqual(os.stat(api.REGISTRO).st_ino, ino)        # só acréscimo, mesmo arquivo
+
+    def test_falha_de_registro_nao_vaza_em_stdout(self):
+        api.DADOS = "/proc/naopode"; api.REGISTRO = "/proc/naopode/x.jsonl"
+        self.assertFalse(api.registrar("perfil", "ok"))
+
+    def test_gravar_novo_nunca_sobrescreve(self):
+        a = api.gravar_novo(os.path.join(self.tmp, "rel.md"), "primeiro")
+        b = api.gravar_novo(os.path.join(self.tmp, "rel.md"), "segundo")
+        self.assertNotEqual(a, b)
+        with open(a) as f: self.assertEqual(f.read(), "primeiro")
+        self.assertEqual(stat.S_IMODE(os.stat(b).st_mode), 0o600)
+
+
+class TestRelatorioSemLegendas(Base):
+    def test_sem_legenda_nem_texto(self):
+        rel = api.relatorio_markdown(self.cliente(), 28, 3)
+        for proibido in ("SIMULADO)", "Brasil sob temporais", "espionagem", "Bastidores", "legenda", "pessoa.ficticia"):
+            self.assertNotIn(proibido, rel)
+        tabela = [l for l in rel.splitlines() if l.startswith("| 2026-")]
+        self.assertEqual(len(tabela), 3)
+        for l in tabela:
+            cel = [x.strip() for x in l.strip("|").split("|")]
+            self.assertRegex(cel[0], r"^\d{4}-\d{2}-\d{2}$"); self.assertIn(cel[1], ("REELS", "FEED"))
+            for v in cel[2:]: self.assertRegex(v, r"^(\d+(\.\d+)?|None)$")
+
+
+class TestValidacao(Base):
+    def test_ids_invalidos_api(self):
+        c = self.cliente()
+        for ruim in ("", "abc", "-1", "1801/../me", "1801?x=1", " 1801", "1" * 31, True, 1.5, None, ["1801"], "١٨٠١"):
+            with self.subTest(ruim=ruim), self.assertRaises(api.Recusado): api.publicacao(c, ruim)
+        self.assertEqual(self.urls, [])
+
+    def test_limites_e_periodos_api(self):
+        c = self.cliente()
+        for f, kw in [(api.publicacoes, {"limite": 0}), (api.publicacoes, {"limite": 51}), (api.publicacoes, {"limite": "10"}),
+                      (api.publicacoes, {"limite": True}), (api.metricas_conta, {"dias": 0}), (api.metricas_conta, {"dias": 31}),
+                      (api.metricas_conta, {"dias": 7, "comparar": "sim"})]:
+            with self.subTest(f=f.__name__, kw=kw), self.assertRaises(api.Recusado): f(c, **kw)
+        with self.assertRaises(api.Recusado): api.comentarios(c, "1801", limite=0)
+        self.assertEqual(self.urls, [])
+
+    def test_argumentos_mcp_recusados_antes_da_consulta(self):
+        chamadas = []
+        orig = servidor_mcp.cliente
+        servidor_mcp.cliente = lambda: chamadas.append(1) or api.Cliente(api.transporte_simulado)
+        try:
+            casos = [("ig_perfil", {"x": 1}), ("ig_publicacoes", {"limite": 0}), ("ig_publicacoes", {"limite": "5"}),
+                     ("ig_publicacoes", {"limite": True}), ("ig_publicacao", {}), ("ig_publicacao", {"id": 1801}),
+                     ("ig_publicacao", {"id": "18a"}), ("ig_publicacao", {"id": "1801", "metricas": "sim"}),
+                     ("ig_comentarios", {"id": "1801", "limite": 99}), ("ig_metricas_conta", {"dias": 45}),
+                     ("ig_metricas_conta", {"dias": 7, "extra": True}), ("ig_status", {"modo": "real"})]
+            for nome, args in casos:
+                with self.subTest(nome=nome, args=args):
+                    r = servidor_mcp.responder({"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": nome, "arguments": args}})
+                    self.assertTrue(r["result"]["isError"]); self.assertIn("Argumentos recusados", r["result"]["content"][0]["text"])
+            self.assertEqual(chamadas, [])                              # nenhum cliente criado, nenhuma consulta
+        finally:
+            servidor_mcp.cliente = orig
+
+    def test_padroes_preenchidos(self):
+        self.assertEqual(servidor_mcp.validar_argumentos("ig_metricas_conta", {}), {"dias": 28, "comparar": True})
+        self.assertEqual(servidor_mcp.validar_argumentos("ig_publicacao", {"id": "1801"}), {"id": "1801", "metricas": True})
+
+
+class TestProtocoloMCP(Base):
+    def r(self, pedido): return servidor_mcp.responder(pedido)
+
+    def test_mensagens_invalidas(self):
+        self.assertEqual(self.r([{"jsonrpc": "2.0", "id": 1, "method": "ping"}])["error"]["code"], -32600)        # lote
+        self.assertEqual(self.r({"id": 1, "method": "ping"})["error"]["code"], -32600)                           # sem jsonrpc
+        self.assertEqual(self.r({"jsonrpc": "1.0", "id": 1, "method": "ping"})["error"]["code"], -32600)
+        for pid in (True, 1.5, {"a": 1}, [1], None):
+            with self.subTest(pid=pid): self.assertEqual(self.r({"jsonrpc": "2.0", "id": pid, "method": "ping"})["error"]["code"], -32600)
+        self.assertEqual(self.r({"jsonrpc": "2.0", "id": 1, "method": 5})["error"]["code"], -32600)
+        self.assertEqual(self.r({"jsonrpc": "2.0", "id": 1, "method": "ping", "params": [1]})["error"]["code"], -32602)
+        self.assertEqual(self.r({"jsonrpc": "2.0", "id": 1, "method": "resources/list"})["error"]["code"], -32601)
+        self.assertEqual(self.r({"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": "ig_perfil", "arguments": [1]}})["error"]["code"], -32602)
+        self.assertEqual(self.r({"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": 7}})["error"]["code"], -32602)
+        self.assertIsNone(self.r({"jsonrpc": "2.0", "method": "notifications/initialized"}))
+        self.assertIsNone(self.r({"jsonrpc": "2.0", "method": "tools/call", "params": {"name": "ig_perfil"}}))   # notificação nunca executa
+        self.assertEqual(self.r({"jsonrpc": "2.0", "id": "a", "method": "ping"}), {"jsonrpc": "2.0", "id": "a", "result": {}})
+
+    def test_linhas_brutas(self):
+        self.assertEqual(servidor_mcp.processar_linha("{nao json")["error"]["code"], -32700)
+        self.assertEqual(servidor_mcp.processar_linha("x" * (servidor_mcp.MAX_LINHA + 1))["error"]["code"], -32600)
+
+    def test_erro_da_meta_sem_detalhes(self):
+        def falha(url, cab): return 400, json.dumps({"error": {"message": f"objeto 1801 do usuário pessoa.ficticia token {TOKEN_FALSO}", "code": 100}})
+        orig = servidor_mcp.cliente; servidor_mcp.cliente = lambda: api.Cliente(falha, dormir=lambda s: None)
+        try:
+            r = self.r({"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": "ig_perfil", "arguments": {}}})
+        finally: servidor_mcp.cliente = orig
+        txt = r["result"]["content"][0]["text"]
+        self.assertTrue(r["result"]["isError"]); self.assertIn("código 100", txt)
+        for proibido in ("pessoa.ficticia", "1801", TOKEN_FALSO, "token "): self.assertNotIn(proibido, txt)
+
+    def test_erro_interno_generico(self):
+        orig = servidor_mcp.executar
+        servidor_mcp.executar = lambda n, a: (_ for _ in ()).throw(ValueError("dado privado: pessoa.ficticia"))
+        try:
+            r = self.r({"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": "ig_perfil", "arguments": {}}})
+        finally: servidor_mcp.executar = orig
+        self.assertTrue(r["result"]["isError"]); self.assertNotIn("pessoa", r["result"]["content"][0]["text"])
+        self.assertNotIn("Traceback", json.dumps(r))
+
+
+class TestTransporteReal(Base):
+    """Confere, sem rede, o que o transporte real enviaria se fosse autorizado (urlopen substituído por um capturador)."""
+    def test_pedido_montado_corretamente(self):
+        capt = []
+        class Resp:
+            status = 200
+            def read(self): return b'{"user_id": "1", "username": "x", "account_type": "Media_Creator"}'
+            def __enter__(self): return self
+            def __exit__(self, *a): return False
+        def capturar(req, timeout=None): capt.append(req); return Resp()
+        urllib.request.urlopen = capturar; api.CONEXAO_REAL_AUTORIZADA = True
+        try:
+            api.status(api.Cliente(api.transporte_real))
+        finally:
+            api.CONEXAO_REAL_AUTORIZADA = False; urllib.request.urlopen = _sem_rede
+        req = capt[0]
+        self.assertEqual(req.get_method(), "GET")
+        self.assertEqual(urllib.parse.urlparse(req.full_url).netloc, "graph.instagram.com")
+        self.assertEqual(req.get_header("Authorization"), "Bearer proxy-injected")
+        self.assertNotIn("access_token", req.full_url)
+        self.assertFalse(api.CONEXAO_REAL_AUTORIZADA)
+
+    def test_flag_padrao_no_arquivo(self):
+        with open(os.path.join(AQUI, "api.py")) as f: self.assertIn("\nCONEXAO_REAL_AUTORIZADA = False", f.read())
 
 
 if __name__ == "__main__":

@@ -1,7 +1,8 @@
 {
   "enabledMcpjsonServers": [
     "elevenlabs",
-    "instagram"
+    "instagram",
+    "instagram-simulado"
   ],
   "permissions": {
     "deny": [

@@ -11,6 +11,10 @@
     "instagram": {
       "command": "python3",
       "args": ["studio/instagram/servidor_mcp.py"]
+    },
+    "instagram-simulado": {
+      "command": "python3",
+      "args": ["studio/instagram/servidor_mcp.py", "--simulado"]
     }
   }
 }

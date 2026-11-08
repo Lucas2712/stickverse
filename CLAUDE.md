@@ -130,7 +130,8 @@ Conferir antes se a ferramenta e as dependências estão presentes (regra 8).
 
 - Integração própria com a API oficial da Meta (Instagram API com login do Instagram, `graph.instagram.com` v27.0),
   conta de **Criador de conteúdo**, sem Página do Facebook nem portfólio. Código e regras em `studio/instagram/`
-  (README). Servidor MCP próprio `instagram` em `.mcp.json`, só com ferramentas de leitura; sem MCPs de terceiros.
+  (README). Servidores MCP próprios em `.mcp.json`, só com ferramentas de leitura: `instagram` (real, bloqueado)
+  e `instagram-simulado` (dados fictícios, sem rede, para testes). Sem MCPs de terceiros.
 - **Estado: só testes offline.** A conexão real está bloqueada (`CONEXAO_REAL_AUTORIZADA = False` em `api.py`),
   `graph.instagram.com` não está liberado e não existe token. Não criar app na Meta, pedir token, liberar domínio
   ou chamar a conta sem autorização expressa do usuário.

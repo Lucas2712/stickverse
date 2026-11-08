@@ -28,22 +28,23 @@ def main():
     ap.add_argument("id", nargs="?")
     ap.add_argument("--limite", type=int); ap.add_argument("--dias", type=int, default=28); ap.add_argument("--n", type=int, default=12)
     a = ap.parse_args()
-    c = api.Cliente(api.transporte_simulado if a.simulado else None)
+    c = api.Cliente(api.transporte_simulado if a.simulado else api.transporte_real)
     try:
         if a.acao in ("publicacao", "comentarios") and not a.id: sys.exit(f"{a.acao}: informe o ID da publicação")
         if a.acao == "relatorio":
             txt = api.relatorio_markdown(c, a.dias, a.n)
-            pasta = os.path.join(api.DADOS, "relatorios"); os.makedirs(pasta, mode=0o700, exist_ok=True)
-            arq = os.path.join(pasta, f"relatorio-{datetime.now():%Y%m%d-%H%M}{'-simulado' if a.simulado else ''}.md")
-            open(arq, "w", encoding="utf-8").write(txt); os.chmod(arq, 0o600)
-            print(txt); print(f"salvo em {os.path.relpath(arq)} (fora do git)"); return
+            api.pasta_privada(api.DADOS); pasta = api.pasta_privada(os.path.join(api.DADOS, "relatorios"))
+            arq = api.gravar_novo(os.path.join(pasta, f"relatorio-{datetime.now():%Y%m%d-%H%M%S}{'-simulado' if a.simulado else ''}.md"), txt)
+            print(txt); print(f"salvo em {arq} (fora do git, permissão 600)"); return
         r = {"status": lambda: api.status(c), "perfil": lambda: api.perfil(c),
-             "publicacoes": lambda: api.publicacoes(c, a.limite or 12), "publicacao": lambda: api.publicacao(c, a.id),
-             "comentarios": lambda: api.comentarios(c, a.id, a.limite or 50), "metricas": lambda: api.metricas_conta(c, a.dias),
+             "publicacoes": lambda: api.publicacoes(c, 12 if a.limite is None else a.limite), "publicacao": lambda: api.publicacao(c, a.id),
+             "comentarios": lambda: api.comentarios(c, a.id, 50 if a.limite is None else a.limite), "metricas": lambda: api.metricas_conta(c, a.dias),
              "cota": lambda: api.cota(c)}[a.acao]()
         print(json.dumps(r, ensure_ascii=False, indent=1))
-    except (api.Recusado, api.ErroAPI) as e:
-        sys.exit(api.limpar(f"{type(e).__name__}: {e}"))
+    except api.Recusado as e:
+        sys.exit(f"Recusado: {e}")
+    except api.ErroAPI as e:
+        sys.exit(e.resumo())
 
 
 if __name__ == "__main__":
