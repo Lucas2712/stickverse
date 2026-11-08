@@ -275,7 +275,7 @@
 
   /* =================== cenas =================== */
   cenaV({ id: "c01", vis: [0, 1.45], nome: "A IA virou", inicio: 0, fim: 1.25, descricao: "As letras vêm do fundo do espaço e travam; «virou» gira em 3D.",
-    sfx: [["swoosh", 0.02, .5], ["boom", 0.18, .5], ["whoosh", 0.66, .7], ["flip", 1.10, .6]],
+    sfx: [["swoosh", 0.02, .5], ["hit", 0.18, .15], ["glitch", 0.19, .5], ["whoosh", 0.66, .7], ["flip", 1.10, .6]],
     montar(S) {
       bg(S, CV); const C = cam(S, 0, 1.4, { s1: 1.08 });
       const r = rng(9), st = Array.from({ length: 220 }, () => [(r() - .5) * 40, (r() - .5) * 70, r() * 60]);
@@ -359,7 +359,7 @@
     } });
 
   cenaV({ id: "c06", vis: [8.48, 9.70], nome: "Ao mesmo tempo", inicio: 8.5, fim: 9.66, descricao: "Todos os cubos acendem juntos; uma onda de choque corre pelo campo. Interferência para o dossiê.",
-    sfx: [["swoosh", 8.44, .4], ["hit", 8.90], ["glitch", 8.93, .4], ["glitch", 9.50, .7], ["swoosh", 9.56, .6]],
+    sfx: [["swoosh", 8.44, .4], ["hit", 8.90, .7], ["glitch", 8.93, .4], ["glitch", 9.50, .7], ["swoosh", 9.56, .6]],
     montar(S) {
       bg(S, CV);
       mundo(S, 8.48, 9.66, camB, (g, K, t) => {
@@ -403,7 +403,7 @@
   }
 
   cenaV({ id: "c07", vis: [9.46, 11.0], nome: "Não é ficção", inicio: 9.66, fim: 10.98, descricao: "Uma pasta de dossiê cai na mesa; «FICÇÃO» na capa é riscada.",
-    sfx: [["whoosh", 9.62, .5], ["hit", 9.86, .35], ["flip", 9.88, .4], ["swoosh", 10.30, .5], ["tick", 10.34, .5]],
+    sfx: [["whoosh", 9.62, .5], ["hit", 9.86, .22], ["flip", 9.88, .4], ["swoosh", 10.30, .5], ["tick", 10.34, .5]],
     montar(S) {
       mesa(S); const C = cam(S, 9.6, 11.0, { s1: 1.05, r0: -1.2, r1: 0 });
       const { base } = pasta(C); capa(base, 10.30);
@@ -452,7 +452,7 @@
   }
   const ORB = (() => { const r = rng(31); return Array.from({ length: 34 }, (_, i) => ({ a: r() * 6.28, R: i % 2 ? 3.4 : 4.8, v: (i % 2 ? .9 : -.6) * (.8 + r() * .4), inc: i % 2 ? .35 : -.28, y: 1.2 + r() * .4 })); })();
   cenaV({ id: "c10", vis: [15.86, 18.44], nome: "A campanha", inicio: 15.86, fim: 18.3, descricao: "Prisma hexagonal 3D (núcleo IA) com agentes em órbitas que passam na frente e atrás; faixa CAMPANHA.",
-    sfx: [["flip", 15.86, .6], ["swell", 15.9, .4], ["blip", 16.72], ["pop", 16.74, .5], ["swoosh", 17.56, .7], ["swoosh", 17.90, .5], ["whoosh", 18.18, .6]],
+    sfx: [["flip", 15.86, .6], ["swell", 15.9, .4], ["blip", 16.72], ["pop", 16.74, .5], ["whoosh", 17.56, .5], ["swoosh", 17.90, .5], ["whoosh", 18.18, .6]],
     montar(S) {
       bg(S, CV);
       const camN = t => orbita([0, 0, 0], -20 + (t - 15.86) * 9, 10.5 - P(t, 15.86, 18.3, "inOut") * 1.2, 4.6, 46, 0, 1.2);
@@ -488,7 +488,7 @@
   }
 
   cenaV({ id: "c11", vis: [18.18, 21.16], nome: "Mais de 200", inicio: 18.3, fim: 21.1, descricao: "Placar de palhetas vira até 200; abaixo, 200 cubos isométricos acendem em ondas.",
-    sfx: [["riser", 18.30], ["tick", 19.04, .6], ["tick", 19.14, .5], ["tick", 19.24, .55], ["tick", 19.34, .5], ["tick", 19.46, .55], ["tick", 19.58, .5], ["tick", 19.72, .55], ["boom", 19.86, .35], ["swell", 20.9, .5], ["whoosh", 20.92, .7]],
+    sfx: [["riser", 18.30], ["tick", 19.04, .6], ["tick", 19.14, .5], ["tick", 19.24, .55], ["tick", 19.34, .5], ["tick", 19.46, .55], ["tick", 19.58, .5], ["tick", 19.72, .55], ["boom", 19.86, .2], ["swell", 20.9, .5], ["whoosh", 20.92, .7]],
     montar(S) {
       bg(S, CV); const C = cam(S, 18.2, 21.2, { s1: 1.05 });
       mundo(C, 18.3, 21.1, t => camIso(t), (g, K, t) => desenhaG200(g, K, t, i => 19.0 + i * .0043));
@@ -501,7 +501,7 @@
     } });
 
   cenaV({ id: "c12", vis: [20.96, 24.16], nome: "14 países", inicio: 21.1, fim: 24.0, descricao: "Globo 3D de pontos girando; um mostrador de 14 segmentos acende em volta (sem marcar países).",
-    sfx: [["whoosh", 21.0, .8], ["swell", 21.1, .4], ...Array.from({ length: 14 }, (_, i) => ["tick", +(22.14 + i * .055).toFixed(3), .35 + i * .02]), ["blip", 22.90, .8], ["swoosh", 23.86, .8]],
+    sfx: [["swell", 21.0, .6], ["swell", 21.1, .4], ...Array.from({ length: 14 }, (_, i) => ["tick", +(22.14 + i * .055).toFixed(3), .35 + i * .02]), ["blip", 22.90, .8], ["swoosh", 23.86, .8]],
     montar(S) {
       bg(S, CV);
       mundo(S, 20.96, 24.0, t => camera([0, 1.2, -13.5 + P(t, 21.0, 24, "sine") * 1.2], [0, 0, 0], 70, 0, 540, 1100), (g, K, t) => {
@@ -607,7 +607,7 @@
     } });
 
   cenaV({ id: "c17", vis: [33.08, 36.04], nome: "Os alvos", inicio: 33.2, fim: 35.9, descricao: "Prédio genérico extrudado em 3D; três lasers de mira travam nele.",
-    sfx: [["hit", 33.42, .4], ["tick", 33.44, .7], ["click", 33.56, .5], ["glitch", 34.18, .35], ["swoosh", 34.18, .5], ["glitch", 34.96, .3], ["swoosh", 35.40, .5], ["whoosh", 35.70, .7]],
+    sfx: [["hit", 33.42, .28], ["tick", 33.44, .7], ["click", 33.56, .5], ["glitch", 34.18, .35], ["swoosh", 34.18, .5], ["glitch", 34.96, .3], ["swoosh", 35.40, .5], ["whoosh", 35.70, .7]],
     montar(S) {
       bg(S, CV);
       const camP = trilha([[33.0, { pos: [-9, 6, -13], alvo: [0, 2.2, 0], fov: 46 }], [35.6, { pos: [-3, 4.6, -11], alvo: [0, 2.4, 0], fov: 46 }, "sine"], [36.0, { pos: [-2, 16, -9], alvo: [0, 0, 3], fov: 46 }, "inExpo"]]);
@@ -704,7 +704,7 @@
     } });
 
   cenaV({ id: "c22", vis: [43.88, 45.86], nome: "Não agiu sozinha", inicio: 43.9, fim: 45.7, descricao: "Dentro da lente: o núcleo IA sozinho, girando; NÃO extrudado bate na frente.",
-    sfx: [["swell", 43.9, .4], ["blip", 43.98], ["hit", 45.02, .6], ["whoosh", 45.56, .6]],
+    sfx: [["swell", 43.9, .4], ["blip", 43.98], ["hit", 45.02, .4], ["whoosh", 45.56, .6]],
     montar(S) {
       bg(S, CV);
       mundo(S, 43.88, 45.7, t => orbita([0, 0, 0], (t - 43.9) * 18, 7.5 + P(t, 43.88, 44.4, "expo") * 1.5, 3.4, 46, 0, 1), (g, K, t) => { piso(g, K, { tam: 24, passo: 2 }); brilho(g, K, [0, .8, 0], 5, .25); nucleo(g, K, t, [0, 0, 0], 1.7, t * .6); });
@@ -779,7 +779,7 @@
 
   /* ---------- o novo cenário ---------- */
   cenaV({ id: "c26", vis: [51.94, 54.42], nome: "Muda o cenário", inicio: 51.94, fim: 54.32, descricao: "A câmera completa a rolagem de 180°: o piso vira teto. CIBERSEGURANÇA bate em 3D.",
-    sfx: [["whoosh", 51.96, .9], ["swoosh", 52.22, .6], ["boom", 53.16, .45], ["swell", 54.2, .4]],
+    sfx: [["whoosh", 51.96, .9], ["flip", 52.22, .5], ["boom", 53.16, .3], ["swell", 54.2, .4]],
     montar(S) {
       bg(S, "#0E0D0C");
       mundo(S, 51.94, 54.32, t => camera([0, 6.5, -11.5 + (t - 51.94) * 1.2], [0, 2.2, 1.5], 54, lerp(90, 180, P(t, 51.94, 52.7, "expo"))), (g, K) => { piso(g, K, { tam: 40, passo: 2, cor: "rgba(138,143,152,.26)" }); piso(g, K, { tam: 40, passo: 8, cor: "rgba(255,210,31,.10)", lw: 3 }); });
@@ -817,7 +817,7 @@
     } });
 
   cenaV({ id: "c29", vis: [57.88, 59.8], nome: "Escala muito maior", inicio: 57.9, fim: 59.74, descricao: "Recuo extremo: o enxame cobre o globo 3D; MAIOR cresce e atravessa a câmera.",
-    sfx: [["hit", 58.90, .9], ["whoosh", 59.40, .7], ["swoosh", 59.60, .5]],
+    sfx: [["hit", 58.90, .45], ["whoosh", 59.40, .7], ["swoosh", 59.60, .5]],
     montar(S) {
       bg(S, "#0B0A09");
       mundo(S, 57.88, 59.74, t => camera([0, 1.5, lerp(-6.2, -15, P(t, 57.88, 59.74, "out"))], [0, 0, 0], 50, -8), (g, K, t) => { brilho(g, K, [0, 0, 0], 9, .2); globo(g, K, [0, 0, 0], 4.2, 2200, t * .5, t, { cobertura: P(t, 57.9, 59.0, "out") }); });
@@ -845,7 +845,7 @@
     } });
 
   cenaV({ id: "c31", vis: [61.42, 64.0], nome: "Se…", inicio: 61.6, fim: 63.94, descricao: "SE gigante; a pergunta antiga é cortada por tarjas; uma tarja cresce e apaga a tela.",
-    sfx: [["swoosh", 61.50, .6], ["pop", 61.64, .5], ["pop", 62.64, .4], ["pop", 62.98, .35], ["swoosh", 63.06, .8], ["tick", 63.08, .6], ["whoosh", 63.72, .8]],
+    sfx: [["swoosh", 61.50, .6], ["pop", 61.64, .5], ["pop", 62.64, .4], ["pop", 62.98, .35], ["flip", 63.06, .7], ["tick", 63.08, .6], ["whoosh", 63.72, .8]],
     montar(S) {
       mesa(S); const C = cam(S, 61.5, 64.0, { s1: 1.06, r0: -1, r1: 0 });
       const se = txt(C, X - 16, 360, F(420, 700, TK) + ";" + extrude("#C9C5BC", 8, 0, 2.4), "SE"); anim(se, [[61.52, { o: 0, y: 160, rx: 50 }], [61.9, { o: 1, y: 0, rx: 0 }, "expo"]]);
@@ -859,7 +859,7 @@
   const VEL = (() => { const r = rng(71); return Array.from({ length: 260 }, () => ({ a: r() * 6.28, rr: 2 + r() * 7, ph: r() * 60, l: 1 + r() * 4, y: r() > .8 })); })();
   const zVel = t => (t - 63.92) * 2 + 34 * Math.pow(Math.max(0, t - 65.6) / 1.9, 3);
   cenaV({ id: "c32", vis: [63.92, 67.6], nome: "Estamos preparados?", inicio: 63.94, fim: 67.6, descricao: "Túnel de velocidade 3D: as palavras emergem do fundo; em «velocidade» a câmera acelera até o limite.",
-    sfx: [["swell", 63.96, .4], ["swoosh", 64.36, .4], ["tick", 64.36, .4], ["swoosh", 64.62, .4], ["tick", 64.62, .4], ["swoosh", 65.32, .35], ["riser", 65.40], ["swoosh", 66.34, .6], ["whoosh", 66.58], ["boom", 66.62, .5]],
+    sfx: [["swell", 63.96, .4], ["swoosh", 64.36, .4], ["tick", 64.36, .4], ["swoosh", 64.62, .4], ["tick", 64.62, .4], ["swoosh", 65.32, .35], ["riser", 65.40], ["swoosh", 66.34, .6], ["whoosh", 66.58], ["boom", 66.62, .32]],
     montar(S) {
       bg(S, "#0A0908");
       mundo(S, 63.92, 67.6, t => camera([0, 0, zVel(t)], [0, 0, zVel(t) + 10], 64, (t - 64) * 6), (g, K, t) => {

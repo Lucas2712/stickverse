@@ -17,7 +17,11 @@
 | glitch/hit | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | glitch/mid | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | glitch/scramble | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
+| glitch/stutter | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_glitch/crunchy | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
+| pro_glitch/fastroll | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
+| pro_glitch/framelock | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
+| pro_glitch/sparse | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_glitch/standard | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_impact/deep | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_impact/rumble | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
@@ -29,6 +33,7 @@
 | pro_sub_drop/quick | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_whoosh_big/gritty | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_whoosh_big/long | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
+| pro_whoosh_big/reverse | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_whoosh_big/swell | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_whoosh_big/tonal | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_whoosh_big/windy | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
@@ -46,6 +51,8 @@
 | riser/build | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | riser/dark | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | riser/rush | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
+| riser/snatch | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
+| riser/swell | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | riser/tension | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | sub_drop/punch | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | swipe/cloth | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
@@ -59,6 +66,7 @@
 | swish/flick | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | swish/stick | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | swish/zing | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
+| whoosh_big/cape | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | whoosh_big/jet | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | whoosh_big/thump | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | whoosh_big/thump_airy | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
