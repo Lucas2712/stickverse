@@ -1,12 +1,12 @@
 # MOTION DESIGN STUDIO · Studio Matteu
 
 Sistema do **Studio Matteu** para produzir vídeos verticais de motion design (1080×1920, 30 fps) com
-Claude e narração do ElevenLabs, operado pelo iPhone. As preferências permanentes estão no
+Claude e narração gerada no Create Voice-over da OpenArt, operado pelo iPhone. As preferências permanentes estão no
 [`CLAUDE.md`](../CLAUDE.md) da raiz; o método de trabalho está na Skill `.claude/skills/motion-design-studio/`.
 
 ## Como pedir um vídeo (pelo app do Claude, numa sessão com o repositório `stickverse`)
 
-1. Gere a narração no ElevenLabs e baixe o MP3 no iPhone.
+1. Gere a narração no Create Voice-over da OpenArt (site) e baixe o arquivo no iPhone.
 2. Numa mensagem, envie:
    - **tema**;
    - **roteiro** (o texto exato que foi narrado);

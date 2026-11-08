@@ -1,6 +1,6 @@
 ---
 name: motion-design-studio
-description: Estúdio de motion design para vídeos verticais (1080x1920) publicitários e informativos, feitos em HTML/CSS/JS e exportados em MP4. Use quando o usuário enviar tema + roteiro/notícia + narração do ElevenLabs (ou pedir um vídeo, comercial, reels, animação ou motion), quando pedir um storyboard, ou quando for revisar ou exportar um projeto em projetos/.
+description: Estúdio de motion design para vídeos verticais (1080x1920) publicitários e informativos, feitos em HTML/CSS/JS e exportados em MP4. Use quando o usuário enviar tema + roteiro/notícia + narração (gerada pelo usuário no Create Voice-over da OpenArt) (ou pedir um vídeo, comercial, reels, animação ou motion), quando pedir um storyboard, ou quando for revisar ou exportar um projeto em projetos/.
 ---
 
 # MOTION DESIGN STUDIO
@@ -14,9 +14,13 @@ como link interativo (Artifact) e como MP4 (SendUserFile). Fale com ele em portu
 
 1. **Tema** do vídeo.
 2. **Roteiro** ou notícia (texto exato da narração).
-3. **Narração** do ElevenLabs (mp3/wav/m4a), enviada como anexo.
-4. **Música: não há.** Regra do canal: sem música de fundo, só narração e muitos efeitos sonoros
-   sincronizados. Nunca gere, sintetize ou invente trilha. Use música só se o usuário pedir explicitamente.
+3. **Narração** gerada pelo usuário no **Create Voice-over da OpenArt** (site), enviada como anexo (mp3/wav/m4a).
+   Claude não gera narração; a ElevenLabs está configurada mas inativa.
+4. **Música: por padrão, não há.** Regra do canal: sem música de fundo, só narração e muitos efeitos sonoros
+   sincronizados. Nunca sintetize ou invente trilha. Quando o usuário pedir trilha para o vídeo, ela vem da OpenArt
+   (site, se o plano tiver): Claude propõe o caráter (tema, emoção, BPM, marcas de corte) no storyboard e o usuário envia o arquivo.
+5. **Efeitos:** Real SFX + Earshot (principais). OpenArt só para um som especial, com custo informado e aprovação
+   (ver `referencias/audio.md`, "Estratégia de áudio").
 
 Faltou algo essencial (roteiro ou narração)? Peça antes de seguir. Os uploads chegam em
 `/root/.claude/uploads/...`: copie para o projeto, não edite o original.

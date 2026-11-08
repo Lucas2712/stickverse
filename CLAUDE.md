@@ -24,8 +24,9 @@ textos, assinaturas), use esse nome; não use nomes antigos ou provisórios da p
 
 2. **Narração e áudio.** Preservar o áudio original: não acelerar, não reescrever e não cortar palavras
    automaticamente. Não remover silêncios sem necessidade e sem a aprovação do usuário.
-   **Sem música de fundo:** só narração e efeitos sonoros presos a eventos visuais, com a voz sempre
-   em primeiro plano.
+   **Sem música de fundo por padrão:** só narração e efeitos sonoros presos a eventos visuais, com a voz sempre
+   em primeiro plano. Trilha instrumental só quando o usuário pedir para aquele vídeo (ver "Estratégia de áudio").
+
 
 3. **Tipografia (preferência permanente, pode ser a mesma em todos os vídeos).**
    - **SF Pro Display** nos títulos e textos de impacto.
@@ -64,6 +65,21 @@ textos, assinaturas), use esse nome; não use nomes antigos ou provisórios da p
 10. **Consultar o usuário** antes de gastar créditos (OpenArt, ElevenLabs), liberar rede ou mudar algo que afete
     todos os projetos.
 
+## Estratégia de áudio (oficial)
+
+| Camada | Ferramenta | Como funciona |
+|---|---|---|
+| **Narração** | OpenArt **Create Voice-over**, pelo site | O usuário gera a locução no site da OpenArt e envia o arquivo de áudio; Claude integra (transcrição, storyboard, produção). Claude não gera narração. |
+| **Música instrumental** | OpenArt, pelo site | Só quando houver necessidade e o recurso estiver no plano do usuário. Claude sugere o caráter da trilha (tema, emoção, BPM, marcas de corte); o usuário gera e envia; entra com ducking sob a voz. |
+| **Efeitos sonoros** | **Real SFX + Earshot** (principais, gratuitos) | Efeitos variados, criativos e presos a cada acontecimento visual (`sfx_real.py`). |
+| **Efeitos especiais** | OpenArt MCP (pontual) | Só para um som específico que a biblioteca não tem, gerado como vídeo curto com áudio nativo e extraído com ffmpeg: Claude informa o modelo e o custo em créditos (`openart_model_cost`) e só gera com aprovação. |
+| **ElevenLabs** | configurada e **inativa** | Não usar até o usuário assinar e reativar. Integração, bloqueios e script ficam como estão. |
+| **Imagens e vídeos** | OpenArt MCP oficial | Como antes, sempre com custo informado e aprovação antes de gastar créditos. |
+
+O conector OpenArt (MCP oficial, login da conta do usuário no claude.ai) não gera áudio isolado: só imagem e vídeo
+(alguns modelos de vídeo têm áudio nativo). Licença: conferir na página de preços da OpenArt se o plano Starter
+permite uso comercial antes de publicar material gerado lá.
+
 ## Onde fica cada coisa
 
     .claude/skills/motion-design-studio/   a Skill (regras, referências, fluxo)
@@ -98,7 +114,7 @@ Conferir antes se a ferramenta e as dependências estão presentes (regra 8).
   `bash studio/ferramentas/preparar_ambiente.sh --testar` (baixa os modelos de novo, sem dependências novas,
   confere o SHA-256 do YAMNet e testa Earshot, YAMNet e a biblioteca). Só considere o ambiente pronto com todos
   os itens "ok"; se algo falhar, mostre `/opt/mds/preparacao.log` e avise o usuário da limitação antes de produzir.
-- **ElevenLabs** (narração em PT-BR, efeitos sonoros e trilhas): servidor MCP oficial `elevenlabs-mcp` (MIT) em
+- **ElevenLabs** (INATIVA por decisão do usuário; não usar até ele reativar): servidor MCP oficial `elevenlabs-mcp` (MIT) em
   `.mcp.json`, iniciado pelo `uvx`. A chave fica só no cofre do ambiente "stickverse" (o proxy a injeta em
   `api.elevenlabs.io`); nunca em arquivo, variável ou chat. As ferramentas do MCP que gastam créditos ficam **bloqueadas** em
   `.claude/settings.json` (vale em qualquer modo de permissão; só as consultas gratuitas ficam liberadas). Toda geração
@@ -106,7 +122,7 @@ Conferir antes se a ferramenta e as dependências estão presentes (regra 8).
   só depois da aprovação do usuário no chat, `gerar` roda com esse código e um `--teto` de créditos, e confere o saldo
   antes e depois. Música exige plano pago. Áudios gerados vão para `studio/elevenlabs/` (fora do git) e depois para o
   projeto. Plano gratuito: conferir a licença de uso comercial antes de publicar. As ferramentas de áudio do estúdio
-  (Real SFX, Earshot, sintetizador do player) continuam valendo; a ElevenLabs é uma opção a mais.
+  (Real SFX, Earshot, sintetizador do player) continuam valendo; a ElevenLabs será uma opção a mais quando reativada.
 - Rede liberada: OpenArt (imagens), Openverse, Freesound, Wikimedia, Hugging Face e PyTorch.
   O Freesound bloqueia servidores de nuvem (403): não contornar.
 
