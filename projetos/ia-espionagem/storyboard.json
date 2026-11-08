@@ -1,44 +1,48 @@
 {
- "titulo": "A IA virou uma arma de espionagem?",
- "chamada": "Operação <b>ENXAME</b>: um operador, centenas de alvos",
- "resumo": "Direção de arte nova, exclusiva deste vídeo: um dossiê de inteligência que se abre sobre uma sala de operações tática. Amarelo-alerta sobre carvão, papel de dossiê com tarjas de censura e um enxame de agentes que cresce de 1 ponto para milhares. 33 planos em 71 s (média de 2,1 s por plano), sem música e com efeitos sonoros em praticamente todo evento visual. Narração 13% mais curta, sem cortar palavras.",
+ "titulo": "A IA virou uma arma de espionagem? · revisão v2",
+ "chamada": "Revisão v2: de <b>slides animados</b> para um <em>mundo 3D contínuo</em>",
+ "resumo": "Plano de revisão: mesma narração, fatos e direção de arte (Operação Enxame: carvão, amarelo-alerta e dossiê), mas cada trecho ganha uma solução visual própria, a maior parte num mundo 3D contínuo por onde a câmera viaja, com objetos de volume, transições por objeto e mais camadas de som. Sem música nesta revisão.",
  "duracao": 71.0,
  "acento": "#C99A00",
  "acento_escuro": "#FFD21F",
  "paleta": [
   [
    "#121110",
-   "carvão quente (sala de operações)"
+   "carvão quente"
   ],
   [
    "#FFD21F",
-   "amarelo-alerta (operador, alvos, números; até 10% do quadro)"
+   "amarelo-alerta"
   ],
   [
    "#EDEAE3",
-   "papel de dossiê (fatos e fontes)"
+   "papel de dossiê"
   ],
   [
    "#151515",
-   "tinta e tarjas de censura"
+   "tinta e tarjas"
   ],
   [
    "#8A8F98",
-   "cinza-aço (grades, mapa, linhas secundárias)"
+   "cinza-aço"
   ]
  ],
  "marcas": [
   [
    9.66,
-   "ato 2: o dossiê"
+   "dossiê"
+  ],
+  [
+   31.9,
+   "alvos"
   ],
   [
    41.98,
-   "ato 3: a virada"
+   "virada"
   ],
   [
    51.94,
-   "ato 4: o novo cenário"
+   "novo cenário"
   ],
   [
    67.6,
@@ -47,36 +51,20 @@
  ],
  "identidade": [
   [
-   "Conceito",
-   "<b>Operação Enxame.</b> Espionagem é ver sem ser visto; o vídeo alterna dois mundos: a <b>sala de operações</b> (escuro, tático, onde o enxame age) e o <b>dossiê</b> (papel, onde os fatos do relatório são expostos). O fio condutor é o <b>ponto amarelo do operador</b>: aparece sozinho na cena 3, comanda o enxame e volta na virada revelado como humano."
+   "O que muda",
+   "<b>1. Mundo 3D contínuo.</b> Um motor 3D próprio (projeção em perspectiva no canvas) cria um espaço único: piso tático, cubos, globo de pontos, prédio e enxame. A câmera desce, orbita, sobe em grua e atravessa objetos, em vez de trocar slides.<br><b>2. Objetos com volume.</b> Pasta que cai na mesa e abre, ficha com clipe, carimbo com respingo, placar de palhetas, cubos que se erguem, texto extrudado.<br><b>3. Transições por objeto.</b> Um elemento da cena vira a próxima: a mira em que a câmera mergulha, a ficha que vira e mostra o mundo escuro no verso, o «0» do placar que vira globo, a lupa, a rolagem de 180°.<br><b>4. Manchete viva.</b> Nas cenas escuras, a narração vira manchete no topo, em dois níveis (linha menor + palavra-chave grande), trocando a cada 0,3 a 0,6 s. As cenas de papel continuam com o texto no próprio documento, para não virar fórmula.<br><b>5. Fios de dados.</b> Linhas com pulsos de luz ligam o operador aos agentes e aos alvos, conectando texto, objeto e narração."
+  ],
+  [
+   "Da referência (só a linguagem)",
+   "medi nos dois vídeos: cortes secos só a cada 1,6 a 3,4 s, mas algo novo a cada 0,3 a 0,6 s. A energia vem de <b>transformar</b>, não de cortar. Um objeto central por frase, câmera sempre em movimento, efeito sonoro em quase todo corte (98% dentro de 100 ms) e flashes curtos nas viradas. Não copio cores, personagens, objetos nem cenas: lá é carmim com personagem encapuzado; aqui seguem carvão, amarelo, dossiê e enxame."
   ],
   [
    "Tipografia",
-   "<b>Inter Display</b> nos títulos e palavras de impacto (Semibold e Bold, tracking −0,04 em) e <b>Inter Text</b> nos rótulos e textos menores (Regular e Medium). Números com algarismos de largura fixa, para os contadores não tremerem. Sem fonte de apoio: os códigos também são em Inter."
-  ],
-  [
-   "Sistema gráfico",
-   "tarjas pretas de censura que se abrem e revelam palavras, marca-texto amarelo, carimbos («IDENTIFICADO», «CONFIRMADO»), retículas de mira com cantoneiras, agentes desenhados como <b>chevrons</b> (nunca pontos ou partículas redondas), grade tática em perspectiva, mapa em linhas finas e fitas de alerta diagonais."
-  ],
-  [
-   "Imagens",
-   "nenhuma imagem gerada: tudo em vetor e tipografia, sem gastar créditos. Marcas reais (CrowdStrike, DeepSeek) só como texto, sem logotipo. Nenhuma interface de produto real: Artex aparece como diagrama."
-  ],
-  [
-   "Transições",
-   "assinaturas deste vídeo: <b>(1) mergulho na mira</b>, em que a câmera atravessa a retícula; <b>(2) tarja de censura</b>, uma barra preta que varre e troca de mundo (escuro ↔ papel); <b>(3) convergência/explosão do enxame</b>, em que os agentes se juntam num núcleo ou explodem dele. Também: chicote lateral, giro de cartão em 3D, recuo extremo e corte seco só nos impactos."
-  ],
-  [
-   "Câmera e 3D",
-   "a câmera nunca para: empurra de 2 a 4% por plano, recua nas revelações de escala e viaja de lado nos mapas. Parallax em 2 ou 3 camadas, páginas e cartões em perspectiva (2,5D), mapa inclinado."
+   "Inter Display nos títulos e palavras-chave (Semibold e Bold), Inter Text nos rótulos e na linha menor da manchete. Palavras entram por máscara, por profundidade (eixo z) ou extrudadas; nada de frase inteira parada."
   ],
   [
    "Áudio",
-   "<b>sem música.</b> Cerca de 110 efeitos, cada um preso a um evento: whooshes de tamanhos diferentes, bass hits nas revelações (no máximo um a cada ~4 s), risers antes dos números, glitches nas partes de IA, carimbos, marcador, teclas, bipes de ativação, varreduras e um drone grave sutil nos atos escuros. A voz fica sempre por cima."
-  ],
-  [
-   "Diferente dos anteriores",
-   "sem verde-ácido nem grade de pontos (ia-muda-tudo), sem laranja e cards arredondados (v2), sem planta técnica, azul cobalto ou vermelho (ia-ciberseguranca), sem gradiente violeta-rosa-âmbar e janelas de keynote (tutorial-claude)."
+   "sem música. Mais camadas: chegada e saída de cada objeto, fios de dados com pulsos, travas metálicas, palhetas do placar, baque de papel, laser, ronco grave do mapa e um drone grave sutil nas cenas escuras. Os tons variam (ticks subindo de tom, pops graves, médios e agudos). Os impactos ficam leves no grave para não embolar com a voz, que continua na frente."
   ]
  ],
  "cenas": [
@@ -87,19 +75,19 @@
    "b": 1.25,
    "f": "escuro",
    "narr": "A IA virou",
-   "comp": "Tipografia gigante",
-   "tela": "Tela preta, grão leve. «A IA» entra batendo em Inter Display Bold de 380 px (escala 1,4 → 1, desfoque 24 → 0); «virou» sobe da máscara logo abaixo. A câmera já começa empurrando (3%).",
+   "comp": "Tipografia em profundidade (3D)",
+   "tela": "ANTES: «A IA» batia num quadro plano. AGORA: as letras vêm do fundo do espaço 3D (eixo z), passam pela câmera e travam; «virou» gira sobre o próprio eixo (rotação 3D). A câmera já está em movimento desde o 1º quadro.",
    "sync": [
     [
      "0,18",
-     "«A IA» bate no centro · 🔊 bass hit + flash curto"
+     "«A IA» trava · 🔊 sub hit + whoosh reverso de chegada"
     ],
     [
      "0,68",
-     "«virou» sobe · 🔊 whoosh curto"
+     "«virou» gira · 🔊 swish curto"
     ]
    ],
-   "tr": "«virou» é puxado para cima e vira o fundo da cena seguinte (chicote vertical)."
+   "tr": "«virou» gira 90° e vira uma lâmina que corta para a cena 2 (corte por objeto)."
   },
   {
    "n": 2,
@@ -108,19 +96,19 @@
    "b": 2.64,
    "f": "escuro",
    "narr": "uma arma de espionagem?",
-   "comp": "Tipografia + mira",
-   "tela": "«ARMA» gigante em amarelo-alerta ocupa a largura; uma mira tática (retícula com cantoneiras) trava sobre a palavra. «de espionagem?» aparece embaixo, saindo de trás de uma tarja preta que se abre.",
+   "comp": "Tipo extrudado + mira 3D",
+   "tela": "«ARMA» extrudada (camadas em profundidade, volume real) entra girando no eixo Y. Três anéis de mira em planos 3D diferentes giram e se alinham sobre ela. «espionagem?» decodifica atrás de barras de interferência.",
    "sync": [
     [
      "1,30",
-     "mira trava em «ARMA» · 🔊 clique de trava + pulso eletrônico"
+     "anéis alinham · 🔊 duas travas metálicas em sequência"
     ],
     [
      "1,68",
-     "tarja se abre em «espionagem» · 🔊 glitch digital curto"
+     "decodificação · 🔊 glitch"
     ]
    ],
-   "tr": "Assinatura 1, mergulho na mira: a câmera atravessa o centro da retícula e cai na cena 3."
+   "tr": "Mergulho na mira: a câmera atravessa o centro dos anéis e cai no mundo 3D da cena 3."
   },
   {
    "n": 3,
@@ -129,23 +117,23 @@
    "b": 4.6,
    "f": "escuro",
    "narr": "Imagine um único operador",
-   "comp": "Ponto único no espaço negativo",
-   "tela": "Espaço escuro com uma grade tática muito sutil em perspectiva (chão). Um único ponto amarelo acende no centro, com o rótulo «OPERADOR · 01» e cantoneiras de HUD em volta. Muito espaço vazio: é um só.",
+   "comp": "Mundo 3D · plano aéreo",
+   "tela": "ANTES: grade plana com um ponto pequeno e muito vazio. AGORA: mundo 3D de verdade (projeção em perspectiva): a câmera desce do alto sobre um piso tático infinito; um feixe de luz cai do céu e acende o operador no chão. HUD com coordenadas (sem dado inventado: só rótulo «OPERADOR · 01»). Manchete no topo: IMAGINE UM ÚNICO / OPERADOR.",
    "sync": [
     [
      "2,64",
-     "«Imagine»: a grade aparece em profundidade · 🔊 swell grave (abertura)"
+     "câmera desce · 🔊 swell grave"
     ],
     [
      "3,30",
-     "«único»: o ponto acende · 🔊 bipe de ativação"
+     "feixe cai · 🔊 zap de energia + bipe"
     ],
     [
      "3,60",
-     "«operador»: rótulo digita · 🔊 teclas rápidas"
+     "rótulo digita · 🔊 teclas"
     ]
    ],
-   "tr": "Sem corte: do ponto saem linhas para a cena 4 (morph contínuo)."
+   "tr": "Sem corte: a câmera começa a orbitar o operador (continua na cena 4)."
   },
   {
    "n": 4,
@@ -154,23 +142,23 @@
    "b": 6.4,
    "f": "escuro",
    "narr": "controlando agentes de inteligência artificial",
-   "comp": "Constelação",
-   "tela": "Do ponto saem linhas em rajada; na ponta de cada uma nasce um agente (pequeno chevron amarelo-claro): 8, depois 32, depois 64, em anéis. Texto à esquerda: «AGENTES» (Display Semibold) e «de inteligência artificial» (Text) em duas escalas.",
+   "comp": "Órbita 3D",
+   "tela": "A câmera orbita 40° em volta do operador. Agentes 3D (chevrons com rastro de luz) nascem do chão em três anéis, cada um ligado ao operador por um fio de dados com pulso viajando. Parallax real: os de perto passam rápidos, os do fundo devagar.",
    "sync": [
     [
      "4,68",
-     "«agentes»: primeira rajada de 8 · 🔊 sequência de pops eletrônicos"
+     "anel 1 · 🔊 pops graves"
     ],
     [
      "5,34",
-     "«inteligência»: segundo anel de 32 · 🔊 pulso"
+     "anel 2 · 🔊 pops médios + pulso"
     ],
     [
      "5,80",
-     "«artificial»: terceiro anel de 64 · 🔊 varredura curta"
+     "anel 3 · 🔊 pops agudos + varredura"
     ]
    ],
-   "tr": "Recuo rápido da câmera revela a cena 5."
+   "tr": "A câmera sobe em grua (cena 5)."
   },
   {
    "n": 5,
@@ -179,23 +167,23 @@
    "b": 8.5,
    "f": "escuro",
    "narr": "para invadir centenas de organizações",
-   "comp": "Grade / repetição",
-   "tela": "A câmera recua e mostra uma grade enorme de quadradinhos cinza-aço (as organizações). Os agentes voam como flechas para dentro da grade; cada quadrado atingido fica amarelo. «CENTENAS» enorme atravessa a tela em parallax por cima.",
+   "comp": "Campo 3D de cubos",
+   "tela": "Grua para cima e para trás: o piso vira um campo de centenas de cubos (organizações) até o horizonte. Os agentes riscam arcos de luz e mergulham nos cubos, que acendem por dentro. «CENTENAS» atravessa em primeiro plano, mais rápido que o fundo (parallax).",
    "sync": [
     [
      "6,42",
-     "recuo da câmera · 🔊 whoosh largo"
+     "grua · 🔊 whoosh largo"
     ],
     [
      "6,72",
-     "«invadir»: agentes mergulham · 🔊 glitches em cascata"
+     "primeiros impactos · 🔊 glitches curtos em cascata, cada um num tom"
     ],
     [
      "7,08",
-     "«centenas»: palavra cruza a tela · 🔊 swoosh"
+     "«centenas» cruza · 🔊 swoosh"
     ]
    ],
-   "tr": "Continua na mesma grade (zoom out extra)."
+   "tr": "Continua no mesmo campo."
   },
   {
    "n": 6,
@@ -204,15 +192,15 @@
    "b": 9.66,
    "f": "escuro",
    "narr": "ao mesmo tempo.",
-   "comp": "Grade inteira",
-   "tela": "Todos os quadrados acendem juntos num único pulso, como um apagão ao contrário. «AO MESMO TEMPO» em três palavras empilhadas, centralizadas, com tracking apertado.",
+   "comp": "Onda de choque",
+   "tela": "Todos os cubos acendem juntos e uma onda de choque circular corre pelo campo; a câmera treme. AO MESMO TEMPO empilhado em primeiro plano.",
    "sync": [
     [
      "8,90",
-     "«tempo»: pulso total sincronizado · 🔊 bass hit + chiado elétrico"
+     "pulso total · 🔊 bass hit + estalo elétrico"
     ]
    ],
-   "tr": "Assinatura 2, tarja de censura: uma barra preta varre a tela da esquerda para a direita e, ao passar, deixa o papel branco da cena 7."
+   "tr": "Interferência: o campo engasga em barras de tarja (glitch preto e amarelo) e corta para a mesa do dossiê."
   },
   {
    "n": 7,
@@ -221,19 +209,19 @@
    "b": 10.98,
    "f": "claro",
    "narr": "Isso não é ficção.",
-   "comp": "Dossiê · tipografia",
-   "tela": "Primeira cena clara: papel de dossiê com fibra leve. «NÃO É» pequeno; «FICÇÃO» grande em tinta preta; uma linha amarela risca «FICÇÃO» de ponta a ponta.",
+   "comp": "Objeto 3D · pasta",
+   "tela": "ANTES: papel plano com texto. AGORA: vista de cima de uma mesa; uma pasta de dossiê CAI na mesa (com sombra e quique), capa com o carimbo CONFIDENCIAL. «FICÇÃO» escrita na capa é riscada por marca-texto.",
    "sync": [
     [
-     "9,66",
-     "barra de censura passa · 🔊 swoosh de papel"
+     "9,70",
+     "pasta cai · 🔊 baque de papel"
     ],
     [
      "10,24",
-     "«ficção»: risco amarelo · 🔊 traço de marcador"
+     "risco · 🔊 marcador"
     ]
    ],
-   "tr": "A folha inclina em 3D e desliza para o lado; a próxima folha entra por baixo (pilha de documentos)."
+   "tr": "A capa abre como uma dobradiça 3D (cena 8)."
   },
   {
    "n": 8,
@@ -242,19 +230,19 @@
    "b": 13.06,
    "f": "claro",
    "narr": "Segundo um relatório da CrowdStrike,",
-   "comp": "Documento em 3D",
-   "tela": "Uma página de relatório gira levemente em perspectiva (2,5D). Cabeçalho «RELATÓRIO DE INTELIGÊNCIA» e linhas de texto cobertas por tarjas pretas. Em «CrowdStrike», um marca-texto amarelo passa sobre a linha «FONTE: CROWDSTRIKE» (só o nome em texto, sem logotipo).",
+   "comp": "Pasta abrindo",
+   "tela": "A capa gira 180° no eixo da lombada e revela o relatório; a câmera inclina e se aproxima. Marca-texto amarelo em «FONTE: CROWDSTRIKE» (só o nome, sem logotipo).",
    "sync": [
     [
      "10,98",
-     "página entra girando · 🔊 deslizar de papel"
+     "capa abre · 🔊 virar de página"
     ],
     [
      "12,00",
-     "«CrowdStrike»: marca-texto · 🔊 traço de marcador"
+     "marca-texto · 🔊 marcador"
     ]
    ],
-   "tr": "Zoom rápido na linha marcada, que vira a ficha da cena 9."
+   "tr": "Pan rápido de câmera sobre a mesa até a ficha presa com clipe."
   },
   {
    "n": 9,
@@ -263,23 +251,23 @@
    "b": 15.86,
    "f": "claro",
    "narr": "um grupo de espionagem identificado como VaporPanda",
-   "comp": "Ficha / dossiê",
-   "tela": "Ficha de identificação: rótulo «GRUPO DE ESPIONAGEM». Um carimbo «IDENTIFICADO» bate no canto. Uma tarja preta corre e revela o nome «VAPORPANDA» em Display Bold; as letras embaralham antes de assentar (decodificação).",
+   "comp": "Ficha com clipe",
+   "tela": "Ficha com clipe e foto-silhueta genérica. Tarjas se descolam em sequência; carimbo IDENTIFICADO bate e solta partículas de tinta; VAPORPANDA decodifica.",
    "sync": [
     [
-     "13,06",
-     "ficha entra · 🔊 whoosh curto"
+     "13,52",
+     "«espionagem»: tarjas descolam · 🔊 swooshes curtos"
     ],
     [
      "14,00",
-     "«identificado»: carimbo · 🔊 impacto seco de carimbo"
+     "carimbo · 🔊 impacto seco"
     ],
     [
      "15,00",
-     "«VaporPanda»: letras decodificam · 🔊 glitch de decodificação"
+     "nome decodifica · 🔊 glitch"
     ]
    ],
-   "tr": "O nome encolhe e vira uma etiqueta que voa para a cena 10 (inversão para o escuro)."
+   "tr": "A ficha vira no ar (giro 3D) e o verso é o mundo escuro: entramos de novo na sala de operações."
   },
   {
    "n": 10,
@@ -288,23 +276,23 @@
    "b": 18.3,
    "f": "escuro",
    "narr": "utilizou inteligência artificial em uma campanha",
-   "comp": "Núcleo + órbitas",
-   "tela": "Volta o escuro. Um núcleo hexagonal «IA» pulsa no centro com a etiqueta «VAPORPANDA» presa a ele; agentes orbitam. Uma faixa de texto «CAMPANHA» corre na horizontal, cruzando o quadro em parallax (duas velocidades).",
+   "comp": "Núcleo 3D",
+   "tela": "Prisma hexagonal 3D (núcleo IA) girando, com a etiqueta VAPORPANDA presa; agentes em órbitas elípticas 3D cruzando na frente e atrás do núcleo (oclusão real). Faixa CAMPANHA corre em perspectiva no chão.",
    "sync": [
     [
      "15,86",
-     "inversão papel → escuro · 🔊 whoosh com reverse"
+     "giro da ficha · 🔊 flip + whoosh"
     ],
     [
      "16,72",
-     "«inteligência»: núcleo pulsa · 🔊 pulso eletrônico grave"
+     "núcleo pulsa · 🔊 pulso grave"
     ],
     [
-     "18,32",
-     "«campanha»: faixa corre · 🔊 swoosh"
+     "17,90",
+     "faixa · 🔊 swoosh"
     ]
    ],
-   "tr": "Os agentes se alinham e viram as barras do contador da cena 11."
+   "tr": "A câmera sobe até o painel do contador."
   },
   {
    "n": 11,
@@ -313,23 +301,23 @@
    "b": 21.1,
    "f": "escuro",
    "narr": "contra mais de 200 organizações,",
-   "comp": "Infográfico dominante",
-   "tela": "Contador gigante em amarelo, algarismos de largura fixa: 000 → 200, com «+» e «MAIS DE» em cima. Atrás, a grade se preenche com exatamente 200 quadrados, em ondas.",
+   "comp": "Contador físico + cubos isométricos",
+   "tela": "ANTES: número digital plano. AGORA: placar de palhetas (split-flap) com 3 dígitos que viram fisicamente até 200; abaixo, 200 cubos em grade isométrica acendem em ondas.",
    "sync": [
     [
      "18,30",
-     "subida de tensão · 🔊 riser (1,2 s)"
+     "subida · 🔊 riser"
     ],
     [
      "19,02",
-     "«mais de»: contador dispara · 🔊 ticks rápidos de contador"
+     "palhetas viram · 🔊 matraca de palhetas"
     ],
     [
      "19,86",
-     "«organizações»: trava em 200 · 🔊 bass hit"
+     "trava em 200 · 🔊 boom (mais leve no grave)"
     ]
    ],
-   "tr": "O número escala para fora da tela (zoom através) e revela o mapa."
+   "tr": "Zoom através do «0» do placar, que vira o globo."
   },
   {
    "n": 12,
@@ -338,23 +326,23 @@
    "b": 24.0,
    "f": "escuro",
    "narr": "distribuídas por pelo menos 14 países.",
-   "comp": "Mapa",
-   "tela": "Mapa-múndi em linhas finas cinza-aço, inclinado em 3D, com a câmera viajando de lado. Uma fileira de 14 marcadores amarelos acende um a um, com contador «14 PAÍSES». Os marcadores ficam numa régua, não em países específicos: a narração não diz quais são.",
+   "comp": "Globo 3D de pontos",
+   "tela": "Globo 3D de pontos girando de verdade, com luz de borda. Em volta, um anel-mostrador com 14 segmentos acende um a um (contador «14 PAÍSES»). Sem marcar países: a narração não diz quais são.",
    "sync": [
     [
      "21,10",
-     "câmera viaja sobre o mapa · 🔊 whoosh longo + varredura"
+     "globo gira · 🔊 whoosh orbital"
     ],
     [
      "22,14",
-     "«pelo menos»: marcadores 1 a 14 · 🔊 14 bipes em escada"
+     "segmentos 1–14 · 🔊 14 ticks em escada subindo de tom"
     ],
     [
      "22,88",
-     "«países»: contador trava · 🔊 tick"
+     "trava · 🔊 tick forte"
     ]
    ],
-   "tr": "Chicote lateral rápido com desfoque."
+   "tr": "Chicote lateral com desfoque de movimento."
   },
   {
    "n": 13,
@@ -363,19 +351,19 @@
    "b": 26.7,
    "f": "escuro",
    "narr": "A operação utilizou agentes coordenados",
-   "comp": "Formação",
-   "tela": "Agentes soltos pelo quadro se encaixam de uma vez numa formação perfeita (grade de chevrons apontando para o mesmo lado). Texto «COORDENADOS» abre em tracking, de 0 para −0,04 em.",
+   "comp": "Formação 3D",
+   "tela": "Enxame solto em 3D; em «coordenados», todos se encaixam numa malha cúbica que gira; a câmera orbita a formação.",
    "sync": [
     [
      "24,08",
-     "«A operação»: agentes espalhados entram · 🔊 swoosh"
+     "enxame · 🔊 swoosh"
     ],
     [
      "25,70",
-     "«coordenados»: todos se encaixam juntos · 🔊 snap seco + clique em camada"
+     "encaixe · 🔊 snap seco + clique em camada"
     ]
    ],
-   "tr": "A formação converge para um ponto que vira o núcleo da cena 14 (convergência)."
+   "tr": "A malha implode para o centro."
   },
   {
    "n": 14,
@@ -384,19 +372,19 @@
    "b": 28.5,
    "f": "escuro",
    "narr": "por uma ferramenta chamada Artex,",
-   "comp": "Núcleo central",
-   "tela": "Os agentes convergem para um núcleo quadrado que ativa com um anel de luz. Rótulo pequeno «FERRAMENTA» e o nome «ARTEX» grande, decodificando. Linhas finas ligam o núcleo aos agentes em volta. Sem inventar interface: é um diagrama, não uma tela do programa.",
+   "comp": "Cubo-núcleo 3D",
+   "tela": "A malha implode num cubo 3D com arestas acesas (diagrama, não interface). O cubo liga: fios saem dele para os agentes, com pulsos viajando. ARTEX decodifica.",
    "sync": [
     [
      "26,76",
-     "«ferramenta»: convergência · 🔊 whoosh de sucção"
+     "implosão · 🔊 whoosh de sucção"
     ],
     [
      "27,64",
-     "«Artex»: ativação + decodificação · 🔊 ativação eletrônica + glitch"
+     "liga · 🔊 ativação elétrica + glitch"
     ]
    ],
-   "tr": "Zoom para dentro do núcleo."
+   "tr": "A câmera entra dentro do cubo."
   },
   {
    "n": 15,
@@ -405,23 +393,23 @@
    "b": 31.9,
    "f": "escuro",
    "narr": "com um modelo DeepSeek entre as tecnologias empregadas.",
-   "comp": "Pilha de cartões",
-   "tela": "Uma pilha de cartões em profundidade (3D, parallax). Só um tem texto: «MODELO DEEPSEEK» (nome em texto, sem logotipo), destacado em amarelo. Os outros aparecem com tarjas pretas: a narração diz «entre as tecnologias», sem citar as outras.",
+   "comp": "Carrossel 3D",
+   "tela": "Dentro do cubo, cartões giram num carrossel cilíndrico 3D. Um para de frente: MODELO DEEPSEEK (texto, sem logotipo). Os outros passam com tarjas: a narração não diz quais são.",
    "sync": [
     [
      "28,54",
-     "cartões entram em leque · 🔊 pops em sequência"
+     "carrossel gira · 🔊 whoosh rotativo"
     ],
     [
      "29,18",
-     "«DeepSeek»: cartão sobe e acende · 🔊 clique + swell curto"
+     "cartão trava · 🔊 clique + swell"
     ],
     [
      "30,34",
-     "«tecnologias»: tarjas nos outros · 🔊 traços de marcador"
+     "tarjas · 🔊 marcadores"
     ]
    ],
-   "tr": "Tudo escurece de uma vez (corte para a tensão)."
+   "tr": "Flash amarelo de tela inteira (virada)."
   },
   {
    "n": 16,
@@ -430,15 +418,15 @@
    "b": 33.2,
    "f": "escuro",
    "narr": "E o mais preocupante,",
-   "comp": "Faixas de alerta",
-   "tela": "Faixas diagonais amarelas e pretas (fita de alerta) cruzam o quadro devagar; texto pequeno «O MAIS PREOCUPANTE» no centro. Luz baixa, só respiro antes da revelação.",
+   "comp": "Fitas em profundidade",
+   "tela": "Duas fitas de alerta em planos 3D diferentes cruzam na frente e atrás da câmera (parallax forte); a câmera avança devagar. Respiro de tensão antes da revelação.",
    "sync": [
     [
      "31,92",
-     "entram as faixas · 🔊 riser + drone grave"
+     "flash + fitas · 🔊 riser + drone grave"
     ]
    ],
-   "tr": "As faixas se fecham como uma persiana e abrem na cena 17."
+   "tr": "As fitas passam pela câmera e abrem a cena 17."
   },
   {
    "n": 17,
@@ -447,23 +435,23 @@
    "b": 35.9,
    "f": "escuro",
    "narr": "os alvos incluíam ministérios das Relações Exteriores",
-   "comp": "Tipografia + mira",
-   "tela": "Retículas de mira travam em três pontos. «MINISTÉRIOS DAS RELAÇÕES EXTERIORES» em três linhas, cada uma entrando de um lado (escalonamento de 0,08 s). Ícone genérico de prédio com colunas, em linha.",
+   "comp": "Prédio 3D",
+   "tela": "Prédio genérico de colunas, extrudado em 3D, no piso tático; três miras projetam lasers de direções diferentes e travam nele. Manchete MINISTÉRIOS / DAS RELAÇÕES / EXTERIORES entra linha a linha.",
    "sync": [
     [
      "33,42",
-     "«alvos»: miras travam · 🔊 bass hit + clique de trava"
+     "miras travam · 🔊 bass hit leve + travas"
     ],
     [
      "34,18",
-     "«ministérios»: linha 1 · 🔊 swoosh"
+     "linha 1 · 🔊 zap de laser"
     ],
     [
      "34,96",
-     "«Relações Exteriores»: linhas 2 e 3 · 🔊 swooshes em camada"
+     "linhas 2 e 3 · 🔊 zaps"
     ]
    ],
-   "tr": "A câmera sobe e mergulha no mapa."
+   "tr": "Grua: a câmera sobe do prédio até o mapa."
   },
   {
    "n": 18,
@@ -472,19 +460,19 @@
    "b": 37.9,
    "f": "escuro",
    "narr": "de países da América Latina.",
-   "comp": "Mapa",
-   "tela": "O mapa volta, agora girando até a América Latina. A região inteira ganha contorno amarelo e um brilho de varredura passa por ela. Texto «AMÉRICA LATINA» grande, ancorado à esquerda.",
+   "comp": "Mapa em relevo 3D",
+   "tela": "Mapa inclinado; a América Latina se ergue em relevo (extrusão amarela) numa onda, com varredura passando.",
    "sync": [
     [
      "35,98",
-     "câmera gira sobre o mapa · 🔊 whoosh longo"
+     "grua · 🔊 whoosh longo"
     ],
     [
      "36,74",
-     "«América Latina»: contorno acende · 🔊 varredura + bipe"
+     "região se ergue · 🔊 ronco grave + varredura"
     ]
    ],
-   "tr": "Barra de censura varre de volta ao papel (assinatura 2)."
+   "tr": "Uma folha desliza de cima e cobre o quadro (volta ao dossiê)."
   },
   {
    "n": 19,
@@ -493,19 +481,19 @@
    "b": 39.8,
    "f": "claro",
    "narr": "A CrowdStrike confirmou",
-   "comp": "Dossiê",
-   "tela": "De volta à página do relatório. O carimbo «CONFIRMADO» bate inclinado, e a página treme com o impacto.",
+   "comp": "Mesa do dossiê",
+   "tela": "Página do relatório desliza sobre a mesa; carimbo CONFIRMADO bate com respingo de tinta; papel treme.",
    "sync": [
     [
      "37,90",
-     "barra passa · 🔊 swoosh de papel"
+     "folha desliza · 🔊 swoosh de papel"
     ],
     [
      "38,60",
-     "«confirmou»: carimbo · 🔊 impacto de carimbo"
+     "carimbo · 🔊 impacto"
     ]
    ],
-   "tr": "Zoom out: a página encolhe e vira um dos quadrados da grade."
+   "tr": "A câmera recua até a página virar um cubo da grade."
   },
   {
    "n": 20,
@@ -514,19 +502,19 @@
    "b": 41.98,
    "f": "escuro",
    "narr": "atividade de invasão em nove organizações.",
-   "comp": "Grade com destaque",
-   "tela": "Volta a grade dos 200 quadrados, apagada. Nove acendem em amarelo sólido, um por vez, com a etiqueta «INVASÃO». «9» gigante à esquerda.",
+   "comp": "Cubos que se erguem",
+   "tela": "Volta a grade isométrica de cubos; nove cubos se ERGUEM da grade (altura 3D) e acendem; placar de palhetas vira para 9.",
    "sync": [
     [
      "39,86",
-     "«invasão»: primeiros acendem · 🔊 glitches curtos"
+     "cubos sobem · 🔊 9 cliques subindo de tom"
     ],
     [
      "40,48",
-     "«nove»: o 9 bate · 🔊 bass hit"
+     "«nove» · 🔊 pop + swell"
     ]
    ],
-   "tr": "Congela: o quadro perde a cor por 2 quadros (respiro)."
+   "tr": "Congela."
   },
   {
    "n": 21,
@@ -535,19 +523,19 @@
    "b": 43.9,
    "f": "escuro",
    "narr": "Mas existe um detalhe importante.",
-   "comp": "Zoom no detalhe",
-   "tela": "Tudo congela e dessatura; a câmera dá um zoom brusco até um único quadrado. «MAS…» enorme, depois «um detalhe importante» pequeno, em Inter Text.",
+   "comp": "Lupa",
+   "tela": "Tudo congela e perde a cor; uma lente circular (lupa) varre a grade e amplia um cubo, que volta a ter cor; a câmera mergulha na lente. MAS… gigante.",
    "sync": [
     [
      "41,98",
-     "«Mas»: congela · 🔊 parada de fita (efeito reverso)"
+     "congela · 🔊 parada de fita"
     ],
     [
      "42,58",
-     "«detalhe»: zoom brusco · 🔊 whoosh curto + tick"
+     "lupa amplia · 🔊 whoosh + tick"
     ]
    ],
-   "tr": "O quadrado vira o núcleo «IA» da cena 22."
+   "tr": "Mergulho na lente: dentro está o núcleo IA."
   },
   {
    "n": 22,
@@ -556,16 +544,12 @@
    "b": 45.7,
    "f": "escuro",
    "narr": "A inteligência artificial não agiu",
-   "comp": "Elemento central",
-   "tela": "O núcleo «IA» sozinho no centro, girando devagar. «NÃO» bate em amarelo por cima, grande.",
+   "comp": "Núcleo + tipo 3D",
+   "tela": "Núcleo IA sozinho, girando; NÃO extrudado em 3D bate na frente dele com quique.",
    "sync": [
     [
-     "43,98",
-     "núcleo aparece · 🔊 pulso"
-    ],
-    [
      "45,02",
-     "«não»: palavra bate · 🔊 impacto seco"
+     "NÃO · 🔊 impacto"
     ]
    ],
    "tr": "Recuo da câmera."
@@ -577,19 +561,19 @@
    "b": 47.34,
    "f": "escuro",
    "narr": "completamente sozinha.",
-   "comp": "Tipografia deslocada",
-   "tela": "«COMPLETAMENTE» pequeno, «SOZINHA» grande à esquerda; uma linha amarela risca «SOZINHA». Na borda direita começa a entrar uma segunda presença (o ponto do operador).",
+   "comp": "Recuo revelador",
+   "tela": "A câmera recua e revela que o núcleo não está só: a luz do operador aparece no canto do mesmo espaço 3D. SOZINHA riscada.",
    "sync": [
     [
      "46,28",
-     "«sozinha»: risco · 🔊 traço de marcador"
+     "risco · 🔊 marcador"
     ],
     [
      "46,90",
-     "o ponto entra pela direita · 🔊 swell"
+     "luz aparece · 🔊 swell"
     ]
    ],
-   "tr": "Pan rápido para a direita até o operador (chicote)."
+   "tr": "A câmera faz um pan até o operador."
   },
   {
    "n": 24,
@@ -598,19 +582,19 @@
    "b": 49.4,
    "f": "escuro",
    "narr": "Um operador humano direcionava os agentes",
-   "comp": "Retorno ao ponto",
-   "tela": "Volta o ponto amarelo da cena 3, agora revelado como um ícone de pessoa simples, com o rótulo «OPERADOR HUMANO». Ao redor, os agentes giram juntos para apontar na direção que ele indica.",
+   "comp": "Retorno ao operador",
+   "tela": "O ponto da cena 3 vira uma silhueta humana genérica em pé no piso 3D, com um feixe. Ele aponta; os agentes giram juntos naquela direção, numa onda.",
    "sync": [
     [
      "47,82",
-     "«humano»: ícone se forma · 🔊 ativação"
+     "silhueta forma · 🔊 ativação"
     ],
     [
      "48,54",
-     "«direcionava»: agentes giram juntos · 🔊 swish coletivo"
+     "agentes giram · 🔊 swish coletivo"
     ]
    ],
-   "tr": "Corte em movimento para o fluxo de decisão."
+   "tr": "Corte em movimento seguindo a direção dos agentes."
   },
   {
    "n": 25,
@@ -619,19 +603,19 @@
    "b": 51.94,
    "f": "escuro",
    "narr": "e intervinha nas decisões estratégicas.",
-   "comp": "Fluxo de decisão",
-   "tela": "Os agentes propõem três caminhos (linhas que se ramificam). Um cursor genérico escolhe um e clica; os outros dois se apagam. Texto «DECISÕES ESTRATÉGICAS» embaixo. É um diagrama genérico, não a interface de um produto real.",
+   "comp": "Árvore de decisão 3D",
+   "tela": "Galhos de decisão crescem em direção à câmera; um cursor genérico clica num; os outros se desfazem em partículas.",
    "sync": [
     [
      "49,76",
-     "«intervinha»: cursor clica · 🔊 clique + confirmação"
+     "clique · 🔊 clique + confirmação"
     ],
     [
      "50,46",
-     "«decisões»: os outros caminhos apagam · 🔊 swoosh descendo"
+     "galhos se desfazem · 🔊 glitch descendo"
     ]
    ],
-   "tr": "O quadro inteiro vira como um cartão em 3D (giro de 180°)."
+   "tr": "O mundo dá meia-volta (rolagem de câmera de 180°)."
   },
   {
    "n": 26,
@@ -640,19 +624,19 @@
    "b": 54.32,
    "f": "escuro",
    "narr": "Isso muda o cenário da cybersecurity.",
-   "comp": "Virada",
-   "tela": "O quadro vira e mostra o «novo cenário»: a grade tática agora inclinada no ângulo oposto, mais escura. «MUDA O CENÁRIO» e depois a palavra do tema, grande.",
+   "comp": "Rolagem 180°",
+   "tela": "A câmera rola 180°: o piso vira teto, um novo cenário. CIBERSEGURANÇA entra em 3D.",
    "sync": [
     [
      "52,20",
-     "«muda»: o quadro vira · 🔊 flip + whoosh"
+     "rolagem · 🔊 whoosh longo"
     ],
     [
      "53,16",
-     "«cybersecurity»: palavra bate · 🔊 boom"
+     "palavra bate · 🔊 boom"
     ]
    ],
-   "tr": "A palavra se desfaz em três pontos que ficam no quadro."
+   "tr": "A palavra se desfaz em três pontos."
   },
   {
    "n": 27,
@@ -662,18 +646,18 @@
    "f": "escuro",
    "narr": "Porque agora, um grupo pequeno",
    "comp": "Espaço negativo",
-   "tela": "Três pontos amarelos pequenos num espaço enorme e vazio. «UM GRUPO PEQUENO» em Inter Text, pequeno de propósito.",
+   "tela": "AGORA entra e sai; três pontos pequenos num espaço enorme (de propósito).",
    "sync": [
     [
      "54,52",
-     "«agora»: quadro se esvazia · 🔊 swell suave"
+     "«agora» · 🔊 swoosh"
     ],
     [
      "55,52",
-     "«pequeno»: os 3 pontos acendem · 🔊 três bipes"
+     "três pontos · 🔊 três bipes"
     ]
    ],
-   "tr": "Sem corte: dos pontos explode o enxame (cena 28)."
+   "tr": "Sem corte: o enxame explode dos três pontos."
   },
   {
    "n": 28,
@@ -682,19 +666,19 @@
    "b": 57.9,
    "f": "escuro",
    "narr": "pode coordenar operações digitais",
-   "comp": "Enxame",
-   "tela": "Dos três pontos explodem milhares de agentes, que se organizam em correntes. «COORDENAR» entra letra por letra, rápido.",
+   "comp": "Túnel 3D",
+   "tela": "O enxame explode e vira correntes que passam pela câmera num túnel 3D.",
    "sync": [
     [
      "56,30",
-     "«coordenar»: explosão do enxame · 🔊 rajada de whooshes em camada"
+     "explosão · 🔊 whooshes em camada"
     ],
     [
      "56,82",
-     "«operações digitais»: correntes se formam · 🔊 pulso"
+     "correntes · 🔊 pulso"
     ]
    ],
-   "tr": "Recuo extremo (cena 29)."
+   "tr": "Grua para fora do túnel."
   },
   {
    "n": 29,
@@ -703,19 +687,19 @@
    "b": 59.74,
    "f": "escuro",
    "narr": "em uma escala muito maior.",
-   "comp": "Infográfico + recuo",
-   "tela": "A câmera recua até o enxame virar uma textura que cobre o globo. «ESCALA» e depois «MAIOR», que cresce até encher a tela.",
+   "comp": "Globo coberto",
+   "tela": "Recuo extremo: o enxame cobre o globo 3D; MAIOR cresce e atravessa a câmera.",
    "sync": [
     [
-     "57,24",
+     "57,40",
      "subida · 🔊 riser"
     ],
     [
      "58,90",
-     "«maior»: palavra enche a tela · 🔊 bass hit"
+     "MAIOR · 🔊 hit"
     ]
    ],
-   "tr": "«MAIOR» vira branco e a tela fica clara (flash de passagem)."
+   "tr": "Flash para o papel."
   },
   {
    "n": 30,
@@ -724,15 +708,15 @@
    "b": 61.6,
    "f": "claro",
    "narr": "A pergunta não é mais",
-   "comp": "Dossiê · tipografia",
-   "tela": "Papel claro. «A PERGUNTA NÃO É MAIS» digita como num relatório, linha a linha.",
+   "comp": "Mesa · máquina de escrever",
+   "tela": "A folha da conclusão na mesa, inclinada em 3D; A PERGUNTA NÃO É MAIS datilografa com a câmera acompanhando a linha.",
    "sync": [
     [
      "59,84",
-     "«pergunta»: digitação · 🔊 teclas (11 a 14 por segundo)"
+     "digitação · 🔊 teclas"
     ]
    ],
-   "tr": "Linha desce, a pergunta aparece abaixo."
+   "tr": "A folha desliza para cima."
   },
   {
    "n": 31,
@@ -741,19 +725,15 @@
    "b": 63.94,
    "f": "claro",
    "narr": "se a inteligência artificial pode ser usada em ataques.",
-   "comp": "Tipografia",
-   "tela": "«SE» grande à esquerda; ao lado, «A IA PODE SER USADA EM ATAQUES?». No fim, uma tarja preta corta essa pergunta: ela já foi respondida.",
+   "comp": "Tipografia + tarja",
+   "tela": "SE gigante; a pergunta antiga aparece e é cortada por tarjas; uma tarja cresce e apaga a tela.",
    "sync": [
     [
-     "61,04",
-     "«inteligência»: pergunta aparece · 🔊 pop"
-    ],
-    [
      "63,06",
-     "«ataques»: tarja corta · 🔊 swoosh + impacto leve"
+     "tarjas · 🔊 swoosh + tick"
     ]
    ],
-   "tr": "A tarja cresce e cobre a tela inteira, voltando ao escuro (assinatura 2)."
+   "tr": "A tarja cobre tudo (escuro)."
   },
   {
    "n": 32,
@@ -762,23 +742,19 @@
    "b": 67.6,
    "f": "escuro",
    "narr": "É, estamos preparados para enfrentar ataques nessa velocidade?",
-   "comp": "Tipografia + velocidade",
-   "tela": "Escuro total. «ESTAMOS PREPARADOS» monta palavra por palavra; em «velocidade», linhas de velocidade amarelas cruzam a tela com desfoque de movimento, e a câmera acelera até o limite.",
+   "comp": "Túnel de velocidade 3D",
+   "tela": "Palavras emergem do fundo do espaço; em «velocidade», linhas de luz correm pelo eixo z e a câmera acelera até o limite.",
    "sync": [
     [
-     "63,94",
-     "«É»: silêncio quase total · 🔊 respiro grave"
-    ],
-    [
      "64,36",
-     "«estamos preparados»: palavras montam · 🔊 riser longo"
+     "palavras · 🔊 riser longo"
     ],
     [
      "66,60",
-     "«velocidade»: linhas de velocidade · 🔊 whoosh rápido + bass hit final"
+     "velocidade · 🔊 whoosh rápido + boom"
     ]
    ],
-   "tr": "Corte seco para a cartela, no impacto."
+   "tr": "Corte seco na batida."
   },
   {
    "n": 33,
@@ -787,29 +763,22 @@
    "b": 71.0,
    "f": "escuro",
    "narr": "(sem narração)",
-   "comp": "Cartela final",
-   "tela": "A pergunta fica parada: «ESTAMOS PREPARADOS?». Embaixo, pequeno: «Fonte: relatório da CrowdStrike». A assinatura Studio Matteu entra discreta no rodapé, em Inter Text Medium (opcional).",
+   "comp": "Cartela",
+   "tela": "A pergunta parada com leve deriva; fonte e assinatura Studio Matteu discretas.",
    "sync": [
     [
      "67,60",
-     "cartela · 🔊 cauda grave do impacto se dissolvendo"
-    ],
-    [
-     "68,40",
-     "assinatura · 🔊 tick suave"
+     "cartela · 🔊 cauda grave"
     ]
    ],
-   "tr": "Fim, com parada de 2 s para leitura."
+   "tr": "Fim."
   }
  ],
  "notas": [
-  "Narração (proposta, ouça antes de aprovar): cortei só silêncio real em 13 pausas (−1,96 s), mantive todas as respirações e a pausa dramática antes de «Mas existe um detalhe importante», e apliquei aceleração uniforme de 12% (tom preservado). Resultado: 77,6 s → 67,6 s. Nenhuma palavra cortada. O original fica guardado como narracao-original.mp3.",
-  "Por que aceleração uniforme e não seletiva: trechos com velocidades diferentes deixam a voz com ritmo irregular; 12% fica abaixo do ponto em que soa artificial (≈20%). Se quiser mais urgência, dá para ir a 15%.",
-  "Roteiro: não recebi o texto exato; usei a transcrição. Confirme as grafias VaporPanda, Artex e DeepSeek. Em «cybersecurity», o transcritor ouviu ora «cybersecurity», ora «cybersegurança»: na tela, prefere CIBERSEGURANÇA ou CYBERSECURITY?",
-  "Dados: uso só o que a narração diz (mais de 200 organizações, pelo menos 14 países, 9 invasões confirmadas, ministérios das Relações Exteriores na América Latina). Não marco países específicos no mapa porque a narração não diz quais são.",
-  "Fonte: a cartela final cita «Fonte: relatório da CrowdStrike», como a narração.",
-  "Fonte tipográfica: Inter 4 (licença OFL), já no repositório (projetos/tutorial-claude/fontes); será copiada para este projeto com a licença. A SF Pro não pode ser usada em vídeo publicado.",
-  "Efeitos: a biblioteca atual tem whoosh, hit, riser, pop, clique, glitch, chime e digitação, gerados por código (Earshot) e de interface (uisfx, CC0). Ambiência, drone e varreduras sob medida eu crio com o Earshot (MIT). Nenhuma música.",
-  "Assinatura Studio Matteu: proposta discreta no rodapé da cartela. Pode tirar se preferir."
+  "Música: a segunda parte do seu pedido diz «não adicione música»; por isso esta revisão segue sem trilha. Se quiser o teste com música, faço depois uma versão separada, apresentando antes a faixa, a origem e a licença para sua aprovação.",
+  "Vídeos recebidos: os dois arquivos são de referência (Smart TV e hackers, de outro criador). O vídeo do Studio Matteu eu já tinha (o ia-espionagem).",
+  "Narração: mantenho a versão aprovada (pausas encurtadas + 12%). Nenhuma palavra muda.",
+  "Fatos: os mesmos de antes. Sem países marcados (14 vira mostrador), sem logotipos e sem interfaces reais.",
+  "Tempo de produção: o motor 3D é novo; é a maior mudança. A revisão quadro a quadro e a exportação seguem o mesmo fluxo."
  ]
 }
