@@ -214,7 +214,7 @@ class TestModoSimuladoMCP(Base):
             with self.subTest(nome=nome):
                 r = self.chamar(nome, args)["result"]
                 self.assertFalse(r["isError"]); self.assertTrue(r["content"][0]["text"].startswith(servidor_mcp.AVISO_SIMULADO))
-        nome = servidor_mcp.responder({"jsonrpc": "2.0", "id": 9, "method": "initialize", "params": {}})["result"]["serverInfo"]["name"]
+        nome = servidor_mcp.responder({"jsonrpc": "2.0", "id": 9, "method": "initialize", "params": {"protocolVersion": "2025-06-18"}})["result"]["serverInfo"]["name"]
         self.assertTrue(nome.endswith("-simulado"))
 
     def test_padrao_e_real_bloqueado(self):
@@ -295,8 +295,11 @@ class TestRegistroRobusto(Base):
 class TestRelatorioSemLegendas(Base):
     def test_sem_legenda_nem_texto(self):
         rel = api.relatorio_markdown(self.cliente(), 28, 3)
-        for proibido in ("SIMULADO)", "Brasil sob temporais", "espionagem", "Bastidores", "legenda", "pessoa.ficticia"):
+        p = api.perfil(self.cliente())
+        for proibido in ("SIMULADO", "Brasil sob temporais", "espionagem", "Bastidores", "legenda", "pessoa.ficticia",
+                         "@", p["username"], "studio.matteu", p["name"], "instagram.com", "permalink", "caption"):
             self.assertNotIn(proibido, rel)
+        self.assertEqual(rel.splitlines()[0], "# Relatório do Instagram")
         tabela = [l for l in rel.splitlines() if l.startswith("| 2026-")]
         self.assertEqual(len(tabela), 3)
         for l in tabela:
@@ -410,6 +413,102 @@ class TestTransporteReal(Base):
 
     def test_flag_padrao_no_arquivo(self):
         with open(os.path.join(AQUI, "api.py")) as f: self.assertIn("\nCONEXAO_REAL_AUTORIZADA = False", f.read())
+
+
+
+# ======================= testes da 3ª revisão =======================
+
+class TestTravaPreexistente(Base):
+    def setUp(self):
+        super().setUp(); os.chmod(self.tmp, 0o700); self.trava = api.REGISTRO + ".lock"
+
+    def test_trava_existente_com_permissao_aberta_e_corrigida(self):
+        for modo in (0o644, 0o666, 0o777, 0o400):
+            with self.subTest(modo=oct(modo)):
+                if os.path.exists(self.trava): os.remove(self.trava)
+                with open(self.trava, "w"): pass
+                os.chmod(self.trava, modo)
+                self.assertTrue(api.registrar("perfil", "ok"))
+                self.assertEqual(stat.S_IMODE(os.stat(self.trava).st_mode), 0o600)
+
+    def test_trava_link_simbolico_recusada(self):
+        alvo = os.path.join(self.tmp, "alvo.txt")
+        with open(alvo, "w") as f: f.write("intocado\n")
+        os.chmod(alvo, 0o644); os.symlink(alvo, self.trava)
+        self.assertFalse(api.registrar("perfil", "ok"))
+        self.assertEqual(stat.S_IMODE(os.stat(alvo).st_mode), 0o644)          # alvo nem lido nem alterado
+        with open(alvo) as f: self.assertEqual(f.read(), "intocado\n")
+        self.assertFalse(os.path.exists(api.REGISTRO))                          # nada gravado sem trava válida
+
+    def test_trava_link_simbolico_quebrado_recusado(self):
+        os.symlink(os.path.join(self.tmp, "nao-existe"), self.trava)
+        self.assertFalse(api.registrar("perfil", "ok"))
+        self.assertFalse(os.path.exists(os.path.join(self.tmp, "nao-existe")))  # O_CREAT não seguiu o link
+
+    def test_trava_pasta_recusada(self):
+        os.mkdir(self.trava)
+        self.assertFalse(api.registrar("perfil", "ok"))
+
+    def test_trava_fifo_recusada_sem_travar(self):
+        os.mkfifo(self.trava, 0o600)
+        self.assertFalse(api.registrar("perfil", "ok"))                         # O_NONBLOCK + fstat: recusa na hora
+
+    def test_trava_link_fisico_recusado(self):
+        outro = os.path.join(self.tmp, "outro.txt")
+        with open(outro, "w"): pass
+        os.link(outro, self.trava)
+        self.assertFalse(api.registrar("perfil", "ok"))
+
+    @unittest.skipUnless(os.getuid() == 0, "trocar o dono exige root")
+    def test_trava_de_outro_dono_recusada(self):
+        with open(self.trava, "w"): pass
+        os.chown(self.trava, 4242, 4242)
+        self.assertFalse(api.registrar("perfil", "ok"))
+        self.assertEqual(os.stat(self.trava).st_uid, 4242)
+
+    @unittest.skipUnless(os.getuid() == 0, "trocar o dono exige root")
+    def test_registro_de_outro_dono_recusado(self):
+        with open(api.REGISTRO, "w"): pass
+        os.chown(api.REGISTRO, 4242, 4242)
+        self.assertFalse(api.registrar("perfil", "ok"))
+
+    def test_registro_fifo_recusado(self):
+        os.mkfifo(api.REGISTRO, 0o600)
+        self.assertFalse(api.registrar("perfil", "ok"))
+
+    def test_concorrencia_com_trava_preexistente(self):
+        with open(self.trava, "w"): pass
+        os.chmod(self.trava, 0o644)
+        ctx = multiprocessing.get_context("fork")
+        ps = [ctx.Process(target=_escritor, args=(self.tmp, 30, k)) for k in range(4)]
+        for p in ps: p.start()
+        for p in ps: p.join(30); self.assertEqual(p.exitcode, 0)
+        with open(api.REGISTRO) as f: self.assertEqual(len(f.read().splitlines()), 120)
+        self.assertEqual(stat.S_IMODE(os.stat(self.trava).st_mode), 0o600)
+
+
+class TestNegociacaoProtocolo(Base):
+    def init(self, params):
+        return servidor_mcp.responder({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": params})
+
+    def test_versoes_suportadas_ecoadas(self):
+        for v in servidor_mcp.VERSOES_SUPORTADAS:
+            with self.subTest(v=v): self.assertEqual(self.init({"protocolVersion": v})["result"]["protocolVersion"], v)
+
+    def test_versoes_nao_suportadas_viram_a_mais_recente(self):
+        for v in ("1999-01-01", "2030-12-31", "2025-06-18-beta", "latest", "x" * 300):
+            with self.subTest(v=v[:20]):
+                r = self.init({"protocolVersion": v})["result"]
+                self.assertEqual(r["protocolVersion"], servidor_mcp.PROTOCOLO)
+                self.assertIn(r["protocolVersion"], servidor_mcp.VERSOES_SUPORTADAS)
+                self.assertNotIn(v, json.dumps(r))                              # nunca devolve a versão desconhecida
+
+    def test_versao_ausente_ou_invalida_recusada(self):
+        for params in ({}, {"protocolVersion": None}, {"protocolVersion": 20250618}, {"protocolVersion": ""}, {"protocolVersion": ["2025-06-18"]}):
+            with self.subTest(params=params): self.assertEqual(self.init(params)["error"]["code"], -32602)
+
+    def test_mais_recente_e_suportada(self):
+        self.assertEqual(servidor_mcp.PROTOCOLO, servidor_mcp.VERSOES_SUPORTADAS[0])
 
 
 if __name__ == "__main__":

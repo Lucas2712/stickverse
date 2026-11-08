@@ -7,7 +7,8 @@ da máquina: não existe código para publicar, responder, enviar, ocultar, excl
 
 Segurança
   - O token nunca passa por aqui: o cabeçalho "Authorization: Bearer proxy-injected" é um marcador que o proxy do ambiente
-    substitui pelo valor guardado no cofre (como na ElevenLabs). Nada de token em arquivo, variável, log ou chat.
+    deverá substituir pelo valor guardado no cofre. ESSA SUBSTITUIÇÃO AINDA NÃO FOI VERIFICADA para graph.instagram.com
+    (ver README, "Proxy e cofre"). Nada de token em arquivo, variável, log ou chat.
   - CONEXAO_REAL_AUTORIZADA = False: enquanto o usuário não autorizar a conexão real, o transporte de rede recusa qualquer
     chamada (nem tenta abrir conexão). Os testes usam o transporte simulado (dados fictícios).
   - Erros passam por limpar(), que remove tokens de mensagens e URLs.
@@ -110,8 +111,25 @@ def gravar_novo(caminho, texto):
     raise OSError("muitos arquivos com o mesmo nome")
 
 
+def abrir_privado(caminho, flags):
+    """Abre (ou cria) um arquivo privado e confere o que foi aberto, inclusive quando ele já existia:
+    O_NOFOLLOW recusa link simbólico; O_NONBLOCK evita travar num FIFO; depois, pelo descritor já aberto (sem corrida
+    entre conferir e usar), exige arquivo regular, do próprio usuário e sem links físicos extras, e corrige o modo para 600.
+    Qualquer recusa fecha o descritor e levanta OSError."""
+    fd = os.open(caminho, flags | os.O_NOFOLLOW | os.O_NONBLOCK, 0o600)
+    try:
+        st = os.fstat(fd)
+        if not stat.S_ISREG(st.st_mode): raise OSError(f"{os.path.basename(caminho)} não é um arquivo regular")
+        if st.st_uid != os.getuid(): raise OSError(f"{os.path.basename(caminho)} pertence a outro usuário")
+        if st.st_nlink != 1: raise OSError(f"{os.path.basename(caminho)} tem links físicos extras")
+        if stat.S_IMODE(st.st_mode) != 0o600: os.fchmod(fd, 0o600)
+        return fd
+    except BaseException:
+        os.close(fd); raise
+
+
 def _abrir_registro(flags):
-    return os.open(REGISTRO, flags | os.O_NOFOLLOW, 0o600)
+    return abrir_privado(REGISTRO, flags)
 
 
 def registrar(tipo, resultado, agora=None):
@@ -119,18 +137,19 @@ def registrar(tipo, resultado, agora=None):
 
     Robustez: trava exclusiva (fcntl.flock num arquivo .lock) contra MCP e linha de comando ao mesmo tempo; acréscimo
     com O_APPEND (nunca reescreve o que já existe); a poda dos >30 dias grava num arquivo temporário 600 e troca de forma
-    atômica (os.replace), então uma falha no meio nunca deixa o registro truncado. Links simbólicos são recusados.
+    atômica (os.replace), então uma falha no meio nunca deixa o registro truncado. Registro e trava passam por
+    abrir_privado(): links simbólicos, FIFOs, pastas, links físicos e arquivos de outro dono são recusados; modo vira 600.
     Falhas de registro não interrompem a consulta: viram um aviso sem conteúdo em stderr (nunca em stdout, que é do MCP)."""
     agora = agora or datetime.now(timezone.utc)
     linha = json.dumps({"quando": agora.isoformat(timespec="seconds"), "consulta": str(tipo)[:20], "resultado": str(resultado)[:20]}) + "\n"
     try:
         pasta_privada(DADOS)
-        trava = os.open(REGISTRO + ".lock", os.O_RDWR | os.O_CREAT | os.O_NOFOLLOW, 0o600)
+        trava = abrir_privado(REGISTRO + ".lock", os.O_RDWR | os.O_CREAT)   # conferida também se já existia
         try:
             fcntl.flock(trava, fcntl.LOCK_EX)
             fd = _abrir_registro(os.O_WRONLY | os.O_APPEND | os.O_CREAT)
             try:
-                os.fchmod(fd, 0o600); os.write(fd, linha.encode("utf-8")); os.fsync(fd)
+                os.write(fd, linha.encode("utf-8")); os.fsync(fd)
             finally: os.close(fd)
             _podar(agora)
         finally:
@@ -356,7 +375,7 @@ def relatorio_markdown(c, dias=28, n=12):
     """Relatório só com datas, tipos e números: sem legendas, comentários ou qualquer texto de publicação."""
     n = validar_inteiro(n, "n", 1, 50)
     p, mc, pubs = perfil(c), metricas_conta(c, dias), publicacoes(c, n)
-    linhas = [f"# Relatório do Instagram · @{p.get('username')}", "",
+    linhas = ["# Relatório do Instagram", "",
               f"Período: {mc['periodo']['de']} a {mc['periodo']['ate']} ({mc['periodo']['dias']} dias), comparado ao período anterior.", "",
               f"Seguidores: {p.get('followers_count')} · publicações: {p.get('media_count')}", "",
               "| métrica | período | anterior | variação |", "|---|---|---|---|"]

@@ -13,7 +13,7 @@ domínio `graph.instagram.com` não está liberado na rede do ambiente e nenhum 
 |---|---|
 | `api.py` | cliente HTTP somente leitura: lista fechada de caminhos, campos, métricas e parâmetros; recusa qualquer escrita antes de sair da máquina |
 | `servidor_mcp.py` | servidor MCP por stdio (JSON-RPC 2.0) com 7 ferramentas de leitura; valida protocolo e argumentos antes de qualquer consulta |
-| `teste_offline.py` | 41 testes sem rede (qualquer tentativa de conexão faz o teste falhar) |
+| `teste_offline.py` | testes sem rede (qualquer tentativa de conexão faz o teste falhar) |
 | `../ferramentas/instagram.py` | as mesmas consultas pela linha de comando, mais `relatorio` |
 
 Dois servidores no `.mcp.json`, com as mesmas ferramentas:
@@ -33,7 +33,8 @@ configurações.
 ## Segurança
 
 - **Token:** nunca em arquivo, variável, log ou chat. As chamadas levam o marcador `Authorization: Bearer proxy-injected`,
-  que o proxy do ambiente "stickverse" troca pelo valor guardado no cofre (mesmo modelo da ElevenLabs).
+  que o proxy do ambiente "stickverse" deverá trocar pelo valor guardado no cofre. **Essa troca ainda não foi
+  verificada para `graph.instagram.com`** (ver "Proxy e cofre" abaixo).
 - **Renovação:** o token do painel da Meta vale 60 dias. A renovação pela API devolveria o token em texto, por isso ela é
   feita gerando um token novo no painel (a cada ~55 dias) e salvando no formulário seguro do cofre.
 - **Somente leitura em três camadas:** só o método GET existe; caminhos de escrita (`media_publish`, `messages`,
@@ -44,6 +45,9 @@ configurações.
 
 ## Protocolo MCP e argumentos
 
+- `initialize` negocia a versão: aceita `2025-06-18`, `2025-03-26` e `2024-11-05`, devolvendo a mesma versão pedida;
+  para qualquer outra, responde com a mais recente suportada (`2025-06-18`), e o cliente decide se continua.
+  `protocolVersion` ausente ou inválido é recusado (-32602).
 - Cada mensagem é validada: `jsonrpc` "2.0", `id` texto ou inteiro, `method` texto, `params` objeto; lotes e mensagens
   acima de 1 MB são recusados; notificações nunca executam ferramentas.
 - Argumentos validados pelo esquema de cada ferramenta **antes** de criar o cliente: IDs só com dígitos (1 a 30),
@@ -53,46 +57,46 @@ configurações.
   da Meta é descartada, porque pode repetir parâmetros ou identificadores); erros internos viram uma frase genérica, e o
   tipo do erro vai só para stderr. Nunca há rastro (*traceback*) na resposta.
 
-## Proxy e cofre: o que foi verificado (sem token)
+## Proxy e cofre: o que foi verificado (sem token, sem conexão)
 
-Confirmado nesta sessão, sem chamar o Instagram:
+**Situação: a injeção do token para o Instagram NÃO foi verificada.** A conexão real continua bloqueada
+(`CONEXAO_REAL_AUTORIZADA = False`), `graph.instagram.com` não está liberado e nenhuma tentativa de conexão foi
+feita para testar o mecanismo.
 
-- O proxy do ambiente fica em `HTTPS_PROXY` (local, que encaminha a um proxy de saída com política) e reemite o TLS
-  com uma CA própria (`SSL_CERT_FILE`).
-- Os servidores MCP iniciados pelo Claude Code herdam essas variáveis (verificado no processo do servidor ElevenLabs
-  em execução).
-- O `urllib` do Python usa `HTTPS_PROXY` por padrão e `graph.instagram.com` não está na lista `NO_PROXY`, então as
-  chamadas do nosso servidor passariam pelo proxy.
-- Os testes conferem que o pedido sai como `GET`, para `graph.instagram.com`, com `Authorization: Bearer
-  proxy-injected` e sem `access_token` na URL.
+O que foi observado localmente (sem rede) diz respeito só ao **caminho** que um pedido faria, não à injeção:
 
-**Não confirmado (limitação):** se o proxy de saída vai mesmo **substituir** o valor de `Authorization` para
-`graph.instagram.com`.
+- O ambiente define `HTTPS_PROXY` (proxy local que encaminha a um proxy de saída com política) e uma CA própria
+  (`SSL_CERT_FILE`).
+- Os processos dos nossos servidores (`servidor_mcp.py` e `servidor_mcp.py --simulado`), iniciados pelo Claude Code,
+  têm essas variáveis no ambiente. Só os nomes foram conferidos; nenhum valor foi lido.
+- O `urllib` do Python usa `HTTPS_PROXY` por padrão e `graph.instagram.com` não está em `NO_PROXY`.
+- Os testes conferem, com a conexão substituída por um capturador, que o pedido sairia como `GET`, para
+  `graph.instagram.com`, com `Authorization: Bearer proxy-injected` e sem `access_token` na URL.
 
-- A injeção é configurada por host e por nome de cabeçalho no cofre do ambiente. Hoje só existe a regra da ElevenLabs
-  (`api.elevenlabs.io`, cabeçalho `xi-api-key`). Não existe regra para o Instagram, e sem token isso não pode ser
-  testado.
-- A documentação da plataforma diz que o proxy substitui um valor fictício no cabeçalho, mas isso não foi observado
-  para o nosso caso.
-- O sucesso da ElevenLabs não prova o caso do Instagram, porque o cabeçalho e o host são outros.
+**Ainda não verificado, sem prova:**
 
-**Proposta segura para a etapa de conexão real (só com autorização):**
+- Que o proxy de saída **substitui** o cabeçalho `Authorization` em pedidos a `graph.instagram.com`.
+- Que essa substituição acontece para pedidos do nosso servidor Python.
 
-1. Salvar o token pelo formulário seguro do cofre, preso a `graph.instagram.com`, cabeçalho `Authorization` e prefixo
-   `Bearer`.
-2. Fazer **uma** leitura mínima (`GET /me?fields=user_id,username,account_type`) pelo nosso cliente. Um erro 190 ou
-   401 indica que a injeção não funcionou.
-3. Se não funcionar, parar e reavaliar. Não guardar token em arquivo nem em variável de ambiente (ali ele fica em
-   texto). Considerar o suporte da plataforma ou outro mecanismo oficial.
+A integração da ElevenLabs **não comprova** isso. Ela usa outro host (`api.elevenlabs.io`) e outro cabeçalho
+(`xi-api-key`), e o fato de os processos herdarem as variáveis do proxy só mostra por onde o pedido passa, não que
+um segredo será injetado. Hoje não existe regra de injeção para o Instagram no cofre do ambiente.
 
-**Risco a considerar:** a injeção vale para **qualquer** pedido a `graph.instagram.com` feito dentro da sessão, de
-qualquer programa e com qualquer método. A garantia de "somente leitura" está no nosso código, não no proxy.
+**Proposta para a etapa de conexão real (somente com autorização expressa):**
 
-- Por isso, o token da fase de leitura deve ter as **permissões mínimas**: `instagram_business_basic` e
-  `instagram_business_manage_insights`.
-- Ler comentários exige `instagram_business_manage_comments`, que também permitiria responder ou excluir. Essa
-  decisão fica com o usuário.
-- `instagram_business_content_publish` e `instagram_business_manage_messages` ficam de fora.
+1. O usuário salva o token pelo formulário seguro do cofre, preso a `graph.instagram.com`, cabeçalho
+   `Authorization`, prefixo `Bearer`.
+2. O token é gerado com **apenas `instagram_business_basic` e `instagram_business_manage_insights`**, por decisão
+   do usuário. Sem `instagram_business_manage_comments` nesta primeira conexão: a leitura de comentários será
+   avaliada à parte, e até lá `ig_comentarios` deve responder com erro de permissão. Também sem
+   `instagram_business_content_publish` e sem `instagram_business_manage_messages`.
+3. Uma única leitura mínima (`GET /me?fields=user_id,username,account_type`) pelo nosso cliente. Erro 190 ou 401
+   indica que a injeção não funcionou: parar e reavaliar. Não guardar o token em arquivo nem em variável de ambiente
+   (ficaria em texto).
+
+**Risco a considerar:** uma regra de injeção vale para **qualquer** pedido a `graph.instagram.com` feito na sessão,
+por qualquer programa e com qualquer método. A garantia de "somente leitura" está no nosso código, não no proxy.
+Por isso o token deve ter as permissões mínimas acima, que não permitem publicar, comentar nem enviar mensagens.
 
 ## Dados e privacidade
 
@@ -105,10 +109,12 @@ qualquer programa e com qualquer método. A garantia de "somente leitura" está 
   - **Poda:** entradas com mais de **30 dias** são removidas num arquivo temporário trocado de forma atômica
     (`os.replace`), sem risco de deixar o registro truncado.
   - **Permissões:** pasta 700, arquivo e trava 600; modos errados são corrigidos.
-  - **Proteções:** links simbólicos e pasta de outro dono são recusados. Se o registro falhar, a consulta continua e
+  - **Proteções:** o registro e a trava são conferidos também quando já existem, pelo próprio descritor aberto.
+    São recusados: link simbólico, FIFO ou pasta no lugar do arquivo, link físico extra e arquivo de outro dono.
+    A pasta é recusada se for link simbólico ou de outro dono. Se o registro falhar, a consulta continua e
     aparece só um aviso sem conteúdo em stderr.
 - **Relatórios** (`dados/relatorios/`, fora do git): só quando pedidos. Contêm **apenas datas, tipos e métricas
-  numéricas** (sem legendas, comentários ou qualquer texto de publicação). São criados já com permissão 600, e um
+  numéricas** (sem nome de usuário, legendas, comentários ou qualquer texto de publicação). São criados já com permissão 600, e um
   relatório existente nunca é sobrescrito.
 - **Histórico de métricas:** sem banco próprio (decisão do usuário). Vale o que a API guarda: métricas por publicação
   por até 2 anos; totais da conta consultados em janelas de até 30 dias.

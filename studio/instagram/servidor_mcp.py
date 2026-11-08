@@ -9,6 +9,7 @@ não há nenhuma ferramenta que publique, responda, envie, oculte, exclua ou alt
 
 Garantias do protocolo:
   - cada mensagem é validada (jsonrpc "2.0", id texto/inteiro, método texto, params objeto) e lotes são recusados;
+  - initialize negocia a versão do protocolo: devolve a versão pedida só se for suportada; senão, a mais recente suportada;
   - os argumentos de cada ferramenta são validados contra o esquema (tipos, limites, IDs só com dígitos) e argumentos
     desconhecidos são recusados ANTES de qualquer consulta;
   - erros nunca devolvem rastros, mensagens internas nem a mensagem da Meta: só uma descrição segura;
@@ -20,7 +21,8 @@ import json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import api  # noqa: E402
 
-PROTOCOLO = "2025-06-18"
+PROTOCOLO = "2025-06-18"                                          # versão mais recente suportada
+VERSOES_SUPORTADAS = ("2025-06-18", "2025-03-26", "2024-11-05")    # todas compatíveis com o que usamos (só tools, texto)
 SIMULADO = "--simulado" in sys.argv
 MAX_LINHA = 1_000_000
 AVISO_SIMULADO = "[SIMULADO: dados fictícios, nenhuma conexão com o Instagram]"
@@ -126,7 +128,11 @@ def responder(pedido):
     if not tem_id: return None                             # notificação: nunca responde (ex.: notifications/initialized)
     if not isinstance(params, dict): return erro(pid, -32602, "params deve ser um objeto")
     if metodo == "initialize":
-        versao = params.get("protocolVersion") if isinstance(params.get("protocolVersion"), str) else PROTOCOLO
+        pedida = params.get("protocolVersion")
+        if not isinstance(pedida, str) or not pedida: return erro(pid, -32602, "protocolVersion ausente ou inválido")
+        # Negociação MCP: se a versão pedida é suportada, responde com ela; se não, responde com a mais recente que o
+        # servidor suporta, e o cliente decide se continua ou desconecta. Nunca devolve uma versão não suportada.
+        versao = pedida if pedida in VERSOES_SUPORTADAS else PROTOCOLO
         res = {"protocolVersion": versao, "capabilities": {"tools": {}},
                "serverInfo": {"name": "studio-matteu-instagram" + ("-simulado" if SIMULADO else ""), "version": "1.1.0-leitura"},
                "instructions": ("DADOS FICTÍCIOS para testes. " if SIMULADO else "") +
