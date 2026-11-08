@@ -1,22 +1,19 @@
 {
-  "titulo": "Tornados e temporais no Sul do Brasil",
-  "descricao": "",
-  "tema": "",
-  "duracao": 30,
+  "titulo": "Brasil sob temporais",
+  "descricao": "Vídeo de 60 s do Studio Matteu sobre os tornados e temporais no Sul do Brasil (2 a 7 de novembro), com dados da Defesa Civil do RS. Direção de arte exclusiva: Olho da Tempestade (céu de tempestade, ciano-chuva e magenta-alerta; radar, mapa, funil 3D e linhas de vento). Narração editada a 1,32× com pausas mínimas; trilha da OpenArt arranjada em 60 s.",
+  "tema": "tornados e temporais no Sul do Brasil",
+  "duracao": 60.0,
   "fps": 30,
-  "fontes": ["geist", "geist-mono"],
-  "poster": null,
-  "legendas": {
-    "ativo": true,
-    "y": 1430,
-    "tamanho": 64,
-    "peso": 600,
-    "destaques": [],
-    "ocultar": []
-  },
+  "fontes": [],
+  "fontesProjeto": [
+    { "familia": "Inter", "arquivo": "fontes/inter.woff2", "descritores": "font-weight:100 900;font-display:block" }
+  ],
+  "poster": 21.9,
+  "perfil": "Studio Matteu",
+  "legendas": { "ativo": false },
   "audio": {
-    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.5 },
-    "musica": null,
-    "ducking": { "ativo": true, "reducao": 0.4 }
+    "volumes": { "narracao": 1.0, "musica": 0.55, "efeitos": 0 },
+    "musica": { "arquivo": "musica-arranjo.mp3" },
+    "ducking": { "ativo": true, "reducao": 0.45 }
   }
 }
