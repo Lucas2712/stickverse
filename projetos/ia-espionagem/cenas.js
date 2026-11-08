@@ -175,7 +175,7 @@
 
   /* ================= ATO 1 · o gancho ================= */
   cenaV({ id: "c01", vis: [0, 1.45], nome: "A IA virou", inicio: 0, fim: 1.25, descricao: "«A IA» bate no escuro; «virou» sobe.",
-    sfx: [["boom", 0.18], ["whoosh", 0.66, .8], ["swoosh", 1.12, .7]],
+    sfx: [["boom", 0.18, .5], ["whoosh", 0.66, .8], ["swoosh", 1.12, .7]],
     montar(S) {
       bg(S, CV); const C = cam(S, 0, 1.4, { s1: 1.07 });
       const a = txtC(C, 690, F(330, 700), "A <span style='color:" + AM + "'>IA</span>"); bate(a, .18, 1.55, 26, .3);
@@ -237,7 +237,7 @@
   const ORG = { cols: 18, rows: 22, size: 40, gap: 13, x0: 64, y0: 380 };
   const hitOrg = (() => { const r = rng(5), m = {}; for (let i = 0; i < ORG.cols * ORG.rows; i++) if (r() < .34) m[i] = 6.72 + r() * 1.7; return i => m[i] ?? 1e9; })();
   cenaV({ id: "c05", vis: [6.38, 8.52], nome: "Centenas de organizações", inicio: 6.4, fim: 8.5, descricao: "Recuo: uma grade enorme de organizações; os agentes mergulham e cada alvo atingido fica amarelo.",
-    sfx: [["whoosh", 6.42, .9], ["glitch", 6.72, .7], ["glitch", 6.98, .5], ["swoosh", 7.08, .8], ["glitch", 7.30, .45], ["blip", 7.6, .4], ["glitch", 7.9, .4]],
+    sfx: [["whoosh", 6.42, .9], ["glitch", 6.72, .7], ["glitch", 6.98, .5], ["swoosh", 7.08, .8], ["glitch", 7.30, .45], ["blip", 7.6, .4]],
     montar(S) {
       bg(S, CV); const C = cam(S, 6.3, 8.5, { s0: 1.6, s1: .97, e: "expo" });
       const r = rng(21), fl = Array.from({ length: 90 }, () => ({ i: Math.floor(r() * ORG.cols * ORG.rows), x: r() * 1080, t: 6.6 + r() * 1.8 }));
@@ -327,7 +327,7 @@
     } });
 
   cenaV({ id: "c11", vis: [18.16, 21.22], nome: "Mais de 200", inicio: 18.3, fim: 21.1, descricao: "Contador gigante 000 → 200; atrás, exatamente 200 quadrados se preenchem.",
-    sfx: [["riser", 18.30], ["tick", 19.06, .6], ["tick", 19.18, .6], ["tick", 19.30, .6], ["tick", 19.42, .6], ["tick", 19.56, .6], ["tick", 19.70, .6], ["boom", 19.86], ["swell", 20.9, .5]],
+    sfx: [["riser", 18.30], ["tick", 19.06, .6], ["tick", 19.18, .6], ["tick", 19.30, .6], ["tick", 19.42, .6], ["tick", 19.56, .6], ["tick", 19.70, .6], ["boom", 19.86, .35], ["swell", 20.9, .5]],
     montar(S) {
       bg(S, CV); const C = cam(S, 18.2, 21.2, { s1: 1.06 });
       const G = { cols: 20, rows: 10, size: 34, gap: 12, x0: 85, y0: 1150 };
@@ -439,7 +439,7 @@
     } });
 
   cenaV({ id: "c17", vis: [33.03, 36.06], nome: "Os alvos", inicio: 33.2, fim: 35.9, descricao: "Miras travam; MINISTÉRIOS DAS RELAÇÕES EXTERIORES entra linha a linha.",
-    sfx: [["hit", 33.42], ["tick", 33.44, .7], ["tick", 33.56, .5], ["swoosh", 34.18, .8], ["swoosh", 34.96, .7], ["swoosh", 35.40, .6], ["whoosh", 35.74, .7]],
+    sfx: [["hit", 33.42, .45], ["tick", 33.44, .7], ["tick", 33.56, .5], ["swoosh", 34.18, .8], ["swoosh", 34.96, .7], ["swoosh", 35.40, .6], ["whoosh", 35.74, .7]],
     montar(S) {
       bg(S, CV); const C = cam(S, 33.1, 36.0, { s1: 1.07 });
       rot(C, X, 320, "ALVOS", 33.42, AM);
@@ -475,7 +475,7 @@
     } });
 
   cenaV({ id: "c19", vis: [37.7, 39.92], nome: "Confirmado", inicio: 37.9, fim: 39.8, descricao: "De volta ao relatório: o carimbo CONFIRMADO bate e a página treme.",
-    sfx: [["swoosh", 37.74, .8], ["hit", 38.60, .65], ["whoosh", 39.64, .6]],
+    sfx: [["swoosh", 37.74, .8], ["hit", 38.60, .4], ["whoosh", 39.64, .6]],
     montar(S) {
       papel(S); const C = cam(S, 37.7, 39.9, { s0: 1.04, s1: 1.1 });
       const { pg, sp } = pagina(C, 37.9); marca(sp, 37.5); anim(pg, [[37.7, { ry: -6 }], [39.8, { ry: -2 }, "sine"]]);
@@ -583,7 +583,7 @@
 
   /* ================= ATO 4 · o novo cenário ================= */
   cenaV({ id: "c26", vis: [51.92, 54.42], nome: "Muda o cenário", inicio: 51.94, fim: 54.32, descricao: "O quadro vira como um cartão: novo cenário. CIBERSEGURANÇA bate.",
-    sfx: [["whoosh", 52.22, .7], ["boom", 53.16], ["swell", 54.2, .4]],
+    sfx: [["whoosh", 52.22, .7], ["boom", 53.16, .5], ["swell", 54.2, .4]],
     montar(S) {
       bg(S, "#0E0D0C"); const C = cam(S, 51.9, 54.4, { s1: 1.07 });
       chao(C, { topo: true, y: 760, vel: 50 });
@@ -675,7 +675,7 @@
     } });
 
   cenaV({ id: "c32", vis: [63.92, 67.6], nome: "Estamos preparados?", inicio: 63.94, fim: 67.6, descricao: "Escuro total: ESTAMOS PREPARADOS… NESSA VELOCIDADE? com linhas de velocidade e câmera acelerando.",
-    sfx: [["swell", 63.96, .4], ["tick", 64.36, .5], ["tick", 64.62, .5], ["swoosh", 65.32, .4], ["riser", 65.40], ["swoosh", 66.34, .6], ["whoosh", 66.58], ["boom", 66.62]],
+    sfx: [["swell", 63.96, .4], ["tick", 64.36, .5], ["tick", 64.62, .5], ["swoosh", 65.32, .4], ["riser", 65.40], ["swoosh", 66.34, .6], ["whoosh", 66.58], ["boom", 66.62, .55]],
     montar(S) {
       bg(S, "#0A0908"); const C = cam(S, 65.2, 67.6, { s0: 1, s1: 1.22, e: "inExpo" });
       const r = rng(71), ln = Array.from({ length: 120 }, () => ({ y: r() * 1920, l: 120 + r() * 520, v: 1400 + r() * 2600, ph: r() * 2000, w: 2 + r() * 5, a: r() }));
