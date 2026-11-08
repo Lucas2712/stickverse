@@ -1,22 +1,19 @@
 {
   "titulo": "A IA virou uma arma de espionagem?",
-  "descricao": "",
-  "tema": "",
-  "duracao": 30,
+  "descricao": "Vídeo de 71 s do Studio Matteu sobre a campanha de espionagem com IA relatada pela CrowdStrike. Direção de arte exclusiva: Operação Enxame (sala de operações tática em carvão e amarelo-alerta × dossiê de inteligência com tarjas de censura). Narração acelerada em 12% com pausas encurtadas, sem cortar palavras. Sem música.",
+  "tema": "IA e espionagem digital",
+  "duracao": 71.0,
   "fps": 30,
-  "fontes": ["geist", "geist-mono"],
-  "poster": null,
-  "legendas": {
-    "ativo": true,
-    "y": 1430,
-    "tamanho": 64,
-    "peso": 600,
-    "destaques": [],
-    "ocultar": []
-  },
+  "fontes": [],
+  "fontesProjeto": [
+    { "familia": "Inter", "arquivo": "fontes/inter.woff2", "descritores": "font-weight:100 900;font-display:block" }
+  ],
+  "poster": 19.95,
+  "perfil": "Studio Matteu",
+  "legendas": { "ativo": false },
   "audio": {
-    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.5 },
+    "volumes": { "narracao": 1.0, "musica": 0, "efeitos": 0.45 },
     "musica": null,
-    "ducking": { "ativo": true, "reducao": 0.4 }
+    "ducking": { "ativo": false }
   }
 }
