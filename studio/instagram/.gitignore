@@ -1,0 +1,4 @@
+# Dados privados do Instagram: nunca no git (métricas, relatórios, registro de consultas)
+dados/
+*.jsonl
+__pycache__/

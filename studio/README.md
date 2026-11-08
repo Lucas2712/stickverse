@@ -42,6 +42,7 @@ studio/
   sons/          biblioteca de efeitos: earshot/ (catálogo) · openverse/ (criada no 1º download) · creditos.json · CREDITOS-SONS.md
   fontes/        Geist, Geist Mono, Archivo, Bricolage Grotesque, Instrument Serif (SIL OFL)
   dados/         países do mundo (Natural Earth 1:110m via world-atlas, ISC)
+  instagram/     Instagram (API oficial da Meta), fase 1 somente leitura e só testes offline: ver studio/instagram/README.md
   modelo/        arquivos iniciais de um projeto
 projetos/<nome>/ roteiro.md · narracao.mp3 · palavras.json · transcricao.md · storyboard.json/.md/.html
                  projeto.json · tema.css · cenas.js · imagens/ · fontes/ · CREDITOS-SONS.md

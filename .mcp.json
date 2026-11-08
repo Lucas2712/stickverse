@@ -7,6 +7,10 @@
         "ELEVENLABS_API_KEY": "proxy-injected",
         "ELEVENLABS_MCP_BASE_PATH": "studio/elevenlabs"
       }
+    },
+    "instagram": {
+      "command": "python3",
+      "args": ["studio/instagram/servidor_mcp.py"]
     }
   }
 }
