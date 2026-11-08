@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import AUDIO_EXT, SKILL_DIR, config_path, is_sound_file
+from common import AUDIO_EXT, SKILL_DIR, config_path, is_sound_file, load_config
 
 EXAMPLE = {
     "libraries": [],
@@ -55,7 +55,7 @@ def check():
     if not cfgp.exists():
         print(f"  {cfgp}: not found -> python setup.py init --library name=PATH --index")
         return False
-    cfg = json.loads(cfgp.read_text(encoding="utf-8"))
+    cfg = load_config()  # Studio Matteu: resolves relative library paths like the other scripts
     for lib in cfg.get("libraries", []):
         n = sum(1 for _ in Path(lib["path"]).rglob("*") if is_sound_file(_)) if Path(lib["path"]).is_dir() else None
         cat = ""

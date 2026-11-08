@@ -1,12 +1,12 @@
 # MOTION DESIGN STUDIO · Studio Matteu
 
 Sistema do **Studio Matteu** para produzir vídeos verticais de motion design (1080×1920, 30 fps) com
-Claude e narração do ElevenLabs, operado pelo iPhone. As preferências permanentes estão no
+Claude e narração gerada no Create Voice-over da OpenArt, operado pelo iPhone. As preferências permanentes estão no
 [`CLAUDE.md`](../CLAUDE.md) da raiz; o método de trabalho está na Skill `.claude/skills/motion-design-studio/`.
 
 ## Como pedir um vídeo (pelo app do Claude, numa sessão com o repositório `stickverse`)
 
-1. Gere a narração no ElevenLabs e baixe o MP3 no iPhone.
+1. Gere a narração no Create Voice-over da OpenArt (site) e baixe o arquivo no iPhone.
 2. Numa mensagem, envie:
    - **tema**;
    - **roteiro** (o texto exato que foi narrado);
@@ -42,6 +42,7 @@ studio/
   sons/          biblioteca de efeitos: earshot/ (catálogo) · openverse/ (criada no 1º download) · creditos.json · CREDITOS-SONS.md
   fontes/        Geist, Geist Mono, Archivo, Bricolage Grotesque, Instrument Serif (SIL OFL)
   dados/         países do mundo (Natural Earth 1:110m via world-atlas, ISC)
+  instagram/     Instagram (API oficial da Meta), fase 1 somente leitura e só testes offline: ver studio/instagram/README.md
   modelo/        arquivos iniciais de um projeto
 projetos/<nome>/ roteiro.md · narracao.mp3 · palavras.json · transcricao.md · storyboard.json/.md/.html
                  projeto.json · tema.css · cenas.js · imagens/ · fontes/ · CREDITOS-SONS.md
@@ -87,7 +88,12 @@ e não são reaproveitadas automaticamente.
 - **Instalados pelo script de preparação** (ambiente de nuvem "stickverse"):
   - `faster-whisper` 1.2.1 (MIT) + modelo Whisper small (MIT, ~250 MB, SHA-256 conferido);
   - Earshot 0.4.1 (MIT) com torch para CPU e os modelos CLAP/AST;
-  - classificador YAMNet do Real SFX (`.claude/skills/real-sfx/vendor/venv`, fora do git).
+  - classificador YAMNet do Real SFX (`.claude/skills/real-sfx/vendor/`, fora do git): `yamnet.onnx` de
+    huggingface.co/audiomagic/yamnet-onnx (conversão Apache 2.0 do YAMNet do Google, pesos sem alteração), SHA-256 conferido.
+  - Cada download tem até 3 tentativas; o resultado fica em `/opt/mds/estado.txt` (`whisper`, `earshot-modelos`,
+    `yamnet`: ok ou FALHOU). Os modelos ficam fora do git e são baixados de novo a cada sessão (~1 min).
+  - Diagnóstico de cada preparação (rede, cada tentativa, tipo de erro, validação; sem tokens) em
+    `/opt/mds/preparacao.log`. Na sessão, `preparar_ambiente.sh --testar` refaz os downloads e testa tudo.
 - **Sons:** Real SFX (MIT) com o pacote uisfx (CC0), banco do Earshot (MIT) e Openverse.
   CC0 primeiro; CC BY só sem alternativa CC0 e com atribuição; proibidos NC, ND e SA; a licença de cada
   arquivo é conferida na página de origem; créditos em `studio/sons/creditos.json` e no

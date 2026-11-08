@@ -3,8 +3,8 @@
 ## Canais
 | Canal | Origem | Controle |
 |---|---|---|
-| Narração | arquivo do ElevenLabs (`narracao.mp3`) | `audio.volumes.narracao` |
-| Música | arquivo enviado pelo usuário (opcional) | `audio.volumes.musica`, `audio.musica`, `audio.ducking` |
+| Narração | arquivo enviado pelo usuário, gerado no Create Voice-over da OpenArt (`narracao.mp3`) | `audio.volumes.narracao` |
+| Música | arquivo enviado pelo usuário, gerado na OpenArt pelo site (opcional, só quando pedido) | `audio.volumes.musica`, `audio.musica`, `audio.ducking` |
 | Efeitos | sintetizados no navegador (Web Audio) | `audio.volumes.efeitos` |
 
 Sem arquivo de música → `audio.musica: null`. Não gere, não sintetize e não procure música.
@@ -85,3 +85,34 @@ Não contorne. Alternativa: o usuário baixa no celular e envia, e a licença é
 a biblioteca não tem; `earshot describe/match ARQ` descreve um som em palavras; `earshot timeline SAIDA.mp4 --video ...`
 e `earshot sheet` mostram a escuta sincronizada com a imagem; `earshot critique` compara com filmes profissionais.
 Comandos com modelos levam ~20 s para carregar. Nada disso substitui o ouvido do usuário.
+
+## Estratégia de áudio (oficial)
+
+1. **Narração:** o usuário gera no **Create Voice-over** da OpenArt (site) e envia o arquivo. Copiar para
+   `projetos/<nome>/narracao.<ext>` (original intacto) e seguir com `transcrever.py`.
+2. **Música:** só quando o usuário pedir para o vídeo e o plano tiver o recurso; gerada por ele na OpenArt (site).
+   No storyboard, Claude descreve a trilha desejada (tema, emoção, instrumentação, BPM, entrada/viradas/pico/final)
+   para orientar a geração; o arquivo entra em `audio.musica` com ducking (seção "Música" acima). Créditos da faixa
+   no `CREDITOS-SONS.md` do projeto, com a licença do plano.
+3. **Efeitos:** Real SFX + Earshot são os principais (`sfx_real.py`): variados, criativos e presos a eventos visuais.
+   Se faltar um tipo, criar sob medida com o Earshot (`earshot sfx`) antes de pensar em créditos.
+4. **Efeitos especiais pela OpenArt (pontual):** o conector MCP não gera áudio isolado. Só para um som específico:
+   gerar um vídeo curto com áudio nativo (ex.: Wan 3.0, Veo 3.1 lite) e extrair o som com ffmpeg. Antes: informar
+   modelo, duração e custo (`openart_model_cost`, hoje ~100–120 créditos por clipe) e esperar a aprovação. O arquivo
+   entra em `studio/sons/openart/<tipo>/` com crédito em `creditos.json` e o índice do Real SFX é reconstruído.
+5. **ElevenLabs:** configurada e **inativa** (seção abaixo). Não usar até o usuário reativar.
+6. **Imagens e vídeos:** OpenArt MCP oficial, com custo informado e aprovação antes de gastar créditos.
+
+## ElevenLabs (INATIVA: configurada para uso futuro, com aprovação e créditos)
+
+Servidor MCP oficial `elevenlabs-mcp` (MIT), configurado em `.mcp.json`; a chave fica no cofre do ambiente.
+- **Narração PT-BR:** `elevenlabs.py ... narracao` (modelos com português: `eleven_v3`, `eleven_multilingual_v2`, `eleven_flash_v2_5`…).
+  Custo aproximado: 1 crédito por caractere do roteiro (modelos flash/turbo costumam custar menos). Depois, `transcrever.py` como sempre.
+- **Efeitos sob medida:** `elevenlabs.py ... efeito` (descrição + duração). Entram em `studio/sons/elevenlabs/<tipo>/` com crédito
+  em `creditos.json` (origem ElevenLabs, licença conforme o plano) e o índice do Real SFX é reconstruído (`build_index.py`).
+- **Trilhas:** `elevenlabs.py ... musica` (plano pago). Música continua só quando o usuário pedir.
+- As ferramentas do MCP que geram áudio estão **bloqueadas**; a geração passa por `studio/ferramentas/elevenlabs.py`:
+  `estimar <narracao|efeito|musica> ...` (estimativa + saldo + código de aprovação, sem gastar) → aprovação do usuário →
+  `gerar ... --aprovado CODIGO --teto N --saida arquivo.mp3` (recusa se o código não bate com o pedido, se passa do teto ou do
+  saldo; registra o gasto real em `studio/elevenlabs/registro.jsonl`). Narração: estimativa exata pela API; efeitos e música:
+  aproximada, conferida pelo saldo depois. Música exige plano pago.

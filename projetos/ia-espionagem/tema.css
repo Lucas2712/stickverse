@@ -1,0 +1,16 @@
+/* Tema · ia-espionagem · direção "Operação Enxame": carvão + amarelo-alerta (sala de operações) × papel de dossiê + tinta.
+   Inter 4 com tamanho óptico automático: Inter Display nos títulos, Inter Text no corpo (no lugar da SF Pro). */
+:root{
+  --v-bg:#121110; --v-ink:#151515; --v-ink2:#8A8F98; --v-mute:#8A8F98; --v-line:#2B2926; --v-soft:#EDEAE3;
+  --v-ac:#FFD21F; --v-ac2:#FFD21F; --v-alert:#FFD21F;
+  --v-sans:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --v-display:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --v-mono:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+#stage{background:#121110;font-family:var(--v-sans);font-optical-sizing:auto;color:#fff}
+#stage .tn{font-variant-numeric:tabular-nums}
+#stage .rot{font:600 26px var(--v-sans);letter-spacing:.16em;text-transform:uppercase}
+#stage .carimbo{position:absolute;border:7px solid currentColor;border-radius:10px;padding:10px 26px 12px;font:800 64px/1 var(--v-sans);letter-spacing:.06em;white-space:nowrap}
+#stage .chip{position:absolute;border:3px solid #FFD21F;border-radius:8px;padding:10px 20px;font:600 30px/1 var(--v-sans);letter-spacing:.08em;color:#fff;background:#121110;white-space:nowrap}
+#stage .card{position:absolute;border-radius:18px;background:#1E1C1A;border:2px solid #34312E}
+#stage .pagina{position:absolute;background:#F7F5F0;border-radius:6px;box-shadow:0 1px 0 rgba(0,0,0,.06),0 40px 80px -30px rgba(0,0,0,.35),0 10px 24px -12px rgba(0,0,0,.2)}

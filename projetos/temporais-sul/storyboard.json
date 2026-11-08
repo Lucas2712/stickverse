@@ -1,0 +1,640 @@
+{
+ "titulo": "Tornados e temporais no Sul do Brasil",
+ "chamada": "Direção de arte: <b>OLHO DA TEMPESTADE</b>",
+ "resumo": "Direção de arte nova: o vídeo é visto pelos instrumentos que observam a tempestade (radar, mapa, mostradores) e pela força dela (tornado, telhados, árvores, microexplosão), num céu noturno de tempestade. 29 planos em 60 s (média de 2 s), narração editada (1,32×, pausas mínimas), trilha que você gerou na OpenArt num arranjo de 60 s, e muitos efeitos sonoros sincronizados.",
+ "duracao": 60.0,
+ "acento": "#1E8FB8",
+ "acento_escuro": "#36C5F0",
+ "paleta": [
+  [
+   "#0E1726",
+   "céu de tempestade (fundo)"
+  ],
+  [
+   "#36C5F0",
+   "ciano-chuva (vento, chuva, linhas)"
+  ],
+  [
+   "#FF2E93",
+   "magenta-alerta (só núcleos de tempestade e alertas)"
+  ],
+  [
+   "#EAF2FF",
+   "relâmpago (flashes e títulos)"
+  ],
+  [
+   "#5E6B7D",
+   "névoa (elementos secundários)"
+  ]
+ ],
+ "marcas": [
+  [
+   9.42,
+   "os fatos"
+  ],
+  [
+   28.76,
+   "além do Sul"
+  ],
+  [
+   39.58,
+   "a virada"
+  ],
+  [
+   51.6,
+   "a pergunta"
+  ],
+  [
+   55.4,
+   "cartela"
+  ]
+ ],
+ "identidade": [
+  [
+   "Conceito",
+   "<b>Olho da tempestade.</b> Alternamos a força do fenômeno (funil, telhados, árvores, microexplosão, nuvem) e os instrumentos que a medem (radar com escala de refletividade, mapa, calendário, contador, anemômetro). O fio condutor é o <b>vento</b>: linhas de vento em movimento costuram as cenas."
+  ],
+  [
+   "Tipografia",
+   "Inter Display nos títulos e números (Semibold e Bold), Inter Text nos rótulos. Números gigantes com algarismos de largura fixa."
+  ],
+  [
+   "Sistema gráfico",
+   "linhas de vento (fluxo animado), chuva em diagonal, relâmpagos desenhados na hora, manchas de radar (verde → amarelo → vermelho → magenta, a escala real de refletividade), pinos de mapa, placas 3D e ícones em linha. Partículas 3D no funil e na nuvem (motor 3D do estúdio)."
+  ],
+  [
+   "Imagens",
+   "nenhuma imagem gerada (sem créditos). Sem logotipos oficiais: a Defesa Civil aparece só como fonte em texto."
+  ],
+  [
+   "Transições",
+   "assinaturas: <b>relâmpago</b> (flash branco que corta), <b>rajada</b> (faixas de vento que varrem a tela) e <b>varredura de radar</b> (o feixe giratório revela a cena seguinte). Também: zoom no mapa, recuo de câmera e corte seco no trovão."
+  ],
+  [
+   "Áudio",
+   "narração 1,32× (pausas mínimas); trilha da OpenArt abaixando sob a voz (ducking) e subindo nas brechas, com quebra em «Mas…» e golpe final em «intensos»; efeitos: trovões, rajadas, chuva e água (pacote CC0 que você vai enviar), destroços, madeira, sub-booms, risers, glitches de radar, pinos e sons de interface, sempre variando o timbre."
+  ],
+  [
+   "Diferente dos anteriores",
+   "sem carvão/amarelo/dossiê (ia-espionagem), sem cobalto/blueprint, sem verde-ácido, sem laranja, sem gradiente violeta. Primeira paleta azul-tempestade com ciano e magenta."
+  ]
+ ],
+ "cenas": [
+  {
+   "n": 1,
+   "nome": "Sete tornados",
+   "a": 0.0,
+   "b": 1.62,
+   "f": "escuro",
+   "narr": "Sete tornados em menos de uma semana,",
+   "comp": "Tornado 3D",
+   "tela": "Do escuro, um funil de tornado em partículas gira e se forma em 3D; dentro dele, o «7» gigante surge girando com o vento. Câmera subindo pela espiral.",
+   "sync": [
+    [
+     "0,00",
+     "funil se forma · 🔊 trovão de abertura + sub-boom"
+    ],
+    [
+     "0,38",
+     "«tornados»: o 7 trava · 🔊 hit + rajada"
+    ]
+   ],
+   "tr": "Relâmpago: flash branco corta para a cena 2 (assinatura 1)."
+  },
+  {
+   "n": 2,
+   "nome": "Casas destruídas",
+   "a": 1.62,
+   "b": 3.36,
+   "f": "escuro",
+   "narr": "casas destruídas,",
+   "comp": "Objeto 3D",
+   "tela": "Casa em linhas 3D; o telhado é arrancado: telhas se soltam e voam em direção à câmera.",
+   "sync": [
+    [
+     "2,20",
+     "«casas»: telhado arrancado (acento da música em 2,17) · 🔊 estalo de madeira + destroços"
+    ]
+   ],
+   "tr": "As telhas cruzam a tela e viram a rajada da cena 3."
+  },
+  {
+   "n": 3,
+   "nome": "Árvores arrancadas",
+   "a": 3.36,
+   "b": 4.62,
+   "f": "escuro",
+   "narr": "árvores arrancadas",
+   "comp": "Silhuetas + vento",
+   "tela": "Silhuetas de árvores se curvam com linhas de vento atravessando; uma é arrancada e cai na direção da câmera.",
+   "sync": [
+    [
+     "3,64",
+     "«arrancadas»: árvore tomba · 🔊 rajada + rachadura"
+    ]
+   ],
+   "tr": "Rajada: faixas de vento varrem a tela (assinatura 2)."
+  },
+  {
+   "n": 4,
+   "nome": "Milhares afetadas",
+   "a": 4.62,
+   "b": 6.24,
+   "f": "escuro",
+   "narr": "e milhares de pessoas afetadas.",
+   "comp": "Grade de ícones",
+   "tela": "Campo de pequenos ícones de pessoas; um relâmpago ilumina tudo e eles acendem em onda. «MILHARES» em destaque.",
+   "sync": [
+    [
+     "4,62",
+     "«milhares»: onda de ícones · 🔊 pops em cascata"
+    ],
+    [
+     "5,42",
+     "«afetadas»: relâmpago · 🔊 trovão seco"
+    ]
+   ],
+   "tr": "Varredura de radar revela o mapa (assinatura 3)."
+  },
+  {
+   "n": 5,
+   "nome": "O Sul do Brasil",
+   "a": 6.24,
+   "b": 7.6,
+   "f": "escuro",
+   "narr": "O Sul do Brasil está enfrentando",
+   "comp": "Mapa + radar",
+   "tela": "Contorno do Brasil; a varredura do radar gira e revela a Região Sul com um contorno pulsante (estados não desenhados: sem dados de estados no estúdio).",
+   "sync": [
+    [
+     "6,36",
+     "«Sul»: varredura · 🔊 varredura de radar + bipe"
+    ]
+   ],
+   "tr": "Zoom para a região."
+  },
+  {
+   "n": 6,
+   "nome": "Temporais extremos",
+   "a": 7.6,
+   "b": 9.42,
+   "f": "escuro",
+   "narr": "uma sequência de temporais extremos.",
+   "comp": "Radar de refletividade",
+   "tela": "Manchas de radar (verde → amarelo → vermelho → magenta) crescem e se movem sobre o Sul. Manchete TEMPORAIS EXTREMOS.",
+   "sync": [
+    [
+     "7,66",
+     "«sequência»: manchas pulsam (acento da música em 7,53) · 🔊 glitch de radar + hit"
+    ],
+    [
+     "8,62",
+     "«extremos»: núcleo magenta · 🔊 sub-boom"
+    ]
+   ],
+   "tr": "Corte em relâmpago."
+  },
+  {
+   "n": 7,
+   "nome": "De 2 a 7 de novembro",
+   "a": 9.42,
+   "b": 11.3,
+   "f": "escuro",
+   "narr": "Entre os dias 2 e 7 de novembro,",
+   "comp": "Calendário",
+   "tela": "Fita de calendário em perspectiva: os dias 2, 3, 4, 5, 6 e 7 acendem em sequência; NOVEMBRO em cima.",
+   "sync": [
+    [
+     "9,82",
+     "«2»: primeiro dia · 🔊 tick"
+    ],
+    [
+     "10,34",
+     "«7»: último dia · 🔊 ticks em escada + pop"
+    ]
+   ],
+   "tr": "Os dias viram funis (morph)."
+  },
+  {
+   "n": 8,
+   "nome": "Sete confirmados",
+   "a": 11.3,
+   "b": 12.72,
+   "f": "escuro",
+   "narr": "sete tornados foram confirmados",
+   "comp": "Repetição",
+   "tela": "Sete funis em fila caem e se fixam; carimbo CONFIRMADOS.",
+   "sync": [
+    [
+     "11,58",
+     "«tornados»: 7 funis · 🔊 7 pops variados"
+    ],
+    [
+     "12,18",
+     "«confirmados»: carimbo · 🔊 impacto seco"
+    ]
+   ],
+   "tr": "Chicote lateral."
+  },
+  {
+   "n": 9,
+   "nome": "Três estados",
+   "a": 12.72,
+   "b": 14.44,
+   "f": "escuro",
+   "narr": "nos três estados da região sul.",
+   "comp": "Tipografia + ícones",
+   "tela": "RS · SC · PR (siglas) em três placas que giram em 3D; os funis se distribuem entre elas.",
+   "sync": [
+    [
+     "12,92",
+     "«três»: placas giram · 🔊 3 bipes + flip"
+    ]
+   ],
+   "tr": "Zoom na placa RS."
+  },
+  {
+   "n": 10,
+   "nome": "Rio Grande do Sul",
+   "a": 14.44,
+   "b": 16.28,
+   "f": "escuro",
+   "narr": "No Rio Grande do Sul, dois deles atingiram",
+   "comp": "Zoom",
+   "tela": "A placa RS cresce e vira o fundo; dois funis acendem em magenta. «2» grande.",
+   "sync": [
+    [
+     "15,36",
+     "«dois»: dois funis · 🔊 hit + whoosh"
+    ]
+   ],
+   "tr": "Radar revela o mapa ampliado."
+  },
+  {
+   "n": 11,
+   "nome": "Santo Augusto e Palmeira",
+   "a": 16.28,
+   "b": 18.28,
+   "f": "escuro",
+   "narr": "Santo Augusto e Palmeira das Missões",
+   "comp": "Mapa com pinos",
+   "tela": "Mapa ampliado no noroeste gaúcho; dois pinos caem com os nomes das cidades (posições geográficas reais).",
+   "sync": [
+    [
+     "16,28",
+     "«Santo Augusto»: pino 1 · 🔊 queda de pino"
+    ],
+    [
+     "17,18",
+     "«Palmeira das Missões»: pino 2 · 🔊 queda de pino (outro timbre)"
+    ]
+   ],
+   "tr": "Escurece para a noite."
+  },
+  {
+   "n": 12,
+   "nome": "Madrugada de sábado",
+   "a": 18.28,
+   "b": 19.52,
+   "f": "escuro",
+   "narr": "durante a madrugada de sábado.",
+   "comp": "Clima noturno",
+   "tela": "Céu noturno, relógio de ponteiros girando até a madrugada, SÁBADO em letras finas; relâmpagos distantes.",
+   "sync": [
+    [
+     "18,38",
+     "«madrugada»: relógio gira · 🔊 trovão distante + tick"
+    ]
+   ],
+   "tr": "Notificação cobre a tela."
+  },
+  {
+   "n": 13,
+   "nome": "Defesa Civil",
+   "a": 19.52,
+   "b": 20.96,
+   "f": "escuro",
+   "narr": "Segundo a defesa civil gaúcha,",
+   "comp": "Cartão de boletim",
+   "tela": "Cartão genérico de boletim (sem logotipo oficial): «FONTE: DEFESA CIVIL DO RS» digitando.",
+   "sync": [
+    [
+     "19,52",
+     "cartão entra · 🔊 notificação + teclas"
+    ]
+   ],
+   "tr": "O cartão vira o contador."
+  },
+  {
+   "n": 14,
+   "nome": "23 mil pessoas",
+   "a": 20.96,
+   "b": 23.12,
+   "f": "escuro",
+   "narr": "mais de 23 mil pessoas foram afetadas",
+   "comp": "Infográfico dominante",
+   "tela": "Contador gigante sobe até 23.000 com «MAIS DE»; atrás, campo de pontos (pessoas) se preenche.",
+   "sync": [
+    [
+     "20,96",
+     "subida · 🔊 riser curto"
+    ],
+    [
+     "21,54",
+     "«mil»: trava em 23.000 · 🔊 boom + estalo"
+    ]
+   ],
+   "tr": "Os pontos se juntam em 17 grupos."
+  },
+  {
+   "n": 15,
+   "nome": "17 municípios",
+   "a": 23.12,
+   "b": 24.58,
+   "f": "escuro",
+   "narr": "em 17 municípios.",
+   "comp": "Repetição",
+   "tela": "17 marcadores acendem em sequência; «17 MUNICÍPIOS».",
+   "sync": [
+    [
+     "23,28",
+     "«17»: marcadores · 🔊 17 bipes subindo de tom"
+    ]
+   ],
+   "tr": "Folha de balanço sobe."
+  },
+  {
+   "n": 16,
+   "nome": "Balanço preliminar",
+   "a": 24.58,
+   "b": 26.5,
+   "f": "escuro",
+   "narr": "O balanço preliminar também registrou feridos,",
+   "comp": "Lista",
+   "tela": "Folha de balanço com itens marcados um a um: FERIDOS.",
+   "sync": [
+    [
+     "24,68",
+     "«balanço»: folha sobe · 🔊 papel"
+    ],
+    [
+     "26,12",
+     "«feridos»: item marcado · 🔊 tick + pulso"
+    ]
+   ],
+   "tr": "Divisão de tela."
+  },
+  {
+   "n": 17,
+   "nome": "Destelhadas e alagadas",
+   "a": 26.5,
+   "b": 28.76,
+   "f": "escuro",
+   "narr": "casas destelhadas e áreas alagadas.",
+   "comp": "Comparação lado a lado",
+   "tela": "Tela dividida: à esquerda, um telhado perdendo telhas; à direita, a água subindo num corte transversal da rua.",
+   "sync": [
+    [
+     "27,02",
+     "«destelhadas»: telhas voam · 🔊 destroços"
+    ],
+    [
+     "27,84",
+     "«alagadas»: água sobe · 🔊 água/chuva (pacote CC0 que você vai enviar)"
+    ]
+   ],
+   "tr": "Câmera recua e sobe o mapa."
+  },
+  {
+   "n": 18,
+   "nome": "Não só no Sul",
+   "a": 28.76,
+   "b": 30.92,
+   "f": "escuro",
+   "narr": "E os estragos não ficaram restritos ao sul.",
+   "comp": "Mapa em movimento",
+   "tela": "A câmera recua do Sul e sobe pelo mapa; uma seta de vento corre para o norte.",
+   "sync": [
+    [
+     "28,92",
+     "«estragos»: recuo · 🔊 whoosh longo + sub-swell"
+    ]
+   ],
+   "tr": "Pino em São Paulo."
+  },
+  {
+   "n": 19,
+   "nome": "Cachoeira Paulista",
+   "a": 30.92,
+   "b": 32.96,
+   "f": "escuro",
+   "narr": "Em Cachoeira Paulista, no interior de São Paulo,",
+   "comp": "Mapa com pino",
+   "tela": "Pino em Cachoeira Paulista (SP) com nome; anel de alerta pulsando.",
+   "sync": [
+    [
+     "30,98",
+     "«Cachoeira»: pino · 🔊 queda de pino + sino"
+    ]
+   ],
+   "tr": "Câmera sobe ao céu acima do ponto."
+  },
+  {
+   "n": 20,
+   "nome": "Microexplosão",
+   "a": 32.96,
+   "b": 34.74,
+   "f": "escuro",
+   "narr": "uma microexplosão atmosférica provocou",
+   "comp": "Fenômeno 3D",
+   "tela": "Coluna de ar desce em 3D e se espalha em anéis no chão (corrente descendente); MICROEXPLOSÃO.",
+   "sync": [
+    [
+     "33,08",
+     "«microexplosão»: coluna bate no chão · 🔊 whoosh descendente + boom"
+    ]
+   ],
+   "tr": "Os anéis viram o mostrador."
+  },
+  {
+   "n": 21,
+   "nome": "126 km/h",
+   "a": 34.74,
+   "b": 37.4,
+   "f": "escuro",
+   "narr": "rajadas de vento de 126 km por hora",
+   "comp": "Mostrador + vento",
+   "tela": "Anemômetro/velocímetro: o ponteiro dispara até 126; linhas de vento atravessando; «126 KM/H» gigante.",
+   "sync": [
+    [
+     "34,74",
+     "«rajadas»: vento · 🔊 rajada forte"
+    ],
+    [
+     "35,74",
+     "«126»: ponteiro trava · 🔊 hit + chiado do ponteiro"
+    ]
+   ],
+   "tr": "Rajada varre."
+  },
+  {
+   "n": 22,
+   "nome": "20 casas",
+   "a": 37.4,
+   "b": 39.58,
+   "f": "escuro",
+   "narr": "e danificou cerca de 20 casas.",
+   "comp": "Grade de ícones",
+   "tela": "Grade de 20 casas; elas racham e inclinam em onda.",
+   "sync": [
+    [
+     "38,56",
+     "«20»: casas racham · 🔊 rachaduras em cascata"
+    ]
+   ],
+   "tr": "Tudo congela; cai o silêncio."
+  },
+  {
+   "n": 23,
+   "nome": "Mas por quê?",
+   "a": 39.58,
+   "b": 42.98,
+   "f": "escuro",
+   "narr": "Mas o que está por trás de tantos fenômenos extremos em tão pouco tempo?",
+   "comp": "Pausa dramática",
+   "tela": "Quebra: a música cai; nuvem escura gira devagar e forma um ponto de interrogação; relâmpago distante no fundo.",
+   "sync": [
+    [
+     "39,58",
+     "«Mas»: quebra · 🔊 swell reverso + trovão distante"
+    ],
+    [
+     "42,00",
+     "subida · 🔊 riser até 42,98"
+    ]
+   ],
+   "tr": "Relâmpago corta."
+  },
+  {
+   "n": 24,
+   "nome": "Calor e umidade",
+   "a": 42.98,
+   "b": 44.64,
+   "f": "escuro",
+   "narr": "A combinação de calor, umidade",
+   "comp": "Ingredientes",
+   "tela": "Termômetro e gota entram dos lados e se juntam no centro.",
+   "sync": [
+    [
+     "43,56",
+     "«calor»: termômetro · 🔊 pop quente"
+    ],
+    [
+     "44,10",
+     "«umidade»: gota · 🔊 pop líquido"
+    ]
+   ],
+   "tr": "Os ícones giram juntos."
+  },
+  {
+   "n": 25,
+   "nome": "Condições atmosféricas",
+   "a": 44.64,
+   "b": 46.28,
+   "f": "escuro",
+   "narr": "e mudanças nas condições atmosféricas",
+   "comp": "Diagrama de fluxo",
+   "tela": "Setas de pressão e vento giram e se misturam aos dois ícones, formando um redemoinho.",
+   "sync": [
+    [
+     "44,64",
+     "«mudanças»: setas giram · 🔊 whoosh circular"
+    ]
+   ],
+   "tr": "O redemoinho sobe e vira nuvem."
+  },
+  {
+   "n": 26,
+   "nome": "Tempestades severas",
+   "a": 46.28,
+   "b": 48.72,
+   "f": "escuro",
+   "narr": "favorece a formação de tempestades severas.",
+   "comp": "Nuvem 3D",
+   "tela": "Cumulonimbus 3D cresce em torre até a bigorna; relâmpagos dentro.",
+   "sync": [
+    [
+     "47,52",
+     "«tempestades»: nuvem cresce · 🔊 ronco grave"
+    ],
+    [
+     "48,02",
+     "«severas»: relâmpago · 🔊 trovão"
+    ]
+   ],
+   "tr": "Varredura de radar."
+  },
+  {
+   "n": 27,
+   "nome": "Previsão",
+   "a": 48.72,
+   "b": 51.6,
+   "f": "escuro",
+   "narr": "E a previsão ainda exige atenção em várias regiões do país.",
+   "comp": "Alerta",
+   "tela": "Contorno do Brasil com varredura de radar contínua e um selo ATENÇÃO pulsando (sem marcar regiões específicas: a narração não diz quais).",
+   "sync": [
+    [
+     "49,74",
+     "«atenção»: selo · 🔊 alerta de interface"
+    ]
+   ],
+   "tr": "Chuva aumenta e cobre a tela."
+  },
+  {
+   "n": 28,
+   "nome": "Estamos preparados?",
+   "a": 51.6,
+   "b": 55.4,
+   "f": "escuro",
+   "narr": "A pergunta é, estamos preparados para enfrentar temporais cada vez mais intensos?",
+   "comp": "Tipografia + chuva",
+   "tela": "Palavras surgem no meio da chuva; a chuva engrossa; em «intensos», relâmpago e flash.",
+   "sync": [
+    [
+     "52,34",
+     "«estamos preparados»: palavras · 🔊 riser"
+    ],
+    [
+     "54,84",
+     "«intensos»: relâmpago · 🔊 trovão final + boom"
+    ]
+   ],
+   "tr": "Corte seco no trovão."
+  },
+  {
+   "n": 29,
+   "nome": "Cartela",
+   "a": 55.4,
+   "b": 60.0,
+   "f": "escuro",
+   "narr": "(sem narração)",
+   "comp": "Cartela",
+   "tela": "ESTAMOS PREPARADOS? parado; «Fonte: Defesa Civil do RS»; assinatura Studio Matteu discreta. Chuva ao fundo.",
+   "sync": [
+    [
+     "55,40",
+     "cartela · 🔊 cauda de chuva"
+    ]
+   ],
+   "tr": "Fim."
+  }
+ ],
+ "notas": [
+  "Trilha: o arquivo tem 30,8 s; o vídeo precisa de ~60 s. Proposta de arranjo nos compassos (120 BPM): 0–18,2 s da música até a cena 12 (os acentos de 2,17 e 7,53 s caem em «casas» e «sequência»); repete o trecho 10,7–18,2; clímax 18,2–30,8 até o pino de São Paulo e os 126 km/h; quebra em «Mas…» (música abafada); volta com o início filtrado na explicação; final 24,5–30,8 no «A pergunta é…» com o golpe em «intensos». Alternativa: você gera uma versão de 60 s na OpenArt.",
+  "Caráter da trilha: o analisador classificou a faixa como orquestral «triunfante/heroica». Eu não ouço; se você achar épica demais, dá para gerar de novo na OpenArt pedindo «no orchestral stabs, no heroic brass».",
+  "Mapas: o estúdio só tem contornos de países, não de estados. A Região Sul aparece como área destacada, os estados como siglas (RS, SC, PR) e as cidades como pinos nas coordenadas reais.",
+  "Tempestade: chuva, vento e trovão gravados vêm do pacote CC0 que você vai enviar (opção A). Até lá, o teste usa o vento e os graves do Earshot.",
+  "Fonte: «Defesa Civil do RS» citada como texto, como na narração; sem logotipo."
+ ]
+}

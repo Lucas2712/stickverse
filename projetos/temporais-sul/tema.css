@@ -1,0 +1,14 @@
+/* Tema · temporais-sul · direção "Olho da Tempestade": céu de tempestade + ciano-chuva + magenta-alerta (só núcleos e alertas)
+   + branco-relâmpago + névoa. Inter 4 com tamanho óptico automático (Inter Display nos títulos, Inter Text no corpo). */
+:root{
+  --v-bg:#0E1726; --v-ink:#EAF2FF; --v-ink2:#9AA7BA; --v-mute:#5E6B7D; --v-line:#1F2C40; --v-soft:#16223A;
+  --v-ac:#36C5F0; --v-ac2:#FF2E93; --v-alert:#FF2E93;
+  --v-sans:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --v-display:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --v-mono:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+#stage{background:#0E1726;font-family:var(--v-sans);font-optical-sizing:auto;color:#EAF2FF}
+#stage .tn{font-variant-numeric:tabular-nums}
+#stage .rot{font:600 26px var(--v-sans);letter-spacing:.18em;text-transform:uppercase;color:#9AA7BA}
+#stage .placa{position:absolute;border-radius:28px;background:linear-gradient(160deg,#1A2944,#111C30);border:2px solid #2A3B57;box-shadow:0 40px 80px -30px rgba(0,0,0,.8),inset 0 1px 0 rgba(234,242,255,.08)}
+#stage .selo{position:absolute;border:6px solid currentColor;border-radius:12px;padding:12px 28px 14px;font:800 62px/1 var(--v-sans);letter-spacing:.08em;white-space:nowrap}

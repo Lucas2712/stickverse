@@ -24,8 +24,9 @@ textos, assinaturas), use esse nome; não use nomes antigos ou provisórios da p
 
 2. **Narração e áudio.** Preservar o áudio original: não acelerar, não reescrever e não cortar palavras
    automaticamente. Não remover silêncios sem necessidade e sem a aprovação do usuário.
-   **Sem música de fundo:** só narração e efeitos sonoros presos a eventos visuais, com a voz sempre
-   em primeiro plano.
+   **Sem música de fundo por padrão:** só narração e efeitos sonoros presos a eventos visuais, com a voz sempre
+   em primeiro plano. Trilha instrumental só quando o usuário pedir para aquele vídeo (ver "Estratégia de áudio").
+
 
 3. **Tipografia (preferência permanente, pode ser a mesma em todos os vídeos).**
    - **SF Pro Display** nos títulos e textos de impacto.
@@ -61,8 +62,23 @@ textos, assinaturas), use esse nome; não use nomes antigos ou provisórios da p
 9. **Revisar antes de entregar** (relatório + todas as folhas de quadros) e dizer com franqueza o que
    não foi verificado. Claude não ouve áudio: a mixagem final depende do ouvido do usuário.
 
-10. **Consultar o usuário** antes de gastar créditos (OpenArt), liberar rede ou mudar algo que afete
+10. **Consultar o usuário** antes de gastar créditos (OpenArt, ElevenLabs), liberar rede ou mudar algo que afete
     todos os projetos.
+
+## Estratégia de áudio (oficial)
+
+| Camada | Ferramenta | Como funciona |
+|---|---|---|
+| **Narração** | OpenArt **Create Voice-over**, pelo site | O usuário gera a locução no site da OpenArt e envia o arquivo de áudio; Claude integra (transcrição, storyboard, produção). Claude não gera narração. |
+| **Música instrumental** | OpenArt, pelo site | Só quando houver necessidade e o recurso estiver no plano do usuário. Claude sugere o caráter da trilha (tema, emoção, BPM, marcas de corte); o usuário gera e envia; entra com ducking sob a voz. |
+| **Efeitos sonoros** | **Real SFX + Earshot** (principais, gratuitos) | Efeitos variados, criativos e presos a cada acontecimento visual (`sfx_real.py`). |
+| **Efeitos especiais** | OpenArt MCP (pontual) | Só para um som específico que a biblioteca não tem, gerado como vídeo curto com áudio nativo e extraído com ffmpeg: Claude informa o modelo e o custo em créditos (`openart_model_cost`) e só gera com aprovação. |
+| **ElevenLabs** | configurada e **inativa** | Não usar até o usuário assinar e reativar. Integração, bloqueios e script ficam como estão. |
+| **Imagens e vídeos** | OpenArt MCP oficial | Como antes, sempre com custo informado e aprovação antes de gastar créditos. |
+
+O conector OpenArt (MCP oficial, login da conta do usuário no claude.ai) não gera áudio isolado: só imagem e vídeo
+(alguns modelos de vídeo têm áudio nativo). Licença: conferir na página de preços da OpenArt se o plano Starter
+permite uso comercial antes de publicar material gerado lá.
 
 ## Onde fica cada coisa
 
@@ -93,8 +109,39 @@ Conferir antes se a ferramenta e as dependências estão presentes (regra 8).
 - Use o ambiente de nuvem **"stickverse"**: o script de preparação instala o transcritor (Whisper),
   o Earshot com seus modelos e o classificador do Real SFX. Se `/opt/mds/whisper-small/model.bin`
   ou `earshot` faltarem, rode `bash studio/ferramentas/preparar_ambiente.sh`.
+- **Início de cada sessão de produção (contingência autorizada):** leia `/opt/mds/estado.txt`. Se
+  `earshot-modelos` ou `yamnet` não estiverem "ok" (ou o arquivo faltar), rode
+  `bash studio/ferramentas/preparar_ambiente.sh --testar` (baixa os modelos de novo, sem dependências novas,
+  confere o SHA-256 do YAMNet e testa Earshot, YAMNet e a biblioteca). Só considere o ambiente pronto com todos
+  os itens "ok"; se algo falhar, mostre `/opt/mds/preparacao.log` e avise o usuário da limitação antes de produzir.
+- **ElevenLabs** (INATIVA por decisão do usuário; não usar até ele reativar): servidor MCP oficial `elevenlabs-mcp` (MIT) em
+  `.mcp.json`, iniciado pelo `uvx`. A chave fica só no cofre do ambiente "stickverse" (o proxy a injeta em
+  `api.elevenlabs.io`); nunca em arquivo, variável ou chat. As ferramentas do MCP que gastam créditos ficam **bloqueadas** em
+  `.claude/settings.json` (vale em qualquer modo de permissão; só as consultas gratuitas ficam liberadas). Toda geração
+  passa por `studio/ferramentas/elevenlabs.py`: `estimar` mostra a estimativa, o saldo e um código ligado ao pedido exato;
+  só depois da aprovação do usuário no chat, `gerar` roda com esse código e um `--teto` de créditos, e confere o saldo
+  antes e depois. Código, teto, argumentos e saída são conferidos **antes de qualquer acesso à rede**. **Limitação:** o
+  código é calculável a partir do próprio pedido, então **não é autorização humana**; a barreira efetiva contra gastar
+  créditos é o `deny` do MCP. Nenhum código calculável pelo próprio agente vale como aprovação de ação sensível
+  (vale também para o Instagram). Música exige plano pago. Áudios gerados vão para `studio/elevenlabs/` (fora do git) e depois para o
+  projeto. Plano gratuito: conferir a licença de uso comercial antes de publicar. As ferramentas de áudio do estúdio
+  (Real SFX, Earshot, sintetizador do player) continuam valendo; a ElevenLabs será uma opção a mais quando reativada.
 - Rede liberada: OpenArt (imagens), Openverse, Freesound, Wikimedia, Hugging Face e PyTorch.
   O Freesound bloqueia servidores de nuvem (403): não contornar.
+
+## Instagram (fase 1, somente leitura)
+
+- Integração própria com a API oficial da Meta (Instagram API com login do Instagram, `graph.instagram.com` v27.0),
+  conta de **Criador de conteúdo**, sem Página do Facebook nem portfólio. Código e regras em `studio/instagram/`
+  (README). Servidores MCP próprios em `.mcp.json`, só com ferramentas de leitura: `instagram` (real, bloqueado)
+  e `instagram-simulado` (dados fictícios, sem rede, para testes). Sem MCPs de terceiros.
+- **Estado: só testes offline.** A conexão real está bloqueada (`CONEXAO_REAL_AUTORIZADA = False` em `api.py`),
+  `graph.instagram.com` não está liberado e não existe token. Não criar app na Meta, pedir token, liberar domínio
+  ou chamar a conta sem autorização expressa do usuário.
+- Nenhuma ação que altere a conta (publicar, responder, enviar, ocultar, excluir, agendar, configurar) existe nesta fase.
+  Nas próximas, toda ação exigirá aprovação explícita do usuário antes de executar, com registro do resultado, e
+  nunca por um código que o próprio agente possa calcular.
+- Dados privados fora do git; comentários, mensagens e dados pessoais nunca entram em logs.
 
 ## Entrega e git
 
