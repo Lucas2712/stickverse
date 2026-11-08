@@ -18,14 +18,38 @@ Uso:
 
 A chave nunca passa por aqui: o proxy do ambiente "stickverse" injeta o cabeçalho xi-api-key em api.elevenlabs.io.
 Registro de cada geração (sem credenciais): studio/elevenlabs/registro.jsonl (fora do git).
+
+Ordem das travas em "gerar" (todas locais, ANTES de qualquer acesso à rede):
+  argumentos e limites → código de aprovação → teto → arquivo de saída → (só então) estimativa e saldo pela API.
+  Código inválido = recusa imediata, sem consultar saldo, modelos ou qualquer outro endpoint.
+
+LIMITAÇÃO IMPORTANTE (auditoria M3): o "código de aprovação" é um resumo (SHA-256) do próprio pedido. Qualquer pessoa ou
+agente que tenha o pedido consegue calculá-lo; portanto ele NÃO representa uma autorização humana real. Ele só garante
+que o pedido gerado é exatamente o pedido mostrado ao usuário. A barreira efetiva contra gastar créditos continua sendo o
+bloqueio ("deny") das ferramentas do MCP em .claude/settings.json, somado à regra de só rodar "gerar" depois da aprovação
+do usuário no chat. Nenhum código calculável pelo próprio agente pode ser considerado suficiente como aprovação de ações
+sensíveis (vale também para futuras publicações no Instagram). A ElevenLabs continua INATIVA por decisão do usuário.
 """
-import argparse, hashlib, json, os, sys, time, urllib.error, urllib.request
+import argparse, hashlib, hmac, json, os, re, socket, sys, time, urllib.error, urllib.request
 
 API = "https://api.elevenlabs.io"
 RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 REG = os.path.join(RAIZ, "studio", "elevenlabs", "registro.jsonl")
 # Efeitos e música não têm tabela de preço na API: estimativa conservadora, conferida depois pelo saldo real.
 EFEITO_POR_SEGUNDO, EFEITO_SEM_DURACAO, MUSICA_POR_SEGUNDO = 40, 200, 60
+TETO_MAXIMO = 100_000                     # nenhum pedido aprovado pode passar disto
+LIMITES = {"texto": 10_000, "descricao": 450, "prompt": 2_000, "efeito_dur": (0.5, 30.0), "musica_dur": (10.0, 300.0)}
+
+
+class Recusa(SystemExit):
+    """Recusa local: sai com mensagem, sem nenhum acesso à rede."""
+    def __init__(self, msg): super().__init__(f"RECUSADO: {msg}")
+
+
+def erro_rede(e):
+    """Mensagem segura para falhas de conexão (sem cabeçalhos, URLs com parâmetros ou corpo de resposta)."""
+    motivo = getattr(e, "reason", e)
+    return SystemExit(f"ElevenLabs inacessível: falha de conexão ({type(motivo).__name__}). Nada foi gerado.")
 
 
 def req(metodo, caminho, corpo=None, binario=False):
@@ -37,7 +61,15 @@ def req(metodo, caminho, corpo=None, binario=False):
         with urllib.request.urlopen(r, timeout=180) as resp:
             b = resp.read(); return b if binario else json.loads(b)
     except urllib.error.HTTPError as e:
-        sys.exit(f"ElevenLabs respondeu {e.code}: {e.read().decode(errors='replace')[:400]}")
+        # só o código HTTP e o campo de status da API; o corpo pode repetir o pedido, então não é mostrado
+        try: det = json.loads(e.read(4096) or b"{}").get("detail", {})
+        except (ValueError, OSError): det = {}
+        st = det.get("status") if isinstance(det, dict) else None
+        raise SystemExit(f"ElevenLabs respondeu HTTP {e.code}" + (f" ({str(st)[:60]})" if st else "") + ". Nada foi gerado.")
+    except (urllib.error.URLError, TimeoutError, socket.timeout, ConnectionError, OSError) as e:
+        raise erro_rede(e)
+    except ValueError:
+        raise SystemExit("ElevenLabs devolveu uma resposta inválida. Nada foi gerado.")
 
 
 def saldo():
@@ -46,18 +78,57 @@ def saldo():
             "restante": (s.get("character_limit") or 0) - (s.get("character_count") or 0)}
 
 
+def _faixa(v, nome, lo, hi):
+    if v is None or not (lo <= v <= hi): raise Recusa(f"{nome} deve estar entre {lo:g} e {hi:g}")
+    return v
+
+
 def pedido(a):
-    """Normaliza o pedido (o código de aprovação depende exatamente disto)."""
+    """Valida os argumentos (localmente) e normaliza o pedido; o código de aprovação depende exatamente disto."""
     if a.tipo == "narracao":
-        texto = open(a.arquivo, encoding="utf-8").read().strip() if a.arquivo else (a.texto or "").strip()
-        if not texto or not a.voz: sys.exit("narração: informe --arquivo (ou --texto) e --voz")
+        if a.arquivo:
+            if not os.path.isfile(a.arquivo): raise Recusa("--arquivo não encontrado")
+            with open(a.arquivo, encoding="utf-8") as f: texto = f.read(LIMITES["texto"] + 1).strip()
+        else: texto = (a.texto or "").strip()
+        if not texto or not a.voz: raise Recusa("narração: informe --arquivo (ou --texto) e --voz")
+        if len(texto) > LIMITES["texto"]: raise Recusa(f"texto acima de {LIMITES['texto']} caracteres")
+        if not re.fullmatch(r"[A-Za-z0-9]{8,40}", a.voz): raise Recusa("--voz inválida")
+        if not re.fullmatch(r"[a-z0-9_]{3,60}", a.modelo or ""): raise Recusa("--modelo inválido")
         return {"tipo": "narracao", "texto": texto, "voz": a.voz, "modelo": a.modelo}
     if a.tipo == "efeito":
-        if not a.descricao: sys.exit("efeito: informe --descricao")
+        if not a.descricao or not a.descricao.strip(): raise Recusa("efeito: informe --descricao")
+        if len(a.descricao) > LIMITES["descricao"]: raise Recusa(f"descrição acima de {LIMITES['descricao']} caracteres")
+        if a.duracao is not None: _faixa(a.duracao, "--duracao", *LIMITES["efeito_dur"])
         return {"tipo": "efeito", "descricao": a.descricao, "duracao": a.duracao}
     if a.tipo == "musica":
-        if not a.prompt or not a.duracao: sys.exit("música: informe --prompt e --duracao")
+        if not a.prompt or not a.prompt.strip(): raise Recusa("música: informe --prompt")
+        if len(a.prompt) > LIMITES["prompt"]: raise Recusa(f"prompt acima de {LIMITES['prompt']} caracteres")
+        _faixa(a.duracao, "--duracao", *LIMITES["musica_dur"])
         return {"tipo": "musica", "prompt": a.prompt, "duracao": a.duracao}
+    raise Recusa("informe o tipo: narracao, efeito ou musica")
+
+
+def estimativa_local(p):
+    """Estimativa sem rede. Para narração é um limite inferior (o multiplicador do modelo só vem da API)."""
+    if p["tipo"] == "narracao": return len(p["texto"])
+    if p["tipo"] == "efeito": return round(p["duracao"] * EFEITO_POR_SEGUNDO) if p["duracao"] else EFEITO_SEM_DURACAO
+    return round(p["duracao"] * MUSICA_POR_SEGUNDO)
+
+
+def travas_locais(a, p):
+    """Tudo o que pode recusar 'gerar' sem rede: código, teto e arquivo de saída. Chamada ANTES de qualquer requisição."""
+    cod = codigo(p)
+    if not a.aprovado or not hmac.compare_digest(str(a.aprovado).upper(), cod):
+        raise Recusa("código de aprovação ausente ou diferente deste pedido.")
+    if a.teto is None: raise Recusa("informe --teto (créditos máximos aprovados).")
+    if not 1 <= a.teto <= TETO_MAXIMO: raise Recusa(f"--teto deve estar entre 1 e {TETO_MAXIMO}.")
+    if estimativa_local(p) > a.teto: raise Recusa(f"estimativa mínima {estimativa_local(p)} acima do teto aprovado {a.teto}.")
+    if not a.saida: raise Recusa("informe --saida.")
+    if not a.saida.lower().endswith(".mp3"): raise Recusa("--saida deve terminar em .mp3")
+    if os.path.lexists(a.saida): raise Recusa("--saida já existe (nada é sobrescrito).")
+    pasta = os.path.dirname(os.path.abspath(a.saida))
+    if os.path.exists(pasta) and not os.path.isdir(pasta): raise Recusa("a pasta de --saida não é uma pasta.")
+    return cod
 
 
 def estimativa(p):
@@ -94,8 +165,10 @@ def main():
             if not a.busca or a.busca.lower() in (x["name"] + json.dumps(x.get("labels", {}))).lower():
                 print(x["voice_id"], "·", x["name"], "·", ", ".join(f"{k}: {w}" for k, w in (x.get("labels") or {}).items()))
         return
-    if not a.tipo: sys.exit("informe o tipo: narracao, efeito ou musica")
-    p = pedido(a); est, como = estimativa(p); s = saldo(); cod = codigo(p)
+    if not a.tipo: raise Recusa("informe o tipo: narracao, efeito ou musica")
+    p = pedido(a)                                         # 1. argumentos e limites (local)
+    if a.acao == "gerar": travas_locais(a, p)             # 2. código, teto e saída (local) — antes de QUALQUER rede
+    est, como = estimativa(p); s = saldo(); cod = codigo(p)   # 3. só agora: estimativa e saldo pela API
 
     if a.acao == "estimar":
         print(json.dumps({"pedido": {k: (v[:80] + "…" if isinstance(v, str) and len(v) > 80 else v) for k, v in p.items()},
@@ -104,13 +177,10 @@ def main():
               f"  gerar {p['tipo']} <mesmos argumentos> --aprovado {cod} --teto {est} --saida <arquivo.mp3>")
         return
 
-    # gerar: todas as travas antes de qualquer chamada que gaste créditos
-    if a.aprovado != cod: sys.exit(f"RECUSADO: código de aprovação ausente ou diferente deste pedido (esperado o código mostrado por 'estimar').")
-    if a.teto is None: sys.exit("RECUSADO: informe --teto (créditos máximos aprovados).")
-    if est > a.teto: sys.exit(f"RECUSADO: estimativa {est} acima do teto aprovado {a.teto}.")
-    if est > s["restante"]: sys.exit(f"RECUSADO: estimativa {est} acima do saldo restante {s['restante']}.")
-    if p["tipo"] == "musica" and s["plano"] == "free": sys.exit("RECUSADO: a música da ElevenLabs exige plano pago.")
-    if not a.saida: sys.exit("RECUSADO: informe --saida.")
+    # gerar: travas que dependem da API (estimativa real e saldo), ainda antes de qualquer chamada que gaste créditos
+    if est > a.teto: raise Recusa(f"estimativa {est} acima do teto aprovado {a.teto}.")
+    if est > s["restante"]: raise Recusa(f"estimativa {est} acima do saldo restante {s['restante']}.")
+    if p["tipo"] == "musica" and s["plano"] == "free": raise Recusa("a música da ElevenLabs exige plano pago.")
 
     antes = s["usados"]
     if p["tipo"] == "narracao":
@@ -122,7 +192,7 @@ def main():
     else:
         audio = req("POST", "/v1/music?output_format=mp3_44100_128", {"prompt": p["prompt"], "music_length_ms": int(p["duracao"] * 1000)}, binario=True)
     os.makedirs(os.path.dirname(os.path.abspath(a.saida)), exist_ok=True)
-    open(a.saida, "wb").write(audio)
+    with open(a.saida, "xb") as f: f.write(audio)           # "x": nunca sobrescreve um arquivo existente
     depois = saldo()["usados"]; gasto = depois - antes
     os.makedirs(os.path.dirname(REG), exist_ok=True)
     with open(REG, "a", encoding="utf-8") as f:

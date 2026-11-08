@@ -13,7 +13,10 @@ Segurança
     chamada (nem tenta abrir conexão). Os testes usam o transporte simulado (dados fictícios).
   - Erros passam por limpar(), que remove tokens de mensagens e URLs.
   - Registro de consultas: só data, tipo de consulta e resultado (ok/erro). Nunca IDs de comentários, textos, nomes de
-    usuário ou conteúdo de mensagens. Fica em studio/instagram/dados/ (fora do git) e é podado após 30 dias.
+    usuário ou conteúdo de mensagens. Um arquivo por modo (dados/consultas-real.jsonl, consultas-simulado.jsonl), fora do
+    git, podado após 30 dias.
+  - Transporte real: sem redirecionamentos (o Authorization nunca é reenviado a outro destino) e respostas limitadas a
+    2 MB (recusadas antes de serem lidas por inteiro).
 """
 import fcntl, json, os, re, stat, sys, time, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
@@ -24,7 +27,15 @@ BASE = f"https://{HOST}/{VERSAO}/"
 CONEXAO_REAL_AUTORIZADA = False          # muda só com autorização expressa do usuário (fase de conexão real)
 AQUI = os.path.dirname(os.path.abspath(__file__))
 DADOS = os.environ.get("STUDIO_IG_DADOS") or os.path.join(AQUI, "dados")   # variável só para testes
-REGISTRO = os.path.join(DADOS, "consultas.jsonl")
+MODOS = ("real", "simulado", "teste")                 # um arquivo de registro por modo: nunca se misturam
+MAX_RESPOSTA = 2 * 1024 * 1024                        # 2 MB por resposta de sucesso (listas e métricas cabem com folga)
+MAX_RESPOSTA_ERRO = 64 * 1024                          # corpo de erro: só o suficiente para o código da Meta
+
+
+def registro_de(modo):
+    """Caminho do registro de um modo: dados/consultas-real.jsonl, dados/consultas-simulado.jsonl ou -teste.jsonl."""
+    if modo not in MODOS: raise ValueError("modo de registro inválido")
+    return os.path.join(DADOS, f"consultas-{modo}.jsonl")
 RETENCAO_DIAS = 30
 
 # ---------------- lista fechada do que pode ser lido ----------------
@@ -74,7 +85,8 @@ class ErroAPI(Exception):
         que pode repetir parâmetros ou identificadores)."""
         cat = {190: "token inválido ou expirado", 10: "permissão ausente", 200: "permissão ausente", 100: "parâmetro inválido ou objeto inexistente",
                4: "limite de chamadas", 17: "limite de chamadas", 32: "limite de chamadas", 613: "limite de chamadas", 80002: "limite de chamadas",
-               -1: "resposta inválida"}.get(self.codigo, "erro da API")
+               -1: "resposta inválida", -2: "resposta grande demais (recusada)", -3: "falha de conexão",
+               -4: "redirecionamento recusado"}.get(self.codigo, "erro da API")
         return f"Erro da API do Instagram: HTTP {self.status}, código {self.codigo} ({cat})."
 
 
@@ -128,12 +140,9 @@ def abrir_privado(caminho, flags):
         os.close(fd); raise
 
 
-def _abrir_registro(flags):
-    return abrir_privado(REGISTRO, flags)
-
-
-def registrar(tipo, resultado, agora=None):
-    """Acrescenta uma linha {quando, consulta, resultado} ao registro, sem nenhum conteúdo.
+def registrar(tipo, resultado, modo, agora=None):
+    """Acrescenta uma linha {quando, consulta, resultado} ao registro DO MODO (real, simulado ou teste), sem nenhum
+    conteúdo. Cada modo tem arquivo e trava próprios, então consultas reais e simuladas nunca se misturam.
 
     Robustez: trava exclusiva (fcntl.flock num arquivo .lock) contra MCP e linha de comando ao mesmo tempo; acréscimo
     com O_APPEND (nunca reescreve o que já existe); a poda dos >30 dias grava num arquivo temporário 600 e troca de forma
@@ -141,17 +150,18 @@ def registrar(tipo, resultado, agora=None):
     abrir_privado(): links simbólicos, FIFOs, pastas, links físicos e arquivos de outro dono são recusados; modo vira 600.
     Falhas de registro não interrompem a consulta: viram um aviso sem conteúdo em stderr (nunca em stdout, que é do MCP)."""
     agora = agora or datetime.now(timezone.utc)
+    caminho = registro_de(modo)
     linha = json.dumps({"quando": agora.isoformat(timespec="seconds"), "consulta": str(tipo)[:20], "resultado": str(resultado)[:20]}) + "\n"
     try:
         pasta_privada(DADOS)
-        trava = abrir_privado(REGISTRO + ".lock", os.O_RDWR | os.O_CREAT)   # conferida também se já existia
+        trava = abrir_privado(caminho + ".lock", os.O_RDWR | os.O_CREAT)    # conferida também se já existia
         try:
             fcntl.flock(trava, fcntl.LOCK_EX)
-            fd = _abrir_registro(os.O_WRONLY | os.O_APPEND | os.O_CREAT)
+            fd = abrir_privado(caminho, os.O_WRONLY | os.O_APPEND | os.O_CREAT)
             try:
                 os.write(fd, linha.encode("utf-8")); os.fsync(fd)
             finally: os.close(fd)
-            _podar(agora)
+            _podar(caminho, agora)
         finally:
             os.close(trava)                       # fechar libera a trava
         return True
@@ -160,21 +170,21 @@ def registrar(tipo, resultado, agora=None):
         return False
 
 
-def _podar(agora):
+def _podar(caminho, agora):
     """Chamada com a trava já obtida. Só reescreve quando a primeira linha passou da retenção (ou é inválida)."""
     limite = agora - timedelta(days=RETENCAO_DIAS)
     def valida(l):
         try: return datetime.fromisoformat(json.loads(l)["quando"]) >= limite
         except (ValueError, KeyError, TypeError): return False
-    fd = _abrir_registro(os.O_RDONLY)
+    fd = abrir_privado(caminho, os.O_RDONLY)
     with os.fdopen(fd, encoding="utf-8") as f: linhas = f.read().splitlines()
     if not linhas or valida(linhas[0]): return
     manter = [l for l in linhas if valida(l)]
-    tmp = f"{REGISTRO}.{os.getpid()}.tmp"
+    tmp = f"{caminho}.{os.getpid()}.tmp"
     fd = os.open(tmp, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, 0o600)
     try:
         with os.fdopen(fd, "w", encoding="utf-8") as f: f.write("".join(l + "\n" for l in manter)); f.flush(); os.fsync(f.fileno())
-        os.replace(tmp, REGISTRO)
+        os.replace(tmp, caminho)
     except BaseException:
         if os.path.exists(tmp): os.remove(tmp)
         raise
@@ -201,14 +211,53 @@ def validar_bool(valor, nome):
 
 
 # ---------------- transportes ----------------
-def transporte_real(url, cabecalhos, timeout=30):
-    """Único ponto que abriria uma conexão. Bloqueado até a autorização expressa do usuário."""
+class SemRedirecionamento(urllib.request.HTTPRedirectHandler):
+    """Nunca segue redirecionamentos: um 3xx vira erro na hora. Assim o cabeçalho Authorization nunca é reenviado a
+    outro destino (nem a outro caminho do mesmo host)."""
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
+def construir_opener(*extras):
+    """Opener padrão (respeita HTTPS_PROXY e a CA do ambiente) com redirecionamento desligado. 'extras' só para testes."""
+    return urllib.request.build_opener(SemRedirecionamento, *extras)
+
+
+class RespostaGrande(Exception):
+    pass
+
+
+def ler_limitado(resp, limite):
+    """Lê no máximo 'limite' bytes. Recusa antes de ler se o Content-Length já passar do limite, e recusa assim que o
+    corpo passar do limite (lê limite + 1 bytes, nunca o corpo inteiro)."""
+    cl = (resp.headers.get("Content-Length") or "").strip() if getattr(resp, "headers", None) else ""
+    if cl.isdigit() and int(cl) > limite: raise RespostaGrande()
+    dados = resp.read(limite + 1)
+    if len(dados) > limite: raise RespostaGrande()
+    return dados
+
+
+def transporte_real(url, cabecalhos, timeout=30, opener=None):
+    """Único ponto que abriria uma conexão. Bloqueado até a autorização expressa do usuário.
+    Sem redirecionamentos, com limite de tamanho e erros de conexão convertidos em ErroAPI sem detalhes."""
     if not CONEXAO_REAL_AUTORIZADA:
         raise Recusado("conexão real com o Instagram ainda não autorizada (fase 1: só testes offline)")
     req = urllib.request.Request(url, method="GET", headers=cabecalhos)
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as r: return r.status, r.read().decode("utf-8")
-    except urllib.error.HTTPError as e: return e.code, e.read().decode("utf-8", "replace")
+        with (opener or construir_opener()).open(req, timeout=timeout) as r:
+            return r.status, ler_limitado(r, MAX_RESPOSTA).decode("utf-8", "replace")
+    except RespostaGrande:
+        raise ErroAPI(200, -2, "resposta grande demais")
+    except urllib.error.HTTPError as e:
+        try:
+            if 300 <= e.code < 400: raise ErroAPI(e.code, -4, "redirecionamento recusado")
+            try: corpo = ler_limitado(e, MAX_RESPOSTA_ERRO)
+            except RespostaGrande: corpo = b""
+            return e.code, corpo.decode("utf-8", "replace")
+        finally:
+            e.close()
+    except (urllib.error.URLError, TimeoutError, ConnectionError, OSError):
+        raise ErroAPI(0, -3, "falha de conexão")
 
 
 def transporte_simulado(url, cabecalhos):
@@ -254,6 +303,8 @@ def transporte_simulado(url, cabecalhos):
 class Cliente:
     def __init__(self, transporte=None, dormir=time.sleep, registrar_consultas=True):
         self.transporte = transporte or transporte_real
+        # modo do registro: cada um em seu arquivo (real, simulado; transportes injetados por testes = "teste")
+        self.modo = "real" if self.transporte is transporte_real else "simulado" if self.transporte is transporte_simulado else "teste"
         self.dormir, self.reg = dormir, registrar_consultas
 
     @staticmethod
@@ -286,17 +337,20 @@ class Cliente:
             try:
                 status, corpo = self.transporte(url, cab)
             except Recusado:
-                if self.reg: registrar(nome, "recusado")
+                if self.reg: registrar(nome, "recusado", self.modo)
+                raise
+            except ErroAPI as e:                          # conexão, redirecionamento ou resposta grande: sem nova tentativa
+                if self.reg: registrar(nome, f"erro {e.codigo}", self.modo)
                 raise
             try: dados = json.loads(corpo) if corpo else {}
             except ValueError: dados = {"error": {"message": "resposta não é JSON", "code": -1}}
             if status == 200 and "error" not in dados:
-                if self.reg: registrar(nome, "ok")
+                if self.reg: registrar(nome, "ok", self.modo)
                 return dados
             err = dados.get("error", {}); codigo = err.get("code", -1)
             if codigo in LIMITACAO and tentativa < 3:
                 self.dormir(min(60, 5 * 2 ** tentativa)); continue
-            if self.reg: registrar(nome, f"erro {codigo}")
+            if self.reg: registrar(nome, f"erro {codigo}", self.modo)
             raise ErroAPI(status, codigo, err.get("message", "erro desconhecido"))
 
     def paginas(self, caminho, maximo=MAX_PAGINAS, **params):
@@ -367,8 +421,12 @@ def cota(c):
 
 def status(c):
     p = c.get("me", fields="user_id,username,account_type")
-    return {"conectado": True, "conta": p.get("username"), "tipo": p.get("account_type"), "api": f"{HOST} {VERSAO}",
-            "modo": "real" if c.transporte is transporte_real else "simulado", "somente_leitura": True}
+    if c.modo != "real":
+        # simulado/teste: nunca sugerir que a conta real está conectada
+        return {"conectado": False, "modo": c.modo, "conta_ficticia": p.get("username"), "tipo": p.get("account_type"),
+                "aviso": "Dados fictícios. A conta real do Instagram NÃO está conectada.", "somente_leitura": True}
+    return {"conectado": True, "modo": "real", "conta": p.get("username"), "tipo": p.get("account_type"),
+            "api": f"{HOST} {VERSAO}", "somente_leitura": True}
 
 
 def relatorio_markdown(c, dias=28, n=12):

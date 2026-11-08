@@ -21,7 +21,9 @@ Dois servidores no `.mcp.json`, com as mesmas ferramentas:
 - **`instagram`** (padrão): conexão real, **bloqueada** até a autorização (devolve "conexão real ainda não autorizada").
 - **`instagram-simulado`** (`--simulado`): dados fictícios, sem rede, para testar as ferramentas pelo Claude. Toda resposta
   começa com `[SIMULADO: dados fictícios, nenhuma conexão com o Instagram]`, e o servidor se identifica como
-  `studio-matteu-instagram-simulado`. O modo simulado nunca usa o transporte de rede.
+  `studio-matteu-instagram-simulado`. O modo simulado nunca usa o transporte de rede, e o `ig_status` simulado responde
+  `"conectado": false`, `"modo": "simulado"` e um aviso de que a conta real não está conectada (a conta aparece só como
+  `conta_ficticia`).
 
 Ferramentas MCP: `ig_status`, `ig_perfil`, `ig_publicacoes`, `ig_publicacao`, `ig_comentarios`, `ig_metricas_conta`,
 `ig_cota_publicacao`. Não existe ferramenta para publicar, responder, enviar, ocultar, excluir, agendar ou alterar
@@ -41,6 +43,12 @@ configurações.
   `conversations`, `refresh_access_token`...) são recusados; parâmetros que poderiam mudar o método (`method`, `_method`)
   ou levar credenciais (`access_token`) são recusados.
 - **Paginação:** só pelo cursor `after`; a URL `next` da resposta nunca é seguida.
+- **Sem redirecionamentos:** o transporte real usa um opener com redirecionamento desligado. Qualquer resposta 3xx é
+  recusada na hora (erro "redirecionamento recusado"), então o cabeçalho `Authorization` nunca é reenviado a outro destino,
+  nem a outro caminho do mesmo host.
+- **Limite de resposta:** respostas de sucesso até 2 MB e corpos de erro até 64 KB. Se o `Content-Length` já passa do
+  limite, a resposta é recusada sem ler nada; sem `Content-Length`, a leitura para em limite + 1 byte e a resposta é recusada.
+- **Falhas de conexão** (DNS, tempo esgotado, conexão recusada ou interrompida) viram "falha de conexão", sem detalhes.
 - **Erros:** passam por `limpar()`, que remove tokens de mensagens e URLs.
 
 ## Protocolo MCP e argumentos
@@ -101,7 +109,9 @@ Por isso o token deve ter as permissões mínimas acima, que não permitem publi
 ## Dados e privacidade
 
 - **Comentários:** o texto aparece só na resposta ao chat; não é gravado em disco nem registrado.
-- **Registro de consultas** (`dados/consultas.jsonl`, fora do git): só data, tipo de consulta (`perfil`, `midias`,
+- **Registro de consultas, um arquivo por modo** (fora do git): `dados/consultas-real.jsonl` e
+  `dados/consultas-simulado.jsonl` (os testes usam `consultas-teste.jsonl` numa pasta temporária). Cada modo tem sua
+  própria trava, e consultas reais e simuladas nunca se misturam. Conteúdo: só data, tipo de consulta (`perfil`, `midias`,
   `insights`...) e resultado (`ok`, `erro <código>`, `recusado`). Sem IDs de comentários, textos, nomes de usuário
   ou conteúdo de mensagens.
   - **Concorrência:** trava exclusiva (`fcntl.flock`) entre MCP e linha de comando.
@@ -133,3 +143,10 @@ Por isso o token deve ter as permissões mínimas acima, que não permitem publi
 
 Conexão real (app na Meta criado pelo usuário, liberação de `graph.instagram.com`, token no cofre) → inteligência e
 calendário → publicação com aprovação → agendamento → comentários → mensagens.
+
+**Regra para as fases com escrita (lição da auditoria, item M3):** a aprovação de qualquer ação que altere a conta
+(publicar, agendar, responder, enviar, ocultar, excluir) **não pode** depender de um código que o próprio agente consiga
+calcular (como o resumo SHA-256 do pedido usado na ElevenLabs). Um código assim só prova que o pedido executado é o
+pedido mostrado; não é autorização humana. A aprovação precisa vir do usuário, e a barreira técnica precisa existir fora
+do alcance do agente, por exemplo com bloqueio (`deny`) das ferramentas de escrita no `.claude/settings.json`, liberadas
+uma a uma pelo usuário. O desenho exato será proposto e aprovado antes da fase de publicação.

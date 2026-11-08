@@ -120,7 +120,10 @@ Conferir antes se a ferramenta e as dependências estão presentes (regra 8).
   `.claude/settings.json` (vale em qualquer modo de permissão; só as consultas gratuitas ficam liberadas). Toda geração
   passa por `studio/ferramentas/elevenlabs.py`: `estimar` mostra a estimativa, o saldo e um código ligado ao pedido exato;
   só depois da aprovação do usuário no chat, `gerar` roda com esse código e um `--teto` de créditos, e confere o saldo
-  antes e depois. Música exige plano pago. Áudios gerados vão para `studio/elevenlabs/` (fora do git) e depois para o
+  antes e depois. Código, teto, argumentos e saída são conferidos **antes de qualquer acesso à rede**. **Limitação:** o
+  código é calculável a partir do próprio pedido, então **não é autorização humana**; a barreira efetiva contra gastar
+  créditos é o `deny` do MCP. Nenhum código calculável pelo próprio agente vale como aprovação de ação sensível
+  (vale também para o Instagram). Música exige plano pago. Áudios gerados vão para `studio/elevenlabs/` (fora do git) e depois para o
   projeto. Plano gratuito: conferir a licença de uso comercial antes de publicar. As ferramentas de áudio do estúdio
   (Real SFX, Earshot, sintetizador do player) continuam valendo; a ElevenLabs será uma opção a mais quando reativada.
 - Rede liberada: OpenArt (imagens), Openverse, Freesound, Wikimedia, Hugging Face e PyTorch.
@@ -136,7 +139,8 @@ Conferir antes se a ferramenta e as dependências estão presentes (regra 8).
   `graph.instagram.com` não está liberado e não existe token. Não criar app na Meta, pedir token, liberar domínio
   ou chamar a conta sem autorização expressa do usuário.
 - Nenhuma ação que altere a conta (publicar, responder, enviar, ocultar, excluir, agendar, configurar) existe nesta fase.
-  Nas próximas, toda ação exigirá aprovação explícita do usuário antes de executar, com registro do resultado.
+  Nas próximas, toda ação exigirá aprovação explícita do usuário antes de executar, com registro do resultado, e
+  nunca por um código que o próprio agente possa calcular.
 - Dados privados fora do git; comentários, mensagens e dados pessoais nunca entram em logs.
 
 ## Entrega e git

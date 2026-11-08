@@ -6,7 +6,7 @@ Os registros de teste vão para uma pasta temporária, não para studio/instagra
 
   python3 -I studio/instagram/teste_offline.py
 """
-import json, multiprocessing, os, socket, stat, subprocess, sys, tempfile, unittest, urllib.parse, urllib.request
+import email.message, io, json, multiprocessing, os, socket, stat, subprocess, sys, tempfile, unittest, urllib.error, urllib.parse, urllib.request, urllib.response
 from datetime import datetime, timedelta, timezone
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
@@ -23,13 +23,13 @@ def _sem_rede(*a, **k): raise AssertionError("tentativa de acesso à rede durant
 class Base(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.mkdtemp()
-        self._orig = (api.DADOS, api.REGISTRO, socket.socket.connect, urllib.request.urlopen)
-        api.DADOS = self.tmp; api.REGISTRO = os.path.join(self.tmp, "consultas.jsonl")
+        self._orig = (api.DADOS, socket.socket.connect, urllib.request.urlopen)
+        api.DADOS = self.tmp
         socket.socket.connect = _sem_rede; urllib.request.urlopen = _sem_rede
         self.urls = []
 
     def tearDown(self):
-        api.DADOS, api.REGISTRO, socket.socket.connect, urllib.request.urlopen = self._orig
+        api.DADOS, socket.socket.connect, urllib.request.urlopen = self._orig
 
     def cliente(self, transporte=None):
         def gravar(url, cab):
@@ -99,7 +99,7 @@ class TestRecusas(Base):
     def test_conexao_real_bloqueada(self):
         self.assertFalse(api.CONEXAO_REAL_AUTORIZADA)
         with self.assertRaises(api.Recusado): api.perfil(api.Cliente())      # transporte real: recusa antes de qualquer rede
-        with open(api.REGISTRO) as f: reg = [json.loads(l) for l in f]
+        with open(api.registro_de("real")) as f: reg = [json.loads(l) for l in f]
         self.assertEqual(reg[-1]["resultado"], "recusado")
 
 
@@ -137,15 +137,15 @@ class TestErrosELimpeza(Base):
 class TestPrivacidade(Base):
     def test_registro_sem_conteudo_e_com_retencao(self):
         antigo = (datetime.now(timezone.utc) - timedelta(days=45)).isoformat(timespec="seconds")
-        with open(api.REGISTRO, "w") as f: f.write(json.dumps({"quando": antigo, "consulta": "perfil", "resultado": "ok"}) + "\n")
+        with open(api.registro_de("teste"), "w") as f: f.write(json.dumps({"quando": antigo, "consulta": "perfil", "resultado": "ok"}) + "\n")
         c = self.cliente(); api.comentarios(c, "1801"); api.perfil(c)
-        with open(api.REGISTRO) as f: txt = f.read()
+        with open(api.registro_de("teste")) as f: txt = f.read()
         linhas = [json.loads(l) for l in txt.splitlines()]
         self.assertTrue(all(l["quando"] != antigo for l in linhas))                 # entrada de 45 dias foi podada
         self.assertEqual({tuple(sorted(l)) for l in linhas}, {("consulta", "quando", "resultado")})
         for proibido in ("Que vídeo", "narração", "pessoa.ficticia", "5501", "1801"):
             self.assertNotIn(proibido, txt)
-        self.assertEqual(oct(os.stat(api.REGISTRO).st_mode & 0o777), "0o600")
+        self.assertEqual(oct(os.stat(api.registro_de("teste")).st_mode & 0o777), "0o600")
 
     def test_relatorio_sem_comentarios(self):
         rel = api.relatorio_markdown(self.cliente(), 28, 3)
@@ -180,9 +180,13 @@ class TestServidorMCP(Base):
                    {"jsonrpc": "2.0", "method": "notifications/initialized"},
                    {"jsonrpc": "2.0", "id": 2, "method": "tools/call", "params": {"name": "ig_metricas_conta", "arguments": {"dias": 7}}}]
         env["STUDIO_IG_DADOS"] = self.tmp                                         # registro do subprocesso vai para a pasta temporária
+        real_dados = os.path.join(AQUI, "dados")
+        antes = {f: os.stat(os.path.join(real_dados, f)).st_size for f in os.listdir(real_dados)} if os.path.isdir(real_dados) else {}
         p = subprocess.run([sys.executable, "-I", os.path.join(AQUI, "servidor_mcp.py"), "--simulado"], input="\n".join(json.dumps(x) for x in pedidos) + "\n",
                            capture_output=True, text=True, timeout=60, env=env)
-        self.assertFalse(os.path.exists(os.path.join(AQUI, "dados")))
+        depois = {f: os.stat(os.path.join(real_dados, f)).st_size for f in os.listdir(real_dados)} if os.path.isdir(real_dados) else {}
+        self.assertEqual(antes, depois)                                          # a pasta de dados de verdade não foi tocada
+        self.assertEqual(sorted(x for x in os.listdir(self.tmp) if x.endswith(".jsonl")), ["consultas-simulado.jsonl"])
         resp = [json.loads(l) for l in p.stdout.splitlines()]
         self.assertEqual([r["id"] for r in resp], [1, 2])
         texto = resp[1]["result"]["content"][0]["text"]; self.assertTrue(texto.startswith(servidor_mcp.AVISO_SIMULADO))
@@ -193,8 +197,8 @@ class TestServidorMCP(Base):
 # ======================= testes das correções da auditoria =======================
 
 def _escritor(pasta, n, k):                     # processo filho do teste de concorrência (sem rede: só arquivos)
-    api.DADOS = pasta; api.REGISTRO = os.path.join(pasta, "consultas.jsonl")
-    for i in range(n): api.registrar(f"p{k}", "ok")
+    api.DADOS = pasta
+    for i in range(n): api.registrar(f"p{k}", "ok", "teste")
 
 
 class TestModoSimuladoMCP(Base):
@@ -233,7 +237,7 @@ class TestModoSimuladoMCP(Base):
 
 class TestRegistroRobusto(Base):
     def linhas(self):
-        with open(api.REGISTRO) as f: return [json.loads(l) for l in f]
+        with open(api.registro_de("teste")) as f: return [json.loads(l) for l in f]
 
     def test_concorrencia_sem_perda_nem_corrupcao(self):
         ctx = multiprocessing.get_context("fork")
@@ -246,43 +250,43 @@ class TestRegistroRobusto(Base):
 
     def test_permissoes_e_correcao_de_modo(self):
         os.chmod(self.tmp, 0o755)
-        with open(api.REGISTRO, "w") as f: f.write("")
-        os.chmod(api.REGISTRO, 0o644)
-        self.assertTrue(api.registrar("perfil", "ok"))
+        with open(api.registro_de("teste"), "w") as f: f.write("")
+        os.chmod(api.registro_de("teste"), 0o644)
+        self.assertTrue(api.registrar("perfil", "ok", "teste"))
         self.assertEqual(stat.S_IMODE(os.stat(self.tmp).st_mode), 0o700)
-        self.assertEqual(stat.S_IMODE(os.stat(api.REGISTRO).st_mode), 0o600)
-        self.assertEqual(stat.S_IMODE(os.stat(api.REGISTRO + ".lock").st_mode), 0o600)
+        self.assertEqual(stat.S_IMODE(os.stat(api.registro_de("teste")).st_mode), 0o600)
+        self.assertEqual(stat.S_IMODE(os.stat(api.registro_de("teste") + ".lock").st_mode), 0o600)
 
     def test_recusa_link_simbolico(self):
         alvo = os.path.join(self.tmp, "alvo.txt")
         with open(alvo, "w") as f: f.write("intocado\n")
-        os.symlink(alvo, api.REGISTRO)
-        self.assertFalse(api.registrar("perfil", "ok"))             # falha segura: não segue o link
+        os.symlink(alvo, api.registro_de("teste"))
+        self.assertFalse(api.registrar("perfil", "ok", "teste"))             # falha segura: não segue o link
         with open(alvo) as f: self.assertEqual(f.read(), "intocado\n")
 
     def test_pasta_link_simbolico_recusada(self):
         real = tempfile.mkdtemp(); link = os.path.join(self.tmp, "dados-link"); os.symlink(real, link)
-        api.DADOS = link; api.REGISTRO = os.path.join(link, "consultas.jsonl")
-        self.assertFalse(api.registrar("perfil", "ok")); self.assertEqual(os.listdir(real), [])
+        api.DADOS = link
+        self.assertFalse(api.registrar("perfil", "ok", "teste")); self.assertEqual(os.listdir(real), [])
 
     def test_poda_atomica_e_linhas_invalidas(self):
         antigo = (datetime.now(timezone.utc) - timedelta(days=40)).isoformat(timespec="seconds")
         recente = (datetime.now(timezone.utc) - timedelta(days=2)).isoformat(timespec="seconds")
-        with open(api.REGISTRO, "w") as f:
+        with open(api.registro_de("teste"), "w") as f:
             f.write(json.dumps({"quando": antigo, "consulta": "perfil", "resultado": "ok"}) + "\nlixo não-json\n" +
                     json.dumps({"quando": recente, "consulta": "midias", "resultado": "ok"}) + "\n")
-        api.registrar("insights", "ok")
+        api.registrar("insights", "ok", "teste")
         self.assertEqual([l["consulta"] for l in self.linhas()], ["midias", "insights"])
         self.assertEqual([x for x in os.listdir(self.tmp) if x.endswith(".tmp")], [])        # nenhum temporário esquecido
 
     def test_sem_poda_nao_reescreve(self):
-        api.registrar("perfil", "ok"); ino = os.stat(api.REGISTRO).st_ino
-        api.registrar("midias", "ok")
-        self.assertEqual(os.stat(api.REGISTRO).st_ino, ino)        # só acréscimo, mesmo arquivo
+        api.registrar("perfil", "ok", "teste"); ino = os.stat(api.registro_de("teste")).st_ino
+        api.registrar("midias", "ok", "teste")
+        self.assertEqual(os.stat(api.registro_de("teste")).st_ino, ino)        # só acréscimo, mesmo arquivo
 
     def test_falha_de_registro_nao_vaza_em_stdout(self):
-        api.DADOS = "/proc/naopode"; api.REGISTRO = "/proc/naopode/x.jsonl"
-        self.assertFalse(api.registrar("perfil", "ok"))
+        api.DADOS = "/proc/naopode"
+        self.assertFalse(api.registrar("perfil", "ok", "teste"))
 
     def test_gravar_novo_nunca_sobrescreve(self):
         a = api.gravar_novo(os.path.join(self.tmp, "rel.md"), "primeiro")
@@ -389,27 +393,99 @@ class TestProtocoloMCP(Base):
         self.assertNotIn("Traceback", json.dumps(r))
 
 
+def _resposta(corpo, code=200, cabecalhos=None, contador=None):
+    h = email.message.Message()
+    for k, v in (cabecalhos or {}).items(): h[k] = v
+    class Fluxo(io.BytesIO):
+        def read(self, n=-1):
+            d = super().read(n)
+            if contador is not None: contador.append(len(d))
+            return d
+    r = urllib.response.addinfourl(Fluxo(corpo), h, "https://graph.instagram.com/v27.0/me", code)
+    r.msg = "OK" if code == 200 else "Redirect"
+    return r
+
+
+class HTTPSFalso(urllib.request.HTTPSHandler):
+    """Substitui o HTTPS de verdade dentro do opener: devolve respostas prontas e registra cada pedido. Sem rede."""
+    def __init__(self, *respostas):
+        super().__init__(); self.respostas = list(respostas); self.pedidos = []
+    def https_open(self, req):
+        self.pedidos.append((req.full_url, req.get_header("Authorization")))
+        r = self.respostas.pop(0)
+        if isinstance(r, Exception): raise r
+        return r
+
+
 class TestTransporteReal(Base):
-    """Confere, sem rede, o que o transporte real enviaria se fosse autorizado (urlopen substituído por um capturador)."""
+    """Confere, sem rede, o transporte real como se estivesse autorizado: o HTTPS é um falso dentro do opener verdadeiro
+    (com o tratamento de redirecionamento e de erros reais do urllib)."""
+    def setUp(self):
+        super().setUp(); api.CONEXAO_REAL_AUTORIZADA = True
+
+    def tearDown(self):
+        api.CONEXAO_REAL_AUTORIZADA = False; super().tearDown()
+
+    def transporte(self, falso):
+        return lambda url, cab: api.transporte_real(url, cab, opener=api.construir_opener(falso))
+
     def test_pedido_montado_corretamente(self):
-        capt = []
-        class Resp:
-            status = 200
-            def read(self): return b'{"user_id": "1", "username": "x", "account_type": "Media_Creator"}'
-            def __enter__(self): return self
-            def __exit__(self, *a): return False
-        def capturar(req, timeout=None): capt.append(req); return Resp()
-        urllib.request.urlopen = capturar; api.CONEXAO_REAL_AUTORIZADA = True
-        try:
-            api.status(api.Cliente(api.transporte_real))
-        finally:
-            api.CONEXAO_REAL_AUTORIZADA = False; urllib.request.urlopen = _sem_rede
-        req = capt[0]
-        self.assertEqual(req.get_method(), "GET")
-        self.assertEqual(urllib.parse.urlparse(req.full_url).netloc, "graph.instagram.com")
-        self.assertEqual(req.get_header("Authorization"), "Bearer proxy-injected")
-        self.assertNotIn("access_token", req.full_url)
-        self.assertFalse(api.CONEXAO_REAL_AUTORIZADA)
+        falso = HTTPSFalso(_resposta(b'{"user_id": "1", "username": "x", "account_type": "Media_Creator"}'))
+        api.perfil(api.Cliente(self.transporte(falso)))
+        url, aut = falso.pedidos[0]
+        self.assertEqual(urllib.parse.urlparse(url).netloc, "graph.instagram.com")
+        self.assertEqual(aut, "Bearer proxy-injected"); self.assertNotIn("access_token", url)
+
+    def test_redirecionamento_para_outro_host_recusado(self):
+        for code in (301, 302, 303, 307, 308):
+            with self.subTest(code=code):
+                falso = HTTPSFalso(_resposta(b"", code, {"Location": "https://outro-host.example/roubar"}),
+                                   _resposta(b'{"username": "nao-deveria"}'))
+                with self.assertRaises(api.ErroAPI) as e: api.perfil(api.Cliente(self.transporte(falso), dormir=lambda s: None))
+                self.assertEqual(e.exception.codigo, -4); self.assertIn("redirecionamento recusado", e.exception.resumo())
+                self.assertEqual(len(falso.pedidos), 1)                                   # nunca segue o Location
+                self.assertTrue(all("outro-host" not in u for u, _ in falso.pedidos))
+
+    def test_redirecionamento_no_mesmo_host_recusado(self):
+        falso = HTTPSFalso(_resposta(b"", 302, {"Location": "https://graph.instagram.com/v27.0/me/media_publish"}))
+        with self.assertRaises(api.ErroAPI): api.perfil(api.Cliente(self.transporte(falso)))
+        self.assertEqual(len(falso.pedidos), 1)
+
+    def test_resposta_grande_com_content_length_recusada_sem_ler(self):
+        lidos = []
+        falso = HTTPSFalso(_resposta(b"x" * 10, 200, {"Content-Length": str(api.MAX_RESPOSTA + 1)}, lidos))
+        with self.assertRaises(api.ErroAPI) as e: api.perfil(api.Cliente(self.transporte(falso)))
+        self.assertEqual(e.exception.codigo, -2); self.assertEqual(lidos, [])           # nem um byte lido
+
+    def test_resposta_grande_sem_content_length_lida_so_ate_o_limite(self):
+        lidos = []
+        falso = HTTPSFalso(_resposta(b"{" + b" " * (api.MAX_RESPOSTA * 3), 200, None, lidos))
+        with self.assertRaises(api.ErroAPI) as e: api.perfil(api.Cliente(self.transporte(falso)))
+        self.assertEqual(e.exception.codigo, -2); self.assertLessEqual(sum(lidos), api.MAX_RESPOSTA + 1)
+
+    def test_resposta_no_limite_aceita(self):
+        corpo = json.dumps({"user_id": "1", "username": "x", "account_type": "Media_Creator"}).encode()
+        corpo += b" " * (api.MAX_RESPOSTA - len(corpo))
+        falso = HTTPSFalso(_resposta(corpo))
+        self.assertEqual(api.perfil(api.Cliente(self.transporte(falso)))["username"], "x")
+
+    def test_corpo_de_erro_grande_descartado(self):
+        lidos = []
+        falso = HTTPSFalso(_resposta(b"y" * (api.MAX_RESPOSTA_ERRO * 4), 500, None, lidos))
+        with self.assertRaises(api.ErroAPI): api.perfil(api.Cliente(self.transporte(falso)))
+        self.assertLessEqual(sum(lidos), api.MAX_RESPOSTA_ERRO + 1)
+
+    def test_falhas_de_conexao_viram_erro_seguro(self):
+        for exc in (urllib.error.URLError(socket.gaierror("nome")), urllib.error.URLError(TimeoutError()), TimeoutError(), ConnectionResetError()):
+            with self.subTest(exc=type(exc).__name__):
+                falso = HTTPSFalso(exc)
+                with self.assertRaises(api.ErroAPI) as e: api.perfil(api.Cliente(self.transporte(falso)))
+                self.assertEqual(e.exception.codigo, -3); self.assertIn("falha de conexão", e.exception.resumo())
+
+    def test_opener_padrao_sem_redirecionamento(self):
+        op = api.construir_opener()
+        self.assertTrue(any(isinstance(h, api.SemRedirecionamento) for h in op.handlers))
+        self.assertFalse(any(type(h) is urllib.request.HTTPRedirectHandler for h in op.handlers))
 
     def test_flag_padrao_no_arquivo(self):
         with open(os.path.join(AQUI, "api.py")) as f: self.assertIn("\nCONEXAO_REAL_AUTORIZADA = False", f.read())
@@ -420,7 +496,7 @@ class TestTransporteReal(Base):
 
 class TestTravaPreexistente(Base):
     def setUp(self):
-        super().setUp(); os.chmod(self.tmp, 0o700); self.trava = api.REGISTRO + ".lock"
+        super().setUp(); os.chmod(self.tmp, 0o700); self.trava = api.registro_de("teste") + ".lock"
 
     def test_trava_existente_com_permissao_aberta_e_corrigida(self):
         for modo in (0o644, 0o666, 0o777, 0o400):
@@ -428,53 +504,53 @@ class TestTravaPreexistente(Base):
                 if os.path.exists(self.trava): os.remove(self.trava)
                 with open(self.trava, "w"): pass
                 os.chmod(self.trava, modo)
-                self.assertTrue(api.registrar("perfil", "ok"))
+                self.assertTrue(api.registrar("perfil", "ok", "teste"))
                 self.assertEqual(stat.S_IMODE(os.stat(self.trava).st_mode), 0o600)
 
     def test_trava_link_simbolico_recusada(self):
         alvo = os.path.join(self.tmp, "alvo.txt")
         with open(alvo, "w") as f: f.write("intocado\n")
         os.chmod(alvo, 0o644); os.symlink(alvo, self.trava)
-        self.assertFalse(api.registrar("perfil", "ok"))
+        self.assertFalse(api.registrar("perfil", "ok", "teste"))
         self.assertEqual(stat.S_IMODE(os.stat(alvo).st_mode), 0o644)          # alvo nem lido nem alterado
         with open(alvo) as f: self.assertEqual(f.read(), "intocado\n")
-        self.assertFalse(os.path.exists(api.REGISTRO))                          # nada gravado sem trava válida
+        self.assertFalse(os.path.exists(api.registro_de("teste")))                          # nada gravado sem trava válida
 
     def test_trava_link_simbolico_quebrado_recusado(self):
         os.symlink(os.path.join(self.tmp, "nao-existe"), self.trava)
-        self.assertFalse(api.registrar("perfil", "ok"))
+        self.assertFalse(api.registrar("perfil", "ok", "teste"))
         self.assertFalse(os.path.exists(os.path.join(self.tmp, "nao-existe")))  # O_CREAT não seguiu o link
 
     def test_trava_pasta_recusada(self):
         os.mkdir(self.trava)
-        self.assertFalse(api.registrar("perfil", "ok"))
+        self.assertFalse(api.registrar("perfil", "ok", "teste"))
 
     def test_trava_fifo_recusada_sem_travar(self):
         os.mkfifo(self.trava, 0o600)
-        self.assertFalse(api.registrar("perfil", "ok"))                         # O_NONBLOCK + fstat: recusa na hora
+        self.assertFalse(api.registrar("perfil", "ok", "teste"))                         # O_NONBLOCK + fstat: recusa na hora
 
     def test_trava_link_fisico_recusado(self):
         outro = os.path.join(self.tmp, "outro.txt")
         with open(outro, "w"): pass
         os.link(outro, self.trava)
-        self.assertFalse(api.registrar("perfil", "ok"))
+        self.assertFalse(api.registrar("perfil", "ok", "teste"))
 
     @unittest.skipUnless(os.getuid() == 0, "trocar o dono exige root")
     def test_trava_de_outro_dono_recusada(self):
         with open(self.trava, "w"): pass
         os.chown(self.trava, 4242, 4242)
-        self.assertFalse(api.registrar("perfil", "ok"))
+        self.assertFalse(api.registrar("perfil", "ok", "teste"))
         self.assertEqual(os.stat(self.trava).st_uid, 4242)
 
     @unittest.skipUnless(os.getuid() == 0, "trocar o dono exige root")
     def test_registro_de_outro_dono_recusado(self):
-        with open(api.REGISTRO, "w"): pass
-        os.chown(api.REGISTRO, 4242, 4242)
-        self.assertFalse(api.registrar("perfil", "ok"))
+        with open(api.registro_de("teste"), "w"): pass
+        os.chown(api.registro_de("teste"), 4242, 4242)
+        self.assertFalse(api.registrar("perfil", "ok", "teste"))
 
     def test_registro_fifo_recusado(self):
-        os.mkfifo(api.REGISTRO, 0o600)
-        self.assertFalse(api.registrar("perfil", "ok"))
+        os.mkfifo(api.registro_de("teste"), 0o600)
+        self.assertFalse(api.registrar("perfil", "ok", "teste"))
 
     def test_concorrencia_com_trava_preexistente(self):
         with open(self.trava, "w"): pass
@@ -483,7 +559,7 @@ class TestTravaPreexistente(Base):
         ps = [ctx.Process(target=_escritor, args=(self.tmp, 30, k)) for k in range(4)]
         for p in ps: p.start()
         for p in ps: p.join(30); self.assertEqual(p.exitcode, 0)
-        with open(api.REGISTRO) as f: self.assertEqual(len(f.read().splitlines()), 120)
+        with open(api.registro_de("teste")) as f: self.assertEqual(len(f.read().splitlines()), 120)
         self.assertEqual(stat.S_IMODE(os.stat(self.trava).st_mode), 0o600)
 
 
@@ -509,6 +585,72 @@ class TestNegociacaoProtocolo(Base):
 
     def test_mais_recente_e_suportada(self):
         self.assertEqual(servidor_mcp.PROTOCOLO, servidor_mcp.VERSOES_SUPORTADAS[0])
+
+
+
+# ======================= correções pós-auditoria final (B2 e B3) =======================
+
+class TestStatusSimulado(Base):
+    def test_status_simulado_nao_conectado(self):
+        s = api.status(api.Cliente(api.transporte_simulado))
+        self.assertIs(s["conectado"], False); self.assertEqual(s["modo"], "simulado")
+        self.assertIn("NÃO está conectada", s["aviso"]); self.assertNotIn("conta", s)        # só "conta_ficticia"
+
+    def test_mcp_simulado_nunca_diz_conectado(self):
+        orig = servidor_mcp.SIMULADO; servidor_mcp.SIMULADO = True
+        try:
+            for nome, args in [("ig_status", {}), ("ig_perfil", {}), ("ig_publicacoes", {}), ("ig_publicacao", {"id": "1801"}),
+                               ("ig_comentarios", {"id": "1801"}), ("ig_metricas_conta", {}), ("ig_cota_publicacao", {})]:
+                with self.subTest(nome=nome):
+                    t = servidor_mcp.responder({"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": nome, "arguments": args}})["result"]["content"][0]["text"]
+                    self.assertTrue(t.startswith(servidor_mcp.AVISO_SIMULADO)); self.assertNotIn('"conectado": true', t)
+            t = servidor_mcp.responder({"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": "ig_status", "arguments": {}}})["result"]["content"][0]["text"]
+            self.assertIn('"conectado": false', t); self.assertIn('"modo": "simulado"', t)
+        finally:
+            servidor_mcp.SIMULADO = orig
+
+
+class TestRegistrosSeparados(Base):
+    def ler(self, modo):
+        c = api.registro_de(modo)
+        if not os.path.exists(c): return []
+        with open(c) as f: return [json.loads(l) for l in f]
+
+    def test_real_e_simulado_em_arquivos_separados(self):
+        api.perfil(api.Cliente(api.transporte_simulado))
+        with self.assertRaises(api.Recusado): api.perfil(api.Cliente(api.transporte_real))
+        api.publicacoes(api.Cliente(api.transporte_simulado), 2)
+        sim, real = self.ler("simulado"), self.ler("real")
+        self.assertEqual([(l["consulta"], l["resultado"]) for l in sim], [("perfil", "ok"), ("midias", "ok")])
+        self.assertEqual([(l["consulta"], l["resultado"]) for l in real], [("perfil", "recusado")])
+        self.assertEqual(self.ler("teste"), [])
+        nomes = sorted(os.listdir(self.tmp))
+        self.assertEqual(nomes, ["consultas-real.jsonl", "consultas-real.jsonl.lock", "consultas-simulado.jsonl", "consultas-simulado.jsonl.lock"])
+        for n in nomes: self.assertEqual(stat.S_IMODE(os.stat(os.path.join(self.tmp, n)).st_mode), 0o600)
+
+    def test_modo_do_cliente(self):
+        self.assertEqual(api.Cliente().modo, "real"); self.assertEqual(api.Cliente(api.transporte_simulado).modo, "simulado")
+        self.assertEqual(api.Cliente(lambda u, c: (200, "{}")).modo, "teste")
+
+    def test_modo_invalido_recusado(self):
+        for m in ("", "REAL", "../x", None, "producao"):
+            with self.subTest(m=m), self.assertRaises(ValueError): api.registro_de(m)
+
+    def test_protecoes_valem_para_cada_modo(self):
+        os.chmod(self.tmp, 0o700)
+        alvo = os.path.join(self.tmp, "alvo.txt")
+        with open(alvo, "w") as f: f.write("intocado\n")
+        os.symlink(alvo, api.registro_de("simulado"))
+        self.assertFalse(api.registrar("perfil", "ok", "simulado"))
+        self.assertTrue(api.registrar("perfil", "ok", "real"))                       # o outro modo segue funcionando
+        with open(alvo) as f: self.assertEqual(f.read(), "intocado\n")
+
+    def test_sem_conteudo_em_nenhum_registro(self):
+        api.comentarios(api.Cliente(api.transporte_simulado), "1801")
+        with self.assertRaises(api.Recusado): api.comentarios(api.Cliente(api.transporte_real), "1801")
+        for modo in ("simulado", "real"):
+            with open(api.registro_de(modo)) as f: txt = f.read()
+            for proibido in ("Que vídeo", "pessoa.ficticia", "1801", "5501", "Bearer", "proxy-injected"): self.assertNotIn(proibido, txt)
 
 
 if __name__ == "__main__":
