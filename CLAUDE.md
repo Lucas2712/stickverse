@@ -100,9 +100,11 @@ Conferir antes se a ferramenta e as dependências estão presentes (regra 8).
   os itens "ok"; se algo falhar, mostre `/opt/mds/preparacao.log` e avise o usuário da limitação antes de produzir.
 - **ElevenLabs** (narração em PT-BR, efeitos sonoros e trilhas): servidor MCP oficial `elevenlabs-mcp` (MIT) em
   `.mcp.json`, iniciado pelo `uvx`. A chave fica só no cofre do ambiente "stickverse" (o proxy a injeta em
-  `api.elevenlabs.io`); nunca em arquivo, variável ou chat. Antes de **cada** geração: informar a estimativa de créditos
-  e pedir aprovação (as ferramentas que gastam créditos pedem confirmação em `.claude/settings.json`). Consultar o saldo
-  com `check_subscription` antes e depois. Áudios gerados vão para `studio/elevenlabs/` (fora do git) e depois para o
+  `api.elevenlabs.io`); nunca em arquivo, variável ou chat. As ferramentas do MCP que gastam créditos ficam **bloqueadas** em
+  `.claude/settings.json` (vale em qualquer modo de permissão; só as consultas gratuitas ficam liberadas). Toda geração
+  passa por `studio/ferramentas/elevenlabs.py`: `estimar` mostra a estimativa, o saldo e um código ligado ao pedido exato;
+  só depois da aprovação do usuário no chat, `gerar` roda com esse código e um `--teto` de créditos, e confere o saldo
+  antes e depois. Música exige plano pago. Áudios gerados vão para `studio/elevenlabs/` (fora do git) e depois para o
   projeto. Plano gratuito: conferir a licença de uso comercial antes de publicar. As ferramentas de áudio do estúdio
   (Real SFX, Earshot, sintetizador do player) continuam valendo; a ElevenLabs é uma opção a mais.
 - Rede liberada: OpenArt (imagens), Openverse, Freesound, Wikimedia, Hugging Face e PyTorch.

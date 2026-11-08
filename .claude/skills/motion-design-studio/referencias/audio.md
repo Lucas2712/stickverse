@@ -89,9 +89,13 @@ Comandos com modelos levam ~20 s para carregar. Nada disso substitui o ouvido do
 ## ElevenLabs (opcional, com aprovação e créditos)
 
 Servidor MCP oficial `elevenlabs-mcp` (MIT), configurado em `.mcp.json`; a chave fica no cofre do ambiente.
-- **Narração PT-BR:** `text_to_speech` (modelos com português: `eleven_v3`, `eleven_multilingual_v2`, `eleven_flash_v2_5`…).
+- **Narração PT-BR:** `elevenlabs.py ... narracao` (modelos com português: `eleven_v3`, `eleven_multilingual_v2`, `eleven_flash_v2_5`…).
   Custo aproximado: 1 crédito por caractere do roteiro (modelos flash/turbo costumam custar menos). Depois, `transcrever.py` como sempre.
-- **Efeitos sob medida:** `text_to_sound_effects` (descrição + duração). Entram em `studio/sons/elevenlabs/<tipo>/` com crédito
+- **Efeitos sob medida:** `elevenlabs.py ... efeito` (descrição + duração). Entram em `studio/sons/elevenlabs/<tipo>/` com crédito
   em `creditos.json` (origem ElevenLabs, licença conforme o plano) e o índice do Real SFX é reconstruído (`build_index.py`).
-- **Trilhas:** `compose_music` / `create_composition_plan`. Música continua só quando o usuário pedir.
-- Sempre: estimativa de créditos → aprovação → geração → `check_subscription` para conferir o gasto real.
+- **Trilhas:** `elevenlabs.py ... musica` (plano pago). Música continua só quando o usuário pedir.
+- As ferramentas do MCP que geram áudio estão **bloqueadas**; a geração passa por `studio/ferramentas/elevenlabs.py`:
+  `estimar <narracao|efeito|musica> ...` (estimativa + saldo + código de aprovação, sem gastar) → aprovação do usuário →
+  `gerar ... --aprovado CODIGO --teto N --saida arquivo.mp3` (recusa se o código não bate com o pedido, se passa do teto ou do
+  saldo; registra o gasto real em `studio/elevenlabs/registro.jsonl`). Narração: estimativa exata pela API; efeitos e música:
+  aproximada, conferida pelo saldo depois. Música exige plano pago.
