@@ -1,0 +1,6 @@
+# A IA virou uma arma de espionagem?
+
+> Texto tirado da transcrição da narração (o roteiro exato não foi enviado). Grafias a confirmar com o usuário:
+> VaporPanda, Artex, DeepSeek. Fonte citada na narração: relatório da CrowdStrike.
+
+A IA virou uma arma de espionagem? Imagine um único operador controlando agentes de inteligência artificial para invadir centenas de organizações ao mesmo tempo. Isso não é ficção. Segundo um relatório da CrowdStrike, um grupo de espionagem identificado como VaporPanda utilizou inteligência artificial em uma campanha contra mais de 200 organizações, distribuídas por pelo menos 14 países. A operação utilizou agentes coordenados por uma ferramenta chamada Artex, com um modelo DeepSeek entre as tecnologias empregadas. E o mais preocupante, os alvos incluíam ministérios das Relações Exteriores de países da América Latina. A CrowdStrike confirmou atividade de invasão em nove organizações. Mas existe um detalhe importante. A inteligência artificial não agiu completamente sozinha. Um operador humano direcionava os agentes e intervinha nas decisões estratégicas. Isso muda o cenário da cybersecurity. Porque agora, um grupo pequeno pode coordenar operações digitais em uma escala muito maior. A pergunta não é mais se a inteligência artificial pode ser usada em ataques. É, estamos preparados para enfrentar ataques nessa velocidade?
