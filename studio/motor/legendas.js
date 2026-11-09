@@ -9,6 +9,11 @@
   const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^\w-]/g, "");
 
   M.legendas = (palavras, cfg = {}) => {
+    // estilo "cartoon" (modo cartoon narrativo): blocos de até 3 palavras em CAIXA ALTA, contorno grosso,
+    // o bloco inteiro troca de uma vez com um pop curto. Opcional; sem "estilo" nada muda.
+    const CART = cfg.estilo === "cartoon";
+    if (CART) cfg = Object.assign({ maxPalavras: 3, maxChars: 18, tamanho: 76, peso: 800, cor: "#fff", halo: null, pausa: .3,
+      contorno: 14, corContorno: "var(--v-contorno, #2A1B47)" }, cfg);
     const c = Object.assign({ ativo: true, y: 1430, tamanho: 64, peso: 600, fonte: "var(--v-sans)", cor: "var(--v-ink)", corDestaque: "var(--v-ac)",
       destaques: [], ocultar: [], maxPalavras: 4, maxChars: 24, pausa: .38, halo: "var(--v-bg)", larguraMax: 940 }, cfg);
     if (!c.ativo || !palavras || !palavras.length) return { ligar() {} };
@@ -29,14 +34,15 @@
     const linhas = grupos.map((ws, gi) => {
       const el = M.h("div", "capline", cap, null, `font:${c.peso} ${c.tamanho}px/1.1 ${c.fonte};letter-spacing:-.025em;color:${c.cor}`);
       const itens = ws.map(w => {
-        const sp = M.h("span", "", el, w.w);
+        const sp = M.h("span", "", el, CART ? w.w.replace(/["“”…]/g, "").toUpperCase() : w.w);
+        if (CART) sp.style.cssText += `-webkit-text-stroke:${c.contorno}px ${c.corContorno};paint-order:stroke fill;filter:drop-shadow(0 6px 0 ${c.corContorno})`;
         if (dest.has(norm(w.w))) sp.style.color = c.corDestaque;
         if (c.halo) sp.style.textShadow = `0 0 18px ${c.halo}, 0 0 6px ${c.halo}`;
         return { ...w, el: sp, dest: dest.has(norm(w.w)) };
       });
       const prox = grupos[gi + 1] ? grupos[gi + 1][0].s : 1e9, ult = ws[ws.length - 1];
-      const fim = Math.min(prox - .14, ult.e + (prox - ult.e > 1 ? .4 : 1e9));
-      return { el, itens, ini: ws[0].s - .06, fim };
+      const fim = CART ? Math.min(prox, ult.e + .5) - .001 : Math.min(prox - .14, ult.e + (prox - ult.e > 1 ? .4 : 1e9));
+      return { el, itens, ini: ws[0].s - (CART ? .03 : .06), fim };
     });
     linhas.forEach((L, i) => { const A = linhas[i - 1]; L.porta = A && A.fim < L.itens[0].s ? A.fim + .15 : -1; });
     // linha larga demais encolhe para caber
@@ -45,12 +51,18 @@
     let on = true;
     M.fx(t => {
       for (const L of linhas) {
-        const vis = on && t >= L.ini - .05 && t < L.fim + .16;
+        const vis = on && (CART ? t >= L.ini && t < L.fim : t >= L.ini - .05 && t < L.fim + .16);
         if (L._v !== vis) { L.el.style.display = vis ? "block" : "none"; L._v = vis; }
         if (!vis) continue;
         const ex = M.prog(t, L.fim, L.fim + .14, "in");
         L.el.style.opacity = (1 - ex).toFixed(3);
         L.el.style.transform = `translateY(${(-ex * 18).toFixed(1)}px)`;
+        if (CART) {  // bloco inteiro, pop de 0,12 s
+          const p = M.prog(t, L.ini, L.ini + .12, "back");
+          L.el.style.opacity = t < L.fim ? "1" : (1 - ex).toFixed(3);
+          L.el.style.transform = `scale(${(.86 + .14 * p).toFixed(3)})`;
+          continue;
+        }
         for (const w of L.itens) {
           const a = Math.max(w.s - .06, L.porta), p = M.prog(t, a, a + .22, "out");
           w.el.style.opacity = p > 0 ? (.4 + p * .6).toFixed(3) : "0";

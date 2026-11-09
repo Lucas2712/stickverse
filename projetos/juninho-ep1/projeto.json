@@ -1,22 +1,65 @@
 {
   "titulo": "Juninho · Episódio 1",
-  "descricao": "",
-  "tema": "",
-  "duracao": 30,
+  "descricao": "Episódio 1 da série ilustrada do Juninho (modo cartoon narrativo). Narração intacta, sem música, efeitos reais.",
+  "tema": "Juninho tem 30 dias para mudar",
+  "duracao": 94.0,
   "fps": 30,
-  "fontes": ["geist", "geist-mono"],
-  "poster": null,
+  "fontes": [],
+  "poster": 46.6,
   "legendas": {
     "ativo": true,
-    "y": 1430,
-    "tamanho": 64,
-    "peso": 600,
-    "destaques": [],
+    "estilo": "cartoon",
+    "y": 1190,
+    "tamanho": 78,
+    "peso": 800,
+    "fonte": "var(--v-display)",
+    "corDestaque": "var(--must)",
+    "destaques": [
+      "Juninho",
+      "Lara",
+      "30",
+      "2016",
+      "mensagem",
+      "animado",
+      "nada",
+      "decisão",
+      "desculpas",
+      "confiança",
+      "sozinho",
+      "vocês",
+      "cabelo",
+      "guarda-roupa",
+      "votação",
+      "jogo",
+      "foto",
+      "duas",
+      "novidade",
+      "reencontro",
+      "cabelo.",
+      "barriga.",
+      "roupa",
+      "celular.",
+      "normal.",
+      "besteira"
+    ],
     "ocultar": []
   },
   "audio": {
-    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.5 },
+    "volumes": {
+      "narracao": 1.0,
+      "musica": 0,
+      "efeitos": 0.5
+    },
     "musica": null,
-    "ducking": { "ativo": true, "reducao": 0.4 }
-  }
+    "ducking": {
+      "ativo": false
+    }
+  },
+  "fontesProjeto": [
+    {
+      "familia": "Inter",
+      "arquivo": "fontes/inter.woff2",
+      "descritores": "font-weight:100 900;font-display:block"
+    }
+  ]
 }
