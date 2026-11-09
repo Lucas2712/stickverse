@@ -64,8 +64,29 @@ def eventos(html):
     return sorted(out, key=lambda e: e["t"])
 
 
+def ajustar_caminhos():
+    """O índice da biblioteca guarda caminhos absolutos. Se o repositório mudou de pasta (ex.: /home/user → /workspace),
+    troca a raiz antiga pela atual em config.json, library_index.json e library_embeddings.json do Real SFX."""
+    cfgp = os.path.join(RSFX, "config.json")
+    try: libs = json.load(open(cfgp, encoding="utf-8")).get("libraries", [])
+    except Exception: return
+    sons = os.path.join(RAIZ, "studio", "sons")
+    for lib in libs:
+        velho = lib.get("path", "")
+        if velho.endswith("/studio/sons") and not os.path.isdir(velho) and os.path.isdir(sons):
+            raiz_velha = velho[: -len("/studio/sons")]
+            for f in ("config.json", "library_index.json", "library_embeddings.json"):
+                fp = os.path.join(RSFX, f)
+                if os.path.exists(fp):
+                    t = open(fp, encoding="utf-8").read()
+                    open(fp, "w", encoding="utf-8").write(t.replace(raiz_velha + "/", RAIZ + "/"))
+            print(f"  caminhos da biblioteca de sons atualizados: {raiz_velha} → {RAIZ}")
+            return
+
+
 def main():
     if len(sys.argv) < 2: sys.exit(__doc__)
+    ajustar_caminhos()
     proj = os.path.abspath(sys.argv[1]); nome = os.path.basename(proj.rstrip("/"))
     html = os.path.join(proj, "saida", nome + ".html")
     if not os.path.exists(html): sys.exit("rode antes: python3 studio/ferramentas/montar.py " + sys.argv[1])

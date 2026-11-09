@@ -158,7 +158,7 @@
     h("div", "layer", S, null, "background:radial-gradient(circle at 540px 900px,rgba(110,170,255,.45),transparent 55%);mix-blend-mode:screen");
     c.origem(540, 820).s(0, 1.1).s(2.2, 1.0, 2.2, "out").soco(1.24, .05);
   });
-  plano("01-celular", 2.24, 3.08, [["ding", 2.26, 1], ["pop", 2.3, .7]], (S, c) => {
+  plano("01-celular", 2.24, 3.08, [["ding", 2.28, .8]], (S, c) => {
     const tela = celular(S, { fundoTela: "#1d1530" });
     const brilho = h("div", "abs", tela, null, `inset:0;background:linear-gradient(160deg,${CORAL},${AM})`);
     anim(brilho, [[2.24, { o: 0 }], [2.4, { o: 1 }, "out"]]);
@@ -169,7 +169,7 @@
   });
 
   /* ================= 2 · 30 dias ================= */
-  plano("02-calendario", 3.08, 5.96, [["whoosh", 3.1, .7], ["hit", 4.02, 1], ["pop", 4.42, .6]], (S, c) => {
+  plano("02-calendario", 3.08, 5.96, [["whoosh", 3.1, .7], ["hit", 4.16, 1], ["pop", 4.42, .6]], (S, c) => {
     const { cal } = calendario(S);
     // folhas voando
     for (let i = 0; i < 6; i++) { const f = h("div", "abs", S, String(30 - i), `left:220px;top:520px;width:640px;height:760px;background:${CREME};border:8px solid ${AM};border-radius:20px;font:900 300px var(--v-display);color:${AM};display:flex;align-items:center;justify-content:center`);
@@ -208,7 +208,7 @@
   });
 
   /* ================= 5 · mensagem da Lara ================= */
-  plano("05-notificacao", 12.08, 13.82, [["ding", 12.12, 1], ["glitch", 12.62, .35]], (S, c) => {
+  plano("05-notificacao", 12.08, 13.82, [["ding", 12.12, .55], ["glitch", 12.62, .35]], (S, c) => {
     const tela = celular(S, { fundoTela: "#1d1530" });
     h("div", "abs", tela, null, `inset:0;background:linear-gradient(160deg,${PETRO},${AM})`);
     h("div", "abs", tela, "16:42", `left:0;right:0;top:250px;text-align:center;font:800 120px var(--v-display);color:#fff`);
@@ -226,7 +226,7 @@
   });
 
   /* ================= 6 · foto da turma ================= */
-  plano("06-turma", 14.74, 17.88, [["swoosh", 14.76, .5], ["pop", 15.3, .4], ["hit", 16.62, .9]], (S, c) => {
+  plano("06-turma", 14.74, 17.88, [["swoosh", 14.76, .5], ["pop", 15.3, .4], ["hit", 16.76, .9]], (S, c) => {
     h("div", "abs", S, null, `inset:0;background:${PETRO}`);
     full(S, "turma", "top:-230px");
     const sv = svg(S, 1080, 1920, "position:absolute;left:0;top:-230px");
@@ -236,7 +236,7 @@
   });
 
   /* ================= 7 · "você ainda lembra de mim?" ================= */
-  plano("07-chat", 17.88, 21.42, [["ding", 18.56, .8], ["pop", 19.92, .4], ["send", 20.36, .9]], (S, c) => {
+  plano("07-chat", 17.88, 21.42, [["swoosh", 17.9, .5], ["ding", 18.56, .8], ["pop", 19.92, .4], ["send", 20.36, .9]], (S, c) => {
     const tela = celular(S); cabecalho(tela);
     const foto = h("div", "abs", tela, null, `left:22px;top:200px;width:390px;height:520px;border-radius:26px;border:5px solid ${AM};background:url(${MDS.img("lara")}) 50% 30%/cover`);
     anim(foto, [[18.5, { o: 0, s: .7, b: 30 }], [18.62, { o: 1 }, "lin"], [18.9, { s: 1 }, "back"], [19.4, { b: 0 }, "out"]]);
@@ -265,11 +265,11 @@
   });
 
   /* ================= 9 · olhou duas vezes ================= */
-  plano("09-suor", 24.88, 26.48, [["glitch", 24.9, .3], ["pop", 25.2, .5]], (S, c) => {
+  plano("09-suor", 24.88, 26.48, [["glitch", 25.04, .3], ["pop", 25.2, .5]], (S, c) => {
     fundo(S); const j = close(S, "j-suor"); respira(j, .008);
     c.origem(540, 900).s(24.88, 1.15).s(26.48, 1.22, 1.6, "out");
   });
-  plano("09-foto", 26.48, 28.74, [["swoosh", 26.5, .5], ["hit", 27.12, .7], ["hit", 27.56, .9]], (S, c) => {
+  plano("09-foto", 26.48, 28.74, [["swoosh", 26.5, .5], ["hit", 27.12, .7], ["hit", 27.56, .55]], (S, c) => {
     const tela = celular(S);
     h("div", "abs", tela, null, `inset:0;background:url(${MDS.img("lara")}) 50% 30%/cover`);
     placa(c.fixo, "1ª OLHADA", 540, 330, 26.6, { px: 64, cor: MUST, txtCor: AM, ate: 27.55 });
@@ -294,7 +294,7 @@
   });
 
   /* ================= 11 · reencontro ================= */
-  plano("11-calendario", 32.84, 35.08, [["whoosh", 32.86, .5], ["pop", 33.24, .6], ["tick", 34.1, .4], ["tick", 34.4, .4], ["tick", 34.7, .4]], (S, c) => {
+  plano("11-calendario", 32.84, 35.08, [["whoosh", 32.86, .5], ["pop", 33.24, .6], ["swoosh", 33.6, .4], ["tick", 34.1, .4], ["tick", 34.4, .4], ["tick", 34.7, .4]], (S, c) => {
     calendario(S, { marcarAte: 29, tMarca: 33.7, circulo30: 33.22 });
     c.origem(830, 1150).s(32.84, 1.6).s(33.6, 1.0, .35, "inOut");
   });
@@ -366,14 +366,14 @@
     let last = -1; fx(t => { const n = pal.filter(p => t >= p[1] - .02).length; if (n !== last) { b.innerHTML = pal.slice(0, n).map(p => p[0]).join(" ") || "…"; last = n; } });
     c.origem(540, 640).s(44.16, 1.3).s(46.38, 1.38, 2.2, "out");
   });
-  plano("15-carimbo", 46.38, 47.84, [["boom", 46.4, 1], ["glitch", 46.6, .4]], (S, c) => {
+  plano("15-carimbo", 46.38, 47.84, [["boom", 46.54, 1], ["glitch", 46.6, .4]], (S, c) => {
     full(S, "turma", "filter:sepia(.55) saturate(.8)");
     carimbo(c.fixo, "2016", 540, 1000, 46.40, { r: -12, px: 230 });
     c.origem(675, 860).s(46.38, 2.3).s(47.84, 2.42, 1.4, "out").tremor(46.4, 22, .45);
   });
 
   /* ================= 16 · câmera frontal ================= */
-  plano("16-selfie", 47.84, 50.18, [["click", 48.76, .7], ["swell", 49.16, .4]], (S, c) => {
+  plano("16-selfie", 47.84, 50.18, [["swoosh", 47.86, .5], ["click", 48.76, .7], ["swell", 49.16, .4]], (S, c) => {
     h("div", "abs", S, null, `inset:0;background:#141020`);
     const cam = h("div", "abs", S, null, `left:60px;top:300px;width:960px;height:1280px;border-radius:40px;overflow:hidden;border:6px solid #fff`);
     full(cam, "quarto-tarde", "filter:blur(10px) brightness(.8);left:-60px;top:-300px");
@@ -432,7 +432,7 @@
   });
 
   /* ================= 21 · nada mudou ================= */
-  plano("21-igual", 57.38, 61.50, [["swoosh", 57.4, .6], ["pop", 58.74, .8], ["boom", 59.14, 1]], (S, c) => {
+  plano("21-igual", 57.38, 61.50, [["swoosh", 57.4, .6], ["pop", 58.74, .8], ["boom", 59.42, 1]], (S, c) => {
     h("div", "abs", S, null, `inset:0;background:${CREME}`);
     const L = h("div", "abs", S, null, `left:30px;top:360px;width:500px;height:1120px;background:#E9D8B4;border:8px solid ${AM};border-radius:22px;overflow:hidden;transform:rotate(-3deg)`);
     img(L, "j-frente", "left:40px;top:120px;width:420px;filter:sepia(.75) saturate(.8) contrast(1.05)");
@@ -479,7 +479,7 @@
     placa(S, "DIA 1", 300, 470, 67.62, { px: 64, cor: MUST, txtCor: AM, r: -8 });
     c.origem(260, 640).s(67.12, 1.7);
   });
-  plano("24-painel", 68.56, 72.20, [["pop", 69.06, .5], ["pop", 69.18, .5], ["pop", 69.3, .5], ["glitch", 70.48, .6]], (S, c) => {
+  plano("24-painel", 68.56, 72.20, [["whoosh", 68.58, .5], ["pop", 69.06, .5], ["pop", 69.18, .5], ["pop", 69.3, .5], ["glitch", 70.48, .6]], (S, c) => {
     raios(S, AM, "#3A2860", 4);
     const p = h("div", "abs", S, null, `left:90px;top:420px;width:900px;padding:40px 40px 50px;background:${AM};border:10px solid #fff;border-radius:40px;box-shadow:0 18px 0 rgba(0,0,0,.35)`);
     h("div", "", p, `<small style="display:block;font:800 36px var(--v-sans);letter-spacing:.08em;color:${MUST}">FALTAM</small><b style="font:900 140px/1 var(--v-display);color:#fff">30 DIAS</b>`);
@@ -513,7 +513,7 @@
   });
 
   /* ================= 27 · 1ª decisão ================= */
-  plano("27-decisao", 77.48, 79.68, [["boom", 77.7, 1], ["swell", 78.64, .5]], (S, c) => {
+  plano("27-decisao", 77.48, 79.68, [["boom", 77.84, 1], ["swell", 78.64, .5]], (S, c) => {
     raios(S, CORAL, "#FF845F", 8);
     const pl = h("div", "abs", S, `<span style="font-size:80px;color:${MUST}">1ª</span><br>DECISÃO`, `left:540px;top:900px;translate:-50% -50%;padding:40px 70px 50px;background:${AM};border:12px solid #fff;border-radius:36px;font:900 150px/1 var(--v-display);color:#fff;text-align:center;overflow:hidden;box-shadow:0 20px 0 rgba(0,0,0,.3)`);
     bate(pl, 77.70, 2.5, -4); pl.style.rotate = "-4deg";
@@ -549,7 +549,7 @@
   });
 
   /* ================= 30 · daqui a 30 dias ================= */
-  plano("30-painel", 86.48, 87.90, [["hit", 86.94, .8]], (S, c) => {
+  plano("30-painel", 86.48, 87.90, [["hit", 86.64, .8]], (S, c) => {
     raios(S, AM, "#3A2860", 4);
     const p = h("div", "abs", S, `<small style="display:block;font:800 40px var(--v-sans);letter-spacing:.1em;color:${MUST}">FALTAM</small><b style="font:900 160px/1 var(--v-display);color:#fff">30 DIAS</b>`, `left:540px;top:900px;translate:-50% -50%;padding:40px 60px;background:${AM};border:12px solid #fff;border-radius:40px;text-align:center;white-space:nowrap`);
     bate(p, 86.5, 2.2);

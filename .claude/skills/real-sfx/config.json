@@ -2,7 +2,7 @@
   "libraries": [
     {
       "name": "estudio",
-      "path": "/home/user/stickverse/studio/sons",
+      "path": "/workspace/stickverse/studio/sons",
       "tier": "main"
     }
   ],

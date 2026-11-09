@@ -3,7 +3,7 @@
  "libraries": [
   {
    "name": "estudio",
-   "path": "/home/user/stickverse/studio/sons",
+   "path": "/workspace/stickverse/studio/sons",
    "tier": "main",
    "files": 252,
    "catalog": true
@@ -13,7 +13,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-round.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-round.flac",
    "folder": "pop / pro pop in",
    "name": "round",
    "pack_type": "pop",
@@ -64,7 +64,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-blip.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-blip.flac",
    "folder": "pop / ui pop",
    "name": "blip",
    "pack_type": "pop",
@@ -109,7 +109,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-deep.flac",
    "folder": "pop / pro pop in",
    "name": "deep",
    "pack_type": "pop",
@@ -158,7 +158,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_drip-tiny.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_drip-tiny.flac",
    "folder": "pop / drip",
    "name": "tiny",
    "pack_type": "pop",
@@ -216,7 +216,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-fall.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-fall.flac",
    "folder": "pop / ui pop",
    "name": "fall",
    "pack_type": "pop",
@@ -265,7 +265,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pop-3.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pop-3.flac",
    "folder": "pop / pop",
    "name": "3",
    "pack_type": "pop",
@@ -322,7 +322,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-double.flac",
    "folder": "pop / pro pop in",
    "name": "double",
    "pack_type": "pop",
@@ -379,7 +379,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-boop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-boop.flac",
    "folder": "pop / ui pop",
    "name": "boop",
    "pack_type": "pop",
@@ -428,7 +428,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-boop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-boop.flac",
    "folder": "pop / pro pop",
    "name": "boop",
    "pack_type": "pop",
@@ -476,7 +476,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-knock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-knock.flac",
    "folder": "pop / pro pop in",
    "name": "knock",
    "pack_type": "pop",
@@ -525,7 +525,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-tink.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-tink.flac",
    "folder": "pop / pro pop",
    "name": "tink",
    "pack_type": "pop",
@@ -582,7 +582,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pop-2.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pop-2.flac",
    "folder": "pop / pop",
    "name": "2",
    "pack_type": "pop",
@@ -633,7 +633,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_fit-pop-mouth-plop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_fit-pop-mouth-plop.flac",
    "folder": "pop / fit/pop",
    "name": "mouth plop",
    "pack_type": "pop",
@@ -682,7 +682,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-chirp.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-chirp.flac",
    "folder": "pop / pro pop",
    "name": "chirp",
    "pack_type": "pop",
@@ -739,7 +739,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-airy.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-in-airy.flac",
    "folder": "pop / pro pop in",
    "name": "airy",
    "pack_type": "pop",
@@ -788,7 +788,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-bloop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-bloop.flac",
    "folder": "pop / pro pop",
    "name": "bloop",
    "pack_type": "pop",
@@ -845,7 +845,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_drip-drop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_drip-drop.flac",
    "folder": "pop / drip",
    "name": "drop",
    "pack_type": "pop",
@@ -900,7 +900,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-double.flac",
    "folder": "pop / pro pop",
    "name": "double",
    "pack_type": "pop",
@@ -951,7 +951,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_drip-plink.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_drip-plink.flac",
    "folder": "pop / drip",
    "name": "plink",
    "pack_type": "pop",
@@ -1009,7 +1009,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pop-1.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pop-1.flac",
    "folder": "pop / pop",
    "name": "1",
    "pack_type": "pop",
@@ -1060,7 +1060,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pop-4.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pop-4.flac",
    "folder": "pop / pop",
    "name": "4",
    "pack_type": "pop",
@@ -1113,7 +1113,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_fit-pop-lip-pop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_fit-pop-lip-pop.flac",
    "folder": "pop / fit/pop",
    "name": "lip pop",
    "pack_type": "pop",
@@ -1169,7 +1169,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-step.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-step.flac",
    "folder": "pop / ui pop",
    "name": "step",
    "pack_type": "pop",
@@ -1222,7 +1222,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-soft.flac",
    "folder": "pop / ui pop",
    "name": "soft",
    "pack_type": "pop",
@@ -1273,7 +1273,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pro-pop-thup.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pro-pop-thup.flac",
    "folder": "pop / pro pop",
    "name": "thup",
    "pack_type": "pop",
@@ -1321,7 +1321,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_drip-bubble.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_drip-bubble.flac",
    "folder": "pop / drip",
    "name": "bubble",
    "pack_type": "pop",
@@ -1370,7 +1370,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_ui-pop-wide.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_ui-pop-wide.flac",
    "folder": "pop / ui pop",
    "name": "wide",
    "pack_type": "pop",
@@ -1423,7 +1423,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_drip-bloop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_drip-bloop.flac",
    "folder": "pop / drip",
    "name": "bloop",
    "pack_type": "pop",
@@ -1478,7 +1478,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/pop/pop_pop-0.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/pop/pop_pop-0.flac",
    "folder": "pop / pop",
    "name": "0",
    "pack_type": "pop",
@@ -1531,7 +1531,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_tap-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_tap-soft.flac",
    "folder": "foley / tap",
    "name": "soft",
    "pack_type": "foley",
@@ -1585,7 +1585,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_pro-tap-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_pro-tap-glass.flac",
    "folder": "foley / pro tap",
    "name": "glass",
    "pack_type": "foley",
@@ -1633,7 +1633,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_knock-wood.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_knock-wood.flac",
    "folder": "foley / knock",
    "name": "wood",
    "pack_type": "foley",
@@ -1689,7 +1689,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_knock-plastic.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_knock-plastic.flac",
    "folder": "foley / knock",
    "name": "plastic",
    "pack_type": "foley",
@@ -1741,7 +1741,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_pro-tap-finger.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_pro-tap-finger.flac",
    "folder": "foley / pro tap",
    "name": "finger",
    "pack_type": "foley",
@@ -1789,7 +1789,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_tap-finger.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_tap-finger.flac",
    "folder": "foley / tap",
    "name": "finger",
    "pack_type": "foley",
@@ -1837,7 +1837,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_tap-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_tap-glass.flac",
    "folder": "foley / tap",
    "name": "glass",
    "pack_type": "foley",
@@ -1893,7 +1893,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_pro-tap-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_pro-tap-double.flac",
    "folder": "foley / pro tap",
    "name": "double",
    "pack_type": "foley",
@@ -1943,7 +1943,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_knock-snap.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_knock-snap.flac",
    "folder": "foley / knock",
    "name": "snap",
    "pack_type": "foley",
@@ -1995,7 +1995,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_fit-land-light-finger-wood.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_fit-land-light-finger-wood.flac",
    "folder": "foley / fit/land.light",
    "name": "finger wood",
    "pack_type": "foley",
@@ -2042,7 +2042,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_pro-tap-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_pro-tap-soft.flac",
    "folder": "foley / pro tap",
    "name": "soft",
    "pack_type": "foley",
@@ -2090,7 +2090,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_tap-table.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_tap-table.flac",
    "folder": "foley / tap",
    "name": "table",
    "pack_type": "foley",
@@ -2146,7 +2146,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_fit-land-light-fingertip-book.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_fit-land-light-fingertip-book.flac",
    "folder": "foley / fit/land.light",
    "name": "fingertip book",
    "pack_type": "foley",
@@ -2202,7 +2202,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_pro-tap-knock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_pro-tap-knock.flac",
    "folder": "foley / pro tap",
    "name": "knock",
    "pack_type": "foley",
@@ -2250,7 +2250,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_knock-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_knock-double.flac",
    "folder": "foley / knock",
    "name": "double",
    "pack_type": "foley",
@@ -2301,7 +2301,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_fit-land-light-finger-phone.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_fit-land-light-finger-phone.flac",
    "folder": "foley / fit/land.light",
    "name": "finger phone",
    "pack_type": "foley",
@@ -2349,7 +2349,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_tap-knuckle.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_tap-knuckle.flac",
    "folder": "foley / tap",
    "name": "knuckle",
    "pack_type": "foley",
@@ -2405,7 +2405,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/foley/foley_knock-desk.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/foley/foley_knock-desk.flac",
    "folder": "foley / knock",
    "name": "desk",
    "pack_type": "foley",
@@ -2453,7 +2453,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-laptop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-laptop.flac",
    "folder": "typing / typing key",
    "name": "laptop",
    "pack_type": "typing",
@@ -2500,7 +2500,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-crackle.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-crackle.flac",
    "folder": "typing / pro typing key",
    "name": "crackle",
    "pack_type": "typing",
@@ -2552,7 +2552,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-light.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-light.flac",
    "folder": "typing / typing key",
    "name": "light",
    "pack_type": "typing",
@@ -2595,7 +2595,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-crisp.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-crisp.flac",
    "folder": "typing / typing key",
    "name": "crisp",
    "pack_type": "typing",
@@ -2644,7 +2644,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_fit-key-thock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_fit-key-thock.flac",
    "folder": "typing / fit/key",
    "name": "thock",
    "pack_type": "typing",
@@ -2699,7 +2699,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-standard.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-standard.flac",
    "folder": "typing / pro typing run",
    "name": "standard",
    "pack_type": "typing",
@@ -2754,7 +2754,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-clicky.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-clicky.flac",
    "folder": "typing / typing key",
    "name": "clicky",
    "pack_type": "typing",
@@ -2809,7 +2809,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-glass.flac",
    "folder": "typing / pro typing run",
    "name": "glass",
    "pack_type": "typing",
@@ -2865,7 +2865,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_fit-key-space-thock-space.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_fit-key-space-thock-space.flac",
    "folder": "typing / fit/key.space",
    "name": "thock space",
    "pack_type": "typing",
@@ -2917,7 +2917,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_fit-key-lubed.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_fit-key-lubed.flac",
    "folder": "typing / fit/key",
    "name": "lubed",
    "pack_type": "typing",
@@ -2971,7 +2971,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-deep.flac",
    "folder": "typing / typing key",
    "name": "deep",
    "pack_type": "typing",
@@ -3026,7 +3026,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-glass.flac",
    "folder": "typing / pro typing key",
    "name": "glass",
    "pack_type": "typing",
@@ -3083,7 +3083,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-blip.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-blip.flac",
    "folder": "typing / pro typing run",
    "name": "blip",
    "pack_type": "typing",
@@ -3138,7 +3138,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-tick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-tick.flac",
    "folder": "typing / pro typing key",
    "name": "tick",
    "pack_type": "typing",
@@ -3190,7 +3190,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-double.flac",
    "folder": "typing / pro typing key",
    "name": "double",
    "pack_type": "typing",
@@ -3246,7 +3246,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-double.flac",
    "folder": "typing / pro typing run",
    "name": "double",
    "pack_type": "typing",
@@ -3301,7 +3301,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-tick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-tick.flac",
    "folder": "typing / pro typing run",
    "name": "tick",
    "pack_type": "typing",
@@ -3356,7 +3356,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_typing-key-thock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_typing-key-thock.flac",
    "folder": "typing / typing key",
    "name": "thock",
    "pack_type": "typing",
@@ -3403,7 +3403,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_fit-key-medium.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_fit-key-medium.flac",
    "folder": "typing / fit/key",
    "name": "medium",
    "pack_type": "typing",
@@ -3452,7 +3452,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-run-soft.flac",
    "folder": "typing / pro typing run",
    "name": "soft",
    "pack_type": "typing",
@@ -3508,7 +3508,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-soft.flac",
    "folder": "typing / pro typing key",
    "name": "soft",
    "pack_type": "typing",
@@ -3558,7 +3558,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-blip.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/typing/typing_pro-typing-key-blip.flac",
    "folder": "typing / pro typing key",
    "name": "blip",
    "pack_type": "typing",
@@ -3606,7 +3606,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-scramble.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-scramble.flac",
    "folder": "glitch / glitch",
    "name": "scramble",
    "pack_type": "glitch",
@@ -3650,7 +3650,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-standard.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-standard.flac",
    "folder": "glitch / pro glitch",
    "name": "standard",
    "pack_type": "glitch",
@@ -3707,7 +3707,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-crunchy.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-crunchy.flac",
    "folder": "glitch / pro glitch",
    "name": "crunchy",
    "pack_type": "glitch",
@@ -3763,7 +3763,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-dropout.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-dropout.flac",
    "folder": "glitch / glitch",
    "name": "dropout",
    "pack_type": "glitch",
@@ -3807,7 +3807,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-mid.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-mid.flac",
    "folder": "glitch / glitch",
    "name": "mid",
    "pack_type": "glitch",
@@ -3855,7 +3855,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-fastroll.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-fastroll.flac",
    "folder": "glitch / pro glitch",
    "name": "fastroll",
    "pack_type": "glitch",
@@ -3911,7 +3911,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-stutter.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-stutter.flac",
    "folder": "glitch / glitch",
    "name": "stutter",
    "pack_type": "glitch",
@@ -3967,7 +3967,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-crush.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-crush.flac",
    "folder": "glitch / glitch",
    "name": "crush",
    "pack_type": "glitch",
@@ -4023,7 +4023,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-framelock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-framelock.flac",
    "folder": "glitch / pro glitch",
    "name": "framelock",
    "pack_type": "glitch",
@@ -4079,7 +4079,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-data.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-data.flac",
    "folder": "glitch / glitch",
    "name": "data",
    "pack_type": "glitch",
@@ -4128,7 +4128,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-sparse.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-sparse.flac",
    "folder": "glitch / pro glitch",
    "name": "sparse",
    "pack_type": "glitch",
@@ -4184,7 +4184,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-hit.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-hit.flac",
    "folder": "glitch / glitch",
    "name": "hit",
    "pack_type": "glitch",
@@ -4231,7 +4231,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-burst.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-burst.flac",
    "folder": "glitch / glitch",
    "name": "burst",
    "pack_type": "glitch",
@@ -4274,7 +4274,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-data.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_pro-glitch-data.flac",
    "folder": "glitch / pro glitch",
    "name": "data",
    "pack_type": "glitch",
@@ -4330,7 +4330,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/glitch/glitch_glitch-chirp.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/glitch/glitch_glitch-chirp.flac",
    "folder": "glitch / glitch",
    "name": "chirp",
    "pack_type": "glitch",
@@ -4381,7 +4381,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-shepard-fall.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-shepard-fall.flac",
    "folder": "impact / downlifter",
    "name": "shepard fall",
    "pack_type": "impact",
@@ -4435,7 +4435,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-sub-sink.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-sub-sink.flac",
    "folder": "impact / downlifter",
    "name": "sub sink",
    "pack_type": "impact",
@@ -4490,7 +4490,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-swell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-swell.flac",
    "folder": "impact / impact",
    "name": "swell",
    "pack_type": "impact",
@@ -4545,7 +4545,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-deep.flac",
    "folder": "impact / impact",
    "name": "deep",
    "pack_type": "impact",
@@ -4600,7 +4600,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-impact-swell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-impact-swell.flac",
    "folder": "impact / pro impact",
    "name": "swell",
    "pack_type": "impact",
@@ -4654,7 +4654,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-quick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-quick.flac",
    "folder": "impact / pro sub drop",
    "name": "quick",
    "pack_type": "impact",
@@ -4702,7 +4702,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-synth-fall.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-synth-fall.flac",
    "folder": "impact / downlifter",
    "name": "synth fall",
    "pack_type": "impact",
@@ -4757,7 +4757,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-tape.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-tape.flac",
    "folder": "impact / downlifter",
    "name": "tape",
    "pack_type": "impact",
@@ -4811,7 +4811,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_sub-drop-808.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_sub-drop-808.flac",
    "folder": "impact / sub drop",
    "name": "808",
    "pack_type": "impact",
@@ -4866,7 +4866,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-bright.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-bright.flac",
    "folder": "impact / pro sub drop",
    "name": "bright",
    "pack_type": "impact",
@@ -4912,7 +4912,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-impact-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-impact-air.flac",
    "folder": "impact / pro impact",
    "name": "air",
    "pack_type": "impact",
@@ -4967,7 +4967,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-ref.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-ref.flac",
    "folder": "impact / pro sub drop",
    "name": "ref",
    "pack_type": "impact",
@@ -5021,7 +5021,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-low.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-low.flac",
    "folder": "impact / pro sub drop",
    "name": "low",
    "pack_type": "impact",
@@ -5069,7 +5069,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_sub-drop-long.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_sub-drop-long.flac",
    "folder": "impact / sub drop",
    "name": "long",
    "pack_type": "impact",
@@ -5124,7 +5124,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-flange-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-flange-air.flac",
    "folder": "impact / downlifter",
    "name": "flange air",
    "pack_type": "impact",
@@ -5178,7 +5178,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_cut-hit-punch.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_cut-hit-punch.flac",
    "folder": "impact / cut hit",
    "name": "punch",
    "pack_type": "impact",
@@ -5225,7 +5225,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_sub-drop-punch.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_sub-drop-punch.flac",
    "folder": "impact / sub drop",
    "name": "punch",
    "pack_type": "impact",
@@ -5279,7 +5279,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-classic.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-classic.flac",
    "folder": "impact / impact",
    "name": "classic",
    "pack_type": "impact",
@@ -5334,7 +5334,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-blast.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-blast.flac",
    "folder": "impact / impact",
    "name": "blast",
    "pack_type": "impact",
@@ -5389,7 +5389,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_sub-drop-pro.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_sub-drop-pro.flac",
    "folder": "impact / sub drop",
    "name": "pro",
    "pack_type": "impact",
@@ -5444,7 +5444,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-metal.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-metal.flac",
    "folder": "impact / impact",
    "name": "metal",
    "pack_type": "impact",
@@ -5499,7 +5499,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_fit-hit-bamboo-tok.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_fit-hit-bamboo-tok.flac",
    "folder": "impact / fit/hit",
    "name": "bamboo tok",
    "pack_type": "impact",
@@ -5546,7 +5546,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_cut-hit-kick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_cut-hit-kick.flac",
    "folder": "impact / cut hit",
    "name": "kick",
    "pack_type": "impact",
@@ -5594,7 +5594,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-impact-short.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-impact-short.flac",
    "folder": "impact / pro impact",
    "name": "short",
    "pack_type": "impact",
@@ -5641,7 +5641,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-impact-rumble.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-impact-rumble.flac",
    "folder": "impact / pro impact",
    "name": "rumble",
    "pack_type": "impact",
@@ -5695,7 +5695,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_impact-punch.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_impact-punch.flac",
    "folder": "impact / impact",
    "name": "punch",
    "pack_type": "impact",
@@ -5750,7 +5750,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_sub-drop-gritty.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_sub-drop-gritty.flac",
    "folder": "impact / sub drop",
    "name": "gritty",
    "pack_type": "impact",
@@ -5804,7 +5804,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-impact-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-impact-deep.flac",
    "folder": "impact / pro impact",
    "name": "deep",
    "pack_type": "impact",
@@ -5859,7 +5859,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_downlifter-air-fall.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_downlifter-air-fall.flac",
    "folder": "impact / downlifter",
    "name": "air fall",
    "pack_type": "impact",
@@ -5913,7 +5913,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_cut-hit-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_cut-hit-air.flac",
    "folder": "impact / cut hit",
    "name": "air",
    "pack_type": "impact",
@@ -5966,7 +5966,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_cut-hit-rumble.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_cut-hit-rumble.flac",
    "folder": "impact / cut hit",
    "name": "rumble",
    "pack_type": "impact",
@@ -6020,7 +6020,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_pro-sub-drop-soft.flac",
    "folder": "impact / pro sub drop",
    "name": "soft",
    "pack_type": "impact",
@@ -6073,7 +6073,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/impact/impact_cut-hit-sub.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/impact/impact_cut-hit-sub.flac",
    "folder": "impact / cut hit",
    "name": "sub",
    "pack_type": "impact",
@@ -6127,7 +6127,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_toggle-on.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_toggle-on.flac",
    "folder": "other / toggle",
    "name": "on",
    "pack_type": "other",
@@ -6180,7 +6180,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_shutter-dslr.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_shutter-dslr.flac",
    "folder": "other / shutter",
    "name": "dslr",
    "pack_type": "other",
@@ -6235,7 +6235,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_fit-snap-switch-flip.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_fit-snap-switch-flip.flac",
    "folder": "other / fit/snap",
    "name": "switch flip",
    "pack_type": "other",
@@ -6283,7 +6283,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_toggle-latch.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_toggle-latch.flac",
    "folder": "other / toggle",
    "name": "latch",
    "pack_type": "other",
@@ -6336,7 +6336,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_shutter-mirror.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_shutter-mirror.flac",
    "folder": "other / shutter",
    "name": "mirror",
    "pack_type": "other",
@@ -6391,7 +6391,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_shutter-quick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_shutter-quick.flac",
    "folder": "other / shutter",
    "name": "quick",
    "pack_type": "other",
@@ -6440,7 +6440,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_shutter-snap.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_shutter-snap.flac",
    "folder": "other / shutter",
    "name": "snap",
    "pack_type": "other",
@@ -6490,7 +6490,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_shutter-film.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_shutter-film.flac",
    "folder": "other / shutter",
    "name": "film",
    "pack_type": "other",
@@ -6539,7 +6539,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_toggle-micro.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_toggle-micro.flac",
    "folder": "other / toggle",
    "name": "micro",
    "pack_type": "other",
@@ -6590,7 +6590,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_toggle-off.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_toggle-off.flac",
    "folder": "other / toggle",
    "name": "off",
    "pack_type": "other",
@@ -6635,7 +6635,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/other/other_toggle-rocker.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/other/other_toggle-rocker.flac",
    "folder": "other / toggle",
    "name": "rocker",
    "pack_type": "other",
@@ -6688,7 +6688,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_reverse-swell-dark.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_reverse-swell-dark.flac",
    "folder": "riser / reverse swell",
    "name": "dark",
    "pack_type": "riser",
@@ -6741,7 +6741,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-swell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-swell.flac",
    "folder": "riser / riser",
    "name": "swell",
    "pack_type": "riser",
@@ -6795,7 +6795,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_pro-riser-nblips.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_pro-riser-nblips.flac",
    "folder": "riser / pro riser",
    "name": "nblips",
    "pack_type": "riser",
@@ -6848,7 +6848,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_pro-riser-chop.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_pro-riser-chop.flac",
    "folder": "riser / pro riser",
    "name": "chop",
    "pack_type": "riser",
@@ -6896,7 +6896,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-dark.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-dark.flac",
    "folder": "riser / riser",
    "name": "dark",
    "pack_type": "riser",
@@ -6949,7 +6949,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-tension.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-tension.flac",
    "folder": "riser / riser",
    "name": "tension",
    "pack_type": "riser",
@@ -7003,7 +7003,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-shepard.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-shepard.flac",
    "folder": "riser / riser",
    "name": "shepard",
    "pack_type": "riser",
@@ -7056,7 +7056,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_reverse-swell-cymbal.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_reverse-swell-cymbal.flac",
    "folder": "riser / reverse swell",
    "name": "cymbal",
    "pack_type": "riser",
@@ -7111,7 +7111,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_pro-riser-roll.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_pro-riser-roll.flac",
    "folder": "riser / pro riser",
    "name": "roll",
    "pack_type": "riser",
@@ -7165,7 +7165,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_pro-riser-air-gate.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_pro-riser-air-gate.flac",
    "folder": "riser / pro riser",
    "name": "air gate",
    "pack_type": "riser",
@@ -7219,7 +7219,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_pro-riser-nblips-hi.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_pro-riser-nblips-hi.flac",
    "folder": "riser / pro riser",
    "name": "nblips hi",
    "pack_type": "riser",
@@ -7272,7 +7272,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-rush.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-rush.flac",
    "folder": "riser / riser",
    "name": "rush",
    "pack_type": "riser",
@@ -7326,7 +7326,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-air.flac",
    "folder": "riser / riser",
    "name": "air",
    "pack_type": "riser",
@@ -7380,7 +7380,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-snatch.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-snatch.flac",
    "folder": "riser / riser",
    "name": "snatch",
    "pack_type": "riser",
@@ -7434,7 +7434,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_reverse-swell-short.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_reverse-swell-short.flac",
    "folder": "riser / reverse swell",
    "name": "short",
    "pack_type": "riser",
@@ -7486,7 +7486,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_reverse-swell-breath.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_reverse-swell-breath.flac",
    "folder": "riser / reverse swell",
    "name": "breath",
    "pack_type": "riser",
@@ -7536,7 +7536,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_reverse-swell-ring.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_reverse-swell-ring.flac",
    "folder": "riser / reverse swell",
    "name": "ring",
    "pack_type": "riser",
@@ -7590,7 +7590,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/riser/riser_riser-build.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/riser/riser_riser-build.flac",
    "folder": "riser / riser",
    "name": "build",
    "pack_type": "riser",
@@ -7644,7 +7644,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-zing.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-zing.flac",
    "folder": "whoosh / swish",
    "name": "zing",
    "pack_type": "whoosh",
@@ -7697,7 +7697,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-reverse.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-reverse.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "reverse",
    "pack_type": "whoosh",
@@ -7750,7 +7750,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-crisp.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-crisp.flac",
    "folder": "whoosh / whoosh fast",
    "name": "crisp",
    "pack_type": "whoosh",
@@ -7799,7 +7799,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-bright.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-bright.flac",
    "folder": "whoosh / swish",
    "name": "bright",
    "pack_type": "whoosh",
@@ -7854,7 +7854,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-swell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-swell.flac",
    "folder": "whoosh / whoosh big",
    "name": "swell",
    "pack_type": "whoosh",
@@ -7907,7 +7907,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-arc.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-arc.flac",
    "folder": "whoosh / pro zip",
    "name": "arc",
    "pack_type": "whoosh",
@@ -7957,7 +7957,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-paper.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-paper.flac",
    "folder": "whoosh / swipe",
    "name": "paper",
    "pack_type": "whoosh",
@@ -8010,7 +8010,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-tight.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-tight.flac",
    "folder": "whoosh / whoosh fast",
    "name": "tight",
    "pack_type": "whoosh",
@@ -8059,7 +8059,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-cloth.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-cloth.flac",
    "folder": "whoosh / swipe",
    "name": "cloth",
    "pack_type": "whoosh",
@@ -8112,7 +8112,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-sleeve.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-sleeve.flac",
    "folder": "whoosh / whoosh fast",
    "name": "sleeve",
    "pack_type": "whoosh",
@@ -8165,7 +8165,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-jet.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-jet.flac",
    "folder": "whoosh / whoosh big",
    "name": "jet",
    "pack_type": "whoosh",
@@ -8218,7 +8218,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump-airy.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump-airy.flac",
    "folder": "whoosh / whoosh big",
    "name": "thump airy",
    "pack_type": "whoosh",
@@ -8271,7 +8271,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-whistle.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-whistle.flac",
    "folder": "whoosh / whoosh fast",
    "name": "whistle",
    "pack_type": "whoosh",
@@ -8325,7 +8325,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-velvet.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-velvet.flac",
    "folder": "whoosh / swipe",
    "name": "velvet",
    "pack_type": "whoosh",
@@ -8378,7 +8378,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump-deep.flac",
    "folder": "whoosh / whoosh big",
    "name": "thump deep",
    "pack_type": "whoosh",
@@ -8432,7 +8432,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-long.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-long.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "long",
    "pack_type": "whoosh",
@@ -8486,7 +8486,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-cane.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-cane.flac",
    "folder": "whoosh / swish",
    "name": "cane",
    "pack_type": "whoosh",
@@ -8539,7 +8539,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-reverse.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-reverse.flac",
    "folder": "whoosh / whoosh big",
    "name": "reverse",
    "pack_type": "whoosh",
@@ -8593,7 +8593,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_fit-whoosh-short-bamboo-swish.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_fit-whoosh-short-bamboo-swish.flac",
    "folder": "whoosh / fit/whoosh.short",
    "name": "bamboo swish",
    "pack_type": "whoosh",
@@ -8644,7 +8644,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-gust.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-gust.flac",
    "folder": "whoosh / whoosh big",
    "name": "gust",
    "pack_type": "whoosh",
@@ -8697,7 +8697,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-thump.flac",
    "folder": "whoosh / whoosh big",
    "name": "thump",
    "pack_type": "whoosh",
@@ -8751,7 +8751,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-soft.flac",
    "folder": "whoosh / swish",
    "name": "soft",
    "pack_type": "whoosh",
@@ -8804,7 +8804,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-windy.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-windy.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "windy",
    "pack_type": "whoosh",
@@ -8856,7 +8856,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-deep.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-deep.flac",
    "folder": "whoosh / whoosh big",
    "name": "deep",
    "pack_type": "whoosh",
@@ -8910,7 +8910,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-cape.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-big-cape.flac",
    "folder": "whoosh / whoosh big",
    "name": "cape",
    "pack_type": "whoosh",
@@ -8964,7 +8964,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-glide.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-glide.flac",
    "folder": "whoosh / swipe",
    "name": "glide",
    "pack_type": "whoosh",
@@ -9017,7 +9017,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-up.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-up.flac",
    "folder": "whoosh / pro zip",
    "name": "up",
    "pack_type": "whoosh",
@@ -9071,7 +9071,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-down-warm.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-down-warm.flac",
    "folder": "whoosh / pro zip",
    "name": "down warm",
    "pack_type": "whoosh",
@@ -9116,7 +9116,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-reverse.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-reverse.flac",
    "folder": "whoosh / whoosh fast",
    "name": "reverse",
    "pack_type": "whoosh",
@@ -9170,7 +9170,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-tonal.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-tonal.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "tonal",
    "pack_type": "whoosh",
@@ -9218,7 +9218,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-whip.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-whip.flac",
    "folder": "whoosh / whoosh fast",
    "name": "whip",
    "pack_type": "whoosh",
@@ -9273,7 +9273,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-down.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-down.flac",
    "folder": "whoosh / pro zip",
    "name": "down",
    "pack_type": "whoosh",
@@ -9324,7 +9324,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-up-hi.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-zip-up-hi.flac",
    "folder": "whoosh / pro zip",
    "name": "up hi",
    "pack_type": "whoosh",
@@ -9376,7 +9376,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-flick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-flick.flac",
    "folder": "whoosh / swish",
    "name": "flick",
    "pack_type": "whoosh",
@@ -9431,7 +9431,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-heavy.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_whoosh-fast-heavy.flac",
    "folder": "whoosh / whoosh fast",
    "name": "heavy",
    "pack_type": "whoosh",
@@ -9484,7 +9484,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-flick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swipe-flick.flac",
    "folder": "whoosh / swipe",
    "name": "flick",
    "pack_type": "whoosh",
@@ -9537,7 +9537,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-stick.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-stick.flac",
    "folder": "whoosh / swish",
    "name": "stick",
    "pack_type": "whoosh",
@@ -9590,7 +9590,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_swish-blade.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_swish-blade.flac",
    "folder": "whoosh / swish",
    "name": "blade",
    "pack_type": "whoosh",
@@ -9644,7 +9644,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-swell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-swell.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "swell",
    "pack_type": "whoosh",
@@ -9692,7 +9692,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-gritty.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/whoosh/whoosh_pro-whoosh-big-gritty.flac",
    "folder": "whoosh / pro whoosh big",
    "name": "gritty",
    "pack_type": "whoosh",
@@ -9746,7 +9746,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_hover-tick-detent.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_hover-tick-detent.flac",
    "folder": "click / hover tick",
    "name": "detent",
    "pack_type": "click",
@@ -9790,7 +9790,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_click-tink.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_click-tink.flac",
    "folder": "click / click",
    "name": "tink",
    "pack_type": "click",
@@ -9838,7 +9838,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_hover-tick-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_hover-tick-air.flac",
    "folder": "click / hover tick",
    "name": "air",
    "pack_type": "click",
@@ -9882,7 +9882,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-click-snap.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-click-snap.flac",
    "folder": "click / pro click",
    "name": "snap",
    "pack_type": "click",
@@ -9930,7 +9930,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_click-double.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_click-double.flac",
    "folder": "click / click",
    "name": "double",
    "pack_type": "click",
@@ -9978,7 +9978,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_fit-click-floss-lid.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_fit-click-floss-lid.flac",
    "folder": "click / fit/click",
    "name": "floss lid",
    "pack_type": "click",
@@ -10025,7 +10025,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_fit-tick-domino.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_fit-tick-domino.flac",
    "folder": "click / fit/tick",
    "name": "domino",
    "pack_type": "click",
@@ -10079,7 +10079,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_click-snap.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_click-snap.flac",
    "folder": "click / click",
    "name": "snap",
    "pack_type": "click",
@@ -10123,7 +10123,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-hover-tick-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-hover-tick-glass.flac",
    "folder": "click / pro hover tick",
    "name": "glass",
    "pack_type": "click",
@@ -10169,7 +10169,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_click-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_click-soft.flac",
    "folder": "click / click",
    "name": "soft",
    "pack_type": "click",
@@ -10217,7 +10217,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_notify-mid-tine.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_notify-mid-tine.flac",
    "folder": "click / notify",
    "name": "mid tine",
    "pack_type": "click",
@@ -10268,7 +10268,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-hover-tick-ping.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-hover-tick-ping.flac",
    "folder": "click / pro hover tick",
    "name": "ping",
    "pack_type": "click",
@@ -10312,7 +10312,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_notify-mid-wood.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_notify-mid-wood.flac",
    "folder": "click / notify",
    "name": "mid wood",
    "pack_type": "click",
@@ -10363,7 +10363,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-click-mouse.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-click-mouse.flac",
    "folder": "click / pro click",
    "name": "mouse",
    "pack_type": "click",
@@ -10415,7 +10415,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-click-tink.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-click-tink.flac",
    "folder": "click / pro click",
    "name": "tink",
    "pack_type": "click",
@@ -10463,7 +10463,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_hover-tick-ping.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_hover-tick-ping.flac",
    "folder": "click / hover tick",
    "name": "ping",
    "pack_type": "click",
@@ -10511,7 +10511,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_hover-tick-high.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_hover-tick-high.flac",
    "folder": "click / hover tick",
    "name": "high",
    "pack_type": "click",
@@ -10559,7 +10559,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-hover-tick-detent.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-hover-tick-detent.flac",
    "folder": "click / pro hover tick",
    "name": "detent",
    "pack_type": "click",
@@ -10607,7 +10607,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-click-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-click-soft.flac",
    "folder": "click / pro click",
    "name": "soft",
    "pack_type": "click",
@@ -10659,7 +10659,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_click-thock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_click-thock.flac",
    "folder": "click / click",
    "name": "thock",
    "pack_type": "click",
@@ -10706,7 +10706,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-hover-tick-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-hover-tick-soft.flac",
    "folder": "click / pro hover tick",
    "name": "soft",
    "pack_type": "click",
@@ -10750,7 +10750,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-hover-tick-air.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-hover-tick-air.flac",
    "folder": "click / pro hover tick",
    "name": "air",
    "pack_type": "click",
@@ -10795,7 +10795,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_pro-click-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_pro-click-glass.flac",
    "folder": "click / pro click",
    "name": "glass",
    "pack_type": "click",
@@ -10844,7 +10844,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/click/click_hover-tick-mid.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/click/click_hover-tick-mid.flac",
    "folder": "click / hover tick",
    "name": "mid",
    "pack_type": "click",
@@ -10900,7 +10900,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_logo-sting-soft-bloom.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_logo-sting-soft-bloom.flac",
    "folder": "chime / logo sting",
    "name": "soft bloom",
    "pack_type": "chime",
@@ -10954,7 +10954,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m5.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m5.flac",
    "folder": "chime / notify",
    "name": "m5",
    "pack_type": "chime",
@@ -11010,7 +11010,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m4.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m4.flac",
    "folder": "chime / pro shimmer",
    "name": "m4",
    "pack_type": "chime",
@@ -11065,7 +11065,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-swell-sting.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-swell-sting.flac",
    "folder": "chime / pro logo sting",
    "name": "swell sting",
    "pack_type": "chime",
@@ -11114,7 +11114,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-marimba.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-marimba.flac",
    "folder": "chime / mallet",
    "name": "marimba",
    "pack_type": "chime",
@@ -11170,7 +11170,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-1822.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-1822.flac",
    "folder": "chime / pro notify",
    "name": "ding 1822",
    "pack_type": "chime",
@@ -11222,7 +11222,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m4.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m4.flac",
    "folder": "chime / shimmer",
    "name": "m4",
    "pack_type": "chime",
@@ -11278,7 +11278,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m2.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m2.flac",
    "folder": "chime / pro shimmer",
    "name": "m2",
    "pack_type": "chime",
@@ -11333,7 +11333,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-zap-bloom.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-zap-bloom.flac",
    "folder": "chime / pro logo sting",
    "name": "zap bloom",
    "pack_type": "chime",
@@ -11388,7 +11388,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m1.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m1.flac",
    "folder": "chime / pro shimmer",
    "name": "m1",
    "pack_type": "chime",
@@ -11443,7 +11443,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m5.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m5.flac",
    "folder": "chime / shimmer",
    "name": "m5",
    "pack_type": "chime",
@@ -11499,7 +11499,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m3.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m3.flac",
    "folder": "chime / pro shimmer",
    "name": "m3",
    "pack_type": "chime",
@@ -11551,7 +11551,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2167.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2167.flac",
    "folder": "chime / pro notify",
    "name": "ding 2167",
    "pack_type": "chime",
@@ -11607,7 +11607,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_logo-sting-reverse-bloom.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_logo-sting-reverse-bloom.flac",
    "folder": "chime / logo sting",
    "name": "reverse bloom",
    "pack_type": "chime",
@@ -11662,7 +11662,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-flourish.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-flourish.flac",
    "folder": "chime / mallet",
    "name": "flourish",
    "pack_type": "chime",
@@ -11717,7 +11717,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba-ring.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba-ring.flac",
    "folder": "chime / pluck",
    "name": "kalimba ring",
    "pack_type": "chime",
@@ -11772,7 +11772,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m3.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m3.flac",
    "folder": "chime / notify",
    "name": "m3",
    "pack_type": "chime",
@@ -11828,7 +11828,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m0.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-shimmer-m0.flac",
    "folder": "chime / pro shimmer",
    "name": "m0",
    "pack_type": "chime",
@@ -11884,7 +11884,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m2.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m2.flac",
    "folder": "chime / notify",
    "name": "m2",
    "pack_type": "chime",
@@ -11940,7 +11940,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_logo-sting-whoosh-glass.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_logo-sting-whoosh-glass.flac",
    "folder": "chime / logo sting",
    "name": "whoosh glass",
    "pack_type": "chime",
@@ -11996,7 +11996,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m0.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m0.flac",
    "folder": "chime / shimmer",
    "name": "m0",
    "pack_type": "chime",
@@ -12052,7 +12052,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba-soft.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba-soft.flac",
    "folder": "chime / pluck",
    "name": "kalimba soft",
    "pack_type": "chime",
@@ -12108,7 +12108,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_fit-bell-small-bell.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_fit-bell-small-bell.flac",
    "folder": "chime / fit/bell",
    "name": "small bell",
    "pack_type": "chime",
@@ -12163,7 +12163,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m1.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m1.flac",
    "folder": "chime / shimmer",
    "name": "m1",
    "pack_type": "chime",
@@ -12219,7 +12219,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2045.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2045.flac",
    "folder": "chime / pro notify",
    "name": "ding 2045",
    "pack_type": "chime",
@@ -12275,7 +12275,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m1.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m1.flac",
    "folder": "chime / notify",
    "name": "m1",
    "pack_type": "chime",
@@ -12331,7 +12331,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-glock.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-glock.flac",
    "folder": "chime / mallet",
    "name": "glock",
    "pack_type": "chime",
@@ -12386,7 +12386,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-1930.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-1930.flac",
    "folder": "chime / pro notify",
    "name": "ding 1930",
    "pack_type": "chime",
@@ -12430,7 +12430,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-sweep-hit.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-sweep-hit.flac",
    "folder": "chime / pro logo sting",
    "name": "sweep hit",
    "pack_type": "chime",
@@ -12478,7 +12478,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-chirp-hum.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-chirp-hum.flac",
    "folder": "chime / pro logo sting",
    "name": "chirp hum",
    "pack_type": "chime",
@@ -12532,7 +12532,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_logo-sting-zip-ping.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_logo-sting-zip-ping.flac",
    "folder": "chime / logo sting",
    "name": "zip ping",
    "pack_type": "chime",
@@ -12587,7 +12587,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-taps-tone.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-logo-sting-taps-tone.flac",
    "folder": "chime / pro logo sting",
    "name": "taps tone",
    "pack_type": "chime",
@@ -12642,7 +12642,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-up4.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-up4.flac",
    "folder": "chime / mallet",
    "name": "up4",
    "pack_type": "chime",
@@ -12693,7 +12693,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m3.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m3.flac",
    "folder": "chime / shimmer",
    "name": "m3",
    "pack_type": "chime",
@@ -12749,7 +12749,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_shimmer-m2.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_shimmer-m2.flac",
    "folder": "chime / shimmer",
    "name": "m2",
    "pack_type": "chime",
@@ -12805,7 +12805,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_logo-sting-spark.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_logo-sting-spark.flac",
    "folder": "chime / logo sting",
    "name": "spark",
    "pack_type": "chime",
@@ -12860,7 +12860,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m4.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m4.flac",
    "folder": "chime / notify",
    "name": "m4",
    "pack_type": "chime",
@@ -12908,7 +12908,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-pluck.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-pluck.flac",
    "folder": "chime / mallet",
    "name": "pluck",
    "pack_type": "chime",
@@ -12957,7 +12957,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2296.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pro-notify-ding-2296.flac",
    "folder": "chime / pro notify",
    "name": "ding 2296",
    "pack_type": "chime",
@@ -13007,7 +13007,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_notify-m0.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_notify-m0.flac",
    "folder": "chime / notify",
    "name": "m0",
    "pack_type": "chime",
@@ -13063,7 +13063,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_pluck-kalimba.flac",
    "folder": "chime / pluck",
    "name": "kalimba",
    "pack_type": "chime",
@@ -13118,7 +13118,7 @@
   {
    "library": "estudio",
    "tier": "main",
-   "path": "/home/user/stickverse/studio/sons/earshot/chime/chime_mallet-celesta.flac",
+   "path": "/workspace/stickverse/studio/sons/earshot/chime/chime_mallet-celesta.flac",
    "folder": "chime / mallet",
    "name": "celesta",
    "pack_type": "chime",
