@@ -16,6 +16,9 @@ composição: paleta, fundos, layouts, elementos gráficos ou sequência de anim
 
 ## 1. Linguagem de edição (fixa)
 
+> **Modo opcional:** quando o usuário pedir vídeos no estilo da série ilustrada que ele enviou (cartoon
+> narrativo em episódios), siga `modo-cartoon-narrativo.md`, que substitui esta seção só nesses vídeos.
+
 Medido nas referências: a energia não vem de cortar muito, vem de **algo novo entrando a cada 0,5–1 s**,
 de **transições contínuas** (o objeto de uma cena vira o da próxima) e de **pulsos** (rajada rápida na troca
 de ideia, ~1 s de respiro para ler). Só 10–15% dos quadros ficam parados.
