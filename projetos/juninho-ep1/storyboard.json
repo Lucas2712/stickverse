@@ -1,0 +1,830 @@
+{
+ "titulo": "Juninho · Episódio 1",
+ "chamada": "Uma mensagem, <b>30 dias</b> e <em>vocês decidem</em>",
+ "resumo": "Episódio 1 de uma série ilustrada (91 s de narração intacta + 3 s de cartela = 94 s), no modo cartoon narrativo medido na referência: corte seco a cada frase (cerca de 50 cortes, 1 a 2,5 s cada), quadro sempre cheio, legenda em blocos de 1 a 3 palavras, onomatopeias, carimbos, painel fixo da série e votação no fim. Sem música: só efeitos sonoros reais presos a cada corte e impacto.",
+ "duracao": 94.0,
+ "acento": "#FF6B4A",
+ "acento_escuro": "#FFB199",
+ "paleta": [
+  [
+   "#FFB347",
+   "tangerina da tarde (luz do quarto, ato 1)"
+  ],
+  [
+   "#FF6B4A",
+   "coral (destaques, lado CABELO)"
+  ],
+  [
+   "#0E6B6B",
+   "verde-petróleo (sombras, lado GUARDA-ROUPA)"
+  ],
+  [
+   "#2A1B47",
+   "ameixa da noite (ato 2, decisão, contorno da legenda)"
+  ],
+  [
+   "#F4D35E",
+   "mostarda (palavra-chave da legenda, painel)"
+  ],
+  [
+   "#E63946",
+   "vermelho de carimbo (2016, NADA MUDOU, riscos)"
+  ]
+ ],
+ "marcas": [
+  [
+   0.0,
+   "Gancho"
+  ],
+  [
+   12.08,
+   "A mensagem"
+  ],
+  [
+   44.16,
+   "A cara de 2016"
+  ],
+  [
+   61.5,
+   "A decisão"
+  ],
+  [
+   79.68,
+   "Votação"
+  ]
+ ],
+ "identidade": [
+  [
+   "Conceito",
+   "<b>Quadrinho de fim de tarde.</b> A história acontece num quarto bagunçado banhado de luz tangerina, que vira noite ameixa quando o Juninho decide mudar. É o gênero da referência (ilustração plana, traço escuro grosso, cores chapadas), mas com personagem, mundo e paleta nossos."
+  ],
+  [
+   "Personagem",
+   "<b>Juninho</b>, uns 25 anos: rosto redondo, cabelo crespo volumoso e bagunçado com um tufo arrepiado, barba rala por fazer, camiseta mostarda desbotada com a estampa «TURMA 2016» e uma mancha de molho, bermuda de moletom cinza e chinelo. Sem boné (não copiamos o protagonista da referência). <b>Lara</b> aparece só nas fotos e no chat."
+  ],
+  [
+   "Fundos",
+   "Cenários ilustrados de borda a borda, sem área lisa: quarto (tarde e noite), parede de fotos, calendário, convite. O personagem entra recortado por cima, para trocar a expressão e reenquadrar sem gerar outra imagem."
+  ],
+  [
+   "Sistema gráfico",
+   "Painel fixo da série no topo («FALTAM 30 DIAS» + barra CONFIANÇA, sem porcentagem inventada), placas de etiqueta, carimbos vermelhos, onomatopeias em mostarda com contorno ameixa, setas de caneta e chat genérico sem marca."
+  ],
+  [
+   "Legenda",
+   "Blocos de 1 a 3 palavras em CAIXA ALTA, Inter Display Bold, branca com contorno ameixa grosso + sombra, 1 palavra em mostarda ou coral, em y ≈ 1200, trocando no tempo exato da palavra."
+  ],
+  [
+   "Câmera e transição",
+   "Câmera parada dentro do plano; o movimento vem do corte seco de reenquadramento (aberto → close → detalhe), punch-in de 4 a 8% nos impactos e tremor de 6 a 10 px nos carimbos. Assinatura própria: <b>congelar e perder a cor</b> na virada (41,7 s) e o <b>holofote</b> no «percebeu»."
+  ],
+  [
+   "Áudio",
+   "Sem música. Efeitos reais: pop nos objetos, clique de UI no chat, vibração no celular, crunch, boing, impacto nos carimbos, whoosh nos bilhetes. Voz sempre em primeiro plano."
+  ]
+ ],
+ "notas": [
+  "Fonte: a SF Pro não tem licença para vídeo publicado, então uso o Inter (Display nos títulos, Text no corpo), como no tutorial-claude. O arquivo de licença OFL vai junto.",
+  "Narração intacta: 91,01 s, 2,6 palavras/s, sem aceleração nem cortes. A transcrição tinha um «!\"» repetido em 24,28 s, que tirei da lista de palavras (é só pontuação; o áudio não muda).",
+  "Ilustrações no OpenArt (Nano Banana 2, 2K = 30 créditos): 1 folha do personagem com 6 expressões, 4 poses (deitado comendo, pulando, apontando, corpo inteiro), 4 cenários (quarto à tarde, quarto à noite, foto da turma 2016, convite do reencontro), selfie da Lara e detalhe da mão no salgadinho. Cerca de 14 a 18 imagens, ou 420 a 540 créditos de 2.320. Primeiro gero só a folha do personagem (2 a 4 imagens) e mostro para você aprovar o visual antes do resto.",
+  "O personagem entra recortado sobre os cenários. Se o recorte automático deixar borda, gero as poses já dentro do cenário (custa mais imagens).",
+  "Textos de tela que não estão na narração (bilhetes de desculpas, «tenho uma novidade 👀», «EPISÓDIO 2: A ESCOLHA DE VOCÊS») são ficção de cena; troco por qualquer texto que você preferir.",
+  "A barra CONFIANÇA não tem número, para não inventar dado: ela só sobe e desce com a história.",
+  "A cartela final (91 a 94 s) traz Studio Matteu pequeno; posso tirar se preferir sem assinatura."
+ ],
+ "cenas": [
+  {
+   "n": 1,
+   "nome": "Gancho: o celular acende",
+   "a": 0.0,
+   "b": 3.08,
+   "f": "escuro",
+   "narr": "Juninho não fazia ideia de que uma mensagem iria",
+   "comp": "Close do rosto → detalhe do celular",
+   "tela": "CORTE 1 (0,00): close do rosto do Juninho, quarto na penumbra, rosto iluminado de azul pela tela, olhar entediado. Legenda JUNINHO em mostarda. CORTE 2 (2,24): detalhe do celular na mão em tela cheia; a tela acende e um balão de notificação salta com pop.",
+   "sync": [
+    [
+     "0,00",
+     "close do rosto; legenda «JUNINHO»"
+    ],
+    [
+     "0,70",
+     "pisca os olhos (troca de expressão)"
+    ],
+    [
+     "2,24",
+     "«mensagem»: corte seco para o celular; notificação salta (pop + vibração)"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho close (tédio) + celular na mão"
+  },
+  {
+   "n": 2,
+   "nome": "30 dias",
+   "a": 3.08,
+   "b": 5.96,
+   "f": "laranja",
+   "narr": "mudar os próximos 30 dias da vida dele.",
+   "comp": "Calendário de parede → painel da série",
+   "tela": "CORTE 3 (3,08): calendário de parede ocupando a tela; as folhas começam a voar. CORTE 4 (4,02): número «30» gigante bate no centro com tremor; o painel fixo da série monta no topo: «FALTAM 30 DIAS» + barra «CONFIANÇA» quase vazia (sem porcentagem). Ele fica no topo de todos os planos de história a partir daqui.",
+   "sync": [
+    [
+     "3,08",
+     "calendário, folhas voando"
+    ],
+    [
+     "4,02",
+     "«30» bate no quadro + tremor"
+    ],
+    [
+     "4,40",
+     "painel «FALTAM 30 DIAS» monta no topo"
+    ],
+    [
+     "5,16",
+     "«dele»: barra de confiança pisca em vermelho"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "calendário de parede"
+  },
+  {
+   "n": 3,
+   "nome": "Tarde normal",
+   "a": 5.96,
+   "b": 7.64,
+   "f": "laranja",
+   "narr": "Era uma tarde normal.",
+   "comp": "Plano aberto do quarto",
+   "tela": "CORTE 5: plano aberto do quarto à tarde, sol alaranjado entrando pela janela, poeira no feixe de luz, pacotes de salgadinho e roupas no chão. Câmera parada; só a poeira e a cortina se mexem.",
+   "sync": [
+    [
+     "5,96",
+     "plano aberto do quarto"
+    ],
+    [
+     "6,68",
+     "«normal»: um pacote vazio cai da cama (pop)"
+    ]
+   ],
+   "tr": "Corte seco para o mesmo quarto, mais perto.",
+   "img": "quarto à tarde (sem personagem)"
+  },
+  {
+   "n": 4,
+   "nome": "Deitado, comendo, rolando",
+   "a": 7.64,
+   "b": 12.08,
+   "f": "laranja",
+   "narr": "Ele estava deitado na cama, comendo besteira e passando horas no celular.",
+   "comp": "Aberto → detalhe → close",
+   "tela": "CORTE 6 (7,64): Juninho deitado na cama no mesmo quarto (reenquadramento mais perto). CORTE 7 (9,18): detalhe da mão no pacote de salgadinho; farelo voa e a onomatopeia «CRUNCH!» entra grande. CORTE 8 (10,12): close do rosto iluminado pela tela; a luz da janela passa de laranja para rosa e roxo em 1 s (as horas passando); o polegar rola sem parar.",
+   "sync": [
+    [
+     "7,64",
+     "Juninho deitado na cama"
+    ],
+    [
+     "9,18",
+     "«comendo besteira»: detalhe + «CRUNCH!»"
+    ],
+    [
+     "10,12",
+     "«passando horas»: close, a luz muda de cor"
+    ],
+    [
+     "11,10",
+     "«celular»: punch-in de 5%"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho deitado comendo + detalhe da mão no salgadinho"
+  },
+  {
+   "n": 5,
+   "nome": "Mensagem da Lara",
+   "a": 12.08,
+   "b": 14.74,
+   "f": "escuro",
+   "narr": "Até que recebeu uma mensagem de Lara.",
+   "comp": "Tela do celular → close de reação",
+   "tela": "CORTE 9 (12,08): tela do celular em tela cheia (chat genérico, sem marca); notificação desce do topo com vibração. CORTE 10 (13,82): close do Juninho, olhos arregalados; um salgadinho cai da boca. Legenda «LARA» em coral.",
+   "sync": [
+    [
+     "12,08",
+     "notificação desce"
+    ],
+    [
+     "12,62",
+     "«recebeu»: vibração (BZZ)"
+    ],
+    [
+     "13,82",
+     "«Lara»: corte para a reação, salgadinho cai"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho close (susto)"
+  },
+  {
+   "n": 6,
+   "nome": "Foto da turma",
+   "a": 14.74,
+   "b": 17.88,
+   "f": "claro",
+   "narr": "Uma garota que ele não via desde a época da escola.",
+   "comp": "Foto antiga em tela cheia",
+   "tela": "CORTE 11: foto antiga da turma (ilustração com tom amarelado de foto velha), presa na parede com fita. Um círculo de caneta vermelha se desenha em volta da Lara. CORTE 12 (16,62): punch-in na foto e um carimbo «2016» bate no canto.",
+   "sync": [
+    [
+     "14,74",
+     "foto da turma"
+    ],
+    [
+     "15,26",
+     "círculo vermelho desenha em volta dela"
+    ],
+    [
+     "16,62",
+     "«época da escola»: punch-in + carimbo «2016»"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "foto da turma 2016"
+  },
+  {
+   "n": 7,
+   "nome": "Você ainda lembra de mim?",
+   "a": 17.88,
+   "b": 21.42,
+   "f": "claro",
+   "narr": "Ela mandou uma foto e perguntou: \"Você ainda lembra de mim?\"",
+   "comp": "Chat em tela cheia",
+   "tela": "CORTE 13: tela do chat em tela cheia, segurada por uma mão ilustrada. A foto chega borrada e fica nítida (carregando): selfie atual da Lara. CORTE 14 (19,90): reenquadramento mais perto do chat; aparecem os três pontinhos e depois o balão «você ainda lembra de mim?» com pop.",
+   "sync": [
+    [
+     "18,54",
+     "«foto»: a foto chega borrada e fica nítida"
+    ],
+    [
+     "19,90",
+     "três pontinhos"
+    ],
+    [
+     "20,34",
+     "balão da pergunta salta"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "selfie atual da Lara"
+  },
+  {
+   "n": 8,
+   "nome": "Claro que lembro!",
+   "a": 21.42,
+   "b": 24.88,
+   "f": "escuro",
+   "narr": "Juninho respondeu na mesma hora: \"Claro que lembro!\"",
+   "comp": "Polegares → balão enviado → close",
+   "tela": "CORTE 15: detalhe dos polegares digitando muito rápido, com linhas de velocidade e «TEC TEC TEC». CORTE 16 (23,40): o balão azul «Claro que lembro!» sobe e ganha o ✓✓. CORTE 17 (23,92): close do Juninho com sorriso confiante e sobrancelha levantada.",
+   "sync": [
+    [
+     "21,42",
+     "polegares + «TEC TEC TEC»"
+    ],
+    [
+     "23,40",
+     "balão enviado + ✓✓ (clique)"
+    ],
+    [
+     "23,92",
+     "close do sorriso confiante"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho close (confiante)"
+  },
+  {
+   "n": 9,
+   "nome": "Olhou duas vezes",
+   "a": 24.88,
+   "b": 28.74,
+   "f": "claro",
+   "narr": "Mas a verdade é que ele precisou olhar a foto duas vezes.",
+   "comp": "Reação → foto com dois punch-ins",
+   "tela": "CORTE 18 (24,88): o mesmo close; o sorriso congela e surge uma gota de suor. CORTE 19 (26,48): a foto da Lara no celular. No «duas» (27,12), punch-in ×1,6; no «vezes» (27,56), punch-in ×2,4 nos olhos dele refletidos na tela, com o rótulo «2ª OLHADA».",
+   "sync": [
+    [
+     "24,88",
+     "«Mas»: o sorriso congela, gota de suor"
+    ],
+    [
+     "26,48",
+     "foto no celular"
+    ],
+    [
+     "27,12",
+     "«duas»: punch-in 1"
+    ],
+    [
+     "27,56",
+     "«vezes»: punch-in 2 + «2ª OLHADA»"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho close (sorriso amarelo)"
+  },
+  {
+   "n": 10,
+   "nome": "A conversa engata",
+   "a": 28.74,
+   "b": 32.84,
+   "f": "escuro",
+   "narr": "Os dois começaram a conversar, até que Lara contou uma novidade.",
+   "comp": "Chat rolando → balão grande",
+   "tela": "CORTE 20: o chat rola rápido, com bolhas subindo uma por sílaba e o relógio do celular avançando. CORTE 21 (30,50): o chat para de repente. CORTE 22 (31,76): balão grande «tenho uma novidade 👀» enquadrado de perto, com tremor curto.",
+   "sync": [
+    [
+     "28,74",
+     "bolhas subindo (cliques de UI)"
+    ],
+    [
+     "30,50",
+     "«até que»: tudo para"
+    ],
+    [
+     "31,76",
+     "«novidade»: balão grande + tremor"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 11,
+   "nome": "Reencontro da turma",
+   "a": 32.84,
+   "b": 37.48,
+   "f": "laranja",
+   "narr": "Daqui a 30 dias aconteceria o reencontro da antiga turma da escola.",
+   "comp": "Calendário → convite → foto da turma",
+   "tela": "CORTE 23: calendário com o dia 30 circulado em vermelho; uma caneta risca os dias até lá. CORTE 24 (35,08): convite ilustrado em tela cheia, «REENCONTRO · TURMA 2016», com balões e bandeirinhas. CORTE 25 (36,20): volta a foto da turma, agora com um balão de festa colado nela.",
+   "sync": [
+    [
+     "33,22",
+     "«30»: o círculo se desenha"
+    ],
+    [
+     "35,08",
+     "«reencontro»: convite entra"
+    ],
+    [
+     "36,20",
+     "«turma»: foto da turma (retomada)"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "convite do reencontro"
+  },
+  {
+   "n": 12,
+   "nome": "Ela queria que ele fosse",
+   "a": 37.48,
+   "b": 40.16,
+   "f": "claro",
+   "narr": "E ela queria muito que ele aparecesse.",
+   "comp": "Chat → close corado",
+   "tela": "CORTE 26: balão «queria muito que você aparecesse» com um coração que bate. CORTE 27 (38,90): close do Juninho corado, com corações pequenos subindo.",
+   "sync": [
+    [
+     "37,94",
+     "«muito»: o coração bate"
+    ],
+    [
+     "38,90",
+     "«aparecesse»: close corado"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho close (corado)"
+  },
+  {
+   "n": 13,
+   "nome": "Animado",
+   "a": 40.16,
+   "b": 41.7,
+   "f": "laranja",
+   "narr": "Juninho ficou animado…",
+   "comp": "Corpo inteiro pulando",
+   "tela": "CORTE 28: Juninho de corpo inteiro pulando na cama, braços para cima, com confete e «BOING!». A barra de confiança do painel sobe um pouco.",
+   "sync": [
+    [
+     "40,16",
+     "pulo + «BOING!»"
+    ],
+    [
+     "40,74",
+     "«animado»: a barra de confiança sobe"
+    ]
+   ],
+   "tr": "Congela no ar.",
+   "img": "Juninho pulando"
+  },
+  {
+   "n": 14,
+   "nome": "Outra mensagem",
+   "a": 41.7,
+   "b": 44.16,
+   "f": "escuro",
+   "narr": "Até receber outra mensagem:",
+   "comp": "Congelado → notificação",
+   "tela": "Em 41,70, a imagem congela no meio do pulo e perde a saturação (efeito de pausa) com tremor. CORTE 29 (42,96): uma nova notificação desce na tela do celular.",
+   "sync": [
+    [
+     "41,70",
+     "«Até»: congela e perde a cor"
+    ],
+    [
+     "42,96",
+     "«mensagem»: notificação + vibração"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 15,
+   "nome": "A cara de 2016",
+   "a": 44.16,
+   "b": 47.84,
+   "f": "escuro",
+   "narr": "\"Mas você continua com aquela mesma cara de 2016?\"",
+   "comp": "Balão → carimbo",
+   "tela": "CORTE 30: balão cinza com a frase, digitado palavra por palavra no ritmo da fala. CORTE 31 (46,38): a foto antiga do Juninho na turma em tela cheia; o carimbo vermelho «2016» bate com tremor forte. A barra de confiança despenca para quase zero.",
+   "sync": [
+    [
+     "44,16",
+     "balão digitando"
+    ],
+    [
+     "45,78",
+     "«cara»: o balão termina"
+    ],
+    [
+     "46,38",
+     "«2016»: carimbo + impacto + a barra cai"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho na foto de 2016"
+  },
+  {
+   "n": 16,
+   "nome": "Câmera frontal",
+   "a": 47.84,
+   "b": 50.18,
+   "f": "escuro",
+   "narr": "Ele olhou para a câmera do celular.",
+   "comp": "Visão da câmera frontal",
+   "tela": "CORTE 32: visão da câmera frontal (moldura e botão de foto genéricos) com o Juninho na tela, desconfiado, aproximando o rosto. Um leve tremor de mão na imagem.",
+   "sync": [
+    [
+     "48,74",
+     "«câmera»: a interface da câmera monta"
+    ],
+    [
+     "49,14",
+     "«celular»: ele aproxima o rosto (zoom)"
+    ]
+   ],
+   "tr": "Corte seco para o detalhe.",
+   "img": "Juninho close (desconfiado)"
+  },
+  {
+   "n": 17,
+   "nome": "O cabelo",
+   "a": 50.18,
+   "b": 51.94,
+   "f": "laranja",
+   "narr": "Olhou para o próprio cabelo.",
+   "comp": "Detalhe extremo",
+   "tela": "CORTE 33: detalhe extremo do cabelo bagunçado (reenquadramento no topo da cabeça), com uma seta e o rótulo «CABELO» em placa. Um fio arrepiado dá um «boing».",
+   "sync": [
+    [
+     "50,92",
+     "«cabelo»: seta + rótulo"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 18,
+   "nome": "A barriga",
+   "a": 51.94,
+   "b": 53.1,
+   "f": "laranja",
+   "narr": "Para a barriga.",
+   "comp": "Detalhe",
+   "tela": "CORTE 34: detalhe da barriga na camiseta apertada; a camiseta estica com «BLOP!» e o rótulo «BARRIGA».",
+   "sync": [
+    [
+     "52,28",
+     "«barriga»: estica + «BLOP!»"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 19,
+   "nome": "A roupa de dois dias",
+   "a": 53.1,
+   "b": 55.62,
+   "f": "laranja",
+   "narr": "Para a roupa que estava usando há dois dias.",
+   "comp": "Corpo inteiro com etiquetas",
+   "tela": "CORTE 35: corpo inteiro, com a camiseta manchada, linhas de cheiro subindo e uma etiqueta pendurada «USADA HÁ 2 DIAS». Punch-in curto no «dois dias».",
+   "sync": [
+    [
+     "53,46",
+     "«roupa»: as linhas de cheiro sobem"
+    ],
+    [
+     "54,48",
+     "«dois dias»: a etiqueta balança + punch-in"
+    ]
+   ],
+   "tr": "Escurece.",
+   "img": "Juninho corpo inteiro (camiseta manchada)"
+  },
+  {
+   "n": 20,
+   "nome": "Percebeu",
+   "a": 55.62,
+   "b": 57.38,
+   "f": "escuro",
+   "narr": "E percebeu uma coisa…",
+   "comp": "Holofote",
+   "tela": "CORTE 36: tudo escurece e sobra um holofote sobre o Juninho, que olha para baixo. Aproximação lenta de 6%, o único respiro do vídeo.",
+   "sync": [
+    [
+     "55,62",
+     "holofote"
+    ],
+    [
+     "56,38",
+     "«coisa»: ele levanta os olhos"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho close (percebendo)"
+  },
+  {
+   "n": 21,
+   "nome": "Nada mudou",
+   "a": 57.38,
+   "b": 61.5,
+   "f": "claro",
+   "narr": "Ele realmente não tinha mudado absolutamente nada.",
+   "comp": "Tela dividida antes × agora",
+   "tela": "CORTE 37: tela dividida, com a foto de 2016 à esquerda e o Juninho de hoje à direita, na mesma pose e com a mesma camiseta. Os rótulos «2016» e «HOJE» entram, e um sinal «=» gigante salta no meio no «mudado». CORTE 38 (59,12): carimbo «NADA MUDOU» atravessado na tela, com tremor.",
+   "sync": [
+    [
+     "57,38",
+     "tela dividida"
+    ],
+    [
+     "58,72",
+     "«mudado»: o «=» salta"
+    ],
+    [
+     "59,12",
+     "«absolutamente nada»: carimbo «NADA MUDOU»"
+    ]
+   ],
+   "tr": "Corte seco para a noite."
+  },
+  {
+   "n": 22,
+   "nome": "A decisão",
+   "a": 61.5,
+   "b": 64.3,
+   "f": "escuro",
+   "narr": "Naquela noite, Juninho tomou uma decisão.",
+   "comp": "Quarto à noite → close determinado",
+   "tela": "CORTE 39: o mesmo quarto, agora à noite (lua, luz do abajur): plano aberto. CORTE 40 (62,58): close do Juninho determinado, com o punho cerrado; no «decisão», punch-in e brilho nos olhos.",
+   "sync": [
+    [
+     "61,50",
+     "quarto à noite"
+    ],
+    [
+     "62,58",
+     "close determinado"
+    ],
+    [
+     "63,34",
+     "«decisão»: punch-in + brilho"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "quarto à noite (sem personagem) + Juninho close (determinado)"
+  },
+  {
+   "n": 23,
+   "nome": "Sem desculpas",
+   "a": 64.3,
+   "b": 67.12,
+   "f": "escuro",
+   "narr": "Dessa vez, não iria inventar desculpas.",
+   "comp": "Bilhetes riscados",
+   "tela": "CORTE 41: parede de bilhetes adesivos com desculpas («amanhã eu começo», «segunda sem falta», «tô sem tempo»). Cada bilhete leva um risco vermelho, e no «desculpas» todos são arrancados e voam.",
+   "sync": [
+    [
+     "65,10",
+     "«não»: o 1º risco"
+    ],
+    [
+     "65,70",
+     "«inventar»: o 2º e o 3º risco"
+    ],
+    [
+     "66,10",
+     "«desculpas»: os bilhetes voam (whoosh)"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 24,
+   "nome": "30 dias para mudar",
+   "a": 67.12,
+   "b": 72.2,
+   "f": "laranja",
+   "narr": "Ele tinha 30 dias para mudar sua aparência e recuperar a confiança que tinha perdido.",
+   "comp": "Calendário → painel da série em close",
+   "tela": "CORTE 42: calendário de 30 quadradinhos em tela cheia; o primeiro recebe um «X» e o rótulo «DIA 1». CORTE 43 (68,56): close no painel da série: «FALTAM 30 DIAS» e o ícone de cabelo, roupa e barriga com «?». CORTE 44 (69,86): a barra «CONFIANÇA» pisca em vermelho, quase vazia.",
+   "sync": [
+    [
+     "67,54",
+     "«30»: o X no dia 1"
+    ],
+    [
+     "69,04",
+     "«aparência»: ícones com «?»"
+    ],
+    [
+     "70,46",
+     "«confiança»: a barra pisca em vermelho"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 25,
+   "nome": "Não ia sozinho",
+   "a": 72.2,
+   "b": 74.16,
+   "f": "laranja",
+   "narr": "Mas não ia fazer isso sozinho.",
+   "comp": "Quebra da 4ª parede",
+   "tela": "CORTE 45: o Juninho vira para a câmera e aponta para quem assiste, com punch-in de 8% no «sozinho».",
+   "sync": [
+    [
+     "72,20",
+     "ele vira para a câmera"
+    ],
+    [
+     "73,18",
+     "«sozinho»: aponta + punch-in"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho apontando para a câmera"
+  },
+  {
+   "n": 26,
+   "nome": "Vocês escolhem",
+   "a": 74.16,
+   "b": 77.48,
+   "f": "claro",
+   "narr": "Vocês vão escolher cada etapa dessa transformação.",
+   "comp": "Cartas da transformação",
+   "tela": "CORTE 46: quatro cartas viradas com «?» entram em leque, uma por palavra. A primeira se ilumina. Rótulo «VOCÊS ESCOLHEM».",
+   "sync": [
+    [
+     "74,16",
+     "«Vocês»: o rótulo entra"
+    ],
+    [
+     "75,62",
+     "«etapa»: as cartas em leque"
+    ],
+    [
+     "76,30",
+     "«transformação»: a 1ª carta brilha"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 27,
+   "nome": "1ª decisão",
+   "a": 77.48,
+   "b": 79.68,
+   "f": "escuro",
+   "narr": "E a primeira decisão é importante:",
+   "comp": "Placa",
+   "tela": "CORTE 47: a placa «1ª DECISÃO» bate no centro com tremor e um brilho passa por ela.",
+   "sync": [
+    [
+     "77,68",
+     "«primeira»: a placa bate"
+    ],
+    [
+     "78,62",
+     "«importante»: o brilho passa"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 28,
+   "nome": "Cabelo ou guarda-roupa",
+   "a": 79.68,
+   "b": 84.38,
+   "f": "laranja/escuro",
+   "narr": "Juninho deve começar mudando o cabelo ou renovando completamente o guarda-roupa?",
+   "comp": "Tela dividida na diagonal",
+   "tela": "CORTE 48: tela dividida na diagonal, coral à esquerda e verde-petróleo à direita, com o Juninho dos dois lados. No «cabelo», a esquerda ganha tesoura e pente e o título CABELO. Um selo «OU» gira no meio. No «guarda-roupa», a direita ganha um cabide e o título GUARDA-ROUPA.",
+   "sync": [
+    [
+     "79,68",
+     "tela dividida"
+    ],
+    [
+     "81,46",
+     "«cabelo»: o lado esquerdo pula"
+    ],
+    [
+     "81,86",
+     "«ou»: o selo gira"
+    ],
+    [
+     "83,82",
+     "«guarda-roupa»: o lado direito pula"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho de frente (2 cópias)"
+  },
+  {
+   "n": 29,
+   "nome": "Votação aberta",
+   "a": 84.38,
+   "b": 86.48,
+   "f": "laranja/escuro",
+   "narr": "A votação está aberta!",
+   "comp": "Mesma tela dividida + faixa",
+   "tela": "A faixa «COMENTE: CABELO OU ROUPA» desce sobre a tela dividida, uma luz de «AO VIVO» pisca e os balões de comentário sobem dos dois lados.",
+   "sync": [
+    [
+     "84,86",
+     "«votação»: a faixa desce"
+    ],
+    [
+     "85,60",
+     "«aberta»: a luz pisca"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 30,
+   "nome": "Daqui a 30 dias",
+   "a": 86.48,
+   "b": 94.0,
+   "f": "escuro",
+   "narr": "E daqui a 30 dias, vamos descobrir se ele realmente conseguiu virar o jogo.",
+   "comp": "Silhueta do futuro → virada → cartela",
+   "tela": "CORTE 49: o painel «FALTAM 30 DIAS» em close. CORTE 50 (87,90): a silhueta do Juninho do futuro em contraluz, com um «?» no rosto. No «virar o jogo» (90,04), uma carta gira e revela «EPISÓDIO 2: A ESCOLHA DE VOCÊS». A cartela fica até 94 s, com a assinatura Studio Matteu pequena e discreta.",
+   "sync": [
+    [
+     "86,92",
+     "«30 dias»: o painel"
+    ],
+    [
+     "87,90",
+     "silhueta com «?»"
+    ],
+    [
+     "90,04",
+     "«virar o jogo»: a carta gira"
+    ],
+    [
+     "91,0",
+     "fim da narração; a cartela fica"
+    ]
+   ],
+   "tr": "Fim."
+  }
+ ]
+}

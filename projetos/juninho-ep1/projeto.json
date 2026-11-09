@@ -1,0 +1,22 @@
+{
+  "titulo": "Juninho · Episódio 1",
+  "descricao": "",
+  "tema": "",
+  "duracao": 30,
+  "fps": 30,
+  "fontes": ["geist", "geist-mono"],
+  "poster": null,
+  "legendas": {
+    "ativo": true,
+    "y": 1430,
+    "tamanho": 64,
+    "peso": 600,
+    "destaques": [],
+    "ocultar": []
+  },
+  "audio": {
+    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.5 },
+    "musica": null,
+    "ducking": { "ativo": true, "reducao": 0.4 }
+  }
+}
