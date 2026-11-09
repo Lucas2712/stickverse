@@ -541,7 +541,7 @@ A faixa «COMENTE: CABELO OU ROUPA» desce sobre a tela dividida, uma luz de «A
 
 **Fundo:** escuro · **Composição:** Silhueta do futuro → virada → cartela
 
-CORTE 49: o painel «FALTAM 30 DIAS» em close. CORTE 50 (87,90): a silhueta do Juninho do futuro em contraluz, com um «?» no rosto. No «virar o jogo» (90,04), uma carta gira e revela «EPISÓDIO 2: A ESCOLHA DE VOCÊS». A cartela fica até 94 s, com a assinatura Studio Matteu pequena e discreta.
+CORTE 49: o painel «FALTAM 30 DIAS» em close. CORTE 50 (87,90): a silhueta do Juninho do futuro em contraluz, com um «?» no rosto. No «virar o jogo» (90,04), uma carta gira e revela «EPISÓDIO 2: A ESCOLHA DE VOCÊS». A carta fica na tela até 94 s, sem assinatura nem nome de página.
 
 **Sincronização:**
 - 86,92 s «30 dias»: o painel
@@ -561,4 +561,4 @@ CORTE 49: o painel «FALTAM 30 DIAS» em close. CORTE 50 (87,90): a silhueta do 
 - O personagem entra recortado sobre os cenários. Se o recorte automático deixar borda, gero as poses já dentro do cenário (custa mais imagens).
 - Textos de tela que não estão na narração (bilhetes de desculpas, «tenho uma novidade 👀», «EPISÓDIO 2: A ESCOLHA DE VOCÊS») são ficção de cena; troco por qualquer texto que você preferir.
 - A barra CONFIANÇA não tem número, para não inventar dado: ela só sobe e desce com a história.
-- A cartela final (91 a 94 s) traz Studio Matteu pequeno; posso tirar se preferir sem assinatura.
+- Sem assinatura: esta série será publicada em outra página. Nenhum nome, logo ou @ aparece no vídeo.
