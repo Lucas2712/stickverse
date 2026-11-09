@@ -9,7 +9,7 @@
   "legendas": {
     "ativo": true,
     "estilo": "cartoon",
-    "y": 1190,
+    "y": 1330,
     "tamanho": 78,
     "peso": 800,
     "fonte": "var(--v-display)",

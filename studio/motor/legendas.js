@@ -41,7 +41,7 @@
         return { ...w, el: sp, dest: dest.has(norm(w.w)) };
       });
       const prox = grupos[gi + 1] ? grupos[gi + 1][0].s : 1e9, ult = ws[ws.length - 1];
-      const fim = CART ? Math.min(prox, ult.e + .5) - .001 : Math.min(prox - .14, ult.e + (prox - ult.e > 1 ? .4 : 1e9));
+      const fim = CART ? Math.min(prox - .03, ult.e + .5) - .001 : Math.min(prox - .14, ult.e + (prox - ult.e > 1 ? .4 : 1e9));
       return { el, itens, ini: ws[0].s - (CART ? .03 : .06), fim };
     });
     linhas.forEach((L, i) => { const A = linhas[i - 1]; L.porta = A && A.fim < L.itens[0].s ? A.fim + .15 : -1; });
