@@ -343,7 +343,7 @@
   });
 
   /* ================= 13 · cuidado com os gastos ================= */
-  plano("13-etiquetas", 32.58, 35.24, [["swoosh", 32.6, .5], ["swoosh", 33.82, .5], ["swoosh", 34.1, .4], ["boom", 34.68, .9]], (S, c) => {
+  plano("13-etiquetas", 32.58, 35.24, [["swoosh", 32.6, .5], ["swoosh", 33.82, .5], ["swoosh", 34.1, .4], ["boom", 34.84, .9]], (S, c) => {
     full(S, "arara", "filter:blur(3px)");
     [[260, 520, -12, 0], [780, 600, 10, .12], [520, 980, -4, .24]].forEach(([x, y, r, d]) => {
       const e = h("div", "abs", S, `<span style="font:900 120px var(--v-display);color:${VERM}">$$$</span>`, `left:${x}px;top:${y}px;translate:-50% -50%;width:360px;height:220px;background:${CREME};border:9px solid ${AM};border-radius:20px 60px 60px 20px;display:flex;align-items:center;justify-content:center;transform-origin:50% -80px`);
@@ -606,7 +606,7 @@
     comentarios(c.fixo, ["1!", "2!!!", "o 1 é mais ele", "2 sem dúvida", "1"], 89.6, .2, 1560);
     c.origem(540, 960).s(83.54, 1.08).s(84.0, 1.0, .4, "out").soco(85.96, .04).s(91.22, 1.06, 2.0, "out");
   });
-  plano("28-final", 91.22, 96.5, [["boom", 91.78, 1], ["riser", 92.0, .5], ["flip", 92.86, 1], ["chime", 93.3, .8], ["swell", 94, .4]], (S, c) => {
+  plano("28-final", 91.22, 96.5, [["boom", 91.88, 1], ["riser", 92.0, .5], ["flip", 92.86, 1], ["chime", 93.3, .8], ["swell", 94, .4]], (S, c) => {
     raios(S, AM, "#3A2860", 4);
     const p = h("div", "abs", S, `<small style="display:block;font:800 40px var(--v-sans);letter-spacing:.1em;color:${MUST}">FALTAM</small><b style="font:900 160px/1 var(--v-display);color:#fff">28 DIAS</b>`, `left:540px;top:900px;translate:-50% -50%;padding:40px 60px;background:${AM};border:12px solid #fff;border-radius:40px;text-align:center;white-space:nowrap`);
     bate(p, 91.4, 2.2); anim(p, [[91.399, { o: 0, s: 2.2 }], [91.4, { o: 1 }, "lin"], [91.54, { s: 1 }, "in"], [91.78, { s: 1.12 }, "out"], [92.0, { s: 1 }, "out"], [92.84, { o: 1 }], [92.9, { o: 0 }, "lin"]]);
