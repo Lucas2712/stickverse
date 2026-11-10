@@ -45,9 +45,10 @@ def conferir(item):
             k = "cc0" if "zero" in m.group(1) else m.group(1).split("/")[-1]
             return k, item.get("creator"), f"página do Freesound: {m.group(0)}"
         if prov == "wikimedia_audio":
-            titulo = urllib.parse.unquote(url.rsplit("/", 1)[-1])
-            api = ("https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=extmetadata&titles="
-                   + urllib.parse.quote(titulo))
+            base = "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=extmetadata&"
+            cur = re.search(r"curid=(\d+)", url)   # links do tipo index.php?curid=123 (sem o nome do arquivo)
+            if cur: api = base + "pageids=" + cur.group(1)
+            else: api = base + "titles=" + urllib.parse.quote(urllib.parse.unquote(url.rsplit("/", 1)[-1]))
             meta = list(json.loads(get(api))["query"]["pages"].values())[0]["imageinfo"][0]["extmetadata"]
             lic = (meta.get("LicenseShortName", {}).get("value") or "").lower()
             autor = re.sub("<[^>]+>", "", meta.get("Artist", {}).get("value", "")).strip()

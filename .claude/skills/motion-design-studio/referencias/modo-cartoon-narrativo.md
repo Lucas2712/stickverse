@@ -59,3 +59,11 @@ legível a cada 0,5–1 s** (legenda em blocos, expressão, pop de objeto, onoma
   para trocar expressão e reenquadrar sem gerar imagem nova). Orçamento típico por episódio de 60–90 s:
   6–10 cenários + 1 folha de personagem + 4–8 objetos ≈ 15–20 imagens ≈ 450–600 créditos (2K).
 - Interfaces de app: desenhadas em código (genéricas, sem logotipo real).
+
+## 4. Séries (regra do usuário, 2026-11-10)
+
+- Numa série (ex.: Juninho), **personagem, casa e lugares fixos se repetem iguais** em todos os episódios
+  (o quarto do Juninho é sempre o mesmo quarto). Também ficam iguais: legenda, painel do topo, traço e onomatopeias.
+- Cada episódio pode ter lugares novos e uma cor de destaque própria; a regra de "não repetir identidade"
+  (estilo-canal.md) vale entre séries/vídeos diferentes, não entre episódios da mesma série.
+- Ilustrações da série ficam no primeiro episódio (`projetos/juninho-ep1/imagens/`) e são copiadas para os seguintes.
