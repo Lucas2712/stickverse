@@ -1,0 +1,15 @@
+/* Tema do vídeo: identidade própria de cada projeto (cores e fontes do palco).
+   Defina a paleta a partir do assunto do vídeo; não reutilize a do projeto anterior. */
+:root{
+  --v-bg:#FFFFFF;      /* fundo */
+  --v-ink:#100D0A;     /* texto principal */
+  --v-ink2:#5F5852;    /* texto secundário */
+  --v-mute:#A8A098;    /* rótulos apagados */
+  --v-line:#EEEAE6;    /* linhas, trilhos, wireframes */
+  --v-soft:#F4F1EE;    /* superfícies suaves */
+  --v-ac:#FF5A1F;      /* cor de destaque (1 por vídeo) */
+  --v-ac2:#FF8A3D;     /* variação do destaque */
+  --v-sans:"Geist", "Helvetica Neue", Arial, sans-serif;
+  --v-display:"Geist", "Helvetica Neue", Arial, sans-serif;
+  --v-mono:"Geist Mono", Menlo, monospace;
+}

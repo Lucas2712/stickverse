@@ -53,7 +53,10 @@ def main():
     roteiro_p = os.path.join(proj, "roteiro.md")
     script = texto_roteiro(open(roteiro_p, encoding="utf-8").read()) if os.path.exists(roteiro_p) else []
     prompt = " ".join(script[:120]) if script else None
-    segs, _ = m.transcribe(audio, language="pt", word_timestamps=True, beam_size=5, initial_prompt=prompt)
+    # --estavel: sem o roteiro como dica e sem herdar o texto anterior (evita trechos "inventados" em narrações longas)
+    est = "--estavel" in sys.argv
+    segs, _ = m.transcribe(audio, language="pt", word_timestamps=True, beam_size=5, initial_prompt=None if est else prompt,
+                           **({"condition_on_previous_text": False, "vad_filter": True} if est else {}))
     ws = [{"w": w.word.strip(), "s": round(w.start, 3), "e": round(w.end, 3)} for s in segs for w in s.words if w.word.strip()]
 
     correcoes, final = [], []
