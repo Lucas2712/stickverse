@@ -166,7 +166,7 @@
   });
 
   /* ================= 2 · levar a sério ================= */
-  plano("02-serio", 2.06, 5.32, [["swoosh", 2.08, .6], ["pop", 4.28, .5], ["click", 4.54, 1], ["glitch", 4.6, .35], ["hit", 4.62, .6]], (S, c) => {
+  plano("02-serio", 2.06, 5.32, [["swoosh", 2.08, .6], ["pop", 4.28, .5], ["click", 4.54, 1], ["glitch", 4.6, .35], ["hit", 4.62, .4]], (S, c) => {
     raios(S, PETRO, "#127C7C", 6);
     const j = close(S, "j-determinado", { w: 1100, x: 600 }); respira(j, .008);
     // interruptor MODO SÉRIO
@@ -192,7 +192,7 @@
   });
 
   /* ================= 4 · nadando em dinheiro ================= */
-  plano("04-nadando", 7.02, 9.30, [["swell", 7.04, .5], ["pop", 7.3, .5], ["tick", 8.12, .6], ["tick", 8.24, .6], ["tick", 8.36, .6], ["tick", 8.48, .6], ["glitch", 8.74, .7], ["pop", 8.9, .7], ["pop", 9.1, .6]], (S, c) => {
+  plano("04-nadando", 7.02, 9.30, [["swell", 7.04, .5], ["pop", 7.3, .5], ["tick", 8.12, .6], ["tick", 8.24, .6], ["tick", 8.36, .6], ["tick", 8.48, .6], ["glitch", 8.74, .7], ["pop", 8.9, .7], ["pop", 9.1, .3]], (S, c) => {
     full(S, "quarto-tarde", "filter:blur(6px) brightness(.85)");
     const j = img(S, "j-tedio", "left:60px;top:1180px;width:560px"); respira(j);
     const bal = h("div", "abs", S, null, `left:250px;top:330px;width:780px;height:720px;border-radius:50%;background:#fff;border:10px solid ${AM}`);
@@ -281,7 +281,7 @@
   });
 
   /* ================= 9 · cadê meu lanche ================= */
-  plano("09-clientes", 21.66, 23.62, [["swoosh", 21.68, .4], ["pop", 22.44, .8], ["pop", 22.64, .8], ["pop", 22.84, .8], ...Array.from({ length: 6 }, (_, i) => ["tick", 23.22 + i * .07, .6])], (S, c) => {
+  plano("09-clientes", 21.66, 23.62, [["swoosh", 21.68, .15], ["pop", 22.44, .8], ["pop", 22.64, .8], ["pop", 22.84, .8], ...Array.from({ length: 6 }, (_, i) => ["tick", 23.22 + i * .07, .6])], (S, c) => {
     full(S, "clientes", "transform:scale(1.18);transform-origin:50% 0");
     const bal = (txt, x, y, t, r) => { const e = h("div", "abs", c.fixo, txt, `left:${x}px;top:${y}px;translate:-50% -50%;padding:18px 26px;background:#fff;border:7px solid ${AM};border-radius:30px;font:900 44px/1.05 var(--v-display);color:${VERM};text-align:center;white-space:nowrap;box-shadow:0 8px 0 ${AM}`); pop(e, t, { s0: .3, r0: r * 3 }); e.style.rotate = r + "deg"; };
     bal("CADÊ MEU<br>LANCHE?!", 260, 320, 22.42, -6); bal("JÁ FAZ<br>1 HORA!", 780, 360, 22.62, 6); bal("HUMPF!", 820, 980, 22.82, -4);
@@ -497,7 +497,7 @@
   });
 
   /* ================= 21 · a realidade ================= */
-  plano("21-app", 58.80, 61.70, [["swoosh", 58.82, .5], ["click", 59.42, 1], ["blip", 59.6, .6], ["glitch", 61.1, 1], ["hit", 61.12, .7]], (S, c) => {
+  plano("21-app", 58.80, 61.70, [["swoosh", 58.82, .15], ["click", 59.42, 1], ["blip", 59.6, .6], ["glitch", 61.1, 1], ["hit", 61.12, .7]], (S, c) => {
     const tela = celular(S);
     h("div", "abs", tela, null, `inset:0;background:linear-gradient(160deg,${VERDE},${PETRO})`);
     const app = h("div", "abs", tela, null, `inset:0`);
@@ -586,7 +586,7 @@
   });
 
   /* ================= 27–28 · estilo 1 × 2 + comenta ================= */
-  plano("27-estilos", 83.54, 91.22, [["swoosh", 83.56, .7], ["hit", 83.88, .7], ["pop", 84.14, .8], ["pop", 85.1, .8], ["hit", 85.98, .7], ["pop", 86.52, .8], ["pop", 87.16, .8], ["chime", 88.42, .6], ["blip", 88.6, .6], ["blip", 88.78, .6], ["blip", 88.96, .6], ["whoosh", 89.22, .8], ["blip", 89.6, .5], ["blip", 89.8, .5], ["blip", 90.0, .5], ["blip", 90.2, .5], ["blip", 90.4, .5]], (S, c) => {
+  plano("27-estilos", 83.54, 91.22, [["swoosh", 83.56, .3], ["hit", 83.88, .7], ["pop", 84.14, .8], ["pop", 85.1, .8], ["hit", 85.98, .7], ["pop", 86.52, .8], ["pop", 87.16, .8], ["chime", 88.42, .6], ["blip", 88.6, .6], ["blip", 88.78, .3], ["blip", 88.96, .6], ["whoosh", 89.22, .8], ["blip", 89.6, .5], ["blip", 89.8, .5], ["blip", 90.0, .5], ["blip", 90.2, .5], ["blip", 90.4, .5]], (S, c) => {
     const esq = h("div", "abs", S, null, `inset:0;background:${CORAL};clip-path:polygon(0 0,62% 0,38% 100%,0 100%)`);
     const dir = h("div", "abs", S, null, `inset:0;background:${PETRO};clip-path:polygon(62% 0,100% 0,100% 100%,38% 100%)`);
     anim(esq, [[83.54, { x: -700 }], [83.8, { x: 0 }, "expo"]]); anim(dir, [[83.54, { x: 700 }], [83.8, { x: 0 }, "expo"]]);
@@ -606,7 +606,7 @@
     comentarios(c.fixo, ["1!", "2!!!", "o 1 é mais ele", "2 sem dúvida", "1"], 89.6, .2, 1560);
     c.origem(540, 960).s(83.54, 1.08).s(84.0, 1.0, .4, "out").soco(85.96, .04).s(91.22, 1.06, 2.0, "out");
   });
-  plano("28-final", 91.22, 96.5, [["boom", 91.88, 1], ["riser", 92.0, .5], ["flip", 92.86, 1], ["chime", 93.3, .8], ["swell", 94, .4]], (S, c) => {
+  plano("28-final", 91.22, 96.5, [["boom", 91.88, 1], ["riser", 92.0, .5], ["flip", 92.86, 1], ["chime", 93.3, .4], ["swell", 94, .4]], (S, c) => {
     raios(S, AM, "#3A2860", 4);
     const p = h("div", "abs", S, `<small style="display:block;font:800 40px var(--v-sans);letter-spacing:.1em;color:${MUST}">FALTAM</small><b style="font:900 160px/1 var(--v-display);color:#fff">28 DIAS</b>`, `left:540px;top:900px;translate:-50% -50%;padding:40px 60px;background:${AM};border:12px solid #fff;border-radius:40px;text-align:center;white-space:nowrap`);
     bate(p, 91.4, 2.2); anim(p, [[91.399, { o: 0, s: 2.2 }], [91.4, { o: 1 }, "lin"], [91.54, { s: 1 }, "in"], [91.78, { s: 1.12 }, "out"], [92.0, { s: 1 }, "out"], [92.84, { o: 1 }], [92.9, { o: 0 }, "lin"]]);
@@ -618,3 +618,6 @@
     c.origem(540, 900).s(91.22, 1.0).tremor(91.78, 14, .3).s(96.5, 1.08, 3.6, "out");
   });
 })();
+
+/* efeitos extras (pedido do usuário: mais efeitos), cada um preso a um movimento já existente na cena */
+[["swoosh", 0.40, 0.5], ["swoosh", 1.90, 0.5], ["pop", 2.90, 0.5], ["blip", 3.30, 0.5], ["pop", 3.90, 0.6], ["swoosh", 5.36, 0.5], ["swoosh", 5.60, 0.5], ["pop", 6.90, 0.5], ["pop", 7.50, 0.5], ["pop", 7.70, 0.5], ["pop", 7.90, 0.5], ["blip", 11.00, 0.5], ["blip", 11.60, 0.5], ["pop", 12.80, 0.6], ["tick", 13.00, 0.5], ["pop", 14.00, 0.6], ["swell", 14.40, 0.4], ["swoosh", 16.70, 0.5], ["blip", 17.00, 0.4], ["pop", 18.60, 0.5], ["click", 19.40, 0.6], ["swoosh", 20.30, 0.5], ["pop", 21.50, 0.5], ["swoosh", 22.00, 0.5], ["swoosh", 24.80, 0.5], ["riser", 25.20, 0.4], ["pop", 26.20, 0.5], ["swoosh", 27.50, 0.5], ["chime", 29.20, 0.4], ["blip", 30.20, 0.5], ["hit", 31.10, 0.5], ["pop", 31.30, 0.5], ["flip", 32.80, 0.5], ["flip", 33.00, 0.5], ["flip", 33.20, 0.5], ["pop", 35.60, 0.6], ["swoosh", 35.90, 0.5], ["swoosh", 37.90, 0.5], ["swoosh", 40.50, 0.4], ["swoosh", 41.30, 0.4], ["swoosh", 42.00, 0.4], ["blip", 43.30, 0.5], ["tick", 45.00, 0.6], ["tick", 45.30, 0.6], ["swoosh", 46.80, 0.5], ["pop", 47.00, 0.5], ["pop", 48.70, 0.5], ["pop", 48.90, 0.5], ["pop", 51.40, 0.5], ["blip", 52.90, 0.5], ["pop", 54.00, 0.5], ["swoosh", 54.60, 0.5], ["blip", 55.70, 0.5], ["blip", 56.00, 0.5], ["pop", 58.20, 0.5], ["pop", 58.50, 0.5], ["click", 60.00, 0.6], ["blip", 60.40, 0.5], ["swell", 61.40, 0.4], ["pop", 63.20, 0.5], ["swoosh", 63.60, 0.5], ["blip", 64.80, 0.5], ["pop", 66.20, 0.5], ["swoosh", 68.30, 0.5], ["swoosh", 69.00, 0.5], ["blip", 71.00, 0.5], ["pop", 71.60, 0.5], ["swoosh", 73.50, 0.5], ["pop", 74.00, 0.5], ["tick", 76.30, 0.5], ["pop", 78.50, 0.5], ["swoosh", 79.30, 0.5], ["blip", 81.60, 0.5], ["blip", 81.90, 0.5], ["blip", 82.20, 0.5], ["blip", 82.50, 0.5], ["riser", 82.90, 0.3], ["swoosh", 84.50, 0.5], ["blip", 85.40, 0.5], ["swoosh", 86.90, 0.5], ["blip", 87.60, 0.5], ["blip", 90.60, 0.5], ["blip", 90.80, 0.5], ["swoosh", 92.50, 0.5], ["pop", 94.20, 0.5], ["chime", 95.00, 0.5]].forEach(([k, t, g]) => MDS.sfx(k, t, g));

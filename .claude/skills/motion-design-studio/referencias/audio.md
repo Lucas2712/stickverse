@@ -85,3 +85,9 @@ Não contorne. Alternativa: o usuário baixa no celular e envia, e a licença é
 a biblioteca não tem; `earshot describe/match ARQ` descreve um som em palavras; `earshot timeline SAIDA.mp4 --video ...`
 e `earshot sheet` mostram a escuta sincronizada com a imagem; `earshot critique` compara com filmes profissionais.
 Comandos com modelos levam ~20 s para carregar. Nada disso substitui o ouvido do usuário.
+
+### Efeitos mais altos (pedido do usuário)
+- `sfx_real.py projetos/<nome> --efeitos N` sobe **todos** os efeitos N dB (a voz continua protegida pelo `--voice-safe`).
+  `--voz-leve` deixa a voz abafar menos os efeitos (mais alto ainda, mas tende a cobrir palavras).
+- Série Juninho: o usuário prefere efeitos fortes e muitos. Padrão aprovado no ep. 2: `--efeitos 5` (ducking normal) e
+  ~3 eventos/s. Depois de subir, leia `critica.txt` → "Every moment on top of the voice" e baixe/remova só esses sons.

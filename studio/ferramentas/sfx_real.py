@@ -7,6 +7,7 @@ banco do Earshot) e do pacote uisfx (CC0), coloca cada um no quadro exato e mixa
 
 Uso: python3 studio/ferramentas/sfx_real.py projetos/<nome> [--sem-exportar] [--realce 6]
   --realce N  sobe N dB os sons pequenos de interface (vídeos com narração contínua, como tutoriais)
+  --efeitos N sobe N dB TODOS os efeitos · --voz-leve: a voz abafa menos os efeitos (ducking leve, ~-4 dB)
 Antes: montar.py (o HTML do projeto precisa existir).
 
 Gera em projetos/<nome>/saida/:
@@ -115,9 +116,15 @@ def main():
             rot = (c.get("label", "") + " " + str(c.get("uisfx", "")) + " " + str(c.get("role", ""))).lower()
             if any(k in rot for k in ("click", "pop", "tick", "key", "chime", "ding", "blip", "press", "select", "progress", "notification")) and not c.get("_realce"):
                 c["gain_db"] = round(c.get("gain_db", 0) + rl, 1); c["_realce"] = rl
+    # --efeitos N: TODOS os efeitos N dB mais altos (a voz continua protegida pelo --voice-safe)
+    ef = float(sys.argv[sys.argv.index("--efeitos") + 1]) if "--efeitos" in sys.argv else 0
+    if ef:
+        for c in d["cues"]:
+            if not c.get("_efeitos"): c["gain_db"] = round(c.get("gain_db", 0) + ef, 1); c["_efeitos"] = ef
     json.dump(d, open(cj, "w"), indent=1)
     final = os.path.join(W, nome + "-sfx-real.mp4")
-    run([py, "scripts/mix.py", os.path.join(W, "cues.json"), "--out", final, "--voice-safe"] + (["--no-match-layer"] if "--realce" in sys.argv else []), cwd=RSFX)
+    extra = (["--no-match-layer"] if ("--realce" in sys.argv or ef) else []) + (["--voice-depth", "light"] if "--voz-leve" in sys.argv else [])
+    run([py, "scripts/mix.py", os.path.join(W, "cues.json"), "--out", final, "--voice-safe"] + extra, cwd=RSFX)
     res = os.path.join(W, nome + "-sfx-real_resolved_cues.json"); trk = os.path.join(W, nome + "-sfx-real_sfx_track.wav")
     crit = subprocess.run([py, "scripts/critique.py", res, trk], cwd=RSFX, capture_output=True, text=True)
     open(os.path.join(W, "critica.txt"), "w").write(crit.stdout + crit.stderr)
