@@ -89,5 +89,5 @@ Comandos com modelos levam ~20 s para carregar. Nada disso substitui o ouvido do
 ### Efeitos mais altos (pedido do usuário)
 - `sfx_real.py projetos/<nome> --efeitos N` sobe **todos** os efeitos N dB (a voz continua protegida pelo `--voice-safe`).
   `--voz-leve` deixa a voz abafar menos os efeitos (mais alto ainda, mas tende a cobrir palavras).
-- Série Juninho: o usuário prefere efeitos fortes e muitos. Padrão aprovado no ep. 2: `--efeitos 5` (ducking normal) e
+- Série Juninho: o usuário prefere efeitos fortes e muitos. Padrão aprovado no ep. 2: `--efeitos 8` (ducking normal), com os sons que encostam na voz ~6 dB mais baixos e
   ~3 eventos/s. Depois de subir, leia `critica.txt` → "Every moment on top of the voice" e baixe/remova só esses sons.
