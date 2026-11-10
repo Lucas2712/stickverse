@@ -1,22 +1,72 @@
 {
   "titulo": "Juninho · Episódio 2",
-  "descricao": "",
-  "tema": "",
-  "duracao": 30,
+  "descricao": "Episódio 2 da série ilustrada do Juninho (modo cartoon narrativo). Narração acelerada a pedido (117,9 → 93,5 s), sem música, efeitos reais.",
+  "tema": "Juninho compra roupa nova",
+  "duracao": 96.5,
   "fps": 30,
-  "fontes": ["geist", "geist-mono"],
-  "poster": null,
+  "fontes": [],
+  "poster": 53.3,
   "legendas": {
     "ativo": true,
-    "y": 1430,
-    "tamanho": 64,
-    "peso": 600,
-    "destaques": [],
+    "estilo": "cartoon",
+    "y": 1330,
+    "tamanho": 78,
+    "peso": 800,
+    "fonte": "var(--v-display)",
+    "corDestaque": "var(--must)",
+    "destaques": [
+      "guarda-roupa!",
+      "Juninho",
+      "sério,",
+      "problema.",
+      "dinheiro.",
+      "186,40",
+      "nada.",
+      "lanchonete",
+      "pedidos,",
+      "demorando.",
+      "objetivo:",
+      "visual",
+      "shopping",
+      "gastos.",
+      "vento.",
+      "camiseta,",
+      "calça",
+      "jaqueta",
+      "89,90.",
+      "espelho.",
+      "pose.",
+      "Caramba!",
+      "visual.",
+      "realidade.",
+      "96,50.",
+      "bonito,",
+      "pobre.\"",
+      "sozinha.",
+      "extra.",
+      "vocês:",
+      "1,",
+      "2,",
+      "28"
+    ],
     "ocultar": []
   },
   "audio": {
-    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.5 },
+    "volumes": {
+      "narracao": 1.0,
+      "musica": 0,
+      "efeitos": 0.5
+    },
     "musica": null,
-    "ducking": { "ativo": true, "reducao": 0.4 }
-  }
+    "ducking": {
+      "ativo": false
+    }
+  },
+  "fontesProjeto": [
+    {
+      "familia": "Inter",
+      "arquivo": "fontes/inter.woff2",
+      "descritores": "font-weight:100 900;font-display:block"
+    }
+  ]
 }

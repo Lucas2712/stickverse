@@ -1,15 +1,19 @@
-/* Tema do vídeo: identidade própria de cada projeto (cores e fontes do palco).
-   Defina a paleta a partir do assunto do vídeo; não reutilize a do projeto anterior. */
+/* Tema · juninho-ep1 · "quadrinho de fim de tarde" (modo cartoon narrativo)
+   tangerina da tarde, coral, verde-petróleo, ameixa da noite, mostarda; vermelho só em carimbos.
+   Inter (Display/Text pelo tamanho óptico) no lugar da SF Pro. */
 :root{
-  --v-bg:#FFFFFF;      /* fundo */
-  --v-ink:#100D0A;     /* texto principal */
-  --v-ink2:#5F5852;    /* texto secundário */
-  --v-mute:#A8A098;    /* rótulos apagados */
-  --v-line:#EEEAE6;    /* linhas, trilhos, wireframes */
-  --v-soft:#F4F1EE;    /* superfícies suaves */
-  --v-ac:#FF5A1F;      /* cor de destaque (1 por vídeo) */
-  --v-ac2:#FF8A3D;     /* variação do destaque */
-  --v-sans:"Geist", "Helvetica Neue", Arial, sans-serif;
-  --v-display:"Geist", "Helvetica Neue", Arial, sans-serif;
-  --v-mono:"Geist Mono", Menlo, monospace;
+  --v-bg:#2A1B47; --v-ink:#2A1B47; --v-ink2:#5B4A7A; --v-mute:#9C8FB5; --v-line:#2A1B47; --v-soft:#FFF4E0;
+  --v-ac:#F4D35E; --v-ac2:#FF6B4A;
+  --tang:#FFB347; --coral:#FF6B4A; --petro:#0E6B6B; --ameixa:#2A1B47; --must:#F4D35E; --verm:#E63946; --creme:#FFF4E0;
+  --v-contorno:#2A1B47;
+  --v-sans:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --v-display:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --v-mono:"Inter", Menlo, monospace;
 }
+#stage{background:var(--ameixa);font-family:var(--v-sans);font-optical-sizing:auto}
+#stage .full{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+#stage .abs{position:absolute}
+#stage .ono{position:absolute;font:900 150px/1 var(--v-display);letter-spacing:-.02em;color:var(--must);-webkit-text-stroke:16px var(--ameixa);paint-order:stroke fill;filter:drop-shadow(0 10px 0 var(--ameixa));white-space:nowrap;transform-origin:50% 50%}
+#stage .carimbo{position:absolute;font:900 120px/1 var(--v-display);color:var(--verm);border:14px solid var(--verm);border-radius:22px;padding:14px 34px 18px;letter-spacing:.02em;white-space:nowrap;background:rgba(255,244,224,.9)}
+#stage .placa{position:absolute;background:var(--ameixa);color:#fff;border-radius:18px;padding:14px 30px 16px;font:800 48px/1.05 var(--v-display);letter-spacing:-.01em;white-space:nowrap;box-shadow:0 8px 0 rgba(0,0,0,.25)}
+#stage .placa small{display:block;font:700 24px var(--v-sans);color:var(--must);letter-spacing:.06em;margin-top:4px}
