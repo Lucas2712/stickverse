@@ -2875,5 +2875,19 @@
   "fonte": "https://github.com/Leonxlnx/earshot",
   "versao_banco": "forge_v2r6+forge04r1+fit1+pluck1\nid",
   "verificado_em": "2026-11-07"
+ },
+ {
+  "arquivo": "studio/sons/openverse/coin/coin_moedas_wi87e9e7.flac",
+  "nome": "Coins 3 (Gravity Sound)",
+  "origem": "openverse/wikimedia_audio",
+  "tipo": "coin",
+  "autor": "Gravity Sound",
+  "licenca": "CC BY 4.0",
+  "licenca_url": "https://creativecommons.org/licenses/by/4.0/",
+  "fonte": "https://commons.wikimedia.org/w/index.php?curid=85709934",
+  "openverse_id": "87e9e7eb-e3fe-4622-80c1-43a24943d41e",
+  "conferencia": "Wikimedia Commons: cc by 4.0",
+  "verificado_em": "2026-11-10",
+  "editado": "convertido para FLAC 48 kHz; recortado/sincronizado no vídeo"
  }
 ]
