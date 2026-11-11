@@ -27,7 +27,8 @@ RSFX = os.path.join(RAIZ, ".claude", "skills", "real-sfx")
 MAPA = {"whoosh": ("whoosh", .6, 1), "swoosh": ("whoosh", .3, .9), "riser": ("riser", 1.2, 1), "swell": ("riser", .9, .6),
         "pop": ("pop", None, 1), "blip": ("pop", None, .6), "tick": ("tick", None, 1), "click": ("click", None, 1),
         "send": ("click", None, .9), "flip": ("wipe", None, 1), "boom": ("hit", None, 1), "hit": ("hit", None, 1),
-        "chime": ("chime", None, 1), "ding": ("chime", None, 1), "glitch": ("glitch", None, 1), "key": ("key", None, 1)}
+        "chime": ("chime", None, 1), "ding": ("chime", None, 1), "glitch": ("glitch", None, 1), "key": ("key", None, 1),
+        "coin": ("coins", None, 1)}
 
 JS_EVENTOS = r"""
 const { chromium } = require('playwright'); const fs = require('fs');
