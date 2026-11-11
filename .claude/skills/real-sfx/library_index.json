@@ -1,11 +1,11 @@
 {
- "count": 252,
+ "count": 253,
  "libraries": [
   {
    "name": "estudio",
    "path": "/workspace/stickverse/studio/sons",
    "tier": "main",
-   "files": 252,
+   "files": 253,
    "catalog": true
   }
  ],
@@ -31,7 +31,6 @@
    "peak_db": -1.0,
    "mean_db": -17.2,
    "peak_time": 0.03,
-   "lr_corr": 0.65,
    "attack_ms": 20,
    "decay_ms": 50,
    "centroid": 90,
@@ -41,7 +40,17 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.17,
+   "lr_corr": 0.65,
    "onset_count": 0,
+   "tags": [
+    "Speech",
+    "Music"
+   ],
+   "tag_scores": [
+    0.13,
+    0.1
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "sub",
@@ -50,16 +59,7 @@
     "short",
     "dry"
    ],
-   "id": 0,
-   "tags_v": 3,
-   "tags": [
-    "Speech",
-    "Music"
-   ],
-   "tag_scores": [
-    0.13,
-    0.1
-   ]
+   "id": 0
   },
   {
    "library": "estudio",
@@ -82,7 +82,6 @@
    "peak_db": -1.0,
    "mean_db": -18.3,
    "peak_time": 0.01,
-   "lr_corr": 0.07,
    "attack_ms": 10,
    "decay_ms": 30,
    "centroid": 1028,
@@ -92,7 +91,11 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "lr_corr": 0.07,
    "onset_count": 1,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
@@ -101,10 +104,7 @@
     "tiny",
     "dry"
    ],
-   "id": 1,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 1
   },
   {
    "library": "estudio",
@@ -127,7 +127,6 @@
    "peak_db": -1.0,
    "mean_db": -17.0,
    "peak_time": 0.03,
-   "lr_corr": 0.58,
    "attack_ms": 10,
    "decay_ms": 50,
    "centroid": 87,
@@ -137,7 +136,15 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "lr_corr": 0.58,
    "onset_count": 1,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "sub",
@@ -146,14 +153,7 @@
     "tiny",
     "dry"
    ],
-   "id": 2,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 2
   },
   {
    "library": "estudio",
@@ -177,7 +177,6 @@
    "peak_db": -1.0,
    "mean_db": -19.3,
    "peak_time": 0.01,
-   "lr_corr": 0.94,
    "attack_ms": 0,
    "decay_ms": 70,
    "centroid": 1418,
@@ -187,17 +186,8 @@
    "flat": 0.073,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "lr_corr": 0.94,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 3,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Ding",
@@ -211,7 +201,17 @@
     0.26,
     0.23,
     0.21
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 3
   },
   {
    "library": "estudio",
@@ -234,7 +234,6 @@
    "peak_db": -1.0,
    "mean_db": -19.6,
    "peak_time": 0.03,
-   "lr_corr": 0.67,
    "attack_ms": 20,
    "decay_ms": 40,
    "centroid": 890,
@@ -244,7 +243,15 @@
    "flat": 0.008,
    "bumps": 0.0,
    "active_dur": 0.18,
+   "lr_corr": 0.67,
    "onset_count": 1,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.67
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
@@ -253,14 +260,7 @@
     "short",
     "dry"
    ],
-   "id": 4,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.67
-   ]
+   "id": 4
   },
   {
    "library": "estudio",
@@ -283,7 +283,6 @@
    "peak_db": -1.0,
    "mean_db": -17.5,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 40,
    "centroid": 880,
@@ -293,17 +292,8 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 5,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Telephone",
@@ -317,7 +307,17 @@
     0.24,
     0.23,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 5
   },
   {
    "library": "estudio",
@@ -340,7 +340,6 @@
    "peak_db": -1.0,
    "mean_db": -15.4,
    "peak_time": 0.01,
-   "lr_corr": 0.23,
    "attack_ms": 10,
    "decay_ms": 40,
    "centroid": 115,
@@ -350,17 +349,8 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.13,
+   "lr_corr": 0.23,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "sub",
-    "heavy",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 6,
-   "tags_v": 3,
    "tags": [
     "Knock",
     "Thunk",
@@ -374,7 +364,17 @@
     0.22,
     0.19,
     0.17
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "sub",
+    "heavy",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 6
   },
   {
    "library": "estudio",
@@ -397,7 +397,6 @@
    "peak_db": -1.0,
    "mean_db": -18.5,
    "peak_time": 0.03,
-   "lr_corr": 0.95,
    "attack_ms": 20,
    "decay_ms": 80,
    "centroid": 783,
@@ -407,7 +406,15 @@
    "flat": 0.002,
    "bumps": 3.3,
    "active_dur": 0.15,
+   "lr_corr": 0.95,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.67
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
@@ -416,14 +423,7 @@
     "short",
     "dry"
    ],
-   "id": 7,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.67
-   ]
+   "id": 7
   },
   {
    "library": "estudio",
@@ -446,7 +446,6 @@
    "peak_db": -1.0,
    "mean_db": -16.6,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 60,
    "centroid": 331,
@@ -456,7 +455,15 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.1,
+   "lr_corr": 1.0,
    "onset_count": 0,
+   "tags": [
+    "Plop"
+   ],
+   "tag_scores": [
+    0.38
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "dark",
@@ -464,14 +471,7 @@
     "tiny",
     "dry"
    ],
-   "id": 8,
-   "tags_v": 3,
-   "tags": [
-    "Plop"
-   ],
-   "tag_scores": [
-    0.38
-   ]
+   "id": 8
   },
   {
    "library": "estudio",
@@ -494,7 +494,6 @@
    "peak_db": -1.0,
    "mean_db": -17.8,
    "peak_time": 0.01,
-   "lr_corr": 0.72,
    "attack_ms": 10,
    "decay_ms": 40,
    "centroid": 136,
@@ -504,7 +503,15 @@
    "flat": 0.003,
    "bumps": 0.0,
    "active_dur": 0.07,
+   "lr_corr": 0.72,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.08
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "sub",
@@ -513,14 +520,7 @@
     "tiny",
     "dry"
    ],
-   "id": 9,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.08
-   ]
+   "id": 9
   },
   {
    "library": "estudio",
@@ -543,7 +543,6 @@
    "peak_db": -0.8,
    "mean_db": -17.7,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 1937,
@@ -553,17 +552,8 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 10,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Beep, bleep",
@@ -577,7 +567,17 @@
     0.2,
     0.17,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 10
   },
   {
    "library": "estudio",
@@ -600,7 +600,6 @@
    "peak_db": -1.0,
    "mean_db": -15.0,
    "peak_time": 0.01,
-   "lr_corr": 0.99,
    "attack_ms": 10,
    "decay_ms": 120,
    "centroid": 631,
@@ -610,7 +609,17 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.19,
+   "lr_corr": 0.99,
    "onset_count": 0,
+   "tags": [
+    "Plop",
+    "Ding"
+   ],
+   "tag_scores": [
+    0.96,
+    0.25
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
@@ -619,16 +628,7 @@
     "short",
     "dry"
    ],
-   "id": 11,
-   "tags_v": 3,
-   "tags": [
-    "Plop",
-    "Ding"
-   ],
-   "tag_scores": [
-    0.96,
-    0.25
-   ]
+   "id": 11
   },
   {
    "library": "estudio",
@@ -651,7 +651,6 @@
    "peak_db": -1.0,
    "mean_db": -20.1,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 10,
    "decay_ms": 40,
    "centroid": 846,
@@ -661,7 +660,15 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.13,
+   "lr_corr": 1.0,
    "onset_count": 1,
+   "tags": [
+    "Plop"
+   ],
+   "tag_scores": [
+    0.99
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
@@ -670,14 +677,7 @@
     "tiny",
     "dry"
    ],
-   "id": 12,
-   "tags_v": 3,
-   "tags": [
-    "Plop"
-   ],
-   "tag_scores": [
-    0.99
-   ]
+   "id": 12
   },
   {
    "library": "estudio",
@@ -700,7 +700,6 @@
    "peak_db": -1.0,
    "mean_db": -17.2,
    "peak_time": 0.03,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 80,
    "centroid": 3027,
@@ -710,17 +709,8 @@
    "flat": 0.434,
    "bumps": 3.3,
    "active_dur": 0.14,
+   "lr_corr": 1.0,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 13,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Chink, clink",
@@ -734,7 +724,17 @@
     0.19,
     0.19,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 13
   },
   {
    "library": "estudio",
@@ -757,7 +757,6 @@
    "peak_db": -1.0,
    "mean_db": -17.5,
    "peak_time": 0.01,
-   "lr_corr": 0.51,
    "attack_ms": 10,
    "decay_ms": 70,
    "centroid": 115,
@@ -767,7 +766,15 @@
    "flat": 0.002,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "lr_corr": 0.51,
    "onset_count": 1,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.22
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "sub",
@@ -776,14 +783,7 @@
     "tiny",
     "dry"
    ],
-   "id": 14,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.22
-   ]
+   "id": 14
   },
   {
    "library": "estudio",
@@ -806,7 +806,6 @@
    "peak_db": -1.0,
    "mean_db": -16.2,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 70,
    "centroid": 407,
@@ -816,17 +815,8 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.11,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 15,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Alarm",
@@ -840,7 +830,17 @@
     0.11,
     0.11,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 15
   },
   {
    "library": "estudio",
@@ -864,7 +864,6 @@
    "peak_db": -1.0,
    "mean_db": -14.1,
    "peak_time": 0.03,
-   "lr_corr": 0.97,
    "attack_ms": 10,
    "decay_ms": 160,
    "centroid": 588,
@@ -874,16 +873,8 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.24,
+   "lr_corr": 0.97,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 16,
-   "tags_v": 3,
    "tags": [
     "Cowbell",
     "Wood block",
@@ -895,7 +886,16 @@
     0.17,
     0.16,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 16
   },
   {
    "library": "estudio",
@@ -918,7 +918,6 @@
    "peak_db": -1.0,
    "mean_db": -18.5,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 40,
    "centroid": 995,
@@ -928,7 +927,17 @@
    "flat": 0.002,
    "bumps": 0.0,
    "active_dur": 0.14,
+   "lr_corr": 1.0,
    "onset_count": 1,
+   "tags": [
+    "Plop",
+    "Tick"
+   ],
+   "tag_scores": [
+    0.84,
+    0.11
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
@@ -937,16 +946,7 @@
     "tiny",
     "dry"
    ],
-   "id": 17,
-   "tags_v": 3,
-   "tags": [
-    "Plop",
-    "Tick"
-   ],
-   "tag_scores": [
-    0.84,
-    0.11
-   ]
+   "id": 17
   },
   {
    "library": "estudio",
@@ -970,7 +970,6 @@
    "peak_db": -1.0,
    "mean_db": -14.0,
    "peak_time": 0.03,
-   "lr_corr": 0.96,
    "attack_ms": 30,
    "decay_ms": 110,
    "centroid": 886,
@@ -980,17 +979,8 @@
    "flat": 0.001,
    "bumps": 3.3,
    "active_dur": 0.2,
+   "lr_corr": 0.96,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 18,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Clang",
@@ -1004,7 +994,17 @@
     0.46,
     0.36,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 18
   },
   {
    "library": "estudio",
@@ -1027,7 +1027,6 @@
    "peak_db": -1.0,
    "mean_db": -17.4,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 1543,
@@ -1037,7 +1036,17 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "lr_corr": 1.0,
    "onset_count": 0,
+   "tags": [
+    "Tick",
+    "Rodents, rats, mice"
+   ],
+   "tag_scores": [
+    0.13,
+    0.09
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "mid",
@@ -1046,16 +1055,7 @@
     "tiny",
     "dry"
    ],
-   "id": 19,
-   "tags_v": 3,
-   "tags": [
-    "Tick",
-    "Rodents, rats, mice"
-   ],
-   "tag_scores": [
-    0.13,
-    0.09
-   ]
+   "id": 19
   },
   {
    "library": "estudio",
@@ -1078,7 +1078,6 @@
    "peak_db": -1.0,
    "mean_db": -19.2,
    "peak_time": 0.01,
-   "lr_corr": 0.99,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 529,
@@ -1088,17 +1087,8 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "lr_corr": 0.99,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 20,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Telephone",
@@ -1108,7 +1098,17 @@
     0.88,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 20
   },
   {
    "library": "estudio",
@@ -1131,7 +1131,6 @@
    "peak_db": -1.0,
    "mean_db": -18.5,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 10,
    "decay_ms": 130,
    "centroid": 1242,
@@ -1141,16 +1140,8 @@
    "flat": 0.003,
    "bumps": 0.0,
    "active_dur": 0.18,
+   "lr_corr": 1.0,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 21,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Hiccup",
@@ -1164,7 +1155,16 @@
     0.19,
     0.17,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 21
   },
   {
    "library": "estudio",
@@ -1187,7 +1187,6 @@
    "peak_db": -1.0,
    "mean_db": -15.3,
    "peak_time": 0.05,
-   "lr_corr": 0.99,
    "attack_ms": 40,
    "decay_ms": 80,
    "centroid": 708,
@@ -1197,17 +1196,8 @@
    "flat": 0.001,
    "bumps": 3.3,
    "active_dur": 0.16,
+   "lr_corr": 0.99,
    "onset_count": 0,
-   "words": [
-    "soft-attack",
-    "warm",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 22,
-   "tags_v": 3,
    "tags": [
     "Dial tone",
     "Telephone",
@@ -1217,7 +1207,17 @@
     0.15,
     0.14,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 22
   },
   {
    "library": "estudio",
@@ -1240,7 +1240,6 @@
    "peak_db": -1.0,
    "mean_db": -14.4,
    "peak_time": 0.03,
-   "lr_corr": 0.98,
    "attack_ms": 20,
    "decay_ms": 100,
    "centroid": 551,
@@ -1250,7 +1249,17 @@
    "flat": 0.001,
    "bumps": 3.3,
    "active_dur": 0.16,
+   "lr_corr": 0.98,
    "onset_count": 0,
+   "tags": [
+    "Music",
+    "Beep, bleep"
+   ],
+   "tag_scores": [
+    0.1,
+    0.08
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "dark",
@@ -1259,16 +1268,7 @@
     "short",
     "dry"
    ],
-   "id": 23,
-   "tags_v": 3,
-   "tags": [
-    "Music",
-    "Beep, bleep"
-   ],
-   "tag_scores": [
-    0.1,
-    0.08
-   ]
+   "id": 23
   },
   {
    "library": "estudio",
@@ -1291,7 +1291,6 @@
    "peak_db": -1.0,
    "mean_db": -16.1,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 248,
@@ -1301,7 +1300,15 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "lr_corr": 1.0,
    "onset_count": 0,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.11
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "dark",
@@ -1309,14 +1316,7 @@
     "tiny",
     "dry"
    ],
-   "id": 24,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.11
-   ]
+   "id": 24
   },
   {
    "library": "estudio",
@@ -1340,7 +1340,6 @@
    "peak_db": -1.0,
    "mean_db": -16.2,
    "peak_time": 0.03,
-   "lr_corr": 0.91,
    "attack_ms": 10,
    "decay_ms": 150,
    "centroid": 528,
@@ -1350,7 +1349,15 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.22,
+   "lr_corr": 0.91,
    "onset_count": 0,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.17
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "dark",
@@ -1358,14 +1365,7 @@
     "tonal",
     "short"
    ],
-   "id": 25,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.17
-   ]
+   "id": 25
   },
   {
    "library": "estudio",
@@ -1388,7 +1388,6 @@
    "peak_db": -1.0,
    "mean_db": -17.0,
    "peak_time": 0.05,
-   "lr_corr": 0.51,
    "attack_ms": 40,
    "decay_ms": 80,
    "centroid": 888,
@@ -1398,17 +1397,8 @@
    "flat": 0.012,
    "bumps": 3.3,
    "active_dur": 0.16,
+   "lr_corr": 0.51,
    "onset_count": 0,
-   "words": [
-    "soft-attack",
-    "warm",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 26,
-   "tags_v": 3,
    "tags": [
     "Vehicle horn, car horn, honking",
     "Music",
@@ -1418,7 +1408,17 @@
     0.12,
     0.1,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 26
   },
   {
    "library": "estudio",
@@ -1442,7 +1442,6 @@
    "peak_db": -1.0,
    "mean_db": -16.4,
    "peak_time": 0.03,
-   "lr_corr": 0.96,
    "attack_ms": 20,
    "decay_ms": 180,
    "centroid": 775,
@@ -1452,16 +1451,8 @@
    "flat": 0.01,
    "bumps": 3.3,
    "active_dur": 0.28,
+   "lr_corr": 0.96,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 27,
-   "tags_v": 3,
    "tags": [
     "Glass",
     "Ding",
@@ -1473,7 +1464,16 @@
     0.22,
     0.21,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 27
   },
   {
    "library": "estudio",
@@ -1496,7 +1496,6 @@
    "peak_db": -1.0,
    "mean_db": -17.6,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 60,
    "centroid": 858,
@@ -1506,17 +1505,8 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.11,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 28,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Alarm",
@@ -1526,7 +1516,17 @@
     0.93,
     0.1,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 28
   },
   {
    "library": "estudio",
@@ -1548,7 +1548,6 @@
    "peak_db": -1.0,
    "mean_db": -17.7,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 86,
@@ -1558,17 +1557,8 @@
    "flat": 0.004,
    "bumps": 0.0,
    "active_dur": 0.09,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "sub",
-    "heavy",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 29,
-   "tags_v": 3,
    "tags": [
     "Animal",
     "Mosquito",
@@ -1580,7 +1570,17 @@
     0.11,
     0.1,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "sub",
+    "heavy",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 29
   },
   {
    "library": "estudio",
@@ -1602,7 +1602,6 @@
    "peak_db": -1.0,
    "mean_db": -16.7,
    "peak_time": 0.01,
-   "lr_corr": 0.32,
    "attack_ms": 10,
    "decay_ms": 30,
    "centroid": 159,
@@ -1612,7 +1611,15 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "lr_corr": 0.32,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.11
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "dark",
@@ -1621,14 +1628,7 @@
     "tiny",
     "dry"
    ],
-   "id": 30,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.11
-   ]
+   "id": 30
   },
   {
    "library": "estudio",
@@ -1650,7 +1650,6 @@
    "peak_db": -1.0,
    "mean_db": -21.7,
    "peak_time": 0.01,
-   "lr_corr": 0.95,
    "attack_ms": 0,
    "decay_ms": 70,
    "centroid": 647,
@@ -1660,17 +1659,8 @@
    "flat": 0.01,
    "bumps": 0.0,
    "active_dur": 0.13,
+   "lr_corr": 0.95,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 31,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Ding",
@@ -1684,7 +1674,17 @@
     0.09,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 31
   },
   {
    "library": "estudio",
@@ -1706,7 +1706,6 @@
    "peak_db": -1.0,
    "mean_db": -24.6,
    "peak_time": 0.05,
-   "lr_corr": 0.94,
    "attack_ms": 10,
    "decay_ms": 40,
    "centroid": 2362,
@@ -1716,17 +1715,8 @@
    "flat": 0.086,
    "bumps": 3.3,
    "active_dur": 0.12,
+   "lr_corr": 0.94,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 32,
-   "tags_v": 3,
    "tags": [
     "Glass",
     "Chink, clink",
@@ -1736,7 +1726,17 @@
     0.12,
     0.11,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 32
   },
   {
    "library": "estudio",
@@ -1758,7 +1758,6 @@
    "peak_db": -1.0,
    "mean_db": -15.8,
    "peak_time": 0.01,
-   "lr_corr": 0.44,
    "attack_ms": 10,
    "decay_ms": 20,
    "centroid": 140,
@@ -1768,7 +1767,15 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "lr_corr": 0.44,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.17
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "sub",
@@ -1777,14 +1784,7 @@
     "tiny",
     "dry"
    ],
-   "id": 33,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.17
-   ]
+   "id": 33
   },
   {
    "library": "estudio",
@@ -1806,7 +1806,6 @@
    "peak_db": -1.0,
    "mean_db": -18.6,
    "peak_time": 0.01,
-   "lr_corr": 0.86,
    "attack_ms": 0,
    "decay_ms": 70,
    "centroid": 125,
@@ -1816,7 +1815,15 @@
    "flat": 0.002,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "lr_corr": 0.86,
    "onset_count": 0,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.1
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "sub",
@@ -1825,14 +1832,7 @@
     "tiny",
     "dry"
    ],
-   "id": 34,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.1
-   ]
+   "id": 34
   },
   {
    "library": "estudio",
@@ -1854,7 +1854,6 @@
    "peak_db": -1.0,
    "mean_db": -22.0,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 166,
@@ -1864,17 +1863,8 @@
    "flat": 0.002,
    "bumps": 0.0,
    "active_dur": 0.09,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 35,
-   "tags_v": 3,
    "tags": [
     "Insect",
     "Buzz",
@@ -1888,7 +1878,17 @@
     0.11,
     0.1,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 35
   },
   {
    "library": "estudio",
@@ -1910,7 +1910,6 @@
    "peak_db": -1.0,
    "mean_db": -16.9,
    "peak_time": 0.01,
-   "lr_corr": 0.44,
    "attack_ms": 10,
    "decay_ms": 30,
    "centroid": 142,
@@ -1920,7 +1919,17 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.11,
+   "lr_corr": 0.44,
    "onset_count": 1,
+   "tags": [
+    "Music",
+    "Beep, bleep"
+   ],
+   "tag_scores": [
+    0.1,
+    0.08
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "sub",
@@ -1929,16 +1938,7 @@
     "tiny",
     "dry"
    ],
-   "id": 36,
-   "tags_v": 3,
-   "tags": [
-    "Music",
-    "Beep, bleep"
-   ],
-   "tag_scores": [
-    0.1,
-    0.08
-   ]
+   "id": 36
   },
   {
    "library": "estudio",
@@ -1960,7 +1960,6 @@
    "peak_db": -1.0,
    "mean_db": -24.9,
    "peak_time": 0.05,
-   "lr_corr": 0.94,
    "attack_ms": 40,
    "decay_ms": 40,
    "centroid": 2856,
@@ -1970,17 +1969,8 @@
    "flat": 0.294,
    "bumps": 3.3,
    "active_dur": 0.11,
+   "lr_corr": 0.94,
    "onset_count": 1,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 37,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -1990,7 +1980,17 @@
     0.2,
     0.14,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 37
   },
   {
    "library": "estudio",
@@ -2012,7 +2012,6 @@
    "peak_db": -1.0,
    "mean_db": -19.1,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 10,
    "decay_ms": 140,
    "centroid": 68,
@@ -2022,7 +2021,15 @@
    "flat": 0.007,
    "bumps": 0.0,
    "active_dur": 0.22,
+   "lr_corr": 1.0,
    "onset_count": 0,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.28
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "sub",
@@ -2030,14 +2037,7 @@
     "tonal",
     "short"
    ],
-   "id": 38,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.28
-   ]
+   "id": 38
   },
   {
    "library": "estudio",
@@ -2059,7 +2059,6 @@
    "peak_db": -1.0,
    "mean_db": -14.6,
    "peak_time": 0.01,
-   "lr_corr": 0.39,
    "attack_ms": 10,
    "decay_ms": 40,
    "centroid": 130,
@@ -2069,7 +2068,15 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.07,
+   "lr_corr": 0.39,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.25
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "sub",
@@ -2078,14 +2085,7 @@
     "tiny",
     "dry"
    ],
-   "id": 39,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.25
-   ]
+   "id": 39
   },
   {
    "library": "estudio",
@@ -2107,7 +2107,6 @@
    "peak_db": -1.0,
    "mean_db": -19.0,
    "peak_time": 0.01,
-   "lr_corr": 0.99,
    "attack_ms": 0,
    "decay_ms": 40,
    "centroid": 155,
@@ -2117,17 +2116,8 @@
    "flat": 0.016,
    "bumps": 0.0,
    "active_dur": 0.09,
+   "lr_corr": 0.99,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 40,
-   "tags_v": 3,
    "tags": [
     "Door",
     "Meow",
@@ -2141,7 +2131,17 @@
     0.09,
     0.09,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 40
   },
   {
    "library": "estudio",
@@ -2163,7 +2163,6 @@
    "peak_db": -1.0,
    "mean_db": -21.6,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 80,
    "centroid": 171,
@@ -2173,17 +2172,8 @@
    "flat": 0.001,
    "bumps": 0.0,
    "active_dur": 0.2,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 41,
-   "tags_v": 3,
    "tags": [
     "Thump, thud",
     "Thunk",
@@ -2197,7 +2187,17 @@
     0.15,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 41
   },
   {
    "library": "estudio",
@@ -2219,7 +2219,6 @@
    "peak_db": -1.0,
    "mean_db": -16.2,
    "peak_time": 0.01,
-   "lr_corr": 0.42,
    "attack_ms": 10,
    "decay_ms": 20,
    "centroid": 118,
@@ -2229,7 +2228,15 @@
    "flat": 0.003,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "lr_corr": 0.42,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.14
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "sub",
@@ -2238,14 +2245,7 @@
     "tiny",
     "dry"
    ],
-   "id": 42,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.14
-   ]
+   "id": 42
   },
   {
    "library": "estudio",
@@ -2267,7 +2267,6 @@
    "peak_db": -1.0,
    "mean_db": -21.9,
    "peak_time": 0.01,
-   "lr_corr": 0.86,
    "attack_ms": 0,
    "decay_ms": 20,
    "centroid": 1141,
@@ -2277,16 +2276,8 @@
    "flat": 0.056,
    "bumps": 3.3,
    "active_dur": 0.12,
+   "lr_corr": 0.86,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 43,
-   "tags_v": 3,
    "tags": [
     "Plop",
     "Telephone",
@@ -2296,7 +2287,16 @@
     0.24,
     0.11,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 43
   },
   {
    "library": "estudio",
@@ -2318,7 +2318,6 @@
    "peak_db": -1.0,
    "mean_db": -20.6,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 10,
    "decay_ms": 50,
    "centroid": 62,
@@ -2328,7 +2327,15 @@
    "flat": 0.003,
    "bumps": 0.0,
    "active_dur": 0.17,
+   "lr_corr": 1.0,
    "onset_count": 1,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.1
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "sub",
@@ -2337,14 +2344,7 @@
     "short",
     "dry"
    ],
-   "id": 44,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.1
-   ]
+   "id": 44
   },
   {
    "library": "estudio",
@@ -2366,7 +2366,6 @@
    "peak_db": -1.0,
    "mean_db": -19.0,
    "peak_time": 0.01,
-   "lr_corr": 0.93,
    "attack_ms": 0,
    "decay_ms": 40,
    "centroid": 171,
@@ -2376,17 +2375,8 @@
    "flat": 0.005,
    "bumps": 0.0,
    "active_dur": 0.11,
+   "lr_corr": 0.93,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 45,
-   "tags_v": 3,
    "tags": [
     "Insect",
     "Mosquito",
@@ -2400,7 +2390,17 @@
     0.12,
     0.12,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 45
   },
   {
    "library": "estudio",
@@ -2422,7 +2422,6 @@
    "peak_db": -1.0,
    "mean_db": -20.1,
    "peak_time": 0.03,
-   "lr_corr": 0.72,
    "attack_ms": 10,
    "decay_ms": 80,
    "centroid": 430,
@@ -2432,7 +2431,15 @@
    "flat": 0.061,
    "bumps": 3.3,
    "active_dur": 0.15,
+   "lr_corr": 0.72,
    "onset_count": 1,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.26
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "dark",
@@ -2441,14 +2448,7 @@
     "short",
     "dry"
    ],
-   "id": 46,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.26
-   ]
+   "id": 46
   },
   {
    "library": "estudio",
@@ -2470,7 +2470,6 @@
    "peak_db": -1.0,
    "mean_db": -27.3,
    "peak_time": 0.01,
-   "lr_corr": 0.97,
    "attack_ms": 0,
    "decay_ms": 100,
    "centroid": 1086,
@@ -2480,7 +2479,15 @@
    "flat": 0.161,
    "bumps": 0.0,
    "active_dur": 0.19,
+   "lr_corr": 0.97,
    "onset_count": 2,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
@@ -2488,14 +2495,7 @@
     "short",
     "dry"
    ],
-   "id": 47,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 47
   },
   {
    "library": "estudio",
@@ -2517,7 +2517,6 @@
    "peak_db": -1.0,
    "mean_db": -31.2,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 60,
    "centroid": 5517,
@@ -2527,17 +2526,8 @@
    "flat": 0.031,
    "bumps": 0.0,
    "active_dur": 0.07,
+   "lr_corr": 1.0,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "airy",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 48,
-   "tags_v": 3,
    "tags": [
     "Rodents, rats, mice",
     "Liquid",
@@ -2547,7 +2537,17 @@
     0.1,
     0.08,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "airy",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 48
   },
   {
    "library": "estudio",
@@ -2569,7 +2569,6 @@
    "peak_db": -1.0,
    "mean_db": -27.8,
    "peak_time": 0.01,
-   "lr_corr": 0.98,
    "attack_ms": 0,
    "decay_ms": 90,
    "centroid": 1903,
@@ -2579,7 +2578,11 @@
    "flat": 0.302,
    "bumps": 0.0,
    "active_dur": 0.16,
+   "lr_corr": 0.98,
    "onset_count": 1,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "mid",
@@ -2587,10 +2590,7 @@
     "short",
     "dry"
    ],
-   "id": 49,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 49
   },
   {
    "library": "estudio",
@@ -2612,7 +2612,6 @@
    "peak_db": -1.0,
    "mean_db": -29.6,
    "peak_time": 0.01,
-   "lr_corr": 0.94,
    "attack_ms": 10,
    "decay_ms": 100,
    "centroid": 1136,
@@ -2622,16 +2621,8 @@
    "flat": 0.235,
    "bumps": 0.0,
    "active_dur": 0.19,
+   "lr_corr": 0.94,
    "onset_count": 2,
-   "words": [
-    "punchy",
-    "warm",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 50,
-   "tags_v": 3,
    "tags": [
     "Speech",
     "Tick"
@@ -2639,7 +2630,16 @@
    "tag_scores": [
     0.13,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 50
   },
   {
    "library": "estudio",
@@ -2661,7 +2661,6 @@
    "peak_db": -1.0,
    "mean_db": -32.1,
    "peak_time": 0.03,
-   "lr_corr": 0.66,
    "attack_ms": 10,
    "decay_ms": 230,
    "centroid": 343,
@@ -2671,16 +2670,8 @@
    "flat": 0.153,
    "bumps": 3.3,
    "active_dur": 0.31,
+   "lr_corr": 0.66,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "textured",
-    "short"
-   ],
-   "id": 51,
-   "tags_v": 3,
    "tags": [
     "Glass",
     "Chink, clink",
@@ -2694,7 +2685,16 @@
     0.15,
     0.13,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "textured",
+    "short"
+   ],
+   "id": 51
   },
   {
    "library": "estudio",
@@ -2716,7 +2716,6 @@
    "peak_db": -1.0,
    "mean_db": -32.8,
    "peak_time": 0.97,
-   "lr_corr": 1.0,
    "attack_ms": 970,
    "decay_ms": 20,
    "centroid": 6055,
@@ -2726,16 +2725,8 @@
    "flat": 0.047,
    "bumps": 0.0,
    "active_dur": 1.36,
+   "lr_corr": 1.0,
    "onset_count": 14,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 52,
-   "tags_v": 3,
    "tags": [
     "Wild animals",
     "Rattle",
@@ -2749,7 +2740,16 @@
     0.31,
     0.23,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 52
   },
   {
    "library": "estudio",
@@ -2771,7 +2771,6 @@
    "peak_db": -1.0,
    "mean_db": -28.1,
    "peak_time": 0.03,
-   "lr_corr": 0.9,
    "attack_ms": 10,
    "decay_ms": 90,
    "centroid": 2430,
@@ -2781,16 +2780,8 @@
    "flat": 0.278,
    "bumps": 3.3,
    "active_dur": 0.19,
+   "lr_corr": 0.9,
    "onset_count": 2,
-   "words": [
-    "punchy",
-    "mid",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 53,
-   "tags_v": 3,
    "tags": [
     "Chink, clink",
     "Tick",
@@ -2804,7 +2795,16 @@
     0.21,
     0.19,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 53
   },
   {
    "library": "estudio",
@@ -2827,7 +2827,6 @@
    "peak_db": -1.0,
    "mean_db": -30.2,
    "peak_time": 0.69,
-   "lr_corr": 1.0,
    "attack_ms": 680,
    "decay_ms": 20,
    "centroid": 6262,
@@ -2837,16 +2836,8 @@
    "flat": 0.057,
    "bumps": 0.0,
    "active_dur": 1.38,
+   "lr_corr": 1.0,
    "onset_count": 14,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 54,
-   "tags_v": 3,
    "tags": [
     "Rodents, rats, mice",
     "Mouse",
@@ -2860,7 +2851,16 @@
     0.29,
     0.25,
     0.22
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 54
   },
   {
    "library": "estudio",
@@ -2882,7 +2882,6 @@
    "peak_db": -1.0,
    "mean_db": -29.1,
    "peak_time": 0.03,
-   "lr_corr": 0.49,
    "attack_ms": 10,
    "decay_ms": 170,
    "centroid": 697,
@@ -2892,15 +2891,8 @@
    "flat": 0.346,
    "bumps": 3.3,
    "active_dur": 0.28,
+   "lr_corr": 0.49,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "textured",
-    "short"
-   ],
-   "id": 55,
-   "tags_v": 3,
    "tags": [
     "Mechanisms",
     "Typing",
@@ -2912,7 +2904,15 @@
     0.12,
     0.12,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "textured",
+    "short"
+   ],
+   "id": 55
   },
   {
    "library": "estudio",
@@ -2934,7 +2934,6 @@
    "peak_db": -1.0,
    "mean_db": -27.5,
    "peak_time": 0.07,
-   "lr_corr": 1.0,
    "attack_ms": 10,
    "decay_ms": 190,
    "centroid": 1584,
@@ -2944,15 +2943,8 @@
    "flat": 0.12,
    "bumps": 6.7,
    "active_dur": 0.32,
+   "lr_corr": 1.0,
    "onset_count": 3,
-   "words": [
-    "punchy",
-    "mid",
-    "tonal",
-    "short"
-   ],
-   "id": 56,
-   "tags_v": 3,
    "tags": [
     "Chink, clink",
     "Glass",
@@ -2966,7 +2958,15 @@
     0.28,
     0.25,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "tonal",
+    "short"
+   ],
+   "id": 56
   },
   {
    "library": "estudio",
@@ -2988,7 +2988,6 @@
    "peak_db": -1.0,
    "mean_db": -26.0,
    "peak_time": 0.01,
-   "lr_corr": 0.99,
    "attack_ms": 0,
    "decay_ms": 180,
    "centroid": 298,
@@ -2998,16 +2997,8 @@
    "flat": 0.387,
    "bumps": 3.3,
    "active_dur": 0.24,
+   "lr_corr": 0.99,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "textured",
-    "short"
-   ],
-   "id": 57,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Drip",
@@ -3021,7 +3012,16 @@
     0.1,
     0.1,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "textured",
+    "short"
+   ],
+   "id": 57
   },
   {
    "library": "estudio",
@@ -3044,7 +3044,6 @@
    "peak_db": -1.0,
    "mean_db": -27.0,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 6229,
@@ -3054,17 +3053,8 @@
    "flat": 0.049,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "lr_corr": 1.0,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "airy",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 58,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Single-lens reflex camera",
@@ -3078,7 +3068,17 @@
     0.11,
     0.11,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "airy",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 58
   },
   {
    "library": "estudio",
@@ -3100,7 +3100,6 @@
    "peak_db": -1.0,
    "mean_db": -28.7,
    "peak_time": 0.37,
-   "lr_corr": 1.0,
    "attack_ms": 370,
    "decay_ms": 30,
    "centroid": 4952,
@@ -3110,16 +3109,8 @@
    "flat": 0.054,
    "bumps": 6.7,
    "active_dur": 1.43,
+   "lr_corr": 1.0,
    "onset_count": 14,
-   "words": [
-    "swelling",
-    "bright",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 59,
-   "tags_v": 3,
    "tags": [
     "Wild animals",
     "Animal",
@@ -3133,7 +3124,16 @@
     0.41,
     0.37,
     0.36
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "bright",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 59
   },
   {
    "library": "estudio",
@@ -3155,7 +3155,6 @@
    "peak_db": -1.0,
    "mean_db": -27.2,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 40,
    "centroid": 5971,
@@ -3165,17 +3164,8 @@
    "flat": 0.028,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "airy",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 60,
-   "tags_v": 3,
    "tags": [
     "Rodents, rats, mice",
     "Mouse",
@@ -3185,7 +3175,17 @@
     0.14,
     0.13,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "airy",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 60
   },
   {
    "library": "estudio",
@@ -3207,7 +3207,6 @@
    "peak_db": -1.0,
    "mean_db": -30.1,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 40,
    "centroid": 5393,
@@ -3217,17 +3216,8 @@
    "flat": 0.044,
    "bumps": 0.0,
    "active_dur": 0.09,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "airy",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 61,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Tick",
@@ -3241,7 +3231,17 @@
     0.12,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "airy",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 61
   },
   {
    "library": "estudio",
@@ -3263,7 +3263,6 @@
    "peak_db": -1.0,
    "mean_db": -31.5,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 20,
    "centroid": 6116,
@@ -3273,16 +3272,8 @@
    "flat": 0.043,
    "bumps": 2.9,
    "active_dur": 1.53,
+   "lr_corr": 1.0,
    "onset_count": 20,
-   "words": [
-    "punchy",
-    "airy",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 62,
-   "tags_v": 3,
    "tags": [
     "Rattle",
     "Animal",
@@ -3296,7 +3287,16 @@
     0.18,
     0.16,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "airy",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 62
   },
   {
    "library": "estudio",
@@ -3318,7 +3318,6 @@
    "peak_db": -1.0,
    "mean_db": -30.8,
    "peak_time": 0.95,
-   "lr_corr": 1.0,
    "attack_ms": 940,
    "decay_ms": 20,
    "centroid": 6020,
@@ -3328,16 +3327,8 @@
    "flat": 0.059,
    "bumps": 3.3,
    "active_dur": 1.19,
+   "lr_corr": 1.0,
    "onset_count": 16,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 63,
-   "tags_v": 3,
    "tags": [
     "Typing",
     "Computer keyboard",
@@ -3351,7 +3342,16 @@
     0.14,
     0.14,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 63
   },
   {
    "library": "estudio",
@@ -3373,7 +3373,6 @@
    "peak_db": -1.0,
    "mean_db": -29.6,
    "peak_time": 0.01,
-   "lr_corr": 0.92,
    "attack_ms": 0,
    "decay_ms": 110,
    "centroid": 1710,
@@ -3383,7 +3382,15 @@
    "flat": 0.214,
    "bumps": 0.0,
    "active_dur": 0.18,
+   "lr_corr": 0.92,
    "onset_count": 2,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.2
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "mid",
@@ -3391,14 +3398,7 @@
     "short",
     "dry"
    ],
-   "id": 64,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.2
-   ]
+   "id": 64
   },
   {
    "library": "estudio",
@@ -3420,7 +3420,6 @@
    "peak_db": -1.0,
    "mean_db": -30.3,
    "peak_time": 0.11,
-   "lr_corr": 1.0,
    "attack_ms": 10,
    "decay_ms": 60,
    "centroid": 2167,
@@ -3430,16 +3429,8 @@
    "flat": 0.291,
    "bumps": 3.3,
    "active_dur": 0.39,
+   "lr_corr": 1.0,
    "onset_count": 2,
-   "words": [
-    "punchy",
-    "mid",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 65,
-   "tags_v": 3,
    "tags": [
     "Typing",
     "Computer keyboard"
@@ -3447,7 +3438,16 @@
    "tag_scores": [
     0.17,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 65
   },
   {
    "library": "estudio",
@@ -3469,7 +3469,6 @@
    "peak_db": -1.0,
    "mean_db": -28.6,
    "peak_time": 1.15,
-   "lr_corr": 1.0,
    "attack_ms": 1140,
    "decay_ms": 30,
    "centroid": 5175,
@@ -3479,17 +3478,8 @@
    "flat": 0.078,
    "bumps": 11.4,
    "active_dur": 1.67,
+   "lr_corr": 1.0,
    "onset_count": 16,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "long",
-    "pulsing"
-   ],
-   "id": 66,
-   "tags_v": 3,
    "tags": [
     "Bird",
     "Wild animals",
@@ -3503,7 +3493,17 @@
     0.84,
     0.36,
     0.29
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "long",
+    "pulsing"
+   ],
+   "id": 66
   },
   {
    "library": "estudio",
@@ -3525,7 +3525,6 @@
    "peak_db": -1.0,
    "mean_db": -27.2,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 10,
    "decay_ms": 50,
    "centroid": 5222,
@@ -3535,7 +3534,17 @@
    "flat": 0.035,
    "bumps": 0.0,
    "active_dur": 0.07,
+   "lr_corr": 1.0,
    "onset_count": 0,
+   "tags": [
+    "Animal",
+    "Bird"
+   ],
+   "tag_scores": [
+    0.09,
+    0.09
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -3544,16 +3553,7 @@
     "tiny",
     "dry"
    ],
-   "id": 67,
-   "tags_v": 3,
-   "tags": [
-    "Animal",
-    "Bird"
-   ],
-   "tag_scores": [
-    0.09,
-    0.09
-   ]
+   "id": 67
   },
   {
    "library": "estudio",
@@ -3575,7 +3575,6 @@
    "peak_db": -1.0,
    "mean_db": -25.3,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 30,
    "centroid": 5243,
@@ -3585,7 +3584,15 @@
    "flat": 0.023,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "lr_corr": 1.0,
    "onset_count": 0,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -3594,14 +3601,7 @@
     "tiny",
     "dry"
    ],
-   "id": 68,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 68
   },
   {
    "library": "estudio",
@@ -3623,7 +3623,6 @@
    "peak_db": -1.0,
    "mean_db": -20.0,
    "peak_time": 0.53,
-   "lr_corr": 0.07,
    "attack_ms": 520,
    "decay_ms": 30,
    "centroid": 1282,
@@ -3633,7 +3632,11 @@
    "flat": 0.376,
    "bumps": 12.0,
    "active_dur": 0.59,
+   "lr_corr": 0.07,
    "onset_count": 3,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "slow-build",
     "warm",
@@ -3642,10 +3645,7 @@
     "pulsing",
     "dry"
    ],
-   "id": 69,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 69
   },
   {
    "library": "estudio",
@@ -3667,7 +3667,6 @@
    "peak_db": -1.0,
    "mean_db": -29.1,
    "peak_time": 0.67,
-   "lr_corr": 0.12,
    "attack_ms": 440,
    "decay_ms": 30,
    "centroid": 5849,
@@ -3677,18 +3676,8 @@
    "flat": 0.155,
    "bumps": 10.0,
    "active_dur": 0.71,
+   "lr_corr": 0.12,
    "onset_count": 8,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "textured",
-    "medium",
-    "pulsing",
-    "dry"
-   ],
-   "id": 70,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Scissors",
@@ -3702,7 +3691,18 @@
     0.45,
     0.42,
     0.42
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "textured",
+    "medium",
+    "pulsing",
+    "dry"
+   ],
+   "id": 70
   },
   {
    "library": "estudio",
@@ -3724,7 +3724,6 @@
    "peak_db": -1.0,
    "mean_db": -33.0,
    "peak_time": 0.65,
-   "lr_corr": 0.08,
    "attack_ms": 440,
    "decay_ms": 40,
    "centroid": 5861,
@@ -3734,17 +3733,8 @@
    "flat": 0.208,
    "bumps": 6.7,
    "active_dur": 0.71,
+   "lr_corr": 0.08,
    "onset_count": 10,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "textured",
-    "medium",
-    "dry"
-   ],
-   "id": 71,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Shuffling cards",
@@ -3758,7 +3748,17 @@
     0.32,
     0.3,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "textured",
+    "medium",
+    "dry"
+   ],
+   "id": 71
   },
   {
    "library": "estudio",
@@ -3780,7 +3780,6 @@
    "peak_db": -1.0,
    "mean_db": -19.3,
    "peak_time": 0.65,
-   "lr_corr": 0.06,
    "attack_ms": 640,
    "decay_ms": 60,
    "centroid": 1583,
@@ -3790,7 +3789,11 @@
    "flat": 0.428,
    "bumps": 13.2,
    "active_dur": 0.74,
+   "lr_corr": 0.06,
    "onset_count": 8,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "slow-build",
     "mid",
@@ -3799,10 +3802,7 @@
     "pulsing",
     "dry"
    ],
-   "id": 72,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 72
   },
   {
    "library": "estudio",
@@ -3824,7 +3824,6 @@
    "peak_db": -1.0,
    "mean_db": -20.5,
    "peak_time": 0.03,
-   "lr_corr": 0.89,
    "attack_ms": 0,
    "decay_ms": 20,
    "centroid": 1095,
@@ -3834,7 +3833,15 @@
    "flat": 0.093,
    "bumps": 6.7,
    "active_dur": 0.24,
+   "lr_corr": 0.89,
    "onset_count": 3,
+   "tags": [
+    "Ping"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
@@ -3843,14 +3850,7 @@
     "short",
     "dry"
    ],
-   "id": 73,
-   "tags_v": 3,
-   "tags": [
-    "Ping"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 73
   },
   {
    "library": "estudio",
@@ -3872,7 +3872,6 @@
    "peak_db": -1.0,
    "mean_db": -30.7,
    "peak_time": 0.51,
-   "lr_corr": -0.09,
    "attack_ms": 370,
    "decay_ms": 30,
    "centroid": 5601,
@@ -3882,17 +3881,8 @@
    "flat": 0.167,
    "bumps": 6.7,
    "active_dur": 0.55,
+   "lr_corr": -0.09,
    "onset_count": 8,
-   "words": [
-    "swelling",
-    "airy",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 74,
-   "tags_v": 3,
    "tags": [
     "Ratchet, pawl",
     "Gears",
@@ -3906,7 +3896,17 @@
     0.48,
     0.44,
     0.34
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "airy",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 74
   },
   {
    "library": "estudio",
@@ -3928,7 +3928,6 @@
    "peak_db": -1.0,
    "mean_db": -20.1,
    "peak_time": 0.39,
-   "lr_corr": 0.35,
    "attack_ms": 360,
    "decay_ms": 220,
    "centroid": 2042,
@@ -3938,17 +3937,8 @@
    "flat": 0.591,
    "bumps": 11.5,
    "active_dur": 0.63,
+   "lr_corr": 0.35,
    "onset_count": 3,
-   "words": [
-    "swelling",
-    "mid",
-    "thin",
-    "noisy",
-    "medium",
-    "pulsing"
-   ],
-   "id": 75,
-   "tags_v": 3,
    "tags": [
     "Whack, thwack",
     "Arrow",
@@ -3962,7 +3952,17 @@
     0.29,
     0.29,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "thin",
+    "noisy",
+    "medium",
+    "pulsing"
+   ],
+   "id": 75
   },
   {
    "library": "estudio",
@@ -3984,7 +3984,6 @@
    "peak_db": -1.0,
    "mean_db": -24.3,
    "peak_time": 0.39,
-   "lr_corr": 0.18,
    "attack_ms": 380,
    "decay_ms": 110,
    "centroid": 1797,
@@ -3994,17 +3993,8 @@
    "flat": 0.572,
    "bumps": 10.5,
    "active_dur": 0.54,
+   "lr_corr": 0.18,
    "onset_count": 5,
-   "words": [
-    "swelling",
-    "mid",
-    "noisy",
-    "short",
-    "pulsing",
-    "dry"
-   ],
-   "id": 76,
-   "tags_v": 3,
    "tags": [
     "Burst, pop",
     "Breaking",
@@ -4018,7 +4008,17 @@
     0.16,
     0.11,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "noisy",
+    "short",
+    "pulsing",
+    "dry"
+   ],
+   "id": 76
   },
   {
    "library": "estudio",
@@ -4040,7 +4040,6 @@
    "peak_db": -1.0,
    "mean_db": -29.6,
    "peak_time": 0.67,
-   "lr_corr": 0.55,
    "attack_ms": 430,
    "decay_ms": 50,
    "centroid": 6002,
@@ -4050,17 +4049,8 @@
    "flat": 0.102,
    "bumps": 3.3,
    "active_dur": 0.73,
+   "lr_corr": 0.55,
    "onset_count": 6,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "medium",
-    "dry"
-   ],
-   "id": 77,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Single-lens reflex camera",
@@ -4074,7 +4064,17 @@
     0.33,
     0.32,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "medium",
+    "dry"
+   ],
+   "id": 77
   },
   {
    "library": "estudio",
@@ -4096,7 +4096,6 @@
    "peak_db": -1.0,
    "mean_db": -20.4,
    "peak_time": 0.39,
-   "lr_corr": 0.02,
    "attack_ms": 330,
    "decay_ms": 130,
    "centroid": 2387,
@@ -4106,16 +4105,8 @@
    "flat": 0.437,
    "bumps": 10.3,
    "active_dur": 0.48,
+   "lr_corr": 0.02,
    "onset_count": 5,
-   "words": [
-    "swelling",
-    "mid",
-    "thin",
-    "textured",
-    "short"
-   ],
-   "id": 78,
-   "tags_v": 3,
    "tags": [
     "Liquid",
     "Water"
@@ -4123,7 +4114,16 @@
    "tag_scores": [
     0.1,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "thin",
+    "textured",
+    "short"
+   ],
+   "id": 78
   },
   {
    "library": "estudio",
@@ -4145,7 +4145,6 @@
    "peak_db": -1.0,
    "mean_db": -33.8,
    "peak_time": 0.71,
-   "lr_corr": -0.01,
    "attack_ms": 550,
    "decay_ms": 30,
    "centroid": 6106,
@@ -4155,17 +4154,8 @@
    "flat": 0.108,
    "bumps": 3.3,
    "active_dur": 0.75,
+   "lr_corr": -0.01,
    "onset_count": 9,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "tonal",
-    "medium",
-    "dry"
-   ],
-   "id": 79,
-   "tags_v": 3,
    "tags": [
     "Camera",
     "Single-lens reflex camera",
@@ -4179,7 +4169,17 @@
     0.3,
     0.25,
     0.25
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "tonal",
+    "medium",
+    "dry"
+   ],
+   "id": 79
   },
   {
    "library": "estudio",
@@ -4201,7 +4201,6 @@
    "peak_db": -1.0,
    "mean_db": -17.1,
    "peak_time": 0.25,
-   "lr_corr": 0.25,
    "attack_ms": 250,
    "decay_ms": 50,
    "centroid": 1092,
@@ -4211,7 +4210,15 @@
    "flat": 0.299,
    "bumps": 6.7,
    "active_dur": 0.34,
+   "lr_corr": 0.25,
    "onset_count": 2,
+   "tags": [
+    "Burst, pop"
+   ],
+   "tag_scores": [
+    0.12
+   ],
+   "tags_v": 3,
    "words": [
     "swelling",
     "warm",
@@ -4219,14 +4226,7 @@
     "short",
     "dry"
    ],
-   "id": 80,
-   "tags_v": 3,
-   "tags": [
-    "Burst, pop"
-   ],
-   "tag_scores": [
-    0.12
-   ]
+   "id": 80
   },
   {
    "library": "estudio",
@@ -4248,7 +4248,6 @@
    "peak_db": -1.0,
    "mean_db": -38.6,
    "peak_time": 0.37,
-   "lr_corr": 0.04,
    "attack_ms": 10,
    "decay_ms": 280,
    "centroid": 4851,
@@ -4258,7 +4257,11 @@
    "flat": 0.439,
    "bumps": 6.7,
    "active_dur": 0.74,
+   "lr_corr": 0.04,
    "onset_count": 5,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -4266,10 +4269,7 @@
     "textured",
     "medium"
    ],
-   "id": 81,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 81
   },
   {
    "library": "estudio",
@@ -4291,7 +4291,6 @@
    "peak_db": -1.0,
    "mean_db": -30.9,
    "peak_time": 0.63,
-   "lr_corr": 0.03,
    "attack_ms": 410,
    "decay_ms": 30,
    "centroid": 5760,
@@ -4301,17 +4300,8 @@
    "flat": 0.135,
    "bumps": 3.3,
    "active_dur": 0.67,
+   "lr_corr": 0.03,
    "onset_count": 9,
-   "words": [
-    "slow-build",
-    "airy",
-    "thin",
-    "textured",
-    "medium",
-    "dry"
-   ],
-   "id": 82,
-   "tags_v": 3,
    "tags": [
     "Ratchet, pawl",
     "Gears",
@@ -4325,7 +4315,17 @@
     0.54,
     0.5,
     0.37
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "airy",
+    "thin",
+    "textured",
+    "medium",
+    "dry"
+   ],
+   "id": 82
   },
   {
    "library": "estudio",
@@ -4347,7 +4347,6 @@
    "peak_db": -0.9,
    "mean_db": -21.7,
    "peak_time": 0.09,
-   "lr_corr": 0.87,
    "attack_ms": 10,
    "decay_ms": 200,
    "centroid": 1093,
@@ -4357,16 +4356,8 @@
    "flat": 0.066,
    "bumps": 3.3,
    "active_dur": 0.3,
+   "lr_corr": 0.87,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 83,
-   "tags_v": 3,
    "tags": [
     "Hiccup",
     "Cough",
@@ -4376,7 +4367,16 @@
     0.26,
     0.23,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 83
   },
   {
    "library": "estudio",
@@ -4398,7 +4398,6 @@
    "peak_db": -1.0,
    "mean_db": -22.2,
    "peak_time": 0.25,
-   "lr_corr": 0.62,
    "attack_ms": 220,
    "decay_ms": 2070,
    "centroid": 904,
@@ -4408,15 +4407,7 @@
    "flat": 0.148,
    "bumps": 1.2,
    "active_dur": 3.04,
-   "words": [
-    "swelling",
-    "warm",
-    "textured",
-    "long",
-    "long-tail"
-   ],
-   "id": 84,
-   "tags_v": 3,
+   "lr_corr": 0.62,
    "tags": [
     "Music",
     "Groan",
@@ -4430,7 +4421,16 @@
     0.12,
     0.12,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "textured",
+    "long",
+    "long-tail"
+   ],
+   "id": 84
   },
   {
    "library": "estudio",
@@ -4452,7 +4452,6 @@
    "peak_db": -1.0,
    "mean_db": -13.9,
    "peak_time": 0.09,
-   "lr_corr": 1.0,
    "attack_ms": 70,
    "decay_ms": 1260,
    "centroid": 82,
@@ -4462,16 +4461,7 @@
    "flat": 0.074,
    "bumps": 1.9,
    "active_dur": 1.63,
-   "words": [
-    "soft-attack",
-    "sub",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 85,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Timpani",
@@ -4485,7 +4475,17 @@
     0.66,
     0.58,
     0.38
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "sub",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 85
   },
   {
    "library": "estudio",
@@ -4507,7 +4507,6 @@
    "peak_db": -1.0,
    "mean_db": -23.0,
    "peak_time": 0.57,
-   "lr_corr": 0.64,
    "attack_ms": 240,
    "decay_ms": 2200,
    "centroid": 200,
@@ -4517,16 +4516,7 @@
    "flat": 0.057,
    "bumps": 2.7,
    "active_dur": 4.2,
-   "words": [
-    "swelling",
-    "dark",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 86,
-   "tags_v": 3,
+   "lr_corr": 0.64,
    "tags": [
     "Artillery fire",
     "Explosion",
@@ -4540,7 +4530,17 @@
     0.49,
     0.39,
     0.38
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 86
   },
   {
    "library": "estudio",
@@ -4562,7 +4562,6 @@
    "peak_db": -1.0,
    "mean_db": -21.2,
    "peak_time": 0.11,
-   "lr_corr": 0.86,
    "attack_ms": 80,
    "decay_ms": 1550,
    "centroid": 107,
@@ -4572,16 +4571,7 @@
    "flat": 0.059,
    "bumps": 2.7,
    "active_dur": 3.92,
-   "words": [
-    "soft-attack",
-    "sub",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 87,
-   "tags_v": 3,
+   "lr_corr": 0.86,
    "tags": [
     "Explosion",
     "Burst, pop",
@@ -4595,7 +4585,17 @@
     0.27,
     0.17,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "sub",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 87
   },
   {
    "library": "estudio",
@@ -4617,7 +4617,6 @@
    "peak_db": -1.0,
    "mean_db": -18.8,
    "peak_time": 0.39,
-   "lr_corr": 0.3,
    "attack_ms": 320,
    "decay_ms": 480,
    "centroid": 152,
@@ -4627,15 +4626,7 @@
    "flat": 0.16,
    "bumps": 6.4,
    "active_dur": 1.1,
-   "words": [
-    "swelling",
-    "dark",
-    "heavy",
-    "textured",
-    "medium"
-   ],
-   "id": 88,
-   "tags_v": 3,
+   "lr_corr": 0.3,
    "tags": [
     "Ding",
     "Explosion",
@@ -4649,7 +4640,16 @@
     0.22,
     0.21,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "heavy",
+    "textured",
+    "medium"
+   ],
+   "id": 88
   },
   {
    "library": "estudio",
@@ -4671,7 +4671,6 @@
    "peak_db": -1.0,
    "mean_db": -11.2,
    "peak_time": 0.25,
-   "lr_corr": 1.0,
    "attack_ms": 240,
    "decay_ms": 570,
    "centroid": 60,
@@ -4681,15 +4680,7 @@
    "flat": 0.0,
    "bumps": 1.8,
    "active_dur": 0.94,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 89,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Bass guitar"
@@ -4697,7 +4688,16 @@
    "tag_scores": [
     0.94,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 89
   },
   {
    "library": "estudio",
@@ -4719,7 +4719,6 @@
    "peak_db": -1.0,
    "mean_db": -18.9,
    "peak_time": 0.33,
-   "lr_corr": 0.73,
    "attack_ms": 280,
    "decay_ms": 1780,
    "centroid": 648,
@@ -4729,16 +4728,7 @@
    "flat": 0.009,
    "bumps": 3.5,
    "active_dur": 2.71,
-   "words": [
-    "swelling",
-    "warm",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 90,
-   "tags_v": 3,
+   "lr_corr": 0.73,
    "tags": [
     "Siren",
     "Alarm",
@@ -4752,7 +4742,17 @@
     0.41,
     0.35,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 90
   },
   {
    "library": "estudio",
@@ -4774,7 +4774,6 @@
    "peak_db": -1.0,
    "mean_db": -16.7,
    "peak_time": 0.09,
-   "lr_corr": 0.93,
    "attack_ms": 80,
    "decay_ms": 990,
    "centroid": 658,
@@ -4784,15 +4783,7 @@
    "flat": 0.051,
    "bumps": 2.2,
    "active_dur": 1.26,
-   "words": [
-    "soft-attack",
-    "warm",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 91,
-   "tags_v": 3,
+   "lr_corr": 0.93,
    "tags": [
     "Music",
     "Synthesizer",
@@ -4806,7 +4797,16 @@
     0.13,
     0.11,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 91
   },
   {
    "library": "estudio",
@@ -4828,7 +4828,6 @@
    "peak_db": -1.0,
    "mean_db": -15.2,
    "peak_time": 0.03,
-   "lr_corr": 1.0,
    "attack_ms": 20,
    "decay_ms": 890,
    "centroid": 61,
@@ -4838,16 +4837,7 @@
    "flat": 0.0,
    "bumps": 1.4,
    "active_dur": 1.43,
-   "words": [
-    "punchy",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 92,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Bass guitar",
@@ -4861,7 +4851,17 @@
     0.15,
     0.14,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 92
   },
   {
    "library": "estudio",
@@ -4883,7 +4883,6 @@
    "peak_db": -1.0,
    "mean_db": -12.5,
    "peak_time": 0.27,
-   "lr_corr": 1.0,
    "attack_ms": 290,
    "decay_ms": 690,
    "centroid": 65,
@@ -4893,6 +4892,14 @@
    "flat": 0.0,
    "bumps": 1.4,
    "active_dur": 1.16,
+   "lr_corr": 1.0,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.94
+   ],
+   "tags_v": 3,
    "words": [
     "swelling",
     "sub",
@@ -4900,14 +4907,7 @@
     "tonal",
     "medium"
    ],
-   "id": 93,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.94
-   ]
+   "id": 93
   },
   {
    "library": "estudio",
@@ -4929,7 +4929,6 @@
    "peak_db": -1.0,
    "mean_db": -14.5,
    "peak_time": 0.17,
-   "lr_corr": 0.73,
    "attack_ms": 160,
    "decay_ms": 640,
    "centroid": 69,
@@ -4939,16 +4938,7 @@
    "flat": 0.025,
    "bumps": 8.5,
    "active_dur": 0.84,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "pulsing"
-   ],
-   "id": 94,
-   "tags_v": 3,
+   "lr_corr": 0.73,
    "tags": [
     "Heart murmur",
     "Explosion",
@@ -4962,7 +4952,17 @@
     0.15,
     0.14,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "pulsing"
+   ],
+   "id": 94
   },
   {
    "library": "estudio",
@@ -4984,7 +4984,6 @@
    "peak_db": -1.0,
    "mean_db": -13.6,
    "peak_time": 0.35,
-   "lr_corr": 1.0,
    "attack_ms": 280,
    "decay_ms": 610,
    "centroid": 70,
@@ -4994,15 +4993,7 @@
    "flat": 0.0,
    "bumps": 1.3,
    "active_dur": 1.32,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 95,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Bass guitar",
@@ -5016,7 +5007,16 @@
     0.09,
     0.09,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 95
   },
   {
    "library": "estudio",
@@ -5038,7 +5038,6 @@
    "peak_db": -1.0,
    "mean_db": -11.4,
    "peak_time": 0.41,
-   "lr_corr": 1.0,
    "attack_ms": 360,
    "decay_ms": 590,
    "centroid": 54,
@@ -5048,15 +5047,7 @@
    "flat": 0.0,
    "bumps": 1.2,
    "active_dur": 1.1,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 96,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Bass guitar"
@@ -5064,7 +5055,16 @@
    "tag_scores": [
     0.95,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 96
   },
   {
    "library": "estudio",
@@ -5086,7 +5086,6 @@
    "peak_db": -1.0,
    "mean_db": -10.7,
    "peak_time": 0.33,
-   "lr_corr": 1.0,
    "attack_ms": 320,
    "decay_ms": 1140,
    "centroid": 69,
@@ -5096,16 +5095,7 @@
    "flat": 0.0,
    "bumps": 2.6,
    "active_dur": 1.93,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 97,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Bass guitar",
@@ -5119,7 +5109,17 @@
     0.16,
     0.13,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 97
   },
   {
    "library": "estudio",
@@ -5141,7 +5141,6 @@
    "peak_db": -1.0,
    "mean_db": -24.6,
    "peak_time": 0.23,
-   "lr_corr": 0.43,
    "attack_ms": 180,
    "decay_ms": 1460,
    "centroid": 2090,
@@ -5151,15 +5150,7 @@
    "flat": 0.614,
    "bumps": 0.8,
    "active_dur": 2.5,
-   "words": [
-    "swelling",
-    "mid",
-    "noisy",
-    "long",
-    "long-tail"
-   ],
-   "id": 98,
-   "tags_v": 3,
+   "lr_corr": 0.43,
    "tags": [
     "Gunshot, gunfire",
     "Explosion",
@@ -5173,7 +5164,16 @@
     0.37,
     0.2,
     0.18
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "noisy",
+    "long",
+    "long-tail"
+   ],
+   "id": 98
   },
   {
    "library": "estudio",
@@ -5195,7 +5195,6 @@
    "peak_db": -1.0,
    "mean_db": -15.5,
    "peak_time": 0.05,
-   "lr_corr": 0.96,
    "attack_ms": 50,
    "decay_ms": 120,
    "centroid": 180,
@@ -5205,6 +5204,14 @@
    "flat": 0.019,
    "bumps": 3.3,
    "active_dur": 0.28,
+   "lr_corr": 0.96,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.55
+   ],
+   "tags_v": 3,
    "words": [
     "soft-attack",
     "dark",
@@ -5213,14 +5220,7 @@
     "short",
     "dry"
    ],
-   "id": 99,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.55
-   ]
+   "id": 99
   },
   {
    "library": "estudio",
@@ -5242,7 +5242,6 @@
    "peak_db": -1.0,
    "mean_db": -18.6,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 400,
    "centroid": 86,
@@ -5252,15 +5251,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.56,
-   "words": [
-    "punchy",
-    "sub",
-    "heavy",
-    "tonal",
-    "short"
-   ],
-   "id": 100,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Percussion",
@@ -5274,7 +5265,16 @@
     0.23,
     0.21,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "sub",
+    "heavy",
+    "tonal",
+    "short"
+   ],
+   "id": 100
   },
   {
    "library": "estudio",
@@ -5296,7 +5296,6 @@
    "peak_db": -1.0,
    "mean_db": -22.8,
    "peak_time": 0.07,
-   "lr_corr": 0.73,
    "attack_ms": 110,
    "decay_ms": 1600,
    "centroid": 193,
@@ -5306,16 +5305,7 @@
    "flat": 0.067,
    "bumps": 3.6,
    "active_dur": 2.95,
-   "words": [
-    "soft-attack",
-    "dark",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 101,
-   "tags_v": 3,
+   "lr_corr": 0.73,
    "tags": [
     "Explosion",
     "Burst, pop",
@@ -5329,7 +5319,17 @@
     0.31,
     0.23,
     0.23
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 101
   },
   {
    "library": "estudio",
@@ -5351,7 +5351,6 @@
    "peak_db": -1.0,
    "mean_db": -25.1,
    "peak_time": 0.03,
-   "lr_corr": 0.61,
    "attack_ms": 20,
    "decay_ms": 2250,
    "centroid": 229,
@@ -5361,16 +5360,7 @@
    "flat": 0.118,
    "bumps": 2.0,
    "active_dur": 3.59,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 102,
-   "tags_v": 3,
+   "lr_corr": 0.61,
    "tags": [
     "Explosion",
     "Fireworks",
@@ -5384,7 +5374,17 @@
     0.53,
     0.52,
     0.5
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 102
   },
   {
    "library": "estudio",
@@ -5406,7 +5406,6 @@
    "peak_db": -1.0,
    "mean_db": -12.2,
    "peak_time": 0.37,
-   "lr_corr": 1.0,
    "attack_ms": 290,
    "decay_ms": 750,
    "centroid": 53,
@@ -5416,16 +5415,7 @@
    "flat": 0.0,
    "bumps": 1.2,
    "active_dur": 1.39,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 103,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Bass guitar",
@@ -5439,7 +5429,17 @@
     0.14,
     0.14,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 103
   },
   {
    "library": "estudio",
@@ -5461,7 +5461,6 @@
    "peak_db": -1.0,
    "mean_db": -23.5,
    "peak_time": 0.03,
-   "lr_corr": 0.63,
    "attack_ms": 10,
    "decay_ms": 1920,
    "centroid": 315,
@@ -5471,16 +5470,7 @@
    "flat": 0.109,
    "bumps": 4.9,
    "active_dur": 3.12,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 104,
-   "tags_v": 3,
+   "lr_corr": 0.63,
    "tags": [
     "Music",
     "Percussion",
@@ -5494,7 +5484,17 @@
     0.46,
     0.38,
     0.33
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 104
   },
   {
    "library": "estudio",
@@ -5516,7 +5516,6 @@
    "peak_db": -1.0,
    "mean_db": -28.6,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 10,
    "decay_ms": 80,
    "centroid": 3960,
@@ -5526,6 +5525,14 @@
    "flat": 0.364,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "lr_corr": 1.0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.14
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -5534,14 +5541,7 @@
     "tiny",
     "dry"
    ],
-   "id": 105,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.14
-   ]
+   "id": 105
   },
   {
    "library": "estudio",
@@ -5563,7 +5563,6 @@
    "peak_db": -1.0,
    "mean_db": -17.4,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 10,
    "decay_ms": 120,
    "centroid": 282,
@@ -5573,15 +5572,7 @@
    "flat": 0.003,
    "bumps": 0.0,
    "active_dur": 0.21,
-   "words": [
-    "punchy",
-    "dark",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 106,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Knock",
     "Whack, thwack"
@@ -5589,7 +5580,16 @@
    "tag_scores": [
     0.16,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 106
   },
   {
    "library": "estudio",
@@ -5611,7 +5611,6 @@
    "peak_db": -1.0,
    "mean_db": -19.0,
    "peak_time": 0.17,
-   "lr_corr": 0.35,
    "attack_ms": 170,
    "decay_ms": 420,
    "centroid": 109,
@@ -5621,6 +5620,14 @@
    "flat": 0.013,
    "bumps": 11.3,
    "active_dur": 0.66,
+   "lr_corr": 0.35,
+   "tags": [
+    "Synthesizer"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "words": [
     "swelling",
     "sub",
@@ -5629,14 +5636,7 @@
     "medium",
     "pulsing"
    ],
-   "id": 107,
-   "tags_v": 3,
-   "tags": [
-    "Synthesizer"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 107
   },
   {
    "library": "estudio",
@@ -5658,7 +5658,6 @@
    "peak_db": -1.0,
    "mean_db": -22.8,
    "peak_time": 0.19,
-   "lr_corr": 0.03,
    "attack_ms": 180,
    "decay_ms": 580,
    "centroid": 100,
@@ -5668,15 +5667,7 @@
    "flat": 0.024,
    "bumps": 5.9,
    "active_dur": 0.98,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 108,
-   "tags_v": 3,
+   "lr_corr": 0.03,
    "tags": [
     "Music",
     "Drum machine",
@@ -5690,7 +5681,16 @@
     0.13,
     0.12,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 108
   },
   {
    "library": "estudio",
@@ -5712,7 +5712,6 @@
    "peak_db": -1.0,
    "mean_db": -21.9,
    "peak_time": 0.01,
-   "lr_corr": 0.86,
    "attack_ms": 60,
    "decay_ms": 910,
    "centroid": 195,
@@ -5722,16 +5721,7 @@
    "flat": 0.05,
    "bumps": 2.9,
    "active_dur": 1.7,
-   "words": [
-    "soft-attack",
-    "dark",
-    "heavy",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 109,
-   "tags_v": 3,
+   "lr_corr": 0.86,
    "tags": [
     "Whoosh, swoosh, swish",
     "Music",
@@ -5745,7 +5735,17 @@
     0.51,
     0.22,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "heavy",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 109
   },
   {
    "library": "estudio",
@@ -5767,7 +5767,6 @@
    "peak_db": -1.0,
    "mean_db": -15.0,
    "peak_time": 0.09,
-   "lr_corr": 1.0,
    "attack_ms": 120,
    "decay_ms": 680,
    "centroid": 83,
@@ -5777,15 +5776,7 @@
    "flat": 0.0,
    "bumps": 4.7,
    "active_dur": 1.36,
-   "words": [
-    "soft-attack",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 110,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Bass guitar",
@@ -5799,7 +5790,16 @@
     0.26,
     0.25,
     0.23
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 110
   },
   {
    "library": "estudio",
@@ -5821,7 +5821,6 @@
    "peak_db": -1.0,
    "mean_db": -18.8,
    "peak_time": 0.21,
-   "lr_corr": 0.59,
    "attack_ms": 200,
    "decay_ms": 890,
    "centroid": 70,
@@ -5831,16 +5830,7 @@
    "flat": 0.035,
    "bumps": 4.7,
    "active_dur": 1.23,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 111,
-   "tags_v": 3,
+   "lr_corr": 0.59,
    "tags": [
     "Music",
     "Drum machine",
@@ -5854,7 +5844,17 @@
     0.2,
     0.15,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 111
   },
   {
    "library": "estudio",
@@ -5876,7 +5876,6 @@
    "peak_db": -1.0,
    "mean_db": -25.0,
    "peak_time": 0.15,
-   "lr_corr": 0.34,
    "attack_ms": 110,
    "decay_ms": 880,
    "centroid": 3088,
@@ -5886,15 +5885,7 @@
    "flat": 0.824,
    "bumps": 1.5,
    "active_dur": 1.72,
-   "words": [
-    "soft-attack",
-    "bright",
-    "noisy",
-    "long",
-    "long-tail"
-   ],
-   "id": 112,
-   "tags_v": 3,
+   "lr_corr": 0.34,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow",
@@ -5908,7 +5899,16 @@
     0.34,
     0.2,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "bright",
+    "noisy",
+    "long",
+    "long-tail"
+   ],
+   "id": 112
   },
   {
    "library": "estudio",
@@ -5930,7 +5930,6 @@
    "peak_db": -1.0,
    "mean_db": -21.1,
    "peak_time": 0.05,
-   "lr_corr": 0.19,
    "attack_ms": 40,
    "decay_ms": 70,
    "centroid": 82,
@@ -5940,16 +5939,7 @@
    "flat": 0.003,
    "bumps": 3.3,
    "active_dur": 0.4,
-   "words": [
-    "soft-attack",
-    "sub",
-    "heavy",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 113,
-   "tags_v": 3,
+   "lr_corr": 0.19,
    "tags": [
     "Heart sounds, heartbeat",
     "Heart murmur",
@@ -5961,7 +5951,17 @@
     0.18,
     0.09,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "sub",
+    "heavy",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 113
   },
   {
    "library": "estudio",
@@ -5983,7 +5983,6 @@
    "peak_db": -1.0,
    "mean_db": -20.9,
    "peak_time": 0.07,
-   "lr_corr": 0.19,
    "attack_ms": 70,
    "decay_ms": 250,
    "centroid": 107,
@@ -5993,15 +5992,7 @@
    "flat": 0.011,
    "bumps": 2.0,
    "active_dur": 1.4,
-   "words": [
-    "soft-attack",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 114,
-   "tags_v": 3,
+   "lr_corr": 0.19,
    "tags": [
     "Heart sounds, heartbeat",
     "Heart murmur",
@@ -6015,7 +6006,16 @@
     0.43,
     0.29,
     0.24
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 114
   },
   {
    "library": "estudio",
@@ -6037,7 +6037,6 @@
    "peak_db": -1.0,
    "mean_db": -10.0,
    "peak_time": 0.39,
-   "lr_corr": 1.0,
    "attack_ms": 300,
    "decay_ms": 930,
    "centroid": 52,
@@ -6047,16 +6046,7 @@
    "flat": 0.0,
    "bumps": 2.0,
    "active_dur": 1.42,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 115,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Musical instrument",
@@ -6068,7 +6058,17 @@
     0.15,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 115
   },
   {
    "library": "estudio",
@@ -6090,7 +6090,6 @@
    "peak_db": -1.0,
    "mean_db": -15.2,
    "peak_time": 0.01,
-   "lr_corr": 0.98,
    "attack_ms": 10,
    "decay_ms": 220,
    "centroid": 214,
@@ -6100,15 +6099,7 @@
    "flat": 0.002,
    "bumps": 0.0,
    "active_dur": 0.27,
-   "words": [
-    "punchy",
-    "dark",
-    "heavy",
-    "tonal",
-    "short"
-   ],
-   "id": 116,
-   "tags_v": 3,
+   "lr_corr": 0.98,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow",
@@ -6122,7 +6113,16 @@
     0.13,
     0.11,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "heavy",
+    "tonal",
+    "short"
+   ],
+   "id": 116
   },
   {
    "library": "estudio",
@@ -6142,7 +6142,6 @@
    "peak_db": -0.6,
    "mean_db": -20.6,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 70,
    "centroid": 3072,
@@ -6152,16 +6151,7 @@
    "flat": 0.338,
    "bumps": 0.0,
    "active_dur": 0.11,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 117,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Tick",
     "Clock",
@@ -6175,7 +6165,17 @@
     0.17,
     0.16,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 117
   },
   {
    "library": "estudio",
@@ -6197,7 +6197,6 @@
    "peak_db": -1.0,
    "mean_db": -24.0,
    "peak_time": 0.05,
-   "lr_corr": 0.97,
    "attack_ms": 40,
    "decay_ms": 80,
    "centroid": 1109,
@@ -6207,16 +6206,8 @@
    "flat": 0.114,
    "bumps": 3.3,
    "active_dur": 0.16,
+   "lr_corr": 0.97,
    "onset_count": 1,
-   "words": [
-    "soft-attack",
-    "warm",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 118,
-   "tags_v": 3,
    "tags": [
     "Knock",
     "Whack, thwack",
@@ -6230,7 +6221,16 @@
     0.14,
     0.12,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 118
   },
   {
    "library": "estudio",
@@ -6252,7 +6252,6 @@
    "peak_db": -1.0,
    "mean_db": -33.4,
    "peak_time": 0.03,
-   "lr_corr": 0.78,
    "attack_ms": 30,
    "decay_ms": 70,
    "centroid": 4912,
@@ -6262,7 +6261,15 @@
    "flat": 0.483,
    "bumps": 3.3,
    "active_dur": 0.13,
+   "lr_corr": 0.78,
    "onset_count": 1,
+   "tags": [
+    "Telephone"
+   ],
+   "tag_scores": [
+    0.1
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -6271,14 +6278,7 @@
     "tiny",
     "dry"
    ],
-   "id": 119,
-   "tags_v": 3,
-   "tags": [
-    "Telephone"
-   ],
-   "tag_scores": [
-    0.1
-   ]
+   "id": 119
   },
   {
    "library": "estudio",
@@ -6298,7 +6298,6 @@
    "peak_db": -1.0,
    "mean_db": -26.4,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 20,
    "centroid": 3794,
@@ -6308,16 +6307,7 @@
    "flat": 0.405,
    "bumps": 3.3,
    "active_dur": 0.19,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 120,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Glass",
     "Chink, clink",
@@ -6331,7 +6321,17 @@
     0.18,
     0.15,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 120
   },
   {
    "library": "estudio",
@@ -6353,7 +6353,6 @@
    "peak_db": -1.0,
    "mean_db": -23.4,
    "peak_time": 0.07,
-   "lr_corr": 0.97,
    "attack_ms": 60,
    "decay_ms": 120,
    "centroid": 1228,
@@ -6363,16 +6362,8 @@
    "flat": 0.133,
    "bumps": 3.3,
    "active_dur": 0.24,
+   "lr_corr": 0.97,
    "onset_count": 2,
-   "words": [
-    "soft-attack",
-    "warm",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 121,
-   "tags_v": 3,
    "tags": [
     "Whack, thwack",
     "Speech",
@@ -6386,7 +6377,16 @@
     0.17,
     0.14,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 121
   },
   {
    "library": "estudio",
@@ -6408,7 +6408,6 @@
    "peak_db": -1.0,
    "mean_db": -24.2,
    "peak_time": 0.03,
-   "lr_corr": 0.99,
    "attack_ms": 20,
    "decay_ms": 40,
    "centroid": 1546,
@@ -6418,16 +6417,8 @@
    "flat": 0.137,
    "bumps": 0.0,
    "active_dur": 0.12,
+   "lr_corr": 0.99,
    "onset_count": 1,
-   "words": [
-    "punchy",
-    "mid",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 122,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Plop"
@@ -6435,7 +6426,16 @@
    "tag_scores": [
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 122
   },
   {
    "library": "estudio",
@@ -6458,7 +6458,6 @@
    "peak_db": -1.0,
    "mean_db": -24.5,
    "peak_time": 0.07,
-   "lr_corr": 0.95,
    "attack_ms": 60,
    "decay_ms": 20,
    "centroid": 2622,
@@ -6468,16 +6467,8 @@
    "flat": 0.347,
    "bumps": 3.3,
    "active_dur": 0.11,
+   "lr_corr": 0.95,
    "onset_count": 1,
-   "words": [
-    "soft-attack",
-    "mid",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 123,
-   "tags_v": 3,
    "tags": [
     "Beep, bleep",
     "Tick"
@@ -6485,7 +6476,16 @@
    "tag_scores": [
     0.13,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 123
   },
   {
    "library": "estudio",
@@ -6507,7 +6507,6 @@
    "peak_db": -1.0,
    "mean_db": -20.2,
    "peak_time": 0.11,
-   "lr_corr": 0.98,
    "attack_ms": 100,
    "decay_ms": 90,
    "centroid": 630,
@@ -6517,16 +6516,8 @@
    "flat": 0.014,
    "bumps": 3.3,
    "active_dur": 0.25,
+   "lr_corr": 0.98,
    "onset_count": 1,
-   "words": [
-    "soft-attack",
-    "warm",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 124,
-   "tags_v": 3,
    "tags": [
     "Music",
     "Plop"
@@ -6534,7 +6525,16 @@
    "tag_scores": [
     0.15,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 124
   },
   {
    "library": "estudio",
@@ -6554,7 +6554,6 @@
    "peak_db": -1.0,
    "mean_db": -29.4,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 40,
    "centroid": 3201,
@@ -6564,16 +6563,7 @@
    "flat": 0.534,
    "bumps": 0.0,
    "active_dur": 0.07,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "noisy",
-    "tiny",
-    "dry"
-   ],
-   "id": 125,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Tick",
     "Clock",
@@ -6585,7 +6575,17 @@
     0.4,
     0.37,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "noisy",
+    "tiny",
+    "dry"
+   ],
+   "id": 125
   },
   {
    "library": "estudio",
@@ -6605,7 +6605,6 @@
    "peak_db": -0.0,
    "mean_db": -22.7,
    "peak_time": 0.01,
-   "lr_corr": 0.98,
    "attack_ms": 0,
    "decay_ms": 90,
    "centroid": 3259,
@@ -6615,6 +6614,14 @@
    "flat": 0.258,
    "bumps": 0.0,
    "active_dur": 0.13,
+   "lr_corr": 0.98,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -6623,14 +6630,7 @@
     "tiny",
     "dry"
    ],
-   "id": 126,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 126
   },
   {
    "library": "estudio",
@@ -6650,7 +6650,6 @@
    "peak_db": -0.0,
    "mean_db": -22.5,
    "peak_time": 0.09,
-   "lr_corr": 0.99,
    "attack_ms": 80,
    "decay_ms": 30,
    "centroid": 2260,
@@ -6660,16 +6659,7 @@
    "flat": 0.206,
    "bumps": 3.3,
    "active_dur": 0.16,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 127,
-   "tags_v": 3,
+   "lr_corr": 0.99,
    "tags": [
     "Chink, clink",
     "Glass",
@@ -6683,7 +6673,17 @@
     0.2,
     0.19,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 127
   },
   {
    "library": "estudio",
@@ -6705,7 +6705,6 @@
    "peak_db": -1.0,
    "mean_db": -21.0,
    "peak_time": 0.55,
-   "lr_corr": 0.91,
    "attack_ms": 250,
    "decay_ms": 180,
    "centroid": 428,
@@ -6715,14 +6714,7 @@
    "flat": 0.004,
    "bumps": 2.6,
    "active_dur": 0.82,
-   "words": [
-    "swelling",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 128,
-   "tags_v": 3,
+   "lr_corr": 0.91,
    "tags": [
     "Explosion",
     "Eruption",
@@ -6736,7 +6728,15 @@
     0.29,
     0.27,
     0.21
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 128
   },
   {
    "library": "estudio",
@@ -6758,7 +6758,6 @@
    "peak_db": -1.0,
    "mean_db": -26.0,
    "peak_time": 2.19,
-   "lr_corr": 0.5,
    "attack_ms": 610,
    "decay_ms": 10,
    "centroid": 3692,
@@ -6768,15 +6767,7 @@
    "flat": 0.41,
    "bumps": 1.7,
    "active_dur": 2.2,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "textured",
-    "long"
-   ],
-   "id": 129,
-   "tags_v": 3,
+   "lr_corr": 0.5,
    "tags": [
     "Tools",
     "Whoosh, swoosh, swish",
@@ -6790,7 +6781,16 @@
     0.26,
     0.24,
     0.21
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "textured",
+    "long"
+   ],
+   "id": 129
   },
   {
    "library": "estudio",
@@ -6812,7 +6812,6 @@
    "peak_db": -1.0,
    "mean_db": -21.0,
    "peak_time": 0.99,
-   "lr_corr": 0.83,
    "attack_ms": 980,
    "decay_ms": 20,
    "centroid": 3875,
@@ -6822,14 +6821,7 @@
    "flat": 0.676,
    "bumps": 3.0,
    "active_dur": 1.0,
-   "words": [
-    "slow-build",
-    "bright",
-    "noisy",
-    "medium"
-   ],
-   "id": 130,
-   "tags_v": 3,
+   "lr_corr": 0.83,
    "tags": [
     "Rattle",
     "Snake",
@@ -6843,7 +6835,15 @@
     0.2,
     0.2,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "noisy",
+    "medium"
+   ],
+   "id": 130
   },
   {
    "library": "estudio",
@@ -6865,7 +6865,6 @@
    "peak_db": -1.0,
    "mean_db": -23.0,
    "peak_time": 0.99,
-   "lr_corr": 0.92,
    "attack_ms": 950,
    "decay_ms": 20,
    "centroid": 3607,
@@ -6875,15 +6874,7 @@
    "flat": 0.868,
    "bumps": 2.1,
    "active_dur": 1.0,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "noisy",
-    "medium"
-   ],
-   "id": 131,
-   "tags_v": 3,
+   "lr_corr": 0.92,
    "tags": [
     "Fart",
     "Cacophony"
@@ -6891,7 +6882,16 @@
    "tag_scores": [
     0.71,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "noisy",
+    "medium"
+   ],
+   "id": 131
   },
   {
    "library": "estudio",
@@ -6913,7 +6913,6 @@
    "peak_db": -1.0,
    "mean_db": -22.2,
    "peak_time": 0.69,
-   "lr_corr": 0.98,
    "attack_ms": 410,
    "decay_ms": 170,
    "centroid": 433,
@@ -6923,14 +6922,7 @@
    "flat": 0.024,
    "bumps": 7.8,
    "active_dur": 0.93,
-   "words": [
-    "slow-build",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 132,
-   "tags_v": 3,
+   "lr_corr": 0.98,
    "tags": [
     "Fire",
     "Crackle",
@@ -6944,7 +6936,15 @@
     0.17,
     0.16,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 132
   },
   {
    "library": "estudio",
@@ -6966,7 +6966,6 @@
    "peak_db": -1.0,
    "mean_db": -18.8,
    "peak_time": 2.77,
-   "lr_corr": 0.68,
    "attack_ms": 1680,
    "decay_ms": 100,
    "centroid": 2398,
@@ -6976,15 +6975,7 @@
    "flat": 0.453,
    "bumps": 3.0,
    "active_dur": 2.8,
-   "words": [
-    "slow-build",
-    "mid",
-    "thin",
-    "textured",
-    "long"
-   ],
-   "id": 133,
-   "tags_v": 3,
+   "lr_corr": 0.68,
    "tags": [
     "Alarm",
     "Siren",
@@ -6998,7 +6989,16 @@
     0.36,
     0.25,
     0.24
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "mid",
+    "thin",
+    "textured",
+    "long"
+   ],
+   "id": 133
   },
   {
    "library": "estudio",
@@ -7020,7 +7020,6 @@
    "peak_db": -0.2,
    "mean_db": -18.6,
    "peak_time": 3.67,
-   "lr_corr": 0.56,
    "attack_ms": 1570,
    "decay_ms": 50,
    "centroid": 1190,
@@ -7030,14 +7029,7 @@
    "flat": 0.239,
    "bumps": 0.0,
    "active_dur": 3.71,
-   "words": [
-    "slow-build",
-    "warm",
-    "textured",
-    "long"
-   ],
-   "id": 134,
-   "tags_v": 3,
+   "lr_corr": 0.56,
    "tags": [
     "Music",
     "Siren",
@@ -7051,7 +7043,15 @@
     0.57,
     0.49,
     0.34
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "warm",
+    "textured",
+    "long"
+   ],
+   "id": 134
   },
   {
    "library": "estudio",
@@ -7073,7 +7073,6 @@
    "peak_db": -1.0,
    "mean_db": -25.1,
    "peak_time": 0.53,
-   "lr_corr": 0.16,
    "attack_ms": 490,
    "decay_ms": 260,
    "centroid": 3083,
@@ -7083,16 +7082,7 @@
    "flat": 0.343,
    "bumps": 8.3,
    "active_dur": 0.84,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "textured",
-    "medium",
-    "pulsing"
-   ],
-   "id": 135,
-   "tags_v": 3,
+   "lr_corr": 0.16,
    "tags": [
     "Rattle",
     "Snake",
@@ -7106,7 +7096,17 @@
     0.35,
     0.26,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "textured",
+    "medium",
+    "pulsing"
+   ],
+   "id": 135
   },
   {
    "library": "estudio",
@@ -7128,7 +7128,6 @@
    "peak_db": -1.0,
    "mean_db": -20.3,
    "peak_time": 1.29,
-   "lr_corr": 0.9,
    "attack_ms": 770,
    "decay_ms": 20,
    "centroid": 2335,
@@ -7138,15 +7137,7 @@
    "flat": 0.673,
    "bumps": 6.8,
    "active_dur": 1.3,
-   "words": [
-    "slow-build",
-    "mid",
-    "thin",
-    "noisy",
-    "medium"
-   ],
-   "id": 136,
-   "tags_v": 3,
+   "lr_corr": 0.9,
    "tags": [
     "Cacophony",
     "Explosion",
@@ -7160,7 +7151,16 @@
     0.23,
     0.22,
     0.17
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "mid",
+    "thin",
+    "noisy",
+    "medium"
+   ],
+   "id": 136
   },
   {
    "library": "estudio",
@@ -7182,7 +7182,6 @@
    "peak_db": -1.0,
    "mean_db": -20.0,
    "peak_time": 1.19,
-   "lr_corr": 0.81,
    "attack_ms": 1080,
    "decay_ms": 50,
    "centroid": 2920,
@@ -7192,15 +7191,7 @@
    "flat": 0.731,
    "bumps": 6.9,
    "active_dur": 1.2,
-   "words": [
-    "slow-build",
-    "mid",
-    "thin",
-    "noisy",
-    "medium"
-   ],
-   "id": 137,
-   "tags_v": 3,
+   "lr_corr": 0.81,
    "tags": [
     "Music",
     "Synthesizer",
@@ -7214,7 +7205,16 @@
     0.61,
     0.33,
     0.2
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "mid",
+    "thin",
+    "noisy",
+    "medium"
+   ],
+   "id": 137
   },
   {
    "library": "estudio",
@@ -7236,7 +7236,6 @@
    "peak_db": -1.0,
    "mean_db": -24.2,
    "peak_time": 0.65,
-   "lr_corr": 0.85,
    "attack_ms": 580,
    "decay_ms": 270,
    "centroid": 4520,
@@ -7246,16 +7245,7 @@
    "flat": 0.697,
    "bumps": 9.2,
    "active_dur": 0.85,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "noisy",
-    "medium",
-    "pulsing"
-   ],
-   "id": 138,
-   "tags_v": 3,
+   "lr_corr": 0.85,
    "tags": [
     "Clatter",
     "Vehicle",
@@ -7267,7 +7257,17 @@
     0.11,
     0.09,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "noisy",
+    "medium",
+    "pulsing"
+   ],
+   "id": 138
   },
   {
    "library": "estudio",
@@ -7289,7 +7289,6 @@
    "peak_db": -1.0,
    "mean_db": -22.9,
    "peak_time": 1.73,
-   "lr_corr": 0.58,
    "attack_ms": 490,
    "decay_ms": 10,
    "centroid": 3136,
@@ -7299,15 +7298,7 @@
    "flat": 0.782,
    "bumps": 0.0,
    "active_dur": 1.76,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "noisy",
-    "long"
-   ],
-   "id": 139,
-   "tags_v": 3,
+   "lr_corr": 0.58,
    "tags": [
     "Slosh",
     "Splash, splatter",
@@ -7321,7 +7312,16 @@
     0.31,
     0.26,
     0.25
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "noisy",
+    "long"
+   ],
+   "id": 139
   },
   {
    "library": "estudio",
@@ -7343,7 +7343,6 @@
    "peak_db": -1.0,
    "mean_db": -21.5,
    "peak_time": 2.33,
-   "lr_corr": 0.52,
    "attack_ms": 1000,
    "decay_ms": 20,
    "centroid": 3499,
@@ -7353,15 +7352,7 @@
    "flat": 0.662,
    "bumps": 0.0,
    "active_dur": 2.4,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "noisy",
-    "long"
-   ],
-   "id": 140,
-   "tags_v": 3,
+   "lr_corr": 0.52,
    "tags": [
     "Whoosh, swoosh, swish",
     "White noise",
@@ -7375,7 +7366,16 @@
     0.32,
     0.11,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "noisy",
+    "long"
+   ],
+   "id": 140
   },
   {
    "library": "estudio",
@@ -7397,7 +7397,6 @@
    "peak_db": -1.0,
    "mean_db": -16.0,
    "peak_time": 0.39,
-   "lr_corr": 1.0,
    "attack_ms": 350,
    "decay_ms": 180,
    "centroid": 382,
@@ -7407,15 +7406,7 @@
    "flat": 0.027,
    "bumps": 8.3,
    "active_dur": 0.64,
-   "words": [
-    "swelling",
-    "dark",
-    "tonal",
-    "medium",
-    "pulsing"
-   ],
-   "id": 141,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Arrow",
     "Explosion",
@@ -7429,7 +7420,16 @@
     0.16,
     0.15,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "tonal",
+    "medium",
+    "pulsing"
+   ],
+   "id": 141
   },
   {
    "library": "estudio",
@@ -7451,7 +7451,6 @@
    "peak_db": -1.0,
    "mean_db": -29.6,
    "peak_time": 0.33,
-   "lr_corr": 0.27,
    "attack_ms": 280,
    "decay_ms": 130,
    "centroid": 3426,
@@ -7461,15 +7460,7 @@
    "flat": 0.299,
    "bumps": 3.3,
    "active_dur": 0.51,
-   "words": [
-    "swelling",
-    "bright",
-    "thin",
-    "textured",
-    "short"
-   ],
-   "id": 142,
-   "tags_v": 3,
+   "lr_corr": 0.27,
    "tags": [
     "Camera",
     "Mechanisms",
@@ -7481,7 +7472,16 @@
     0.55,
     0.45,
     0.24
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "bright",
+    "thin",
+    "textured",
+    "short"
+   ],
+   "id": 142
   },
   {
    "library": "estudio",
@@ -7503,7 +7503,6 @@
    "peak_db": -1.0,
    "mean_db": -23.0,
    "peak_time": 0.73,
-   "lr_corr": 0.75,
    "attack_ms": 370,
    "decay_ms": 260,
    "centroid": 1329,
@@ -7513,15 +7512,7 @@
    "flat": 0.011,
    "bumps": 5.8,
    "active_dur": 1.09,
-   "words": [
-    "swelling",
-    "warm",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 143,
-   "tags_v": 3,
+   "lr_corr": 0.75,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow",
@@ -7531,7 +7522,16 @@
     0.13,
     0.12,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 143
   },
   {
    "library": "estudio",
@@ -7553,7 +7553,6 @@
    "peak_db": -1.0,
    "mean_db": -29.8,
    "peak_time": 0.61,
-   "lr_corr": 0.02,
    "attack_ms": 330,
    "decay_ms": 560,
    "centroid": 2862,
@@ -7563,15 +7562,7 @@
    "flat": 0.231,
    "bumps": 4.3,
    "active_dur": 1.41,
-   "words": [
-    "swelling",
-    "mid",
-    "thin",
-    "textured",
-    "medium"
-   ],
-   "id": 144,
-   "tags_v": 3,
+   "lr_corr": 0.02,
    "tags": [
     "Music",
     "Percussion",
@@ -7585,7 +7576,16 @@
     0.13,
     0.1,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "thin",
+    "textured",
+    "medium"
+   ],
+   "id": 144
   },
   {
    "library": "estudio",
@@ -7607,7 +7607,6 @@
    "peak_db": -1.0,
    "mean_db": -21.3,
    "peak_time": 1.21,
-   "lr_corr": 1.0,
    "attack_ms": 460,
    "decay_ms": 250,
    "centroid": 88,
@@ -7617,15 +7616,7 @@
    "flat": 0.023,
    "bumps": 6.8,
    "active_dur": 1.6,
-   "words": [
-    "slow-build",
-    "sub",
-    "heavy",
-    "tonal",
-    "long"
-   ],
-   "id": 145,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Thunk",
     "Knock",
@@ -7639,7 +7630,16 @@
     0.65,
     0.51,
     0.47
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "sub",
+    "heavy",
+    "tonal",
+    "long"
+   ],
+   "id": 145
   },
   {
    "library": "estudio",
@@ -7661,7 +7661,6 @@
    "peak_db": -1.0,
    "mean_db": -21.8,
    "peak_time": 0.07,
-   "lr_corr": 0.96,
    "attack_ms": 30,
    "decay_ms": 150,
    "centroid": 614,
@@ -7671,14 +7670,7 @@
    "flat": 0.01,
    "bumps": 3.3,
    "active_dur": 0.36,
-   "words": [
-    "punchy",
-    "warm",
-    "tonal",
-    "short"
-   ],
-   "id": 146,
-   "tags_v": 3,
+   "lr_corr": 0.96,
    "tags": [
     "Thunk",
     "Arrow",
@@ -7692,7 +7684,15 @@
     0.35,
     0.18,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "tonal",
+    "short"
+   ],
+   "id": 146
   },
   {
    "library": "estudio",
@@ -7714,7 +7714,6 @@
    "peak_db": -1.0,
    "mean_db": -17.4,
    "peak_time": 0.71,
-   "lr_corr": 1.0,
    "attack_ms": 420,
    "decay_ms": 90,
    "centroid": 52,
@@ -7724,16 +7723,7 @@
    "flat": 0.005,
    "bumps": 5.4,
    "active_dur": 0.86,
-   "words": [
-    "slow-build",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium",
-    "dry"
-   ],
-   "id": 147,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Heart murmur",
     "Heart sounds, heartbeat",
@@ -7745,7 +7735,17 @@
     0.61,
     0.47,
     0.45
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium",
+    "dry"
+   ],
+   "id": 147
   },
   {
    "library": "estudio",
@@ -7767,7 +7767,6 @@
    "peak_db": -1.0,
    "mean_db": -21.7,
    "peak_time": 0.13,
-   "lr_corr": 0.98,
    "attack_ms": 60,
    "decay_ms": 210,
    "centroid": 472,
@@ -7777,14 +7776,7 @@
    "flat": 0.032,
    "bumps": 3.3,
    "active_dur": 0.56,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 148,
-   "tags_v": 3,
+   "lr_corr": 0.98,
    "tags": [
     "Explosion",
     "Gunshot, gunfire",
@@ -7794,7 +7786,15 @@
     0.22,
     0.13,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 148
   },
   {
    "library": "estudio",
@@ -7816,7 +7816,6 @@
    "peak_db": -1.0,
    "mean_db": -17.7,
    "peak_time": 0.15,
-   "lr_corr": 0.82,
    "attack_ms": 90,
    "decay_ms": 100,
    "centroid": 2386,
@@ -7826,16 +7825,7 @@
    "flat": 0.342,
    "bumps": 3.3,
    "active_dur": 0.29,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 149,
-   "tags_v": 3,
+   "lr_corr": 0.82,
    "tags": [
     "Whoosh, swoosh, swish",
     "Whip",
@@ -7849,7 +7839,17 @@
     0.28,
     0.17,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 149
   },
   {
    "library": "estudio",
@@ -7871,7 +7871,6 @@
    "peak_db": -1.0,
    "mean_db": -21.5,
    "peak_time": 0.43,
-   "lr_corr": 0.95,
    "attack_ms": 210,
    "decay_ms": 330,
    "centroid": 374,
@@ -7881,14 +7880,7 @@
    "flat": 0.086,
    "bumps": 2.6,
    "active_dur": 1.02,
-   "words": [
-    "swelling",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 150,
-   "tags_v": 3,
+   "lr_corr": 0.95,
    "tags": [
     "Explosion",
     "Arrow",
@@ -7902,7 +7894,15 @@
     0.26,
     0.25,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 150
   },
   {
    "library": "estudio",
@@ -7924,7 +7924,6 @@
    "peak_db": -0.6,
    "mean_db": -9.2,
    "peak_time": 0.09,
-   "lr_corr": 0.99,
    "attack_ms": 90,
    "decay_ms": 190,
    "centroid": 2523,
@@ -7934,15 +7933,7 @@
    "flat": 0.195,
    "bumps": 6.7,
    "active_dur": 0.35,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "short"
-   ],
-   "id": 151,
-   "tags_v": 3,
+   "lr_corr": 0.99,
    "tags": [
     "Beep, bleep",
     "Siren",
@@ -7952,7 +7943,16 @@
     0.13,
     0.12,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "short"
+   ],
+   "id": 151
   },
   {
    "library": "estudio",
@@ -7974,7 +7974,6 @@
    "peak_db": -1.0,
    "mean_db": -23.6,
    "peak_time": 0.13,
-   "lr_corr": 0.77,
    "attack_ms": 70,
    "decay_ms": 160,
    "centroid": 627,
@@ -7984,14 +7983,7 @@
    "flat": 0.105,
    "bumps": 3.3,
    "active_dur": 0.43,
-   "words": [
-    "soft-attack",
-    "warm",
-    "tonal",
-    "short"
-   ],
-   "id": 152,
-   "tags_v": 3,
+   "lr_corr": 0.77,
    "tags": [
     "Whoosh, swoosh, swish",
     "Crack",
@@ -8005,7 +7997,15 @@
     0.53,
     0.48,
     0.43
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "tonal",
+    "short"
+   ],
+   "id": 152
   },
   {
    "library": "estudio",
@@ -8027,7 +8027,6 @@
    "peak_db": -1.0,
    "mean_db": -20.8,
    "peak_time": 0.15,
-   "lr_corr": 0.98,
    "attack_ms": 80,
    "decay_ms": 120,
    "centroid": 742,
@@ -8037,6 +8036,16 @@
    "flat": 0.034,
    "bumps": 3.3,
    "active_dur": 0.33,
+   "lr_corr": 0.98,
+   "tags": [
+    "Whoosh, swoosh, swish",
+    "Arrow"
+   ],
+   "tag_scores": [
+    0.61,
+    0.5
+   ],
+   "tags_v": 3,
    "words": [
     "soft-attack",
     "warm",
@@ -8045,16 +8054,7 @@
     "short",
     "dry"
    ],
-   "id": 153,
-   "tags_v": 3,
-   "tags": [
-    "Whoosh, swoosh, swish",
-    "Arrow"
-   ],
-   "tag_scores": [
-    0.61,
-    0.5
-   ]
+   "id": 153
   },
   {
    "library": "estudio",
@@ -8076,7 +8076,6 @@
    "peak_db": -1.0,
    "mean_db": -20.2,
    "peak_time": 0.17,
-   "lr_corr": 0.84,
    "attack_ms": 80,
    "decay_ms": 150,
    "centroid": 492,
@@ -8086,14 +8085,7 @@
    "flat": 0.074,
    "bumps": 3.3,
    "active_dur": 0.47,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 154,
-   "tags_v": 3,
+   "lr_corr": 0.84,
    "tags": [
     "Breaking",
     "Shatter",
@@ -8107,7 +8099,15 @@
     0.5,
     0.41,
     0.37
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 154
   },
   {
    "library": "estudio",
@@ -8129,7 +8129,6 @@
    "peak_db": -1.0,
    "mean_db": -25.6,
    "peak_time": 0.15,
-   "lr_corr": 0.97,
    "attack_ms": 60,
    "decay_ms": 190,
    "centroid": 624,
@@ -8139,14 +8138,7 @@
    "flat": 0.033,
    "bumps": 3.3,
    "active_dur": 0.52,
-   "words": [
-    "soft-attack",
-    "warm",
-    "tonal",
-    "short"
-   ],
-   "id": 155,
-   "tags_v": 3,
+   "lr_corr": 0.97,
    "tags": [
     "Breaking",
     "Crack",
@@ -8160,7 +8152,15 @@
     0.46,
     0.32,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "tonal",
+    "short"
+   ],
+   "id": 155
   },
   {
    "library": "estudio",
@@ -8182,7 +8182,6 @@
    "peak_db": -1.0,
    "mean_db": -20.6,
    "peak_time": 0.55,
-   "lr_corr": 0.94,
    "attack_ms": 230,
    "decay_ms": 360,
    "centroid": 638,
@@ -8192,14 +8191,7 @@
    "flat": 0.037,
    "bumps": 2.4,
    "active_dur": 1.23,
-   "words": [
-    "swelling",
-    "warm",
-    "tonal",
-    "medium"
-   ],
-   "id": 156,
-   "tags_v": 3,
+   "lr_corr": 0.94,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8213,7 +8205,15 @@
     0.4,
     0.22,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "tonal",
+    "medium"
+   ],
+   "id": 156
   },
   {
    "library": "estudio",
@@ -8235,7 +8235,6 @@
    "peak_db": -1.0,
    "mean_db": -16.5,
    "peak_time": 0.15,
-   "lr_corr": 0.97,
    "attack_ms": 90,
    "decay_ms": 420,
    "centroid": 229,
@@ -8245,14 +8244,7 @@
    "flat": 0.013,
    "bumps": 7.0,
    "active_dur": 0.69,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 157,
-   "tags_v": 3,
+   "lr_corr": 0.97,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8266,7 +8258,15 @@
     0.32,
     0.1,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 157
   },
   {
    "library": "estudio",
@@ -8288,7 +8288,6 @@
    "peak_db": -1.0,
    "mean_db": -22.0,
    "peak_time": 0.19,
-   "lr_corr": 0.97,
    "attack_ms": 80,
    "decay_ms": 200,
    "centroid": 579,
@@ -8298,15 +8297,7 @@
    "flat": 0.018,
    "bumps": 3.3,
    "active_dur": 0.55,
-   "words": [
-    "soft-attack",
-    "dark",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 158,
-   "tags_v": 3,
+   "lr_corr": 0.97,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8320,7 +8311,16 @@
     0.37,
     0.19,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 158
   },
   {
    "library": "estudio",
@@ -8342,7 +8342,6 @@
    "peak_db": -1.0,
    "mean_db": -21.9,
    "peak_time": 0.27,
-   "lr_corr": 0.57,
    "attack_ms": 100,
    "decay_ms": 250,
    "centroid": 220,
@@ -8352,14 +8351,7 @@
    "flat": 0.042,
    "bumps": 6.7,
    "active_dur": 0.71,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 159,
-   "tags_v": 3,
+   "lr_corr": 0.57,
    "tags": [
     "Breaking",
     "Firecracker",
@@ -8373,7 +8365,15 @@
     0.37,
     0.34,
     0.32
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 159
   },
   {
    "library": "estudio",
@@ -8395,7 +8395,6 @@
    "peak_db": -1.0,
    "mean_db": -17.2,
    "peak_time": 0.25,
-   "lr_corr": 0.93,
    "attack_ms": 140,
    "decay_ms": 550,
    "centroid": 215,
@@ -8405,15 +8404,7 @@
    "flat": 0.022,
    "bumps": 6.7,
    "active_dur": 1.14,
-   "words": [
-    "swelling",
-    "dark",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 160,
-   "tags_v": 3,
+   "lr_corr": 0.93,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow",
@@ -8427,7 +8418,16 @@
     0.3,
     0.25,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 160
   },
   {
    "library": "estudio",
@@ -8449,7 +8449,6 @@
    "peak_db": -1.0,
    "mean_db": -14.3,
    "peak_time": 0.47,
-   "lr_corr": 1.0,
    "attack_ms": 310,
    "decay_ms": 240,
    "centroid": 53,
@@ -8459,15 +8458,7 @@
    "flat": 0.004,
    "bumps": 4.3,
    "active_dur": 0.9,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 161,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8481,7 +8472,16 @@
     0.4,
     0.13,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 161
   },
   {
    "library": "estudio",
@@ -8503,7 +8503,6 @@
    "peak_db": -1.0,
    "mean_db": -22.2,
    "peak_time": 0.09,
-   "lr_corr": 0.96,
    "attack_ms": 40,
    "decay_ms": 170,
    "centroid": 452,
@@ -8513,14 +8512,7 @@
    "flat": 0.01,
    "bumps": 3.3,
    "active_dur": 0.42,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 162,
-   "tags_v": 3,
+   "lr_corr": 0.96,
    "tags": [
     "Arrow",
     "Thump, thud",
@@ -8534,7 +8526,15 @@
     0.16,
     0.13,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 162
   },
   {
    "library": "estudio",
@@ -8556,7 +8556,6 @@
    "peak_db": -1.0,
    "mean_db": -19.5,
    "peak_time": 0.85,
-   "lr_corr": 0.95,
    "attack_ms": 490,
    "decay_ms": 160,
    "centroid": 217,
@@ -8566,15 +8565,7 @@
    "flat": 0.038,
    "bumps": 2.1,
    "active_dur": 1.18,
-   "words": [
-    "slow-build",
-    "dark",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 163,
-   "tags_v": 3,
+   "lr_corr": 0.95,
    "tags": [
     "Wind",
     "Whoosh, swoosh, swish",
@@ -8588,7 +8579,16 @@
     0.41,
     0.35,
     0.34
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "dark",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 163
   },
   {
    "library": "estudio",
@@ -8610,7 +8610,6 @@
    "peak_db": -1.0,
    "mean_db": -17.5,
    "peak_time": 0.13,
-   "lr_corr": 0.99,
    "attack_ms": 40,
    "decay_ms": 160,
    "centroid": 496,
@@ -8620,14 +8619,7 @@
    "flat": 0.034,
    "bumps": 3.3,
    "active_dur": 0.36,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 164,
-   "tags_v": 3,
+   "lr_corr": 0.99,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8639,7 +8631,15 @@
     0.34,
     0.21,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 164
   },
   {
    "library": "estudio",
@@ -8661,7 +8661,6 @@
    "peak_db": -1.0,
    "mean_db": -23.6,
    "peak_time": 0.53,
-   "lr_corr": 0.76,
    "attack_ms": 380,
    "decay_ms": 310,
    "centroid": 900,
@@ -8671,14 +8670,7 @@
    "flat": 0.146,
    "bumps": 6.8,
    "active_dur": 1.47,
-   "words": [
-    "swelling",
-    "warm",
-    "textured",
-    "medium"
-   ],
-   "id": 165,
-   "tags_v": 3,
+   "lr_corr": 0.76,
    "tags": [
     "Glass",
     "Explosion",
@@ -8692,7 +8684,15 @@
     0.24,
     0.22,
     0.2
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "textured",
+    "medium"
+   ],
+   "id": 165
   },
   {
    "library": "estudio",
@@ -8714,7 +8714,6 @@
    "peak_db": -1.0,
    "mean_db": -20.0,
    "peak_time": 0.13,
-   "lr_corr": 0.93,
    "attack_ms": 80,
    "decay_ms": 460,
    "centroid": 203,
@@ -8724,15 +8723,7 @@
    "flat": 0.028,
    "bumps": 7.0,
    "active_dur": 0.8,
-   "words": [
-    "soft-attack",
-    "dark",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 166,
-   "tags_v": 3,
+   "lr_corr": 0.93,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8746,7 +8737,16 @@
     0.19,
     0.18,
     0.17
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 166
   },
   {
    "library": "estudio",
@@ -8768,7 +8768,6 @@
    "peak_db": -1.0,
    "mean_db": -27.4,
    "peak_time": 0.11,
-   "lr_corr": 0.82,
    "attack_ms": 80,
    "decay_ms": 220,
    "centroid": 677,
@@ -8778,14 +8777,7 @@
    "flat": 0.045,
    "bumps": 3.3,
    "active_dur": 0.61,
-   "words": [
-    "soft-attack",
-    "warm",
-    "tonal",
-    "medium"
-   ],
-   "id": 167,
-   "tags_v": 3,
+   "lr_corr": 0.82,
    "tags": [
     "Knock",
     "Fart",
@@ -8799,7 +8791,15 @@
     0.16,
     0.16,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "tonal",
+    "medium"
+   ],
+   "id": 167
   },
   {
    "library": "estudio",
@@ -8821,7 +8821,6 @@
    "peak_db": -1.0,
    "mean_db": -18.1,
    "peak_time": 0.29,
-   "lr_corr": 1.0,
    "attack_ms": 220,
    "decay_ms": 170,
    "centroid": 122,
@@ -8831,15 +8830,7 @@
    "flat": 0.002,
    "bumps": 3.3,
    "active_dur": 0.63,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 168,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -8851,7 +8842,16 @@
     0.55,
     0.27,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 168
   },
   {
    "library": "estudio",
@@ -8873,7 +8873,6 @@
    "peak_db": -1.0,
    "mean_db": -20.4,
    "peak_time": 0.73,
-   "lr_corr": 0.98,
    "attack_ms": 330,
    "decay_ms": 430,
    "centroid": 88,
@@ -8883,15 +8882,7 @@
    "flat": 0.025,
    "bumps": 3.2,
    "active_dur": 1.49,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 169,
-   "tags_v": 3,
+   "lr_corr": 0.98,
    "tags": [
     "Thump, thud",
     "Arrow",
@@ -8905,7 +8896,16 @@
     0.38,
     0.32,
     0.27
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 169
   },
   {
    "library": "estudio",
@@ -8927,7 +8927,6 @@
    "peak_db": -1.0,
    "mean_db": -22.6,
    "peak_time": 0.35,
-   "lr_corr": 0.84,
    "attack_ms": 400,
    "decay_ms": 230,
    "centroid": 299,
@@ -8937,15 +8936,7 @@
    "flat": 0.044,
    "bumps": 9.4,
    "active_dur": 0.95,
-   "words": [
-    "swelling",
-    "dark",
-    "tonal",
-    "medium",
-    "pulsing"
-   ],
-   "id": 170,
-   "tags_v": 3,
+   "lr_corr": 0.84,
    "tags": [
     "Thunk",
     "Shatter",
@@ -8959,7 +8950,16 @@
     0.66,
     0.65,
     0.51
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "tonal",
+    "medium",
+    "pulsing"
+   ],
+   "id": 170
   },
   {
    "library": "estudio",
@@ -8981,7 +8981,6 @@
    "peak_db": -1.0,
    "mean_db": -21.0,
    "peak_time": 0.25,
-   "lr_corr": 0.64,
    "attack_ms": 170,
    "decay_ms": 190,
    "centroid": 505,
@@ -8991,14 +8990,7 @@
    "flat": 0.065,
    "bumps": 6.7,
    "active_dur": 0.51,
-   "words": [
-    "swelling",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 171,
-   "tags_v": 3,
+   "lr_corr": 0.64,
    "tags": [
     "Thunk",
     "Knock",
@@ -9012,7 +9004,15 @@
     0.46,
     0.32,
     0.26
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 171
   },
   {
    "library": "estudio",
@@ -9034,7 +9034,6 @@
    "peak_db": -0.6,
    "mean_db": -8.8,
    "peak_time": 0.15,
-   "lr_corr": 0.97,
    "attack_ms": 150,
    "decay_ms": 20,
    "centroid": 957,
@@ -9044,15 +9043,7 @@
    "flat": 0.119,
    "bumps": 6.7,
    "active_dur": 0.25,
-   "words": [
-    "swelling",
-    "warm",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 172,
-   "tags_v": 3,
+   "lr_corr": 0.97,
    "tags": [
     "Plop",
     "Whip",
@@ -9066,7 +9057,16 @@
     0.16,
     0.11,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "warm",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 172
   },
   {
    "library": "estudio",
@@ -9088,7 +9088,6 @@
    "peak_db": -0.5,
    "mean_db": -9.6,
    "peak_time": 0.03,
-   "lr_corr": 0.98,
    "attack_ms": 30,
    "decay_ms": 200,
    "centroid": 873,
@@ -9098,20 +9097,21 @@
    "flat": 0.09,
    "bumps": 3.3,
    "active_dur": 0.32,
+   "lr_corr": 0.98,
+   "tags": [
+    "Plop"
+   ],
+   "tag_scores": [
+    0.96
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
     "tonal",
     "short"
    ],
-   "id": 173,
-   "tags_v": 3,
-   "tags": [
-    "Plop"
-   ],
-   "tag_scores": [
-    0.96
-   ]
+   "id": 173
   },
   {
    "library": "estudio",
@@ -9133,7 +9133,6 @@
    "peak_db": -1.0,
    "mean_db": -21.9,
    "peak_time": 0.29,
-   "lr_corr": 0.97,
    "attack_ms": 100,
    "decay_ms": 120,
    "centroid": 457,
@@ -9143,15 +9142,7 @@
    "flat": 0.021,
    "bumps": 3.3,
    "active_dur": 0.54,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 174,
-   "tags_v": 3,
+   "lr_corr": 0.97,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow",
@@ -9165,7 +9156,16 @@
     0.22,
     0.16,
     0.15
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 174
   },
   {
    "library": "estudio",
@@ -9187,7 +9187,6 @@
    "peak_db": -1.0,
    "mean_db": -16.9,
    "peak_time": 0.35,
-   "lr_corr": 1.0,
    "attack_ms": 220,
    "decay_ms": 220,
    "centroid": 73,
@@ -9197,15 +9196,7 @@
    "flat": 0.003,
    "bumps": 2.8,
    "active_dur": 0.65,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 175,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow"
@@ -9213,7 +9204,16 @@
    "tag_scores": [
     0.98,
     0.95
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 175
   },
   {
    "library": "estudio",
@@ -9235,7 +9235,6 @@
    "peak_db": -1.0,
    "mean_db": -25.2,
    "peak_time": 0.11,
-   "lr_corr": 0.3,
    "attack_ms": 100,
    "decay_ms": 290,
    "centroid": 2579,
@@ -9245,16 +9244,7 @@
    "flat": 0.378,
    "bumps": 8.1,
    "active_dur": 0.64,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "medium",
-    "pulsing"
-   ],
-   "id": 176,
-   "tags_v": 3,
+   "lr_corr": 0.3,
    "tags": [
     "Whoosh, swoosh, swish",
     "Burst, pop",
@@ -9268,7 +9258,17 @@
     0.13,
     0.12,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "medium",
+    "pulsing"
+   ],
+   "id": 176
   },
   {
    "library": "estudio",
@@ -9290,7 +9290,6 @@
    "peak_db": -1.0,
    "mean_db": -10.9,
    "peak_time": 0.07,
-   "lr_corr": 0.99,
    "attack_ms": 60,
    "decay_ms": 70,
    "centroid": 1769,
@@ -9300,16 +9299,7 @@
    "flat": 0.298,
    "bumps": 3.3,
    "active_dur": 0.24,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 177,
-   "tags_v": 3,
+   "lr_corr": 0.99,
    "tags": [
     "Plop",
     "Ding",
@@ -9319,7 +9309,17 @@
     0.47,
     0.34,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 177
   },
   {
    "library": "estudio",
@@ -9341,7 +9341,6 @@
    "peak_db": -1.0,
    "mean_db": -7.6,
    "peak_time": 0.13,
-   "lr_corr": 1.0,
    "attack_ms": 130,
    "decay_ms": 110,
    "centroid": 1796,
@@ -9351,15 +9350,7 @@
    "flat": 0.561,
    "bumps": 3.3,
    "active_dur": 0.28,
-   "words": [
-    "swelling",
-    "mid",
-    "noisy",
-    "short",
-    "dry"
-   ],
-   "id": 178,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Chink, clink",
     "Glass",
@@ -9371,7 +9362,16 @@
     0.19,
     0.16,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "noisy",
+    "short",
+    "dry"
+   ],
+   "id": 178
   },
   {
    "library": "estudio",
@@ -9393,7 +9393,6 @@
    "peak_db": -1.0,
    "mean_db": -27.0,
    "peak_time": 0.11,
-   "lr_corr": 0.27,
    "attack_ms": 30,
    "decay_ms": 60,
    "centroid": 2635,
@@ -9403,16 +9402,7 @@
    "flat": 0.453,
    "bumps": 3.3,
    "active_dur": 0.24,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "textured",
-    "short",
-    "dry"
-   ],
-   "id": 179,
-   "tags_v": 3,
+   "lr_corr": 0.27,
    "tags": [
     "Gunshot, gunfire",
     "Explosion",
@@ -9426,7 +9416,17 @@
     0.2,
     0.16,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "textured",
+    "short",
+    "dry"
+   ],
+   "id": 179
   },
   {
    "library": "estudio",
@@ -9448,7 +9448,6 @@
    "peak_db": -1.0,
    "mean_db": -21.7,
    "peak_time": 0.13,
-   "lr_corr": 0.97,
    "attack_ms": 80,
    "decay_ms": 180,
    "centroid": 382,
@@ -9458,14 +9457,7 @@
    "flat": 0.018,
    "bumps": 3.3,
    "active_dur": 0.48,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 180,
-   "tags_v": 3,
+   "lr_corr": 0.97,
    "tags": [
     "Thump, thud",
     "Arrow",
@@ -9479,7 +9471,15 @@
     0.52,
     0.44,
     0.28
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 180
   },
   {
    "library": "estudio",
@@ -9501,7 +9501,6 @@
    "peak_db": -1.0,
    "mean_db": -23.4,
    "peak_time": 0.13,
-   "lr_corr": 0.63,
    "attack_ms": 40,
    "decay_ms": 140,
    "centroid": 574,
@@ -9511,14 +9510,7 @@
    "flat": 0.056,
    "bumps": 3.3,
    "active_dur": 0.37,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 181,
-   "tags_v": 3,
+   "lr_corr": 0.63,
    "tags": [
     "Crack",
     "Breaking",
@@ -9532,7 +9524,15 @@
     0.36,
     0.32,
     0.27
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 181
   },
   {
    "library": "estudio",
@@ -9554,7 +9554,6 @@
    "peak_db": -1.0,
    "mean_db": -21.4,
    "peak_time": 0.09,
-   "lr_corr": 0.97,
    "attack_ms": 30,
    "decay_ms": 200,
    "centroid": 392,
@@ -9564,14 +9563,7 @@
    "flat": 0.01,
    "bumps": 3.3,
    "active_dur": 0.37,
-   "words": [
-    "punchy",
-    "dark",
-    "tonal",
-    "short"
-   ],
-   "id": 182,
-   "tags_v": 3,
+   "lr_corr": 0.97,
    "tags": [
     "Arrow",
     "Whoosh, swoosh, swish",
@@ -9585,7 +9577,15 @@
     0.43,
     0.23,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "tonal",
+    "short"
+   ],
+   "id": 182
   },
   {
    "library": "estudio",
@@ -9607,7 +9607,6 @@
    "peak_db": -1.0,
    "mean_db": -18.6,
    "peak_time": 0.07,
-   "lr_corr": 0.98,
    "attack_ms": 30,
    "decay_ms": 140,
    "centroid": 889,
@@ -9617,15 +9616,7 @@
    "flat": 0.052,
    "bumps": 3.3,
    "active_dur": 0.25,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 183,
-   "tags_v": 3,
+   "lr_corr": 0.98,
    "tags": [
     "Chink, clink",
     "Glass",
@@ -9639,7 +9630,16 @@
     0.44,
     0.25,
     0.22
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 183
   },
   {
    "library": "estudio",
@@ -9661,7 +9661,6 @@
    "peak_db": -1.0,
    "mean_db": -15.2,
    "peak_time": 0.35,
-   "lr_corr": 1.0,
    "attack_ms": 230,
    "decay_ms": 240,
    "centroid": 60,
@@ -9671,15 +9670,7 @@
    "flat": 0.006,
    "bumps": 3.1,
    "active_dur": 0.66,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 184,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Whoosh, swoosh, swish",
     "Arrow"
@@ -9687,7 +9678,16 @@
    "tag_scores": [
     0.97,
     0.93
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 184
   },
   {
    "library": "estudio",
@@ -9709,7 +9709,6 @@
    "peak_db": -1.0,
    "mean_db": -17.4,
    "peak_time": 0.33,
-   "lr_corr": 1.0,
    "attack_ms": 240,
    "decay_ms": 210,
    "centroid": 62,
@@ -9719,15 +9718,7 @@
    "flat": 0.007,
    "bumps": 5.0,
    "active_dur": 0.64,
-   "words": [
-    "swelling",
-    "sub",
-    "heavy",
-    "tonal",
-    "medium"
-   ],
-   "id": 185,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Fart",
     "Whack, thwack",
@@ -9741,7 +9732,16 @@
     0.2,
     0.13,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "sub",
+    "heavy",
+    "tonal",
+    "medium"
+   ],
+   "id": 185
   },
   {
    "library": "estudio",
@@ -9763,7 +9763,6 @@
    "peak_db": -1.0,
    "mean_db": -24.4,
    "peak_time": 0.01,
-   "lr_corr": 0.67,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 6023,
@@ -9773,7 +9772,11 @@
    "flat": 0.154,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "lr_corr": 0.67,
    "onset_count": 0,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -9782,10 +9785,7 @@
     "tiny",
     "dry"
    ],
-   "id": 186,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 186
   },
   {
    "library": "estudio",
@@ -9807,7 +9807,6 @@
    "peak_db": -1.0,
    "mean_db": -23.8,
    "peak_time": 0.01,
-   "lr_corr": 0.96,
    "attack_ms": 0,
    "decay_ms": 20,
    "centroid": 4950,
@@ -9817,7 +9816,15 @@
    "flat": 0.133,
    "bumps": 0.0,
    "active_dur": 0.07,
+   "lr_corr": 0.96,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.26
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -9826,14 +9833,7 @@
     "tiny",
     "dry"
    ],
-   "id": 187,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.26
-   ]
+   "id": 187
   },
   {
    "library": "estudio",
@@ -9855,7 +9855,6 @@
    "peak_db": -1.0,
    "mean_db": -24.2,
    "peak_time": 0.01,
-   "lr_corr": 0.87,
    "attack_ms": 0,
    "decay_ms": 40,
    "centroid": 5392,
@@ -9865,7 +9864,11 @@
    "flat": 0.111,
    "bumps": 0.0,
    "active_dur": 0.07,
+   "lr_corr": 0.87,
    "onset_count": 0,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -9874,10 +9877,7 @@
     "tiny",
     "dry"
    ],
-   "id": 188,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 188
   },
   {
    "library": "estudio",
@@ -9899,7 +9899,6 @@
    "peak_db": -1.0,
    "mean_db": -24.4,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 30,
    "centroid": 4655,
@@ -9909,7 +9908,15 @@
    "flat": 0.111,
    "bumps": 0.0,
    "active_dur": 0.05,
+   "lr_corr": 1.0,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.11
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -9918,14 +9925,7 @@
     "tiny",
     "dry"
    ],
-   "id": 189,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.11
-   ]
+   "id": 189
   },
   {
    "library": "estudio",
@@ -9947,7 +9947,6 @@
    "peak_db": -0.6,
    "mean_db": -23.3,
    "peak_time": 0.01,
-   "lr_corr": 0.99,
    "attack_ms": 0,
    "decay_ms": 60,
    "centroid": 2307,
@@ -9957,7 +9956,15 @@
    "flat": 0.287,
    "bumps": 0.0,
    "active_dur": 0.09,
+   "lr_corr": 0.99,
    "onset_count": 0,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.08
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "mid",
@@ -9966,14 +9973,7 @@
     "tiny",
     "dry"
    ],
-   "id": 190,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.08
-   ]
+   "id": 190
   },
   {
    "library": "estudio",
@@ -9995,7 +9995,6 @@
    "peak_db": -1.0,
    "mean_db": -27.4,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 3199,
@@ -10005,7 +10004,15 @@
    "flat": 0.318,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "lr_corr": 1.0,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.18
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -10013,14 +10020,7 @@
     "tiny",
     "dry"
    ],
-   "id": 191,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.18
-   ]
+   "id": 191
   },
   {
    "library": "estudio",
@@ -10042,7 +10042,6 @@
    "peak_db": -1.0,
    "mean_db": -25.9,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 60,
    "centroid": 4656,
@@ -10052,17 +10051,8 @@
    "flat": 0.186,
    "bumps": 0.0,
    "active_dur": 0.09,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 192,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -10074,7 +10064,17 @@
     0.15,
     0.14,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 192
   },
   {
    "library": "estudio",
@@ -10096,7 +10096,6 @@
    "peak_db": -0.2,
    "mean_db": -21.3,
    "peak_time": 0.01,
-   "lr_corr": 0.97,
    "attack_ms": 0,
    "decay_ms": 30,
    "centroid": 4139,
@@ -10106,7 +10105,11 @@
    "flat": 0.319,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "lr_corr": 0.97,
    "onset_count": 1,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -10115,10 +10118,7 @@
     "tiny",
     "dry"
    ],
-   "id": 193,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 193
   },
   {
    "library": "estudio",
@@ -10141,8 +10141,6 @@
    "peak_db": -1.0,
    "mean_db": -28.3,
    "peak_time": 0.01,
-   "lr_corr": -0.4,
-   "mono_ref": 0,
    "attack_ms": 0,
    "decay_ms": 30,
    "centroid": 4955,
@@ -10152,7 +10150,12 @@
    "flat": 0.4,
    "bumps": 0.0,
    "active_dur": 0.04,
+   "lr_corr": -0.4,
    "onset_count": 0,
+   "mono_ref": 0,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -10161,10 +10164,7 @@
     "tiny",
     "dry"
    ],
-   "id": 194,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 194
   },
   {
    "library": "estudio",
@@ -10186,7 +10186,6 @@
    "peak_db": -0.2,
    "mean_db": -21.2,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 3257,
@@ -10196,7 +10195,15 @@
    "flat": 0.368,
    "bumps": 0.0,
    "active_dur": 0.09,
+   "lr_corr": 1.0,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.12
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "bright",
@@ -10205,14 +10212,7 @@
     "tiny",
     "dry"
    ],
-   "id": 195,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.12
-   ]
+   "id": 195
   },
   {
    "library": "estudio",
@@ -10234,7 +10234,6 @@
    "peak_db": -1.0,
    "mean_db": -17.4,
    "peak_time": 0.03,
-   "lr_corr": 0.94,
    "attack_ms": 30,
    "decay_ms": 150,
    "centroid": 687,
@@ -10244,16 +10243,8 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.29,
+   "lr_corr": 0.94,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 196,
-   "tags_v": 3,
    "tags": [
     "Ding",
     "Plop",
@@ -10263,7 +10254,16 @@
     0.75,
     0.16,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 196
   },
   {
    "library": "estudio",
@@ -10285,7 +10285,6 @@
    "peak_db": -1.0,
    "mean_db": -33.5,
    "peak_time": 0.01,
-   "lr_corr": 0.48,
    "attack_ms": 0,
    "decay_ms": 30,
    "centroid": 5993,
@@ -10295,7 +10294,11 @@
    "flat": 0.238,
    "bumps": 0.0,
    "active_dur": 0.04,
+   "lr_corr": 0.48,
    "onset_count": 0,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -10304,10 +10307,7 @@
     "tiny",
     "dry"
    ],
-   "id": 197,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 197
   },
   {
    "library": "estudio",
@@ -10329,7 +10329,6 @@
    "peak_db": -1.0,
    "mean_db": -15.3,
    "peak_time": 0.03,
-   "lr_corr": 0.91,
    "attack_ms": 30,
    "decay_ms": 180,
    "centroid": 700,
@@ -10339,16 +10338,8 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.29,
+   "lr_corr": 0.91,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 198,
-   "tags_v": 3,
    "tags": [
     "Telephone",
     "Alarm",
@@ -10358,7 +10349,16 @@
     0.24,
     0.23,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 198
   },
   {
    "library": "estudio",
@@ -10380,7 +10380,6 @@
    "peak_db": -0.8,
    "mean_db": -17.3,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 20,
    "centroid": 636,
@@ -10390,17 +10389,8 @@
    "flat": 0.006,
    "bumps": 0.0,
    "active_dur": 0.05,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 199,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -10410,7 +10400,17 @@
     0.18,
     0.1,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 199
   },
   {
    "library": "estudio",
@@ -10432,7 +10432,6 @@
    "peak_db": -1.0,
    "mean_db": -15.3,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 30,
    "centroid": 6958,
@@ -10442,7 +10441,15 @@
    "flat": 0.132,
    "bumps": 0.0,
    "active_dur": 0.04,
+   "lr_corr": 1.0,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.12
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -10451,14 +10458,7 @@
     "tiny",
     "dry"
    ],
-   "id": 200,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.12
-   ]
+   "id": 200
   },
   {
    "library": "estudio",
@@ -10480,7 +10480,6 @@
    "peak_db": -1.0,
    "mean_db": -20.8,
    "peak_time": 0.01,
-   "lr_corr": 0.99,
    "attack_ms": 0,
    "decay_ms": 30,
    "centroid": 7452,
@@ -10490,7 +10489,15 @@
    "flat": 0.38,
    "bumps": 0.0,
    "active_dur": 0.05,
+   "lr_corr": 0.99,
    "onset_count": 0,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.09
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -10499,14 +10506,7 @@
     "tiny",
     "dry"
    ],
-   "id": 201,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.09
-   ]
+   "id": 201
   },
   {
    "library": "estudio",
@@ -10528,7 +10528,6 @@
    "peak_db": -1.0,
    "mean_db": -26.9,
    "peak_time": 0.01,
-   "lr_corr": 0.91,
    "attack_ms": 0,
    "decay_ms": 20,
    "centroid": 5823,
@@ -10538,7 +10537,15 @@
    "flat": 0.086,
    "bumps": 0.0,
    "active_dur": 0.05,
+   "lr_corr": 0.91,
    "onset_count": 0,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.11
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -10547,14 +10554,7 @@
     "tiny",
     "dry"
    ],
-   "id": 202,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.11
-   ]
+   "id": 202
   },
   {
    "library": "estudio",
@@ -10576,7 +10576,6 @@
    "peak_db": -1.0,
    "mean_db": -29.5,
    "peak_time": 0.01,
-   "lr_corr": 0.56,
    "attack_ms": 0,
    "decay_ms": 30,
    "centroid": 5450,
@@ -10586,7 +10585,15 @@
    "flat": 0.318,
    "bumps": 0.0,
    "active_dur": 0.04,
+   "lr_corr": 0.56,
    "onset_count": 0,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.1
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -10595,14 +10602,7 @@
     "tiny",
     "dry"
    ],
-   "id": 203,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.1
-   ]
+   "id": 203
   },
   {
    "library": "estudio",
@@ -10624,7 +10624,6 @@
    "peak_db": -1.0,
    "mean_db": -21.8,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 20,
    "centroid": 3365,
@@ -10634,17 +10633,8 @@
    "flat": 0.026,
    "bumps": 0.0,
    "active_dur": 0.04,
+   "lr_corr": 1.0,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "tonal",
-    "tiny",
-    "dry"
-   ],
-   "id": 204,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -10654,7 +10644,17 @@
     0.23,
     0.12,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "tonal",
+    "tiny",
+    "dry"
+   ],
+   "id": 204
   },
   {
    "library": "estudio",
@@ -10676,7 +10676,6 @@
    "peak_db": -0.9,
    "mean_db": -22.2,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 1074,
@@ -10686,7 +10685,15 @@
    "flat": 0.098,
    "bumps": 0.0,
    "active_dur": 0.09,
+   "lr_corr": 1.0,
    "onset_count": 0,
+   "tags": [
+    "Speech"
+   ],
+   "tag_scores": [
+    0.12
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
@@ -10694,14 +10701,7 @@
     "tiny",
     "dry"
    ],
-   "id": 205,
-   "tags_v": 3,
-   "tags": [
-    "Speech"
-   ],
-   "tag_scores": [
-    0.12
-   ]
+   "id": 205
   },
   {
    "library": "estudio",
@@ -10723,7 +10723,6 @@
    "peak_db": -1.0,
    "mean_db": -28.3,
    "peak_time": 0.01,
-   "lr_corr": 0.21,
    "attack_ms": 0,
    "decay_ms": 10,
    "centroid": 5187,
@@ -10733,7 +10732,11 @@
    "flat": 0.172,
    "bumps": 0.0,
    "active_dur": 0.03,
+   "lr_corr": 0.21,
    "onset_count": 0,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -10742,10 +10745,7 @@
     "tiny",
     "dry"
    ],
-   "id": 206,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 206
   },
   {
    "library": "estudio",
@@ -10767,8 +10767,6 @@
    "peak_db": -1.0,
    "mean_db": -27.7,
    "peak_time": 0.01,
-   "lr_corr": -0.39,
-   "mono_ref": 1,
    "attack_ms": 0,
    "decay_ms": 30,
    "centroid": 5383,
@@ -10778,7 +10776,12 @@
    "flat": 0.309,
    "bumps": 0.0,
    "active_dur": 0.06,
+   "lr_corr": -0.39,
    "onset_count": 1,
+   "mono_ref": 1,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -10787,10 +10790,7 @@
     "tiny",
     "dry"
    ],
-   "id": 207,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 207
   },
   {
    "library": "estudio",
@@ -10813,7 +10813,6 @@
    "peak_db": -1.0,
    "mean_db": -30.1,
    "peak_time": 0.01,
-   "lr_corr": 0.99,
    "attack_ms": 0,
    "decay_ms": 30,
    "centroid": 6774,
@@ -10823,7 +10822,15 @@
    "flat": 0.26,
    "bumps": 0.0,
    "active_dur": 0.05,
+   "lr_corr": 0.99,
    "onset_count": 0,
+   "tags": [
+    "Tick"
+   ],
+   "tag_scores": [
+    0.11
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "airy",
@@ -10832,14 +10839,7 @@
     "tiny",
     "dry"
    ],
-   "id": 208,
-   "tags_v": 3,
-   "tags": [
-    "Tick"
-   ],
-   "tag_scores": [
-    0.11
-   ]
+   "id": 208
   },
   {
    "library": "estudio",
@@ -10861,7 +10861,6 @@
    "peak_db": -1.0,
    "mean_db": -24.1,
    "peak_time": 0.01,
-   "lr_corr": 0.87,
    "attack_ms": 0,
    "decay_ms": 50,
    "centroid": 3636,
@@ -10871,17 +10870,8 @@
    "flat": 0.134,
    "bumps": 0.0,
    "active_dur": 0.08,
+   "lr_corr": 0.87,
    "onset_count": 0,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "textured",
-    "tiny",
-    "dry"
-   ],
-   "id": 209,
-   "tags_v": 3,
    "tags": [
     "Tick",
     "Clock",
@@ -10895,7 +10885,17 @@
     0.13,
     0.11,
     0.08
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "textured",
+    "tiny",
+    "dry"
+   ],
+   "id": 209
   },
   {
    "library": "estudio",
@@ -10918,7 +10918,6 @@
    "peak_db": -1.0,
    "mean_db": -23.3,
    "peak_time": 0.29,
-   "lr_corr": 0.77,
    "attack_ms": 80,
    "decay_ms": 540,
    "centroid": 3227,
@@ -10928,14 +10927,7 @@
    "flat": 0.018,
    "bumps": 2.6,
    "active_dur": 1.06,
-   "words": [
-    "soft-attack",
-    "bright",
-    "tonal",
-    "medium"
-   ],
-   "id": 210,
-   "tags_v": 3,
+   "lr_corr": 0.77,
    "tags": [
     "Ding",
     "Jingle, tinkle",
@@ -10949,7 +10941,15 @@
     0.34,
     0.29,
     0.17
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "bright",
+    "tonal",
+    "medium"
+   ],
+   "id": 210
   },
   {
    "library": "estudio",
@@ -10972,7 +10972,6 @@
    "peak_db": -1.0,
    "mean_db": -20.0,
    "peak_time": 0.01,
-   "lr_corr": 0.99,
    "attack_ms": 0,
    "decay_ms": 960,
    "centroid": 1422,
@@ -10982,16 +10981,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.46,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 211,
-   "tags_v": 3,
+   "lr_corr": 0.99,
    "tags": [
     "Ding",
     "Glass",
@@ -11005,7 +10995,17 @@
     0.5,
     0.2,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 211
   },
   {
    "library": "estudio",
@@ -11028,7 +11028,6 @@
    "peak_db": -1.0,
    "mean_db": -28.2,
    "peak_time": 1.11,
-   "lr_corr": 0.18,
    "attack_ms": 350,
    "decay_ms": 610,
    "centroid": 1809,
@@ -11038,15 +11037,7 @@
    "flat": 0.061,
    "bumps": 4.3,
    "active_dur": 1.91,
-   "words": [
-    "swelling",
-    "mid",
-    "thin",
-    "tonal",
-    "long"
-   ],
-   "id": 212,
-   "tags_v": 3,
+   "lr_corr": 0.18,
    "tags": [
     "Music",
     "Percussion",
@@ -11060,7 +11051,16 @@
     0.34,
     0.29,
     0.18
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "thin",
+    "tonal",
+    "long"
+   ],
+   "id": 212
   },
   {
    "library": "estudio",
@@ -11083,7 +11083,6 @@
    "peak_db": -1.0,
    "mean_db": -18.9,
    "peak_time": 0.47,
-   "lr_corr": 0.78,
    "attack_ms": 240,
    "decay_ms": 550,
    "centroid": 434,
@@ -11093,15 +11092,7 @@
    "flat": 0.007,
    "bumps": 2.9,
    "active_dur": 1.15,
-   "words": [
-    "swelling",
-    "dark",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 213,
-   "tags_v": 3,
+   "lr_corr": 0.78,
    "tags": [
     "Music",
     "Ding"
@@ -11109,7 +11100,16 @@
    "tag_scores": [
     0.94,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 213
   },
   {
    "library": "estudio",
@@ -11132,7 +11132,6 @@
    "peak_db": -1.0,
    "mean_db": -17.6,
    "peak_time": 0.03,
-   "lr_corr": 0.91,
    "attack_ms": 30,
    "decay_ms": 120,
    "centroid": 502,
@@ -11142,16 +11141,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.33,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 214,
-   "tags_v": 3,
+   "lr_corr": 0.91,
    "tags": [
     "Ding",
     "Clang",
@@ -11165,7 +11155,17 @@
     0.12,
     0.11,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 214
   },
   {
    "library": "estudio",
@@ -11188,7 +11188,6 @@
    "peak_db": -1.0,
    "mean_db": -15.0,
    "peak_time": 0.01,
-   "lr_corr": 0.97,
    "attack_ms": 10,
    "decay_ms": 90,
    "centroid": 1983,
@@ -11198,16 +11197,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.23,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 215,
-   "tags_v": 3,
+   "lr_corr": 0.97,
    "tags": [
     "Telephone",
     "Alarm",
@@ -11217,7 +11207,17 @@
     0.15,
     0.11,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 215
   },
   {
    "library": "estudio",
@@ -11240,7 +11240,6 @@
    "peak_db": -1.0,
    "mean_db": -26.5,
    "peak_time": 0.79,
-   "lr_corr": -0.2,
    "attack_ms": 260,
    "decay_ms": 1830,
    "centroid": 2505,
@@ -11250,16 +11249,7 @@
    "flat": 0.026,
    "bumps": 4.1,
    "active_dur": 3.72,
-   "words": [
-    "swelling",
-    "mid",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 216,
-   "tags_v": 3,
+   "lr_corr": -0.2,
    "tags": [
     "Music",
     "Glockenspiel",
@@ -11273,7 +11263,17 @@
     0.75,
     0.62,
     0.58
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 216
   },
   {
    "library": "estudio",
@@ -11296,7 +11296,6 @@
    "peak_db": -1.0,
    "mean_db": -20.4,
    "peak_time": 1.07,
-   "lr_corr": 0.39,
    "attack_ms": 630,
    "decay_ms": 480,
    "centroid": 4976,
@@ -11306,15 +11305,7 @@
    "flat": 0.008,
    "bumps": 5.4,
    "active_dur": 1.65,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "tonal",
-    "long"
-   ],
-   "id": 217,
-   "tags_v": 3,
+   "lr_corr": 0.39,
    "tags": [
     "Telephone",
     "Ringtone",
@@ -11328,7 +11319,16 @@
     0.4,
     0.38,
     0.38
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "tonal",
+    "long"
+   ],
+   "id": 217
   },
   {
    "library": "estudio",
@@ -11351,7 +11351,6 @@
    "peak_db": -1.0,
    "mean_db": -18.4,
    "peak_time": 0.07,
-   "lr_corr": 0.9,
    "attack_ms": 70,
    "decay_ms": 590,
    "centroid": 422,
@@ -11361,15 +11360,7 @@
    "flat": 0.012,
    "bumps": 2.9,
    "active_dur": 0.85,
-   "words": [
-    "soft-attack",
-    "dark",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 218,
-   "tags_v": 3,
+   "lr_corr": 0.9,
    "tags": [
     "Music",
     "Wood block",
@@ -11383,7 +11374,16 @@
     0.13,
     0.12,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 218
   },
   {
    "library": "estudio",
@@ -11406,7 +11406,6 @@
    "peak_db": -1.0,
    "mean_db": -33.0,
    "peak_time": 0.37,
-   "lr_corr": -0.03,
    "attack_ms": 100,
    "decay_ms": 310,
    "centroid": 4265,
@@ -11416,15 +11415,7 @@
    "flat": 0.247,
    "bumps": 3.3,
    "active_dur": 0.98,
-   "words": [
-    "soft-attack",
-    "bright",
-    "thin",
-    "textured",
-    "medium"
-   ],
-   "id": 219,
-   "tags_v": 3,
+   "lr_corr": -0.03,
    "tags": [
     "Glass",
     "Chink, clink",
@@ -11438,7 +11429,16 @@
     0.31,
     0.29,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "bright",
+    "thin",
+    "textured",
+    "medium"
+   ],
+   "id": 219
   },
   {
    "library": "estudio",
@@ -11461,7 +11461,6 @@
    "peak_db": -1.0,
    "mean_db": -21.3,
    "peak_time": 0.95,
-   "lr_corr": 0.14,
    "attack_ms": 680,
    "decay_ms": 2030,
    "centroid": 3936,
@@ -11471,16 +11470,7 @@
    "flat": 0.005,
    "bumps": 2.7,
    "active_dur": 3.53,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 220,
-   "tags_v": 3,
+   "lr_corr": 0.14,
    "tags": [
     "Telephone",
     "Ringtone",
@@ -11494,7 +11484,17 @@
     0.84,
     0.53,
     0.2
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 220
   },
   {
    "library": "estudio",
@@ -11517,7 +11517,6 @@
    "peak_db": -1.0,
    "mean_db": -19.3,
    "peak_time": 0.11,
-   "lr_corr": 0.33,
    "attack_ms": 110,
    "decay_ms": 860,
    "centroid": 3648,
@@ -11527,16 +11526,7 @@
    "flat": 0.038,
    "bumps": 4.6,
    "active_dur": 1.15,
-   "words": [
-    "soft-attack",
-    "bright",
-    "thin",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 221,
-   "tags_v": 3,
+   "lr_corr": 0.33,
    "tags": [
     "Music",
     "Music for children",
@@ -11546,7 +11536,17 @@
     0.61,
     0.34,
     0.17
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "bright",
+    "thin",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 221
   },
   {
    "library": "estudio",
@@ -11569,7 +11569,6 @@
    "peak_db": -1.0,
    "mean_db": -16.0,
    "peak_time": 0.03,
-   "lr_corr": 0.94,
    "attack_ms": 10,
    "decay_ms": 90,
    "centroid": 2344,
@@ -11579,16 +11578,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.23,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 222,
-   "tags_v": 3,
+   "lr_corr": 0.94,
    "tags": [
     "Ringtone",
     "Telephone",
@@ -11602,7 +11592,17 @@
     0.17,
     0.15,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 222
   },
   {
    "library": "estudio",
@@ -11625,7 +11625,6 @@
    "peak_db": -1.0,
    "mean_db": -24.9,
    "peak_time": 0.37,
-   "lr_corr": 0.78,
    "attack_ms": 160,
    "decay_ms": 780,
    "centroid": 2009,
@@ -11635,15 +11634,7 @@
    "flat": 0.012,
    "bumps": 1.5,
    "active_dur": 1.43,
-   "words": [
-    "swelling",
-    "mid",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 223,
-   "tags_v": 3,
+   "lr_corr": 0.78,
    "tags": [
     "Ding",
     "Clang",
@@ -11657,7 +11648,16 @@
     0.55,
     0.16,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 223
   },
   {
    "library": "estudio",
@@ -11680,7 +11680,6 @@
    "peak_db": -1.0,
    "mean_db": -16.8,
    "peak_time": 0.05,
-   "lr_corr": 0.98,
    "attack_ms": 50,
    "decay_ms": 230,
    "centroid": 971,
@@ -11690,15 +11689,7 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.36,
-   "words": [
-    "soft-attack",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 224,
-   "tags_v": 3,
+   "lr_corr": 0.98,
    "tags": [
     "Telephone",
     "Ringtone",
@@ -11712,7 +11703,16 @@
     0.44,
     0.19,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 224
   },
   {
    "library": "estudio",
@@ -11735,7 +11735,6 @@
    "peak_db": -1.0,
    "mean_db": -20.1,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 10,
    "decay_ms": 1730,
    "centroid": 536,
@@ -11745,15 +11744,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 2.36,
-   "words": [
-    "punchy",
-    "dark",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 225,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Mallet percussion",
@@ -11767,7 +11758,16 @@
     0.33,
     0.31,
     0.3
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 225
   },
   {
    "library": "estudio",
@@ -11790,7 +11790,6 @@
    "peak_db": -1.0,
    "mean_db": -22.8,
    "peak_time": 0.01,
-   "lr_corr": 0.98,
    "attack_ms": 0,
    "decay_ms": 1410,
    "centroid": 668,
@@ -11800,16 +11799,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 2.07,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 226,
-   "tags_v": 3,
+   "lr_corr": 0.98,
    "tags": [
     "Tuning fork",
     "Sine wave",
@@ -11823,7 +11813,17 @@
     0.2,
     0.12,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 226
   },
   {
    "library": "estudio",
@@ -11846,7 +11846,6 @@
    "peak_db": -1.0,
    "mean_db": -25.6,
    "peak_time": 0.91,
-   "lr_corr": 0.33,
    "attack_ms": 510,
    "decay_ms": 600,
    "centroid": 3474,
@@ -11856,16 +11855,7 @@
    "flat": 0.183,
    "bumps": 8.0,
    "active_dur": 1.74,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "textured",
-    "long",
-    "pulsing"
-   ],
-   "id": 227,
-   "tags_v": 3,
+   "lr_corr": 0.33,
    "tags": [
     "Telephone",
     "Ringtone",
@@ -11879,7 +11869,17 @@
     0.16,
     0.16,
     0.11
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "textured",
+    "long",
+    "pulsing"
+   ],
+   "id": 227
   },
   {
    "library": "estudio",
@@ -11902,7 +11902,6 @@
    "peak_db": -1.0,
    "mean_db": -21.6,
    "peak_time": 0.01,
-   "lr_corr": 0.97,
    "attack_ms": 0,
    "decay_ms": 1050,
    "centroid": 938,
@@ -11912,16 +11911,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.55,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 228,
-   "tags_v": 3,
+   "lr_corr": 0.97,
    "tags": [
     "Music",
     "Mallet percussion",
@@ -11935,7 +11925,17 @@
     0.21,
     0.19,
     0.14
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 228
   },
   {
    "library": "estudio",
@@ -11959,7 +11959,6 @@
    "peak_db": -1.0,
    "mean_db": -22.3,
    "peak_time": 0.21,
-   "lr_corr": 0.87,
    "attack_ms": 50,
    "decay_ms": 680,
    "centroid": 2300,
@@ -11969,15 +11968,7 @@
    "flat": 0.027,
    "bumps": 2.3,
    "active_dur": 1.1,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 229,
-   "tags_v": 3,
+   "lr_corr": 0.87,
    "tags": [
     "Ding",
     "Chink, clink",
@@ -11991,7 +11982,16 @@
     0.7,
     0.43,
     0.37
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 229
   },
   {
    "library": "estudio",
@@ -12014,7 +12014,6 @@
    "peak_db": -1.0,
    "mean_db": -22.7,
    "peak_time": 0.47,
-   "lr_corr": -0.0,
    "attack_ms": 740,
    "decay_ms": 1570,
    "centroid": 3606,
@@ -12024,16 +12023,7 @@
    "flat": 0.004,
    "bumps": 2.7,
    "active_dur": 3.17,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 230,
-   "tags_v": 3,
+   "lr_corr": -0.0,
    "tags": [
     "Music",
     "Ding",
@@ -12047,7 +12037,17 @@
     0.21,
     0.15,
     0.12
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 230
   },
   {
    "library": "estudio",
@@ -12070,7 +12070,6 @@
    "peak_db": -1.0,
    "mean_db": -18.7,
    "peak_time": 0.03,
-   "lr_corr": 1.0,
    "attack_ms": 30,
    "decay_ms": 1210,
    "centroid": 528,
@@ -12080,16 +12079,7 @@
    "flat": 0.0,
    "bumps": 1.2,
    "active_dur": 1.66,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 231,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Ukulele",
@@ -12103,7 +12093,17 @@
     0.2,
     0.16,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 231
   },
   {
    "library": "estudio",
@@ -12126,7 +12126,6 @@
    "peak_db": -1.0,
    "mean_db": -18.9,
    "peak_time": 0.05,
-   "lr_corr": 1.0,
    "attack_ms": 50,
    "decay_ms": 410,
    "centroid": 4041,
@@ -12136,15 +12135,7 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.74,
-   "words": [
-    "soft-attack",
-    "bright",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 232,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Ding",
     "Bell",
@@ -12158,7 +12149,16 @@
     0.4,
     0.29,
     0.24
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "bright",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 232
   },
   {
    "library": "estudio",
@@ -12181,7 +12181,6 @@
    "peak_db": -1.0,
    "mean_db": -23.4,
    "peak_time": 0.51,
-   "lr_corr": -0.01,
    "attack_ms": 510,
    "decay_ms": 1820,
    "centroid": 4239,
@@ -12191,16 +12190,7 @@
    "flat": 0.003,
    "bumps": 4.7,
    "active_dur": 3.01,
-   "words": [
-    "slow-build",
-    "bright",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 233,
-   "tags_v": 3,
+   "lr_corr": -0.01,
    "tags": [
     "Music",
     "Ding",
@@ -12214,7 +12204,17 @@
     0.42,
     0.39,
     0.36
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "bright",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 233
   },
   {
    "library": "estudio",
@@ -12237,7 +12237,6 @@
    "peak_db": -1.0,
    "mean_db": -16.2,
    "peak_time": 0.01,
-   "lr_corr": 0.97,
    "attack_ms": 10,
    "decay_ms": 120,
    "centroid": 2203,
@@ -12247,16 +12246,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.32,
-   "words": [
-    "punchy",
-    "mid",
-    "thin",
-    "tonal",
-    "short",
-    "dry"
-   ],
-   "id": 234,
-   "tags_v": 3,
+   "lr_corr": 0.97,
    "tags": [
     "Ding",
     "Ringtone",
@@ -12270,7 +12260,17 @@
     0.29,
     0.26,
     0.13
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "mid",
+    "thin",
+    "tonal",
+    "short",
+    "dry"
+   ],
+   "id": 234
   },
   {
    "library": "estudio",
@@ -12293,7 +12293,6 @@
    "peak_db": -1.0,
    "mean_db": -22.6,
    "peak_time": 0.01,
-   "lr_corr": 0.94,
    "attack_ms": 0,
    "decay_ms": 1060,
    "centroid": 1175,
@@ -12303,16 +12302,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.73,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 235,
-   "tags_v": 3,
+   "lr_corr": 0.94,
    "tags": [
     "Music",
     "Mallet percussion",
@@ -12326,7 +12316,17 @@
     0.11,
     0.1,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 235
   },
   {
    "library": "estudio",
@@ -12349,7 +12349,6 @@
    "peak_db": -1.0,
    "mean_db": -17.7,
    "peak_time": 0.01,
-   "lr_corr": 0.85,
    "attack_ms": 10,
    "decay_ms": 220,
    "centroid": 1323,
@@ -12359,15 +12358,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.33,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 236,
-   "tags_v": 3,
+   "lr_corr": 0.85,
    "tags": [
     "Alarm",
     "Cowbell",
@@ -12381,7 +12372,16 @@
     0.26,
     0.2,
     0.18
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 236
   },
   {
    "library": "estudio",
@@ -12404,7 +12404,6 @@
    "peak_db": -1.0,
    "mean_db": -14.9,
    "peak_time": 0.03,
-   "lr_corr": 0.93,
    "attack_ms": 10,
    "decay_ms": 80,
    "centroid": 2078,
@@ -12414,6 +12413,10 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.23,
+   "lr_corr": 0.93,
+   "tags": [],
+   "tag_scores": [],
+   "tags_v": 3,
    "words": [
     "punchy",
     "mid",
@@ -12422,10 +12425,7 @@
     "short",
     "dry"
    ],
-   "id": 237,
-   "tags_v": 3,
-   "tags": [],
-   "tag_scores": []
+   "id": 237
   },
   {
    "library": "estudio",
@@ -12448,7 +12448,6 @@
    "peak_db": -1.0,
    "mean_db": -19.4,
    "peak_time": 0.33,
-   "lr_corr": 0.96,
    "attack_ms": 130,
    "decay_ms": 410,
    "centroid": 464,
@@ -12458,14 +12457,7 @@
    "flat": 0.182,
    "bumps": 2.4,
    "active_dur": 0.91,
-   "words": [
-    "swelling",
-    "dark",
-    "textured",
-    "medium"
-   ],
-   "id": 238,
-   "tags_v": 3,
+   "lr_corr": 0.96,
    "tags": [
     "Music",
     "Ding"
@@ -12473,7 +12465,15 @@
    "tag_scores": [
     0.19,
     0.09
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "textured",
+    "medium"
+   ],
+   "id": 238
   },
   {
    "library": "estudio",
@@ -12496,7 +12496,6 @@
    "peak_db": -1.0,
    "mean_db": -21.2,
    "peak_time": 0.09,
-   "lr_corr": 0.88,
    "attack_ms": 80,
    "decay_ms": 320,
    "centroid": 320,
@@ -12506,14 +12505,7 @@
    "flat": 0.001,
    "bumps": 3.3,
    "active_dur": 0.66,
-   "words": [
-    "soft-attack",
-    "dark",
-    "tonal",
-    "medium"
-   ],
-   "id": 239,
-   "tags_v": 3,
+   "lr_corr": 0.88,
    "tags": [
     "Thunk",
     "Knock",
@@ -12527,7 +12519,15 @@
     0.38,
     0.34,
     0.3
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "tonal",
+    "medium"
+   ],
+   "id": 239
   },
   {
    "library": "estudio",
@@ -12550,7 +12550,6 @@
    "peak_db": -1.0,
    "mean_db": -21.9,
    "peak_time": 0.19,
-   "lr_corr": 0.88,
    "attack_ms": 110,
    "decay_ms": 560,
    "centroid": 2033,
@@ -12560,15 +12559,7 @@
    "flat": 0.009,
    "bumps": 2.4,
    "active_dur": 1.07,
-   "words": [
-    "soft-attack",
-    "mid",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 240,
-   "tags_v": 3,
+   "lr_corr": 0.88,
    "tags": [
     "Ding",
     "Glass",
@@ -12582,7 +12573,16 @@
     0.47,
     0.24,
     0.24
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "mid",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 240
   },
   {
    "library": "estudio",
@@ -12605,7 +12605,6 @@
    "peak_db": -1.0,
    "mean_db": -17.1,
    "peak_time": 0.17,
-   "lr_corr": 0.88,
    "attack_ms": 170,
    "decay_ms": 450,
    "centroid": 558,
@@ -12615,15 +12614,7 @@
    "flat": 0.001,
    "bumps": 2.6,
    "active_dur": 0.84,
-   "words": [
-    "swelling",
-    "dark",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 241,
-   "tags_v": 3,
+   "lr_corr": 0.88,
    "tags": [
     "Percussion",
     "Musical instrument",
@@ -12637,7 +12628,16 @@
     0.3,
     0.2,
     0.18
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "dark",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 241
   },
   {
    "library": "estudio",
@@ -12660,7 +12660,6 @@
    "peak_db": -1.0,
    "mean_db": -14.8,
    "peak_time": 0.23,
-   "lr_corr": 0.66,
    "attack_ms": 330,
    "decay_ms": 310,
    "centroid": 1864,
@@ -12670,15 +12669,7 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.71,
-   "words": [
-    "swelling",
-    "mid",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 242,
-   "tags_v": 3,
+   "lr_corr": 0.66,
    "tags": [
     "Ding",
     "Music for children",
@@ -12688,7 +12679,16 @@
     0.34,
     0.19,
     0.16
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "swelling",
+    "mid",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 242
   },
   {
    "library": "estudio",
@@ -12711,7 +12711,6 @@
    "peak_db": -1.0,
    "mean_db": -22.3,
    "peak_time": 0.61,
-   "lr_corr": 0.1,
    "attack_ms": 610,
    "decay_ms": 1450,
    "centroid": 2110,
@@ -12721,16 +12720,7 @@
    "flat": 0.004,
    "bumps": 4.2,
    "active_dur": 2.6,
-   "words": [
-    "slow-build",
-    "mid",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 243,
-   "tags_v": 3,
+   "lr_corr": 0.1,
    "tags": [
     "Ding",
     "Clang",
@@ -12744,7 +12734,17 @@
     0.48,
     0.39,
     0.38
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "slow-build",
+    "mid",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 243
   },
   {
    "library": "estudio",
@@ -12767,7 +12767,6 @@
    "peak_db": -1.0,
    "mean_db": -26.7,
    "peak_time": 0.03,
-   "lr_corr": 0.28,
    "attack_ms": 30,
    "decay_ms": 2130,
    "centroid": 3908,
@@ -12777,16 +12776,7 @@
    "flat": 0.005,
    "bumps": 1.8,
    "active_dur": 3.24,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 244,
-   "tags_v": 3,
+   "lr_corr": 0.28,
    "tags": [
     "Chime",
     "Wind chime",
@@ -12800,7 +12790,17 @@
     0.98,
     0.42,
     0.35
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 244
   },
   {
    "library": "estudio",
@@ -12823,7 +12823,6 @@
    "peak_db": -1.0,
    "mean_db": -25.5,
    "peak_time": 0.01,
-   "lr_corr": 0.62,
    "attack_ms": 10,
    "decay_ms": 560,
    "centroid": 4205,
@@ -12833,15 +12832,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.09,
-   "words": [
-    "punchy",
-    "bright",
-    "thin",
-    "tonal",
-    "medium"
-   ],
-   "id": 245,
-   "tags_v": 3,
+   "lr_corr": 0.62,
    "tags": [
     "Ding",
     "Glass",
@@ -12855,7 +12846,16 @@
     0.56,
     0.41,
     0.21
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "bright",
+    "thin",
+    "tonal",
+    "medium"
+   ],
+   "id": 245
   },
   {
    "library": "estudio",
@@ -12878,7 +12878,6 @@
    "peak_db": -0.9,
    "mean_db": -19.0,
    "peak_time": 0.01,
-   "lr_corr": 0.99,
    "attack_ms": 0,
    "decay_ms": 1140,
    "centroid": 622,
@@ -12888,6 +12887,14 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.57,
+   "lr_corr": 0.99,
+   "tags": [
+    "Music"
+   ],
+   "tag_scores": [
+    0.25
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "warm",
@@ -12896,14 +12903,7 @@
     "medium",
     "long-tail"
    ],
-   "id": 246,
-   "tags_v": 3,
-   "tags": [
-    "Music"
-   ],
-   "tag_scores": [
-    0.25
-   ]
+   "id": 246
   },
   {
    "library": "estudio",
@@ -12926,7 +12926,6 @@
    "peak_db": -1.0,
    "mean_db": -15.0,
    "peak_time": 0.05,
-   "lr_corr": 0.99,
    "attack_ms": 40,
    "decay_ms": 150,
    "centroid": 464,
@@ -12936,15 +12935,7 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.29,
-   "words": [
-    "soft-attack",
-    "dark",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 247,
-   "tags_v": 3,
+   "lr_corr": 0.99,
    "tags": [
     "Music",
     "Brass instrument"
@@ -12952,7 +12943,16 @@
    "tag_scores": [
     0.27,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "soft-attack",
+    "dark",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 247
   },
   {
    "library": "estudio",
@@ -12975,7 +12975,6 @@
    "peak_db": -1.0,
    "mean_db": -15.5,
    "peak_time": 0.01,
-   "lr_corr": 0.95,
    "attack_ms": 10,
    "decay_ms": 80,
    "centroid": 2321,
@@ -12985,6 +12984,16 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 0.25,
+   "lr_corr": 0.95,
+   "tags": [
+    "Beep, bleep",
+    "Ding"
+   ],
+   "tag_scores": [
+    0.53,
+    0.1
+   ],
+   "tags_v": 3,
    "words": [
     "punchy",
     "mid",
@@ -12993,16 +13002,7 @@
     "short",
     "dry"
    ],
-   "id": 248,
-   "tags_v": 3,
-   "tags": [
-    "Beep, bleep",
-    "Ding"
-   ],
-   "tag_scores": [
-    0.53,
-    0.1
-   ]
+   "id": 248
   },
   {
    "library": "estudio",
@@ -13025,7 +13025,6 @@
    "peak_db": -1.0,
    "mean_db": -20.8,
    "peak_time": 0.01,
-   "lr_corr": 0.98,
    "attack_ms": 0,
    "decay_ms": 1490,
    "centroid": 562,
@@ -13035,16 +13034,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.96,
-   "words": [
-    "punchy",
-    "dark",
-    "thin",
-    "tonal",
-    "long",
-    "long-tail"
-   ],
-   "id": 249,
-   "tags_v": 3,
+   "lr_corr": 0.98,
    "tags": [
     "Cowbell",
     "Music",
@@ -13058,7 +13048,17 @@
     0.29,
     0.22,
     0.18
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "thin",
+    "tonal",
+    "long",
+    "long-tail"
+   ],
+   "id": 249
   },
   {
    "library": "estudio",
@@ -13081,7 +13081,6 @@
    "peak_db": -1.0,
    "mean_db": -22.7,
    "peak_time": 0.01,
-   "lr_corr": 1.0,
    "attack_ms": 10,
    "decay_ms": 1070,
    "centroid": 543,
@@ -13091,15 +13090,7 @@
    "flat": 0.0,
    "bumps": 0.0,
    "active_dur": 1.52,
-   "words": [
-    "punchy",
-    "dark",
-    "tonal",
-    "medium",
-    "long-tail"
-   ],
-   "id": 250,
-   "tags_v": 3,
+   "lr_corr": 1.0,
    "tags": [
     "Music",
     "Ukulele",
@@ -13113,7 +13104,16 @@
     0.26,
     0.19,
     0.19
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "dark",
+    "tonal",
+    "medium",
+    "long-tail"
+   ],
+   "id": 250
   },
   {
    "library": "estudio",
@@ -13136,7 +13136,6 @@
    "peak_db": -1.0,
    "mean_db": -18.2,
    "peak_time": 0.03,
-   "lr_corr": 0.48,
    "attack_ms": 20,
    "decay_ms": 170,
    "centroid": 1061,
@@ -13146,15 +13145,7 @@
    "flat": 0.0,
    "bumps": 3.3,
    "active_dur": 0.26,
-   "words": [
-    "punchy",
-    "warm",
-    "thin",
-    "tonal",
-    "short"
-   ],
-   "id": 251,
-   "tags_v": 3,
+   "lr_corr": 0.48,
    "tags": [
     "Ding",
     "Clang",
@@ -13168,7 +13159,49 @@
     0.23,
     0.17,
     0.1
-   ]
+   ],
+   "tags_v": 3,
+   "words": [
+    "punchy",
+    "warm",
+    "thin",
+    "tonal",
+    "short"
+   ],
+   "id": 251
+  },
+  {
+   "library": "estudio",
+   "tier": "main",
+   "path": "/workspace/stickverse/studio/sons/openverse/coin/coin_moedas_wi87e9e7.flac",
+   "folder": "openverse/coin",
+   "name": "coin moedas wi87e9e7",
+   "role": "coin",
+   "roles": [
+    "coin"
+   ],
+   "duration": 0.314,
+   "peak_db": -5.2,
+   "mean_db": -36.2,
+   "peak_time": 0.07,
+   "lr_corr": 1.0,
+   "attack_ms": 0,
+   "decay_ms": 200,
+   "centroid": 4320,
+   "rolloff": 7078,
+   "low": 0.068,
+   "high": 0.56,
+   "flat": 0.757,
+   "bumps": 3.3,
+   "active_dur": 0.3,
+   "onset_count": 2,
+   "words": [
+    "punchy",
+    "bright",
+    "noisy",
+    "short"
+   ],
+   "id": 252
   }
  ]
 }
