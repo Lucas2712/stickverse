@@ -1,0 +1,717 @@
+{
+ "titulo": "Juninho · Episódio 3",
+ "chamada": "Relógio, corrente e <b>R$ 113,60</b>",
+ "resumo": "Episódio 3 da série (narração acelerada como no ep. 2: 132,6 s → 108,2 s, + 3,3 s de carta = 111,5 s). Mesma linguagem: corte seco a cada frase (cerca de 47 cortes), quadro cheio, legenda em blocos, onomatopeias, carimbos e painel da série com o SALDO (96,50 + 60 − 42,90 = 113,60, valores da narração). Efeitos no padrão aprovado no ep. 2: cerca de 3 por segundo, +8 dB, com os que encostam na voz mais baixos. Sem música.",
+ "duracao": 111.5,
+ "acento": "#C9A227",
+ "acento_escuro": "#F2D675",
+ "paleta": [
+  [
+   "#C9A227",
+   "dourado-acessório (destaque deste episódio: relógio, corrente, brilhos, celebridade)"
+  ],
+  [
+   "#2BB673",
+   "verde-dinheiro (saldo subindo)"
+  ],
+  [
+   "#E63946",
+   "vermelho (gastos, carimbos)"
+  ],
+  [
+   "#F4D35E",
+   "mostarda (legenda/onomatopeias: série)"
+  ],
+  [
+   "#2A1B47",
+   "ameixa (contorno/painel: série)"
+  ]
+ ],
+ "marcas": [
+  [
+   0,
+   "Resultado"
+  ],
+  [
+   29.26,
+   "Turno extra"
+  ],
+  [
+   47.88,
+   "Acessórios"
+  ],
+  [
+   58.16,
+   "Espelho e post"
+  ],
+  [
+   79.3,
+   "Saldo"
+  ],
+  [
+   95.5,
+   "Votação"
+  ]
+ ],
+ "identidade": [
+  [
+   "Série",
+   "Mesma casa, personagem, legenda, painel, traço e onomatopeias dos ep. 1 e 2 (regra da série). Lugares que voltam: quarto, espelho e lanchonete. Lugar novo: vitrine de acessórios. Destaque deste episódio: <b>dourado</b>."
+  ],
+  [
+   "Painel da série",
+   "«FALTAM 27 DIAS» + SALDO R$ 96,50 → 156,50 (+60) → 113,60 (−42,90) + CONFIANÇA, que sobe no espelho e no post."
+  ],
+  [
+   "Personagens novos",
+   "<b>O dono da lanchonete</b> (bigode grisalho, avental, prancheta). O cliente chato do ep. 2 volta."
+  ],
+  [
+   "Rede social",
+   "Tela genérica, sem nome, logotipo nem layout de rede real: post com foto, corações e comentários."
+  ],
+  [
+   "Bordões da série",
+   "A placa «PROBLEMA» com a lupa e o porquinho cofre voltam: repetição que vira piada interna, como na referência."
+  ],
+  [
+   "Áudio",
+   "Sem música. Cerca de 3 efeitos por segundo, todos 8 dB mais altos (padrão do ep. 2), com despertador, sininho, moedas, tique-taque do relógio, tilintar da corrente, obturador, flashes de paparazzi, notificações e impactos nos carimbos. Os que encostam na voz ficam mais baixos."
+  ]
+ ],
+ "notas": [
+  "Narração acelerada como a do ep. 2 (pausas encurtadas + atempo 1,15, sem cortar palavras): 3,1 palavras/s. O original está em narracao-original.mp3.",
+  "Roteiro tirado da transcrição. A 1ª palavra soa como «um» («Vocês escolheram um moderno…»); na legenda deixei «o moderno e estiloso». Se você falou outra coisa, me diga.",
+  "Ilustrações novas no OpenArt (30 créditos cada): Juninho com relógio e corrente (3 poses: ajeitando o cabelo, mão no bolso, selfie), expressões (convencido, impressionado, olho tremendo, cifrões), dono da lanchonete, vitrine de acessórios, relógio + corrente e os looks da votação (tênis × boné). São 6 imagens, 180 créditos.",
+  "O boné da votação será liso, verde-oliva, sem texto, para não lembrar o boné do personagem da referência.",
+  "Textos de cena fora da narração («SEM ECONOMIA», «TURNO EXTRA?», «TÁ PRONTO?», «QUASE QUEBRADO», «EPISÓDIO 4») são ficção de cena.",
+  "O som de moedas novo (CC BY) entra neste episódio, com crédito em CREDITOS-SONS.md."
+ ],
+ "cenas": [
+  {
+   "n": 1,
+   "nome": "Vocês escolheram",
+   "a": 0,
+   "b": 3.64,
+   "f": "laranja",
+   "narr": "Vocês escolheram o moderno e estiloso, com jaqueta e acessórios.",
+   "comp": "Resultado da votação",
+   "tela": "CORTE 1: placa «VOCÊS ESCOLHERAM» sobre o quarto do Juninho, com comentários «2!!» subindo. CORTE 2 (0,82): o look 2 do ep. 2 em corpo inteiro, com carimbo «Nº 2 ✓». No «acessórios», três brilhos pulam na jaqueta. O painel monta: «FALTAM 27 DIAS», «SALDO R$ 96,50» e CONFIANÇA.",
+   "sync": [
+    [
+     "0,00",
+     "placa + comentários (blips)"
+    ],
+    [
+     "0,82",
+     "«moderno»: look 2 + carimbo"
+    ],
+    [
+     "2,82",
+     "«acessórios»: brilhos"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "look 2 (ep. 2)"
+  },
+  {
+   "n": 2,
+   "nome": "Não ia economizar",
+   "a": 3.64,
+   "b": 7.86,
+   "f": "escuro",
+   "narr": "E Juninho decidiu que não ia economizar no estilo. Quer dizer, pelo menos ia tentar.",
+   "comp": "Close convencido → freio",
+   "tela": "CORTE 3: close do Juninho de jaqueta, convencido, e a placa «SEM ECONOMIA» bate. CORTE 4 (6,12): arranhão de disco; a placa troca para «…UM POUCO DE ECONOMIA» e ele fica com sorriso amarelo.",
+   "sync": [
+    [
+     "5,04",
+     "«economizar»: placa (impacto)"
+    ],
+    [
+     "6,12",
+     "«Quer dizer»: arranhão + troca de expressão"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 3,
+   "nome": "Faltava alguma coisa",
+   "a": 7.86,
+   "b": 12.68,
+   "f": "claro",
+   "narr": "Depois de comprar as roupas novas, ele percebeu que ainda faltava alguma coisa para completar o visual.",
+   "comp": "Espelho com «?»",
+   "tela": "CORTE 5: o Juninho no espelho do quarto (a mesma casa), de roupa nova. CORTE 6 (10,14): um quebra-cabeça do visual aparece ao lado, com a última peça vazia piscando «?».",
+   "sync": [
+    [
+     "8,62",
+     "«roupas novas»: o espelho brilha"
+    ],
+    [
+     "10,14",
+     "«faltava»: o quebra-cabeça (pops)"
+    ],
+    [
+     "12,08",
+     "«visual»: a peça vazia pisca"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 4,
+   "nome": "Checklist do visual",
+   "a": 12.68,
+   "b": 19.86,
+   "f": "claro",
+   "narr": "Uma jaqueta já tinha, calça nova também, mas, na opinião dele, estava faltando aquele detalhe que fazia toda a diferença: acessórios.",
+   "comp": "Peças com ✓ → ACESSÓRIOS",
+   "tela": "CORTE 7: a jaqueta entra com ✓ (12,84). CORTE 8: a calça entra com ✓ (13,82). CORTE 9 (15,28): close pensativo do Juninho. CORTE 10 (19,06): a palavra «ACESSÓRIOS» gigante bate, com brilhos e um holofote.",
+   "sync": [
+    [
+     "12,84",
+     "jaqueta ✓ (tick)"
+    ],
+    [
+     "13,82",
+     "calça ✓ (tick)"
+    ],
+    [
+     "15,28",
+     "«opinião»: close pensativo"
+    ],
+    [
+     "19,06",
+     "«acessórios»: título gigante (impacto + chime)"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 5,
+   "nome": "Saldo R$ 96,50",
+   "a": 19.86,
+   "b": 25.2,
+   "f": "escuro",
+   "narr": "Só tinha um pequeno problema. Seu saldo estava em apenas R$ 96,50,",
+   "comp": "App de banco",
+   "tela": "CORTE 11: a placa «PROBLEMA» cresce com a lupa (piada do ep. 2 repetida, como bordão). CORTE 12 (21,36): o app de banco genérico mostra «R$ 96,50» e a lupa treme sobre o valor.",
+   "sync": [
+    [
+     "20,76",
+     "«problema»: a placa explode"
+    ],
+    [
+     "22,78",
+     "«96,50»: o saldo trava (ding)"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 6,
+   "nome": "Mudar de vida não é barato",
+   "a": 25.2,
+   "b": 29.26,
+   "f": "laranja",
+   "narr": "e Juninho já estava começando a perceber que mudar de vida não era nada barato.",
+   "comp": "Etiqueta gigante",
+   "tela": "CORTE 13: uma etiqueta de preço gigante com «$$$$» cai sobre o Juninho e ele cambaleia. No «barato», um carimbo «NADA BARATO».",
+   "sync": [
+    [
+     "27,22",
+     "«mudar de vida»: a etiqueta cai (impacto)"
+    ],
+    [
+     "28,86",
+     "«barato»: carimbo"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 7,
+   "nome": "Manhã cedo",
+   "a": 29.26,
+   "b": 32.46,
+   "f": "claro",
+   "narr": "Naquela manhã, chegou mais cedo à lanchonete onde trabalhava.",
+   "comp": "Despertador → lanchonete",
+   "tela": "CORTE 14: despertador tocando forte (RRRING!) às «6:00». CORTE 15 (30,74): a lanchonete do ep. 2 com luz de manhã cedo; o Juninho de avental entra correndo.",
+   "sync": [
+    [
+     "29,26",
+     "despertador (tremor)"
+    ],
+    [
+     "31,10",
+     "«lanchonete»: sininho"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 8,
+   "nome": "Turno extra",
+   "a": 32.46,
+   "b": 36.6,
+   "f": "laranja",
+   "narr": "O dono precisava de alguém para cobrir um turno extra, e Juninho viu uma oportunidade.",
+   "comp": "Dono → olho brilhando",
+   "tela": "CORTE 16: o dono da lanchonete (personagem novo: bigode, avental, prancheta) com o balão «TURNO EXTRA?». CORTE 17 (35,00): close do Juninho com cifrões nos olhos e «PLIM!».",
+   "sync": [
+    [
+     "34,12",
+     "«turno extra»: balão"
+    ],
+    [
+     "35,76",
+     "«oportunidade»: cifrões + plim"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "dono da lanchonete"
+  },
+  {
+   "n": 9,
+   "nome": "Trabalhou bastante",
+   "a": 36.6,
+   "b": 39.04,
+   "f": "laranja",
+   "narr": "Trabalhou bastante, atendeu um monte de clientes",
+   "comp": "Montagem rápida",
+   "tela": "Montagem em corte seco a cada 0,4 s: bandeja, bloco de pedidos, chapa, bandeja, com o relógio da parede avançando. O contador «CLIENTES» sobe de 1 a muitos.",
+   "sync": [
+    [
+     "36,60",
+     "bandeja (whoosh)"
+    ],
+    [
+     "37,44",
+     "pedido (rabisco)"
+    ],
+    [
+     "37,92",
+     "«monte»: o contador dispara (ticks)"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 10,
+   "nome": "Cinco vezes",
+   "a": 39.04,
+   "b": 43.06,
+   "f": "laranja",
+   "narr": "e ainda precisou aguentar um homem que perguntou cinco vezes se o pedido já estava pronto.",
+   "comp": "Cliente chato ×5",
+   "tela": "CORTE 18: o cliente de bigode do ep. 2 batendo no relógio. Um contador «1x, 2x, 3x, 4x, 5x» sobe com balões «TÁ PRONTO?» empilhando, a cada um. CORTE 19 (42,46): close do Juninho com o olho tremendo.",
+   "sync": [
+    [
+     "40,82",
+     "«cinco vezes»: balões 1 a 5 (pops em sequência)"
+    ],
+    [
+     "42,46",
+     "«pronto»: olho tremendo (glitch)"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 11,
+   "nome": "+ R$ 60",
+   "a": 43.06,
+   "b": 47.88,
+   "f": "escuro",
+   "narr": "No final do turno, conseguiu ganhar sessenta reais extras. \"Agora sim\", pensou Juninho.",
+   "comp": "Notas + painel",
+   "tela": "CORTE 20: o pôr do sol na janela da lanchonete («FIM DO TURNO»). CORTE 21 (44,60): três notas caem na mão dele, com moedas, e «+R$ 60» voa para o painel (SALDO R$ 96,50 → R$ 156,50). CORTE 22 (46,14): close confiante, «AGORA SIM!».",
+   "sync": [
+    [
+     "44,60",
+     "«sessenta»: notas caem (moedas)"
+    ],
+    [
+     "45,44",
+     "«extras»: o saldo do painel sobe"
+    ],
+    [
+     "46,14",
+     "«Agora sim»: close + placa"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 12,
+   "nome": "Loja de acessórios",
+   "a": 47.88,
+   "b": 50.4,
+   "f": "claro",
+   "narr": "Com o dinheiro no bolso, foi procurar alguns acessórios.",
+   "comp": "Vitrine",
+   "tela": "CORTE 23: vitrine de acessórios genérica (relógios, correntes, óculos, sem marca); o Juninho de jaqueta entra olhando com os olhos brilhando.",
+   "sync": [
+    [
+     "48,42",
+     "«bolso»: tapinha no bolso (pop)"
+    ],
+    [
+     "49,56",
+     "«acessórios»: a vitrine brilha"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "vitrine de acessórios"
+  },
+  {
+   "n": 13,
+   "nome": "Relógio e corrente",
+   "a": 50.4,
+   "b": 54.42,
+   "f": "claro",
+   "narr": "Encontrou um relógio simples e uma corrente discreta que combinavam com seu novo estilo.",
+   "comp": "Produtos em destaque",
+   "tela": "CORTE 24: o relógio simples gira em destaque (50,82). CORTE 25: a corrente discreta balança (51,88). No «combinavam», os dois se encaixam ao lado da jaqueta com ✓.",
+   "sync": [
+    [
+     "50,82",
+     "«relógio»: tique-taque + pop"
+    ],
+    [
+     "51,88",
+     "«corrente»: tilintar"
+    ],
+    [
+     "52,86",
+     "«combinavam»: ✓ + chime"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "relógio + corrente"
+  },
+  {
+   "n": 14,
+   "nome": "R$ 42,90",
+   "a": 54.42,
+   "b": 58.16,
+   "f": "escuro",
+   "narr": "Depois de pesquisar os preços, gastou quarenta e dois reais e noventa centavos.",
+   "comp": "Comparando preços → maquininha",
+   "tela": "CORTE 26: etiquetas passando rápido (pesquisando). CORTE 27 (55,74): maquininha e recibo «−R$ 42,90»; o saldo do painel cai de R$ 156,50 para R$ 113,60.",
+   "sync": [
+    [
+     "54,78",
+     "«pesquisar»: swipes"
+    ],
+    [
+     "55,74",
+     "«gastou»: bip"
+    ],
+    [
+     "57,58",
+     "«centavos»: recibo + o saldo cai"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 15,
+   "nome": "Espelho",
+   "a": 58.16,
+   "b": 63.22,
+   "f": "laranja",
+   "narr": "Chegou em casa, colocou os acessórios, vestiu a jaqueta e foi conferir o resultado no espelho.",
+   "comp": "Porta → troca → espelho",
+   "tela": "CORTE 28: a porta do quarto bate. CORTE 29 (59,24): relógio e corrente «encaixam» com clique; a jaqueta entra com «FWIP». CORTE 30 (62,50): o espelho brilha.",
+   "sync": [
+    [
+     "58,16",
+     "porta"
+    ],
+    [
+     "59,68",
+     "«acessórios»: cliques"
+    ],
+    [
+     "60,76",
+     "«jaqueta»: fwip"
+    ],
+    [
+     "62,50",
+     "«espelho»: brilho"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 16,
+   "nome": "A pose",
+   "a": 63.22,
+   "b": 66.82,
+   "f": "laranja",
+   "narr": "Deu uma ajeitada no cabelo, colocou a mão no bolso e fez uma pose.",
+   "comp": "Espelho: detalhes → pose",
+   "tela": "CORTE 31: mão ajeitando o cabelo (SWISH). CORTE 32 (64,56): mão entrando no bolso. CORTE 33 (66,18): pose completa no espelho, com flash e brilhos.",
+   "sync": [
+    [
+     "63,94",
+     "«cabelo»: swish"
+    ],
+    [
+     "65,18",
+     "«bolso»: pop"
+    ],
+    [
+     "66,18",
+     "«pose»: flash + brilhos"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho com acessórios (poses)"
+  },
+  {
+   "n": 17,
+   "nome": "Impressionado",
+   "a": 66.82,
+   "b": 69.26,
+   "f": "escuro",
+   "narr": "Dessa vez, até ele ficou impressionado.",
+   "comp": "Close «UAU»",
+   "tela": "CORTE 34: close do Juninho de queixo caído com a onomatopeia «UAU!» e brilhos girando.",
+   "sync": [
+    [
+     "68,28",
+     "«impressionado»: UAU (impacto)"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 18,
+   "nome": "Foto e post",
+   "a": 69.26,
+   "b": 71.66,
+   "f": "claro",
+   "narr": "Juninho tirou uma foto e postou nas redes sociais.",
+   "comp": "Selfie → post",
+   "tela": "CORTE 35: a selfie com flash e clique de câmera (69,92). CORTE 36 (70,42): a tela de uma rede social genérica (sem marca) com a foto sendo publicada e a barra de envio enchendo.",
+   "sync": [
+    [
+     "69,92",
+     "«foto»: obturador + flash"
+    ],
+    [
+     "70,42",
+     "«postou»: envio (send)"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 19,
+   "nome": "Comentários",
+   "a": 71.66,
+   "b": 74.26,
+   "f": "claro",
+   "narr": "Em poucos minutos, começaram a aparecer comentários.",
+   "comp": "Notificações em cascata",
+   "tela": "CORTE 37: corações e notificações subindo em cascata, com o contador de curtidas subindo («♥ 1, 5, 12, 38…», só como contador animado, sem número real) e um ding a cada balão.",
+   "sync": [
+    [
+     "72,10",
+     "«minutos»: curtidas sobem (blips)"
+    ],
+    [
+     "73,44",
+     "«comentários»: balões em cascata"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 20,
+   "nome": "Virando celebridade",
+   "a": 74.26,
+   "b": 77.42,
+   "f": "claro",
+   "narr": "Um amigo escreveu: \"Olha só, o homem está virando celebridade!\"",
+   "comp": "Comentário em destaque",
+   "tela": "CORTE 38: o comentário do amigo em close, digitado palavra por palavra. No «celebridade», estrelas e flashes de paparazzi estouram.",
+   "sync": [
+    [
+     "74,54",
+     "«escreveu»: digitação"
+    ],
+    [
+     "76,48",
+     "«celebridade»: flashes (cliques de câmera)"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 21,
+   "nome": "Convencido",
+   "a": 77.42,
+   "b": 79.3,
+   "f": "laranja",
+   "narr": "Juninho ficou todo convencido.",
+   "comp": "Close convencido + coroa",
+   "tela": "CORTE 39: close convencido; uma coroa cai na cabeça dele com «PLING».",
+   "sync": [
+    [
+     "78,06",
+     "«todo»: a coroa cai (pop)"
+    ],
+    [
+     "78,46",
+     "«convencido»: brilho"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 22,
+   "nome": "Controlar os gastos",
+   "a": 79.3,
+   "b": 83.9,
+   "f": "escuro",
+   "narr": "Mas, quando abriu o aplicativo do banco, lembrou que ainda precisava controlar os gastos.",
+   "comp": "App de banco",
+   "tela": "CORTE 40: o celular abre o app; a coroa cai da cabeça dele (callback). No «controlar os gastos», a placa «CONTROLE!» bate.",
+   "sync": [
+    [
+     "79,98",
+     "«abriu»: toque"
+    ],
+    [
+     "82,70",
+     "«controlar»: placa (impacto)"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 23,
+   "nome": "R$ 113,60",
+   "a": 83.9,
+   "b": 90.12,
+   "f": "escuro",
+   "narr": "Agora ele tinha R$ 113,60 guardados. Pelo menos não estava completamente quebrado.",
+   "comp": "Saldo → cofrinho",
+   "tela": "CORTE 41: o saldo «R$ 113,60» (valor da narração) trava com ding. CORTE 42 (87,24): o porquinho cofre do ep. 2 balança, rachado mas inteiro, com o rótulo «QUASE QUEBRADO».",
+   "sync": [
+    [
+     "84,94",
+     "«113,60»: ding"
+    ],
+    [
+     "87,76",
+     "«menos»: o porquinho balança"
+    ],
+    [
+     "89,16",
+     "«quebrado»: rachadura (glitch)"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 24,
+   "nome": "Mais uma etapa",
+   "a": 90.12,
+   "b": 95.5,
+   "f": "escuro",
+   "narr": "E assim terminou mais uma etapa da transformação, mas ainda faltam muitas coisas antes do reencontro.",
+   "comp": "Checklist da transformação",
+   "tela": "CORTE 43: o checklist do ep. 2 ganha «ACESSÓRIOS ✓» (ROUPA ✓ já estava). CORTE 44 (93,04): o painel «27 DIAS» pulsa.",
+   "sync": [
+    [
+     "91,86",
+     "«transformação»: ✓ ACESSÓRIOS (tick + chime)"
+    ],
+    [
+     "94,70",
+     "«reencontro»: 27 DIAS pulsa"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 25,
+   "nome": "Votação",
+   "a": 95.5,
+   "b": 99.98,
+   "f": "laranja",
+   "narr": "Agora queremos saber a opinião de vocês: qual deve ser o próximo detalhe do visual do Juninho?",
+   "comp": "Placa de votação",
+   "tela": "CORTE 45: sunburst, a placa «VOTAÇÃO» bate e um «?» gira sobre o Juninho.",
+   "sync": [
+    [
+     "96,38",
+     "«opinião»: placa (impacto)"
+    ],
+    [
+     "99,34",
+     "«Juninho?»: o ? gira"
+    ]
+   ],
+   "tr": "Corte seco."
+  },
+  {
+   "n": 26,
+   "nome": "Tênis ou boné",
+   "a": 99.98,
+   "b": 103.06,
+   "f": "laranja/escuro",
+   "narr": "Um tênis branco estiloso ou um boné para completar o visual?",
+   "comp": "Tela dividida",
+   "tela": "CORTE 46: tela dividida na diagonal: TÊNIS BRANCO (o Juninho com tênis branco novo) × BONÉ (o Juninho com um boné liso verde-oliva, sem logotipo nem texto, bem diferente do personagem da referência). O selo «OU» gira.",
+   "sync": [
+    [
+     "100,10",
+     "«tênis»: lado 1 pula"
+    ],
+    [
+     "101,22",
+     "«ou»: selo gira"
+    ],
+    [
+     "101,62",
+     "«boné»: lado 2 pula"
+    ]
+   ],
+   "tr": "Corte seco.",
+   "img": "Juninho de tênis × de boné"
+  },
+  {
+   "n": 27,
+   "nome": "Comenta + 27 dias",
+   "a": 103.06,
+   "b": 111.5,
+   "f": "escuro",
+   "narr": "Comenta tênis ou boné. E não esquece: ainda faltam 27 dias para o reencontro.",
+   "comp": "Faixa + painel + carta",
+   "tela": "A faixa «COMENTE: TÊNIS OU BONÉ» desce e os comentários sobem. CORTE 47 (105,84): o painel «FALTAM 27 DIAS» gigante. A carta «EPISÓDIO 4» gira no «reencontro» e fica até 111,5 s.",
+   "sync": [
+    [
+     "103,06",
+     "faixa (whoosh)"
+    ],
+    [
+     "106,40",
+     "«27»: o painel bate"
+    ],
+    [
+     "107,52",
+     "«reencontro»: a carta gira"
+    ]
+   ],
+   "tr": "Fim."
+  }
+ ]
+}
