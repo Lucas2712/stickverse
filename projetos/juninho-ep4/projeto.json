@@ -1,0 +1,70 @@
+{
+  "titulo": "Juninho · Episódio 4",
+  "descricao": "Episódio 4 da série ilustrada do Juninho (modo cartoon narrativo). Narração acelerada (83,0 → 65,8 s), sem música, efeitos reais +8 dB.",
+  "tema": "Juninho compra o tênis branco",
+  "duracao": 69.0,
+  "fps": 30,
+  "fontes": [],
+  "poster": 40.9,
+  "legendas": {
+    "ativo": true,
+    "estilo": "cartoon",
+    "y": 1330,
+    "tamanho": 78,
+    "peso": 800,
+    "fonte": "var(--v-display)",
+    "corDestaque": "var(--must)",
+    "destaques": [
+      "tênis",
+      "branco",
+      "visual",
+      "problema",
+      "113,60",
+      "extra",
+      "enorme",
+      "respirar",
+      "pena",
+      "50,00",
+      "163,60",
+      "sonhado",
+      "perfeito",
+      "119,90",
+      "nunca",
+      "espelho",
+      "volta",
+      "pose",
+      "modelo",
+      "tropeçou",
+      "feliz",
+      "susto",
+      "43,70",
+      "Bonito",
+      "rico",
+      "26",
+      "cabelo",
+      "Degradê",
+      "régua",
+      "bagunçado",
+      "Juninho"
+    ],
+    "ocultar": []
+  },
+  "audio": {
+    "volumes": {
+      "narracao": 1.0,
+      "musica": 0,
+      "efeitos": 0.5
+    },
+    "musica": null,
+    "ducking": {
+      "ativo": false
+    }
+  },
+  "fontesProjeto": [
+    {
+      "familia": "Inter",
+      "arquivo": "fontes/inter.woff2",
+      "descritores": "font-weight:100 900;font-display:block"
+    }
+  ]
+}
