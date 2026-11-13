@@ -2875,5 +2875,16 @@
   "fonte": "https://github.com/Leonxlnx/earshot",
   "versao_banco": "forge_v2r6+forge04r1+fit1+pluck1\nid",
   "verificado_em": "2026-11-07"
+ },
+ {
+  "arquivo": "projetos/prumo-demo/audio/trilha/trilha.mp3",
+  "nome": "Close to you (trecho 25,0–61,5 s)",
+  "origem": "wikimedia_commons",
+  "tipo": "musica",
+  "autor": "Monplaisir",
+  "licenca": "CC0 1.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Monplaisir_-_02_-_Close_to_you.ogg",
+  "verificado_em": "2026-11-13",
+  "observacao": "licença lida na API de metadados do Commons (LicenseShortName = CC0); usada só no projeto prumo-demo, a pedido do usuário"
  }
 ]
