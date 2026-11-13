@@ -1,0 +1,15 @@
+{
+  "name": "prumo-campanha",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.jsx",
+    "render": "remotion render src/index.jsx Campanha out/prumo-campanha.mp4 --codec h264 --audio-codec aac --crf 16"
+  },
+  "dependencies": {
+    "remotion": "4.0.290",
+    "@remotion/cli": "4.0.290",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@fontsource-variable/inter": "5.1.1"
+  }
+}

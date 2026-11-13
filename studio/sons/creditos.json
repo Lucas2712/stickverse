@@ -2886,5 +2886,16 @@
   "fonte": "https://commons.wikimedia.org/wiki/File:Monplaisir_-_02_-_Close_to_you.ogg",
   "verificado_em": "2026-11-13",
   "observacao": "licença lida na API de metadados do Commons (LicenseShortName = CC0); usada só no projeto prumo-demo, a pedido do usuário"
+ },
+ {
+  "arquivo": "projetos/prumo-campanha/audio/trilha/trilha-editada.wav",
+  "nome": "Ambiant Hope (editada: 0–29,1 · 72,6–113,1 · 154,2–163,8 · 277,9–288,9 s)",
+  "origem": "wikimedia_commons",
+  "tipo": "musica",
+  "autor": "Komiku",
+  "licenca": "CC0 1.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Komiku_-_10_-_Ambiant_Hope.ogg",
+  "verificado_em": "2026-11-13",
+  "observacao": "licença lida na página de origem; uso só no projeto prumo-campanha, trilha pedida pelo usuário"
  }
 ]
