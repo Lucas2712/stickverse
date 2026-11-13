@@ -36,7 +36,7 @@ export const V3_A7 = ({ a }) => {
         </AbsoluteFill>
         <Sheen p={flare} width={220} color="rgba(255,255,255,0.8)" />
         <div style={{ position: 'absolute', top: 960, width: 1080, display: 'flex', justifyContent: 'center', transform: `scale(${1 + Math.max(0, t - f.morph) * 0.01})` }}>
-          <Letters t={t} s={f.morph + 0.25} text="prumo" size={210} stagger={0.05} />
+          <Letters t={t} s={f.morph + 0.62} text="prumo" size={210} stagger={0.05} fade />
         </div>
         <div style={{ position: 'absolute', top: 1220, width: 1080, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0 18px', padding: '0 60px', boxSizing: 'border-box', opacity: 1 - o1, filter: `blur(${o1 * 10}px)` }}>
           {['Seu', 'negócio', 'precisa', 'de', 'direção.'].map((w, i) => { const k = spr(t, tag1 + i * 0.08, { damping: 14, stiffness: 200 }); return <span key={w} style={{ ...display(i === 4 ? 700 : 600), fontSize: 66, color: i === 4 ? C.blue : C.ink, transform: `translateY(${(1 - k) * 60}px)`, opacity: Math.min(1, k * 2) }}>{w}</span>; })}

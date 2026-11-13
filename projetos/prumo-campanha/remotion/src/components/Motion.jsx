@@ -20,14 +20,14 @@ export const At = ({ x, y, z = 0, w, h, rot = 0, s = 1, style, children }) => (
   <div style={{ position: 'absolute', left: x - w / 2, top: y - h / 2, width: w, height: h, transform: `translateZ(${z}px) rotate(${rot}deg) scale(${s})`, transformStyle: 'preserve-3d', ...style }}>{children}</div>
 );
 // tipografia letra a letra subindo de dentro de uma máscara
-export const Letters = ({ t, s, text, size = 160, weight = 700, color = C.ink, stagger = 0.028, style, from = 1.05, out, outDur = 0.25 }) => {
+export const Letters = ({ t, s, text, size = 160, weight = 700, color = C.ink, stagger = 0.028, style, from = 1.05, out, outDur = 0.25, fade = false }) => {
   const o = out ? prog(t, out, outDur) : 0;
   return (
     <div style={{ display: 'inline-flex', overflow: 'hidden', padding: `${size * 0.08}px 0 ${size * 0.14}px`, ...style }}>
       {[...text].map((ch, i) => {
         const k = spr(t, s + i * stagger, { damping: 17, stiffness: 210 });
         const ko = out ? prog(t, out + i * stagger * 0.5, outDur) : 0;
-        return <span key={i} style={{ ...display(weight), fontSize: size, color, lineHeight: 1, display: 'inline-block', whiteSpace: 'pre', transform: `translateY(${(1 - k) * from * 100 - ko * 105}%) rotate(${(1 - k) * 8}deg)`, opacity: k > 0.01 ? 1 : 0 }}>{ch}</span>;
+        return <span key={i} style={{ ...display(weight), fontSize: size, color, lineHeight: 1, display: 'inline-block', whiteSpace: 'pre', transform: `translateY(${(1 - k) * from * 100 - ko * 105}%) rotate(${(1 - k) * 8}deg)`, opacity: fade ? Math.min(1, k * 2.2) : (k > 0.01 ? 1 : 0) }}>{ch}</span>;
       })}
     </div>
   );

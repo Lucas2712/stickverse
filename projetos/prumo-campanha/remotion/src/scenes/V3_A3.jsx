@@ -24,7 +24,7 @@ export const V3_A3 = ({ a }) => {
   const phone = spr(t, tEx + 0.25, { damping: 15, stiffness: 120 });
   const orb = prog(t, tGe - 0.3, 5.2, (x) => x);   // órbita lenta + aproximação do celular na parte clara
   const light = prog(t, tGe - 0.35, 0.9, inOut);                // cortina da agulha: azul → claro
-  const callouts = [['in', 'Movimentações', -1, 520], ['grid', 'Receitas e despesas', 1, 700], ['bell', 'Compromissos', -1, 980], ['chart', 'Relatórios', 1, 1240]];
+  const callouts = [['in', 'Movimentações', -1, 640], ['grid', 'Receitas e despesas', 1, 790], ['bell', 'Compromissos', -1, 1060], ['chart', 'Relatórios', 1, 1300]];
   const giant = (w, s, e, y) => { const k = prog(t, s - 0.1, 1.6, expoOut); const o = prog(t, e - 0.1, 0.3); return <div key={w} style={{ position: 'absolute', top: y, left: lerp(1200, -260, k) - o * 600, ...display(800), fontSize: 300, color: 'rgba(255,255,255,0.10)', whiteSpace: 'nowrap', letterSpacing: '-0.05em' }}>{w}</div>; };
   const word = (w, s, e) => { const k = spr(t, s - 0.05, { damping: 14, stiffness: 190 }); const o = prog(t, e - 0.12, 0.2, expoIn); return <div key={w} style={{ position: 'absolute', top: 1440, width: 1080, textAlign: 'center', ...display(700), fontSize: 130, color: '#fff', opacity: Math.min(1, k * 2) * (1 - o), transform: `translateY(${(1 - k) * 80 - o * 60}px) scale(${0.85 + 0.15 * k})`, filter: `blur(${o * 12}px)` }}>{w}</div>; };
   return (
@@ -54,8 +54,8 @@ export const V3_A3 = ({ a }) => {
       </BlueBg>
       {/* cortina da agulha → claro, com as funções conectadas ao celular */}
       <NeedleWipe p={light} cx={540} cy={-300}>
-        <LightBg><AbsoluteFill style={{ transform: `scale(${1 + Math.max(0, t - tGe) * 0.022}) translateY(${Math.max(0, t - tGe) * -8}px)` }}>
-          <div style={{ position: 'absolute', top: 230, width: 1080, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+        <LightBg><AbsoluteFill style={{ transform: `scale(${1 + Math.max(0, t - tGe) * 0.012})`, transformOrigin: '540px 330px' }}>
+          <div style={{ position: 'absolute', top: 300, width: 1080, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
             <Letters t={t} s={tGe} text="gestor financeiro" size={96} color={C.ink} stagger={0.02} />
             <div style={{ ...display(500), fontSize: 50, color: C.ink2, opacity: prog(t, tPe - 0.1, 0.3), transform: `translateY(${(1 - prog(t, tPe - 0.1, 0.5)) * 30}px)` }}>pensado para pequenos negócios</div>
           </div>
@@ -65,19 +65,19 @@ export const V3_A3 = ({ a }) => {
           {callouts.map(([ic, l, side, y], i) => {
             const k = spr(t, B(tGe + 0.45 + i * 0.3, 0.12), { damping: 13, stiffness: 190 });
             return (
-              <div key={l} style={{ position: 'absolute', top: y - 46, [side < 0 ? 'left' : 'right']: 24, display: 'flex', alignItems: 'center', gap: 12, padding: '14px 22px', borderRadius: 26, background: '#fff', boxShadow: '0 14px 34px rgba(0,0,0,0.12)', transform: `scale(${k}) translateX(${(1 - k) * side * -60}px) translateY(${Math.sin(t * 2 + i) * 8}px)`, transformOrigin: side < 0 ? '100% 50%' : '0% 50%', opacity: Math.min(1, k * 2), maxWidth: 300 }}>
-                <div style={{ width: 52, height: 52, borderRadius: 16, background: C.blue, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}><Icon name={ic} size={30} color="#fff" /></div>
-                <span style={{ ...text(600), fontSize: 27, color: C.ink, lineHeight: 1.1 }}>{l}</span>
+              <div key={l} style={{ position: 'absolute', top: y - 46, [side < 0 ? 'left' : 'right']: 20, display: 'flex', alignItems: 'center', gap: 10, padding: '12px 18px 12px 12px', borderRadius: 24, background: '#fff', boxShadow: '0 14px 34px rgba(0,0,0,0.12)', transform: `scale(${k}) translateX(${(1 - k) * side * -60}px) translateY(${Math.sin(t * 2 + i) * 8}px)`, transformOrigin: side < 0 ? '100% 50%' : '0% 50%', opacity: Math.min(1, k * 2), maxWidth: 270 }}>
+                <div style={{ width: 46, height: 46, borderRadius: 14, background: C.blue, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}><Icon name={ic} size={27} color="#fff" /></div>
+                <span style={{ ...text(600), fontSize: 24, color: C.ink, lineHeight: 1.1 }}>{l}</span>
               </div>
             );
           })}
-          </AbsoluteFill><div style={{ position: 'absolute', top: 1580, width: 1080, display: 'flex', justifyContent: 'center', opacity: prog(t, tGe + 0.5, 0.4) }}><DemoTag /></div>
+          </AbsoluteFill><div style={{ position: 'absolute', top: 1620, width: 1080, display: 'flex', justifyContent: 'center', opacity: prog(t, tGe + 0.5, 0.4) }}><DemoTag /></div>
         </LightBg>
       </NeedleWipe>
       {/* o celular nasce da coluna */}
       {phone > 0.01 && (
         <AbsoluteFill style={{ perspective: 2400 }}>
-          <div style={{ position: 'absolute', left: 540 - 300 * lerp(0.68, 0.78, orb), top: lerp(1500, 520, phone) - orb * 60, transform: `scale(${lerp(0.68, 0.78, orb)}) rotateY(${lerp(-35, 0, phone) + lerp(-16, 12, orb) * light + Math.sin(t * 1.3) * 3}deg) rotateX(${lerp(25, 0, phone) + 5 * light + Math.cos(t * 1.1) * 2}deg) translateY(${Math.sin(t * 1.6) * 14}px)`, transformOrigin: '0 0' }}>
+          <div style={{ position: 'absolute', left: 540 - 300 * lerp(0.68, 0.78, orb), top: lerp(1500, 600, phone) - orb * 40, transform: `scale(${lerp(0.68, 0.78, orb)}) rotateY(${lerp(-35, 0, phone) + lerp(-16, 12, orb) * light + Math.sin(t * 1.3) * 3}deg) rotateX(${lerp(25, 0, phone) + 5 * light + Math.cos(t * 1.1) * 2}deg) translateY(${Math.sin(t * 1.6) * 14}px)`, transformOrigin: '0 0' }}>
             <Phone w={600} h={1240}><Home /></Phone>
           </div>
         </AbsoluteFill>

@@ -13,8 +13,8 @@ for i in $(seq 0 $((B-1))); do
   npx remotion render src/index.jsx Campanha out/blocos/b$i.tmp.mp4 --frames=$A-$Z --muted --codec h264 --crf 16 --browser-executable="$CHROME" --concurrency=4 --gl=swangle --timeout=180000 || { echo "FALHOU bloco $i"; exit 1; }
   mv out/blocos/b$i.tmp.mp4 out/blocos/b$i.mp4
 done
-echo "== áudio"
-npx remotion render src/index.jsx Campanha out/blocos/audio.wav --codec wav --gl=swangle --browser-executable="$CHROME" || { echo "FALHOU audio"; exit 1; }
+echo "== áudio (mixagem própria, mesmos dados do Remotion)"
+S=$(mktemp -d); npx esbuild scripts/linha.jsx --bundle --platform=node --format=cjs --loader:.js=jsx --jsx=automatic --outfile=$S/linha.cjs --log-level=error && node $S/linha.cjs > $S/linha.json && python3 -I mixar.py $S/linha.json out/blocos/audio.wav || { echo "FALHOU audio"; exit 1; }
 printf "file 'b%d.mp4'\n" $(seq 0 $((B-1))) > out/blocos/lista.txt
 ffmpeg -v error -y -f concat -safe 0 -i out/blocos/lista.txt -i out/blocos/audio.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -shortest out/prumo-campanha-mix.mp4
 G=$(ffmpeg -v info -i out/prumo-campanha-mix.mp4 -af ebur128 -f null - 2>&1 | awk '/Integrated loudness/{f=1} f&&/ I:/{print $2; exit}')
