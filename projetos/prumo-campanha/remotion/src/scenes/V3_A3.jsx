@@ -60,12 +60,12 @@ export const V3_A3 = ({ a }) => {
             <div style={{ ...display(500), fontSize: 50, color: C.ink2, opacity: prog(t, tPe - 0.1, 0.3), transform: `translateY(${(1 - prog(t, tPe - 0.1, 0.5)) * 30}px)` }}>pensado para pequenos negócios</div>
           </div>
           <svg width="1080" height="1920" style={{ position: 'absolute', inset: 0 }}>
-            {callouts.map(([, , side, y], i) => { const k = prog(t, B(tGe + 0.45 + i * 0.3, 0.12), 0.45, expoOut); const x1 = side < 0 ? 300 : 780, x2 = side < 0 ? 400 : 680; return <path key={i} d={`M${x1} ${y} L${x2} ${y}`} stroke={C.blue} strokeWidth="4" strokeDasharray="200" strokeDashoffset={200 * (1 - k)} />; })}
+            {callouts.map(([, , side, y], i) => { const k = prog(t, B(tGe + 0.45 + i * 0.3, 0.12), 0.45, expoOut); const x1 = side < 0 ? 300 : 780, x2 = side < 0 ? 400 : 680; const pl = ((t - tGe) * 1.4 + i * 0.3) % 1; return <g key={i}><path d={`M${x2} ${y} L${x1} ${y}`} stroke={C.blue} strokeWidth="4" strokeDasharray="200" strokeDashoffset={200 * (1 - k)} />{k >= 1 && <circle cx={lerp(x2, x1, pl)} cy={y} r="7" fill={C.blue} opacity={Math.sin(pl * Math.PI)} />}</g>; })}
           </svg>
           {callouts.map(([ic, l, side, y], i) => {
             const k = spr(t, B(tGe + 0.45 + i * 0.3, 0.12), { damping: 13, stiffness: 190 });
             return (
-              <div key={l} style={{ position: 'absolute', top: y - 46, [side < 0 ? 'left' : 'right']: 20, display: 'flex', alignItems: 'center', gap: 10, padding: '12px 18px 12px 12px', borderRadius: 24, background: '#fff', boxShadow: '0 14px 34px rgba(0,0,0,0.12)', transform: `scale(${k}) translateX(${(1 - k) * side * -60}px) translateY(${Math.sin(t * 2 + i) * 8}px)`, transformOrigin: side < 0 ? '100% 50%' : '0% 50%', opacity: Math.min(1, k * 2), maxWidth: 270 }}>
+              <div key={l} style={{ position: 'absolute', top: y - 46, [side < 0 ? 'left' : 'right']: 20, display: 'flex', alignItems: 'center', gap: 10, padding: '12px 18px 12px 12px', borderRadius: 24, background: '#fff', boxShadow: '0 14px 34px rgba(0,0,0,0.12)', transform: `translate(${(1 - k) * side * -385}px, ${(1 - k) * (1000 - y) + Math.sin(t * 2 + i) * 8}px) scale(${lerp(0.3, 1, k)}) rotate(${(1 - k) * side * 25}deg)`, transformOrigin: side < 0 ? '100% 50%' : '0% 50%', opacity: Math.min(1, k * 3), maxWidth: 270 }}>
                 <div style={{ width: 46, height: 46, borderRadius: 14, background: C.blue, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}><Icon name={ic} size={27} color="#fff" /></div>
                 <span style={{ ...text(600), fontSize: 24, color: C.ink, lineHeight: 1.1 }}>{l}</span>
               </div>

@@ -34,6 +34,11 @@ export const V3_A5 = ({ a }) => {
     [tEnx + 0.3, { x: 0, y: 0, s: 0.3, ry: 0, rx: 0, rz: 0 }],
   ];
   const flowIn = prog(t, tEnx - 0.05, 0.5, inOut);
+  // câmera do fluxo: entrada → acompanha as partículas até cada categoria (na batida) → recua
+  const fkeys = [[tEnx, { x: 540, y: 1000, s: 0.92, rz: 0 }, GLIDE], [tEnx + 0.7, { x: 260, y: 1060, s: 1.45, rz: -2 }, GLIDE]];
+  [0, 1, 2, 3].forEach((c) => { const tc = B(tEnx + 1.35 + c * 0.75); fkeys.push([tc - 0.35, { x: 620, y: lerp(1000, 760 + c * 250, 0.6), s: 1.35, rz: c % 2 ? 1.5 : -1.5 }, GLIDE], [tc, { x: 840, y: 760 + c * 250, s: 1.6, rz: 0 }, GLIDE]); });
+  fkeys.push([B(tEnx + 4.6), { x: 560, y: 1000, s: 0.95, rz: 0 }, GLIDE], [tEnx + 8, { x: 540, y: 990, s: 1.0, rz: 0 }]);
+  const fc = kf(t, fkeys);
   const fill = prog(t, tRes, 1.0, inOut) * 0.72;
   const ok = spr(t, B(tRes + 1.0), { damping: 11, stiffness: 200 });
   const sep = prog(t, tAco + 0.15, 0.8, inOut);
@@ -79,10 +84,12 @@ export const V3_A5 = ({ a }) => {
         {head('Visão organizada', tVis - 0.2, tAco - 0.3)}
         {head('Responsabilidades em dia', tAco - 0.1, tEnx - 0.2)}
         {/* VIRADA · o dinheiro em movimento */}
-        <AbsoluteFill style={{ opacity: flowIn, transform: `scale(${lerp(1.4, 1, flowIn) + Math.max(0, t - tEnx) * 0.025}) translate(${Math.sin(Math.max(0, t - tEnx) * 0.8) * 30}px, ${Math.max(0, t - tEnx) * -12}px) rotate(${Math.sin(Math.max(0, t - tEnx) * 0.6) * 1.5}deg)` }}>
-          <div style={{ position: 'absolute', top: 230, width: 1080, display: 'flex', justifyContent: 'center' }}>
+        <AbsoluteFill style={{ opacity: flowIn }}>
+          <div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 420, background: 'linear-gradient(180deg, rgba(245,245,247,0.97) 60%, rgba(245,245,247,0))', zIndex: 5 }} />
+          <div style={{ position: 'absolute', top: 230, width: 1080, display: 'flex', justifyContent: 'center', zIndex: 6 }}>
             <Letters t={t} s={tEnx} text="o dinheiro em movimento" size={76} stagger={0.02} />
           </div>
+          <div style={{ position: 'absolute', left: 0, top: 0, width: 1080, height: 1920, transformOrigin: '0 0', transform: `translate(${540 - fc.x * fc.s}px, ${1000 - fc.y * fc.s}px) scale(${fc.s}) rotate(${fc.rz}deg)` }}>
           <svg width="1080" height="1920" style={{ position: 'absolute', inset: 0 }}>
             <rect x="90" y="900" width="170" height="320" rx="34" fill={C.blue} />
             <text x="175" y="1072" textAnchor="middle" fill="#fff" style={{ ...text(700), fontSize: 30 }}>Entradas</text>
@@ -94,6 +101,7 @@ export const V3_A5 = ({ a }) => {
               </g>); })}
             {parts.map((p, i) => <circle key={i} cx={p.x} cy={p.y} r={t > tDin ? 11 : 9} fill={[C.blue, '#2997FF', '#5AA9F5', '#0058B8'][p.c]} opacity={p.a} />)}
           </svg>
+          </div>
           <div style={{ position: 'absolute', top: 1580, width: 1080, display: 'flex', justifyContent: 'center' }}><DemoTag /></div>
         </AbsoluteFill>
       </LightBg>

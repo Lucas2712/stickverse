@@ -1,4 +1,5 @@
 import { Easing } from 'remotion';
+import { FPS } from '../styles/tokens';
 // Câmera virtual por quadros-chave. keys: [[t, {x, y, s, rx, ry, rz}, easing?]] — o easing vale do quadro até o próximo.
 export const WHIP = Easing.bezier(0.83, 0, 0.17, 1);          // chicote: arranque e frenagem fortes
 export const GLIDE = Easing.bezier(0.45, 0, 0.2, 1);          // deslize suave
@@ -17,8 +18,8 @@ export const kf = (t, keys) => {
 // transforma um ponto do "mundo" (canvas) para a tela 1080×1920
 export const camTransform = (c) => `translate(540px, 960px) scale(${c.s ?? 1}) rotateX(${c.rx ?? 0}deg) rotateY(${c.ry ?? 0}deg) rotate(${c.rz ?? 0}deg) translate(${-(c.x ?? 0)}px, ${-(c.y ?? 0)}px)`;
 // velocidade da câmera em px de tela por quadro (60 fps) → desfoque direcional
-export const camBlur = (t, keys, k = 0.22, max = 40) => {
-  const a = kf(t, keys), b = kf(t - 1 / 60, keys);
+export const camBlur = (t, keys, k = 0.11, max = 40) => {
+  const a = kf(t, keys), b = kf(t - 1 / FPS, keys);
   const s = a.s ?? 1;
   const dx = ((a.x ?? 0) - (b.x ?? 0)) * s, dy = ((a.y ?? 0) - (b.y ?? 0)) * s;
   const ds = Math.abs(Math.log((a.s ?? 1) / (b.s ?? 1))) * 2600;      // zoom rápido também borra

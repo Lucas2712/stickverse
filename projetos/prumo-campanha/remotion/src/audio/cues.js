@@ -7,7 +7,7 @@ export const SFX = () => {
   const wp = 0.36, f2 = FB3(), f7 = FH3();
   const a4 = { tab: B(W(4, 'acompanhar') + 0.25), mov: B(W(4, 'movimentações')), row: B(B(W(4, 'movimentações')) + 1.1), rec: B(W(4, 'receitas')), des: B(W(4, 'despesas')), ag: B(W(4, 'visualizar') + 0.1), comp: B(W(4, 'compromissos')) };
   a4.aviso = B(a4.comp + 0.6);
-  const tCta = FIM(7) + 0.15;
+  const tCta = FIM(7) + 0.1;
   return [
     // ato 1 · plano-sequência
     [W(1, 'Empreender') - 0.02, 'cascata_letras', 0.42, 'letras de «Empreender» caem'],
@@ -40,6 +40,8 @@ export const SFX = () => {
     [f2.settle - 1.07, 'logo_prumo', 0.62, 'LOGO SONORO: giro → clique na trava (início do silêncio) → acorde no silêncio'],
     [MUS.V2 - 0.02, 'onda_choque', 0.62, 'QUEDA: onda de choque'],
     [MUS.V2 + 0.02, 'estilhaco_queda', 0.44, 'tudo cai na direção do prumo'],
+    [MUS.V2 + 0.25, 'revelacao', 0.34, 'luz azul (light leak) na revelação'],
+    [f2.a + 0.1, 'particulas', 0.22, 'poeira de luz orbitando a bússola 3D'],
     [MUS.V2 + 0.4, 'cascata_letras', 0.36, 'letras «prumo»'],
     // ato 3
     [W(3, 'Foi') - 0.15, 'morfismo', 0.30, 'marca vira selo'],
@@ -85,6 +87,9 @@ export const SFX = () => {
     [B(B(W(5, 'responsabilidades')) + 1.0), 'cristal', 0.36, '✓ Reservado'],
     [MUS.V3 - 0.25, 'mergulho', 0.40, 'recuo para o fluxo (virada)'],
     [MUS.V3, 'particulas', 0.40, 'dinheiro em movimento'],
+    [MUS.V3 + 0.1, 'chicote_b', 0.30, 'câmera mergulha em Entradas'],
+    ...[0, 1, 2, 3].flatMap((c) => { const tc = B(MUS.V3 + 1.35 + c * 0.75); return [[tc - 0.35, 'card_desliza', 0.24, `câmera segue o fluxo → categoria ${c + 1}`], [tc, 'marcador', 0.30 - c * 0.03, `chega na categoria ${c + 1}`]]; }),
+    [B(MUS.V3 + 4.6) - 0.2, 'chicote_a', 0.26, 'câmera recua'],
     [B(W(5, 'dinheiro')), 'fluxo', 0.36, 'fluxo se intensifica'],
     // ato 6 (efeitos mais discretos)
     [N[5] - 0.05, 'chicote_b', 0.28, 'volta ao canvas da abertura'],
@@ -93,11 +98,13 @@ export const SFX = () => {
     // ato 7 · assinatura
     [f7.settle - 1.07, 'logo_prumo', 0.72, 'LOGO SONORO: clique na trava em «Prumo.»'],
     [f7.morph + 0.25, 'cascata_letras', 0.36, 'letras «prumo»'],
-    [W(7, 'organização'), 'slam_texto', 0.28, '«Seu negócio precisa de direção.»'],
+    [W(7, 'organização') - 0.05, 'chicote_a', 0.30, 'palavras chegam em arco pelos lados'],
+    [W(7, 'organização') + 0.4, 'slam_texto', 0.24, '«direção.» assenta'],
     [W(7, 'Mais', 2) + 0.1, 'encaixe', 0.34, '«no lugar.» encaixa'],
-    [tCta, 'pop_suave', 0.40, 'botão entra'],
-    [tCta + 0.88, 'toque_ui', 0.55, 'toque'],
-    [tCta + 0.92, 'ondulacao', 0.40, 'onda do toque'],
+    [tCta - 0.1, 'fio_desce', 0.40, 'o fio do prumo desce do ícone'],
+    [tCta + 0.22, 'tela_divide', 0.36, 'o fio se abre e vira o botão'],
+    [tCta + 0.98, 'toque_ui', 0.55, 'toque'],
+    [tCta + 1.02, 'ondulacao', 0.40, 'onda do toque'],
   ].sort((x, y) => x[0] - y[0]);
 };
 // Trilha: a edição (filtros, silêncio, cortes) já está no arquivo; aqui só o arco de volume × ducking sob a voz

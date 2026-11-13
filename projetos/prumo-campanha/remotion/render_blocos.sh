@@ -3,7 +3,7 @@
 set -uo pipefail
 cd "$(dirname "$0")"
 CHROME=${CHROME:-/opt/pw-browsers/chromium}
-TOTAL=$(node -e "const m=require('./src/audio/musica.json');console.log(Math.round(m.DURACAO*60))")
+TOTAL=$(node -e "const m=require('./src/audio/musica.json');console.log(Math.round(m.DURACAO*30))")
 mkdir -p out/blocos
 B=4; PASSO=$(( (TOTAL + B - 1) / B ))
 for i in $(seq 0 $((B-1))); do
