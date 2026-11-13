@@ -23,3 +23,10 @@ Backup intacto: `remotion-v5/` (código) e `saida/video/prumo-campanha-v5.mp4`.
 | 62,5–63,5 s | «Seu negócio precisa de direção.» com espaçamento irregular («de» solto) | tipografia |
 | 63–69,7 s | Encerramento sem impacto: depois da trava, só deriva lenta | impacto |
 | geral | Molas a 2,9× parecem «saltar» (pouca massa, sem antecipação); 96 efeitos sonoros (1,4 por segundo) — vários se sobrepõem | física / som |
+
+## Resultado na V6 (medido no MP4 final)
+- Quadros parados 16% → 11%; segundos quase parados 4 → 1; ato 2: 24% → 1% parados.
+- Abertura: título no primeiro quadro; painéis já montando no chicote; ícones orbitando o negócio em 13–15 s.
+- Demonstração: uma função por vez, com título grande («Movimentações», «Receitas e despesas», «Compromissos»).
+- Sincronia: erro mediano 0,073 s; 80 efeitos (eram 96).
+- Pendente: 3,0 s (painel ainda em branco no chicote); 63,2 s («Seu negócio precisa de» ainda chegando com espaços).
