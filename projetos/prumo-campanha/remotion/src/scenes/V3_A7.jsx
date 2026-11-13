@@ -32,17 +32,23 @@ export const V3_A7 = ({ a }) => {
   return (
     <AbsoluteFill>
       <LightBg>
-        <AbsoluteFill style={{ transform: `scale(${1.04 + Math.sin(drift * 0.35) * 0.02}) rotate(${Math.sin(drift * 0.25) * 0.8}deg)` }}>
+        {/* luz azul orbitando o fundo */}
+        <div style={{ position: 'absolute', left: 540 + Math.cos(drift * 0.6) * 260 - 700, top: 900 + Math.sin(drift * 0.6) * 340 - 700, width: 1400, height: 1400, borderRadius: '50%', background: 'radial-gradient(closest-side, rgba(0,113,227,0.16), rgba(0,113,227,0))', opacity: mo }} />
+        {/* anel gigante de marcações da bússola girando atrás de tudo */}
+        <svg width="1080" height="1920" style={{ position: 'absolute', inset: 0, opacity: 0.55 * mo }}>
+          <g transform={`translate(540 ${iconY}) rotate(${drift * 9})`}>{Array.from({ length: 72 }, (_, i) => { const a2 = (i / 72) * Math.PI * 2, R = 640, l = i % 6 === 0 ? 34 : 14; return <line key={i} x1={Math.sin(a2) * R} y1={Math.cos(a2) * R} x2={Math.sin(a2) * (R - l)} y2={Math.cos(a2) * (R - l)} stroke={i === 0 ? '#0071E3' : '#1D1D1F'} strokeOpacity={i % 6 === 0 ? 0.35 : 0.15} strokeWidth={i % 6 === 0 ? 4 : 2} />; })}</g>
+        </svg>
+        <AbsoluteFill style={{ perspective: 1800 }}><AbsoluteFill style={{ transformOrigin: `540px ${iconY + 200}px`, transform: `scale(${1.0 + Math.max(0, t - f.morph) * 0.018}) rotateX(${Math.sin(drift * 0.9) * 5 * mo}deg) rotateY(${Math.cos(drift * 0.7) * 7 * mo}deg) translateY(${Math.sin(drift * 1.3) * 10}px)` }}>
           {/* anéis e satélites girando em volta da marca */}
           {[0, 1, 2].map((r) => { const R = 250 + r * 120; return <div key={r} style={{ position: 'absolute', left: 540 - R, top: iconY - R, width: R * 2, height: R * 2, borderRadius: '50%', border: `${3 - r}px dashed rgba(0,113,227,${0.3 - r * 0.07})`, transform: `rotate(${drift * (r % 2 ? -16 : 12)}deg) scale(${lerp(0.4, 1, mo)})`, opacity: mo }} />; })}
-          {Array.from({ length: 10 }, (_, i) => { const R = 250 + (i % 3) * 120, ang = i * 0.63 + drift * (0.5 + (i % 3) * 0.15) * (i % 2 ? -1 : 1); return <div key={i} style={{ position: 'absolute', left: 540 + Math.cos(ang) * R - 8, top: iconY + Math.sin(ang) * R - 8, width: 16, height: 16, borderRadius: 8, background: i % 3 ? C.blue : '#fff', boxShadow: '0 0 16px rgba(0,113,227,0.7)', opacity: mo * 0.9 }} />; })}
+          {Array.from({ length: 16 }, (_, i) => { const R = 250 + (i % 3) * 120, ang = i * 0.39 + drift * (0.8 + (i % 3) * 0.25) * (i % 2 ? -1 : 1), z = 10 + (i % 4) * 5; return <div key={i} style={{ position: 'absolute', left: 540 + Math.cos(ang) * R - z / 2, top: iconY + Math.sin(ang) * R - z / 2, width: z, height: z, borderRadius: z / 2, background: i % 3 ? C.blue : '#fff', boxShadow: '0 0 16px rgba(0,113,227,0.7)', opacity: mo * 0.9 }} />; })}
           {/* bússola 3D → ícone */}
           <Compass3D t={t} f={f} cx={540} cy={960} size={lerp(760, 300, mo)} orbit={lerp(0.95, 0, srch) + Math.sin(drift * 1.6) * 0.05 * (1 - srch)} tilt={lerp(-0.9, -0.03, srch)} roll={lerp(-0.6, 0, srch)} glow={prog(t, f.settle, 0.35)} opacity={1 - mo} />
-          <div style={{ position: 'absolute', left: 540 - 135, top: iconY - 135, transform: `scale(${lerp(0.6, 1, mo) * (1 + (t > f.morph + 0.4 ? Math.sin((t - f.morph) * 2.2) * 0.015 : 0))})`, opacity: mo }}>
+          <div style={{ position: 'absolute', left: 540 - 135, top: iconY - 135, transform: `perspective(900px) rotateY(${Math.sin(Math.max(0, t - f.morph - 0.6) * 1.4) * 22}deg) scale(${lerp(0.6, 1, mo) * (1 + (t > f.morph + 0.4 ? Math.sin((t - f.morph) * 2.2) * 0.02 : 0))})`, opacity: mo }}>
             <AppIcon size={270} dark style={{ boxShadow: '0 30px 70px rgba(0,80,180,0.35)' }} />
           </div>
           <div style={{ position: 'absolute', top: iconY + 170, width: 1080, display: 'flex', justifyContent: 'center' }}>
-            <Letters t={t} s={f.morph + 0.62} text="prumo" size={200} stagger={0.05} fade />
+            <Letters t={t} s={f.morph + 0.3} text="prumo" size={200} stagger={0.035} fade />
           </div>
           {/* «Seu negócio precisa de direção.» — palavras chegam em arco, vindas da órbita */}
           <div style={{ position: 'absolute', top: iconY + 440, left: 0, width: 1080, height: 100, opacity: 1 - o1, filter: `blur(${o1 * 10}px)` }}>
@@ -55,7 +61,7 @@ export const V3_A7 = ({ a }) => {
           </div>
           {/* «Suas contas, finalmente no lugar.» — palavras caem e «no lugar» encaixa */}
           <div style={{ position: 'absolute', top: iconY + 440, width: 1080, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0 16px', padding: '0 60px', boxSizing: 'border-box', opacity: 1 - o2 }}>
-            {['Suas', 'contas,', 'finalmente', 'no', 'lugar.'].map((w, i) => { const k = spr(t, tag2 + 0.1 + i * 0.08, { damping: i > 2 ? 8 : 14, stiffness: 220 }); return <span key={w} style={{ ...display(i > 2 ? 700 : 600), fontSize: 60, color: i > 2 ? C.blue : C.ink, display: 'inline-block', transform: `translateY(${(1 - k) * -120}px) rotate(${(1 - k) * (i % 2 ? 14 : -14)}deg)`, opacity: Math.min(1, k * 2) }}>{w}</span>; })}
+            {['Suas', 'contas,', 'finalmente', 'no', 'lugar.'].map((w, i) => { const k = spr(t, tag2 + 0.1 + i * 0.08, { damping: i > 2 ? 8 : 14, stiffness: 220 }); return <span key={w} style={{ ...display(i > 2 ? 700 : 600), fontSize: 60, color: i > 2 ? C.blue : C.ink, display: 'inline-block', transform: `translateY(${(1 - k) * -50}px) rotate(${(1 - k) * (i % 2 ? 14 : -14)}deg)`, opacity: Math.min(1, k * 2) }}>{w}</span>; })}
           </div>
           {/* o fio do prumo desce do ícone e vira o botão */}
           <div style={{ position: 'absolute', left: 538.5, top: iconY + 135, width: 3, height: fio * (1230 - iconY - 135) * (1 - prog(t, tCta + 0.3, 0.2)), background: C.blue }} />
@@ -67,7 +73,7 @@ export const V3_A7 = ({ a }) => {
           </div>
           {btnW > 0.3 && <Touch x={lerp(880, 640, prog(t, tCta + 0.45, 0.5, inOut))} y={lerp(1650, 1320, prog(t, tCta + 0.45, 0.5, inOut))} press={press} opacity={prog(t, tCta + 0.45, 0.25) * (1 - prog(t, tTap + 0.5, 0.25))} />}
           <div style={{ position: 'absolute', top: 1460, width: 1080, textAlign: 'center', ...text(500), fontSize: 26, color: C.ink2, opacity: prog(t, tCta + 0.8, 0.5) }}>Marca fictícia · telas e dados demonstrativos</div>
-        </AbsoluteFill>
+        </AbsoluteFill></AbsoluteFill>
         <Leak p={prog(t, f.settle - 0.05, 1.2)} seed={9} strength={0.9} />
       </LightBg>
     </AbsoluteFill>

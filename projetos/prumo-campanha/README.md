@@ -21,3 +21,9 @@ regenerar o alinhamento reposiciona cenas, efeitos e batidas automaticamente.
 Regerar o plano musical depois de trocar a narração: `python3 -I audio/plano_musica_v3.py audio/trilha/ambiant-hope-original.ogg audio/trilha/ambiant-hope-beats.npy`
 
 Diagnóstico e plano da v3: `DIAGNOSTICO-V3.md`.
+
+## v4 (Remotion 4.0.543, 30 fps)
+- Cópia intacta da v3.1 em `remotion-v3.1/`; MP4 da v3.1 em `saida/video/prumo-campanha-v3.1.mp4` (fora do git).
+- Bússola em 3D real (`components/Compass3D.jsx`, `@remotion/three` + Three.js), atos 2/3/5/7 reconstruídos, light leak próprio (`components/Leak.jsx`; o `lightLeak` oficial exige WebGPU, indisponível aqui).
+- Render: `bash remotion/render_blocos.sh` (4 blocos, `--gl=swangle`; com o modo padrão e 4 abas em paralelo o Chrome trava em quadros pesados). Áudio mixado por `mixar.py` com os mesmos dados de `cues.js`.
+- Métricas v3.1 → v4: quadros parados 28% → 19%; segundos quase parados 16 → 7; ato 7: 67% → 3%.
