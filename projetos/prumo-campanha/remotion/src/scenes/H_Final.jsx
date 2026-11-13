@@ -57,7 +57,6 @@ export const H_Final = ({ a }) => {
         {cta > 0.1 && <Touch x={fx} y={fy} press={press} opacity={prog(t, tCta + 0.3, 0.3) * (1 - prog(t, tTap + 0.6, 0.3))} />}
         <div style={{ position: 'absolute', top: 1450, width: 1080, textAlign: 'center', opacity: disc }}>
           <div style={{ ...text(500), fontSize: 26, color: C.ink2 }}>Marca fictícia · telas e dados demonstrativos</div>
-          <div style={{ ...display(600), fontSize: 36, color: C.ink, marginTop: 8 }}>Studio Matteu</div>
         </div>
         <AbsoluteFill style={{ background: C.bg, opacity: end * 0.0 }} />
       </LightBg>

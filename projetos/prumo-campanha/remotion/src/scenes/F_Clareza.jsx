@@ -53,7 +53,7 @@ export const F_Clareza = ({ a }) => {
   const f3 = prog(t, tEnx - 0.35, 0.7, inOut);
   const barsK = prog(t, B(tEnx + 0.1), 1.2, expoOut);
   const flow = prog(t, B(tDin - 0.15), 1.3, inOut);
-  const outAll = prog(t, FIM(5) + 0.3, 0.35, expoIn);
+  const outAll = 0;
   const head = (label, s, e) => {
     const k = spr(t, s, { damping: 14, stiffness: 150 }), o = prog(t, e, 0.25, expoIn);
     return <div style={{ position: 'absolute', top: 250, width: 1080, textAlign: 'center', ...display(700), fontSize: 76, color: C.ink, opacity: Math.min(1, k * 2) * (1 - o), transform: `translateY(${(1 - k) * 30 - o * 30}px)`, filter: `blur(${o * 8}px)` }}>{label}</div>;
@@ -68,7 +68,7 @@ export const F_Clareza = ({ a }) => {
         <AbsoluteFill style={{ perspective: 1800, opacity: 1 - orbitOut }}>
           <div style={{ position: 'absolute', left: 540, top: 960, transformStyle: 'preserve-3d', transform: `rotateX(${8 + Math.sin(orbit * 0.02) * 4}deg) rotateY(${-14 + orbit}deg) scale(${1 + orbitOut * 0.4})` }}>
             {panels.map((p, i) => {
-              const k = spr(t, B(N[4] - 0.25) + i * 0.302, { damping: 15, stiffness: 120 });
+              const k = spr(t, a + 0.02 + i * 0.12, { damping: 15, stiffness: 120 });
               const [x, y, z] = p.pos;
               return (
                 <div key={i} style={{ position: 'absolute', left: x - 200, top: y - 260, transformStyle: 'preserve-3d', transform: `translateZ(${z + (1 - k) * -600}px) rotateY(${-(-14 + orbit)}deg) scale(0.86)`, opacity: Math.min(1, k * 2) }}>

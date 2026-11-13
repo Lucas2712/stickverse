@@ -1,0 +1,934 @@
+[
+{
+"cena": 1,
+"texto": "Empreender já exige muita coisa. Você cuida dos clientes, das vendas, dos pagamentos e de toda a operação. Mas, no meio de tantas responsabilidades, manter as finanças organizadas também pode se tornar um grande desafio.",
+"palavras": [
+{
+"w": "Empreender",
+"s": 0.0,
+"e": 0.72
+},
+{
+"w": "já",
+"s": 0.8,
+"e": 0.92
+},
+{
+"w": "exige",
+"s": 0.96,
+"e": 1.36
+},
+{
+"w": "muita",
+"s": 1.52,
+"e": 1.92
+},
+{
+"w": "coisa.",
+"s": 2.0,
+"e": 2.56
+},
+{
+"w": "Você",
+"s": 2.96,
+"e": 3.2
+},
+{
+"w": "cuida",
+"s": 3.24,
+"e": 3.44
+},
+{
+"w": "dos",
+"s": 3.52,
+"e": 3.6
+},
+{
+"w": "clientes,",
+"s": 3.68,
+"e": 4.48
+},
+{
+"w": "das",
+"s": 4.6,
+"e": 4.72
+},
+{
+"w": "vendas,",
+"s": 4.8,
+"e": 5.36
+},
+{
+"w": "dos",
+"s": 5.44,
+"e": 5.52
+},
+{
+"w": "pagamentos",
+"s": 5.6,
+"e": 6.32
+},
+{
+"w": "e",
+"s": 6.4,
+"e": 6.48
+},
+{
+"w": "de",
+"s": 6.52,
+"e": 6.56
+},
+{
+"w": "toda",
+"s": 6.8,
+"e": 7.04
+},
+{
+"w": "a",
+"s": 7.08,
+"e": 7.12
+},
+{
+"w": "operação.",
+"s": 7.2,
+"e": 8.4
+},
+{
+"w": "Mas,",
+"s": 8.6,
+"e": 8.84
+},
+{
+"w": "no",
+"s": 8.88,
+"e": 8.96
+},
+{
+"w": "meio",
+"s": 9.04,
+"e": 9.2
+},
+{
+"w": "de",
+"s": 9.32,
+"e": 9.44
+},
+{
+"w": "tantas",
+"s": 9.56,
+"e": 9.84
+},
+{
+"w": "responsabilidades,",
+"s": 10.04,
+"e": 11.28
+},
+{
+"w": "manter",
+"s": 11.4,
+"e": 11.68
+},
+{
+"w": "as",
+"s": 11.72,
+"e": 11.76
+},
+{
+"w": "finanças",
+"s": 11.84,
+"e": 12.32
+},
+{
+"w": "organizadas",
+"s": 12.4,
+"e": 13.28
+},
+{
+"w": "também",
+"s": 13.36,
+"e": 13.84
+},
+{
+"w": "pode",
+"s": 13.88,
+"e": 14.08
+},
+{
+"w": "se",
+"s": 14.16,
+"e": 14.24
+},
+{
+"w": "tornar",
+"s": 14.32,
+"e": 14.64
+},
+{
+"w": "um",
+"s": 14.76,
+"e": 14.88
+},
+{
+"w": "grande",
+"s": 14.92,
+"e": 15.2
+},
+{
+"w": "desafio.",
+"s": 15.28,
+"e": 16.08
+}
+]
+},
+{
+"cena": 2,
+"texto": "Quando você não consegue visualizar claramente o que entra, o que sai e o que ainda precisa pagar, fica muito mais difícil entender a verdadeira situação financeira do seu negócio.",
+"palavras": [
+{
+"w": "Quando",
+"s": 0.0,
+"e": 0.24
+},
+{
+"w": "você",
+"s": 0.28,
+"e": 0.56
+},
+{
+"w": "não",
+"s": 0.64,
+"e": 0.8
+},
+{
+"w": "consegue",
+"s": 0.92,
+"e": 1.36
+},
+{
+"w": "visualizar",
+"s": 1.44,
+"e": 2.08
+},
+{
+"w": "claramente",
+"s": 2.16,
+"e": 2.8
+},
+{
+"w": "o",
+"s": 2.84,
+"e": 2.88
+},
+{
+"w": "que",
+"s": 2.96,
+"e": 3.04
+},
+{
+"w": "entra,",
+"s": 3.2,
+"e": 3.707
+},
+{
+"w": "o",
+"s": 3.733,
+"e": 3.76
+},
+{
+"w": "que",
+"s": 3.84,
+"e": 4.0
+},
+{
+"w": "sai",
+"s": 4.08,
+"e": 4.56
+},
+{
+"w": "e",
+"s": 4.6,
+"e": 4.64
+},
+{
+"w": "o",
+"s": 4.68,
+"e": 4.72
+},
+{
+"w": "que",
+"s": 4.76,
+"e": 4.8
+},
+{
+"w": "ainda",
+"s": 4.88,
+"e": 5.28
+},
+{
+"w": "precisa",
+"s": 5.4,
+"e": 5.68
+},
+{
+"w": "pagar,",
+"s": 5.84,
+"e": 6.52
+},
+{
+"w": "fica",
+"s": 6.56,
+"e": 6.88
+},
+{
+"w": "muito",
+"s": 6.96,
+"e": 7.28
+},
+{
+"w": "mais",
+"s": 7.32,
+"e": 7.52
+},
+{
+"w": "difícil",
+"s": 7.68,
+"e": 8.08
+},
+{
+"w": "entender",
+"s": 8.16,
+"e": 8.56
+},
+{
+"w": "a",
+"s": 8.6,
+"e": 8.64
+},
+{
+"w": "verdadeira",
+"s": 8.72,
+"e": 9.36
+},
+{
+"w": "situação",
+"s": 9.44,
+"e": 9.92
+},
+{
+"w": "financeira",
+"s": 10.0,
+"e": 10.56
+},
+{
+"w": "do",
+"s": 10.64,
+"e": 10.72
+},
+{
+"w": "seu",
+"s": 10.8,
+"e": 10.987
+},
+{
+"w": "negócio.",
+"s": 11.093,
+"e": 12.08
+}
+]
+},
+{
+"cena": 3,
+"texto": "Foi para trazer mais organização, clareza e direção para essa rotina que existe o Prumo: um gestor financeiro pensado para a realidade dos pequenos negócios.",
+"palavras": [
+{
+"w": "Foi",
+"s": 0.0,
+"e": 0.16
+},
+{
+"w": "para",
+"s": 0.24,
+"e": 0.4
+},
+{
+"w": "trazer",
+"s": 0.48,
+"e": 0.88
+},
+{
+"w": "mais",
+"s": 0.96,
+"e": 1.12
+},
+{
+"w": "organização,",
+"s": 1.2,
+"e": 2.24
+},
+{
+"w": "clareza",
+"s": 2.44,
+"e": 2.88
+},
+{
+"w": "e",
+"s": 2.96,
+"e": 3.04
+},
+{
+"w": "direção",
+"s": 3.12,
+"e": 3.68
+},
+{
+"w": "para",
+"s": 3.76,
+"e": 3.92
+},
+{
+"w": "essa",
+"s": 4.04,
+"e": 4.16
+},
+{
+"w": "rotina",
+"s": 4.32,
+"e": 4.72
+},
+{
+"w": "que",
+"s": 4.88,
+"e": 4.96
+},
+{
+"w": "existe",
+"s": 5.04,
+"e": 5.44
+},
+{
+"w": "o",
+"s": 5.52,
+"e": 5.6
+},
+{
+"w": "Prumo:",
+"s": 5.64,
+"e": 6.48
+},
+{
+"w": "um",
+"s": 6.52,
+"e": 6.56
+},
+{
+"w": "gestor",
+"s": 6.64,
+"e": 7.04
+},
+{
+"w": "financeiro",
+"s": 7.12,
+"e": 7.68
+},
+{
+"w": "pensado",
+"s": 7.84,
+"e": 8.4
+},
+{
+"w": "para",
+"s": 8.48,
+"e": 8.64
+},
+{
+"w": "a",
+"s": 8.667,
+"e": 8.693
+},
+{
+"w": "realidade",
+"s": 8.72,
+"e": 9.36
+},
+{
+"w": "dos",
+"s": 9.44,
+"e": 9.52
+},
+{
+"w": "pequenos",
+"s": 9.6,
+"e": 10.08
+},
+{
+"w": "negócios.",
+"s": 10.2,
+"e": 11.28
+}
+]
+},
+{
+"cena": 4,
+"texto": "Com o Prumo, você pode acompanhar as movimentações financeiras, organizar suas receitas e despesas e visualizar melhor os compromissos do seu negócio. Tudo de uma forma mais simples, clara e organizada.",
+"palavras": [
+{
+"w": "Com",
+"s": 0.0,
+"e": 0.08
+},
+{
+"w": "o",
+"s": 0.16,
+"e": 0.32
+},
+{
+"w": "Prumo,",
+"s": 0.4,
+"e": 0.88
+},
+{
+"w": "você",
+"s": 0.96,
+"e": 1.2
+},
+{
+"w": "pode",
+"s": 1.24,
+"e": 1.36
+},
+{
+"w": "acompanhar",
+"s": 1.44,
+"e": 2.0
+},
+{
+"w": "as",
+"s": 2.08,
+"e": 2.16
+},
+{
+"w": "movimentações",
+"s": 2.24,
+"e": 2.96
+},
+{
+"w": "financeiras,",
+"s": 3.04,
+"e": 4.04
+},
+{
+"w": "organizar",
+"s": 4.08,
+"e": 4.72
+},
+{
+"w": "suas",
+"s": 4.8,
+"e": 4.96
+},
+{
+"w": "receitas",
+"s": 5.12,
+"e": 5.52
+},
+{
+"w": "e",
+"s": 5.56,
+"e": 5.6
+},
+{
+"w": "despesas",
+"s": 5.68,
+"e": 6.56
+},
+{
+"w": "e",
+"s": 6.64,
+"e": 6.72
+},
+{
+"w": "visualizar",
+"s": 6.88,
+"e": 7.36
+},
+{
+"w": "melhor",
+"s": 7.44,
+"e": 7.84
+},
+{
+"w": "os",
+"s": 7.92,
+"e": 8.08
+},
+{
+"w": "compromissos",
+"s": 8.2,
+"e": 8.8
+},
+{
+"w": "do",
+"s": 8.88,
+"e": 8.96
+},
+{
+"w": "seu",
+"s": 9.04,
+"e": 9.16
+},
+{
+"w": "negócio.",
+"s": 9.2,
+"e": 10.24
+},
+{
+"w": "Tudo",
+"s": 10.28,
+"e": 10.56
+},
+{
+"w": "de",
+"s": 10.6,
+"e": 10.64
+},
+{
+"w": "uma",
+"s": 10.76,
+"e": 10.88
+},
+{
+"w": "forma",
+"s": 11.04,
+"e": 11.2
+},
+{
+"w": "mais",
+"s": 11.24,
+"e": 11.44
+},
+{
+"w": "simples,",
+"s": 11.52,
+"e": 12.2
+},
+{
+"w": "clara",
+"s": 12.24,
+"e": 12.72
+},
+{
+"w": "e",
+"s": 12.8,
+"e": 12.88
+},
+{
+"w": "organizada.",
+"s": 13.04,
+"e": 14.16
+}
+]
+},
+{
+"cena": 5,
+"texto": "Você também ganha uma visão mais organizada das informações financeiras, acompanha melhor suas responsabilidades e consegue enxergar com mais clareza como o dinheiro está sendo movimentado.",
+"palavras": [
+{
+"w": "Você",
+"s": 0.0,
+"e": 0.24
+},
+{
+"w": "também",
+"s": 0.32,
+"e": 0.72
+},
+{
+"w": "ganha",
+"s": 0.8,
+"e": 1.04
+},
+{
+"w": "uma",
+"s": 1.12,
+"e": 1.2
+},
+{
+"w": "visão",
+"s": 1.4,
+"e": 1.6
+},
+{
+"w": "mais",
+"s": 1.68,
+"e": 1.92
+},
+{
+"w": "organizada",
+"s": 2.08,
+"e": 2.72
+},
+{
+"w": "das",
+"s": 2.8,
+"e": 2.88
+},
+{
+"w": "informações",
+"s": 3.04,
+"e": 3.52
+},
+{
+"w": "financeiras,",
+"s": 3.6,
+"e": 4.72
+},
+{
+"w": "acompanha",
+"s": 4.8,
+"e": 5.28
+},
+{
+"w": "melhor",
+"s": 5.36,
+"e": 5.76
+},
+{
+"w": "suas",
+"s": 5.84,
+"e": 6.0
+},
+{
+"w": "responsabilidades",
+"s": 6.08,
+"e": 7.36
+},
+{
+"w": "e",
+"s": 7.44,
+"e": 7.52
+},
+{
+"w": "consegue",
+"s": 7.64,
+"e": 8.0
+},
+{
+"w": "enxergar",
+"s": 8.08,
+"e": 8.56
+},
+{
+"w": "com",
+"s": 8.68,
+"e": 8.8
+},
+{
+"w": "mais",
+"s": 8.88,
+"e": 9.12
+},
+{
+"w": "clareza",
+"s": 9.32,
+"e": 9.84
+},
+{
+"w": "como",
+"s": 9.96,
+"e": 10.08
+},
+{
+"w": "o",
+"s": 10.12,
+"e": 10.16
+},
+{
+"w": "dinheiro",
+"s": 10.24,
+"e": 10.56
+},
+{
+"w": "está",
+"s": 10.64,
+"e": 10.84
+},
+{
+"w": "sendo",
+"s": 10.88,
+"e": 11.16
+},
+{
+"w": "movimentado.",
+"s": 11.2,
+"e": 12.4
+}
+]
+},
+{
+"cena": 6,
+"texto": "Porque administrar um negócio já é um grande desafio. Acompanhar suas finanças não precisa ser mais um deles.",
+"palavras": [
+{
+"w": "Porque",
+"s": 0.0,
+"e": 0.24
+},
+{
+"w": "administrar",
+"s": 0.4,
+"e": 0.96
+},
+{
+"w": "um",
+"s": 1.0,
+"e": 1.04
+},
+{
+"w": "negócio",
+"s": 1.2,
+"e": 1.76
+},
+{
+"w": "já",
+"s": 1.84,
+"e": 2.0
+},
+{
+"w": "é",
+"s": 2.16,
+"e": 2.2
+},
+{
+"w": "um",
+"s": 2.24,
+"e": 2.4
+},
+{
+"w": "grande",
+"s": 2.48,
+"e": 2.8
+},
+{
+"w": "desafio.",
+"s": 2.88,
+"e": 3.92
+},
+{
+"w": "Acompanhar",
+"s": 4.0,
+"e": 4.56
+},
+{
+"w": "suas",
+"s": 4.6,
+"e": 4.72
+},
+{
+"w": "finanças",
+"s": 4.8,
+"e": 5.52
+},
+{
+"w": "não",
+"s": 5.6,
+"e": 5.76
+},
+{
+"w": "precisa",
+"s": 5.84,
+"e": 6.32
+},
+{
+"w": "ser",
+"s": 6.44,
+"e": 6.56
+},
+{
+"w": "mais",
+"s": 6.64,
+"e": 6.88
+},
+{
+"w": "um",
+"s": 6.96,
+"e": 7.04
+},
+{
+"w": "deles.",
+"s": 7.16,
+"e": 8.0
+}
+]
+},
+{
+"cena": 7,
+"texto": "Prumo. Mais organização para suas finanças. Mais clareza para cuidar do seu negócio.",
+"palavras": [
+{
+"w": "Prumo.",
+"s": 0.0,
+"e": 0.96
+},
+{
+"w": "Mais",
+"s": 1.12,
+"e": 1.28
+},
+{
+"w": "organização",
+"s": 1.44,
+"e": 2.08
+},
+{
+"w": "para",
+"s": 2.16,
+"e": 2.24
+},
+{
+"w": "suas",
+"s": 2.4,
+"e": 2.64
+},
+{
+"w": "finanças.",
+"s": 2.72,
+"e": 3.84
+},
+{
+"w": "Mais",
+"s": 3.96,
+"e": 4.08
+},
+{
+"w": "clareza",
+"s": 4.16,
+"e": 4.8
+},
+{
+"w": "para",
+"s": 4.92,
+"e": 5.04
+},
+{
+"w": "cuidar",
+"s": 5.147,
+"e": 5.52
+},
+{
+"w": "do",
+"s": 5.6,
+"e": 5.68
+},
+{
+"w": "seu",
+"s": 5.72,
+"e": 5.84
+},
+{
+"w": "negócio.",
+"s": 6.0,
+"e": 6.88
+}
+]
+}
+]

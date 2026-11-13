@@ -16,6 +16,6 @@ export const FONT = "'InterVar', -apple-system, 'Helvetica Neue', Arial, sans-se
 // Inter variável com eixo de tamanho óptico: opsz 32 = Display (títulos), opsz 14 = Text (rótulos)
 export const display = (weight = 600) => ({ fontFamily: FONT, fontWeight: weight, fontVariationSettings: `'opsz' 32`, letterSpacing: '-0.035em' });
 export const text = (weight = 400) => ({ fontFamily: FONT, fontWeight: weight, fontVariationSettings: `'opsz' 14`, letterSpacing: '-0.01em' });
-export const W = 1080, H = 1920, FPS = 30;
+export const W = 1080, H = 1920, FPS = 60;
 export const shadow = '0 2px 6px rgba(0,0,0,0.04), 0 24px 60px rgba(0,0,0,0.10)';
 export const shadowDeep = '0 4px 10px rgba(0,0,0,0.05), 0 40px 90px rgba(0,0,0,0.16)';

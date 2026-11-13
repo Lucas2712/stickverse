@@ -9,17 +9,16 @@ export const SFX = () => {
   const tAviso = B(W(4, 'compromissos') + 0.75), tCta = FIM(7) + 0.25, tTap = tCta + 0.95;
   return [
     // ato 1 · a mesa
-    [0.0, 'ambiente_escritorio', 0.55, 'ambiente da sala (luz de janela)'],
-    [W(1, 'clientes') - 0.02, 'bolha_msg', 0.42, 'bolha de mensagem sai do notebook'],
-    [W(1, 'vendas') - 0.02, 'cupom_impressora', 0.38, 'cupom sai da maquininha'],
-    [W(1, 'pagamentos') - 0.02, 'celular_vibra', 0.42, 'celular vibra na madeira'],
-    [W(1, 'operação') - 0.02, 'calendario', 0.40, 'página do calendário vira'],
-    [mas + 0.35, 'papeis_pilha', 0.40, 'papéis começam a se acumular'],
-    [mas + 1.6, 'papel_mesa', 0.28, 'mais papéis deslizam'],
-    [W(1, 'manter'), 'calculadora', 0.32, 'teclas da calculadora'],
+    [B(W(1, 'clientes'), 0.15) - 0.06, 'bolha_msg', 0.42, 'card Clientes: conversa'],
+    [B(W(1, 'vendas'), 0.15) - 0.06, 'cupom_impressora', 0.34, 'card Vendas: barras sobem'],
+    [B(W(1, 'pagamentos'), 0.15) - 0.06, 'celular_vibra', 0.38, 'card Pagamentos: notificações'],
+    [B(W(1, 'operação'), 0.15) - 0.06, 'encaixe', 0.36, 'card Operação: checklist'],
+    [mas + 0.05, 'papeis_pilha', 0.40, 'tarefas começam a se acumular'],
+    [mas + 1.2, 'card_desliza', 0.26, 'mais notificações chegam'],
+    [W(1, 'manter'), 'carimbo', 0.26, 'boletos «vence» chegam'],
     [W(1, 'grande') - 0.05, 'peso_desafio', 0.48, '«um grande desafio»'],
     // ato 2 · o problema
-    [W(2, 'Quando') - 0.35, 'papel_mesa', 0.32, 'mergulho nos papéis'],
+    [W(2, 'Quando') - 0.3, 'papel_mesa', 0.30, 'passagem para o problema'],
     [W(2, 'entra') - 0.08, 'seta_entra', 0.40, 'setas azuis entram'],
     [W(2, 'sai') - 0.05, 'seta_sai', 0.40, 'setas escuras saem'],
     [W(2, 'precisa') - 0.02, 'carimbo', 0.42, 'boleto carimbado 1'],
@@ -63,7 +62,7 @@ export const SFX = () => {
     [B(W(4, 'clara')) - 0.05, 'foco', 0.32, '«clara»'],
     [B(W(4, 'organizada')) - 0.05, 'encaixe', 0.40, '«organizada»'],
     // clareza
-    [B(N[4] - 0.25), 'telas_flutuam', 0.36, 'quatro telas entram em órbita'],
+    [N[4] - 0.28, 'telas_flutuam', 0.36, 'quatro telas entram em órbita'],
     [W(5, 'informações'), 'conexao', 0.34, 'linhas conectam as telas'],
     [W(5, 'acompanha') + 0.2, 'card_desliza', 0.28, 'Pessoal · Negócio se separam'],
     [B(W(5, 'responsabilidades')), 'liquido', 0.36, 'reserva de impostos enche'],
@@ -71,9 +70,10 @@ export const SFX = () => {
     [B(W(5, 'enxergar') + 0.1), 'barras_sobem', 0.36, 'barras do relatório sobem'],
     [B(W(5, 'dinheiro') - 0.15), 'fluxo', 0.40, 'o dinheiro corre pelas categorias'],
     // transformação (efeitos reduzidos para valorizar a narração)
-    [FIM(5) + 0.45, 'ambiente_escritorio', 0.45, 'a mesa, agora organizada'],
-    [W(6, 'Acompanhar') + 0.6, 'fio_desce', 0.30, 'fio de prumo desce sobre a mesa'],
-    [FIM(6) + 0.3, 'revelacao', 0.30, 'abre para o branco'],
+    [B(W(6, 'negócio')), 'confirmar', 0.34, 'as 4 frentes ganham ✓'],
+    [B(W(6, 'Acompanhar') + 0.1) - 0.25, 'fio_desce', 0.30, 'fio de prumo desce'],
+    [B(W(6, 'Acompanhar') + 0.1), 'telas_flutuam', 0.30, 'card Finanças (Prumo) entra'],
+    [FIM(6) + 0.2, 'revelacao', 0.28, 'abre para o branco'],
     // final
     [fh.settle - 0.1, 'assinatura_bussola', 0.66, 'ASSINATURA: bússola gira, trava e vira o ícone'],
     [tCta, 'marcador', 0.30, 'botão entra'],
@@ -85,7 +85,7 @@ export const SFX = () => {
 export const TRILHA = { arquivo: 'audio/trilha.wav' };
 const FALAS = () => N.map((n, i) => [n, FIM(i + 1)]);
 const arco = (t) => interpolate(t,
-  [0, 22.9, MUS.freeze, MUS.V2 - 0.02, MUS.V2, N[4], MUS.V3 - 0.02, MUS.V3, MUS.V4, DURACAO],
+  [0, MUS.freeze - 0.4, MUS.freeze, MUS.V2 - 0.02, MUS.V2, N[4], MUS.V3 - 0.02, MUS.V3, MUS.V4, DURACAO],
   [0.62, 0.78, 0.6, 0.6, 1.0, 0.9, 1.05, 1.18, 1.12, 1.0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 export const volTrilha = (t) => {
   // distância até a fala mais próxima → ducking suave (0,25 s de rampa)

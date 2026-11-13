@@ -5,6 +5,7 @@ import { useT } from '../animations/time';
 import { prog, spr, map, lerp, inOut, expoIn, expoOut } from '../animations/motion';
 import { W, FIM, B } from '../audio/timeline';
 import { LightBg } from '../components/Stage';
+import { Words } from '../components/Words';
 import { Phone } from '../components/Phone';
 import { Home, Lista, Agenda, SW, SH } from '../components/Screens';
 import { Touch, StepChip, DemoTag, AppIcon } from '../components/AppUI';
@@ -74,6 +75,9 @@ export const E_Demos = ({ a }) => {
         </div>
         {fingerOp > 0 && <Touch x={gx} y={gy} press={press} opacity={fingerOp} />}
       </AbsoluteFill>
+      <div style={{ position: 'absolute', top: 560, width: 1080, textAlign: 'center' }}>
+        <Words t={t} dur={0.4} style={{ ...display(500), fontSize: 66, color: C.ink2 }} words={[{ w: 'Tudo', s: tTudo }, { w: 'de', s: W(4, 'de', 1) }, { w: 'uma', s: W(4, 'uma') }, { w: 'forma', s: W(4, 'forma') }, { w: 'mais', s: W(4, 'mais') }]} />
+      </div>
       {/* simples · clara · organizada */}
       {words.map(([w, s, ic], i) => {
         const k = spr(t, s - 0.05, { damping: 13, stiffness: 160 });
