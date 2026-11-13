@@ -1,0 +1,11 @@
+import React from 'react';
+import { AbsoluteFill, Sequence } from 'remotion';
+import { useFonte } from './components/Fonte';
+import * as A from './scenes/V3_A1';
+import * as A2 from './scenes/V3_A2';
+import * as A3 from './scenes/V3_A3';
+import * as A4 from './scenes/V3_A4';
+import * as A7 from './scenes/V3_A7';
+import * as A5m from './scenes/V3_A5';
+import * as A2b from './scenes/V3_A2';
+export const TesteCena = ({ cena = 'V3_A1', a = 0 }) => { useFonte(); const Comp = { ...A, ...A2, ...A3, ...A4, ...A7, ...A5m, ...A2b }[cena]; return <AbsoluteFill style={{ background: '#fff' }}><Comp a={a} /></AbsoluteFill>; };

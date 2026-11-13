@@ -25,8 +25,8 @@ export const V3_A5 = ({ a }) => {
   const split = prog(t, a + 0.05, 0.7, expoOut);                // tela → 4 painéis
   const keys = [
     [a, { x: 0, y: 0, s: 0.9, ry: 0, rx: 0, rz: 0 }, expoOut],
-    [a + 0.8, { x: -60, y: 40, s: 0.46, ry: -30, rx: 12, rz: -3 }, GLIDE],
-    [tAco - 0.35, { x: 60, y: -40, s: 0.54, ry: 26, rx: 4, rz: 3 }, WHIP],
+    [a + 0.8, { x: -40, y: 30, s: 0.54, ry: -22, rx: 10, rz: -2 }, GLIDE],
+    [tAco - 0.35, { x: 40, y: -30, s: 0.58, ry: 18, rx: 4, rz: 2 }, WHIP],
     [tAco + 0.1, { x: PNL.PN[0], y: PNL.PN[1], s: 1.12, ry: 0, rx: 0, rz: -1 }, GLIDE],
     [tRes - 0.35, { x: PNL.PN[0] + 10, y: PNL.PN[1] + 20, s: 1.16, ry: 0, rx: 0, rz: -1 }, WHIP],
     [tRes + 0.05, { x: PNL.RI[0], y: PNL.RI[1], s: 1.12, ry: 0, rx: 0, rz: 1 }, GLIDE],
@@ -35,8 +35,8 @@ export const V3_A5 = ({ a }) => {
   ];
   const flowIn = prog(t, tEnx - 0.05, 0.5, inOut);
   // câmera do fluxo: entrada → acompanha as partículas até cada categoria (na batida) → recua
-  const fkeys = [[tEnx, { x: 540, y: 1000, s: 0.92, rz: 0 }, GLIDE], [tEnx + 0.7, { x: 260, y: 1060, s: 1.45, rz: -2 }, GLIDE]];
-  [0, 1, 2, 3].forEach((c) => { const tc = B(tEnx + 1.35 + c * 0.75); fkeys.push([tc - 0.35, { x: 620, y: lerp(1000, 760 + c * 250, 0.6), s: 1.35, rz: c % 2 ? 1.5 : -1.5 }, GLIDE], [tc, { x: 840, y: 760 + c * 250, s: 1.6, rz: 0 }, GLIDE]); });
+  const fkeys = [[tEnx, { x: 540, y: 1000, s: 0.92, rz: 0 }, GLIDE], [tEnx + 0.7, { x: 330, y: 1060, s: 1.3, rz: -2 }, GLIDE]];
+  [0, 1, 2, 3].forEach((c) => { const tc = B(tEnx + 1.35 + c * 0.75); fkeys.push([tc - 0.35, { x: 600, y: lerp(1000, 760 + c * 250, 0.6), s: 1.2, rz: c % 2 ? 1.2 : -1.2 }, GLIDE], [tc, { x: 700, y: 760 + c * 250, s: 1.3, rz: 0 }, GLIDE]); });
   fkeys.push([B(tEnx + 4.6), { x: 560, y: 1000, s: 0.95, rz: 0 }, GLIDE], [tEnx + 8, { x: 540, y: 990, s: 1.0, rz: 0 }]);
   const fc = kf(t, fkeys);
   const fill = prog(t, tRes, 1.0, inOut) * 0.72;

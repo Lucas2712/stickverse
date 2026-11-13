@@ -47,6 +47,7 @@ export const V3_A2 = ({ a }) => {
     else { x = 540 + Math.cos(i) * 560 * (1 - life); y = 1000 + Math.sin(i * 1.7) * 640 * (1 - life); }
     return { x, y, kind, a: Math.sin(life * Math.PI) };
   };
+  for (let i = 0; i < 30; i++) flows.push(fl(i + 300, 'pay', a + (i % 5) * 0.1));   // movimento desde o primeiro quadro: tudo gira em volta do negócio
   for (let i = 0; i < 46; i++) flows.push(fl(i, 'in', tEntra - 0.1 + (i % 6) * 0.05));
   for (let i = 0; i < 40; i++) flows.push(fl(i + 100, 'out', tSai - 0.1 + (i % 6) * 0.05));
   for (let i = 0; i < 24; i++) flows.push(fl(i + 200, 'pay', tPag + (i % 4) * 0.08));
@@ -54,7 +55,7 @@ export const V3_A2 = ({ a }) => {
   const nodeK = spr(t, a + 0.2, { damping: 12, stiffness: 150 });
   return (
     <AbsoluteFill style={{ background: '#EEF0F4', opacity: inK }}>
-      <AbsoluteFill style={{ transform: `scale(${camS}) rotate(${camR}deg) translate(${shake}px, ${shake * 0.4}px)`, filter: `grayscale(${frz}) contrast(${1 - frz * 0.1})` }}>
+      <AbsoluteFill style={{ transform: `scale(${camS}) rotate(${camR}deg) translate(${shake}px, ${shake * 0.4}px)`, filter: `grayscale(${0.7 * frz})` }}>
         {/* fragmentos de interface ao fundo, girando devagar, que depois CAEM */}
         {Array.from({ length: 14 }, (_, i) => {
           const dz = 0.6 + rnd(i, 9) * 0.9; const x = rnd(i, 3) * 1080 + Math.sin(tReal * 0.7 * dz + i) * 90 * dz - (tReal - a) * 40 * dz, y = 250 + rnd(i, 4) * 1450 + Math.cos(tReal * 0.5 * dz + i) * 60 * dz, rot = (rnd(i, 5) - 0.5) * 60 + tReal * (i % 2 ? 18 : -18);
@@ -63,10 +64,17 @@ export const V3_A2 = ({ a }) => {
         })}
         {/* partículas */}
         <svg width="1080" height="1920" style={{ position: 'absolute', inset: 0, transform: `translateY(${fall * 1400}px)` }}>
-          {flows.filter(Boolean).map((p, i) => <circle key={i} cx={p.x} cy={p.y} r={p.kind === 'pay' ? 9 : 7} fill={p.kind === 'in' ? C.blue : p.kind === 'out' ? C.ink : C.red} opacity={0.85 * p.a} />)}
+          {flows.filter(Boolean).map((p, i) => <circle key={i} cx={p.x} cy={p.y} r={p.kind === 'pay' ? 9 : 7} fill={p.kind === 'in' ? C.blue : p.kind === 'out' ? C.ink : (t < tPag ? '#9AA3B2' : C.red)} opacity={0.85 * p.a} />)}
         </svg>
         {/* o negócio no centro */}
-        <div style={{ position: 'absolute', left: 540 - 110, top: 1000 - 110 + fall * 1500, width: 220, height: 220, borderRadius: 66, background: '#fff', boxShadow: '0 30px 70px rgba(0,0,0,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${nodeK * (1 + (t > tPag ? 0.06 * Math.sin((t - tPag) * 30) * Math.exp(-(t - tPag) * 4) : 0))}) rotate(${fall * 40}deg)` }}><Icon name="bag" size={110} color={C.ink} /></div>
+        <div style={{ position: 'absolute', left: 540 - 150, top: 1000 - 150 + fall * 1500, width: 300, height: 300, borderRadius: 90, background: '#fff', boxShadow: '0 30px 70px rgba(0,0,0,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${nodeK * (1 + (t > tPag ? 0.06 * Math.sin((t - tPag) * 30) * Math.exp(-(t - tPag) * 4) : 0))}) rotate(${fall * 40}deg)` }}><Icon name="bag" size={150} color={C.ink} /></div>
+        {/* as frentes do negócio orbitam o nó desde o primeiro quadro */}
+        {['chat', 'cart', 'card', 'list', 'bell', 'doc'].map((ic, i) => {
+          const k = spr(t, a + 0.05 + i * 0.06, { damping: 14, stiffness: 150 });
+          const ang = (i / 6) * Math.PI * 2 + (t - a) * 0.9, R = lerp(120, 330, k);
+          const x = 540 + Math.cos(ang) * R, y = 1000 + Math.sin(ang) * R * 0.85 + fall * 1500;
+          return <div key={ic} style={{ position: 'absolute', left: x - 62, top: y - 62, width: 124, height: 124, borderRadius: 36, background: i % 2 ? '#fff' : C.ink, boxShadow: '0 16px 36px rgba(0,0,0,0.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${k}) rotate(${fall * 90}deg)`, opacity: 1 - frz * 0.35 }}><Icon name={ic} size={64} color={i % 2 ? C.ink : '#fff'} /></div>;
+        })}
         {/* boletos carimbados batendo no negócio */}
         {bills.map((k, i) => (
           <div key={i} style={{ position: 'absolute', left: [220, 640, 380][i], top: [760, 820, 1180][i] + fall * (1200 + i * 200), transform: `scale(${2.2 - 1.2 * k}) rotate(${[-14, 12, -6][i] + fall * 80}deg)`, opacity: Math.min(1, k * 3), width: 240, height: 150, borderRadius: 18, background: '#fff', boxShadow: '0 16px 36px rgba(0,0,0,0.14)', padding: 20, boxSizing: 'border-box' }}>
@@ -81,16 +89,16 @@ export const V3_A2 = ({ a }) => {
         <div style={{ position: 'absolute', width: 1080, top: 1250 + fall * 1300, textAlign: 'center', ...display(700), fontSize: 92, color: C.red, opacity: prog(t, tPag, 0.25) * (1 - frz), transform: `scale(${1.6 - 0.6 * spr(t, tPag)})` }}>a pagar</div>
         {/* «visualizar claramente»: só fica nítido dentro da lente que passa */}
         <div style={{ position: 'absolute', top: 250 + fall * 1300, width: 1080, textAlign: 'center' }}>
-          <div style={{ display: 'flex', justifyContent: 'center' }}><Letters t={t} s={W(2, 'Quando')} text="Quando você não consegue" size={60} weight={500} color={C.ink2} stagger={0.015} /></div><div style={{ display: 'flex', justifyContent: 'center', marginTop: -16 }}><Letters t={t} s={tVis} text="visualizar" size={60} weight={600} color={C.ink} stagger={0.02} /></div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}><Letters t={t} s={W(2, 'Quando')} text="Quando você não consegue" size={70} weight={500} color={C.ink2} stagger={0.015} /></div><div style={{ display: 'flex', justifyContent: 'center', marginTop: -16 }}><Letters t={t} s={tVis} text="visualizar" size={78} weight={700} color={C.ink} stagger={0.02} /></div>
           <div style={{ position: 'relative', height: 190, marginTop: 6 }}>
-            <div style={{ position: 'absolute', inset: 0, ...display(700), fontSize: 160, color: C.ink, filter: 'blur(9px)', opacity: prog(t, tCla - 0.1, 0.3) }}>claramente</div>
+            <div style={{ position: 'absolute', inset: 0, ...display(700), fontSize: 160, color: C.ink, filter: 'blur(2.5px)', opacity: 0.55 * prog(t, tCla - 0.1, 0.3) }}>claramente</div>
             <div style={{ position: 'absolute', inset: 0, ...display(700), fontSize: 160, color: C.ink, opacity: prog(t, tCla - 0.1, 0.3), clipPath: `circle(150px at ${lensX}px 95px)` }}>claramente</div>
             <div style={{ position: 'absolute', left: lensX - 150, top: 95 - 150, width: 300, height: 300, borderRadius: 150, border: '6px solid rgba(255,255,255,0.95)', boxShadow: '0 20px 50px rgba(0,0,0,0.2), inset 0 0 30px rgba(255,255,255,0.6)', opacity: prog(t, tCla - 0.1, 0.3) * (1 - prog(tReal, tFz, 0.2)) }} />
           </div>
         </div>
       </AbsoluteFill>
       {/* véu do congelamento + texto da busca */}
-      <AbsoluteFill style={{ background: `radial-gradient(70% 50% at 50% 52%, rgba(255,255,255,${0.75 * frz}), rgba(225,228,234,${0.55 * frz}))`, opacity: 1 - fall }} />
+      <AbsoluteFill style={{ background: `radial-gradient(70% 50% at 50% 52%, rgba(255,255,255,${0.45 * frz}), rgba(225,228,234,${0.3 * frz}))`, opacity: 1 - fall }} />
       <div style={{ position: 'absolute', top: 1420, width: 1080, textAlign: 'center', opacity: 1 - prog(tReal, drop - 0.2, 0.3) }}>
         <Letters t={tReal} s={W(2, 'verdadeira')} text="a verdadeira situação" size={74} weight={600} stagger={0.018} />
       </div>

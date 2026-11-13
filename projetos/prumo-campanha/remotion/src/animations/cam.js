@@ -18,7 +18,7 @@ export const kf = (t, keys) => {
 // transforma um ponto do "mundo" (canvas) para a tela 1080×1920
 export const camTransform = (c) => `translate(540px, 960px) scale(${c.s ?? 1}) rotateX(${c.rx ?? 0}deg) rotateY(${c.ry ?? 0}deg) rotate(${c.rz ?? 0}deg) translate(${-(c.x ?? 0)}px, ${-(c.y ?? 0)}px)`;
 // velocidade da câmera em px de tela por quadro (60 fps) → desfoque direcional
-export const camBlur = (t, keys, k = 0.11, max = 40) => {
+export const camBlur = (t, keys, k = 0.06, max = 16) => {
   const a = kf(t, keys), b = kf(t - 1 / FPS, keys);
   const s = a.s ?? 1;
   const dx = ((a.x ?? 0) - (b.x ?? 0)) * s, dy = ((a.y ?? 0) - (b.y ?? 0)) * s;

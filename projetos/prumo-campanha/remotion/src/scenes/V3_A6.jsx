@@ -17,10 +17,10 @@ export const V3_A6 = ({ a }) => {
   const tAdm = W(6, 'administrar'), tDes = W(6, 'desafio'), tAco = W(6, 'Acompanhar'), tNao = W(6, 'não'), tDel = W(6, 'deles');
   const { C: Cc, V, P, O } = POS1;
   const keys = [
-    [a, { x: Cc[0], y: Cc[1], s: 0.62, rz: -3, rx: 10 }, GLIDE],
-    [tDes, { x: O[0], y: O[1], s: 0.62, rz: 3, rx: 10 }, GLIDE],
-    [tAco + 0.4, { x: 0, y: 0, s: 0.36, rz: 0, rx: 0 }, GLIDE],
-    [MUS.V4 - 0.75, { x: 0, y: 0, s: 0.42, rz: 0, rx: 0 }, DIVE],
+    [a, { x: -60, y: -500, s: 0.46, rz: -2, rx: 8 }, GLIDE],
+    [tDes, { x: 60, y: -440, s: 0.44, rz: 2, rx: 6 }, GLIDE],
+    [tAco + 0.4, { x: 0, y: 640, s: 0.36, rz: 0, rx: 0 }, GLIDE],
+    [MUS.V4 - 0.75, { x: 0, y: 560, s: 0.4, rz: 0, rx: 0 }, DIVE],
     [MUS.V4 + 0.05, { x: 0, y: -60, s: 6, rz: 0, rx: 0 }],
   ];
   const fin = spr(t, B(tAco + 0.15), { damping: 14, stiffness: 140 });

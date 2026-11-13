@@ -8,7 +8,7 @@ export const SFX = () => {
   const a4 = { tab: B(W(4, 'acompanhar') + 0.25), mov: B(W(4, 'movimentações')), row: B(B(W(4, 'movimentações')) + 1.1), rec: B(W(4, 'receitas')), des: B(W(4, 'despesas')), ag: B(W(4, 'visualizar') + 0.1), comp: B(W(4, 'compromissos')) };
   a4.aviso = B(a4.comp + 0.6);
   const tCta = FIM(7) + 0.1;
-  return [
+  const all = [
     // ato 1 · plano-sequência
     [W(1, 'Empreender') - 0.02, 'cascata_letras', 0.42, 'letras de «Empreender» caem'],
     [W(1, 'muita') - 0.1, 'telas_flutuam', 0.30, 'ícones começam a orbitar'],
@@ -106,6 +106,16 @@ export const SFX = () => {
     [tCta + 0.98, 'toque_ui', 0.55, 'toque'],
     [tCta + 1.02, 'ondulacao', 0.40, 'onda do toque'],
   ].sort((x, y) => x[0] - y[0]);
+  // v6 · limpeza: dois sons a menos de 0,2 s → fica só o mais forte; sons fracos (<0,25) só se estiverem isolados por 0,4 s
+  const out = [];
+  for (const c of all) {
+    const near = out.filter((o) => Math.abs(o[0] - c[0]) < 0.2);
+    if (near.length && near.some((o) => o[2] >= c[2])) continue;
+    for (const o of near) out.splice(out.indexOf(o), 1);
+    if (c[2] < 0.25 && out.some((o) => Math.abs(o[0] - c[0]) < 0.4)) continue;
+    out.push(c);
+  }
+  return out;
 };
 // Trilha: a edição (filtros, silêncio, cortes) já está no arquivo; aqui só o arco de volume × ducking sob a voz
 export const TRILHA = { arquivo: 'audio/trilha.wav' };

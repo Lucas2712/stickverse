@@ -25,12 +25,12 @@ export const V3_A3 = ({ a }) => {
   const orb = progT(t, tGe - 0.3, 4.0, (x) => x);   // órbita lenta + aproximação do celular na parte clara
   const light = prog(t, tGe - 0.35, 0.9, inOut);                // cortina da agulha: azul → claro
   const callouts = [['in', 'Movimentações', -1, 640], ['grid', 'Receitas e despesas', 1, 790], ['bell', 'Compromissos', -1, 1060], ['chart', 'Relatórios', 1, 1300]];
-  const giant = (w, s, e, y) => { const k = progT(t, s - 0.1, 1.2, expoOut); const o = prog(t, e - 0.1, 0.3); return <div key={w} style={{ position: 'absolute', top: y, left: lerp(1200, -260, k) - o * 600, ...display(800), fontSize: 300, color: 'rgba(255,255,255,0.10)', whiteSpace: 'nowrap', letterSpacing: '-0.05em' }}>{w}</div>; };
+  const giant = (w, s, e, y) => { const k = progT(t, s - 0.1, 1.2, expoOut); const o = prog(t, e - 0.1, 0.3); return <div key={w} style={{ position: 'absolute', top: y, left: lerp(1200, -260, k) - o * 600, ...display(800), fontSize: 300, color: 'rgba(255,255,255,0.08)', whiteSpace: 'nowrap', letterSpacing: '-0.05em' }}>{w}</div>; };
   const word = (w, s, e) => { const k = spr(t, s - 0.05, { damping: 14, stiffness: 190 }); const o = prog(t, e - 0.12, 0.2, expoIn); return <div key={w} style={{ position: 'absolute', top: 1440, width: 1080, textAlign: 'center', ...display(700), fontSize: 130, color: '#fff', opacity: Math.min(1, k * 2) * (1 - o), transform: `translateY(${(1 - k) * 80 - o * 60}px) scale(${0.85 + 0.15 * k})`, filter: `blur(${o * 12}px)` }}>{w}</div>; };
   return (
     <AbsoluteFill>
       <BlueBg t={t}>
-        {giant('organização', tOrg, tCla, 380)}{giant('clareza', tCla, tDir, 820)}{giant('direção', tDir, tEx, 1180)}
+        {giant('organização', tOrg, tCla, 210)}{giant('clareza', tCla, tDir, 1600)}{giant('direção', tDir, tEx, 210)}
         {/* coluna orientada pelo prumo, em 3D com órbita de câmera */}
         <AbsoluteFill style={{ perspective: 1800 }}>
           <div style={{ position: 'absolute', left: 540, top: 960, transformStyle: 'preserve-3d', transform: `rotateY(${orbit}deg) rotateX(${8 * (1 - comp)}deg) scale(${lerp(1, 0.55, comp)}) translateY(${comp * 60}px)` }}>
@@ -65,9 +65,9 @@ export const V3_A3 = ({ a }) => {
           {callouts.map(([ic, l, side, y], i) => {
             const k = spr(t, B(tGe + 0.45 + i * 0.3, 0.12), { damping: 13, stiffness: 190 });
             return (
-              <div key={l} style={{ position: 'absolute', top: y - 46, [side < 0 ? 'left' : 'right']: 20, display: 'flex', alignItems: 'center', gap: 10, padding: '12px 18px 12px 12px', borderRadius: 24, background: '#fff', boxShadow: '0 14px 34px rgba(0,0,0,0.12)', transform: `translate(${(1 - k) * side * -385}px, ${(1 - k) * (1000 - y) + Math.sin(t * 2 + i) * 8}px) scale(${lerp(0.3, 1, k)}) rotate(${(1 - k) * side * 25}deg)`, transformOrigin: side < 0 ? '100% 50%' : '0% 50%', opacity: Math.min(1, k * 3), maxWidth: 270 }}>
-                <div style={{ width: 46, height: 46, borderRadius: 14, background: C.blue, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}><Icon name={ic} size={27} color="#fff" /></div>
-                <span style={{ ...text(600), fontSize: 24, color: C.ink, lineHeight: 1.1 }}>{l}</span>
+              <div key={l} style={{ position: 'absolute', top: y - 46, [side < 0 ? 'left' : 'right']: 14, display: 'flex', alignItems: 'center', gap: 12, padding: '14px 20px 14px 14px', borderRadius: 26, background: '#fff', boxShadow: '0 14px 34px rgba(0,0,0,0.12)', transform: `translate(${(1 - k) * side * -385}px, ${(1 - k) * (1000 - y) + Math.sin(t * 2 + i) * 8}px) scale(${lerp(0.3, 1, k)}) rotate(${(1 - k) * side * 25}deg)`, transformOrigin: side < 0 ? '100% 50%' : '0% 50%', opacity: Math.min(1, k * 3), maxWidth: 300 }}>
+                <div style={{ width: 54, height: 54, borderRadius: 16, background: C.blue, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}><Icon name={ic} size={32} color="#fff" /></div>
+                <span style={{ ...text(700), fontSize: 29, color: C.ink, lineHeight: 1.1 }}>{l}</span>
               </div>
             );
           })}
@@ -84,10 +84,10 @@ export const V3_A3 = ({ a }) => {
       )}
       {/* selo da marca */}
       <div style={{ position: 'absolute', left: lerp(540, 110, bug) - lerp(130, 44, bug), top: lerp(920, 120, bug) - lerp(130, 44, bug), transform: `scale(${1 + (t > tPr ? 0.25 * Math.exp(-(t - tPr) * 5) : 0)})`, opacity: 1 - prog(t, tGe - 0.3, 0.3) * 0 }}>
-        <AppIcon size={lerp(260, 88, bug)} style={{ borderRadius: lerp(70, 24, bug) }} dark={light > 0.5} />
+        <AppIcon size={lerp(260, 110, bug)} style={{ borderRadius: lerp(70, 30, bug) }} dark={light > 0.5} />
       </div>
-      <div style={{ position: 'absolute', left: lerp(0, 210, bug), top: lerp(1110, 128, bug), width: lerp(1080, 400, bug), display: 'flex', justifyContent: bug > 0.5 ? 'flex-start' : 'center', opacity: 1 - prog(t, tOrg - 0.3, 0.3) + prog(t, tPr - 0.1, 0.3) }}>
-        <Wordmark size={lerp(230, 64, bug)} color={light > 0.5 ? C.ink : '#fff'} />
+      <div style={{ position: 'absolute', left: lerp(0, 250, bug), top: lerp(1110, 128, bug), width: lerp(1080, 400, bug), display: 'flex', justifyContent: bug > 0.5 ? 'flex-start' : 'center', opacity: 1 - prog(t, tOrg - 0.3, 0.3) + prog(t, tPr - 0.1, 0.3) }}>
+        <Wordmark size={lerp(230, 84, bug)} color={light > 0.5 ? C.ink : '#fff'} />
       </div>
     </AbsoluteFill>
   );

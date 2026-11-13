@@ -63,7 +63,7 @@ export const V3_A4 = ({ a }) => {
   const tCom = W(4, 'Com'), tAco = W(4, 'acompanhar'), tMov = B(W(4, 'movimentações')), tOrg = W(4, 'organizar'), tRec = B(W(4, 'receitas')), tDes = B(W(4, 'despesas'));
   const tVis = W(4, 'visualizar'), tComp = B(W(4, 'compromissos')), tTudo = W(4, 'Tudo'), tSim = B(W(4, 'simples')), tCla = B(W(4, 'clara')), tOrgz = B(W(4, 'organizada'));
   const tTab = B(tAco + 0.25), tRow = B(tMov + 1.1), tAg = B(tVis + 0.1), tAviso = B(tComp + 0.6);
-  const Z = (sx, sy, s, rz = 0) => { const [x, y] = S(sx, sy); return { x, y, s, rz, rx: 0, ry: 0 }; };
+  const Z = (sx, sy, s0, rz = 0) => { const s = s0 > 1 ? 1 + (s0 - 1) * 0.68 : s0; const [x, y] = S(sx, sy); return { x, y: y + (s0 > 1 ? 110 / s : 0), s, rz, rx: 0, ry: 0 }; };
   const keys = [
     [a, { ...Z(276, 596, 0.78), ry: 12 }, GLIDE],
     [tAco - 0.3, Z(276, 640, 0.86), WHIP],
@@ -121,7 +121,7 @@ export const V3_A4 = ({ a }) => {
               {/* holofote */}
               <svg width={SW} height={SH} style={{ position: 'absolute', inset: 0, opacity: spotK, pointerEvents: 'none' }}>
                 <defs><mask id="spot4"><rect width={SW} height={SH} fill="#fff" /><rect x={focus[0]} y={focus[1]} width={focus[2]} height={focus[3]} rx="26" fill="#000" /></mask></defs>
-                <rect width={SW} height={SH} fill="rgba(20,24,32,0.24)" mask="url(#spot4)" />
+                <rect width={SW} height={SH} fill="rgba(20,24,32,0.07)" mask="url(#spot4)" />
               </svg>
               {/* lembrete */}
               <div style={{ position: 'absolute', left: 16, right: 16, top: 70, transform: `translateY(${(1 - aviso) * -260}px)`, opacity: Math.min(1, aviso * 2) * (1 - prog(t, tTudo + 0.3, 0.3)), padding: '22px 24px', borderRadius: 34, background: 'rgba(255,255,255,0.96)', boxShadow: '0 24px 60px rgba(0,0,0,0.22)', display: 'flex', gap: 18, alignItems: 'center' }}>
@@ -136,6 +136,17 @@ export const V3_A4 = ({ a }) => {
             </Phone>
           </At>
         </World>
+        {/* faixas limpas: o celular passa por baixo do trilho e da legenda */}
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 400, background: 'linear-gradient(180deg, rgba(245,245,247,1) 72%, rgba(245,245,247,0))', opacity: railIn }} />
+        <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 600, background: 'linear-gradient(0deg, rgba(245,245,247,1) 70%, rgba(245,245,247,0))', opacity: railIn }} />
+        {/* legenda da funcionalidade atual (uma por vez) */}
+        {[['Movimentações', 'tudo o que entra e sai', tCom + 0.1, tOrg], ['Receitas e despesas', 'separadas com um toque', tOrg, tVis], ['Compromissos', 'lembrete antes de vencer', tVis, tTudo - 0.15]].map(([h, sub2, s, e], i) => {
+          const k = spr(t, s, { damping: 16, stiffness: 170 }); const o = prog(t, e - 0.15, 0.25, expoIn);
+          return <div key={h} style={{ position: 'absolute', top: 1430, width: 1080, textAlign: 'center', opacity: Math.min(1, k * 2) * (1 - o), transform: `translateY(${(1 - k) * 50 - o * 30}px)` }}>
+            <div style={{ ...display(700), fontSize: 76, color: C.ink, letterSpacing: '-0.035em' }}>{h}</div>
+            <div style={{ ...text(500), fontSize: 38, color: C.ink2, marginTop: 4 }}>{sub2}</div>
+          </div>;
+        })}
         {/* trilho das etapas */}
         <div style={{ position: 'absolute', top: 210, left: 90, right: 90, height: 100, opacity: railIn, transform: `translateY(${(1 - railIn) * -40}px)` }}>
           <div style={{ position: 'absolute', left: 40, right: 40, top: 30, height: 6, borderRadius: 3, background: 'rgba(29,29,31,0.12)' }} />
@@ -154,7 +165,7 @@ export const V3_A4 = ({ a }) => {
           return <div key={w} style={{ position: 'absolute', top: 1380, width: 1080, textAlign: 'center', ...display(800), fontSize: 168, color: i === 2 ? C.blue : C.ink, letterSpacing: '-0.05em', opacity: Math.min(1, k * 2) * (1 - o), transform: `translateY(${(1 - k) * 120 - o * 80}px) scale(${1.25 - 0.25 * k})`, filter: `blur(${o * 14}px)` }}>{w}</div>;
         })}
         <div style={{ position: 'absolute', top: 1300, width: 1080, textAlign: 'center', ...display(500), fontSize: 56, color: C.ink2, opacity: prog(t, tTudo, 0.3) }}>Tudo de uma forma mais</div>
-        <div style={{ position: 'absolute', top: 1615, width: 1080, display: 'flex', justifyContent: 'center', opacity: railIn }}><DemoTag /></div>
+        <div style={{ position: 'absolute', top: 1600, width: 1080, display: 'flex', justifyContent: 'center', opacity: railIn }}><DemoTag /></div>
       </LightBg>
     </AbsoluteFill>
   );

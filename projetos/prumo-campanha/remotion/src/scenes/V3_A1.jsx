@@ -106,8 +106,8 @@ export const V3_A1 = ({ a }) => {
     [tOp - wp, { x: P[0] + 20, y: P[1] + 20, s: 1.06, rx: 0, rz: -1 }, WHIP],
     [tOp, { x: O[0], y: O[1], s: 1.02, rx: 0, rz: 1 }],
     [tMas - 0.15, { x: O[0] - 10, y: O[1] + 20, s: 1.06, rx: 0, rz: 1 }, inOut],
-    [tMas + 0.9, { x: 0, y: 0, s: 0.4, rx: 26, rz: -9 }],
-    [tGr - 0.75, { x: 0, y: 40, s: 0.47, rx: 30, rz: -12 }, DIVE],
+    [tMas + 0.9, { x: 0, y: 0, s: 0.5, rx: 20, rz: -7 }],
+    [tGr - 0.75, { x: 0, y: 40, s: 0.58, rx: 22, rz: -9 }, DIVE],
     [tGr + 0.35, { x: 0, y: 0, s: 7.5, rx: 0, rz: -4 }],
   ];
   const fin = spr(t, tFin - 0.05, { damping: 13, stiffness: 150 });
@@ -127,20 +127,20 @@ export const V3_A1 = ({ a }) => {
         })}
         <At x={T[0]} y={T[1] + 60} w={1100} h={360}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: 1 - titleOut }}>
-            <Letters t={t} s={tE} text="Empreender" size={190} stagger={0.035} />
+            <Letters t={t} s={Math.max(0, tE - 0.22)} text="Empreender" size={190} stagger={0.03} />
             <div style={{ display: 'flex', gap: 22, marginTop: 6 }}>
               {['já', 'exige', 'muita', 'coisa.'].map((w, i) => { const s = W(1, w); const k = spr(t, s - 0.04, { damping: 14, stiffness: 200 }); return <span key={w} style={{ ...display(i > 1 ? 700 : 500), fontSize: 78, color: i > 1 ? C.blue : C.ink2, transform: `translateY(${(1 - k) * 70}px) scale(${0.6 + 0.4 * k})`, opacity: Math.min(1, k * 2) }}>{w}</span>; })}
             </div>
           </div>
         </At>
         {/* as quatro frentes */}
-        <At x={Cc[0]} y={Cc[1]} w={PW} h={PH}><Clientes t={t} s={tCli} /></At>
-        <At x={V[0]} y={V[1]} w={PW} h={PH}><Vendas t={t} s={tVen} /></At>
-        <At x={P[0]} y={P[1]} w={PW} h={PH}><Pagamentos t={t} s={tPag} /></At>
-        <At x={O[0]} y={O[1]} w={PW} h={PH}><Operacao t={t} s={tOp} /></At>
+        <At x={Cc[0]} y={Cc[1]} w={PW} h={PH}><Clientes t={t} s={tCli - 0.32} /></At>
+        <At x={V[0]} y={V[1]} w={PW} h={PH}><Vendas t={t} s={tVen - 0.32} /></At>
+        <At x={P[0]} y={P[1]} w={PW} h={PH}><Pagamentos t={t} s={tPag - 0.32} /></At>
+        <At x={O[0]} y={O[1]} w={PW} h={PH}><Operacao t={t} s={tOp - 0.32} /></At>
         {/* inundação de tarefas e cobranças, em perspectiva */}
-        {Array.from({ length: 26 }, (_, i) => {
-          const s = tMas + 0.35 + Math.pow(i / 26, 0.75) * (tGr - tMas - 0.9);
+        {Array.from({ length: 12 }, (_, i) => {
+          const s = tMas + 0.35 + Math.pow(i / 12, 0.75) * (tGr - tMas - 0.9);
           const k = spr(t, B(s, 0.08), { damping: 15, stiffness: 170 });
           const fromAng = rnd(i, 1) * Math.PI * 2;
           const x = lerp(Math.cos(fromAng) * 3200, (rnd(i, 2) - 0.5) * 2300, k), y = lerp(Math.sin(fromAng) * 3800, (rnd(i, 3) - 0.5) * 3200, k);
