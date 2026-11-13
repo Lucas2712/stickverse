@@ -1,22 +1,73 @@
 {
   "titulo": "Juninho · Episódio 5",
-  "descricao": "",
-  "tema": "",
-  "duracao": 30,
+  "descricao": "Episódio 5 da série ilustrada do Juninho (modo cartoon narrativo, virada de suspense). Narração acelerada (119,9 → 96,6 s), sem música, efeitos reais +8 dB.",
+  "tema": "O homem misterioso e a foto da turma",
+  "duracao": 100.0,
   "fps": 30,
-  "fontes": ["geist", "geist-mono"],
-  "poster": null,
+  "fontes": [],
+  "poster": 68.8,
   "legendas": {
     "ativo": true,
-    "y": 1430,
-    "tamanho": 64,
-    "peso": 600,
-    "destaques": [],
+    "estilo": "cartoon",
+    "y": 1330,
+    "tamanho": 78,
+    "peso": 800,
+    "fonte": "var(--v-display)",
+    "corDestaque": "var(--must)",
+    "destaques": [
+      "bagunçado!",
+      "visual,",
+      "estranho.",
+      "cabelo,",
+      "lanchonete.",
+      "normal,",
+      "homem",
+      "segundos",
+      "Central?\"",
+      "sim.",
+      "sorriso",
+      "reencontro?\"",
+      "embora.",
+      "esquisito.\"",
+      "desconhecido.",
+      "ideia?\"",
+      "entregue.",
+      "desconfiado.",
+      "pessoa?",
+      "notificação.",
+      "foto",
+      "silêncio.",
+      "turma.",
+      "Lara",
+      "estranho.",
+      "vermelho.",
+      "zoom",
+      "assustado.",
+      "anos.",
+      "imaginava.",
+      "Juninho",
+      "Lara",
+      "sozinho",
+      "voltar."
+    ],
     "ocultar": []
   },
   "audio": {
-    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.5 },
+    "volumes": {
+      "narracao": 1.0,
+      "musica": 0,
+      "efeitos": 0.5
+    },
     "musica": null,
-    "ducking": { "ativo": true, "reducao": 0.4 }
-  }
+    "ducking": {
+      "ativo": false
+    }
+  },
+  "fontesProjeto": [
+    {
+      "familia": "Inter",
+      "arquivo": "fontes/inter.woff2",
+      "descritores": "font-weight:100 900;font-display:block"
+    }
+  ]
 }
