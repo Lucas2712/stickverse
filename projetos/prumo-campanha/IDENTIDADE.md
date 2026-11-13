@@ -8,3 +8,9 @@
 - **Aberturas 2D** (`Cards2D.jsx`, `A_Abertura.jsx`, `G_Retorno.jsx`): as 4 frentes da rotina (Clientes, Vendas, Pagamentos, Operação) em cards com micro-animação; no ato 1 são soterradas por tarefas e notificações; no ato 6 voltam alinhadas com ✓ e o card «Finanças · Prumo» entra resolvido. (A mesa 3D da v1 foi retirada a pedido do usuário.)
 - **Ritmo:** 60 fps; todas as animações 45% mais rápidas (`SPEED` em `animations/motion.js`).
 - **Interface conceitual** (`AppUI.jsx`, `Screens.jsx`): Início, Movimentações (com filtro Receitas/Despesas), Agenda (compromissos + lembrete), Pessoal/Negócio, Reserva de impostos, Relatório do mês com categorias. Valores sempre «R$ •••»; selo «Demonstração · dados ilustrativos».
+
+## v3 · linguagem de movimento
+- Câmera virtual com chicotes (desfoque direcional), mergulhos através da interface, recuos que revelam o todo, órbitas 3D.
+- A agulha da bússola é o fio condutor: cortina de transição, a busca no caos, a trava ↓ que faz tudo cair na direção do prumo, o logo.
+- Tipografia letra a letra com máscara, sempre dentro da cena (lente, fluxos, painéis).
+- Demonstração em câmera macro com holofote e trilho de etapas.

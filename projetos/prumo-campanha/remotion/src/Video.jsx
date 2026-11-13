@@ -1,27 +1,27 @@
 import React from 'react';
-import { AbsoluteFill, Sequence, Audio, staticFile, interpolate, useCurrentFrame } from 'remotion';
+import { AbsoluteFill, Sequence, Audio, staticFile, interpolate } from 'remotion';
 import { FPS, C } from './styles/tokens';
 import { useFonte } from './components/Fonte';
 import { N, W, FIM, DURACAO, MUS } from './audio/timeline';
 import { SFX, TRILHA, volTrilha } from './audio/cues';
-import { A_Abertura } from './scenes/A_Abertura';
-import { B_Problema } from './scenes/B_Problema';
-import { C_Marca, FB, IRIS } from './scenes/C_Marca';
-import { E_Demos } from './scenes/E_Demos';
-import { F_Clareza } from './scenes/F_Clareza';
-import { G_Retorno } from './scenes/G_Retorno';
-import { H_Final } from './scenes/H_Final';
+import { V3_A1 } from './scenes/V3_A1';
+import { V3_A2 } from './scenes/V3_A2';
+import { V3_A3 } from './scenes/V3_A3';
+import { V3_A4 } from './scenes/V3_A4';
+import { V3_A5 } from './scenes/V3_A5';
+import { V3_A6 } from './scenes/V3_A6';
+import { V3_A7 } from './scenes/V3_A7';
 
 export { DURACAO };
-// [componente, início, fim] (s). As sobreposições são as transições.
+// v3 · sete atos contínuos; cada ato tem a sua própria câmera e as transições acontecem dentro deles
 export const CENAS = () => [
-  [A_Abertura, 0, W(2, 'Quando') + 0.2],
-  [B_Problema, W(2, 'Quando') - 0.35, IRIS() + 0.8],
-  [C_Marca, FB().a - 0.2, N[3] + 0.6],
-  [E_Demos, N[3] - 0.4, N[4] - 0.05],
-  [F_Clareza, N[4] - 0.3, MUS.V3 + 0.3],
-  [G_Retorno, MUS.V3, FIM(6) + 0.85],
-  [H_Final, FIM(6) + 0.6, DURACAO],
+  [V3_A1, 0, W(2, 'Quando') + 0.15],
+  [V3_A2, W(2, 'Quando') - 0.3, N[2] + 0.05],
+  [V3_A3, N[2] - 0.25, N[3] - 0.05],
+  [V3_A4, N[3] - 0.4, FIM(4) + 0.45],
+  [V3_A5, FIM(4) + 0.3, N[5] + 0.1],
+  [V3_A6, N[5] - 0.1, MUS.V4 + 0.1],
+  [V3_A7, MUS.V4 - 0.05, DURACAO],
 ];
 const f = (s) => Math.round(s * FPS);
 export const Video = ({ comTrilha = true, comEfeitos = true }) => {
@@ -29,17 +29,11 @@ export const Video = ({ comTrilha = true, comEfeitos = true }) => {
   return (
     <AbsoluteFill style={{ background: C.bg }}>
       {CENAS().map(([Comp, a, b], i) => (
-        <Sequence key={i} from={f(a)} durationInFrames={f(b) - f(a)} layout="none">
-          <AbsoluteFill><Comp a={a} /></AbsoluteFill>
-        </Sequence>
+        <Sequence key={i} from={f(a)} durationInFrames={f(b) - f(a)} layout="none"><AbsoluteFill><Comp a={a} /></AbsoluteFill></Sequence>
       ))}
-      {N.map((s, i) => (
-        <Sequence key={`n${i}`} from={f(s)} layout="none"><Audio src={staticFile(`audio/cena${i + 1}.mp3`)} volume={1} /></Sequence>
-      ))}
-      {comTrilha && TRILHA.arquivo && <Audio src={staticFile(TRILHA.arquivo)} volume={(fr) => volTrilha(fr / FPS)} />}
-      {comEfeitos && SFX().map(([s, nome, g, , dur], i) => (
-        <Sequence key={`s${i}`} from={Math.max(0, f(s))} durationInFrames={dur ? f(dur) : undefined} layout="none"><Audio src={staticFile(`sfx/${nome}.wav`)} volume={g} /></Sequence>
-      ))}
+      {N.map((s, i) => <Sequence key={`n${i}`} from={f(s)} layout="none"><Audio src={staticFile(`audio/cena${i + 1}.mp3`)} volume={1} /></Sequence>)}
+      {comTrilha && <Audio src={staticFile(TRILHA.arquivo)} volume={(fr) => volTrilha(fr / FPS)} />}
+      {comEfeitos && SFX().map(([s, nome, g], i) => <Sequence key={`s${i}`} from={Math.max(0, f(s))} layout="none"><Audio src={staticFile(`sfx/${nome}.wav`)} volume={g} /></Sequence>)}
     </AbsoluteFill>
   );
 };
