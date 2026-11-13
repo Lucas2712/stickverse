@@ -1,0 +1,32 @@
+# Transcrição
+
+Duração da narração: **96.65 s** · 310 palavras · 3.2 palavras/s
+
+## Texto
+
+Vocês escolheram um bagunçado! E Juninho finalmente decidiu dar um trato no visual, mas ele não imaginava que aquele dia terminaria de um jeito muito estranho. Depois de cortar o cabelo, foi direto para o trabalho na lanchonete. Estava tudo normal, até que um homem entrou no estabelecimento. Ele olhou para Juninho por alguns segundos e perguntou: "Você é o Juninho que estudou no Colégio Central?" Juninho estranhou, mas respondeu que sim. O homem deu um sorriso estranho e falou: "Então você vai mesmo ao reencontro?" Antes que Juninho pudesse perguntar como ele sabia disso, o homem pagou o pedido e foi embora. Juninho ficou pensando: "Que sujeito esquisito." Mais tarde, quando chegou em casa, pegou o celular e encontrou uma mensagem de um número desconhecido. A mensagem dizia: "Você ainda acredita que aquele reencontro vai ser uma boa ideia?" Juninho tentou responder, mas a mensagem não foi entregue. Ele começou a ficar desconfiado. Quem era aquela pessoa? E como sabia do reencontro? Foi então que recebeu outra notificação. Dessa vez, era uma foto antiga da época da escola. Juninho abriu a imagem e ficou em silêncio. Era uma foto da antiga turma. Ele aparecia ao lado de Lara e de vários colegas, mas havia algo estranho. Uma pessoa na foto estava marcada com um círculo vermelho. Juninho deu zoom na imagem, e quando percebeu quem era aquela pessoa, ficou completamente assustado. Era alguém que ele não via há muitos anos. Mas por que estavam tentando lembrar justamente daquela pessoa? E o mais estranho: como alguém conseguiu aquela foto? Juninho percebeu que o reencontro talvez escondesse muito mais do que ele imaginava. E agora queremos saber: o que vocês acham que Juninho deve fazer? Perguntar diretamente para Lara sobre a foto, investigar sozinho quem enviou a mensagem? Comenta aí, porque parece que o passado de Juninho está prestes a voltar.
+
+## Correções pelo roteiro
+
+- falado mas não está no roteiro: «um» (mantido)
+- ouvido «apareceu» → roteiro «aparecia»
+- no roteiro mas não foi ouvido: «ou» (sem tempo, fora das legendas)
+
+## Pausas (candidatas a corte de cena)
+
+| de | até | pausa | entre |
+|---|---|---|---|
+| 8.68 | 9.00 | 0.32 s | «estranho.» → «Depois» |
+| 19.56 | 20.14 | 0.58 s | «Central?"» → «Juninho» |
+| 22.14 | 22.52 | 0.38 s | «sim.» → «O» |
+| 33.20 | 33.52 | 0.32 s | «esquisito."» → «Mais» |
+| 43.08 | 43.40 | 0.32 s | «responder,» → «mas» |
+| 44.80 | 45.18 | 0.38 s | «entregue.» → «Ele» |
+| 46.66 | 47.02 | 0.36 s | «desconfiado.» → «Quem» |
+| 62.90 | 63.30 | 0.40 s | «estranho.» → «Uma» |
+| 80.08 | 80.40 | 0.32 s | «foto?» → «Juninho» |
+| 84.52 | 85.00 | 0.48 s | «imaginava.» → «E» |
+
+## Palavras com tempo
+
+Vocês@0.00 escolheram@0.32 um@0.86 bagunçado!@1.06 E@1.72 Juninho@2.12 finalmente@2.42 decidiu@2.88 dar@3.50 um@3.64 trato@3.74 no@4.06 visual,@4.16 mas@4.66 ele@4.94 não@5.18 imaginava@5.46 que@5.98 aquele@6.12 dia@6.42 terminaria@6.70 de@7.24 um@7.34 jeito@7.42 muito@7.58 estranho.@8.12 Depois@9.00 de@9.20 cortar@9.36 o@9.62 cabelo,@9.72 foi@10.22 direto@10.36 para@10.78 o@10.92 trabalho@11.00 na@11.28 lanchonete.@11.42 Estava@12.16 tudo@12.36 normal,@12.54 até@13.06 que@13.34 um@13.48 homem@13.66 entrou@13.86 no@14.24 estabelecimento.@14.32 Ele@15.20 olhou@15.34 para@15.50 Juninho@15.68 por@16.02 alguns@16.18 segundos@16.42 e@16.86 perguntou:@17.12 "Você@17.82 é@18.04 o@18.20 Juninho@18.24 que@18.58 estudou@18.72 no@18.94 Colégio@19.04 Central?"@19.32 Juninho@20.14 estranhou,@20.52 mas@21.22 respondeu@21.44 que@21.82 sim.@21.94 O@22.52 homem@22.58 deu@22.72 um@22.88 sorriso@22.96 estranho@23.28 e@23.84 falou:@23.92 "Então@24.36 você@24.64 vai@25.02 mesmo@25.24 ao@25.56 reencontro?"@25.70 Antes@26.16 que@26.62 Juninho@26.78 pudesse@27.02 perguntar@27.34 como@27.80 ele@28.06 sabia@28.20 disso,@28.40 o@28.96 homem@29.02 pagou@29.14 o@29.58 pedido@29.66 e@30.00 foi@30.18 embora.@30.32 Juninho@30.86 ficou@31.16 pensando:@31.34 "Que@31.82 sujeito@32.10 esquisito."@32.54 Mais@33.52 tarde,@33.68 quando@34.16 chegou@34.22 em@34.44 casa,@34.58 pegou@34.98 o@35.24 celular@35.34 e@35.66 encontrou@35.86 uma@36.20 mensagem@36.32 de@36.72 um@36.86 número@36.96 desconhecido.@37.14 A@38.14 mensagem@38.22 dizia:@38.56 "Você@39.16 ainda@39.36 acredita@39.58 que@40.02 aquele@40.14 reencontro@40.32 vai@40.80 ser@40.90 uma@41.04 boa@41.18 ideia?"@41.34 Juninho@41.90 tentou@42.24 responder,@42.66 mas@43.40 a@43.54 mensagem@43.60 não@43.96 foi@44.20 entregue.@44.38 Ele@45.18 começou@45.34 a@45.66 ficar@45.76 desconfiado.@45.90 Quem@47.02 era@47.14 aquela@47.36 pessoa?@47.52 E@47.94 como@48.34 sabia@48.54 do@48.94 reencontro?@49.06 Foi@49.84 então@50.02 que@50.32 recebeu@50.44 outra@50.88 notificação.@51.20 Dessa@52.14 vez,@52.36 era@52.60 uma@52.88 foto@53.00 antiga@53.20 da@53.70 época@53.82 da@54.06 escola.@54.18 Juninho@54.46 abriu@55.12 a@55.46 imagem@55.52 e@55.84 ficou@56.20 em@56.38 silêncio.@56.54 Era@57.24 uma@57.42 foto@57.58 da@57.82 antiga@57.98 turma.@58.28 Ele@59.00 aparecia@59.16 ao@59.54 lado@59.66 de@59.82 Lara@59.98 e@60.24 de@60.48 vários@60.58 colegas,@60.88 mas@61.68 havia@61.86 algo@62.06 estranho.@62.30 Uma@63.30 pessoa@63.46 na@63.82 foto@63.94 estava@64.26 marcada@64.52 com@64.98 um@65.14 círculo@65.32 vermelho.@65.58 Juninho@66.44 deu@66.68 zoom@66.82 na@67.10 imagem,@67.26 e@67.56 quando@67.90 percebeu@68.16 quem@68.70 era@68.96 aquela@69.20 pessoa,@69.36 ficou@70.04 completamente@70.26 assustado.@70.94 Era@72.10 alguém@72.24 que@72.44 ele@72.54 não@72.62 via@72.76 há@73.00 muitos@73.16 anos.@73.50 Mas@74.14 por@74.28 que@74.46 estavam@74.66 tentando@74.92 lembrar@75.28 justamente@75.60 daquela@76.10 pessoa?@76.68 E@77.34 o@77.46 mais@77.56 estranho:@77.78 como@78.48 alguém@78.68 conseguiu@79.02 aquela@79.54 foto?@79.74 Juninho@80.40 percebeu@80.74 que@81.26 o@81.36 reencontro@81.40 talvez@81.94 escondesse@82.30 muito@82.90 mais@83.32 do@83.70 que@83.82 ele@83.92 imaginava.@84.00 E@85.00 agora@85.08 queremos@85.30 saber:@85.52 o@86.14 que@86.24 vocês@86.28 acham@86.52 que@86.88 Juninho@86.96 deve@87.20 fazer?@87.34 Perguntar@87.94 diretamente@88.40 para@89.04 Lara@89.22 sobre@89.46 a@89.70 foto,@89.80 investigar@90.30 sozinho@90.82 quem@91.28 enviou@91.58 a@91.96 mensagem?@92.00 Comenta@92.74 aí,@93.02 porque@93.46 parece@93.60 que@93.94 o@94.14 passado@94.18 de@94.54 Juninho@94.72 está@95.14 prestes@95.40 a@95.98 voltar.@96.00
