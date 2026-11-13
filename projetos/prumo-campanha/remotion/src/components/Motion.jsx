@@ -7,7 +7,7 @@ import { camTransform, camBlur, kf } from '../animations/cam';
 // Mundo com câmera e desfoque de movimento direcional (filtro SVG por cena)
 export const World = ({ t, keys, id, children, perspective = 2400, style }) => {
   const c = kf(t, keys); const [bx, by] = camBlur(t, keys);
-  const blur = bx > 0.6 || by > 0.6;
+  const blur = bx > 2 || by > 2;
   return (
     <AbsoluteFill style={{ perspective, overflow: 'hidden', ...style }}>
       <svg width="0" height="0" style={{ position: 'absolute' }}><filter id={id} x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation={`${bx.toFixed(2)} ${by.toFixed(2)}`} /></filter></svg>
