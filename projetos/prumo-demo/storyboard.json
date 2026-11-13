@@ -1,35 +1,349 @@
 {
  "titulo": "Prumo · anúncio de demonstração",
  "chamada": "Suas contas, <em>finalmente no lugar</em>",
- "resumo": "Anúncio vertical de ~33 s (narração estimada em ~29 s + cartela de 4 s) para um app fictício de finanças de autônomos. Segue a gramática das 5 referências (dor → produto → benefícios → CTA), com direção de arte própria. Tempos estimados: serão travados palavra a palavra depois da narração. Trilha original só neste vídeo, baixa e com ducking.",
+ "resumo": "Anúncio vertical de ~33 s (narração estimada em ~29 s + cartela de 4 s) para um app fictício de finanças de autônomos. Segue a gramática das 5 referências (dor → produto → benefícios → CTA), com paleta no padrão Apple (azul #0071E3 sobre branco e cinza #F5F5F7, pedido do usuário). Tempos estimados: serão travados palavra a palavra depois da narração. Trilha original só neste vídeo, baixa e com ducking.",
  "duracao": 33.0,
- "acento": "#E9A93B",
- "acento_escuro": "#F2C46B",
- "paleta": [["#F3EFE7","linho (fundo principal, papel quente)"],["#0F3B2F","verde-pinho (marca, fundos de virada, textos fortes)"],["#B8D2C0","sálvia (lado 'Pessoal', superfícies)"],["#E9A93B","mel (dinheiro guardado, palavra de destaque)"],["#C4553E","tijolo (só na dor: vencido, contra)"]],
- "marcas": [[9.7,"Conheça o Prumo"],[23.6,"assinatura"],[26.7,"CTA"]],
+ "acento": "#0071E3",
+ "acento_escuro": "#2997FF",
+ "paleta": [
+  [
+   "#FFFFFF",
+   "branco (cards, superfícies)"
+  ],
+  [
+   "#F5F5F7",
+   "cinza Apple (fundo principal)"
+  ],
+  [
+   "#1D1D1F",
+   "grafite (títulos e textos)"
+  ],
+  [
+   "#0071E3",
+   "azul Apple (marca, destaques, botão, varreduras azuis em tela cheia)"
+  ],
+  [
+   "#FF3B30",
+   "vermelho de sistema (só na dor: vencido, contra)"
+  ]
+ ],
+ "marcas": [
+  [
+   9.7,
+   "Conheça o Prumo"
+  ],
+  [
+   23.6,
+   "assinatura"
+  ],
+  [
+   26.7,
+   "CTA"
+  ]
+ ],
  "identidade": [
-  ["Conceito","<b>O fio de prumo.</b> O instrumento do pedreiro que diz se algo está reto. No começo tudo está <i>torto</i> (quadro inclinado, cards caindo, cores misturadas); quando o Prumo entra, o peso cai e <b>tudo se nivela</b>. O vídeo inteiro é a passagem do torto para o alinhado."],
-  ["Tipografia","<b>Inter</b> Display nos títulos (Semibold/Bold, tracking apertado), Inter Text nos rótulos de interface (Regular/Medium). SF Pro não é licenciada para vídeo publicado."],
-  ["Fundos e composição","Linho quente com grão sutil e luz de janela vinda do alto à esquerda (sombras longas e suaves). Viradas em verde-pinho de tela cheia. Muito espaço negativo; um objeto principal por plano, no terço central."],
-  ["Sistema gráfico","O <b>fio de prumo</b> (linha fina + peso de latão) costura o vídeo: corta cenas, separa colunas, vira o 'l' da marca. Cards de interface com cantos 36 px, vidro fosco sobre linho, sombras em duas camadas. Ícones de traço 2,5 px. Linha de nível (bolha) como microdetalhe."],
-  ["Interface","UI genérica do app fictício, desenhada em código. Nenhuma marca real (o Pix aparece só como palavra na narração e num rótulo de transação genérico, sem logotipo)."],
-  ["Assinatura de transição","<b>Nivelar</b>: o quadro inclinado gira até 0° com mola e trava com um 'clique'. <b>Cortina de prumo</b>: o peso desce e abre a tela verticalmente, revelando a cena seguinte."],
-  ["Câmera","Câmera 3D virtual: push-in constante (1,00 → 1,04 por plano), parallax em 3 camadas, desfoque de profundidade nos cards do fundo, motion blur nos movimentos rápidos."],
-  ["Áudio","Narração ElevenLabs (PT-BR) em primeiro plano. Trilha minimalista original (pulso suave, ~100 BPM), entra em 0 s baixa, cresce no 'Conheça o Prumo', fade-out na cartela. Efeitos ElevenLabs presos a eventos (lista por cena)."]
+  [
+   "Conceito",
+   "<b>O fio de prumo.</b> O instrumento do pedreiro que diz se algo está reto. No começo tudo está <i>torto</i> (quadro inclinado, cards caindo, cores misturadas); quando o Prumo entra, o peso cai e <b>tudo se nivela</b>. O vídeo inteiro é a passagem do torto para o alinhado."
+  ],
+  [
+   "Tipografia",
+   "<b>Inter</b> Display nos títulos (Semibold/Bold, tracking apertado), Inter Text nos rótulos de interface (Regular/Medium). SF Pro não é licenciada para vídeo publicado."
+  ],
+  [
+   "Fundos e composição",
+   "Cinza Apple #F5F5F7 limpo, luz suave do alto (sombras longas e difusas). Viradas em azul Apple de tela cheia, com leve gradiente #0058B8 → #0071E3 → #2997FF. Muito espaço negativo; um objeto principal por plano, no terço central."
+  ],
+  [
+   "Sistema gráfico",
+   "O <b>fio de prumo</b> (linha fina + peso de latão) costura o vídeo: corta cenas, separa colunas, vira o 'l' da marca. Cards brancos com cantos 36 px, vidro fosco, sombras em duas camadas. Ícones de traço 2,5 px. Linha de nível (bolha) como microdetalhe."
+  ],
+  [
+   "Interface",
+   "UI genérica do app fictício, desenhada em código. Nenhuma marca real (o Pix aparece só como palavra na narração e num rótulo de transação genérico, sem logotipo)."
+  ],
+  [
+   "Assinatura de transição",
+   "<b>Nivelar</b>: o quadro inclinado gira até 0° com mola e trava com um 'clique'. <b>Cortina de prumo</b>: o peso desce e abre a tela verticalmente, revelando a cena seguinte."
+  ],
+  [
+   "Câmera",
+   "Câmera 3D virtual: push-in constante (1,00 → 1,04 por plano), parallax em 3 camadas, desfoque de profundidade nos cards do fundo, motion blur nos movimentos rápidos."
+  ],
+  [
+   "Áudio",
+   "Narração ElevenLabs (PT-BR) em primeiro plano. Trilha minimalista original (pulso suave, ~100 BPM), entra em 0 s baixa, cresce no 'Conheça o Prumo', fade-out na cartela. Efeitos ElevenLabs presos a eventos (lista por cena)."
+  ]
  ],
  "cenas": [
-  {"n":1,"nome":"Por conta própria","a":0.0,"b":2.2,"f":"claro","narr":"Você trabalha por conta própria…","comp":"Tipografia central + fio de prumo","tela":"Linho. O fio de prumo desce do topo e balança. As palavras sobem da máscara com desfoque→nítido; «conta própria» em Bold, 2,5× maior.","sync":[["0,00","fio desce (whoosh fino)"],["0,30","«Você trabalha» entra"],["1,20","«conta própria» assenta (pop suave)"]],"tr":"O peso balança forte para a direita e puxa o quadro, que começa a inclinar."},
-  {"n":2,"nome":"Contra você","a":2.2,"b":4.4,"f":"claro","narr":"…e as contas trabalham contra você?","comp":"Quadro inclinado −7°, tipografia deslocada","tela":"Tudo inclina. «contra» em tijolo, com leve tremor; cards de conta caem de cima, tortos, desfocados ao fundo.","sync":[["2,40","quadro inclina (rangido sutil)"],["3,40","«contra» em tijolo (impacto baixo)"]],"tr":"Os cards do fundo vêm para a frente e viram a próxima cena."},
-  {"n":3,"nome":"Caos de notificações","a":4.4,"b":6.7,"f":"claro","narr":"Pix entrando, boleto vencendo,","comp":"Pilha 3D de notificações em perspectiva","tela":"Notificações genéricas empilham em cascata e em perspectiva: «Transferência recebida», «Boleto vence hoje» (selo tijolo). Parallax em 3 camadas, horizonte ainda torto.","sync":[["4,50","«Pix entrando» → card de entrada (notificação 1)"],["5,60","«boleto vencendo» → card com selo tijolo (notificação 2)"]],"tr":"Os cards encolhem e caem dentro de um pote."},
-  {"n":4,"nome":"Tudo misturado","a":6.7,"b":9.6,"f":"claro","narr":"dinheiro da casa misturado com o do trabalho.","comp":"Objeto central: pote de vidro","tela":"Fichas sálvia (ícone casa) e mel (ícone maleta) entram de lados opostos e se misturam num pote de vidro 3D, girando. Rótulos «casa» e «trabalho» se embaralham.","sync":[["7,10","«casa» → fichas sálvia entram da esquerda"],["8,40","«trabalho» → fichas mel da direita, mistura (tilintar)"]],"tr":"CORTINA DE PRUMO: o peso cai no centro e abre a tela em verde-pinho."},
-  {"n":5,"nome":"Conheça o Prumo","a":9.6,"b":11.3,"f":"escuro","narr":"Conheça o Prumo.","comp":"Marca central em tela cheia pinho","tela":"Verde-pinho. O peso para exatamente no centro; o fio vira o «l»… o wordmark «prumo» se forma ao redor. Linha de nível com bolha centraliza e trava.","sync":[["9,70","peso cai (whoosh grave)"],["10,40","«Prumo» → wordmark trava (clique de nível + impacto suave)"]],"tr":"Recuo de câmera: o wordmark vira o ícone do app numa tela de celular."},
-  {"n":6,"nome":"Separa sozinho","a":11.3,"b":15.4,"f":"claro","narr":"O app que separa o que é seu e o que é do negócio. Automaticamente.","comp":"Celular 3D em perspectiva, lista dividida em 2 colunas","tela":"Celular genérico em ¾, girando devagar. Lista de transações misturada; o fio de prumo desce pelo meio e as linhas deslizam: sálvia para «Pessoal», mel para «Negócio». «Automaticamente» com check desenhado.","sync":[["11,90","«separa» → fio desce pela lista"],["12,60","«seu» → linhas sálvia vão para a esquerda (ticks)"],["13,50","«negócio» → linhas mel para a direita"],["14,50","«Automaticamente» → check (UI confirm)"]],"tr":"Zoom na tela do celular até um card ocupar o quadro."},
-  {"n":7,"nome":"Aviso de vencimento","a":15.4,"b":17.6,"f":"claro","narr":"Avisa antes de cada vencimento.","comp":"Card de alerta grande + sino","tela":"Notificação do app em vidro fosco desce do topo: «Conta de luz vence amanhã · já separado». Sino com microanimação; selo mel (não tijolo: agora está sob controle).","sync":[["15,50","card desce (notificação suave)"],["16,40","«vencimento» → sino balança"]],"tr":"O card vira de lado (flip 3D) e mostra o medidor."},
-  {"n":8,"nome":"Reserva de impostos","a":17.6,"b":20.0,"f":"claro","narr":"Mostra quanto guardar para os impostos.","comp":"Medidor vertical (pote/coluna) + rótulo","tela":"Coluna de vidro enche de mel até a marca «reservado»; valor mostrado só como R$ ••••• (sem números). Rótulo «Reserva de impostos».","sync":[["17,90","«quanto guardar» → coluna começa a encher (líquido)"],["19,20","«impostos» → atinge a marca (ding discreto)"]],"tr":"A coluna vira a primeira barra de um gráfico."},
-  {"n":9,"nome":"Relatório do mês","a":20.0,"b":23.6,"f":"claro","narr":"E fecha o seu mês num relatório claro, sem planilha.","comp":"Card de relatório + planilha que se desfaz","tela":"Barras do gráfico sobem em sequência num card «Seu mês»; ao lado, uma grade de planilha cinza aparece e se desmancha em pó/linhas que caem.","sync":[["20,80","«mês» → barras sobem (ticks em escada)"],["21,80","«relatório claro» → card assenta"],["22,80","«sem planilha» → grade se desfaz (papel/swish)"]],"tr":"NIVELAR: todos os cards anteriores voltam e se alinham numa grade perfeita."},
-  {"n":10,"nome":"Tudo no lugar","a":23.6,"b":26.7,"f":"escuro","narr":"Prumo. Suas contas, finalmente no lugar.","comp":"Wordmark + grade de cards alinhada","tela":"Verde-pinho. Wordmark «prumo» grande; abaixo, «Suas contas, finalmente no lugar.» com «no lugar» em mel. Os cards encaixam numa grade com linha de nível em 0°.","sync":[["23,70","«Prumo» → wordmark (impacto suave)"],["25,60","«no lugar» → cards travam (clique)"]],"tr":"Cortina de prumo de volta ao linho."},
-  {"n":11,"nome":"Saiba mais","a":26.7,"b":29.0,"f":"claro","narr":"Toque em Saiba mais e comece hoje.","comp":"Botão central + dedo/cursor","tela":"Linho. Pílula pinho «Saiba mais» cresce com mola; cursor de toque entra, aperta (botão afunda 4%), onda mel se espalha.","sync":[["27,10","botão entra (pop)"],["27,70","«Saiba mais» → toque (click UI + ondinha)"]],"tr":"A onda mel cobre a tela e assenta na cartela."},
-  {"n":12,"nome":"Cartela","a":29.0,"b":33.0,"f":"claro","narr":"(sem narração)","comp":"Cartela final","tela":"Ícone do Prumo + «prumo» e, pequeno, «Marca fictícia · demonstração Studio Matteu». Fio de prumo balança e para. Fade para linho.","sync":[["29,20","ícone assenta (pop baixo)"],["31,50","trilha em fade-out"]],"tr":"Fim."}
+  {
+   "n": 1,
+   "nome": "Por conta própria",
+   "a": 0.0,
+   "b": 2.2,
+   "f": "claro",
+   "narr": "Você trabalha por conta própria…",
+   "comp": "Tipografia central + fio de prumo",
+   "tela": "Cinza-claro. O fio de prumo desce do topo e balança. As palavras sobem da máscara com desfoque→nítido; «conta própria» em Bold, 2,5× maior.",
+   "sync": [
+    [
+     "0,00",
+     "fio desce (whoosh fino)"
+    ],
+    [
+     "0,30",
+     "«Você trabalha» entra"
+    ],
+    [
+     "1,20",
+     "«conta própria» assenta (pop suave)"
+    ]
+   ],
+   "tr": "O peso balança forte para a direita e puxa o quadro, que começa a inclinar."
+  },
+  {
+   "n": 2,
+   "nome": "Contra você",
+   "a": 2.2,
+   "b": 4.4,
+   "f": "claro",
+   "narr": "…e as contas trabalham contra você?",
+   "comp": "Quadro inclinado −7°, tipografia deslocada",
+   "tela": "Tudo inclina. «contra» em verazulho, com leve tremor; cards de conta caem de cima, tortos, desfocados ao fundo.",
+   "sync": [
+    [
+     "2,40",
+     "quadro inclina (rangido sutil)"
+    ],
+    [
+     "3,40",
+     "«contra» em verazulho (impacto baixo)"
+    ]
+   ],
+   "tr": "Os cards do fundo vêm para a frente e viram a próxima cena."
+  },
+  {
+   "n": 3,
+   "nome": "Caos de notificações",
+   "a": 4.4,
+   "b": 6.7,
+   "f": "claro",
+   "narr": "Pix entrando, boleto vencendo,",
+   "comp": "Pilha 3D de notificações em perspectiva",
+   "tela": "Notificações genéricas empilham em cascata e em perspectiva: «Transferência recebida», «Boleto vence hoje» (selo verazulho). Parallax em 3 camadas, horizonte ainda torto.",
+   "sync": [
+    [
+     "4,50",
+     "«Pix entrando» → card de entrada (notificação 1)"
+    ],
+    [
+     "5,60",
+     "«boleto vencendo» → card com selo verazulho (notificação 2)"
+    ]
+   ],
+   "tr": "Os cards encolhem e caem dentro de um pote."
+  },
+  {
+   "n": 4,
+   "nome": "Tudo misturado",
+   "a": 6.7,
+   "b": 9.6,
+   "f": "claro",
+   "narr": "dinheiro da casa misturado com o do trabalho.",
+   "comp": "Objeto central: pote de vidro",
+   "tela": "Fichas cinza (ícone casa) e azuis (ícone maleta) entram de lados opostos e se misturam num pote de vidro 3D, girando. Rótulos «casa» e «trabalho» se embaralham.",
+   "sync": [
+    [
+     "7,10",
+     "«casa» → fichas azul-claro #DCEBFF entram da esquerda"
+    ],
+    [
+     "8,40",
+     "«trabalho» → fichas azul da direita, mistura (tilintar)"
+    ]
+   ],
+   "tr": "CORTINA DE PRUMO: o peso cai no centro e abre a tela em azul Apple."
+  },
+  {
+   "n": 5,
+   "nome": "Conheça o Prumo",
+   "a": 9.6,
+   "b": 11.3,
+   "f": "azul",
+   "narr": "Conheça o Prumo.",
+   "comp": "Marca central em tela cheia azul",
+   "tela": "Azul Apple. O peso para exatamente no centro; o fio vira o «l»… o wordmark «prumo» se forma ao redor. Linha de nível com bolha centraliza e trava.",
+   "sync": [
+    [
+     "9,70",
+     "peso cai (whoosh grave)"
+    ],
+    [
+     "10,40",
+     "«Prumo» → wordmark trava (clique de nível + impacto suave)"
+    ]
+   ],
+   "tr": "Recuo de câmera: o wordmark vira o ícone do app numa tela de celular."
+  },
+  {
+   "n": 6,
+   "nome": "Separa sozinho",
+   "a": 11.3,
+   "b": 15.4,
+   "f": "claro",
+   "narr": "O app que separa o que é seu e o que é do negócio. Automaticamente.",
+   "comp": "Celular 3D em perspectiva, lista dividida em 2 colunas",
+   "tela": "Celular genérico em ¾, girando devagar. Lista de transações misturada; o fio de prumo desce pelo meio e as linhas deslizam: azul-claro para «Pessoal», azul Apple para «Negócio». «Automaticamente» com check desenhado.",
+   "sync": [
+    [
+     "11,90",
+     "«separa» → fio desce pela lista"
+    ],
+    [
+     "12,60",
+     "«seu» → linhas azul-claro #DCEBFF vão para a esquerda (ticks)"
+    ],
+    [
+     "13,50",
+     "«negócio» → linhas azul para a direita"
+    ],
+    [
+     "14,50",
+     "«Automaticamente» → check (UI confirm)"
+    ]
+   ],
+   "tr": "Zoom na tela do celular até um card ocupar o quadro."
+  },
+  {
+   "n": 7,
+   "nome": "Aviso de vencimento",
+   "a": 15.4,
+   "b": 17.6,
+   "f": "claro",
+   "narr": "Avisa antes de cada vencimento.",
+   "comp": "Card de alerta grande + sino",
+   "tela": "Notificação do app em vidro fosco desce do topo: «Conta de luz vence amanhã · já separado». Sino com microanimação; selo azul (não vermelho: agora está sob controle).",
+   "sync": [
+    [
+     "15,50",
+     "card desce (notificação suave)"
+    ],
+    [
+     "16,40",
+     "«vencimento» → sino balança"
+    ]
+   ],
+   "tr": "O card vira de lado (flip 3D) e mostra o medidor."
+  },
+  {
+   "n": 8,
+   "nome": "Reserva de impostos",
+   "a": 17.6,
+   "b": 20.0,
+   "f": "claro",
+   "narr": "Mostra quanto guardar para os impostos.",
+   "comp": "Medidor vertical (pote/coluna) + rótulo",
+   "tela": "Coluna de vidro enche de azul até a marca «reservado»; valor mostrado só como R$ ••••• (sem números). Rótulo «Reserva de impostos».",
+   "sync": [
+    [
+     "17,90",
+     "«quanto guardar» → coluna começa a encher (líquido)"
+    ],
+    [
+     "19,20",
+     "«impostos» → atinge a marca (ding discreto)"
+    ]
+   ],
+   "tr": "A coluna vira a primeira barra de um gráfico."
+  },
+  {
+   "n": 9,
+   "nome": "Relatório do mês",
+   "a": 20.0,
+   "b": 23.6,
+   "f": "claro",
+   "narr": "E fecha o seu mês num relatório claro, sem planilha.",
+   "comp": "Card de relatório + planilha que se desfaz",
+   "tela": "Barras do gráfico sobem em sequência num card «Seu mês»; ao lado, uma grade de planilha cinza aparece e se desmancha em pó/linhas que caem.",
+   "sync": [
+    [
+     "20,80",
+     "«mês» → barras sobem (ticks em escada)"
+    ],
+    [
+     "21,80",
+     "«relatório claro» → card assenta"
+    ],
+    [
+     "22,80",
+     "«sem planilha» → grade se desfaz (papel/swish)"
+    ]
+   ],
+   "tr": "NIVELAR: todos os cards anteriores voltam e se alinham numa grade perfeita."
+  },
+  {
+   "n": 10,
+   "nome": "Tudo no lugar",
+   "a": 23.6,
+   "b": 26.7,
+   "f": "azul",
+   "narr": "Prumo. Suas contas, finalmente no lugar.",
+   "comp": "Wordmark + grade de cards alinhada",
+   "tela": "Azul Apple em tela cheia. Wordmark «prumo» branco grande; abaixo, «Suas contas, finalmente no lugar.» com «no lugar» em destaque. Os cards encaixam numa grade com linha de nível em 0°.",
+   "sync": [
+    [
+     "23,70",
+     "«Prumo» → wordmark (impacto suave)"
+    ],
+    [
+     "25,60",
+     "«no lugar» → cards travam (clique)"
+    ]
+   ],
+   "tr": "Cortina de prumo de volta ao cinza-claro."
+  },
+  {
+   "n": 11,
+   "nome": "Saiba mais",
+   "a": 26.7,
+   "b": 29.0,
+   "f": "claro",
+   "narr": "Toque em Saiba mais e comece hoje.",
+   "comp": "Botão central + dedo/cursor",
+   "tela": "Cinza-claro. Pílula azul «Saiba mais» cresce com mola; cursor de toque entra, aperta (botão afunda 4%), onda azul se espalha.",
+   "sync": [
+    [
+     "27,10",
+     "botão entra (pop)"
+    ],
+    [
+     "27,70",
+     "«Saiba mais» → toque (click UI + ondinha)"
+    ]
+   ],
+   "tr": "A onda azul cobre a tela e assenta na cartela."
+  },
+  {
+   "n": 12,
+   "nome": "Cartela",
+   "a": 29.0,
+   "b": 33.0,
+   "f": "claro",
+   "narr": "(sem narração)",
+   "comp": "Cartela final",
+   "tela": "Ícone do Prumo + «prumo» e, pequeno, «Marca fictícia · demonstração Studio Matteu». Fio de prumo balança e para. Fade para cinza-claro.",
+   "sync": [
+    [
+     "29,20",
+     "ícone assenta (pop baixo)"
+    ],
+    [
+     "31,50",
+     "trilha em fade-out"
+    ]
+   ],
+   "tr": "Fim."
+  }
  ],
  "notas": [
   "Marca fictícia: «Prumo» é uma palavra comum e pode coincidir com nomes de empresas reais. A cartela deixa claro que é demonstração. Se quiser outro nome, troco antes da narração.",

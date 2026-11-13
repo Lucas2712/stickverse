@@ -2,17 +2,17 @@
 
 > Aguardando aprovação. Nada é programado antes dela.
 
-Anúncio vertical de ~33 s (narração estimada em ~29 s + cartela de 4 s) para um app fictício de finanças de autônomos. Segue a gramática das 5 referências (dor → produto → benefícios → CTA), com direção de arte própria. Tempos estimados: serão travados palavra a palavra depois da narração. Trilha original só neste vídeo, baixa e com ducking.
+Anúncio vertical de ~33 s (narração estimada em ~29 s + cartela de 4 s) para um app fictício de finanças de autônomos. Segue a gramática das 5 referências (dor → produto → benefícios → CTA), com paleta no padrão Apple (azul #0071E3 sobre branco e cinza #F5F5F7, pedido do usuário). Tempos estimados: serão travados palavra a palavra depois da narração. Trilha original só neste vídeo, baixa e com ducking.
 
 ## Direção de arte
 
 | | |
 |---|---|
-| Paleta | `#F3EFE7` linho (fundo principal, papel quente) · `#0F3B2F` verde-pinho (marca, fundos de virada, textos fortes) · `#B8D2C0` sálvia (lado 'Pessoal', superfícies) · `#E9A93B` mel (dinheiro guardado, palavra de destaque) · `#C4553E` tijolo (só na dor: vencido, contra) |
+| Paleta | `#FFFFFF` branco (cards, superfícies) · `#F5F5F7` cinza Apple (fundo principal) · `#1D1D1F` grafite (títulos e textos) · `#0071E3` azul Apple (marca, destaques, botão, varreduras azuis em tela cheia) · `#FF3B30` vermelho de sistema (só na dor: vencido, contra) |
 | Conceito | <b>O fio de prumo.</b> O instrumento do pedreiro que diz se algo está reto. No começo tudo está <i>torto</i> (quadro inclinado, cards caindo, cores misturadas); quando o Prumo entra, o peso cai e <b>tudo se nivela</b>. O vídeo inteiro é a passagem do torto para o alinhado. |
 | Tipografia | <b>Inter</b> Display nos títulos (Semibold/Bold, tracking apertado), Inter Text nos rótulos de interface (Regular/Medium). SF Pro não é licenciada para vídeo publicado. |
-| Fundos e composição | Linho quente com grão sutil e luz de janela vinda do alto à esquerda (sombras longas e suaves). Viradas em verde-pinho de tela cheia. Muito espaço negativo; um objeto principal por plano, no terço central. |
-| Sistema gráfico | O <b>fio de prumo</b> (linha fina + peso de latão) costura o vídeo: corta cenas, separa colunas, vira o 'l' da marca. Cards de interface com cantos 36 px, vidro fosco sobre linho, sombras em duas camadas. Ícones de traço 2,5 px. Linha de nível (bolha) como microdetalhe. |
+| Fundos e composição | Cinza Apple #F5F5F7 limpo, luz suave do alto (sombras longas e difusas). Viradas em azul Apple de tela cheia, com leve gradiente #0058B8 → #0071E3 → #2997FF. Muito espaço negativo; um objeto principal por plano, no terço central. |
+| Sistema gráfico | O <b>fio de prumo</b> (linha fina + peso de latão) costura o vídeo: corta cenas, separa colunas, vira o 'l' da marca. Cards brancos com cantos 36 px, vidro fosco, sombras em duas camadas. Ícones de traço 2,5 px. Linha de nível (bolha) como microdetalhe. |
 | Interface | UI genérica do app fictício, desenhada em código. Nenhuma marca real (o Pix aparece só como palavra na narração e num rótulo de transação genérico, sem logotipo). |
 | Assinatura de transição | <b>Nivelar</b>: o quadro inclinado gira até 0° com mola e trava com um 'clique'. <b>Cortina de prumo</b>: o peso desce e abre a tela verticalmente, revelando a cena seguinte. |
 | Câmera | Câmera 3D virtual: push-in constante (1,00 → 1,04 por plano), parallax em 3 camadas, desfoque de profundidade nos cards do fundo, motion blur nos movimentos rápidos. |
@@ -26,12 +26,12 @@ Anúncio vertical de ~33 s (narração estimada em ~29 s + cartela de 4 s) para 
 | 2 | 2,2–4,4 | claro | Quadro inclinado −7°, tipografia deslocada |  |
 | 3 | 4,4–6,7 | claro | Pilha 3D de notificações em perspectiva |  |
 | 4 | 6,7–9,6 | claro | Objeto central: pote de vidro |  |
-| 5 | 9,6–11,3 | escuro | Marca central em tela cheia pinho |  |
+| 5 | 9,6–11,3 | azul | Marca central em tela cheia azul |  |
 | 6 | 11,3–15,4 | claro | Celular 3D em perspectiva, lista dividida em 2 colunas |  |
 | 7 | 15,4–17,6 | claro | Card de alerta grande + sino |  |
 | 8 | 17,6–20,0 | claro | Medidor vertical (pote/coluna) + rótulo |  |
 | 9 | 20,0–23,6 | claro | Card de relatório + planilha que se desfaz |  |
-| 10 | 23,6–26,7 | escuro | Wordmark + grade de cards alinhada |  |
+| 10 | 23,6–26,7 | azul | Wordmark + grade de cards alinhada |  |
 | 11 | 26,7–29,0 | claro | Botão central + dedo/cursor |  |
 | 12 | 29,0–33,0 | claro | Cartela final |  |
 
@@ -41,7 +41,7 @@ Anúncio vertical de ~33 s (narração estimada em ~29 s + cartela de 4 s) para 
 
 **Fundo:** claro · **Composição:** Tipografia central + fio de prumo
 
-Linho. O fio de prumo desce do topo e balança. As palavras sobem da máscara com desfoque→nítido; «conta própria» em Bold, 2,5× maior.
+Cinza-claro. O fio de prumo desce do topo e balança. As palavras sobem da máscara com desfoque→nítido; «conta própria» em Bold, 2,5× maior.
 
 **Sincronização:**
 - 0,00 s fio desce (whoosh fino)
@@ -58,11 +58,11 @@ Linho. O fio de prumo desce do topo e balança. As palavras sobem da máscara co
 
 **Fundo:** claro · **Composição:** Quadro inclinado −7°, tipografia deslocada
 
-Tudo inclina. «contra» em tijolo, com leve tremor; cards de conta caem de cima, tortos, desfocados ao fundo.
+Tudo inclina. «contra» em verazulho, com leve tremor; cards de conta caem de cima, tortos, desfocados ao fundo.
 
 **Sincronização:**
 - 2,40 s quadro inclina (rangido sutil)
-- 3,40 s «contra» em tijolo (impacto baixo)
+- 3,40 s «contra» em verazulho (impacto baixo)
 
 **Transição:** Os cards do fundo vêm para a frente e viram a próxima cena.
 
@@ -74,11 +74,11 @@ Tudo inclina. «contra» em tijolo, com leve tremor; cards de conta caem de cima
 
 **Fundo:** claro · **Composição:** Pilha 3D de notificações em perspectiva
 
-Notificações genéricas empilham em cascata e em perspectiva: «Transferência recebida», «Boleto vence hoje» (selo tijolo). Parallax em 3 camadas, horizonte ainda torto.
+Notificações genéricas empilham em cascata e em perspectiva: «Transferência recebida», «Boleto vence hoje» (selo verazulho). Parallax em 3 camadas, horizonte ainda torto.
 
 **Sincronização:**
 - 4,50 s «Pix entrando» → card de entrada (notificação 1)
-- 5,60 s «boleto vencendo» → card com selo tijolo (notificação 2)
+- 5,60 s «boleto vencendo» → card com selo verazulho (notificação 2)
 
 **Transição:** Os cards encolhem e caem dentro de um pote.
 
@@ -90,13 +90,13 @@ Notificações genéricas empilham em cascata e em perspectiva: «Transferência
 
 **Fundo:** claro · **Composição:** Objeto central: pote de vidro
 
-Fichas sálvia (ícone casa) e mel (ícone maleta) entram de lados opostos e se misturam num pote de vidro 3D, girando. Rótulos «casa» e «trabalho» se embaralham.
+Fichas cinza (ícone casa) e azuis (ícone maleta) entram de lados opostos e se misturam num pote de vidro 3D, girando. Rótulos «casa» e «trabalho» se embaralham.
 
 **Sincronização:**
-- 7,10 s «casa» → fichas sálvia entram da esquerda
-- 8,40 s «trabalho» → fichas mel da direita, mistura (tilintar)
+- 7,10 s «casa» → fichas azul-claro #DCEBFF entram da esquerda
+- 8,40 s «trabalho» → fichas azul da direita, mistura (tilintar)
 
-**Transição:** CORTINA DE PRUMO: o peso cai no centro e abre a tela em verde-pinho.
+**Transição:** CORTINA DE PRUMO: o peso cai no centro e abre a tela em azul Apple.
 
 ---
 
@@ -104,9 +104,9 @@ Fichas sálvia (ícone casa) e mel (ícone maleta) entram de lados opostos e se 
 
 **Narração:** "Conheça o Prumo."
 
-**Fundo:** escuro · **Composição:** Marca central em tela cheia pinho
+**Fundo:** azul · **Composição:** Marca central em tela cheia azul
 
-Verde-pinho. O peso para exatamente no centro; o fio vira o «l»… o wordmark «prumo» se forma ao redor. Linha de nível com bolha centraliza e trava.
+Azul Apple. O peso para exatamente no centro; o fio vira o «l»… o wordmark «prumo» se forma ao redor. Linha de nível com bolha centraliza e trava.
 
 **Sincronização:**
 - 9,70 s peso cai (whoosh grave)
@@ -122,12 +122,12 @@ Verde-pinho. O peso para exatamente no centro; o fio vira o «l»… o wordmark 
 
 **Fundo:** claro · **Composição:** Celular 3D em perspectiva, lista dividida em 2 colunas
 
-Celular genérico em ¾, girando devagar. Lista de transações misturada; o fio de prumo desce pelo meio e as linhas deslizam: sálvia para «Pessoal», mel para «Negócio». «Automaticamente» com check desenhado.
+Celular genérico em ¾, girando devagar. Lista de transações misturada; o fio de prumo desce pelo meio e as linhas deslizam: azul-claro para «Pessoal», azul Apple para «Negócio». «Automaticamente» com check desenhado.
 
 **Sincronização:**
 - 11,90 s «separa» → fio desce pela lista
-- 12,60 s «seu» → linhas sálvia vão para a esquerda (ticks)
-- 13,50 s «negócio» → linhas mel para a direita
+- 12,60 s «seu» → linhas azul-claro #DCEBFF vão para a esquerda (ticks)
+- 13,50 s «negócio» → linhas azul para a direita
 - 14,50 s «Automaticamente» → check (UI confirm)
 
 **Transição:** Zoom na tela do celular até um card ocupar o quadro.
@@ -140,7 +140,7 @@ Celular genérico em ¾, girando devagar. Lista de transações misturada; o fio
 
 **Fundo:** claro · **Composição:** Card de alerta grande + sino
 
-Notificação do app em vidro fosco desce do topo: «Conta de luz vence amanhã · já separado». Sino com microanimação; selo mel (não tijolo: agora está sob controle).
+Notificação do app em vidro fosco desce do topo: «Conta de luz vence amanhã · já separado». Sino com microanimação; selo azul (não vermelho: agora está sob controle).
 
 **Sincronização:**
 - 15,50 s card desce (notificação suave)
@@ -156,7 +156,7 @@ Notificação do app em vidro fosco desce do topo: «Conta de luz vence amanhã 
 
 **Fundo:** claro · **Composição:** Medidor vertical (pote/coluna) + rótulo
 
-Coluna de vidro enche de mel até a marca «reservado»; valor mostrado só como R$ ••••• (sem números). Rótulo «Reserva de impostos».
+Coluna de vidro enche de azul até a marca «reservado»; valor mostrado só como R$ ••••• (sem números). Rótulo «Reserva de impostos».
 
 **Sincronização:**
 - 17,90 s «quanto guardar» → coluna começa a encher (líquido)
@@ -187,15 +187,15 @@ Barras do gráfico sobem em sequência num card «Seu mês»; ao lado, uma grade
 
 **Narração:** "Prumo. Suas contas, finalmente no lugar."
 
-**Fundo:** escuro · **Composição:** Wordmark + grade de cards alinhada
+**Fundo:** azul · **Composição:** Wordmark + grade de cards alinhada
 
-Verde-pinho. Wordmark «prumo» grande; abaixo, «Suas contas, finalmente no lugar.» com «no lugar» em mel. Os cards encaixam numa grade com linha de nível em 0°.
+Azul Apple em tela cheia. Wordmark «prumo» branco grande; abaixo, «Suas contas, finalmente no lugar.» com «no lugar» em destaque. Os cards encaixam numa grade com linha de nível em 0°.
 
 **Sincronização:**
 - 23,70 s «Prumo» → wordmark (impacto suave)
 - 25,60 s «no lugar» → cards travam (clique)
 
-**Transição:** Cortina de prumo de volta ao linho.
+**Transição:** Cortina de prumo de volta ao cinza-claro.
 
 ---
 
@@ -205,13 +205,13 @@ Verde-pinho. Wordmark «prumo» grande; abaixo, «Suas contas, finalmente no lug
 
 **Fundo:** claro · **Composição:** Botão central + dedo/cursor
 
-Linho. Pílula pinho «Saiba mais» cresce com mola; cursor de toque entra, aperta (botão afunda 4%), onda mel se espalha.
+Cinza-claro. Pílula azul «Saiba mais» cresce com mola; cursor de toque entra, aperta (botão afunda 4%), onda azul se espalha.
 
 **Sincronização:**
 - 27,10 s botão entra (pop)
 - 27,70 s «Saiba mais» → toque (click UI + ondinha)
 
-**Transição:** A onda mel cobre a tela e assenta na cartela.
+**Transição:** A onda azul cobre a tela e assenta na cartela.
 
 ---
 
@@ -221,7 +221,7 @@ Linho. Pílula pinho «Saiba mais» cresce com mola; cursor de toque entra, aper
 
 **Fundo:** claro · **Composição:** Cartela final
 
-Ícone do Prumo + «prumo» e, pequeno, «Marca fictícia · demonstração Studio Matteu». Fio de prumo balança e para. Fade para linho.
+Ícone do Prumo + «prumo» e, pequeno, «Marca fictícia · demonstração Studio Matteu». Fio de prumo balança e para. Fade para cinza-claro.
 
 **Sincronização:**
 - 29,20 s ícone assenta (pop baixo)
