@@ -97,7 +97,7 @@ export const SFX = () => {
     [MUS.V4 - 0.75, 'mergulho', 0.40, 'mergulho na bússola'],
     // ato 7 · assinatura
     [f7.settle - 1.07, 'logo_prumo', 0.72, 'LOGO SONORO: clique na trava em «Prumo.»'],
-    [f7.morph + 0.25, 'cascata_letras', 0.36, 'letras «prumo»'],
+    [f7.settle + 0.72, 'cascata_letras', 0.36, 'letras «prumo»'],
     [W(7, 'organização') - 0.05, 'chicote_a', 0.30, 'palavras chegam em arco pelos lados'],
     [W(7, 'organização') + 0.4, 'slam_texto', 0.24, '«direção.» assenta'],
     [W(7, 'Mais', 2) + 0.1, 'encaixe', 0.34, '«no lugar.» encaixa'],

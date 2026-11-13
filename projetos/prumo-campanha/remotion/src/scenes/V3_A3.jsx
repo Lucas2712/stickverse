@@ -2,7 +2,7 @@ import React from 'react';
 import { AbsoluteFill } from 'remotion';
 import { C, display, text } from '../styles/tokens';
 import { useT } from '../animations/time';
-import { prog, spr, lerp, inOut, expoOut, expoIn } from '../animations/motion';
+import { prog, progT, spr, lerp, inOut, expoOut, expoIn } from '../animations/motion';
 import { W, B, MUS, N } from '../audio/timeline';
 import { Letters, NeedleWipe, Sheen } from '../components/Motion';
 import { BlueBg, LightBg } from '../components/Stage';
@@ -22,10 +22,10 @@ export const V3_A3 = ({ a }) => {
   const dir = spr(t, tDir, { damping: 12, stiffness: 160 });
   const comp = prog(t, tEx - 0.25, 0.8, inOut);                 // coluna → celular
   const phone = spr(t, tEx + 0.25, { damping: 15, stiffness: 120 });
-  const orb = prog(t, tGe - 0.3, 5.2, (x) => x);   // órbita lenta + aproximação do celular na parte clara
+  const orb = progT(t, tGe - 0.3, 4.0, (x) => x);   // órbita lenta + aproximação do celular na parte clara
   const light = prog(t, tGe - 0.35, 0.9, inOut);                // cortina da agulha: azul → claro
   const callouts = [['in', 'Movimentações', -1, 640], ['grid', 'Receitas e despesas', 1, 790], ['bell', 'Compromissos', -1, 1060], ['chart', 'Relatórios', 1, 1300]];
-  const giant = (w, s, e, y) => { const k = prog(t, s - 0.1, 1.6, expoOut); const o = prog(t, e - 0.1, 0.3); return <div key={w} style={{ position: 'absolute', top: y, left: lerp(1200, -260, k) - o * 600, ...display(800), fontSize: 300, color: 'rgba(255,255,255,0.10)', whiteSpace: 'nowrap', letterSpacing: '-0.05em' }}>{w}</div>; };
+  const giant = (w, s, e, y) => { const k = progT(t, s - 0.1, 1.2, expoOut); const o = prog(t, e - 0.1, 0.3); return <div key={w} style={{ position: 'absolute', top: y, left: lerp(1200, -260, k) - o * 600, ...display(800), fontSize: 300, color: 'rgba(255,255,255,0.10)', whiteSpace: 'nowrap', letterSpacing: '-0.05em' }}>{w}</div>; };
   const word = (w, s, e) => { const k = spr(t, s - 0.05, { damping: 14, stiffness: 190 }); const o = prog(t, e - 0.12, 0.2, expoIn); return <div key={w} style={{ position: 'absolute', top: 1440, width: 1080, textAlign: 'center', ...display(700), fontSize: 130, color: '#fff', opacity: Math.min(1, k * 2) * (1 - o), transform: `translateY(${(1 - k) * 80 - o * 60}px) scale(${0.85 + 0.15 * k})`, filter: `blur(${o * 12}px)` }}>{w}</div>; };
   return (
     <AbsoluteFill>

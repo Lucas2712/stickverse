@@ -2,7 +2,7 @@ import React from 'react';
 import { AbsoluteFill } from 'remotion';
 import { C, display, text } from '../styles/tokens';
 import { useT } from '../animations/time';
-import { prog, spr, lerp, inOut, expoOut, expoIn } from '../animations/motion';
+import { prog, progT, spr, lerp, inOut, expoOut, expoIn } from '../animations/motion';
 import { W, WE, B, MUS } from '../audio/timeline';
 import { Letters } from '../components/Motion';
 import { Icon } from '../components/Icon';
@@ -14,7 +14,7 @@ import { BlueBg } from '../components/Stage';
 
 // ATO 2 · fluxos que entram/saem/cobram em volta do negócio → CONGELA → a bússola procura → SILÊNCIO → trava ↓ → tudo cai → marca
 const rnd = (i, k) => Math.sin(i * 127.1 + k * 311.7) * 0.5 + 0.5;
-export const FB3 = () => ({ a: W(2, 'entender') - 0.12, spin: W(2, 'entender') + 0.35, settle: MUS.silencio[0], morph: MUS.V2 + 0.05 });
+export const FB3 = () => ({ a: W(2, 'entender') - 0.12, spin: W(2, 'entender') + 0.2, settle: MUS.silencio[0], morph: MUS.silencio[0] + 0.05 });
 export const V3_A2 = ({ a }) => {
   const tReal = useT(a);
   const tFz = MUS.freeze;
@@ -26,15 +26,15 @@ export const V3_A2 = ({ a }) => {
   const shock = prog(tReal, drop, 0.9, expoOut);
   const iris = prog(tReal, drop + 0.42, 0.55, inOut);
   const inK = prog(tReal, a, 0.35);
-  const srch = prog(tReal, f.a, f.settle - f.a + 0.45, inOut);   // câmera orbita a bússola até ficar de frente
-  const mo = prog(tReal, f.morph, 0.4, inOut);                     // bússola → ícone
+  const srch = progT(tReal, f.a, f.settle - f.a, inOut);   // câmera orbita a bússola até ficar de frente
+  const mo = progT(tReal, f.settle + 0.05, 0.55, inOut);                     // bússola → ícone
   // câmera: aproxima no começo, treme nos impactos, empurra devagar no congelamento
   const shake = [tPag, tPag + 0.22, tPag + 0.44].reduce((acc, s) => acc + (t > s ? Math.sin((t - s) * 60) * 14 * Math.exp(-(t - s) * 9) : 0), 0);
   const camS = lerp(1.35, 1.0, prog(tReal, a, 1.2, expoOut)) * (1 + Math.max(0, Math.min(tReal, drop) - tFz) * 0.06) * (1 + Math.sin((tReal - a) * 0.8) * 0.03);
   const camR = Math.max(0, Math.min(tReal, drop) - tFz) * -1.6 + Math.sin((tReal - a) * 0.6) * 1.5;
   const txtF = 1 - frz * 0.75;
   // lente procurando foco sobre «claramente»
-  const lensX = lerp(-200, 1280, prog(tReal, tCla - 0.2, 1.8, inOut));
+  const lensX = lerp(-200, 1280, progT(tReal, tCla - 0.2, 1.4, inOut));
   // fluxos de partículas: entram (azul, esquerda), saem (grafite, direita), cobram (vermelho, por cima)
   const flows = [];
   const fl = (i, kind, s) => {
@@ -105,11 +105,10 @@ export const V3_A2 = ({ a }) => {
       </AbsoluteFill>
       <Leak p={prog(tReal, drop + 0.25, 1.3)} seed={4} />
       {/* a bússola: procura, trava ↓ no silêncio, vira o ícone */}
-      <div style={{ position: 'absolute', inset: 0, transform: `translateY(${lerp(0, -40, iris)}px)` }}>
+      <div style={{ position: 'absolute', inset: 0 }}>
         {/* poeira de luz girando em volta da bússola enquanto ela procura */}
         {Array.from({ length: 28 }, (_, i) => { const k = prog(tReal, f.a + i * 0.03, 0.6); const ang = i * 2.4 + (tReal - f.a) * (0.5 + (i % 5) * 0.12); const R = 380 + (i % 7) * 40 + Math.sin(tReal + i) * 20; return <div key={i} style={{ position: 'absolute', left: 540 + Math.cos(ang) * R - 5, top: 960 + Math.sin(ang) * R * 0.92 - 5, width: 10 + (i % 3) * 4, height: 10 + (i % 3) * 4, borderRadius: '50%', background: i % 4 ? 'rgba(0,113,227,0.55)' : '#fff', boxShadow: '0 0 14px rgba(0,113,227,0.6)', opacity: k * (1 - mo) * 0.9 }} />; })}
-        <Compass3D t={tReal} f={f} cx={540} cy={960} size={lerp(600, 680, srch) * lerp(1, 0.4, mo)} orbit={lerp(-1.05, 0, srch) + Math.sin((tReal - f.a) * 1.7) * 0.06 * (1 - srch)} tilt={lerp(-0.75, -0.02, srch)} roll={lerp(0.4, 0, srch)} glow={prog(tReal, f.settle, 0.4)} opacity={1 - mo} />
-        <div style={{ position: 'absolute', left: 540 - 130, top: 960 - 130, transform: `scale(${lerp(0.55, 1, mo)})`, opacity: mo }}><AppIcon size={260} dark style={{ boxShadow: '0 30px 70px rgba(0,60,140,0.35), inset 0 0 0 3px rgba(255,255,255,0.35)' }} /></div>
+        <Compass3D t={tReal} f={f} cx={540} cy={960 - 40 * iris} size={lerp(lerp(600, 680, srch), 260, mo)} orbit={lerp(-1.05, 0, srch) + Math.sin((tReal - f.a) * 1.7) * 0.06 * (1 - srch)} tilt={lerp(-0.75, 0, srch)} roll={lerp(0.4, 0, srch)} glow={progT(tReal, f.settle, 0.3)} logo="light" />
       </div>
     </AbsoluteFill>
   );

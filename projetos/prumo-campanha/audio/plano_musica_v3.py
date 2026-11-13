@@ -5,8 +5,8 @@ src,bp=sys.argv[1],sys.argv[2]; beats=np.load(bp)
 R=os.path.dirname(os.path.abspath(__file__))+'/..'
 P=json.load(open(R+'/remotion/src/audio/palavras.json'))
 end=[c['palavras'][-1]['e'] for c in P]
-SIL=0.6                                   # silêncio antes da marca
-GAP=[0.35,0.15+SIL+0.7,0.45,0.45,0.45,0.85]
+SIL=0.5                                   # silêncio antes da marca
+GAP=[0.25,0.15+SIL+0.45,0.3,0.3,0.3,0.55]
 norm=lambda s: re.sub(r'[^\w]','',unicodedata.normalize('NFD',s.lower()).encode('ascii','ignore').decode())
 def w(c,word,N,k=1):
     n=0
@@ -15,7 +15,7 @@ def w(c,word,N,k=1):
             n+=1
             if n==k: return N[c-1]+x['s']
 def mkN(d4=0,d5=0):
-    N=[0.3]
+    N=[0.2]
     for i,g in enumerate(GAP): N.append(N[-1]+end[i]+g)
     N[3]+=d4; N[4]+=d4+d5; N[5]+=d4+d5; N[6]+=d4+d5
     return N

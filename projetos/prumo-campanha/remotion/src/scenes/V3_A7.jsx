@@ -2,24 +2,23 @@ import React from 'react';
 import { AbsoluteFill } from 'remotion';
 import { C, display, text } from '../styles/tokens';
 import { useT } from '../animations/time';
-import { prog, spr, lerp, inOut, expoOut, expoIn } from '../animations/motion';
+import { prog, progT, spr, lerp, inOut, expoOut, expoIn } from '../animations/motion';
 import { W, FIM, DURACAO, MUS } from '../audio/timeline';
 import { Letters } from '../components/Motion';
 import { LightBg } from '../components/Stage';
 import { Compass3D } from '../components/Compass3D';
-import { AppIcon } from '../components/Brand';
 import { Touch } from '../components/AppUI';
 import { Leak } from '../components/Leak';
 
 // ATO 7 · bússola 3D em close, câmera girando → trava em «Prumo.» → vira ícone → o fio do prumo desce e vira o botão
-export const FH3 = () => { const p = W(7, 'Prumo'); return { a: MUS.V4, spin: MUS.V4 + 0.15, settle: p, morph: p + 0.85 }; };
+export const FH3 = () => { const p = W(7, 'Prumo'); return { a: MUS.V4, spin: MUS.V4 + 0.1, settle: p, morph: p + 0.05 }; };
 const arc = (k, x0, y0, x1, y1, h) => [lerp(x0, x1, k), lerp(y0, y1, k) - Math.sin(k * Math.PI) * h];
 export const V3_A7 = ({ a }) => {
   const t = useT(a);
   const f = FH3();
-  const srch = prog(t, a, f.settle - a + 0.5, inOut);
-  const mo = prog(t, f.morph, 0.4, inOut);
-  const up = prog(t, f.morph + 0.25, 0.75, inOut);
+  const srch = progT(t, a, f.settle - a, inOut);
+  const mo = progT(t, f.settle + 0.05, 0.55, inOut);
+  const up = progT(t, f.settle + 0.5, 0.6, inOut);
   const iconY = lerp(960, 700, up);
   const tag1 = W(7, 'organização'), tag2 = W(7, 'Mais', 2), tCta = FIM(7) + 0.1, tTap = tCta + 1.0;
   const o1 = prog(t, tag2 - 0.2, 0.25, expoIn);
@@ -43,12 +42,9 @@ export const V3_A7 = ({ a }) => {
           {[0, 1, 2].map((r) => { const R = 250 + r * 120; return <div key={r} style={{ position: 'absolute', left: 540 - R, top: iconY - R, width: R * 2, height: R * 2, borderRadius: '50%', border: `${3 - r}px dashed rgba(0,113,227,${0.3 - r * 0.07})`, transform: `rotate(${drift * (r % 2 ? -16 : 12)}deg) scale(${lerp(0.4, 1, mo)})`, opacity: mo }} />; })}
           {Array.from({ length: 16 }, (_, i) => { const R = 250 + (i % 3) * 120, ang = i * 0.39 + drift * (0.8 + (i % 3) * 0.25) * (i % 2 ? -1 : 1), z = 10 + (i % 4) * 5; return <div key={i} style={{ position: 'absolute', left: 540 + Math.cos(ang) * R - z / 2, top: iconY + Math.sin(ang) * R - z / 2, width: z, height: z, borderRadius: z / 2, background: i % 3 ? C.blue : '#fff', boxShadow: '0 0 16px rgba(0,113,227,0.7)', opacity: mo * 0.9 }} />; })}
           {/* bússola 3D → ícone */}
-          <Compass3D t={t} f={f} cx={540} cy={960} size={lerp(760, 300, mo)} orbit={lerp(0.95, 0, srch) + Math.sin(drift * 1.6) * 0.05 * (1 - srch)} tilt={lerp(-0.9, -0.03, srch)} roll={lerp(-0.6, 0, srch)} glow={prog(t, f.settle, 0.35)} opacity={1 - mo} />
-          <div style={{ position: 'absolute', left: 540 - 135, top: iconY - 135, transform: `perspective(900px) rotateY(${Math.sin(Math.max(0, t - f.morph - 0.6) * 1.4) * 22}deg) scale(${lerp(0.6, 1, mo) * (1 + (t > f.morph + 0.4 ? Math.sin((t - f.morph) * 2.2) * 0.02 : 0))})`, opacity: mo }}>
-            <AppIcon size={270} dark style={{ boxShadow: '0 30px 70px rgba(0,80,180,0.35)' }} />
-          </div>
+          <Compass3D t={t} f={f} cx={540} cy={iconY} size={lerp(760, 270, mo)} orbit={lerp(0.95, 0, srch) + Math.sin(drift * 1.6) * 0.05 * (1 - srch) + Math.sin(Math.max(0, t - f.settle - 0.7) * 1.4) * 0.38 * mo} tilt={lerp(-0.9, 0, srch) + Math.sin(drift * 0.9) * 0.08 * mo} roll={lerp(-0.6, 0, srch)} glow={progT(t, f.settle, 0.3)} logo="dark" />
           <div style={{ position: 'absolute', top: iconY + 170, width: 1080, display: 'flex', justifyContent: 'center' }}>
-            <Letters t={t} s={f.morph + 0.3} text="prumo" size={200} stagger={0.035} fade />
+            <Letters t={t} s={f.settle + 0.72} text="prumo" size={200} stagger={0.035} fade />
           </div>
           {/* «Seu negócio precisa de direção.» — palavras chegam em arco, vindas da órbita */}
           <div style={{ position: 'absolute', top: iconY + 440, left: 0, width: 1080, height: 100, opacity: 1 - o1, filter: `blur(${o1 * 10}px)` }}>
