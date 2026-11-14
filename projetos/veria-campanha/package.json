@@ -1,0 +1,25 @@
+{
+  "name": "veria-campanha",
+  "private": true,
+  "version": "1.0.0",
+  "description": "VÉRIA · Seu dinheiro. Seu ritmo. Comercial 9:16 em React + Remotion (Studio Matteu).",
+  "type": "module",
+  "scripts": {
+    "marca": "node ferramentas/marca.mjs",
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Veria saida/veria.mp4 --codec h264 --audio-codec aac --browser-executable /opt/pw-browsers/chromium",
+    "still": "remotion still src/index.ts Veria"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.543",
+    "@remotion/cli": "4.0.543",
+    "@remotion/renderer": "^4.0.543",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.543"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}
