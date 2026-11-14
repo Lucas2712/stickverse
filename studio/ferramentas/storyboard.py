@@ -73,7 +73,7 @@ code{{font:13px var(--mono)}}
 @media (max-width:520px){{dl{{grid-template-columns:1fr;gap:2px}} dd{{margin-bottom:10px}}}}
 .tempo{{position:relative;height:52px;border-radius:6px;overflow:hidden;border:1px solid var(--line)}}
 .seg{{position:absolute;top:0;bottom:0;display:flex;align-items:center;justify-content:center;font:600 11px var(--mono);border-right:1px solid rgba(128,128,128,.35)}}
-.seg.claro{{background:#EDEDED;color:#0B0B0D}} .seg.escuro{{background:#0B0B0D;color:#F4F4F5}} .seg.laranja{{background:linear-gradient(135deg,#FF6A1A,#FF3D2E);color:#fff}} .seg.azul{{background:#1E3BFF;color:#fff}} .seg.branco{{background:#F4F5F7;color:#0B0B0D}} .seg.preto{{background:#000;color:#FF3B30}} .seg.vermelho{{background:#FF3B30;color:#fff}}
+.seg.claro{{background:#EDEDED;color:#0B0B0D}} .seg.escuro{{background:#0B0B0D;color:#F4F4F5}} .seg.laranja{{background:linear-gradient(135deg,#FF6A1A,#FF3D2E);color:#fff}} .seg.azul{{background:#1E3BFF;color:#fff}} .seg.branco{{background:#F4F5F7;color:#0B0B0D}} .seg.preto{{background:#000;color:#FF3B30}} .seg.vermelho{{background:#FF3B30;color:#fff}} .seg.profundo{{background:#24104B;color:#fff}} .seg.roxo{{background:#5423A8;color:#fff}} .seg.lavanda{{background:#A987F0;color:#24104B}} .seg.offwhite{{background:#F7F5FA;color:#24104B}}
 .mk{{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ac)}}
 .leg{{display:flex;justify-content:space-between;gap:8px;font:12px var(--mono);color:var(--ink2);margin-top:6px}}
 .cena{{border-top:1px solid var(--line);padding-top:20px;display:flex;flex-direction:column;gap:10px}}
@@ -82,7 +82,7 @@ code{{font:13px var(--mono)}}
 .t{{font:500 13px var(--mono);color:var(--ink2);font-variant-numeric:tabular-nums}}
 .pill{{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:999px;border:1px solid var(--line)}}
 .pill.escuro{{background:#0B0B0D;color:#F4F4F5;border-color:#0B0B0D}} .pill.claro{{background:#F7F7F7;color:#0B0B0D}} .pill.laranja{{background:#FF6A1A;color:#fff;border-color:#FF6A1A}}
-.pill.img{{border-color:var(--ac);color:var(--ac)}} .pill.azul{{background:#1E3BFF;color:#fff;border-color:#1E3BFF}} .pill.branco{{background:#F4F5F7;color:#0B0B0D}} .pill.preto{{background:#000;color:#FF3B30;border-color:#000}} .pill.vermelho{{background:#FF3B30;color:#fff;border-color:#FF3B30}}
+.pill.img{{border-color:var(--ac);color:var(--ac)}} .pill.azul{{background:#1E3BFF;color:#fff;border-color:#1E3BFF}} .pill.branco{{background:#F4F5F7;color:#0B0B0D}} .pill.preto{{background:#000;color:#FF3B30;border-color:#000}} .pill.vermelho{{background:#FF3B30;color:#fff;border-color:#FF3B30}} .pill.profundo{{background:#24104B;color:#fff;border-color:#24104B}} .pill.roxo{{background:#5423A8;color:#fff;border-color:#5423A8}} .pill.lavanda{{background:#A987F0;color:#24104B;border-color:#A987F0}} .pill.offwhite{{background:#F7F5FA;color:#24104B}}
 .comp{{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ac)}}
 blockquote{{margin:0;font:italic 400 22px/1.3 var(--serif)}} .cena p{{margin:0;max-width:65ch}}
 .rot{{display:block;font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--ink2);margin-bottom:2px}}
