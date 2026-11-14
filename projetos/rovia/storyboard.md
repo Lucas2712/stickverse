@@ -14,14 +14,14 @@ Reconstrução cena a cena do comercial de referência (27,4 s, 11 planos, beat 
 | Tipografia | <b>Inter</b> (Display nos títulos, Text no corpo; Regular, Medium, Semibold, Bold). A SF Pro não tem licença para vídeo publicado; o Inter é a alternativa permanente do estúdio (OFL). |
 | Sistema gráfico | cards de vidro com sombra longa e suave, contadores que rolam dígito a dígito, mini-barras (sparklines) turquesa/coral, anéis de porcentagem, mapa de rota com traço que se desenha, widget de tela bloqueada, ícones 3D (bomba de combustível, chave, escudo, documento, pneu), post-it e recibos térmicos na cena da bagunça. |
 | Transições (como na referência) | foco que entra (desfoque → nítido), zoom para dentro da tela, chicote horizontal com borrão de movimento, fita turquesa que envolve o celular (a referência usa uma fita verde: aqui ela é uma <b>estrada</b> que dá a volta no aparelho), flash branco curto. |
-| Imagens | 2 imagens geradas no OpenArt: (1) quarto escuro, mão sobre notebook com a tela acesa; (2) mesa de madeira à noite com luminária, plantas, janela com lua e notebook. A tela do notebook fica vazia e a interface ROVIA é animada por cima em código. Ícones 3D: gerados no OpenArt (lote de 4–5) ou desenhados em código. |
+| Imagens | 2 imagens geradas no OpenArt: (1) painel de carro à noite com o volante e o painel digital apagado (abertura); (2) mesa de madeira à noite com luminária, plantas, janela com lua e notebook. A tela do notebook fica vazia e a interface ROVIA é animada por cima em código. Ícones 3D: gerados no OpenArt (lote de 4–5) ou desenhados em código. |
 | Áudio | narração nova (voz Matilda), <b>música instrumental</b> no lugar da da referência (pedido explícito seu, exceção à regra do canal) e efeitos de interface presos a cada animação. |
 
 ## Mapa de ritmo
 
 | # | Tempo | Fundo | Composição | Imagem |
 |---|---|---|---|---|
-| 1 | 0,0–1,9 | escuro | Plano fechado de um notebook num quarto escuro, mão no teclado, tela clara acesa preenchendo o centro do quadro (na vertical, o notebook ocupa a metade inferior; acima, o escuro do quarto). A frase da narração aparece escrita no meio da tela, como na referência. | quarto escuro + notebook (OpenArt) |
+| 1 | 0,0–1,9 | escuro | Close cinematográfico do painel de um carro à noite, visto do banco do motorista: volante em primeiro plano emoldurando o painel digital, para-brisa com luzes da cidade desfocadas e gotas de chuva no terço de cima. O painel começa apagado; tudo o que acende nele é desenhado em código (ponteiros, alerta, valor). | painel do carro à noite (OpenArt) |
 | 2 | 1,9–4,3 | claro | Fundo névoa com brilho azul-turquesa nos cantos. Card de vidro no centro (largura ~70% do quadro). Depois, tipografia central. |  |
 | 3 | 4,3–7,0 | escuro | Plano médio da mesa de madeira à noite: luminária quente à esquerda, plantas, livros, janela azul com lua ao fundo, notebook no centro. Na vertical, a câmera está mais alta e mostra a mesa inteira de frente, janela ocupando o terço de cima. | mesa noturna + notebook (OpenArt) |
 | 4 | 7,0–9,3 | claro | Fundo névoa. Celular inclinado em 3D entra de baixo, gira e para no centro; uma fita turquesa em forma de estrada (com faixa tracejada) se enrola em volta dele, entrando por cima e saindo por baixo. |  |
@@ -34,21 +34,22 @@ Reconstrução cena a cena do comercial de referência (27,4 s, 11 planos, beat 
 | 11 | 23,2–25,2 | escuro | Fundo asfalto noturno. Ícone ROVIA aparece pequeno, a estrada do R se desenha, o nome entra ao lado com leve giro que se acomoda; depois cresce suavemente. |  |
 | 12 | 25,2–28,5 | claro | Fundo névoa. Ícone pequeno em cima; botão turquesa em pílula no centro que se estica da esquerda e o texto aparece letra a letra; depois o botão vira contorno com «É GRÁTIS»; abaixo, endereço e «Valores de exemplo». |  |
 
-### 1 · Abertura · notebook no escuro · 0,0–1,9 s
+### 1 · Abertura · painel do carro à noite · 0,0–1,9 s
 
 **Narração:** "Dois mil no mês…"
 
-**Fundo:** escuro · **Composição:** Plano fechado de um notebook num quarto escuro, mão no teclado, tela clara acesa preenchendo o centro do quadro (na vertical, o notebook ocupa a metade inferior; acima, o escuro do quarto). A frase da narração aparece escrita no meio da tela, como na referência. · **Imagem:** quarto escuro + notebook (OpenArt)
+**Fundo:** escuro · **Composição:** Close cinematográfico do painel de um carro à noite, visto do banco do motorista: volante em primeiro plano emoldurando o painel digital, para-brisa com luzes da cidade desfocadas e gotas de chuva no terço de cima. O painel começa apagado; tudo o que acende nele é desenhado em código (ponteiros, alerta, valor). · **Imagem:** painel do carro à noite (OpenArt)
 
-na tela do notebook: «Dois mil no mês…» em texto pequeno; barra de player discreta embaixo
+no painel: medidor de combustível (ponteiro descendo até a reserva), luz de alerta de combustível em coral, leitura central «Gastos do mês · R$ 2.000» com dígitos girando
 
 **Sincronização:**
-- 0,00 s câmera parada com leve deriva; tela pisca ao acender
-- 0,70 s «Dois mil no mês…» digita na tela
-- 1,40 s clique de tecla (som)
-- 1,60 s câmera mergulha na tela (zoom para dentro), tudo vira o branco da cena 2
+- 0,00 s corte seco no escuro: impacto grave; painel liga com a varredura de partida (ponteiros sobem e voltam, 0,35 s)
+- 0,40 s «Dois» ponteiro do combustível começa a cair; valor central gira de R$ 0 até R$ 2.000
+- 0,78 s «mil» luz de alerta de combustível acende em coral, pisca 2 vezes (bipe)
+- 1,06 s «mês» valor trava em R$ 2.000; câmera começa a empurrar para o painel
+- 1,35–1,85 s mergulho no número «R$ 2.000» (zoom para dentro), que vira o valor do card da cena 2
 
-**Transição:** zoom para dentro da tela do notebook → fundo branco
+**Transição:** zoom para dentro do valor no painel → card «Gastos do mês» (o mesmo número atravessa o corte)
 
 ---
 
