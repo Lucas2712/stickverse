@@ -1,0 +1,626 @@
+[
+{
+"t": 0.42,
+"som": "typing/typing_typing-key-laptop",
+"ganho": 0.35,
+"alinhar_fim": false
+},
+{
+"t": 0.8,
+"som": "typing/typing_typing-key-laptop",
+"ganho": 0.35,
+"alinhar_fim": false
+},
+{
+"t": 0.97,
+"som": "typing/typing_typing-key-laptop",
+"ganho": 0.35,
+"alinhar_fim": false
+},
+{
+"t": 1.08,
+"som": "typing/typing_typing-key-laptop",
+"ganho": 0.35,
+"alinhar_fim": false
+},
+{
+"t": 1.86,
+"som": "riser/riser_reverse-swell-short",
+"ganho": 0.35,
+"alinhar_fim": true
+},
+{
+"t": 1.92,
+"som": "pop/pop_ui-pop-soft",
+"ganho": 0.4,
+"alinhar_fim": false
+},
+{
+"t": 2.15,
+"som": "click/click_hover-tick-high",
+"ganho": 0.22,
+"alinhar_fim": false
+},
+{
+"t": 2.212,
+"som": "click/click_hover-tick-high",
+"ganho": 0.20625,
+"alinhar_fim": false
+},
+{
+"t": 2.274,
+"som": "click/click_hover-tick-high",
+"ganho": 0.1925,
+"alinhar_fim": false
+},
+{
+"t": 2.336,
+"som": "click/click_hover-tick-high",
+"ganho": 0.17875,
+"alinhar_fim": false
+},
+{
+"t": 2.398,
+"som": "click/click_hover-tick-high",
+"ganho": 0.165,
+"alinhar_fim": false
+},
+{
+"t": 2.46,
+"som": "click/click_hover-tick-high",
+"ganho": 0.15125,
+"alinhar_fim": false
+},
+{
+"t": 2.522,
+"som": "click/click_hover-tick-high",
+"ganho": 0.1375,
+"alinhar_fim": false
+},
+{
+"t": 2.584,
+"som": "click/click_hover-tick-high",
+"ganho": 0.12375,
+"alinhar_fim": false
+},
+{
+"t": 2.646,
+"som": "click/click_hover-tick-high",
+"ganho": 0.11,
+"alinhar_fim": false
+},
+{
+"t": 2.708,
+"som": "click/click_hover-tick-high",
+"ganho": 0.09625,
+"alinhar_fim": false
+},
+{
+"t": 2.77,
+"som": "click/click_hover-tick-high",
+"ganho": 0.0825,
+"alinhar_fim": false
+},
+{
+"t": 2.832,
+"som": "click/click_hover-tick-high",
+"ganho": 0.06875,
+"alinhar_fim": false
+},
+{
+"t": 2.894,
+"som": "click/click_hover-tick-high",
+"ganho": 0.055,
+"alinhar_fim": false
+},
+{
+"t": 3.1,
+"som": "whoosh/whoosh_whoosh-fast-whip",
+"ganho": 0.5,
+"alinhar_fim": false
+},
+{
+"t": 3.5,
+"som": "impact/impact_cut-hit-air",
+"ganho": 0.35,
+"alinhar_fim": false
+},
+{
+"t": 3.98,
+"som": "whoosh/whoosh_swish-soft",
+"ganho": 0.45,
+"alinhar_fim": false
+},
+{
+"t": 4.3,
+"som": "whoosh/whoosh_pro-whoosh-big-reverse",
+"ganho": 0.3,
+"alinhar_fim": true
+},
+{
+"t": 4.97,
+"som": "pop/pop_pro-pop-in-round",
+"ganho": 0.45,
+"alinhar_fim": false
+},
+{
+"t": 5.48,
+"som": "pop/pop_pro-pop-in-airy",
+"ganho": 0.45,
+"alinhar_fim": false
+},
+{
+"t": 6.15,
+"som": "pop/pop_pro-pop-in-double",
+"ganho": 0.45,
+"alinhar_fim": false
+},
+{
+"t": 6.3,
+"som": "whoosh/whoosh_swipe-paper",
+"ganho": 0.35,
+"alinhar_fim": false
+},
+{
+"t": 7.0,
+"som": "riser/riser_reverse-swell-ring",
+"ganho": 0.3,
+"alinhar_fim": true
+},
+{
+"t": 7.0,
+"som": "whoosh/whoosh_pro-whoosh-big-swell",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 7.72,
+"som": "whoosh/whoosh_pro-zip-arc",
+"ganho": 0.4,
+"alinhar_fim": false
+},
+{
+"t": 8.3,
+"som": "whoosh/whoosh_swipe-glide",
+"ganho": 0.3,
+"alinhar_fim": false
+},
+{
+"t": 8.08,
+"som": "chime/chime_notify-m2",
+"ganho": 0.35,
+"alinhar_fim": false
+},
+{
+"t": 8.95,
+"som": "whoosh/whoosh_whoosh-big-jet",
+"ganho": 0.5,
+"alinhar_fim": false
+},
+{
+"t": 9.36,
+"som": "click/click_pro-hover-tick-glass",
+"ganho": 0.3,
+"alinhar_fim": false
+},
+{
+"t": 9.62,
+"som": "typing/typing_pro-typing-key-soft",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 9.7,
+"som": "typing/typing_pro-typing-key-soft",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 9.78,
+"som": "typing/typing_pro-typing-key-soft",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 9.86,
+"som": "typing/typing_pro-typing-key-soft",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 9.94,
+"som": "typing/typing_pro-typing-key-soft",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 10.02,
+"som": "typing/typing_pro-typing-key-soft",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 10.1,
+"som": "typing/typing_pro-typing-key-soft",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 10.18,
+"som": "typing/typing_pro-typing-key-soft",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 10.26,
+"som": "typing/typing_pro-typing-key-soft",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 10.34,
+"som": "typing/typing_pro-typing-key-soft",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 10.42,
+"som": "typing/typing_pro-typing-key-soft",
+"ganho": 0.42,
+"alinhar_fim": false
+},
+{
+"t": 10.48,
+"som": "click/click_pro-click-soft",
+"ganho": 0.5,
+"alinhar_fim": false
+},
+{
+"t": 10.63,
+"som": "pop/pop_ui-pop-blip",
+"ganho": 0.28,
+"alinhar_fim": false
+},
+{
+"t": 10.75,
+"som": "pop/pop_ui-pop-blip",
+"ganho": 0.28,
+"alinhar_fim": false
+},
+{
+"t": 10.87,
+"som": "pop/pop_ui-pop-blip",
+"ganho": 0.28,
+"alinhar_fim": false
+},
+{
+"t": 10.99,
+"som": "pop/pop_ui-pop-blip",
+"ganho": 0.28,
+"alinhar_fim": false
+},
+{
+"t": 10.78,
+"som": "chime/chime_mallet-up4",
+"ganho": 0.18,
+"alinhar_fim": false
+},
+{
+"t": 12.55,
+"som": "whoosh/whoosh_whoosh-fast-tight",
+"ganho": 0.45,
+"alinhar_fim": false
+},
+{
+"t": 12.92,
+"som": "pop/pop_ui-pop-soft",
+"ganho": 0.28,
+"alinhar_fim": false
+},
+{
+"t": 13.0,
+"som": "pop/pop_ui-pop-soft",
+"ganho": 0.28,
+"alinhar_fim": false
+},
+{
+"t": 13.08,
+"som": "pop/pop_ui-pop-soft",
+"ganho": 0.28,
+"alinhar_fim": false
+},
+{
+"t": 13.04,
+"som": "pop/pop_ui-pop-soft",
+"ganho": 0.28,
+"alinhar_fim": false
+},
+{
+"t": 13.0,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.2,
+"alinhar_fim": false
+},
+{
+"t": 13.07,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.18666666666666668,
+"alinhar_fim": false
+},
+{
+"t": 13.14,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.17333333333333334,
+"alinhar_fim": false
+},
+{
+"t": 13.21,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.16000000000000003,
+"alinhar_fim": false
+},
+{
+"t": 13.28,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.1466666666666667,
+"alinhar_fim": false
+},
+{
+"t": 13.35,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.13333333333333336,
+"alinhar_fim": false
+},
+{
+"t": 13.42,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.12,
+"alinhar_fim": false
+},
+{
+"t": 13.49,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.10666666666666667,
+"alinhar_fim": false
+},
+{
+"t": 13.56,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.09333333333333334,
+"alinhar_fim": false
+},
+{
+"t": 13.63,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.08000000000000002,
+"alinhar_fim": false
+},
+{
+"t": 13.7,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.06666666666666668,
+"alinhar_fim": false
+},
+{
+"t": 13.77,
+"som": "click/click_hover-tick-mid",
+"ganho": 0.053333333333333344,
+"alinhar_fim": false
+},
+{
+"t": 14.0,
+"som": "chime/chime_pro-notify-ding-2045",
+"ganho": 0.3,
+"alinhar_fim": false
+},
+{
+"t": 14.6,
+"som": "pop/pop_drip-plink",
+"ganho": 0.35,
+"alinhar_fim": false
+},
+{
+"t": 14.95,
+"som": "whoosh/whoosh_whoosh-fast-crisp",
+"ganho": 0.45,
+"alinhar_fim": false
+},
+{
+"t": 15.25,
+"som": "foley/foley_fit-land-light-finger-phone",
+"ganho": 0.3,
+"alinhar_fim": false
+},
+{
+"t": 15.45,
+"som": "chime/chime_notify-m1",
+"ganho": 0.4,
+"alinhar_fim": false
+},
+{
+"t": 15.97,
+"som": "chime/chime_notify-m3",
+"ganho": 0.4,
+"alinhar_fim": false
+},
+{
+"t": 16.4,
+"som": "chime/chime_notify-m5",
+"ganho": 0.4,
+"alinhar_fim": false
+},
+{
+"t": 16.68,
+"som": "whoosh/whoosh_whoosh-fast-whip",
+"ganho": 0.5,
+"alinhar_fim": false
+},
+{
+"t": 16.92,
+"som": "whoosh/whoosh_pro-whoosh-big-long",
+"ganho": 0.38,
+"alinhar_fim": false
+},
+{
+"t": 17.4,
+"som": "pop/pop_pro-pop-thup",
+"ganho": 0.4,
+"alinhar_fim": false
+},
+{
+"t": 18.1,
+"som": "whoosh/whoosh_swipe-cloth",
+"ganho": 0.35,
+"alinhar_fim": false
+},
+{
+"t": 18.19,
+"som": "pop/pop_pro-pop-tink",
+"ganho": 0.4,
+"alinhar_fim": false
+},
+{
+"t": 19.45,
+"som": "whoosh/whoosh_whoosh-big-reverse",
+"ganho": 0.3,
+"alinhar_fim": true
+},
+{
+"t": 19.47,
+"som": "impact/impact_cut-hit-air",
+"ganho": 0.3,
+"alinhar_fim": false
+},
+{
+"t": 19.75,
+"som": "whoosh/whoosh_pro-whoosh-big-swell",
+"ganho": 0.38,
+"alinhar_fim": false
+},
+{
+"t": 20.0,
+"som": "whoosh/whoosh_swipe-paper",
+"ganho": 0.2,
+"alinhar_fim": false
+},
+{
+"t": 20.15,
+"som": "whoosh/whoosh_swipe-paper",
+"ganho": 0.2,
+"alinhar_fim": false
+},
+{
+"t": 20.25,
+"som": "whoosh/whoosh_swipe-paper",
+"ganho": 0.2,
+"alinhar_fim": false
+},
+{
+"t": 19.85,
+"som": "whoosh/whoosh_swipe-flick",
+"ganho": 0.25,
+"alinhar_fim": false
+},
+{
+"t": 20.37,
+"som": "click/click_click-snap",
+"ganho": 0.35,
+"alinhar_fim": false
+},
+{
+"t": 20.52,
+"som": "whoosh/whoosh_swipe-flick",
+"ganho": 0.25,
+"alinhar_fim": false
+},
+{
+"t": 21.18,
+"som": "whoosh/whoosh_whoosh-fast-heavy",
+"ganho": 0.5,
+"alinhar_fim": false
+},
+{
+"t": 21.66,
+"som": "click/click_hover-tick-air",
+"ganho": 0.2,
+"alinhar_fim": false
+},
+{
+"t": 21.95,
+"som": "click/click_hover-tick-air",
+"ganho": 0.2,
+"alinhar_fim": false
+},
+{
+"t": 22.0,
+"som": "click/click_hover-tick-air",
+"ganho": 0.2,
+"alinhar_fim": false
+},
+{
+"t": 22.3,
+"som": "impact/impact_pro-impact-short",
+"ganho": 0.4,
+"alinhar_fim": false
+},
+{
+"t": 22.45,
+"som": "whoosh/whoosh_swish-bright",
+"ganho": 0.25,
+"alinhar_fim": false
+},
+{
+"t": 23.13,
+"som": "pop/pop_pro-pop-in-deep",
+"ganho": 0.4,
+"alinhar_fim": false
+},
+{
+"t": 23.3,
+"som": "whoosh/whoosh_pro-zip-up",
+"ganho": 0.33,
+"alinhar_fim": false
+},
+{
+"t": 23.4,
+"som": "chime/chime_logo-sting-soft-bloom",
+"ganho": 0.45,
+"alinhar_fim": false
+},
+{
+"t": 25.1,
+"som": "pop/pop_ui-pop-wide",
+"ganho": 0.35,
+"alinhar_fim": false
+},
+{
+"t": 25.12,
+"som": "whoosh/whoosh_swish-soft",
+"ganho": 0.28,
+"alinhar_fim": false
+},
+{
+"t": 25.72,
+"som": "click/click_pro-click-mouse",
+"ganho": 0.5,
+"alinhar_fim": false
+},
+{
+"t": 26.28,
+"som": "chime/chime_pro-notify-ding-2167",
+"ganho": 0.4,
+"alinhar_fim": false
+},
+{
+"t": 26.3,
+"som": "other/other_toggle-on",
+"ganho": 0.28,
+"alinhar_fim": false
+},
+{
+"t": 27.05,
+"som": "chime/chime_shimmer-m2",
+"ganho": 0.3,
+"alinhar_fim": false
+}
+]

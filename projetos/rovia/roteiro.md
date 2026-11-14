@@ -1,4 +1,4 @@
-# ROVIA — roteiro (proposta, aguardando aprovação)
+# ROVIA — roteiro (aprovado)
 
 Dois mil no mês. E cada quilômetro... quanto custou?
 Entre posto, oficina e planilha?
