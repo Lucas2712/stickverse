@@ -2,7 +2,6 @@
 import React from "react";
 import { AbsoluteFill, Img, staticFile } from "remotion";
 import { C, display, texto, p, k, useT, outExpo, inExpo, out3, in3, outBack, inOut3, inOutSine, brl, rnd } from "../lib";
-import { quadMatrix } from "../quad";
 import { FundoNevoa, Rolo, Pilula, VidroClaro, FiltroChicote, Celular, RoviaIcone, RoviaNome, Grao } from "../ui";
 
 // imagens 1536×2752 exibidas com 1080 de largura
@@ -11,41 +10,97 @@ const IMG_H = 2752 * ESC; // 1935
 const OFF_Y = (1920 - IMG_H) / 2;
 const sc = (x: number, y: number): [number, number] => [x * ESC, y * ESC + OFF_Y];
 
-// ============ CENA 1 · notebook no escuro (0 – 1,85) ============
-const TELA1: [[number, number], [number, number], [number, number], [number, number]] = [sc(225, 1084), sc(943, 1004), sc(998, 1662), sc(306, 1654)];
-const C1_CENTRO = sc(618, 1350);
+// ============ CENA 1 · painel do carro à noite (0 – 1,85) ============
+// polígono da tela do painel visível por dentro do volante (pixels da imagem 1536×2752)
+const TELA1 = [[315, 1530], [352, 1446], [410, 1372], [505, 1312], [602, 1278], [700, 1263], [850, 1263], [995, 1312], [1092, 1362], [1188, 1440], [1236, 1530], [1228, 1618], [322, 1618]]
+  .map(([x, y]) => sc(x, y));
+const CLIP1 = `polygon(${TELA1.map(([x, y]) => `${x.toFixed(1)}px ${y.toFixed(1)}px`).join(",")})`;
+const C1_VALOR: [number, number] = [545, 1010]; // centro do valor no painel (coordenadas do vídeo)
+
+const Medidor: React.FC<{ cx: number; cy: number; r: number; v: number; cor: string; marcas: string[]; alerta?: number }> = ({ cx, cy, r, v, cor, marcas, alerta = 0 }) => {
+  // arco de 220°, v de 0 a 1
+  const a0 = 160, a1 = 380;
+  const pt = (ang: number, rr: number) => [cx + rr * Math.cos((ang * Math.PI) / 180), cy + rr * Math.sin((ang * Math.PI) / 180)];
+  const arco = (fim: number, rr: number) => {
+    const [x0, y0] = pt(a0, rr);
+    const [x1, y1] = pt(fim, rr);
+    return `M ${x0} ${y0} A ${rr} ${rr} 0 ${fim - a0 > 180 ? 1 : 0} 1 ${x1} ${y1}`;
+  };
+  const ang = a0 + (a1 - a0) * v;
+  const [nx, ny] = pt(ang, r * 0.86);
+  return (
+    <g>
+      <path d={arco(a1, r)} stroke="rgba(255,255,255,0.10)" strokeWidth={6} fill="none" strokeLinecap="round" />
+      <path d={arco(Math.max(a0 + 0.5, ang), r)} stroke={cor} strokeWidth={6} fill="none" strokeLinecap="round" style={{ filter: `drop-shadow(0 0 6px ${cor})` }} />
+      {Array.from({ length: 11 }).map((_, i) => {
+        const aa = a0 + ((a1 - a0) * i) / 10;
+        const [x0, y0] = pt(aa, r - 14);
+        const [x1, y1] = pt(aa, r - (i % 5 === 0 ? 30 : 22));
+        return <line key={i} x1={x0} y1={y0} x2={x1} y2={y1} stroke={i === 0 && alerta > 0 ? C.coral : "rgba(255,255,255,0.45)"} strokeWidth={i % 5 === 0 ? 3 : 1.6} />;
+      })}
+      <line x1={cx} y1={cy} x2={nx} y2={ny} stroke="#fff" strokeWidth={4} strokeLinecap="round" style={{ filter: "drop-shadow(0 0 5px rgba(255,255,255,0.7))" }} />
+      <circle cx={cx} cy={cy} r={8} fill="#0B1416" stroke="rgba(255,255,255,0.6)" strokeWidth={2} />
+      {marcas.map((m, i) => {
+        const [x, y] = pt(i === 0 ? a0 : a1, r + 22);
+        return <text key={m} x={x} y={y + 6} fill={i === 0 && alerta > 0 ? C.coral : "rgba(255,255,255,0.55)"} fontSize={18} fontWeight={600} textAnchor="middle" fontFamily="Inter">{m}</text>;
+      })}
+    </g>
+  );
+};
+
+const BombaIcone: React.FC<{ cor: string; s: number }> = ({ cor, s }) => (
+  <svg width={s} height={s} viewBox="0 0 24 24">
+    <path d="M5 21V4.5A1.5 1.5 0 0 1 6.5 3h7A1.5 1.5 0 0 1 15 4.5V21M3.5 21h13M7.5 6.5h5v4h-5zM15 9h1.6a1.4 1.4 0 0 1 1.4 1.4v6.1a1.25 1.25 0 0 0 2.5 0V8.2L18 5.5" fill="none" stroke={cor} strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
 
 export const Cena1: React.FC = () => {
   const t = useT();
-  const palavras: [string, number][] = [["Dois", 0.4], ["mil", 0.78], ["no", 0.95], ["mês…", 1.06]];
-  const acende = p(t, 0, 0.3, out3);
-  // deriva leve e depois mergulho na tela
-  const deriva = k(t, 0, 1.4, 1.0, 1.035, inOutSine);
-  const mergulho = k(t, 1.38, 1.92, 1, 6.2, in3);
-  const s = deriva * mergulho;
-  const branco = p(t, 1.62, 1.9, in3);
-  const [cx, cy] = C1_CENTRO;
+  const liga = p(t, 0.02, 0.14, out3); // painel acende
+  // varredura de partida: sobe e volta (0,05–0,40)
+  const varre = t < 0.4 ? Math.sin(Math.PI * p(t, 0.05, 0.4, inOutSine)) : 0;
+  const combustivel = t < 0.4 ? varre : k(t, 0.4, 1.06, 0.62, 0.06, inOut3);
+  const consumo = t < 0.4 ? varre : k(t, 0.4, 1.06, 0.35, 0.82, out3);
+  const valor = k(t, 0.4, 1.06, 0, 2000, out3);
+  const pisca = t >= 0.78 ? (Math.floor((t - 0.78) / 0.2) % 2 === 0 || t > 1.18 ? 1 : 0.25) : 0;
+  const trava = p(t, 1.06, 1.25, outBack);
+  const deriva = k(t, 0, 1.3, 1.0, 1.05, inOutSine);
+  const mergulho = k(t, 1.3, 1.9, 1, 9, in3);
+  const branco = p(t, 1.6, 1.88, in3);
+  const [cx, cy] = C1_VALOR;
   return (
-    <AbsoluteFill style={{ background: "#020405", overflow: "hidden" }}>
-      <AbsoluteFill style={{ transformOrigin: `${cx}px ${cy}px`, transform: `scale(${s}) translateX(${k(t, 0, 1.4, 6, -6)}px)` }}>
-        <Img src={staticFile("img/quarto.png")} style={{ position: "absolute", left: 0, top: OFF_Y, width: 1080, height: IMG_H, filter: `brightness(${0.55 + 0.45 * acende})` }} />
-        {/* tela: texto da narração escrito na tela, como na referência */}
-        <div style={{ position: "absolute", left: 0, top: 0, width: 600, height: 420, transformOrigin: "0 0", transform: quadMatrix(600, 420, TELA1),
-          display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div style={{ ...texto(500, 30), color: "#2A2622", display: "flex", gap: 8 }}>
-            {palavras.map(([w, at]) => (
-              <span key={w} style={{ opacity: p(t, at, at + 0.12) }}>{w}</span>
-            ))}
+    <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
+      <AbsoluteFill style={{ transformOrigin: `${cx}px ${cy}px`, transform: `scale(${deriva * mergulho})` }}>
+        <Img src={staticFile("img/painel.png")} style={{ position: "absolute", left: 0, top: OFF_Y, width: 1080, height: IMG_H, filter: `brightness(${0.62 + 0.38 * liga})` }} />
+        {/* luz do painel no volante */}
+        <div style={{ position: "absolute", left: cx - 520, top: cy - 300, width: 1040, height: 600, background: "radial-gradient(closest-side, rgba(63,217,198,0.22), transparent)", mixBlendMode: "screen", opacity: liga }} />
+        {/* tela do painel (recortada pela abertura do volante) */}
+        <div style={{ position: "absolute", inset: 0, clipPath: CLIP1, opacity: liga }}>
+          <div style={{ position: "absolute", inset: 0, background: "radial-gradient(420px 220px at 545px 1010px, rgba(19,60,64,0.55), rgba(3,10,12,0.9))" }} />
+          <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
+            <Medidor cx={352} cy={1062} r={80} v={combustivel} cor={combustivel < 0.15 && t > 0.6 ? C.coral : C.turq} marcas={["0", "1"]} alerta={pisca} />
+            <Medidor cx={738} cy={1062} r={80} v={consumo} cor={C.turqClaro} marcas={["0", "20"]} />
+          </svg>
+          <div style={{ position: "absolute", left: cx - 150, width: 300, top: 938, textAlign: "center" }}>
+            <div style={{ ...texto(600, 16), letterSpacing: "0.22em", color: "rgba(255,255,255,0.55)" }}>GASTOS DO MÊS</div>
+            <div style={{ ...display(700, 64), color: "#fff", marginTop: 6, display: "flex", justifyContent: "center", alignItems: "baseline", gap: 6,
+              transform: `scale(${1 + 0.08 * (1 - trava) * (t >= 1.06 ? 1 : 0)})`, textShadow: `0 0 ${18 * trava}px rgba(63,217,198,0.6)` }}>
+              <span style={{ fontSize: 26, color: C.turqClaro }}>R$</span>
+              <Rolo valor={valor} molde="0.000" dec={0} />
+            </div>
           </div>
-          {/* barrinha de player discreta */}
-          <div style={{ position: "absolute", left: 24, right: 24, bottom: 22, height: 4, borderRadius: 2, background: "rgba(0,0,0,0.08)" }}>
-            <div style={{ width: `${k(t, 0, 1.9, 4, 30)}%`, height: "100%", borderRadius: 2, background: C.turq, opacity: 0.6 }} />
+          {/* alerta de reserva */}
+          <div style={{ position: "absolute", left: cx - 80, width: 160, top: 1078, display: "flex", alignItems: "center", justifyContent: "center", gap: 8, opacity: pisca,
+            filter: pisca > 0.5 ? `drop-shadow(0 0 10px ${C.coral})` : "none" }}>
+            <BombaIcone cor={C.coral} s={28} />
+            <span style={{ ...texto(700, 15), letterSpacing: "0.12em", color: C.coral }}>RESERVA</span>
           </div>
         </div>
       </AbsoluteFill>
-      {/* vinheta + grão de filmagem */}
-      <AbsoluteFill style={{ background: "radial-gradient(70% 55% at 50% 60%, transparent 40%, rgba(0,0,0,0.55))" }} />
-      <Grao opacity={0.09} />
+      <AbsoluteFill style={{ background: "radial-gradient(80% 60% at 50% 52%, transparent 45%, rgba(0,0,0,0.5))" }} />
+      <Grao opacity={0.07} />
+      {/* corte seco no escuro: o primeiro quadro abre do preto */}
+      <AbsoluteFill style={{ background: "#000", opacity: 1 - p(t, 0, 0.06) }} />
       <AbsoluteFill style={{ background: C.nevoa, opacity: branco }} />
     </AbsoluteFill>
   );
@@ -55,7 +110,7 @@ export const Cena1: React.FC = () => {
 export const Cena2: React.FC = () => {
   const t = useT();
   const foco = p(t, 1.85, 2.45, outExpo);
-  const valor = k(t, 2.15, 3.05, 0, 2000, out3);
+  const valor = 2000; // o mesmo número que atravessou o corte
   const saiCard = p(t, 3.12, 3.38, inExpo);
   const entraFrase = p(t, 3.2, 3.55, outExpo);
   const saiFrase = p(t, 3.98, 4.27, inExpo);
@@ -79,7 +134,7 @@ export const Cena2: React.FC = () => {
               <Rolo valor={valor} molde="0.000,00" />
             </div>
             <div style={{ height: 10, borderRadius: 5, background: "#E3EBEA", marginTop: 26, overflow: "hidden" }}>
-              <div style={{ width: `${(valor / 2000) * 78}%`, height: "100%", background: `linear-gradient(90deg, ${C.turq}, ${C.turqClaro})`, borderRadius: 5 }} />
+              <div style={{ width: `${k(t, 1.95, 2.7, 0, 78, out3)}%`, height: "100%", background: `linear-gradient(90deg, ${C.turq}, ${C.turqClaro})`, borderRadius: 5 }} />
             </div>
             <div style={{ display: "flex", gap: 16, marginTop: 30 }}>
               <Pilula>Abastecer</Pilula>
