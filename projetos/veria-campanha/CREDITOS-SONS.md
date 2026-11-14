@@ -5,7 +5,8 @@ comercial, atribuição obrigatória). Nenhum som de terceiros, nenhuma bibliote
 
 | Arquivo | Origem | Uso |
 |---|---|---|
-| audio/narracao/narracao.mp3 | ElevenLabs TTS · voz Sarah · eleven_multilingual_v2 | narração |
+| audio/narracao/narracao.mp3 | ElevenLabs TTS · voz Matilda · eleven_v3 | narração |
+| audio/narracao/v1-sarah/ | ElevenLabs TTS · voz Sarah · eleven_multilingual_v2 | primeira versão (substituída) |
 | audio/trilha/stems/01-pulso-escuro.mp3 … 08-assinatura.mp3 | ElevenLabs Sound Effects v2 (8 stems, 4–10 s, loops) | trilha arranjada em src/audio/Trilha.tsx |
 | audio/sfx/*.mp3 (15 arquivos) | ElevenLabs Sound Effects v2 (prompts em ferramentas/gerar_sfx.sh) | efeitos presos a eventos visuais |
 

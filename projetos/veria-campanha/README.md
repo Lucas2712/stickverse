@@ -48,11 +48,12 @@ ferramentas/              marca.mjs, png.cjs, apresentacao.mjs, quadros.mjs, est
 
 ## Narração
 
-ElevenLabs, voz **Sarah** (padrão da plataforma), modelo multilingual v2, texto em `roteiro.md`.
-O áudio não foi acelerado nem cortado. Para chegar a ~71 s foram **inseridos** respiros em silêncio
-entre blocos (abertura +2,5 s; antes de «Esta é a Véria» +1,5 s; depois +2,0 s; antes de «E a sua
-evolução» +1,0 s; antes de «Sem pressa» +2,0 s; antes do «Véria» final +1,0 s), sempre dentro de pausas
-já existentes. Original: `audio/narracao/narracao.mp3`; montada: `narracao-timeline.wav`.
+ElevenLabs, voz **Matilda** (padrão da plataforma), modelo **eleven_v3** com direção de interpretação
+(`roteiro-elevenlabs-v3.txt`). A voz não foi acelerada nem cortada: `ferramentas/montar_narracao.py` coloca
+cada frase no mesmo instante em que ela começava na montagem de referência, cortando só dentro de silêncios
+medidos, e aplica apenas ganho. Original: `audio/narracao/narracao.mp3`; montada: `narracao-timeline.wav`.
+A primeira versão (Sarah, multilingual v2) está guardada em `audio/narracao/v1-sarah/`.
+Para medir voz × fundo: `npx remotion render src/index.ts Veria saida/fundo.wav --codec wav --props='{"semVoz":true}'`.
 
 ## Licenças
 
