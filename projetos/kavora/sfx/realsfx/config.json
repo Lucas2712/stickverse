@@ -1,0 +1,20 @@
+{
+ "libraries": [
+  {
+   "name": "estudio",
+   "path": "/workspace/stickverse/studio/sons",
+   "tier": "main"
+  },
+  {
+   "name": "criados",
+   "path": "/workspace/stickverse/projetos/kavora/sfx/criados",
+   "tier": "main"
+  }
+ ],
+ "uisfx": {
+  "path": "/workspace/stickverse/.claude/skills/real-sfx/vendor/node_modules/uisfx",
+  "default_pack": "studio"
+ },
+ "skip_dir_names": [],
+ "index_path": "/workspace/stickverse/projetos/kavora/sfx/realsfx/library_index.json"
+}

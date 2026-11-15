@@ -1,1 +1,9 @@
 saida/
+sfx/stems/
+sfx/work/
+sfx/result/*.wav
+sfx/result/*.mp4
+sfx/result/_work/
+sfx/result/review_parts/
+sfx/result-leve/
+sfx/earshot-forge/**/*.wav

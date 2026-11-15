@@ -1,0 +1,157 @@
+{
+ "whoosh": {
+  "ids": [
+   165,
+   175,
+   157,
+   158,
+   156,
+   147,
+   160,
+   180,
+   184
+  ],
+  "role": "whoosh"
+ },
+ "swish": {
+  "ids": [
+   162,
+   182,
+   146,
+   171,
+   148,
+   183,
+   153
+  ],
+  "role": "whoosh"
+ },
+ "wipe": {
+  "ids": [
+   161,
+   163
+  ],
+  "role": "whoosh"
+ },
+ "pop": {
+  "ids": [
+   1,
+   17,
+   23,
+   26,
+   10,
+   15,
+   4
+  ],
+  "role": "pop"
+ },
+ "click": {
+  "ids": [
+   200,
+   189,
+   208,
+   204
+  ],
+  "role": "click"
+ },
+ "tick": {
+  "ids": [
+   207,
+   203,
+   197,
+   201
+  ],
+  "role": "click"
+ },
+ "hit": {
+  "ids": [
+   86,
+   101,
+   104
+  ],
+  "role": "hit"
+ },
+ "thump": {
+  "ids": [
+   109,
+   101,
+   85,
+   2
+  ],
+  "role": "hit"
+ },
+ "chime": {
+  "ids": [
+   243,
+   217,
+   242
+  ],
+  "role": "chime"
+ },
+ "glass": {
+  "ids": [
+   227
+  ],
+  "role": "chime"
+ },
+ "success": {
+  "ids": [
+   242,
+   220
+  ],
+  "role": "chime"
+ },
+ "bell": {
+  "ids": [
+   232
+  ],
+  "role": "chime"
+ },
+ "riser": {
+  "ids": [
+   140,
+   133,
+   139,
+   143
+  ],
+  "role": "riser"
+ },
+ "glitch": {
+  "ids": [
+   79,
+   82,
+   78
+  ],
+  "role": "glitch"
+ },
+ "notify": {
+  "ids": [
+   234
+  ],
+  "role": "chime"
+ },
+ "sting": {
+  "ids": [
+   229
+  ],
+  "role": "chime"
+ },
+ "celesta": {
+  "ids": [
+   251
+  ],
+  "role": "chime"
+ },
+ "passagem3d": {
+  "ids": [
+   253,
+   252
+  ],
+  "role": "whoosh"
+ },
+ "brandhit": {
+  "ids": [
+   87
+  ],
+  "role": "hit"
+ }
+}

@@ -1,0 +1,374 @@
+[
+ {
+  "t": 0.2,
+  "type": "swish",
+  "g": 0.45,
+  "len": 0.4,
+  "notes": "Gerenciar sobe da máscara"
+ },
+ {
+  "t": 0.615,
+  "type": "whoosh",
+  "g": 0.35,
+  "len": 0.7,
+  "pan": -0.45,
+  "notes": "cartão-chave 3D entra pela esquerda (profundidade)"
+ },
+ {
+  "t": 0.8,
+  "type": "bell",
+  "g": 0.32,
+  "pan": 0.35,
+  "notes": "«hotel»: toque de sineta de recepção"
+ },
+ {
+  "t": 1.245,
+  "type": "whoosh",
+  "g": 0.5,
+  "len": 0.5,
+  "notes": "linha 1 recua, «não precisa» entra"
+ },
+ {
+  "t": 1.43,
+  "type": "tick",
+  "g": 0.55,
+  "notes": "cartões de despesa pousam (1)"
+ },
+ {
+  "t": 1.52,
+  "type": "click",
+  "g": 0.7,
+  "notes": "ícone ✕ abre"
+ },
+ {
+  "t": 1.73,
+  "type": "tick",
+  "g": 0.39,
+  "notes": "cartões de despesa pousam (5)"
+ },
+ {
+  "t": 2.15,
+  "type": "thump",
+  "g": 0.29,
+  "notes": "«complicado» salta"
+ },
+ {
+  "t": 3.05,
+  "type": "wipe",
+  "g": 0.6,
+  "len": 0.6,
+  "pan": -0.25,
+  "notes": "feixe de farol revela a cena, cartões saem"
+ },
+ {
+  "t": 3.22,
+  "type": "hit",
+  "g": 0.4,
+  "notes": "emblema pousa (camada: impacto leve)"
+ },
+ {
+  "t": 3.76,
+  "type": "glass",
+  "g": 0.45,
+  "notes": "brilho percorre o letreiro"
+ },
+ {
+  "t": 4.675,
+  "type": "whoosh",
+  "g": 0.45,
+  "len": 0.5,
+  "notes": "logo recua e sobe"
+ },
+ {
+  "t": 6.3,
+  "type": "pop",
+  "g": 0.65,
+  "notes": "pílula «em um só lugar» abre"
+ },
+ {
+  "t": 7.557,
+  "type": "swish",
+  "g": 0.45,
+  "len": 0.35,
+  "pan": 0.4,
+  "notes": "pílula reservas desliza pela direita"
+ },
+ {
+  "t": 7.6,
+  "type": "click",
+  "g": 0.55,
+  "notes": "pílula reservas assenta"
+ },
+ {
+  "t": 8.378,
+  "type": "swish",
+  "g": 0.23,
+  "len": 0.35,
+  "pan": 0.4,
+  "notes": "pílula recepcao desliza pela direita"
+ },
+ {
+  "t": 9.258,
+  "type": "swish",
+  "g": 0.4,
+  "len": 0.35,
+  "pan": 0.4,
+  "notes": "pílula financeiro desliza pela direita"
+ },
+ {
+  "t": 9.3,
+  "type": "click",
+  "g": 0.5,
+  "notes": "pílula financeiro assenta"
+ },
+ {
+  "t": 10.278,
+  "type": "swish",
+  "g": 0.32,
+  "len": 0.35,
+  "pan": 0.4,
+  "notes": "pílula compras desliza pela direita"
+ },
+ {
+  "t": 10.738,
+  "type": "swish",
+  "g": 0.38,
+  "len": 0.35,
+  "pan": 0.4,
+  "notes": "pílula operacao desliza pela direita"
+ },
+ {
+  "t": 10.78,
+  "type": "click",
+  "g": 0.48,
+  "notes": "pílula operacao assenta"
+ },
+ {
+  "t": 11.44,
+  "type": "pop",
+  "g": 0.35,
+  "notes": "ícones da órbita 1"
+ },
+ {
+  "t": 11.502,
+  "type": "swish",
+  "g": 0.45,
+  "len": 0.45,
+  "notes": "pílulas recolhem"
+ },
+ {
+  "t": 11.57,
+  "type": "thump",
+  "g": 0.45,
+  "notes": "ícone do app aparece no centro"
+ },
+ {
+  "t": 13.54,
+  "type": "riser",
+  "g": 0.35,
+  "len": 0.56,
+  "notes": "crescimento antes do zoom"
+ },
+ {
+  "t": 14.465,
+  "type": "passagem3d",
+  "g": 0.7,
+  "len": 0.5,
+  "notes": "ícone do app cresce até a câmera (som criado no Earshot)"
+ },
+ {
+  "t": 14.58,
+  "type": "thump",
+  "g": 0.5,
+  "notes": "entra o ambiente escuro"
+ },
+ {
+  "t": 15.16,
+  "type": "tick",
+  "g": 0.4,
+  "notes": "linha de processo 1"
+ },
+ {
+  "t": 15.23,
+  "type": "whoosh",
+  "g": 0.55,
+  "len": 0.6,
+  "notes": "cartão de processos sobe girando"
+ },
+ {
+  "t": 16.625,
+  "type": "whoosh",
+  "g": 0.55,
+  "len": 0.5,
+  "pan": 0.35,
+  "notes": "cartão de ocupação entra pela direita; anterior recua"
+ },
+ {
+  "t": 17.398,
+  "type": "whoosh",
+  "g": 0.6,
+  "len": 0.55,
+  "pan": 0.3,
+  "notes": "cartão laranja atravessa em 3D"
+ },
+ {
+  "t": 17.52,
+  "type": "hit",
+  "g": 0.3,
+  "notes": "cartão laranja assenta"
+ },
+ {
+  "t": 17.63,
+  "type": "click",
+  "g": 0.8,
+  "notes": "botão Aprovar pressionado"
+ },
+ {
+  "t": 17.75,
+  "type": "success",
+  "g": 0.45,
+  "notes": "Aprovado ✓"
+ },
+ {
+  "t": 18.61,
+  "type": "tick",
+  "g": 0.45,
+  "notes": "etapa 1 acende"
+ },
+ {
+  "t": 18.635,
+  "type": "whoosh",
+  "g": 0.55,
+  "len": 0.5,
+  "pan": -0.35,
+  "notes": "cartões saem pela esquerda, etapas entram"
+ },
+ {
+  "t": 18.83,
+  "type": "tick",
+  "g": 0.45,
+  "notes": "etapa 2 acende"
+ },
+ {
+  "t": 19.05,
+  "type": "tick",
+  "g": 0.45,
+  "notes": "etapa 3 acende"
+ },
+ {
+  "t": 19.27,
+  "type": "tick",
+  "g": 0.45,
+  "notes": "etapa 4 acende"
+ },
+ {
+  "t": 19.58,
+  "type": "whoosh",
+  "g": 0.5,
+  "len": 0.6,
+  "notes": "painel vem da profundidade"
+ },
+ {
+  "t": 20.61,
+  "type": "riser",
+  "g": 0.22,
+  "len": 0.6,
+  "notes": "brasa laranja cresce"
+ },
+ {
+  "t": 21.525,
+  "type": "whoosh",
+  "g": 0.24,
+  "len": 0.7,
+  "notes": "laranja sobe e toma o quadro"
+ },
+ {
+  "t": 21.64,
+  "type": "hit",
+  "g": 0.4,
+  "notes": "mudança de fundo para laranja"
+ },
+ {
+  "t": 22.46,
+  "type": "pop",
+  "g": 0.5,
+  "notes": "«inteligente» salta"
+ },
+ {
+  "t": 22.887,
+  "type": "whoosh",
+  "g": 0.3,
+  "len": 0.55,
+  "notes": "círculo manuscrito"
+ },
+ {
+  "t": 23.235,
+  "type": "whoosh",
+  "g": 0.65,
+  "len": 0.7,
+  "notes": "celular 3D sobe girando"
+ },
+ {
+  "t": 23.49,
+  "type": "thump",
+  "g": 0.4,
+  "notes": "celular assenta"
+ },
+ {
+  "t": 23.87,
+  "type": "glitch",
+  "g": 0.1,
+  "notes": "linhas conectam os ícones ao celular"
+ },
+ {
+  "t": 24.27,
+  "type": "notify",
+  "g": 0.45,
+  "notes": "notificação chega na tela"
+ },
+ {
+  "t": 24.52,
+  "type": "riser",
+  "g": 0.45,
+  "len": 0.9,
+  "notes": "crescimento para a marca"
+ },
+ {
+  "t": 25.302,
+  "type": "passagem3d",
+  "g": 0.62,
+  "len": 0.45,
+  "notes": "celular mergulha na câmera (som criado no Earshot)"
+ },
+ {
+  "t": 25.66,
+  "type": "brandhit",
+  "g": 0.75,
+  "notes": "letras KAVORA 3D chegam (impacto principal)"
+ },
+ {
+  "t": 25.7,
+  "type": "sting",
+  "g": 0.4,
+  "notes": "camada de brilho no impacto"
+ },
+ {
+  "t": 26.42,
+  "type": "pop",
+  "g": 0.5,
+  "notes": "emblema da cartela"
+ },
+ {
+  "t": 26.53,
+  "type": "wipe",
+  "g": 0.5,
+  "len": 0.6,
+  "notes": "feixe revela a cartela"
+ },
+ {
+  "t": 28.31,
+  "type": "pop",
+  "g": 0.5,
+  "notes": "chamada «Baixe o app» surge"
+ }
+]

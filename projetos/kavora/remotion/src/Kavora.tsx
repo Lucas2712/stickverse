@@ -1,7 +1,7 @@
 // Composição principal: monta os 6 ambientes (8 cenas) com transições que ligam um ao outro
 // e as três faixas de áudio (narração, música, efeitos).
 import React from 'react';
-import {AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, interpolate} from 'remotion';
+import {AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, interpolate, getInputProps} from 'remotion';
 import {C, FPS} from './theme';
 import {K, DURATION, HAS_VOICE, SPEECH} from './timing';
 import {Beam, revealClip} from './components/base';
@@ -18,6 +18,9 @@ import assets from './assets.json';
 const Layer: React.FC<React.PropsWithChildren<{clip?: string}>> = ({clip, children}) => (
   <AbsoluteFill style={{clipPath: clip, WebkitClipPath: clip}}>{children}</AbsoluteFill>
 );
+
+// Stems para a mixagem final: --props='{"semEfeitos":true}' (voz+música), '{"so":"musica"}', '{"so":"voz"}'
+const PROPS = getInputProps() as {semEfeitos?: boolean; so?: 'musica' | 'voz'};
 
 export const Kavora: React.FC = () => {
   const frame = useCurrentFrame();
@@ -82,11 +85,11 @@ export const Kavora: React.FC = () => {
       {on(K.slogan - 0.2, K.slogan + 0.4) && <Beam p={fP} color={C.white} width={560} />}
 
       {/* áudio */}
-      {HAS_VOICE && <Audio src={staticFile(assets.voice.file)} volume={1} />}
-      {assets.music.file && (
+      {HAS_VOICE && PROPS.so !== 'musica' && <Audio src={staticFile(assets.voice.file)} volume={1} />}
+      {assets.music.file && PROPS.so !== 'voz' && (
         <Audio src={staticFile(assets.music.file)} startFrom={Math.round(assets.music.start * FPS)} volume={musicVol} />
       )}
-      {CUES.map(([f, at, g], i) => (
+      {!PROPS.semEfeitos && !PROPS.so && CUES.map(([f, at, g], i) => (
         <Sequence key={i} from={Math.max(0, Math.round(at * FPS))} durationInFrames={Math.round(4 * FPS)} layout="none">
           <Audio src={staticFile(`sfx/${f}.wav`)} volume={g * assets.sfxGain} />
         </Sequence>
