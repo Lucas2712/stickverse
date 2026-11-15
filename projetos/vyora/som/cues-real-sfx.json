@@ -1,0 +1,1122 @@
+{
+ "video": "/workspace/stickverse/projetos/vyora/saida/vyora-base.mp4",
+ "keep_audio": "auto",
+ "cues": [
+  {
+   "t": 0.0,
+   "label": "whoosh",
+   "_g": 1.0,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.9,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -2.0
+  },
+  {
+   "t": 0.3,
+   "label": "pop x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -4.4
+  },
+  {
+   "t": 0.45,
+   "label": "whoosh x0.80",
+   "_g": 0.8,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 1.0,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -3.9,
+   "pitch": -2
+  },
+  {
+   "t": 0.95,
+   "label": "riser x0.70",
+   "_g": 0.7,
+   "pick": {
+    "role": "riser",
+    "target_dur": 0.5,
+    "max_dur": 3.0
+   },
+   "gain_db": -7.1,
+   "anchor": "start",
+   "max_dur": 0.6
+  },
+  {
+   "t": 1.42,
+   "label": "wipe",
+   "_g": 1.0,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.7,
+    "max_dur": 1.4,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -4.0
+  },
+  {
+   "t": 1.56,
+   "label": "whoosh x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.45,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -6.4,
+   "pitch": 2
+  },
+  {
+   "t": 2.04,
+   "label": "hit",
+   "_g": 1.0,
+   "pick": {
+    "role": "hit",
+    "punchy": true,
+    "max_dur": 1.3
+   },
+   "gain_db": -7.0,
+   "highpass": 260
+  },
+  {
+   "t": 2.06,
+   "label": "magic x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "chime",
+    "max_dur": 2.5
+   },
+   "gain_db": -8.0
+  },
+  {
+   "t": 2.5,
+   "label": "whoosh x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.45,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -6.4,
+   "pitch": -3
+  },
+  {
+   "t": 2.95,
+   "label": "pop x0.80",
+   "_g": 0.8,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -1.9
+  },
+  {
+   "t": 3.72,
+   "label": "pop x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -0.9
+  },
+  {
+   "t": 4.04,
+   "label": "pop x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -0.9
+  },
+  {
+   "t": 4.25,
+   "label": "magic x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "chime",
+    "max_dur": 2.5
+   },
+   "gain_db": -8.0
+  },
+  {
+   "t": 5.36,
+   "label": "click",
+   "_g": 1.0,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.4,
+    "onsets_max": 1,
+    "tier": "main"
+   },
+   "same_source": true,
+   "gain_db": 0.0
+  },
+  {
+   "t": 5.72,
+   "label": "whoosh",
+   "_g": 1.0,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.6,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -2.0,
+   "pitch": 1
+  },
+  {
+   "t": 6.12,
+   "label": "wipe x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.7,
+    "max_dur": 1.4,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -4.9,
+   "pitch": -2
+  },
+  {
+   "t": 6.54,
+   "label": "pop",
+   "_g": 1.0,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": 0.0
+  },
+  {
+   "t": 7.28,
+   "label": "pop x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -0.9
+  },
+  {
+   "t": 7.5,
+   "label": "pop x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -0.9
+  },
+  {
+   "t": 7.72,
+   "label": "pop x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -0.9
+  },
+  {
+   "t": 8.0,
+   "label": "magic x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "chime",
+    "max_dur": 2.5
+   },
+   "gain_db": -6.4
+  },
+  {
+   "t": 9.4,
+   "label": "whoosh x0.80",
+   "_g": 0.8,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.7,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -3.9,
+   "pitch": -1
+  },
+  {
+   "t": 9.84,
+   "label": "hit x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "hit",
+    "punchy": true,
+    "max_dur": 1.3
+   },
+   "gain_db": -10.0,
+   "pitch": -2,
+   "highpass": 260
+  },
+  {
+   "t": 10.5,
+   "label": "whoosh x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.6,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -2.9
+  },
+  {
+   "t": 10.75,
+   "label": "whoosh x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.8,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -2.9,
+   "pitch": -2
+  },
+  {
+   "t": 10.96,
+   "label": "tick x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -6.4
+  },
+  {
+   "t": 11.5,
+   "label": "magic x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "chime",
+    "max_dur": 2.5
+   },
+   "gain_db": -8.0
+  },
+  {
+   "t": 11.88,
+   "label": "whoosh x0.70",
+   "_g": 0.7,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.35,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -5.1,
+   "pitch": 2
+  },
+  {
+   "t": 12.0,
+   "label": "whoosh x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.3,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -6.4,
+   "pitch": -3
+  },
+  {
+   "t": 12.12,
+   "label": "whoosh x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.3,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -6.4,
+   "pitch": 1
+  },
+  {
+   "t": 12.5,
+   "label": "tick x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -2.9
+  },
+  {
+   "t": 12.72,
+   "label": "tick x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -2.9
+  },
+  {
+   "t": 12.94,
+   "label": "tick x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -2.9
+  },
+  {
+   "t": 13.28,
+   "label": "hit x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "hit",
+    "punchy": true,
+    "max_dur": 1.3
+   },
+   "gain_db": -12.0,
+   "pitch": 2,
+   "highpass": 260
+  },
+  {
+   "t": 14.25,
+   "label": "whoosh",
+   "_g": 1.0,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.5,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -2.0,
+   "pitch": -1
+  },
+  {
+   "t": 14.55,
+   "label": "whoosh x0.80",
+   "_g": 0.8,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.7,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -3.9
+  },
+  {
+   "t": 14.9,
+   "label": "whoosh x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.9,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -6.4,
+   "pitch": -2
+  },
+  {
+   "t": 15.9,
+   "label": "click",
+   "_g": 1.0,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.4,
+    "onsets_max": 1,
+    "tier": "main"
+   },
+   "same_source": true,
+   "gain_db": 0.0
+  },
+  {
+   "t": 16.22,
+   "label": "success x0.80",
+   "_g": 0.8,
+   "pick": {
+    "role": "chime",
+    "prefer_tag": "ding",
+    "max_dur": 1.8
+   },
+   "gain_db": -1.9
+  },
+  {
+   "t": 17.3,
+   "label": "wipe",
+   "_g": 1.0,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.7,
+    "max_dur": 1.4,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -4.0,
+   "pitch": 2
+  },
+  {
+   "t": 18.24,
+   "label": "tick x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -8.0
+  },
+  {
+   "t": 18.38,
+   "label": "tick x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -8.0
+  },
+  {
+   "t": 18.52,
+   "label": "tick x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -8.0
+  },
+  {
+   "t": 18.66,
+   "label": "tick x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -8.0
+  },
+  {
+   "t": 18.8,
+   "label": "tick x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -8.0
+  },
+  {
+   "t": 18.94,
+   "label": "tick x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -8.0
+  },
+  {
+   "t": 19.0,
+   "label": "whoosh x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.6,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -8.0,
+   "pitch": 2
+  },
+  {
+   "t": 19.38,
+   "label": "pop x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -0.9
+  },
+  {
+   "t": 19.74,
+   "label": "pop x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -0.9
+  },
+  {
+   "t": 19.94,
+   "label": "pop x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -0.9
+  },
+  {
+   "t": 20.5,
+   "label": "whoosh x0.80",
+   "_g": 0.8,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.35,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -3.9,
+   "pitch": -3
+  },
+  {
+   "t": 20.78,
+   "label": "whoosh x0.80",
+   "_g": 0.8,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.5,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -3.9,
+   "pitch": 1
+  },
+  {
+   "t": 21.34,
+   "label": "pop x0.70",
+   "_g": 0.7,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -3.1
+  },
+  {
+   "t": 22.52,
+   "label": "chime x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "chime",
+    "prefer_tag": "bell",
+    "max_dur": 2.0
+   },
+   "gain_db": -4.4
+  },
+  {
+   "t": 23.32,
+   "label": "hit x0.45",
+   "_g": 0.45,
+   "pick": {
+    "role": "hit",
+    "punchy": true,
+    "max_dur": 1.3
+   },
+   "gain_db": -6.9,
+   "pitch": -3,
+   "highpass": 260
+  },
+  {
+   "t": 24.09,
+   "label": "riser x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "riser",
+    "target_dur": 1.1,
+    "max_dur": 3.0
+   },
+   "gain_db": -4.9,
+   "anchor": "start",
+   "max_dur": 1.2
+  },
+  {
+   "t": 25.15,
+   "label": "hit",
+   "_g": 1.0,
+   "pick": {
+    "role": "hit",
+    "punchy": true,
+    "max_dur": 1.3
+   },
+   "gain_db": -2.0,
+   "pitch": 1,
+   "highpass": 260
+  },
+  {
+   "t": 25.66,
+   "label": "whoosh x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.5,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -8.0,
+   "pitch": -1
+  },
+  {
+   "t": 26.06,
+   "label": "pop x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -4.4
+  },
+  {
+   "t": 26.58,
+   "label": "pop x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -6.0
+  },
+  {
+   "t": 26.7,
+   "label": "pop x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -6.0
+  },
+  {
+   "t": 26.82,
+   "label": "pop x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -6.0
+  },
+  {
+   "t": 26.94,
+   "label": "pop x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -6.0
+  },
+  {
+   "t": 27.3,
+   "label": "tick x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -6.4
+  },
+  {
+   "t": 27.4,
+   "label": "tick x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -6.4
+  },
+  {
+   "t": 27.5,
+   "label": "tick x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -6.4
+  },
+  {
+   "t": 27.6,
+   "label": "tick x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -6.4
+  },
+  {
+   "t": 27.7,
+   "label": "tick x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -6.4
+  },
+  {
+   "t": 27.85,
+   "label": "hit x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "hit",
+    "punchy": true,
+    "max_dur": 1.3
+   },
+   "gain_db": -4.4,
+   "pitch": -1,
+   "highpass": 260
+  },
+  {
+   "t": 28.2,
+   "label": "whoosh x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.5,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -2.9
+  },
+  {
+   "t": 28.5,
+   "label": "whoosh x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.4,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -6.4,
+   "pitch": -2
+  },
+  {
+   "t": 29.5,
+   "label": "click",
+   "_g": 1.0,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.4,
+    "onsets_max": 1,
+    "tier": "main"
+   },
+   "same_source": true,
+   "gain_db": 0.0
+  },
+  {
+   "t": 30.28,
+   "label": "whoosh x0.70",
+   "_g": 0.7,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.5,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -5.1,
+   "pitch": 2
+  },
+  {
+   "t": 30.5,
+   "label": "pop x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -6.0
+  },
+  {
+   "t": 31.0,
+   "label": "magic x0.50",
+   "_g": 0.5,
+   "pick": {
+    "role": "chime",
+    "max_dur": 2.5
+   },
+   "gain_db": -8.0
+  },
+  {
+   "t": 31.58,
+   "label": "whoosh x0.70",
+   "_g": 0.7,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.5,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -5.1,
+   "pitch": -3
+  },
+  {
+   "t": 31.78,
+   "label": "click",
+   "_g": 1.0,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.4,
+    "onsets_max": 1,
+    "tier": "main"
+   },
+   "same_source": true,
+   "gain_db": 0.0
+  },
+  {
+   "t": 31.9,
+   "label": "tick x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -2.9
+  },
+  {
+   "t": 32.2,
+   "label": "tick x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -2.9
+  },
+  {
+   "t": 32.5,
+   "label": "tick x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -2.9
+  },
+  {
+   "t": 32.8,
+   "label": "tick x0.90",
+   "_g": 0.9,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.25,
+    "bright": true,
+    "onsets_max": 1
+   },
+   "gain_db": -2.9
+  },
+  {
+   "t": 32.82,
+   "label": "whoosh",
+   "_g": 1.0,
+   "pick": {
+    "role": "whoosh",
+    "target_dur": 0.7,
+    "max_dur": 1.3,
+    "prefer_tag": "whoosh"
+   },
+   "gain_db": -2.0,
+   "pitch": 1
+  },
+  {
+   "t": 33.26,
+   "label": "hit",
+   "_g": 1.0,
+   "pick": {
+    "role": "hit",
+    "punchy": true,
+    "max_dur": 1.3
+   },
+   "gain_db": -2.0,
+   "highpass": 260
+  },
+  {
+   "t": 33.3,
+   "label": "magic x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "chime",
+    "max_dur": 2.5
+   },
+   "gain_db": -6.4
+  },
+  {
+   "t": 36.6,
+   "label": "pop x0.80",
+   "_g": 0.8,
+   "pick": {
+    "role": "pop",
+    "max_dur": 0.6,
+    "onsets_max": 1
+   },
+   "gain_db": -1.9
+  },
+  {
+   "t": 37.35,
+   "label": "click x0.60",
+   "_g": 0.6,
+   "pick": {
+    "role": "click",
+    "max_dur": 0.4,
+    "onsets_max": 1,
+    "tier": "main"
+   },
+   "same_source": true,
+   "gain_db": -4.4
+  }
+ ],
+ "_draft": {
+  "source": "/workspace/stickverse/projetos/vyora/som/eventos.json",
+  "events": 86,
+  "thinned": 0,
+  "thinned_by_kind": {},
+  "fused": 0,
+  "routed": {
+   "whoosh": 23,
+   "pop": 19,
+   "riser": 2,
+   "wipe": 3,
+   "hit": 7,
+   "magic": 6,
+   "click": 5,
+   "tick": 19,
+   "success": 1,
+   "chime": 1
+  },
+  "unmapped": {},
+  "sync": {
+   "verdict": "mismatch",
+   "total": 10,
+   "matched": 9,
+   "median_offset_s": -0.05,
+   "within_tol": 0.2,
+   "within_after_shift": 0.4,
+   "quarters": [
+    {
+     "from": 1.4,
+     "to": 2.0,
+     "median_offset_s": 0.246,
+     "n": 2
+    },
+    {
+     "from": 6.1,
+     "to": 9.8,
+     "median_offset_s": -0.04,
+     "n": 2
+    },
+    {
+     "from": 13.3,
+     "to": 17.3,
+     "median_offset_s": 0.3,
+     "n": 2
+    },
+    {
+     "from": 25.1,
+     "to": 33.3,
+     "median_offset_s": -0.15,
+     "n": 3
+    }
+   ],
+   "drift": true
+  },
+  "stems": null,
+  "voice": {
+   "speech": 0.778,
+   "music": 0.914,
+   "seconds": 38.9
+  },
+  "retimed": null,
+  "baked": {
+   "share": 0.08,
+   "chance": 0.07,
+   "at_db": 3.75,
+   "shifted_db": 4.1,
+   "quiet": 0.01
+  },
+  "baked_strong": false,
+  "keep_audio_decision": null,
+  "declared": 86,
+  "voiced": 86,
+  "clamped_quiet": 0,
+  "layer_lufs": null,
+  "base_kind": null,
+  "screen_rec": false,
+  "music_ref": [],
+  "reference_layer": [],
+  "typing_runs": [],
+  "first_event_t": 0.0,
+  "time_map": null,
+  "unlisted_synth_onsets": [],
+  "kinds_user": null
+ }
+}

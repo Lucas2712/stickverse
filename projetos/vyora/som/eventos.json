@@ -1,0 +1,628 @@
+[
+ {
+  "t": 0.0,
+  "type": "whoosh",
+  "g": 1,
+  "cena": 1,
+  "nota": "tela vertical gira e assenta",
+  "len": 0.9
+ },
+ {
+  "t": 0.3,
+  "type": "pop",
+  "g": 0.6,
+  "cena": 1,
+  "nota": "selo 100% com IA"
+ },
+ {
+  "t": 0.45,
+  "type": "whoosh",
+  "g": 0.8,
+  "cena": 1,
+  "nota": "avião cruza a tela",
+  "len": 1.0
+ },
+ {
+  "t": 0.95,
+  "type": "riser",
+  "g": 0.7,
+  "cena": 1,
+  "nota": "sobe para a virada branca",
+  "len": 0.5
+ },
+ {
+  "t": 1.42,
+  "type": "wipe",
+  "g": 1,
+  "cena": 1,
+  "nota": "rota abre o branco"
+ },
+ {
+  "t": 1.56,
+  "type": "whoosh",
+  "g": 0.6,
+  "cena": 2,
+  "nota": "traço desenha o V",
+  "len": 0.45
+ },
+ {
+  "t": 2.04,
+  "type": "hit",
+  "g": 1,
+  "cena": 2,
+  "nota": "ponto pousa: revelação da logo"
+ },
+ {
+  "t": 2.06,
+  "type": "magic",
+  "g": 0.5,
+  "cena": 2,
+  "nota": "brilho da logo"
+ },
+ {
+  "t": 2.5,
+  "type": "whoosh",
+  "g": 0.6,
+  "cena": 2,
+  "nota": "logo vira cabeçalho",
+  "len": 0.45
+ },
+ {
+  "t": 2.95,
+  "type": "pop",
+  "g": 0.8,
+  "cena": 2,
+  "nota": "card de busca"
+ },
+ {
+  "t": 3.72,
+  "type": "pop",
+  "g": 0.9,
+  "cena": 2,
+  "nota": "GRU"
+ },
+ {
+  "t": 4.04,
+  "type": "pop",
+  "g": 0.9,
+  "cena": 2,
+  "nota": "SSA"
+ },
+ {
+  "t": 4.25,
+  "type": "magic",
+  "g": 0.5,
+  "cena": 2,
+  "nota": "arco liga origem e destino"
+ },
+ {
+  "t": 5.36,
+  "type": "click",
+  "g": 1,
+  "cena": 2,
+  "nota": "toque em Buscar com IA"
+ },
+ {
+  "t": 5.72,
+  "type": "whoosh",
+  "g": 1,
+  "cena": 2,
+  "nota": "violeta toma a tela",
+  "len": 0.6
+ },
+ {
+  "t": 6.12,
+  "type": "wipe",
+  "g": 0.9,
+  "cena": 3,
+  "nota": "abre serviços"
+ },
+ {
+  "t": 6.54,
+  "type": "pop",
+  "g": 1,
+  "cena": 3,
+  "nota": "Voos"
+ },
+ {
+  "t": 7.28,
+  "type": "pop",
+  "g": 0.9,
+  "cena": 3,
+  "nota": "Hospedagem"
+ },
+ {
+  "t": 7.5,
+  "type": "pop",
+  "g": 0.9,
+  "cena": 3,
+  "nota": "Aluguel de carros"
+ },
+ {
+  "t": 7.72,
+  "type": "pop",
+  "g": 0.9,
+  "cena": 3,
+  "nota": "Seguro viagem"
+ },
+ {
+  "t": 8.0,
+  "type": "magic",
+  "g": 0.6,
+  "cena": 3,
+  "nota": "Ofertas com IA"
+ },
+ {
+  "t": 9.4,
+  "type": "whoosh",
+  "g": 0.8,
+  "cena": 3,
+  "nota": "cards se alinham em grade",
+  "len": 0.7
+ },
+ {
+  "t": 9.84,
+  "type": "hit",
+  "g": 0.5,
+  "cena": 3,
+  "nota": "um só lugar"
+ },
+ {
+  "t": 10.5,
+  "type": "whoosh",
+  "g": 0.9,
+  "cena": 3,
+  "nota": "leque de saída",
+  "len": 0.6
+ },
+ {
+  "t": 10.75,
+  "type": "whoosh",
+  "g": 0.9,
+  "cena": 4,
+  "nota": "telefone entra girando",
+  "len": 0.8
+ },
+ {
+  "t": 10.96,
+  "type": "tick",
+  "g": 0.6,
+  "cena": 4,
+  "nota": "IA pensando"
+ },
+ {
+  "t": 11.5,
+  "type": "magic",
+  "g": 0.5,
+  "cena": 4,
+  "nota": "resposta da IA"
+ },
+ {
+  "t": 11.88,
+  "type": "whoosh",
+  "g": 0.7,
+  "cena": 4,
+  "nota": "card roteiro salta",
+  "len": 0.35
+ },
+ {
+  "t": 12.0,
+  "type": "whoosh",
+  "g": 0.6,
+  "cena": 4,
+  "nota": "card horário",
+  "len": 0.3
+ },
+ {
+  "t": 12.12,
+  "type": "whoosh",
+  "g": 0.6,
+  "cena": 4,
+  "nota": "card assento",
+  "len": 0.3
+ },
+ {
+  "t": 12.5,
+  "type": "tick",
+  "g": 0.9,
+  "cena": 4,
+  "nota": "dia 1"
+ },
+ {
+  "t": 12.72,
+  "type": "tick",
+  "g": 0.9,
+  "cena": 4,
+  "nota": "dia 2"
+ },
+ {
+  "t": 12.94,
+  "type": "tick",
+  "g": 0.9,
+  "cena": 4,
+  "nota": "dia 3"
+ },
+ {
+  "t": 13.28,
+  "type": "hit",
+  "g": 0.5,
+  "cena": 4,
+  "nota": "Sua viagem."
+ },
+ {
+  "t": 14.25,
+  "type": "whoosh",
+  "g": 1,
+  "cena": 4,
+  "nota": "magenta toma a tela",
+  "len": 0.5
+ },
+ {
+  "t": 14.55,
+  "type": "whoosh",
+  "g": 0.8,
+  "cena": 5,
+  "nota": "card de check-in sobe",
+  "len": 0.7
+ },
+ {
+  "t": 14.9,
+  "type": "whoosh",
+  "g": 0.6,
+  "cena": 5,
+  "nota": "botão desliza sozinho",
+  "len": 0.9
+ },
+ {
+  "t": 15.9,
+  "type": "click",
+  "g": 1,
+  "cena": 5,
+  "nota": "fim do deslize"
+ },
+ {
+  "t": 16.22,
+  "type": "success",
+  "g": 0.8,
+  "cena": 5,
+  "nota": "check-in confirmado"
+ },
+ {
+  "t": 17.3,
+  "type": "wipe",
+  "g": 1,
+  "cena": 5,
+  "nota": "card gira e vira cartão de embarque"
+ },
+ {
+  "t": 18.24,
+  "type": "tick",
+  "g": 0.5,
+  "cena": 5,
+  "nota": "QR monta"
+ },
+ {
+  "t": 18.38,
+  "type": "tick",
+  "g": 0.5,
+  "cena": 5,
+  "nota": "QR monta"
+ },
+ {
+  "t": 18.52,
+  "type": "tick",
+  "g": 0.5,
+  "cena": 5,
+  "nota": "QR monta"
+ },
+ {
+  "t": 18.66,
+  "type": "tick",
+  "g": 0.5,
+  "cena": 5,
+  "nota": "QR monta"
+ },
+ {
+  "t": 18.8,
+  "type": "tick",
+  "g": 0.5,
+  "cena": 5,
+  "nota": "QR monta"
+ },
+ {
+  "t": 18.94,
+  "type": "tick",
+  "g": 0.5,
+  "cena": 5,
+  "nota": "QR monta"
+ },
+ {
+  "t": 19.0,
+  "type": "whoosh",
+  "g": 0.5,
+  "cena": 5,
+  "nota": "luz varre o QR",
+  "len": 0.6
+ },
+ {
+  "t": 19.38,
+  "type": "pop",
+  "g": 0.9,
+  "cena": 5,
+  "nota": "Portão B12"
+ },
+ {
+  "t": 19.74,
+  "type": "pop",
+  "g": 0.9,
+  "cena": 5,
+  "nota": "Assento 14A"
+ },
+ {
+  "t": 19.94,
+  "type": "pop",
+  "g": 0.9,
+  "cena": 5,
+  "nota": "Embarque 08:40"
+ },
+ {
+  "t": 20.5,
+  "type": "whoosh", "len": 0.35,
+  "g": 0.8,
+  "cena": 5,
+  "nota": "canhoto destaca"
+ },
+ {
+  "t": 20.78,
+  "type": "whoosh",
+  "g": 0.8,
+  "cena": 6,
+  "nota": "janela abre para a cabine",
+  "len": 0.5
+ },
+ {
+  "t": 21.34,
+  "type": "pop",
+  "g": 0.7,
+  "cena": 6,
+  "nota": "mini cartão de embarque"
+ },
+ {
+  "t": 22.52,
+  "type": "chime",
+  "g": 0.6,
+  "cena": 6,
+  "nota": "notificação Já estamos embarcando"
+ },
+ {
+  "t": 23.32,
+  "type": "hit",
+  "g": 0.45,
+  "cena": 6,
+  "nota": "Mais liberdade"
+ },
+ {
+  "t": 24.05,
+  "type": "riser",
+  "g": 0.9,
+  "cena": 6,
+  "nota": "sobe para o mapa",
+  "len": 1.1
+ },
+ {
+  "t": 25.15,
+  "type": "hit",
+  "g": 1,
+  "cena": 7,
+  "nota": "mapa surge (virada da trilha)"
+ },
+ {
+  "t": 25.66,
+  "type": "whoosh",
+  "g": 0.5,
+  "cena": 7,
+  "nota": "primeira rota",
+  "len": 0.5
+ },
+ {
+  "t": 26.06,
+  "type": "pop",
+  "g": 0.6,
+  "cena": 7,
+  "nota": "Salvador"
+ },
+ {
+  "t": 26.58,
+  "type": "pop",
+  "g": 0.5,
+  "cena": 7,
+  "nota": "rota chega ao destino"
+ },
+ {
+  "t": 26.7,
+  "type": "pop",
+  "g": 0.5,
+  "cena": 7,
+  "nota": "rota chega ao destino"
+ },
+ {
+  "t": 26.82,
+  "type": "pop",
+  "g": 0.5,
+  "cena": 7,
+  "nota": "rota chega ao destino"
+ },
+ {
+  "t": 26.94,
+  "type": "pop",
+  "g": 0.5,
+  "cena": 7,
+  "nota": "rota chega ao destino"
+ },
+ {
+  "t": 27.3,
+  "type": "tick",
+  "g": 0.6,
+  "cena": 7,
+  "nota": "contador 27"
+ },
+ {
+  "t": 27.4,
+  "type": "tick",
+  "g": 0.6,
+  "cena": 7,
+  "nota": "contador 27"
+ },
+ {
+  "t": 27.5,
+  "type": "tick",
+  "g": 0.6,
+  "cena": 7,
+  "nota": "contador 27"
+ },
+ {
+  "t": 27.6,
+  "type": "tick",
+  "g": 0.6,
+  "cena": 7,
+  "nota": "contador 27"
+ },
+ {
+  "t": 27.7,
+  "type": "tick",
+  "g": 0.6,
+  "cena": 7,
+  "nota": "contador 27"
+ },
+ {
+  "t": 27.85,
+  "type": "hit",
+  "g": 0.6,
+  "cena": 7,
+  "nota": "27 países"
+ },
+ {
+  "t": 28.2,
+  "type": "whoosh",
+  "g": 0.9,
+  "cena": 8,
+  "nota": "marcador vira a tela do app",
+  "len": 0.5
+ },
+ {
+  "t": 28.5,
+  "type": "whoosh",
+  "g": 0.6,
+  "cena": 8,
+  "nota": "destinos deslizam",
+  "len": 0.4
+ },
+ {
+  "t": 29.5,
+  "type": "click",
+  "g": 1,
+  "cena": 8,
+  "nota": "toque em Salvador"
+ },
+ {
+  "t": 30.28,
+  "type": "whoosh",
+  "g": 0.7,
+  "cena": 8,
+  "nota": "desliza para voos",
+  "len": 0.5
+ },
+ {
+  "t": 30.5,
+  "type": "pop",
+  "g": 0.5,
+  "cena": 8,
+  "nota": "resultados"
+ },
+ {
+  "t": 31.0,
+  "type": "magic",
+  "g": 0.5,
+  "cena": 8,
+  "nota": "recomendado pela IA"
+ },
+ {
+  "t": 31.58,
+  "type": "whoosh",
+  "g": 0.7,
+  "cena": 8,
+  "nota": "desliza para o resumo",
+  "len": 0.5
+ },
+ {
+  "t": 31.78,
+  "type": "click",
+  "g": 1,
+  "cena": 8,
+  "nota": "Deixar com a VYORA"
+ },
+ {
+  "t": 31.9,
+  "type": "tick",
+  "g": 0.9,
+  "cena": 8,
+  "nota": "item resolvido"
+ },
+ {
+  "t": 32.2,
+  "type": "tick",
+  "g": 0.9,
+  "cena": 8,
+  "nota": "item resolvido"
+ },
+ {
+  "t": 32.5,
+  "type": "tick",
+  "g": 0.9,
+  "cena": 8,
+  "nota": "item resolvido"
+ },
+ {
+  "t": 32.8,
+  "type": "tick",
+  "g": 0.9,
+  "cena": 8,
+  "nota": "item resolvido"
+ },
+ {
+  "t": 32.82,
+  "type": "whoosh",
+  "g": 1,
+  "cena": 8,
+  "nota": "recuo para a bancada",
+  "len": 0.7
+ },
+ {
+  "t": 33.26,
+  "type": "hit",
+  "g": 1,
+  "cena": 9,
+  "nota": "revelação da logo"
+ },
+ {
+  "t": 33.3,
+  "type": "magic",
+  "g": 0.6,
+  "cena": 9,
+  "nota": "brilho da logo"
+ },
+ {
+  "t": 36.6,
+  "type": "pop",
+  "g": 0.8,
+  "cena": 9,
+  "nota": "botão Descubra"
+ },
+ {
+  "t": 37.35,
+  "type": "click",
+  "g": 0.6,
+  "cena": 9,
+  "nota": "pulso do botão"
+ }
+]
