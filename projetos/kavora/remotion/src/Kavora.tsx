@@ -3,7 +3,7 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, interpolate} from 'remotion';
 import {C, FPS} from './theme';
-import {K, DURATION, HAS_VOICE} from './timing';
+import {K, DURATION, HAS_VOICE, SPEECH} from './timing';
 import {Beam, revealClip} from './components/base';
 import {E, pr} from './lib/anim';
 import {SceneA} from './scenes/A_Abertura';
@@ -36,12 +36,28 @@ export const Kavora: React.FC = () => {
   const burst = pr(t, PHONE_DIVE() + 0.3, 0.2, E.inOutSoft); // fade quando o celular passa pela câmera // celular mergulha, letras abrem: D → E
   const fP = pr(t, K.slogan - 0.16, 0.5, E.inOut); // feixe: E → F
 
-  // música: base, crescimento no laranja, pico no impacto, cauda no fim
+  // música: faixa contínua entre 12% e 18%, com ducking automático durante a fala,
+  // fade-in de 1,5 s e fade-out nos 2 s finais
+  const MUS = {livre: 0.18, fala: 0.12, ataque: 0.12, soltura: 0.35};
+  const speaking = (s: number) => {
+    // 1 durante a fala, com rampa de ataque antes e de soltura depois de cada trecho
+    let v = 0;
+    for (const [a, b] of SPEECH) {
+      if (s >= a - MUS.ataque && s <= b + MUS.soltura) {
+        const up = Math.min(1, (s - (a - MUS.ataque)) / MUS.ataque);
+        const down = s > b ? 1 - (s - b) / MUS.soltura : 1;
+        v = Math.max(v, Math.max(0, Math.min(up, down)));
+      }
+    }
+    return v;
+  };
   const musicVol = (f: number) => {
     const s = f / FPS;
-    const base = interpolate(s, [0, 0.6, K.gestao - 1.2, K.gestao, K.kavora - 0.2, K.kavora + 0.4, K.gestao2, DURATION - 0.3, DURATION],
-      [0, 0.5, 0.55, 0.8, 0.85, 1, 0.7, 0.35, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-    return base * assets.music.gain * (HAS_VOICE ? 0.55 : 1);
+    const duck = HAS_VOICE ? speaking(s) : 0;
+    const level = MUS.livre + (MUS.fala - MUS.livre) * duck;
+    const fade = Math.min(interpolate(s, [0, 1.5], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
+      interpolate(s, [DURATION - 2, DURATION], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}));
+    return level * fade * assets.music.gain;
   };
 
   return (

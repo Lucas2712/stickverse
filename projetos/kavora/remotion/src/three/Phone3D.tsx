@@ -30,8 +30,12 @@ export const Phone3D: React.FC<React.JSX.IntrinsicElements['group'] & {p: number
     const tex = new THREE.CanvasTexture(canvas);
     tex.colorSpace = THREE.SRGBColorSpace;
     tex.anisotropy = 8;
-    const body = new RoundedBoxGeometry(PW, PH, PD, 8, 0.44);
-    const front = shapeGeo(PW - 0.08, PH - 0.08, 0.4);
+    // corpo: perfil com o mesmo raio da tela, extrudado com chanfro arredondado
+    // (RoundedBoxGeometry limitava o raio à metade da espessura e deixava cantos quase retos)
+    const bev = 0.07;
+    const body = new THREE.ExtrudeGeometry(roundedRect(PW - bev * 2, PH - bev * 2, 0.44 - bev), {depth: PD - bev * 2, bevelEnabled: true, bevelThickness: bev, bevelSize: bev, bevelSegments: 6, curveSegments: 48});
+    body.translate(0, 0, -(PD - bev * 2) / 2);
+    const front = shapeGeo(PW - 0.1, PH - 0.1, 0.39);
     const screen = shapeGeo(SW, SH, 0.33);
     const btn = new RoundedBoxGeometry(0.06, 0.5, 0.1, 3, 0.03);
     return {

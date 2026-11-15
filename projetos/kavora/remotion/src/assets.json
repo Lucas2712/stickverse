@@ -3,9 +3,9 @@
     "file": "narracao.mp3"
   },
   "music": {
-    "file": "",
+    "file": "trilha.wav",
     "start": 0,
-    "gain": 0.3
+    "gain": 1
   },
-  "sfxGain": 1
+  "sfxGain": 0.85
 }

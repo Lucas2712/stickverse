@@ -16,3 +16,4 @@ export const K = data.words as Record<Keys, number>;
 export const DURATION = data.duration as number;
 export const HAS_VOICE = data.voice as boolean;
 
+export const SPEECH = ((data as {speech?: number[][]}).speech || []) as [number, number][];

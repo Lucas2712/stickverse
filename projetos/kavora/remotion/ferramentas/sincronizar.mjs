@@ -38,7 +38,14 @@ const ext = ['mp3', 'wav', 'm4a'].find((e) => fs.existsSync(path.join(PROJ, `nar
 if (!ext) throw new Error('narração não encontrada em projetos/kavora/narracao.(mp3|wav|m4a)');
 fs.copyFileSync(path.join(PROJ, `narracao.${ext}`), path.join(AQUI, 'public', `narracao.${ext}`));
 
-fs.writeFileSync(path.join(AQUI, 'src', 'timing.json'), JSON.stringify({voice: true, duration, words}, null, 2) + '\n');
+// trechos de fala (palavras com intervalo < 0,35 s viram um bloco): base do ducking da música
+const speech = [];
+for (const p of palavras) {
+  const last = speech[speech.length - 1];
+  if (last && p.s - last[1] < 0.35) last[1] = p.e;
+  else speech.push([p.s, p.e]);
+}
+fs.writeFileSync(path.join(AQUI, 'src', 'timing.json'), JSON.stringify({voice: true, duration, words, speech: speech.map(([a, b]) => [+a.toFixed(2), +b.toFixed(2)])}, null, 2) + '\n');
 const assetsPath = path.join(AQUI, 'src', 'assets.json');
 const assets = JSON.parse(fs.readFileSync(assetsPath, 'utf8'));
 assets.voice.file = `narracao.${ext}`;
