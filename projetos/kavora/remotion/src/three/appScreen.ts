@@ -36,13 +36,13 @@ const kGlyph = (c: CanvasRenderingContext2D, x: number, y: number, h: number, co
 const ease = (x: number) => E.out(clamp(x));
 
 export const ROWS = [
-  {icon: 'fuel', label: 'Combustível', sub: '4 abastecimentos', v: 612.4, c: OR},
-  {icon: 'wrench', label: 'Manutenção', sub: 'Troca de pastilhas', v: 389.0, c: ORL},
-  {icon: 'shield', label: 'Seguro', sub: 'Parcela 8 de 12', v: 198.2, c: GR},
-  {icon: 'tax', label: 'Impostos', sub: 'Licenciamento', v: 85.0, c: '#B9BAB8'},
+  {icon: 'calendar', label: 'Reservas', sub: '12 novas hoje', v: '46'},
+  {icon: 'conc', label: 'Recepção', sub: '38 check-ins', v: '24 saídas'},
+  {icon: 'wallet', label: 'Financeiro', sub: 'Contas do dia', v: 'Em dia'},
+  {icon: 'cart', label: 'Compras', sub: 'Pedido #482', v: 'Aprovado'},
 ];
-export const TOTAL = 1284.6;
-export const BUDGET = 1500;
+export const TOTAL = 24860;
+export const OCC = 0.87;
 
 /** p: 0..1 do "boot" da tela; t: segundos locais (para pulsos); alert: 0..1 da notificação. */
 export const drawApp = (c: CanvasRenderingContext2D, W: number, H: number, p: number, t: number, alert = 0) => {
@@ -73,10 +73,10 @@ export const drawApp = (c: CanvasRenderingContext2D, W: number, H: number, p: nu
   c.globalAlpha = hp;
   c.fillStyle = MUTED;
   c.font = `500 14px ${F}`;
-  c.fillText('Meu veículo · Sedan 2022', 24, 82 + (1 - hp) * 10);
+  c.fillText('Hotel · Sexta-feira', 24, 82 + (1 - hp) * 10);
   c.fillStyle = GR;
   c.font = `700 30px ${F}`;
-  c.fillText('Novembro', 24, 112 + (1 - hp) * 10);
+  c.fillText('Hoje', 24, 112 + (1 - hp) * 10);
   // avatar com K
   c.fillStyle = OR;
   rr(c, w - 68, 76, 44, 44, 12);
@@ -111,19 +111,19 @@ export const drawApp = (c: CanvasRenderingContext2D, W: number, H: number, p: nu
   c.restore();
   c.fillStyle = 'rgba(255,255,255,0.6)';
   c.font = `500 14px ${F}`;
-  c.fillText('Gasto no mês', 40, cy + 34);
+  c.fillText('Receita do dia', 40, cy + 34);
   const cnt = ease((p - 0.15) * 1.6);
   c.fillStyle = '#fff';
   c.font = `700 40px ${F}`;
   c.fillText(brl(TOTAL * cnt), 40, cy + 76);
   c.fillStyle = 'rgba(255,255,255,0.55)';
   c.font = `500 13px ${F}`;
-  c.fillText(`de ${brl(BUDGET, 0)} planejados`, 40, cy + 108);
+  c.fillText('118 de 136 quartos ocupados', 40, cy + 108);
   // barra de orçamento
   c.fillStyle = 'rgba(255,255,255,0.12)';
   rr(c, 40, cy + 132, w - 80, 10, 5);
   c.fill();
-  const bw = (w - 80) * (TOTAL / BUDGET) * cnt;
+  const bw = (w - 80) * OCC * cnt;
   const bg = c.createLinearGradient(40, 0, 40 + bw, 0);
   bg.addColorStop(0, ORL);
   bg.addColorStop(1, OR);
@@ -132,7 +132,7 @@ export const drawApp = (c: CanvasRenderingContext2D, W: number, H: number, p: nu
   c.fill();
   c.fillStyle = ORL;
   c.font = `600 13px ${F}`;
-  c.fillText(`${(85.6 * cnt).toFixed(1).replace('.', ',')}% do orçamento`, 40, cy + 164);
+  c.fillText(`${Math.round(87 * cnt)}% de ocupação`, 40, cy + 164);
   c.globalAlpha = 1;
 
   // mini-gráfico de 6 meses
@@ -149,15 +149,15 @@ export const drawApp = (c: CanvasRenderingContext2D, W: number, H: number, p: nu
   c.restore();
   c.fillStyle = GR;
   c.font = `600 14px ${F}`;
-  c.fillText('Histórico', 36, my + 26);
+  c.fillText('Ocupação', 36, my + 26);
   c.fillStyle = MUTED;
   c.font = `500 12px ${F}`;
-  c.fillText('últimos 6 meses', 112, my + 26);
-  const vals = [0.62, 0.8, 0.55, 0.92, 0.7, 0.86];
-  const meses = ['jun', 'jul', 'ago', 'set', 'out', 'nov'];
+  c.fillText('próximos 7 dias', 112, my + 26);
+  const vals = [0.64, 0.71, 0.68, 0.79, 0.92, 0.97, 0.88];
+  const meses = ['seg', 'ter', 'qua', 'qui', 'sex', 'sáb', 'dom'];
   vals.forEach((v, i) => {
-    const bx = 40 + i * 54, bh = 52 * v * ease(mp * 1.4 - i * 0.08);
-    c.fillStyle = i === 5 ? OR : GY;
+    const bx = 38 + i * 47, bh = 52 * v * ease(mp * 1.4 - i * 0.08);
+    c.fillStyle = i === 5 ? OR : i === 4 ? ORL : GY;
     rr(c, bx, my + 96 - bh, 26, Math.max(bh, 2), 7);
     c.fill();
     c.fillStyle = MUTED;
@@ -188,7 +188,7 @@ export const drawApp = (c: CanvasRenderingContext2D, W: number, H: number, p: nu
     c.fillStyle = GR;
     c.font = `600 15px ${F}`;
     c.textAlign = 'right';
-    c.fillText(brl(r.v), w - 34, y + 30);
+    c.fillText(r.v, w - 34, y + 30);
     c.textAlign = 'left';
   });
   c.globalAlpha = 1;
@@ -208,13 +208,13 @@ export const drawApp = (c: CanvasRenderingContext2D, W: number, H: number, p: nu
     c.fillStyle = OR;
     rr(c, 26, ny + 14, 48, 48, 14);
     c.fill();
-    icon(c, 'wrench', 38, ny + 26, 24, '#fff', 2);
+    icon(c, 'cart', 38, ny + 26, 24, '#fff', 2);
     c.fillStyle = GR;
     c.font = `700 14px ${F}`;
-    c.fillText('Revisão dos 30.000 km', 86, ny + 30);
+    c.fillText('Pedido #482 aprovado', 86, ny + 30);
     c.fillStyle = MUTED;
     c.font = `500 13px ${F}`;
-    c.fillText('Faltam 12 dias · toque para agendar', 86, ny + 50);
+    c.fillText('Compras · entrega amanhã às 9h', 86, ny + 50);
     c.fillStyle = MUTED;
     c.font = `500 11px ${F}`;
     c.textAlign = 'right';
@@ -226,7 +226,7 @@ export const drawApp = (c: CanvasRenderingContext2D, W: number, H: number, p: nu
   c.fillStyle = 'rgba(255,255,255,0.96)';
   rr(c, 18, 772, w - 36, 64, 32);
   c.fill();
-  ['home', 'chart', 'calendar', 'user'].forEach((n, i) => {
+  ['home', 'calendar', 'chart', 'user'].forEach((n, i) => {
     const x = 48 + i * 86;
     if (i === 0) {
       c.fillStyle = 'rgba(255,113,56,0.14)';

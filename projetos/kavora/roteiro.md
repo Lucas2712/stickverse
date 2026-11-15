@@ -1,8 +1,10 @@
-# Roteiro · KAVORA (proposta, aguardando aprovação)
+# Roteiro · KAVORA (texto da narração gravada pelo usuário)
 
-Controlar os gastos do seu carro não precisa ser complicado.
-Com a KAVORA, você reúne combustível, manutenção, seguro, impostos e revisões em um único aplicativo.
-Tenha mais controle, acompanhe seu histórico e descubra onde economizar, mês a mês.
-Tudo isso na palma da mão, com alertas inteligentes para cada revisão.
-KAVORA. Tecnologia que acompanha seu caminho.
-Baixe o app e assuma o controle.
+Gerenciar um hotel não precisa ser complicado.
+Com a tecnologia certa, você tem tudo o que precisa em um só lugar.
+Reservas, recepção, financeiro, compras e operação.
+Tudo integrado para simplificar sua rotina.
+Mais controle sobre os processos, mais agilidade nas decisões e mais tempo para cuidar do que realmente importa.
+Uma gestão mais inteligente começa com tudo conectado.
+KAVORA.
+Tecnologia para simplificar sua gestão.

@@ -5,14 +5,14 @@ import {K} from '../timing';
 import {Abs, Blur, Glass, Icon, LightBg, Rise, Scribble} from '../components/base';
 import {drift, E, pr, sp, SP, tw, shutter, mix} from '../lib/anim';
 import {Stage} from '../three/Stage';
-import {Key3D, Nozzle3D} from '../three/objects';
+import {Bell3D, Keycard3D} from '../three/objects';
 
 const EXP = [
-  {icon: 'fuel', label: 'Combustível', v: 'R$ 289,90', x: 250, y: 470, r: -8, s: 0.96, z: 0},
-  {icon: 'wrench', label: 'Oficina', v: 'R$ 740,00', x: 815, y: 600, r: 7, s: 0.84, z: 1.2},
-  {icon: 'tax', label: 'IPVA', v: 'R$ 1.320,00', x: 255, y: 1330, r: 6, s: 0.9, z: 0.6},
-  {icon: 'parking', label: 'Estacionamento', v: 'R$ 32,00', x: 800, y: 1230, r: -5, s: 1.0, z: 0},
-  {icon: 'warn', label: 'Multa', v: 'R$ 195,23', x: 600, y: 1480, r: 3, s: 0.74, z: 2.6},
+  {icon: 'calendar', label: 'Reservas pendentes', v: '12', x: 260, y: 470, r: -8, s: 0.96, z: 0},
+  {icon: 'wallet', label: 'Contas a pagar', v: 'R$ 8.420,00', x: 815, y: 600, r: 7, s: 0.84, z: 1.2},
+  {icon: 'cart', label: 'Pedidos atrasados', v: '5', x: 255, y: 1330, r: 6, s: 0.9, z: 0.6},
+  {icon: 'conc', label: 'Check-ins hoje', v: '38', x: 800, y: 1230, r: -5, s: 1.0, z: 0},
+  {icon: 'warn', label: 'Quarto 214', v: 'Manutenção', x: 600, y: 1480, r: 3, s: 0.74, z: 2.6},
 ];
 
 const ExpenseCard: React.FC<{e: (typeof EXP)[number]}> = ({e}) => (
@@ -51,7 +51,7 @@ export const SceneA: React.FC<{t: number}> = ({t}) => {
   const exitX = (tt: number) => -1300 * pr(tt, tEnd - 0.05, 0.5, E.in);
 
   // 3D: chave e bico entram com peso e "focam" ao pousar
-  const kIn = sp(t, K.carro - 0.45, SP.heavy);
+  const kIn = sp(t, K.hotel - 0.4, SP.heavy);
   const nIn = sp(t, 0.15, SP.settle);
   const out3 = pr(t, K.nao + 0.25, 0.7, E.in);
   const blur3 = 7 * (1 - Math.min(1, (kIn + nIn) / 2)) + out3 * 8;
@@ -73,15 +73,15 @@ export const SceneA: React.FC<{t: number}> = ({t}) => {
 
         {/* objetos 3D com profundidade de campo */}
         <Stage style={{filter: blur3 > 0.3 ? `blur(${blur3.toFixed(2)}px)` : undefined}} cam={[0, 0, 16]}>
-          <Key3D
+          <Bell3D
             position={[mix(4.6, 2.05, kIn) + out3 * 3, mix(7.5, 3.15, kIn) + drift(t, 1, 0.08) + out3 * 2.5, mix(3, 0.5, kIn)]}
-            rotation={[mix(1.2, 0.35, kIn) + drift(t, 2, 0.06), mix(-2.2, -0.55, kIn) + t * 0.12, mix(0.8, -0.5, kIn)]}
-            scale={0.78}
+            rotation={[mix(1.2, 0.42, kIn) + drift(t, 2, 0.06), mix(-2.2, -0.55, kIn) + t * 0.12, mix(0.8, -0.5, kIn)]}
+            scale={0.72}
           />
-          <Nozzle3D
+          <Keycard3D
             position={[mix(-5.5, -1.95, nIn) - out3 * 3, mix(-7.5, -3.35, nIn) + drift(t, 3, 0.07) - out3 * 2.5, mix(2, -0.8, nIn)]}
             rotation={[mix(-0.8, 0.25, nIn), mix(1.6, 0.6, nIn) + t * 0.1, mix(-1, 0.42, nIn)]}
-            scale={0.62}
+            scale={0.95}
           />
         </Stage>
 
@@ -96,7 +96,7 @@ export const SceneA: React.FC<{t: number}> = ({t}) => {
           const depthBlur = e.z;
           return (
             <div key={i} style={{position: 'absolute', left: xOf(t) - 220, top: yOf(t) - 78, transform: `scale(${e.s}) rotate(${e.r * p + (1 - p) * (i % 2 ? 40 : -40) + drift(t, i, 1.5, 0.25)}deg)`, filter: depthBlur ? `blur(${depthBlur}px)` : undefined}}>
-              <Blur id={`exp${i}`} x={Math.min(14, shutter(vx, 0.45))} y={Math.min(14, shutter(vy, 0.45))}>
+              <Blur id={`exp${i}`} x={Math.min(7, shutter(vx, 0.3))} y={Math.min(7, shutter(vy, 0.3))}>
                 <ExpenseCard e={e} />
               </Blur>
             </div>
@@ -113,22 +113,19 @@ export const SceneA: React.FC<{t: number}> = ({t}) => {
         {/* frase */}
         <div style={{position: 'absolute', left: 0, right: 0, top: 820, textAlign: 'center', transform: `translateX(${exitX(t)}px)`}}>
           <div style={{transform: `translateY(${-150 * l1}px) scale(${1 - 0.28 * l1})`, opacity: 1 - 0.55 * l1, transformOrigin: '50% 50%'}}>
-            <div style={{fontSize: 76, fontWeight: 500, color: C.graphite, letterSpacing: '-0.03em', lineHeight: 1.12}}>
-              <Rise id="w1" t={t} t0={K.controlar} text="Controlar" style={{fontSize: 76}} />{' '}
-              <Rise id="w2" t={t} t0={K.controlar + 0.24} text="os" style={{fontSize: 76}} />{' '}
-              <Rise id="w3" t={t} t0={K.gastos} text="gastos" style={{fontSize: 76}} />
+            <div style={{fontSize: 92, fontWeight: 500, color: C.graphite, letterSpacing: '-0.035em', lineHeight: 1.1}}>
+              <Rise id="w1" t={t} t0={K.gerenciar} text="Gerenciar" style={{fontSize: 92}} />
             </div>
-            <div style={{fontSize: 76, fontWeight: 500, color: C.graphite, letterSpacing: '-0.03em', lineHeight: 1.12}}>
-              <Rise id="w4" t={t} t0={K.gastos + 0.26} text="do" style={{fontSize: 76}} />{' '}
-              <Rise id="w5" t={t} t0={K.gastos + 0.38} text="seu" style={{fontSize: 76}} />{' '}
-              <Rise id="w6" t={t} t0={K.carro} text="carro" style={{fontSize: 76, fontWeight: 700}} />
+            <div style={{fontSize: 92, fontWeight: 500, color: C.graphite, letterSpacing: '-0.035em', lineHeight: 1.1}}>
+              <Rise id="w2" t={t} t0={K.hotel - 0.1} text="um" style={{fontSize: 92}} />{' '}
+              <Rise id="w3" t={t} t0={K.hotel} text="hotel" style={{fontSize: 92, fontWeight: 700}} />
             </div>
           </div>
-          <div style={{position: 'absolute', left: 0, right: 0, top: 70, opacity: t > K.nao - 0.12 ? 1 : 0}}>
+          <div style={{position: 'absolute', left: 0, right: 0, top: 90, opacity: t > K.nao - 0.12 ? 1 : 0}}>
             <div style={{fontSize: 64, fontWeight: 500, color: C.graphite, letterSpacing: '-0.03em'}}>
               <Rise id="w7" t={t} t0={K.nao - 0.02} text="não" style={{fontSize: 64}} />{' '}
-              <Rise id="w8" t={t} t0={K.nao + 0.2} text="precisa" style={{fontSize: 64}} />{' '}
-              <Rise id="w9" t={t} t0={K.nao + 0.5} text="ser" style={{fontSize: 64}} />
+              <Rise id="w8" t={t} t0={K.nao + 0.3} text="precisa" style={{fontSize: 64}} />{' '}
+              <Rise id="w9" t={t} t0={K.nao + 0.78} text="ser" style={{fontSize: 64}} />
             </div>
             <div style={{position: 'relative', display: 'inline-block', marginTop: 6}}>
               <Rise id="w10" t={t} t0={K.complicado - 0.05} text="complicado" cfg="bouncy" style={{fontSize: 132, fontWeight: 700, color: C.orange, letterSpacing: '-0.045em'}} />

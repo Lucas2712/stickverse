@@ -7,19 +7,19 @@ import {Tile, Wordmark} from '../components/Logo';
 import {drift, E, mix, pr, sp, SP, tw} from '../lib/anim';
 
 export const SceneF: React.FC<{t: number}> = ({t}) => {
-  const t0 = K.tecnologia - 0.1;
+  const t0 = K.slogan - 0.1;
   const cam = tw(t, t0, 8, 1.0, 1.045, E.inOutSoft);
   const tile = sp(t, t0 + 0.05, SP.bouncy);
-  const route = pr(t, K.caminho - 0.05, 0.9, E.draw);
-  const cta = sp(t, K.baixe - 0.1, SP.snappy);
-  const shine = tw(t, K.fim + 0.2, 1.1, -0.3, 1.3, E.inOutSoft);
-  const pulse = (Math.sin((t - K.baixe) * 5) + 1) / 2;
+  const route = pr(t, K.simplificar2 - 0.05, 0.9, E.draw);
+  const cta = sp(t, K.gestao2 - 0.25, SP.snappy);
+  const shine = tw(t, K.slogan + 0.5, 1.1, -0.3, 1.3, E.inOutSoft);
+  const pulse = (Math.sin((t - K.gestao2) * 5) + 1) / 2;
   const words: [string, number, React.CSSProperties?][] = [
-    ['Tecnologia', K.tecnologia],
-    ['que', K.tecnologia + 0.42],
-    ['acompanha', K.acompanha],
-    ['seu', K.acompanha + 0.45],
-    ['caminho.', K.caminho, {color: C.orange, fontWeight: 600}],
+    ['Tecnologia', K.slogan],
+    ['para', K.simplificar2 - 0.3],
+    ['simplificar', K.simplificar2],
+    ['sua', K.gestao2 - 0.2],
+    ['gestão.', K.gestao2, {color: C.orange, fontWeight: 600}],
   ];
   return (
     <Abs>

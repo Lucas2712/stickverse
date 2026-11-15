@@ -10,12 +10,12 @@ import {C} from '../theme';
 const Letters: React.FC<{t: number}> = ({t}) => {
   const geos = useLetterGeos(0.3);
   const m = React.useMemo(() => mat.pearl(), []);
-  const t0 = K.kavora2 - 0.16;
+  const t0 = K.kavora - 0.32;
   const SPIN = [[0.9, -1.4, 0.4], [-1.2, 0.8, -0.6], [1.4, 1.1, 0.3], [-0.8, -1.6, 0.5], [1.1, 0.9, -0.4], [-1.3, 1.3, 0.6]];
   return (
     <group
-      scale={0.6}
-      rotation={[tw(t, t0, 2.4, 0.42, 0.2, E.inOutSoft) + drift(t, 1, 0.02), tw(t, t0, 2.4, -0.75, -0.3, E.inOutSoft), tw(t, t0, 2.4, 0.06, 0.02, E.inOutSoft)]}
+      scale={0.54}
+      rotation={[tw(t, t0, 2.4, 0.42, 0.2, E.inOutSoft) + drift(t, 1, 0.02), tw(t, t0, 2.0, -0.5, -0.18, E.inOutSoft), tw(t, t0, 2.4, 0.06, 0.02, E.inOutSoft)]}
       position={[0, 0, tw(t, t0, 2.4, -0.6, 0.4, E.outSoft)]}
     >
       {geos.map((g, i) => {
@@ -32,12 +32,12 @@ const Letters: React.FC<{t: number}> = ({t}) => {
 };
 
 export const SceneE: React.FC<{t: number}> = ({t}) => {
-  const beam = pr(t, K.kavora2 + 0.45, 0.7, E.inOutSoft);
-  const blur = (1 - Math.min(1, sp(t, K.kavora2 - 0.1, SP.heavy) * 1.1)) * 6;
+  const beam = pr(t, K.kavora + 0.45, 0.7, E.inOutSoft);
+  const blur = (1 - Math.min(1, sp(t, K.kavora - 0.1, SP.heavy) * 1.1)) * 6;
   return (
     <Abs>
       <OrangeBg t={t} />
-      <Abs style={{background: `radial-gradient(50% 30% at 50% 50%, rgba(255,255,255,${0.18 * pr(t, K.kavora2, 0.5)}), transparent 70%)`}} />
+      <Abs style={{background: `radial-gradient(50% 30% at 50% 50%, rgba(255,255,255,${0.18 * pr(t, K.kavora, 0.5)}), transparent 70%)`}} />
       <Stage cam={[0, 0, 16]} env={1.1} key3={2.6} warm style={{filter: blur > 0.3 ? `blur(${blur.toFixed(2)}px)` : undefined}}>
         <Letters t={t} />
       </Stage>

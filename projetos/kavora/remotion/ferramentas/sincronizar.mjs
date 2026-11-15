@@ -13,13 +13,13 @@ const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().rep
 
 // [chave da timeline, palavra no roteiro]
 const MAPA = [
-  ['controlar', 'controlar'], ['gastos', 'gastos'], ['carro', 'carro'], ['nao', 'nao'], ['complicado', 'complicado'],
-  ['com', 'com'], ['kavora', 'kavora'], ['combustivel', 'combustivel'], ['manutencao', 'manutencao'], ['seguro', 'seguro'],
-  ['impostos', 'impostos'], ['revisoes', 'revisoes'], ['unico', 'unico'], ['aplicativo', 'aplicativo'],
-  ['tenha', 'tenha'], ['controle', 'controle'], ['historico', 'historico'], ['economizar', 'economizar'], ['mesames', 'mes'],
-  ['tudo', 'tudo'], ['palma', 'palma'], ['alertas', 'alertas'], ['inteligentes', 'inteligentes'], ['revisao', 'revisao'],
-  ['kavora2', 'kavora'], ['tecnologia', 'tecnologia'], ['acompanha', 'acompanha'], ['caminho', 'caminho'],
-  ['baixe', 'baixe'], ['assuma', 'assuma'],
+  ['gerenciar', 'gerenciar'], ['hotel', 'hotel'], ['nao', 'nao'], ['complicado', 'complicado'],
+  ['com', 'com'], ['tecnologia', 'tecnologia'], ['voce', 'voce'], ['tudo1', 'tudo'], ['precisa', 'precisa'], ['lugar', 'so'],
+  ['reservas', 'reservas'], ['recepcao', 'recepcao'], ['financeiro', 'financeiro'], ['compras', 'compras'], ['operacao', 'operacao'],
+  ['integrado', 'tudo'], ['simplificar', 'simplificar'], ['rotina', 'rotina'],
+  ['controle', 'mais'], ['processos', 'sobre'], ['agilidade', 'mais'], ['decisoes', 'decisoes'], ['tempo', 'mais'], ['cuidar', 'cuidar'], ['importa', 'importa'],
+  ['gestao', 'uma'], ['inteligente', 'inteligente'], ['comeca', 'comeca'], ['conectado', 'tudo'],
+  ['kavora', 'kavora'], ['slogan', 'tecnologia'], ['simplificar2', 'simplificar'], ['gestao2', 'gestao'],
 ];
 
 const words = {};
@@ -32,7 +32,7 @@ for (const [k, w] of MAPA) {
 }
 const fimFala = palavras[palavras.length - 1].e;
 words.fim = +fimFala.toFixed(3);
-const duration = Math.max(28.5, +(fimFala + 3.4).toFixed(2));
+const duration = +(fimFala + 0.46).toFixed(2); // ~29,5 s: a cartela já está na tela desde «KAVORA»
 
 const ext = ['mp3', 'wav', 'm4a'].find((e) => fs.existsSync(path.join(PROJ, `narracao.${e}`)));
 if (!ext) throw new Error('narração não encontrada em projetos/kavora/narracao.(mp3|wav|m4a)');

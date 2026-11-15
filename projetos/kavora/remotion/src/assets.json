@@ -1,5 +1,11 @@
 {
-  "voice": {"file": ""},
-  "music": {"file": "", "start": 0, "gain": 0.3},
-  "sfxGain": 1.0
+  "voice": {
+    "file": "narracao.mp3"
+  },
+  "music": {
+    "file": "",
+    "start": 0,
+    "gain": 0.3
+  },
+  "sfxGain": 1
 }

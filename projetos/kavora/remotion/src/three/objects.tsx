@@ -187,3 +187,47 @@ export const Nozzle3D: React.FC<G> = (p) => {
     </group>
   );
 };
+
+// ---------- sineta de recepção (campainha de balcão) ----------
+export const Bell3D: React.FC<G> = (p) => {
+  const d = useMemo(() => {
+    const base = new THREE.CylinderGeometry(1.25, 1.32, 0.28, 64);
+    const rim = new THREE.TorusGeometry(1.06, 0.06, 16, 64);
+    rim.rotateX(Math.PI / 2);
+    const dome = new THREE.SphereGeometry(1.05, 64, 32, 0, Math.PI * 2, 0, Math.PI / 2);
+    const stem = new THREE.CylinderGeometry(0.07, 0.07, 0.32, 24);
+    const knob = new THREE.SphereGeometry(0.17, 32, 16);
+    return {base, rim, dome, stem, knob, mO: mat.orange(), mG: mat.graphite(), mM: mat.metal()};
+  }, []);
+  return (
+    <group {...p}>
+      <mesh geometry={d.base} material={d.mG} position={[0, -0.14, 0]} />
+      <mesh geometry={d.rim} material={d.mM} position={[0, 0.02, 0]} />
+      <mesh geometry={d.dome} material={d.mO} position={[0, 0.02, 0]} />
+      <mesh geometry={d.stem} material={d.mM} position={[0, 1.2, 0]} />
+      <mesh geometry={d.knob} material={d.mM} position={[0, 1.38, 0]} />
+    </group>
+  );
+};
+
+// ---------- cartão-chave do quarto (com o K da marca em relevo) ----------
+export const Keycard3D: React.FC<G> = (p) => {
+  const d = useMemo(() => {
+    const card = extrude(roundedRect(2.1, 1.32, 0.16), 0.07, 0.025, 3);
+    const stripe = new THREE.BoxGeometry(2.1, 0.22, 0.02);
+    const kh = 0.42, g = GLYPHS.K;
+    const k = extrude(g.parts.map((pt) => partShape(pt)), 0.04, 0.008, 2);
+    k.scale(kh, kh, 1);
+    k.translate(-0.78, -0.12, 0.07);
+    const chip = extrude(roundedRect(0.32, 0.26, 0.05), 0.02, 0.005, 2);
+    return {card, stripe, k, chip, mO: mat.orange(), mW: mat.pearl(), mG: mat.graphite(), mM: mat.metal()};
+  }, []);
+  return (
+    <group {...p}>
+      <mesh geometry={d.card} material={d.mO} />
+      <mesh geometry={d.stripe} material={d.mG} position={[0, 0.36, -0.06]} />
+      <mesh geometry={d.k} material={d.mW} />
+      <mesh geometry={d.chip} material={d.mM} position={[0.62, -0.25, 0.06]} />
+    </group>
+  );
+};
