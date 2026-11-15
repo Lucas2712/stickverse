@@ -1,17 +1,1 @@
-# VYORA · roteiro da narração (proposta, aguardando aprovação)
-
-Para onde você quer viajar?
-
-Esta é a VYORA. O aplicativo que planeja a sua viagem com inteligência artificial.
-
-Voos, hospedagem, carro e seguro. Tudo em um só lugar.
-
-Ela aprende o seu estilo e monta a sua viagem. Do seu jeito.
-
-Check-in sem complicação.
-
-E mais liberdade em cada etapa.
-
-Seu mundo, sem limites.
-
-VYORA. Viajar começa com uma ideia.
+Para onde você quer viajar? Com a VYORA, sua próxima viagem começa de um jeito muito mais simples. Encontre voos, serviços e ofertas personalizadas em um só lugar. Tudo pensado para facilitar cada etapa da sua jornada. E com o check-in automático, você ganha ainda mais praticidade na hora de embarcar. Receba suas informações, tenha seu cartão de embarque sempre à mão e viaje sem complicação. A VYORA conecta você a destinos em 27 países. Escolha seu destino, encontre seu voo e deixe o resto com a gente. VYORA. Viajar começa com uma ideia.
