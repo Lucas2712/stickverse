@@ -1,0 +1,5 @@
+{
+  "voice": {"file": ""},
+  "music": {"file": "", "start": 0, "gain": 0.3},
+  "sfxGain": 1.0
+}
