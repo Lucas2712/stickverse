@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comercial GO</title>
+<style>
+@font-face{font-family:"Inter Display";font-weight:800;src:url(data:font/woff2;base64,__F_DXB__) format("woff2")}
+@font-face{font-family:"Inter Display";font-weight:900;src:url(data:font/woff2;base64,__F_DBL__) format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;src:url(data:font/woff2;base64,__F_TM__) format("woff2")}
+@font-face{font-family:"Inter";font-weight:600;src:url(data:font/woff2;base64,__F_TS__) format("woff2")}
+:root{--bg:#0B0C0E;--surface:#15171B;--ink:#F2F4F7;--ink2:#9AA1AB;--line:#2A2E35;--ac:#19C79B}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#0B0C0E;--surface:#15171B;--ink:#F2F4F7;--ink2:#9AA1AB;--line:#2A2E35}}
+:root[data-theme="dark"]{--bg:#0B0C0E}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:500 15px/1.4 "Inter",system-ui,sans-serif}
+main{max-width:1200px;margin:0 auto;padding:16px}
+.palco{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
+canvas#filme{position:absolute;inset:0;width:100%;height:100%;display:block}
+.carregando{position:absolute;inset:0;display:grid;place-items:center;color:var(--ink2);font-size:14px}
+body.pronto .carregando{display:none}
+.ctrl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+button{font:600 14px "Inter",sans-serif;color:var(--bg);background:var(--ink);border:0;border-radius:999px;padding:10px 18px;cursor:pointer}
+button.sec{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+#barra{flex:1 1 100%;height:28px;position:relative;cursor:pointer;touch-action:none}
+#barra:before{content:"";position:absolute;left:0;right:0;top:12px;height:4px;border-radius:2px;background:var(--line)}
+#cheio{position:absolute;left:0;top:12px;height:4px;border-radius:2px;background:var(--ac);width:0}
+#tempo{font-variant-numeric:tabular-nums;color:var(--ink2);min-width:64px}
+label{display:flex;gap:6px;align-items:center;color:var(--ink2);font-size:13px}
+input[type=range]{width:90px;accent-color:var(--ac)}
+.nota{color:var(--ink2);font-size:13px;margin-top:14px;line-height:1.5}
+#erro{color:#ff6b6b;white-space:pre-wrap;font-size:12px}
+</style></head>
+<body>
+<main>
+  <div class="palco"><canvas id="filme" width="1920" height="1080"></canvas><div class="carregando">Preparando o render 3D…</div></div>
+  <div class="ctrl">
+    <div id="barra"><div id="cheio"></div></div>
+    <button id="play">Reproduzir</button><span id="tempo">0,00 s</span>
+    <button id="qual" class="sec">Qualidade: alta</button>
+    <label>Música <input id="vm" type="range" min="0" max="1.5" step=".05" value="1"></label>
+    <label id="lvs">Efeitos <input id="vs" type="range" min="0" max="1.5" step=".05" value="1"></label>
+  </div>
+  <p class="nota">Comercial GO · gobank · 15 s · 1920×1080 · prévia em tempo real (o MP4 final tem desfoque de movimento por acumulação de subquadros). Logo e cor da marca são espaços reservados; benefícios provisórios.</p>
+  <div id="erro"></div>
+</main>
+<script>__SFX__</script>
+<script>__JS__</script>
+</body></html>
