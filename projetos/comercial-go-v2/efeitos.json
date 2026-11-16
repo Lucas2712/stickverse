@@ -1,0 +1,17 @@
+[
+ {"t": 0.70, "type": "glass", "g": 0.35, "notes": "macro: tinido metálico enquanto a câmera avança sobre o chip"},
+ {"t": 1.00, "type": "whoosh", "len": 1.6, "g": 0.3, "notes": "linha de luz dourada percorre o chip"},
+ {"t": 2.145, "type": "riser", "len": 0.9, "g": 0.5, "notes": "prepara o recuo"},
+ {"t": 2.90, "type": "whoosh", "len": 1.0, "g": 0.6, "notes": "recuo suave da câmera: revelação"},
+ {"t": 4.00, "type": "hit", "g": 1.0, "notes": "impacto grave: GO aparece"},
+ {"t": 5.30, "type": "whoosh", "len": 0.9, "g": 0.35, "notes": "reflexo turquesa cruza o cartão e vira a luz da cena"},
+ {"t": 8.65, "type": "whoosh", "len": 0.8, "g": 0.55, "notes": "rotação de borda do cartão"},
+ {"t": 11.345, "type": "riser", "len": 0.9, "g": 0.45, "notes": "prepara o pagamento"},
+ {"t": 12.20, "type": "whoosh", "len": 0.9, "g": 0.5, "notes": "cartão desce até a maquininha"},
+ {"t": 13.50, "type": "success", "g": 1.0, "notes": "toque: confirmação no instante da aproximação"},
+ {"t": 13.52, "type": "magic", "g": 0.6, "notes": "onda luminosa percorre o ambiente"},
+ {"t": 17.045, "type": "riser", "len": 1.0, "g": 0.7, "notes": "subida para a assinatura"},
+ {"t": 18.00, "type": "drop", "g": 0.7, "notes": "o fundo escurece"},
+ {"t": 20.00, "type": "hit", "g": 0.6, "notes": "assinatura sonora: impacto sutil"},
+ {"t": 20.09, "type": "magic", "g": 0.45, "notes": "brilho do fio de luz e da varredura dourada"}
+]
