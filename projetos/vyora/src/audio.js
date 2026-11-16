@@ -1,5 +1,10 @@
 // Faixas de áudio do comercial (arquivos em public/audio). Volumes lineares.
+// Abertura só com o avião, antes da narração (segundos)
+export const INTRO = 2.4;
+
 export const AUDIO = {
+  // Sobrevoo real de um Boeing (InspectorJ, CC BY 4.0): alto na abertura, some quando a voz entra
+  aviao: {arquivo: "audio/aviao.mp3", volume: 1, fim: 3.9, fade: 1.6},
   narracao: {arquivo: "audio/narracao.mp3", volume: 1},
   // Raspberrymusic, "Technology Background Music" (CC BY 3.0). O arquivo em public/ já começa em 0,25 s da faixa,
   // para a entrada da parte cheia cair no começo do check-in (14,5 s).

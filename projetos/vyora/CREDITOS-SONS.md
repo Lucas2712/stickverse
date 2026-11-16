@@ -4,8 +4,17 @@
 
 **"Technology Background Music"**, de **Raspberrymusic**, licença **CC BY 3.0** (https://creativecommons.org/licenses/by/3.0).
 Origem: https://commons.wikimedia.org/wiki/File:Raspberrymusic_-_Technology_Background_Music.ogg (licença conferida na página em 15/11/2026).
-Alterações: trecho de 0,25 s a 39,25 s, volume reduzido, fades e redução automática sob a narração.
-Texto de crédito sugerido para a legenda da publicação: `Música: "Technology Background Music", Raspberrymusic (CC BY 3.0)`.
+Alterações: trecho de 0,25 s a 39,25 s (entra depois da abertura do avião), volume reduzido, fades e redução automática sob a narração.
+Texto de crédito sugerido: `Música: "Technology Background Music", Raspberrymusic (CC BY 3.0)`.
+
+## Som do avião na abertura (atribuição obrigatória)
+
+**"Airplane, Boeing, Flyby, Right to Left, A.wav"**, de **InspectorJ** (www.jshaw.co.uk), licença **CC BY 4.0**
+(https://creativecommons.org/licenses/by/4.0). Gravação real de um Boeing passando no aeroporto de Gatwick.
+Origem: https://commons.wikimedia.org/wiki/File:428086_inspectorj_airplane-boeing-flyby-right-to-left-a.wav
+(publicado originalmente em https://freesound.org/people/InspectorJ/sounds/428086/; licença conferida na página do Wikimedia Commons em 16/11/2026).
+Alterações: trecho de 13,3 s a 17,7 s, volume aumentado com limitador, fade de saída sob a narração.
+Texto de crédito sugerido: `Som de avião: "Airplane, Boeing, Flyby, Right to Left, A" por InspectorJ (CC BY 4.0)`.
 
 ## Narração
 
@@ -19,8 +28,8 @@ Arquivo enviado pelo usuário (`narracao.mp3`), usado sem alterações.
 
 ## Efeitos sonoros
 
-86 efeitos posicionados pelo Real SFX a partir de `som/eventos.json`, usando 77 arquivos da biblioteca do estúdio.
-Todos vêm do banco do Earshot (sons feitos em código, licença MIT); nenhuma gravação do Openverse entrou neste vídeo.
+84 efeitos posicionados pelo Real SFX a partir de `som/eventos.json`, usando 75 arquivos da biblioteca do estúdio.
+Todos vêm do banco do Earshot (sons feitos em código, licença MIT).
 
 | efeito | autor | origem | licença | link |
 |---|---|---|---|---|
@@ -32,7 +41,6 @@ Todos vêm do banco do Earshot (sons feitos em código, licença MIT); nenhuma g
 | downlifter/tape | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | drip/bubble | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | drip/drop | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
-| drip/plink | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | drip/tiny | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | fit/bell/small_bell | Leon Lin (earshot), som feito em código (receita medida de «Small Bell #2», steffcaffrey, CC0 1.0, https://freesound.org/people/steffcaffrey/sounds/452379/) | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | fit/click/floss_lid | Leon Lin (earshot), som feito em código (receita medida de «Plastic Clicks.flac», qubodup, CC0 1.0, https://freesound.org/people/qubodup/sounds/167829/) | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
@@ -71,7 +79,6 @@ Todos vêm do banco do Earshot (sons feitos em código, licença MIT); nenhuma g
 | pro_whoosh_big/gritty | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_whoosh_big/tonal | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_whoosh_big/windy | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
-| pro_zip/down_warm | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_zip/up | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | pro_zip/up_hi | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |
 | reverse_swell/breath | Leon Lin (earshot), som feito em código | earshot | MIT (código do Earshot; sem gravação embutida) | https://github.com/Leonxlnx/earshot |

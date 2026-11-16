@@ -1,20 +1,5 @@
 [
  {
-  "t": 0.0,
-  "type": "whoosh",
-  "g": 1,
-  "cena": 1,
-  "nota": "tela vertical gira e assenta",
-  "len": 0.9
- },
- {
-  "t": 0.3,
-  "type": "pop",
-  "g": 0.6,
-  "cena": 1,
-  "nota": "selo 100% com IA"
- },
- {
   "t": 0.45,
   "type": "whoosh",
   "g": 0.8,
@@ -367,7 +352,8 @@
  },
  {
   "t": 20.5,
-  "type": "whoosh", "len": 0.35,
+  "type": "whoosh",
+  "len": 0.35,
   "g": 0.8,
   "cena": 5,
   "nota": "canhoto destaca"
@@ -594,7 +580,7 @@
   "type": "whoosh",
   "g": 1,
   "cena": 8,
-  "nota": "recuo para a bancada",
+  "nota": "roxo toma a tela para a assinatura",
   "len": 0.7
  },
  {

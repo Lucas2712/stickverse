@@ -1,7 +1,8 @@
-// VYORA · composição do Remotion (1080×1920, 30 fps, 39 s)
+// VYORA · composição do Remotion (1080×1920, 30 fps, abertura + 39 s)
 import React from "react";
 import {Composition, continueRender, delayRender, staticFile} from "remotion";
 import {Vyora} from "./Vyora";
+import {INTRO} from "./audio";
 
 const espera = delayRender("fonte Inter");
 if (typeof document !== "undefined") {
@@ -12,4 +13,4 @@ if (typeof document !== "undefined") {
 export const FPS = 30;
 export const DURACAO = 39;
 
-export const Raiz = () => <Composition id="Vyora" component={Vyora} width={1080} height={1920} fps={FPS} durationInFrames={DURACAO * FPS} />;
+export const Raiz = () => <Composition id="Vyora" component={Vyora} width={1080} height={1920} fps={FPS} durationInFrames={Math.round((DURACAO + INTRO) * FPS)} />;

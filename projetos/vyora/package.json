@@ -5,7 +5,7 @@
   "scripts": {
     "render": "remotion render src/index.jsx Vyora saida/vyora-remotion.mp4 --browser-executable=/opt/pw-browsers/chromium",
     "rascunho": "remotion render src/index.jsx Vyora saida/vyora-rascunho.mp4 --scale=0.5 --browser-executable=/opt/pw-browsers/chromium",
-    "final": "npm run render && ffmpeg -y -i saida/vyora-remotion.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 256k -ar 48000 -movflags +faststart saida/vyora.mp4"
+    "final": "npm run render && ffmpeg -y -i saida/vyora-remotion.mp4 -c:v copy -af volume=5.5dB,alimiter=limit=0.84:attack=5:release=60 -c:a aac -b:a 256k -ar 48000 -movflags +faststart saida/vyora.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.230",

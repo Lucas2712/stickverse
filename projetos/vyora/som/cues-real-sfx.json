@@ -3,29 +3,6 @@
  "keep_audio": "auto",
  "cues": [
   {
-   "t": 0.0,
-   "label": "whoosh",
-   "_g": 1.0,
-   "pick": {
-    "role": "whoosh",
-    "target_dur": 0.9,
-    "max_dur": 1.3,
-    "prefer_tag": "whoosh"
-   },
-   "gain_db": -2.0
-  },
-  {
-   "t": 0.3,
-   "label": "pop x0.60",
-   "_g": 0.6,
-   "pick": {
-    "role": "pop",
-    "max_dur": 0.6,
-    "onsets_max": 1
-   },
-   "gain_db": -4.4
-  },
-  {
    "t": 0.45,
    "label": "whoosh x0.80",
    "_g": 0.8,
