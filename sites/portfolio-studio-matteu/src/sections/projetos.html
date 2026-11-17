@@ -24,12 +24,12 @@
       </label>
     </div>
 
+    <!-- 01 a 03: estudos autorais de motion em vídeo (loop sem som; o link abre o vídeo com som). --ar é a proporção da
+         tela de cada card: no desktop as telas de uma linha ficam com a mesma altura e cada vídeo no seu formato, sem corte. -->
     <ul class="projetos__grade" data-duplica>
-      <!-- estudo autoral (não é trabalho encomendado pela Stripe): o card roda o vídeo em loop, sem som; no celular, o
-           trecho escuro (o fundo branco estoura na tela do celular). O link abre o vídeo inteiro, com som. -->
-      <li class="projeto" data-tipo="motion" data-busca="smart retries stripe estudo motion fintech pagamentos interface">
+      <li class="projeto" style="--ar: 1; --arm: 1" data-tipo="motion" data-busca="smart retries stripe estudo motion fintech pagamentos interface">
         <a class="projeto__link" href="/video/smart-retries-som.mp4" target="_blank" rel="noopener">
-          <span class="projeto__img projeto__img--video" data-camada="foto"><video muted loop playsinline autoplay preload="metadata" poster="/img/smart-retries-capa.webp" aria-label="Estudo de motion do Studio Matteu sobre o Smart Retries da Stripe: cartões recusados que voltam a ser cobrados durante a noite"><source media="(max-width: 760px)" src="/video/smart-retries-m.mp4" type="video/mp4" /><source src="/video/smart-retries.mp4" type="video/mp4" /></video></span>
+          <span class="projeto__img projeto__img--video" data-camada="foto"><video muted loop playsinline autoplay preload="metadata" poster="/img/smart-retries-capa.webp" aria-label="Estudo de motion do Studio Matteu sobre o Smart Retries da Stripe: cartões recusados que voltam a ser cobrados durante a noite"><source src="/video/smart-retries.mp4" type="video/mp4" /></video></span>
           <span class="projeto__etiqueta" data-camada="texto">Estudo</span>
           <span class="projeto__pe" data-camada="bloco">
             <strong class="projeto__num" data-camada="texto">01</strong>
@@ -39,24 +39,48 @@
           </span>
         </a>
       </li>
-      <li class="projeto" data-tipo="comerciais" data-busca="órbita orbita comercial comerciais fintech vertical">
+      <li class="projeto" style="--ar: 0.5625; --arm: 0.5625" data-tipo="motion" data-busca="mio creative estudo motion agência marketing anúncios funis sites vertical">
+        <a class="projeto__link" href="/video/mio-creative-som.mp4" target="_blank" rel="noopener">
+          <span class="projeto__img projeto__img--video" data-camada="foto"><video muted loop playsinline autoplay preload="metadata" poster="/img/mio-creative-capa.webp" aria-label="Estudo de motion vertical para a MIO Creative, em amarelo e preto: anúncios, funis e sites que trabalham juntos"><source src="/video/mio-creative.mp4" type="video/mp4" /></video></span>
+          <span class="projeto__etiqueta" data-camada="texto">Estudo</span>
+          <span class="projeto__pe" data-camada="bloco">
+            <strong class="projeto__num" data-camada="texto">02</strong>
+            <span class="projeto__nome" data-camada="texto">MIO Creative</span>
+            <span class="projeto__meta" data-camada="texto">Motion / 2026</span>
+            <svg class="ico projeto__seta" aria-hidden="true"><use href="#u-ne"/></svg>
+          </span>
+        </a>
+      </li>
+      <li class="projeto" style="--ar: 0.5625; --arm: 0.5625" data-tipo="motion" data-busca="most used apps estudo motion interface vidro apps spotify vertical">
+        <a class="projeto__link" href="/video/most-used-apps-som.mp4" target="_blank" rel="noopener">
+          <span class="projeto__img projeto__img--video" data-camada="foto"><video muted loop playsinline autoplay preload="metadata" poster="/img/most-used-apps-capa.webp" aria-label="Estudo de motion vertical com painéis de vidro: a lista dos apps mais usados se abre até a playlist do Spotify"><source src="/video/most-used-apps.mp4" type="video/mp4" /></video></span>
+          <span class="projeto__etiqueta" data-camada="texto">Estudo</span>
+          <span class="projeto__pe" data-camada="bloco">
+            <strong class="projeto__num" data-camada="texto">03</strong>
+            <span class="projeto__nome" data-camada="texto">Most Used Apps</span>
+            <span class="projeto__meta" data-camada="texto">Motion / 2026</span>
+            <svg class="ico projeto__seta" aria-hidden="true"><use href="#u-ne"/></svg>
+          </span>
+        </a>
+      </li>
+      <li class="projeto" style="--ar: 1.6" data-tipo="comerciais" data-busca="órbita orbita comercial comerciais fintech vertical">
         <a class="projeto__link" href="#trajetoria">
           <span class="projeto__img" data-camada="foto"><picture><source media="(max-width: 760px)" srcset="/img/proj-orbita-v.webp" width="800" height="1000" /><img src="/img/proj-orbita.webp" width="1600" height="1000" alt="Três quadros verticais do comercial da fintech Órbita, em azul-petróleo, com órbitas, um cartão e a assinatura" loading="lazy" decoding="async" /></picture></span>
           <span class="projeto__etiqueta" data-camada="texto">Comercial</span>
           <span class="projeto__pe" data-camada="bloco">
-            <strong class="projeto__num" data-camada="texto">02</strong>
+            <strong class="projeto__num" data-camada="texto">04</strong>
             <span class="projeto__nome" data-camada="texto">Órbita</span>
             <span class="projeto__meta" data-camada="texto">Comerciais / 2025</span>
             <svg class="ico projeto__seta" aria-hidden="true"><use href="#u-ne"/></svg>
           </span>
         </a>
       </li>
-      <li class="projeto" data-tipo="ia" data-busca="sintético sintetico ia inteligência artificial série cenas geradas">
+      <li class="projeto" style="--ar: 1.6" data-tipo="ia" data-busca="sintético sintetico ia inteligência artificial série cenas geradas">
         <a class="projeto__link" href="#trajetoria">
           <span class="projeto__img" data-camada="foto"><picture><source media="(max-width: 760px)" srcset="/img/proj-sintetico-v.webp" width="800" height="1000" /><img src="/img/proj-sintetico.webp" width="1600" height="1000" alt="Três quadros verticais da série Sintético, com cenas geradas por IA em rosa e laranja sobre preto" loading="lazy" decoding="async" /></picture></span>
           <span class="projeto__etiqueta" data-camada="texto">IA + motion</span>
           <span class="projeto__pe" data-camada="bloco">
-            <strong class="projeto__num" data-camada="texto">03</strong>
+            <strong class="projeto__num" data-camada="texto">05</strong>
             <span class="projeto__nome" data-camada="texto">Sintético</span>
             <span class="projeto__meta" data-camada="texto">IA / 2026</span>
             <svg class="ico projeto__seta" aria-hidden="true"><use href="#u-ne"/></svg>

@@ -35,6 +35,14 @@
   gap: calc(28 * var(--su));
   margin-top: calc(28 * var(--su));
 }
+/* desktop: grade justificada. Cada card cresce na proporção da sua tela (--ar, no HTML), então as telas de uma linha
+   ficam com a mesma altura e cada vídeo no seu formato, sem corte: 1:1 + 9:16 + 9:16 na primeira linha, as duas telas
+   16:10 na segunda. A base (330 × --ar) faz a quebra cair depois do terceiro card. */
+@media (min-width: 761px) {
+  .projetos__grade { display: flex; flex-wrap: wrap; }
+  .projeto { flex: var(--ar, 1.6) 1 calc(var(--ar, 1.6) * 330 * var(--su)); min-width: 0; }
+  .projetos__grade .projeto__img { aspect-ratio: var(--ar, 1.6); }
+}
 .projeto { transition: opacity 0.35s var(--ease), filter 0.35s var(--ease); }
 .projeto.fora { opacity: 0.22; filter: grayscale(1); pointer-events: none; }
 .projeto.some { display: none; }

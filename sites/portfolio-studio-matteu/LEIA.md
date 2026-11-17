@@ -30,9 +30,12 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
 - Áreas de toque de 44 px (nav, abas, rodapé, botões da barra) e margens seguras do iPhone (notch e indicador).
 - Celular deitado: o hero segue a largura em vez de espremer na altura.
 
-## Projetos reais
-- 01 **Smart Retries** (estudo autoral de motion sobre o Smart Retries da Stripe, 2026; não é trabalho encomendado pela
-  Stripe, por isso a etiqueta "Estudo"). O card roda `public/video/smart-retries.mp4` em loop, sem som; no celular,
-  `smart-retries-m.mp4` (só o trecho escuro). O link abre `smart-retries-som.mp4`, com som. Original em `fonte/`.
-  `src/motion/videos.js` toca os vídeos só quando aparecem na tela.
+## Projetos
+- 01 a 03, Motion, estudos autorais em vídeo (2026), com a etiqueta "Estudo" (nenhum foi encomendado pelas marcas
+  que aparecem): **Smart Retries** (Stripe, 1:1), **MIO Creative** (9:16) e **Most Used Apps** (9:16). Cada card roda
+  `public/video/<nome>.mp4` em loop, sem som, só enquanto aparece na tela (`src/motion/videos.js`); o link abre
+  `<nome>-som.mp4`, com som. Originais em `fonte/`.
+- 04 Órbita (Comerciais) e 05 Sintético (IA): fictícios, imagens geradas em HTML.
+- Formato: `--ar` em cada card é a proporção da tela. No desktop as telas de uma linha ficam com a mesma altura
+  (1:1 + 9:16 + 9:16, depois 16:10 + 16:10); no celular o carrossel é uma tira com a mesma altura (`--arm`).
 - O comparador "Do rascunho. Ao ar." ainda mostra o Pulso fictício (storyboard + quadros).

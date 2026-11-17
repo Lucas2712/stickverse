@@ -37,14 +37,21 @@
 
   /* ---------- projetos: o carrossel lateral com encaixe (regra de projetos.css), com as telas em pé, 4:5
      (a imagem vertical vem do <picture>); o próximo card aparece na borda para convidar a arrastar ---------- */
-  .projeto { flex-basis: 82%; }
-  .projeto__img { aspect-ratio: 4 / 5; }
+  /* cada card na proporção da sua tela (--arm no HTML: 1 no quadrado, 0,5625 nos verticais; 4:5 nas imagens), todos
+     com a mesma altura: uma tira de filme, sem faixa preta em volta dos vídeos */
+  .projetos { --h-card: min(92vw, 420px); }
+  .projeto { flex: 0 0 calc(var(--arm, 0.8) * var(--h-card)); }
+  .projeto__img { aspect-ratio: var(--arm, 0.8); }
+  /* rodapé do card mais compacto (os cards verticais são estreitos) e o fio de baixo alinhado em todos */
+  .projeto__link { display: flex; flex-direction: column; height: 100%; }
+  .projetos__grade .projeto__pe { flex: 1; align-content: start; column-gap: 12px; }
+  .projetos__grade .projeto__num { font-size: calc(40 * var(--su)); }
+  .projetos__grade .projeto__nome { font-size: calc(16 * var(--su)); line-height: 1.15; }
+  .projetos__grade .projeto__meta { font-size: 12px; }
   .projeto__img picture,
   .comp picture { display: contents; }
   .projeto__etiqueta { top: 12px; left: 12px; }
-  .projeto__pe { column-gap: 16px; padding: 16px 0 18px; }
-  .projeto__num { font-size: calc(48 * var(--su)); }
-  .projeto__nome { font-size: calc(19 * var(--su)); }
+  .projeto__pe { padding: 16px 0 18px; }
   .aba { min-width: 44px; text-align: center; }
 
   /* ---------- bastidor: o comparador em pé, do mesmo tamanho dos projetos ---------- */
