@@ -8,7 +8,8 @@ na frente de quem visita. Vite sem framework, GSAP, Anton, Caveat e Manrope (Fon
     npm run build     # gera dist/ para Vercel, Netlify, Hostinger...
 
 ## O que foi personalizado
-- Marca, textos, números, projetos (Pulso, Órbita, Sintético), trajetória, ferramentas, contato, símbolo "M" e favicon.
+- Marca, textos, números, trajetória, ferramentas, contato e o símbolo: um "M" em duas metades (branca e vermelha,
+  separadas por um corte diagonal) em `nav.html`, no logo da abertura em `src/motion/enxame.js` e em `public/favicon.svg`.
 - Foto do hero: foto real do fundador (`fonte/retrato-matteu.webp`), recortada com o SAM da Meta (Apache 2.0)
   e salva em `public/img/matteu-perfil.webp`.
 - Telas dos projetos e o storyboard do comparador: composições feitas em HTML para este site

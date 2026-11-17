@@ -881,7 +881,7 @@ export function enxame(barra) {
     const cy = scrollY + innerHeight * 0.46;
     const logo = document.createElement('div');
     logo.className = 'enx-logo';
-    logo.innerHTML = '<svg class="marca-kairo" viewBox="0 0 100 100" aria-hidden="true"><path d="M18 80V21H31L49 49V64L31 38V80Z M82 80V21H69L51 49V64L69 38V80Z"/></svg>';
+    logo.innerHTML = '<svg class="marca-kairo" viewBox="0 0 100 100" aria-hidden="true"><path class="marca__clara" fill="#f3eeec" d="M19 78V22h13l17 28v20L33 45v33Z"/><path d="M81 78V22H68L51 50v20l16-25v33Z"/></svg>';
     logo.style.transform = `translate(${cx}px, ${cy}px)`;
     palco.append(logo);
     gsap.fromTo(logo, { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: 'expo.out' });
