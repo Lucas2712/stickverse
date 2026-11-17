@@ -1,4 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; }
+/* o site também roda dentro de páginas que impõem estilo próprio ao html e ao body (cor preta, fundo branco, tema
+   claro, folga de safe-area no :root): aqui a página retoma tudo isso, para nenhum texto herdar preto */
+:root { color-scheme: dark; padding: 0; }
 html {
   background: var(--pagina);
   color: var(--texto);
@@ -9,6 +12,7 @@ body {
   position: relative;          /* o palco dos agentes cobre o body inteiro */
   margin: 0;
   background: transparent;     /* o fundo fica no html, para o grão (body::before) ficar entre ele e o conteúdo */
+  color: var(--texto);
   font-family: var(--sans);
   font-size: 16px;
   line-height: 1.5;

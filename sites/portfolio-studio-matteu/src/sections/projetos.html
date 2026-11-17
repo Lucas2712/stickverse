@@ -94,3 +94,27 @@
     </div>
   </div>
 </section>
+
+<!-- Bastidor: do rascunho ao ar. Comparador arrastável entre o storyboard e os quadros finais (projeto conceito Lume);
+     depois de montado, um agente pega a alça e arrasta de um lado para o outro. -->
+<section class="secao bastidor" id="bastidor" data-montagem="bastidor">
+  <div class="secao__dentro bastidor__grade">
+    <div class="bastidor__texto">
+      <span class="secao__rotulo" data-camada="texto">Por trás do vídeo</span>
+      <h2 class="titulo-cond bastidor__titulo"><span data-camada="texto">Do rascunho<span class="pq">.</span></span> <span class="vermelho" data-camada="texto">Ao ar.</span></h2>
+      <p class="bastidor__p" data-camada="texto">Cada vídeo começa num storyboard. Arraste para ver as caixas cinza e as anotações virarem os quadros que foram ao ar.</p>
+      <p class="bastidor__meta"><span data-camada="texto">Lume · conceito de lançamento / 2026</span><span data-camada="texto">Roteiro · storyboard · motion</span></p>
+    </div>
+    <div class="bastidor__peca">
+      <div class="comp" data-camada="foto" data-teste="arraste" data-ajusta="-70,44" style="--p: 50%">
+        <picture><source media="(max-width: 760px)" srcset="/img/proj-lume-v.webp" width="800" height="1000" /><img class="comp__depois" src="/img/proj-lume.webp" width="1600" height="1000" alt="Os quadros finais do conceito Lume, uma luminária inteligente, em âmbar sobre azul-noite" loading="lazy" decoding="async" /></picture>
+        <div class="comp__antes"><picture><source media="(max-width: 760px)" srcset="/img/wire-lume-v.webp" width="800" height="1000" /><img src="/img/wire-lume.webp" width="1600" height="1000" alt="O storyboard dos mesmos quadros, em caixas cinza com anotações à mão" loading="lazy" decoding="async" /></picture></div>
+        <span class="comp__etq comp__etq--antes">Rascunho</span>
+        <span class="comp__etq comp__etq--depois">No ar</span>
+        <span class="comp__alca" aria-hidden="true"><svg class="ico"><use href="#u-esq-v"/></svg><svg class="ico"><use href="#u-dir-v"/></svg></span>
+        <input class="comp__range" type="range" min="0" max="100" step="1" value="50" aria-label="Comparar o rascunho com a versão no ar" />
+      </div>
+      <p class="comp__legenda"><span data-camada="texto">Arraste para ver o processo</span><span data-camada="texto">Arraste / setas</span></p>
+    </div>
+  </div>
+</section>
