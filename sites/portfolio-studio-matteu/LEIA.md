@@ -53,3 +53,11 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
 - Celular: o carrossel dos projetos anda sozinho para o lado (26 px/s, `src/motion/carrossel.js`), para ao toque,
   volta a andar 5 s depois e, no fim, desliza de volta ao primeiro card.
 - O cursor que arrasta a alça cresce (1,5×) e mostra a etiqueta "Arraste" na cor dele (`.ag.is-arrasta`, em `enxame.css`).
+- Vídeos dos cards sem autoplay e com `preload="none"`: só baixam quando o card chega perto da tela (a primeira tela
+  caiu de ~2,7 MB para ~0,25 MB).
+- Tablet e celular deitado (761 a 1100 px): parágrafos com no mínimo 15 px; busca e marca do rodapé com toque de 44 px.
+
+## Como testar
+A bateria completa (180 testes: layout em 7 telas, componentes, montagem, Tour, carrossel, movimento reduzido, a página
+dentro do esqueleto do Artifact, teclado e peso) roda com Playwright contra `npm run build` + `npx vite preview --port 5301`.
+

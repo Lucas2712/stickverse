@@ -831,6 +831,8 @@ export function enxame(barra) {
   async function naFila(a, gen, r0) {
     para(a);
     modo(a, 'seta');
+    if (a.y < scrollY - 80) a.y = scrollY - 30;
+    else if (a.y > scrollY + innerHeight + 80) a.y = scrollY + innerHeight + 30;
     a.naFila = true;
     ligaFila();
     while (gen === geracao && a.naFila) {

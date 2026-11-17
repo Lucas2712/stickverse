@@ -15,6 +15,7 @@ export function carrossel() {
   let pausaAte = 0;
   let voltando = false;
   let x = 0;
+  let posto = -1; // a última posição que o próprio carrossel escreveu
   let antes = 0;
   let andando = false;
 
@@ -40,6 +41,7 @@ export function carrossel() {
     const max = grade.scrollWidth - grade.clientWidth;
     if (max <= 2) return;
     if (!andando) { grade.style.scrollSnapType = 'none'; andando = true; x = grade.scrollLeft; }
+    if (posto >= 0 && Math.abs(grade.scrollLeft - posto) > 2) x = grade.scrollLeft; // alguém mexeu: segue dali
     x += VELOCIDADE * dt;
     if (x >= max) {
       grade.scrollLeft = max;
@@ -53,6 +55,7 @@ export function carrossel() {
       return;
     }
     grade.scrollLeft = x;
+    posto = grade.scrollLeft;
   };
   requestAnimationFrame(passo);
 }

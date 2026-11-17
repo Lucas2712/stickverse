@@ -84,3 +84,15 @@
   .nav__links a { padding-block: 14px; }
   .nav__cta { min-height: 44px; }
 }
+
+/* tablet e celular deitado (761 a 1100 px): o layout do desktop encolhe junto com a largura; os parágrafos não
+   descem de 15 px */
+@media (min-width: 761px) and (max-width: 1100px) {
+  :root { --s-corpo: max(15px, calc(18 * var(--su))); }
+  .sobre__bio,
+  .sanfona__corpo p { font-size: max(15px, calc(17 * var(--su))); }
+}
+@media (min-width: 761px) and (hover: none) and (pointer: coarse) {
+  .busca__campo { min-height: 44px; }
+  .rodape__marca { display: inline-flex; align-items: center; min-height: 44px; }
+}
