@@ -62,6 +62,9 @@ A bateria completa (180 testes: layout em 7 telas, componentes, montagem, Tour, 
 dentro do esqueleto do Artifact, teclado e peso) roda com Playwright contra `npm run build` + `npx vite preview --port 5301`.
 
 ## Vídeo de divulgação (Reels)
-`ferramentas/grava-reels.js` + `ferramentas/moldura-reels.html` gravam o site rodando em 9:16 (abertura, hero, Tour e
-fila final) e geram a lista de quadros para o ffmpeg montar o MP4 1080×1920 a 30 fps. O vídeo fica em `saida/` (fora do git).
+`ferramentas/grava-reels.cjs` + `ferramentas/moldura-reels.html` gravam o site rodando em 9:16 (abertura, hero, Tour e
+fila final) e geram a lista de quadros para o ffmpeg montar o MP4 1080×1920. O vídeo fica em `saida/` (fora do git).
+Para 60 fps de verdade, grave em câmera lenta com `K=0.5`: `ferramentas/camera-lenta.js` faz o site inteiro (GSAP, CSS,
+temporizadores, vídeos) andar na metade da velocidade só durante a gravação; a lista de quadros já sai com o tempo
+corrigido e o ffmpeg monta com `fps=60` (cerca de 68 quadros diferentes por segundo de vídeo).
 
