@@ -107,8 +107,12 @@ function comparador(el) {
     el.style.setProperty('--p', `${el.__p}%`);
     range.value = String(Math.round(el.__p));
   };
-  range.addEventListener('input', () => el.__poe(Number(range.value)));
-  marcaToque(el);
+  // só conta como "a pessoa mexeu" quando ela arrasta a alça de verdade (no celular, encostar o dedo para rolar a
+  // página por cima do comparador não cancela a demonstração dos agentes)
+  range.addEventListener('input', (e) => {
+    el.__poe(Number(range.value));
+    if (e.isTrusted) el.dataset.tocado = '';
+  });
 }
 
 // sanfona: uma aberta por vez; clicar na aberta fecha

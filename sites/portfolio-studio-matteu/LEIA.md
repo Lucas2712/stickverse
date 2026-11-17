@@ -41,5 +41,7 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
 - O comparador "Do rascunho. Ao ar." mostra o **Lume**, projeto conceito (luminária inteligente) desenhado em HTML para
   o site: storyboard (`wire-lume`) e quadros finais (`proj-lume`), 16:10 no desktop e 4:5 no celular (`-v`).
 - "Ver o caso Kavora", no pé do hero, abre o vídeo do Kavora com som.
+- No comparador, um agente arrasta a alça de um lado para o outro e repete a cada ~4,5 s enquanto ele está na tela,
+  até a pessoa arrastar a alça ela mesma (`arrasta` em `enxame.js`; `comparador` em `interface.js`).
 - Cor do texto: `base.css` define a cor e o tema escuro no `:root` e no `body`, porque a hospedagem do Artifact envolve
   a página num esqueleto com `body { color: #000; background: #fff }`.

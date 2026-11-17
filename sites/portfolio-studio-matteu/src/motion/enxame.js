@@ -238,6 +238,8 @@ export function enxame(barra) {
     return r.top > 56 && r.bottom < innerHeight - 70;
   };
   const testeLivre = () => testes.find((t) => inteiro(t.el));
+  // o Tour espera os testes da montagem, não as repetições do comparador (senão pararia ali para sempre)
+  const testePendente = () => testes.find((t) => !t.repete && inteiro(t.el));
   const temTrabalho = () => disponiveis().length > 0 || !!testeLivre();
 
   // o que já passou para cima da tela (a pessoa rolou para baixo com a montagem em andamento) fecha na hora: nenhum
@@ -404,8 +406,11 @@ export function enxame(barra) {
     }
   }
 
-  // comparador: o agente pega a alça, arrasta até quase um lado, até quase o outro e devolve ao meio
-  async function arrasta(a, { el }, gen) {
+  // comparador: o agente pega a alça, arrasta até quase um lado, até quase o outro e devolve ao meio. Enquanto a
+  // pessoa não arrastar a alça ela mesma, o teste volta para a fila e um agente repete o gesto a cada poucos segundos,
+  // sempre que o comparador estiver inteiro na tela.
+  async function arrasta(a, t, gen) {
+    const { el } = t;
     testando++;
     const pode = () => gen === geracao && !('tocado' in el.dataset) && naTela(el);
     const ponto = (p) => { const r = rectDoc(el); return [r.x + (r.w * p) / 100, r.y + r.h / 2 + 6]; };
@@ -434,6 +439,14 @@ export function enxame(barra) {
       el.classList.remove('arrastando');
       testando--;
       avisa();
+      if (gen === geracao && !('tocado' in el.dataset)) {
+        setTimeout(() => {
+          if (gen !== geracao || 'tocado' in el.dataset || testes.includes(t)) return;
+          t.repete = true;
+          testes.push(t);
+          avisa();
+        }, 4500);
+      }
     }
   }
 
@@ -1001,7 +1014,7 @@ export function enxame(barra) {
     barra.tour(true);
     const gen = geracao;
     while (emTour && gen === geracao) {
-      while (emTour && gen === geracao && (introViva || testeLivre() || testando || grupos.some((g) => g.estado === 'montando'))) {
+      while (emTour && gen === geracao && (introViva || testePendente() || testando || grupos.some((g) => g.estado === 'montando'))) {
         await Promise.race([novidade, espera(0.3)]);
       }
       if (!emTour || gen !== geracao) break;
