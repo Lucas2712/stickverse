@@ -1,0 +1,7 @@
+STYLE (shared by the whole series): photorealistic studio food photography for a restaurant menu. Soft, even key light from the top left with a gentle fill, natural appetizing colors, crisp detail, real textures. Every item is completely isolated on a fully TRANSPARENT background (PNG with a real alpha channel): no backdrop, no table, no plate unless stated, no ground shadow, no props, no hands, no text, no logos, no labels, no watermark. Plain unbranded packaging only.
+
+Image size 1536x1024 (landscape). Two separate sandwiches side by side, one in the left half and one in the right half, each centered in its half with wide empty transparent space around it. They must not touch or overlap. Same camera for both: straight-on front view at eye level, tilted only slightly from above, the whole sandwich visible from the top of the bun to the bottom, tall neat stack, glossy toasted brioche bun.
+
+LEFT, the veggie burger: one thick chickpea and mushroom patty with a golden-brown seared crust and visible herbs, crisp green lettuce, a thick slice of red tomato, crinkle-cut pickles and a green herb mayonnaise.
+
+RIGHT, the crispy chicken sandwich: one big piece of deep-fried chicken thigh with a very craggy golden crust sticking out of the bun, a creamy shredded white and purple cabbage slaw, pickle slices and a pale lemon mayonnaise.

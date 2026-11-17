@@ -1,0 +1,6 @@
+STYLE (shared by the whole series): photorealistic studio food photography for a restaurant menu. Soft, even key light from the top left with a gentle fill, natural appetizing colors, crisp detail, real textures. Every item is completely isolated on a fully TRANSPARENT background (PNG with a real alpha channel): no backdrop, no table, no plate unless stated, no ground shadow, no props, no hands, no text, no logos, no labels, no watermark. Plain unbranded packaging only.
+
+Image size 1536x1024 (landscape). A sheet of six separate burger ingredients arranged in a grid of 3 columns by 2 rows. Each ingredient is centered in its own cell, floating, seen from a three-quarter angle slightly from above, with wide empty transparent space around it. Items must never touch or overlap each other.
+
+Row 1, left to right: (1) two raw red onion rings, interlocked loosely; (2) three crinkle-cut pickle slices; (3) four green jalapeno pepper slices with seeds.
+Row 2, left to right: (4) four roasted Brazilian pinhao nuts (araucaria pine nuts: elongated glossy reddish-brown seeds about the size of a date, pointed at one end), one of them split open showing the ivory inside; (5) a small loose bunch of fresh arugula leaves; (6) two slices of brown mushroom and one whole small brown mushroom.

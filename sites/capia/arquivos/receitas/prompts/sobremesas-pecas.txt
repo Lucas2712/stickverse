@@ -1,0 +1,6 @@
+STYLE (shared by the whole series): photorealistic studio food photography for a restaurant menu. Soft, even key light from the top left with a gentle fill, natural appetizing colors, crisp detail, real textures. Every item is completely isolated on a fully TRANSPARENT background (PNG with a real alpha channel): no backdrop, no table, no plate unless stated, no ground shadow, no props, no hands, no text, no logos, no labels, no watermark. Plain unbranded packaging only.
+
+Image size 1536x1024 (landscape). A sheet of six separate small items arranged in a grid of 3 columns by 2 rows. Each one is centered in its own cell, floating, seen from a three-quarter angle slightly from above, with wide empty transparent space around it. Items must never touch or overlap each other.
+
+Row 1, left to right: (1) three round banana slices; (2) one round scoop of vanilla ice cream; (3) three walnut halves.
+Row 2, left to right: (4) a small pile of chocolate chips and chocolate shavings; (5) one small square piece of fudgy brownie; (6) one small wooden spoon holding thick glossy dulce de leche.

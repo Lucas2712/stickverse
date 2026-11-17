@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Capiá · cartões do mural</title>
+  <!-- Os seis cartões do mural do rodapé (612 × 1088, 9:16, o formato de stories), montados com as peças da própria página.
+       Com o servidor de desenvolvimento no ar (npm run dev), abra /arquivos/fonte/cartoes.html para ver;
+       `node arquivos/fonte/cartoes.mjs` fotografa cada
+       um e grava em public/img/mural/. -->
+  <link rel="stylesheet" href="/src/styles/site.css">
+  <style>
+    body { display: flex; flex-wrap: wrap; gap: 24px; padding: 24px; background: #3a342d; }
+    .cartao { position: relative; flex: 0 0 auto; width: 612px; height: 1088px; overflow: hidden; color: var(--carvao); background: var(--cheddar); font-family: var(--fonte); }
+    .cartao h2 { position: absolute; z-index: 3; left: 48px; right: 40px; top: 64px; font-weight: 800; font-size: 92px; line-height: .9; letter-spacing: -.04em; font-variation-settings: 'opsz' 96, 'wdth' 88; }
+    .cartao .mao { position: absolute; z-index: 3; left: 44px; right: 30px; font-family: var(--fonte-mao); font-size: 104px; line-height: .86; rotate: -5deg; }
+    .cartao .arroba { position: absolute; z-index: 4; left: 48px; bottom: 44px; font-weight: 800; font-size: 26px; letter-spacing: -.01em; }
+    .cartao .capi { position: absolute; z-index: 2; height: auto; }
+    .cartao img.prato { position: absolute; z-index: 2; height: auto; filter: drop-shadow(0 26px 30px rgb(22 19 15 / .32)); }
+    .cartao img.peca { position: absolute; z-index: 1; height: auto; }
+    .cartao img.fundo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .cartao .veu { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgb(22 19 15 / .62), rgb(22 19 15 / 0) 46%, rgb(22 19 15 / .5)); }
+    .cartao .selo { position: absolute; z-index: 4; display: inline-flex; align-items: center; height: 60px; padding: 0 28px 2px; border-radius: 31px 37px 27px 36px / 27px 33px 31px 36px; font-weight: 800; font-size: 26px; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+    .c2 { color: var(--pao); background: var(--carvao); }
+    .c3 { color: var(--branco); background: var(--tomate); }
+    .c4, .c6 { color: var(--branco); background: var(--carvao); }
+    .c5 { color: var(--branco); background: var(--mate); }
+  </style>
+</head>
+<body>
+  <!-- @marca -->
+  <article class="cartao c1">
+    <h2>Hoje<br>tem<br>smash.</h2>
+    <img class="peca" src="/img/pecas/picles.webp" style="width:170px; left:398px; top:352px; rotate:18deg; filter:blur(3px)" alt="">
+    <img class="peca" src="/img/pecas/cheddar.webp" style="width:200px; left:-30px; top:500px; rotate:-16deg" alt="">
+    <img class="prato" src="/img/produtos/classico.webp" style="width:526px; left:44px; top:514px; rotate:-5deg" alt="">
+    <span class="arroba">@capia.burger</span>
+  </article>
+  <article class="cartao c2">
+    <p class="mao" style="top:150px; color:var(--cheddar)">calma,<br>piá.</p>
+    <svg class="capi" viewBox="%caixa:deitado%" style="width:506px; left:53px; top:596px"><use href="#capi-deitado"/></svg>
+    <span class="arroba" style="color:var(--pao)">@capia.burger</span>
+  </article>
+  <article class="cartao c3">
+    <h2>Fritas<br>pra<br>dividir.</h2>
+    <p class="mao" style="top:352px; left:60px; font-size:74px; color:var(--cheddar)">ou não.</p>
+    <img class="peca" src="/img/pecas/alecrim.webp" style="width:210px; left:398px; top:484px; rotate:20deg" alt="">
+    <img class="prato" src="/img/produtos/fritas.webp" style="width:436px; left:89px; top:546px; rotate:4deg" alt="">
+    <span class="arroba">@capia.burger</span>
+  </article>
+  <article class="cartao c4">
+    <img class="fundo" src="/img/fotos/parque-1200.webp" style="object-position: 62% 50%" alt="">
+    <span class="veu"></span>
+    <h2 style="font-size:76px">Pôr do sol,<br>lanche e<br>capivara.</h2>
+    <span class="selo" style="left:44px; bottom:112px; rotate:-5deg; background:var(--cheddar); color:var(--carvao)">domingo no parque</span>
+    <span class="arroba">@capia.burger</span>
+  </article>
+  <article class="cartao c5">
+    <h2>Shake<br>batido<br>na hora.</h2>
+    <img class="peca" src="/img/pecas/morango.webp" style="width:170px; left:30px; top:552px; rotate:-14deg" alt="">
+    <img class="peca" src="/img/pecas/morango-meio.webp" style="width:150px; left:426px; top:786px; rotate:16deg; filter:blur(2.5px)" alt="">
+    <img class="prato" src="/img/produtos/shake-morango.webp" style="width:240px; left:214px; top:392px; rotate:5deg" alt="">
+    <span class="arroba">@capia.burger</span>
+  </article>
+  <article class="cartao c6">
+    <img class="fundo" src="/img/fotos/chapa-1200.webp" style="object-position: 46% 50%" alt="">
+    <span class="veu"></span>
+    <p class="mao" style="top:92px; font-size:96px; color:var(--cheddar)">sem<br>pressa.</p>
+    <span class="selo" style="left:44px; bottom:112px; rotate:4deg; background:var(--tomate); color:var(--branco)">feito na chapa</span>
+    <span class="arroba">@capia.burger</span>
+  </article>
+</body>
+</html>

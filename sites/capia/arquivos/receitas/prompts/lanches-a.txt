@@ -1,0 +1,7 @@
+STYLE (shared by the whole series): photorealistic studio food photography for a restaurant menu. Soft, even key light from the top left with a gentle fill, natural appetizing colors, crisp detail, real textures. Every item is completely isolated on a fully TRANSPARENT background (PNG with a real alpha channel): no backdrop, no table, no plate unless stated, no ground shadow, no props, no hands, no text, no logos, no labels, no watermark. Plain unbranded packaging only.
+
+Image size 1536x1024 (landscape). Two separate hamburgers side by side, one in the left half and one in the right half, each centered in its half with wide empty transparent space around it. They must not touch or overlap. Same camera for both: straight-on front view at eye level, tilted only slightly from above, the whole burger visible from the top of the bun to the bottom, tall neat stack, glossy toasted brioche bun.
+
+LEFT burger, the house classic: two thin smashed beef patties with dark crispy lacy edges, two slices of melted orange cheddar dripping over the patties, crinkle-cut pickle slices, finely diced white onion and a pink burger sauce.
+
+RIGHT burger, the bacon one: one thick juicy grilled beef patty, melted orange cheddar, three strips of crispy bacon hanging out of the sides, a pile of dark golden caramelized onions and a pale smoky mayonnaise.

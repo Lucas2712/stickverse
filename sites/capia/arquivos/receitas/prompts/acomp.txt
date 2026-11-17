@@ -1,0 +1,8 @@
+STYLE (shared by the whole series): photorealistic studio food photography for a restaurant menu. Soft, even key light from the top left with a gentle fill, natural appetizing colors, crisp detail, real textures. Every item is completely isolated on a fully TRANSPARENT background (PNG with a real alpha channel): no backdrop, no table, no plate unless stated, no ground shadow, no props, no hands, no text, no logos, no labels, no watermark. Plain unbranded packaging only.
+
+Image size 1536x1024 (landscape). Four separate fried side dishes arranged in a grid of 2 columns by 2 rows. Each one is centered in its own cell, seen from a three-quarter front angle slightly from above, with wide empty transparent space around it. Items must never touch or overlap each other.
+
+Top left: thick rustic skin-on french fries standing in a plain unprinted kraft paper cup, sprinkled with flaky salt and chopped herbs.
+Top right: a neat stack of five thick golden beer-battered onion rings, very crunchy.
+Bottom left: six thick rectangular sticks of golden fried polenta stacked in a criss-cross pile, with a little grated parmesan on top.
+Bottom right: five golden deep-fried cheese croquette balls in a small pile, one of them broken open with melted white cheese stretching out.

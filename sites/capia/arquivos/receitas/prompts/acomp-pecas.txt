@@ -1,0 +1,6 @@
+STYLE (shared by the whole series): photorealistic studio food photography for a restaurant menu. Soft, even key light from the top left with a gentle fill, natural appetizing colors, crisp detail, real textures. Every item is completely isolated on a fully TRANSPARENT background (PNG with a real alpha channel): no backdrop, no table, no plate unless stated, no ground shadow, no props, no hands, no text, no logos, no labels, no watermark. Plain unbranded packaging only.
+
+Image size 1536x1024 (landscape). A sheet of six separate small food items arranged in a grid of 3 columns by 2 rows. Each one is centered in its own cell, floating, seen from a three-quarter angle slightly from above, with wide empty transparent space around it. Items must never touch or overlap each other.
+
+Row 1, left to right: (1) three loose thick rustic skin-on french fries crossing each other; (2) one single thick golden battered onion ring; (3) a small plain white ceramic ramekin filled with pink burger sauce.
+Row 2, left to right: (4) a small plain white ceramic ramekin filled with green herb mayonnaise; (5) one fresh rosemary sprig; (6) one juicy lemon wedge.

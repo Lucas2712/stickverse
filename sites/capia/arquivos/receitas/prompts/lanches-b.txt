@@ -1,0 +1,7 @@
+STYLE (shared by the whole series): photorealistic studio food photography for a restaurant menu. Soft, even key light from the top left with a gentle fill, natural appetizing colors, crisp detail, real textures. Every item is completely isolated on a fully TRANSPARENT background (PNG with a real alpha channel): no backdrop, no table, no plate unless stated, no ground shadow, no props, no hands, no text, no logos, no labels, no watermark. Plain unbranded packaging only.
+
+Image size 1536x1024 (landscape). Two separate hamburgers side by side, one in the left half and one in the right half, each centered in its half with wide empty transparent space around it. They must not touch or overlap. Same camera for both: straight-on front view at eye level, tilted only slightly from above, the whole burger visible from the top of the bun to the bottom, tall neat stack, glossy toasted brioche bun.
+
+LEFT burger, the pine-nut one: one thick grilled beef patty, a generous layer of melted white farmhouse cheese, fresh arugula leaves, and on top of the cheese a crunchy golden crumble of chopped roasted Brazilian pinhao (large ivory-colored araucaria pine nuts, similar to chopped chestnuts), with a little roasted-garlic mayonnaise.
+
+RIGHT burger, the spicy one: one thick grilled beef patty, melted pale yellow cheese, many green jalapeno slices, raw red onion rings and a glossy red chili sauce dripping a little.

@@ -1,0 +1,8 @@
+STYLE (shared by the whole series): photorealistic studio food photography for a restaurant menu. Soft, even key light from the top left with a gentle fill, natural appetizing colors, crisp detail, real textures. Every item is completely isolated on a fully TRANSPARENT background (PNG with a real alpha channel): no backdrop, no table, no plate unless stated, no ground shadow, no props, no hands, no text, no logos, no labels, no watermark. Plain unbranded packaging only.
+
+Image size 1536x1024 (landscape). Four separate desserts arranged in a grid of 2 columns by 2 rows. Each one is centered in its own cell, seen from a three-quarter front angle slightly from above, with wide empty transparent space around it. Items must never touch or overlap each other. No plates.
+
+Top left: a thick square fudgy chocolate brownie with a round scoop of vanilla ice cream on top and a drizzle of chocolate sauce.
+Top right: two thick chocolate chip cookies stacked, the top one broken in half showing a molten chocolate center.
+Bottom left: one tall slice of Brazilian milk flan (pudim de leite) with glossy amber caramel running down the sides.
+Bottom right: a small plain glass jar of banoffee: layers of biscuit crumbs, dulce de leche, banana slices and whipped cream, dusted with cocoa.
