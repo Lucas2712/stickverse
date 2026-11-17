@@ -4,8 +4,8 @@
   --pagina: #0b0909;
   --texto: #f3eeec;
   --branco: #fff;              /* letra branca sobre vermelho (botões, play, alça) */
-  --texto-2: #b3abaa;          /* parágrafos */
-  --texto-3: #807877;          /* rótulos, legendas */
+  --texto-2: #cdc6c5;          /* parágrafos (clareado para leitura no celular; era #b3abaa) */
+  --texto-3: #aaa2a1;          /* rótulos, legendas (clareado para leitura no celular; era #807877) */
   --fio: rgba(255, 255, 255, 0.09);
   --fio-forte: rgba(255, 255, 255, 0.16);
 
@@ -14,7 +14,7 @@
   --vermelho-texto: #ff4a3d;   /* números, rótulos e palavras em vermelho sobre o preto */
   --vermelho-sombra: rgba(255, 46, 30, 0.45);
   --titulo-topo: #c9241b;      /* PORTFÓLIO: vermelho que escurece para baixo */
-  --titulo-pe: #4d0e0b;
+  --titulo-pe: #6e140f;        /* era #4d0e0b: o pé das letras ficava quase preto */
   --card-topo: #8e1a14;        /* card vermelho do Sobre */
   --card-pe: #4e0e0b;
 

@@ -62,7 +62,7 @@
 }
 .hero__titulo > span,
 .hero__titulo .letra {
-  background: linear-gradient(180deg, var(--titulo-topo) 8%, #8a1812 52%, var(--titulo-pe) 96%);
+  background: linear-gradient(180deg, var(--titulo-topo) 8%, #a01d15 52%, var(--titulo-pe) 96%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

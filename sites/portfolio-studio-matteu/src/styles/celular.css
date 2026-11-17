@@ -35,17 +35,9 @@
   .hero__numeros li:not(:has(a)),
   .hero__num-link { grid-template-columns: calc(132 * var(--u)) 1fr; }
 
-  /* ---------- projetos: lista vertical, um projeto por vez, em tela 4:5 (a imagem vertical vem do <picture>) ---------- */
-  .projetos__grade {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: calc(40 * var(--su));
-    margin: calc(28 * var(--su)) 0 0;
-    padding: 0;
-    overflow: visible;
-    scroll-snap-type: none;
-  }
-  .projeto { flex: none; }
+  /* ---------- projetos: o carrossel lateral com encaixe (regra de projetos.css), com as telas em pé, 4:5
+     (a imagem vertical vem do <picture>); o próximo card aparece na borda para convidar a arrastar ---------- */
+  .projeto { flex-basis: 82%; }
   .projeto__img { aspect-ratio: 4 / 5; }
   .projeto__img picture,
   .comp picture { display: contents; }
