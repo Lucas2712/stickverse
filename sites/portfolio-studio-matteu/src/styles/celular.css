@@ -39,7 +39,7 @@
      (a imagem vertical vem do <picture>); o próximo card aparece na borda para convidar a arrastar ---------- */
   /* cada card na proporção da sua tela (--arm no HTML: 1 no quadrado, 0,5625 nos verticais; 4:5 nas imagens), todos
      com a mesma altura: uma tira de filme, sem faixa preta em volta dos vídeos */
-  .projetos { --h-card: min(92vw, 420px); }
+  .projetos { --h-card: min(125vw, 540px); }
   .projeto { flex: 0 0 calc(var(--arm, 0.8) * var(--h-card)); }
   .projeto__img { aspect-ratio: var(--arm, 0.8); }
   /* rodapé do card mais compacto (os cards verticais são estreitos) e o fio de baixo alinhado em todos */

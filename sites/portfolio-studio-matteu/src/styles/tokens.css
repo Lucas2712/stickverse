@@ -4,8 +4,8 @@
   --pagina: #0b0909;
   --texto: #f3eeec;
   --branco: #fff;              /* letra branca sobre vermelho (botões, play, alça) */
-  --texto-2: #cdc6c5;          /* parágrafos (clareado para leitura no celular; era #b3abaa) */
-  --texto-3: #aaa2a1;          /* rótulos, legendas (clareado para leitura no celular; era #807877) */
+  --texto-2: #f1ecea;          /* parágrafos: branco (pedido do Studio Matteu; era #b3abaa) */
+  --texto-3: #e6e0df;          /* rótulos, legendas: branco suave (era #807877) */
   --fio: rgba(255, 255, 255, 0.09);
   --fio-forte: rgba(255, 255, 255, 0.16);
 

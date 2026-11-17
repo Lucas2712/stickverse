@@ -184,7 +184,7 @@
   place-items: center;
   width: 150px;
   height: 92px;
-  color: #8f8786;
+  color: var(--texto-3);
   transition: color var(--t-micro) var(--ease);
 }
 .ferramentas__trilho svg { width: 44px; height: 44px; fill: currentColor; }

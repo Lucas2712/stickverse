@@ -31,11 +31,11 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
 - Celular deitado: o hero segue a largura em vez de espremer na altura.
 
 ## Projetos
-- 01 a 03, Motion, estudos autorais em vídeo (2026), com a etiqueta "Estudo" (nenhum foi encomendado pelas marcas
-  que aparecem): **Smart Retries** (Stripe, 1:1), **MIO Creative** (9:16) e **Most Used Apps** (9:16, cortado em 12,28 s, antes da assinatura final). Cada card roda
-  `public/video/<nome>.mp4` em loop, sem som, só enquanto aparece na tela (`src/motion/videos.js`); o link abre
-  `<nome>-som.mp4`, com som. Originais em `fonte/`.
-- 04 Órbita (Comerciais) e 05 Sintético (IA): fictícios, imagens geradas em HTML.
-- Formato: `--ar` em cada card é a proporção da tela. No desktop as telas de uma linha ficam com a mesma altura
-  (1:1 + 9:16 + 9:16, depois 16:10 + 16:10); no celular o carrossel é uma tira com a mesma altura (`--arm`).
+- 01 **Kavora** (app de gestão de hotel), 02 **MIO Creative** e 03 **Most Used Apps** (cortado em 12,28 s, antes da
+  assinatura final): motion, vertical 9:16, 2026, etiqueta "Estudo". Cada card roda `public/video/<nome>.mp4` em loop,
+  sem som, só enquanto aparece na tela (`src/motion/videos.js`); o link abre `<nome>-som.mp4`, com som. Originais em
+  `fonte/`. As abas ficaram Todos · Motion.
+- Formato: `--ar`/`--arm` em cada card é a proporção da tela; no desktop as telas de uma linha ficam com a mesma
+  altura, no celular o carrossel é uma tira de cards da mesma altura.
+- Textos: os cinzas (`--texto-2`, `--texto-3`) viraram branco a pedido; nada de palavra escura no site.
 - O comparador "Do rascunho. Ao ar." ainda mostra o Pulso fictício (storyboard + quadros).
