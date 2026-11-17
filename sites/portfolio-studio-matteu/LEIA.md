@@ -38,4 +38,4 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
 - Formato: `--ar`/`--arm` em cada card é a proporção da tela; no desktop as telas de uma linha ficam com a mesma
   altura, no celular o carrossel é uma tira de cards da mesma altura.
 - Textos: os cinzas (`--texto-2`, `--texto-3`) viraram branco a pedido; nada de palavra escura no site.
-- O comparador "Do rascunho. Ao ar." ainda mostra o Pulso fictício (storyboard + quadros).
+- O comparador "Do rascunho. Ao ar." foi retirado; "Ver o caso Kavora", no pé do hero, abre o vídeo do Kavora com som.
