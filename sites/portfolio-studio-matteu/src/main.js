@@ -12,6 +12,7 @@ import './sections/sobre.css';
 import './sections/trajetoria.css';
 import './sections/contato.css';
 import './sections/barra.css';
+import './styles/celular.css';
 import './estilo.js';
 
 import { nav } from './motion/nav.js';

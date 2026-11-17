@@ -1,0 +1,87 @@
+/* Celular (até 760 px): o acabamento fino para telas de 360 a 430 px. Carregado por último em src/main.js, para
+   valer por cima das regras de celular de cada seção. Nada aqui muda o desktop. */
+
+@media (max-width: 760px) {
+  /* a escala do site acompanha a largura até 430 px (antes parava em 390 e o 430 ficava com sobra) */
+  :root {
+    --su: min(1.1px, 100vw / 390);
+    --margem: max(20px, env(safe-area-inset-left), env(safe-area-inset-right));
+    --s-margem: max(20px, env(safe-area-inset-left), env(safe-area-inset-right));
+  }
+
+  /* títulos sem palavra sozinha na última linha; textos sem viúva */
+  .titulo-cond,
+  .titulo-grot,
+  .hero__cargo,
+  .sobre__frase { text-wrap: balance; }
+  .hero__texto,
+  .sobre__bio,
+  .bastidor__p,
+  .contato__texto,
+  .sanfona__corpo p,
+  .passo p { text-wrap: pretty; }
+
+  /* ---------- nav ---------- */
+  .nav { padding-top: env(safe-area-inset-top); }
+  .nav__cta { min-height: 44px; padding: 0; }
+
+  /* ---------- hero: o nome e os números crescem com a tela, na mesma proporção da foto ---------- */
+  .hero { padding-top: calc(78px + env(safe-area-inset-top)); }
+  .hero__ola { font-size: calc(52 * var(--u)); }
+  .hero__nome { font-size: calc(92 * var(--u)); }
+  .hero__cargo { font-size: calc(22 * var(--u)); }
+  .hero__lema { font-size: calc(16 * var(--u)); }
+  .hero__numeros strong { font-size: calc(54 * var(--u)); }
+  .hero__numeros li:not(:has(a)),
+  .hero__num-link { grid-template-columns: calc(132 * var(--u)) 1fr; }
+
+  /* ---------- projetos: lista vertical, um projeto por vez, em tela 4:5 (a imagem vertical vem do <picture>) ---------- */
+  .projetos__grade {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(40 * var(--su));
+    margin: calc(28 * var(--su)) 0 0;
+    padding: 0;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+  .projeto { flex: none; }
+  .projeto__img { aspect-ratio: 4 / 5; }
+  .projeto__img picture,
+  .comp picture { display: contents; }
+  .projeto__etiqueta { top: 12px; left: 12px; }
+  .projeto__pe { column-gap: 16px; padding: 16px 0 18px; }
+  .projeto__num { font-size: calc(48 * var(--su)); }
+  .projeto__nome { font-size: calc(19 * var(--su)); }
+  .aba { min-width: 44px; text-align: center; }
+
+  /* ---------- bastidor: o comparador em pé, do mesmo tamanho dos projetos ---------- */
+  .comp { aspect-ratio: 4 / 5; }
+
+  /* ---------- contato e rodapé ---------- */
+  .rodape__marca { display: inline-flex; align-items: center; min-height: 44px; }
+  .rodape { padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
+
+  /* ---------- barra dos agentes: acima do indicador de início do iPhone, botões com 44 px de toque ---------- */
+  .barra { bottom: calc(12px + env(safe-area-inset-bottom)); }
+  .barra__btn { position: relative; min-width: 44px; }
+  .barra__btn::after { content: ''; position: absolute; inset: -7px 0; }
+}
+
+/* telas estreitas (360 a 374 px): o rodapé dos cards e os canais respiram menos */
+@media (max-width: 374px) {
+  .projeto__pe { column-gap: 12px; }
+  .canal__txt strong { font-size: 16px; }
+}
+
+/* celular deitado (tela larga e baixa, ~640 a 932 × 320 a 500): usa o layout de desktop, mas o hero de "uma tela"
+   espremia tudo na altura. Aqui ele segue só a largura (a cena inteira, na proporção do desktop) e rola. */
+@media (min-width: 761px) and (max-height: 500px) and (orientation: landscape) {
+  :root { --u: calc(100vw / 1440); }
+  .hero { min-height: 0; }
+}
+/* toque sem mouse (tablet, celular deitado): os links da nav ganham 44 px de toque sem mudar o desenho */
+@media (min-width: 761px) and (hover: none) and (pointer: coarse) {
+  .nav__links a { padding-block: 14px; }
+  .nav__cta { min-height: 44px; }
+}

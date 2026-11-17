@@ -19,3 +19,11 @@ na frente de quem visita. Vite sem framework, GSAP, Anton, Caveat e Manrope (Fon
 ## Pendente
 - Contato: e-mail, WhatsApp, agenda, Instagram e Behance estão com marcadores (`contato@exemplo.com`, `[preencher]`).
 - Números, projetos, formação e trajetória são fictícios: revisar antes de publicar como site real.
+
+## Celular (otimização de 17/11/2026)
+Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último; o desktop não muda.
+- A escala acompanha a largura de 360 a 430 px; títulos com `text-wrap: balance` (sem palavra sozinha).
+- Projetos em lista vertical, com imagens 4:5 próprias do celular (`public/img/*-v.webp`, via `<picture>`);
+  o comparador também fica em 4:5. Isto substitui o trilho lateral da demo.
+- Áreas de toque de 44 px (nav, abas, rodapé, botões da barra) e margens seguras do iPhone (notch e indicador).
+- Celular deitado: o hero segue a largura em vez de espremer na altura.
