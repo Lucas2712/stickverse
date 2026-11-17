@@ -32,7 +32,7 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
 
 ## Projetos
 - 01 **Kavora** (app de gestão de hotel), 02 **MIO Creative** e 03 **Most Used Apps** (cortado em 12,28 s, antes da
-  assinatura final): motion, vertical 9:16, 2026, etiqueta "Estudo". Cada card roda `public/video/<nome>.mp4` em loop,
+  assinatura final): motion, vertical 9:16, 2026. Kavora foi trabalho para cliente (etiqueta "Cliente"); os outros dois, "Estudo". Cada card roda `public/video/<nome>.mp4` em loop,
   sem som, só enquanto aparece na tela (`src/motion/videos.js`); o link abre `<nome>-som.mp4`, com som. Originais em
   `fonte/`. As abas ficaram Todos · Motion.
 - Formato: `--ar`/`--arm` em cada card é a proporção da tela; no desktop as telas de uma linha ficam com a mesma
