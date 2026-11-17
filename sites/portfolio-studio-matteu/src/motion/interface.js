@@ -131,13 +131,14 @@ function sanfona(lista) {
   marcaToque(lista);
 }
 
-// formulário: monta o e-mail com o que a pessoa escreveu
+// formulário: monta a mensagem do WhatsApp com o que a pessoa escreveu
 function formulario(form) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const d = new FormData(form);
-    const corpo = `Nome: ${d.get('nome')}\nE-mail: ${d.get('email')}\n\nQue vídeo você precisa:\n${d.get('tarefa')}`;
-    location.href = `mailto:contato@exemplo.com?subject=${encodeURIComponent('Projeto de vídeo')}&body=${encodeURIComponent(corpo)}`;
+    const marca = d.get('marca') ? ` (${d.get('marca')})` : '';
+    const corpo = `Olá, Studio Matteu! Sou ${d.get('nome')}${marca}.\n\nQue vídeo eu preciso:\n${d.get('tarefa')}`;
+    location.href = `https://wa.me/5511952014743?text=${encodeURIComponent(corpo)}`;
   });
 }
 

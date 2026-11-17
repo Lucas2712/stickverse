@@ -17,7 +17,8 @@ na frente de quem visita. Vite sem framework, GSAP, Anton, Caveat e Manrope (Fon
   ícones genéricos (camadas, filme, pena, imagem, faísca, quadros).
 
 ## Pendente
-- Contato: e-mail, WhatsApp, agenda, Instagram e Behance estão com marcadores (`contato@exemplo.com`, `[preencher]`).
+- Contato: WhatsApp (11) 95201-4743 e Instagram @studiomatteu. Sem e-mail, agenda e Behance por enquanto:
+  o botão "Começar uma conversa" e o formulário abrem o WhatsApp.
 - Números, projetos, formação e trajetória são fictícios: revisar antes de publicar como site real.
 
 ## Celular (otimização de 17/11/2026)
