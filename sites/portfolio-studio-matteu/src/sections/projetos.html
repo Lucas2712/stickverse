@@ -1,0 +1,120 @@
+<!-- 01 Projetos: cabeçalho, filtro em abas com busca, três cards (print, número vermelho, nome, categoria/ano) e a
+     faixa das ferramentas. Os cards montam em paralelo; depois um agente testa o filtro. -->
+<section class="secao projetos" id="projetos" data-montagem="projetos" data-reforco="4">
+  <div class="secao__dentro">
+    <div class="secao__topo">
+      <div>
+        <span class="secao__rotulo" data-camada="texto">01 / Projetos selecionados</span>
+        <h2 class="titulo-grot" data-camada="texto" data-ajusta="64,0">Trabalho que prende o olhar<span class="pq">.</span></h2>
+      </div>
+      <a class="link-seta sel" href="#trajetoria" data-camada="texto"><span>Todos os projetos</span> <svg class="ico" aria-hidden="true"><use href="#u-dir"/></svg></a>
+    </div>
+
+    <div class="projetos__barra">
+      <div class="abas filtro" role="group" aria-label="Filtrar projetos" data-teste="1,0">
+        <button class="aba" type="button" data-filtro="todos" aria-pressed="true" data-camada="texto">Todos</button>
+        <button class="aba" type="button" data-filtro="motion" aria-pressed="false" data-camada="texto">Motion</button>
+        <button class="aba" type="button" data-filtro="comerciais" aria-pressed="false" data-camada="texto">Comerciais</button>
+        <button class="aba" type="button" data-filtro="ia" aria-pressed="false" data-camada="texto">IA</button>
+      </div>
+      <label class="busca">
+        <svg class="ico" aria-hidden="true"><use href="#u-busca"/></svg>
+        <span class="busca__rotulo" data-camada="texto">Buscar</span>
+        <input class="busca__campo" type="search" placeholder="Nome ou categoria" autocomplete="off" data-camada="bloco" />
+      </label>
+    </div>
+
+    <ul class="projetos__grade" data-duplica>
+      <li class="projeto" data-tipo="motion" data-busca="pulso motion tipografia lançamento app treino">
+        <a class="projeto__link" href="#bastidor">
+          <span class="projeto__img" data-camada="foto"><img src="/img/proj-pulso.webp" width="1600" height="1000" alt="Três quadros verticais do vídeo de lançamento do app Pulso, em roxo e verde-limão, com tipografia em movimento" loading="lazy" decoding="async" /></span>
+          <span class="projeto__etiqueta" data-camada="texto">Motion</span>
+          <span class="projeto__pe" data-camada="bloco">
+            <strong class="projeto__num" data-camada="texto">01</strong>
+            <span class="projeto__nome" data-camada="texto">Pulso</span>
+            <span class="projeto__meta" data-camada="texto">Motion / 2026</span>
+            <svg class="ico projeto__seta" aria-hidden="true"><use href="#u-ne"/></svg>
+          </span>
+        </a>
+      </li>
+      <li class="projeto" data-tipo="comerciais" data-busca="órbita orbita comercial comerciais fintech vertical">
+        <a class="projeto__link" href="#trajetoria">
+          <span class="projeto__img" data-camada="foto"><img src="/img/proj-orbita.webp" width="1600" height="1000" alt="Três quadros verticais do comercial da fintech Órbita, em azul-petróleo, com órbitas, um cartão e a assinatura" loading="lazy" decoding="async" /></span>
+          <span class="projeto__etiqueta" data-camada="texto">Comercial</span>
+          <span class="projeto__pe" data-camada="bloco">
+            <strong class="projeto__num" data-camada="texto">02</strong>
+            <span class="projeto__nome" data-camada="texto">Órbita</span>
+            <span class="projeto__meta" data-camada="texto">Comerciais / 2025</span>
+            <svg class="ico projeto__seta" aria-hidden="true"><use href="#u-ne"/></svg>
+          </span>
+        </a>
+      </li>
+      <li class="projeto" data-tipo="ia" data-busca="sintético sintetico ia inteligência artificial série cenas geradas">
+        <a class="projeto__link" href="#trajetoria">
+          <span class="projeto__img" data-camada="foto"><img src="/img/proj-sintetico.webp" width="1600" height="1000" alt="Três quadros verticais da série Sintético, com cenas geradas por IA em rosa e laranja sobre preto" loading="lazy" decoding="async" /></span>
+          <span class="projeto__etiqueta" data-camada="texto">IA + motion</span>
+          <span class="projeto__pe" data-camada="bloco">
+            <strong class="projeto__num" data-camada="texto">03</strong>
+            <span class="projeto__nome" data-camada="texto">Sintético</span>
+            <span class="projeto__meta" data-camada="texto">IA / 2026</span>
+            <svg class="ico projeto__seta" aria-hidden="true"><use href="#u-ne"/></svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <p class="projetos__vazio" hidden>Nenhum projeto com esse nome. <button type="button" class="projetos__limpa">Limpar a busca</button></p>
+  </div>
+
+  <!-- ferramentas: faixa que corre sozinha (pausa, setas) e "ver todas" abre a grade com os nomes -->
+  <div class="secao__dentro ferramentas" data-montagem="ferramentas">
+    <div class="ferramentas__topo">
+      <p class="ferramentas__titulo"><span data-camada="texto">Feito com</span><strong data-camada="texto">As ferramentas de sempre.</strong></p>
+      <div class="ferramentas__ctl">
+        <button class="ferramentas__todas" type="button" aria-expanded="false" data-camada="texto"><span class="ferramentas__todas-t">Ver todas (12)</span> <svg class="ico" aria-hidden="true"><use href="#u-mais"/></svg></button>
+        <button class="ferramentas__btn ferramentas__pausa" type="button" aria-label="Pausar a faixa" aria-pressed="false" data-camada="bloco"><svg class="ico" aria-hidden="true"><use href="#u-pausa"/></svg></button>
+        <button class="ferramentas__btn" type="button" aria-label="Voltar" data-passo="-1" data-camada="bloco"><svg class="ico" aria-hidden="true"><use href="#u-esq-v"/></svg></button>
+        <button class="ferramentas__btn" type="button" aria-label="Avançar" data-passo="1" data-camada="bloco"><svg class="ico" aria-hidden="true"><use href="#u-dir-v"/></svg></button>
+      </div>
+    </div>
+    <div class="ferramentas__janela">
+      <ul class="ferramentas__trilho">
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-camadas"/></svg><span>After Effects</span></li>
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-filme"/></svg><span>Premiere Pro</span></li>
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-cinema4d"/></svg><span>Cinema 4D</span></li>
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-blender"/></svg><span>Blender</span></li>
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-figma"/></svg><span>Figma</span></li>
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-davinciresolve"/></svg><span>DaVinci Resolve</span></li>
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-pena"/></svg><span>Illustrator</span></li>
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-imagem"/></svg><span>Photoshop</span></li>
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-elevenlabs"/></svg><span>ElevenLabs</span></li>
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-faisca"/></svg><span>Midjourney</span></li>
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-quadros"/></svg><span>Runway</span></li>
+        <li data-camada="bloco"><svg aria-hidden="true"><use href="#i-claude"/></svg><span>Claude</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Bastidor: do rascunho ao ar. Comparador arrastável entre o wireframe e a tela final; depois de montado, um agente
+     pega a alça e arrasta de um lado para o outro. -->
+<section class="secao bastidor" id="bastidor" data-montagem="bastidor">
+  <div class="secao__dentro bastidor__grade">
+    <div class="bastidor__texto">
+      <span class="secao__rotulo" data-camada="texto">Por trás do vídeo</span>
+      <h2 class="titulo-cond bastidor__titulo"><span data-camada="texto">Do rascunho<span class="pq">.</span></span> <span class="vermelho" data-camada="texto">Ao ar.</span></h2>
+      <p class="bastidor__p" data-camada="texto">Cada vídeo começa num storyboard. Arraste para ver as caixas cinza e as anotações virarem os quadros que foram ao ar.</p>
+      <p class="bastidor__meta"><span data-camada="texto">Pulso · lançamento de app / 2026</span><span data-camada="texto">Roteiro · storyboard · motion</span></p>
+    </div>
+    <div class="bastidor__peca">
+      <div class="comp" data-camada="foto" data-teste="arraste" data-ajusta="-70,44" style="--p: 50%">
+        <img class="comp__depois" src="/img/proj-pulso.webp" width="1600" height="1000" alt="Os quadros finais do vídeo do Pulso" loading="lazy" decoding="async" />
+        <div class="comp__antes"><img src="/img/wire-pulso.webp" width="1600" height="1000" alt="O storyboard dos mesmos quadros, em caixas cinza com anotações à mão" loading="lazy" decoding="async" /></div>
+        <span class="comp__etq comp__etq--antes">Rascunho</span>
+        <span class="comp__etq comp__etq--depois">No ar</span>
+        <span class="comp__alca" aria-hidden="true"><svg class="ico"><use href="#u-esq-v"/></svg><svg class="ico"><use href="#u-dir-v"/></svg></span>
+        <input class="comp__range" type="range" min="0" max="100" step="1" value="50" aria-label="Comparar o rascunho com a versão no ar" />
+      </div>
+      <p class="comp__legenda"><span data-camada="texto">Arraste para ver o processo</span><span data-camada="texto">Arraste / setas</span></p>
+    </div>
+  </div>
+</section>
