@@ -32,7 +32,7 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
 
 ## Projetos
 - 01 a 03, Motion, estudos autorais em vídeo (2026), com a etiqueta "Estudo" (nenhum foi encomendado pelas marcas
-  que aparecem): **Smart Retries** (Stripe, 1:1), **MIO Creative** (9:16) e **Most Used Apps** (9:16). Cada card roda
+  que aparecem): **Smart Retries** (Stripe, 1:1), **MIO Creative** (9:16) e **Most Used Apps** (9:16, cortado em 12,28 s, antes da assinatura final). Cada card roda
   `public/video/<nome>.mp4` em loop, sem som, só enquanto aparece na tela (`src/motion/videos.js`); o link abre
   `<nome>-som.mp4`, com som. Originais em `fonte/`.
 - 04 Órbita (Comerciais) e 05 Sintético (IA): fictícios, imagens geradas em HTML.
