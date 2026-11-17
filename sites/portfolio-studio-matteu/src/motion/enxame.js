@@ -233,10 +233,13 @@ export function enxame(barra) {
     return outras.filter((x) => x.estado === 'pronta').length >= outras.length * 0.5;
   }
 
-  // um teste só sai quando o componente está inteiro na tela (senão ninguém vê o agente testando)
+  // um teste só sai quando o componente está bem visível (pelo menos 3/4 dele entre a nav e a barra; no iPhone, com
+  // as barras do Safari, o comparador quase nunca cabe inteiro), senão ninguém vê o agente testando
   const inteiro = (el) => {
     const r = el.getBoundingClientRect();
-    return r.top > 56 && r.bottom < innerHeight - 70;
+    const vao = innerHeight - 56 - 70;
+    const visivel = Math.min(r.bottom, innerHeight - 70) - Math.max(r.top, 56);
+    return visivel >= Math.min(r.height, vao) * 0.75;
   };
   const testeLivre = () => testes.find((t) => inteiro(t.el));
   const temTrabalho = () => disponiveis().length > 0 || !!testeLivre();
@@ -1018,7 +1021,9 @@ export function enxame(barra) {
         const max = document.documentElement.scrollHeight - innerHeight;
         if (y >= max - 1) return acaba();
         conferido -= s;
-        if (conferido <= 0) { falta = faltaAVista(); conferido = 0.12; }
+        // também desacelera enquanto um agente testa um componente à vista (o arraste do comparador, o filtro, a
+        // sanfona), ou enquanto a primeira demonstração dele ainda está para acontecer
+        if (conferido <= 0) { falta = faltaAVista() || testando > 0 || testes.some((x) => !x.repete && inteiro(x.el)); conferido = 0.12; }
         const alvo = introViva ? 0 : innerHeight * (falta ? RITMO_MONTA : RITMO) * base;
         v += (alvo - v) * Math.min(1, s * 3);
         y = Math.min(max, y + v * s);

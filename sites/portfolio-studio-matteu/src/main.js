@@ -20,8 +20,10 @@ import { barra } from './motion/barra.js';
 import { enxame } from './motion/enxame.js';
 import { interface_ } from './motion/interface.js';
 import { videos } from './motion/videos.js';
+import { carrossel } from './motion/carrossel.js';
 
 nav();
 interface_();
 videos();
+carrossel();
 enxame(barra());

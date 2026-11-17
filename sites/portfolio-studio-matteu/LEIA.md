@@ -48,3 +48,7 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
 - Tour contínuo (`tour` em `enxame.js`): segue rápido (`RITMO`, 0,75 tela/s vezes a velocidade da barra) quando
   tudo à vista já está pronto, desacelera sem parar (`RITMO_MONTA`) enquanto há camada por montar à vista e, durante o Tour, os agentes trabalham 1,4×
   mais rápido (`AGENTES_NO_TOUR`). Qualquer toque, roda do mouse ou tecla interrompe.
+- Os testes dos agentes (arraste do comparador, filtro, sanfona) saem quando o componente está pelo menos 3/4 visível,
+  e o Tour desacelera até a primeira demonstração acontecer.
+- Celular: o carrossel dos projetos anda sozinho para o lado (26 px/s, `src/motion/carrossel.js`), para ao toque,
+  volta a andar 5 s depois e, no fim, desliza de volta ao primeiro card.
