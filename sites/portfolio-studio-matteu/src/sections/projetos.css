@@ -52,6 +52,15 @@
   object-fit: cover;
   transition: scale 0.6s var(--ease);
 }
+/* card com vídeo em loop (src/motion/videos.js toca só quando está na tela): o quadro inteiro, sem cortar o texto */
+.projeto__img--video { background: #0d0b12; }
+.projeto__img video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: scale 0.6s var(--ease);
+}
 .projeto__etiqueta {
   position: absolute;
   top: 14px;
@@ -99,7 +108,7 @@
   transition: translate 0.25s var(--ease), color var(--t-micro) var(--ease);
 }
 @media (hover: hover) and (pointer: fine) {
-  html:not(.rolando) .projeto__link:hover .projeto__img img { scale: 1.035; }
+  html:not(.rolando) .projeto__link:hover .projeto__img :is(img, video) { scale: 1.035; }
   html:not(.rolando) .projeto__link:hover .projeto__seta { translate: 3px -3px; color: var(--vermelho-texto); }
 }
 .projeto__link:focus-visible { outline: 2px solid var(--sel); outline-offset: 4px; }

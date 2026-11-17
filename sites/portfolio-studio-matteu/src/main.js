@@ -19,7 +19,9 @@ import { nav } from './motion/nav.js';
 import { barra } from './motion/barra.js';
 import { enxame } from './motion/enxame.js';
 import { interface_ } from './motion/interface.js';
+import { videos } from './motion/videos.js';
 
 nav();
 interface_();
+videos();
 enxame(barra());

@@ -29,3 +29,10 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
 - Cinzas clareados para leitura (`--texto-2` #cdc6c5, `--texto-3` #aaa2a1) e o pé do PORTFÓLIO menos escuro.
 - Áreas de toque de 44 px (nav, abas, rodapé, botões da barra) e margens seguras do iPhone (notch e indicador).
 - Celular deitado: o hero segue a largura em vez de espremer na altura.
+
+## Projetos reais
+- 01 **Smart Retries** (estudo autoral de motion sobre o Smart Retries da Stripe, 2026; não é trabalho encomendado pela
+  Stripe, por isso a etiqueta "Estudo"). O card roda `public/video/smart-retries.mp4` em loop, sem som; no celular,
+  `smart-retries-m.mp4` (só o trecho escuro). O link abre `smart-retries-som.mp4`, com som. Original em `fonte/`.
+  `src/motion/videos.js` toca os vídeos só quando aparecem na tela.
+- O comparador "Do rascunho. Ao ar." ainda mostra o Pulso fictício (storyboard + quadros).
