@@ -97,7 +97,8 @@ export function enxame(barra) {
   let sinal;
   let novidade = new Promise((r) => (sinal = r));
   const avisa = () => { const s = sinal; novidade = new Promise((r) => (sinal = r)); s(); };
-  const aplicaVel = () => gsap.globalTimeline.timeScale(base * turbo);
+  let ritmoTour = 1; // durante o Tour os agentes trabalham um pouco mais rápido, para a rolagem não esperar
+  const aplicaVel = () => gsap.globalTimeline.timeScale(base * turbo * ritmoTour);
 
   // ---------- montagens ----------
   function montaGrupos() {
@@ -238,8 +239,6 @@ export function enxame(barra) {
     return r.top > 56 && r.bottom < innerHeight - 70;
   };
   const testeLivre = () => testes.find((t) => inteiro(t.el));
-  // o Tour espera os testes da montagem, não as repetições do comparador (senão pararia ali para sempre)
-  const testePendente = () => testes.find((t) => !t.repete && inteiro(t.el));
   const temTrabalho = () => disponiveis().length > 0 || !!testeLivre();
 
   // o que já passou para cima da tela (a pessoa rolou para baixo com a montagem em andamento) fecha na hora: nenhum
@@ -987,54 +986,42 @@ export function enxame(barra) {
     rolagemTour?.kill();
     barra.tour(false);
   }
-  // paradas do tour: cada bloco de conteúdo fica centrado no vão entre a nav e a barra; bloco mais alto que esse vão
-  // para com o topo logo abaixo da nav e depois desce em passos de uma tela
-  function paradas() {
-    const sel = celular.matches ? '.hero [data-parte], .secao__dentro' : '.secao__dentro';
-    const topo = 68, pe = 70; // nav e barra
-    const vao = innerHeight - topo - pe;
-    const ys = [];
-    for (const el of document.querySelectorAll(sel)) {
-      const r = rectDoc(el);
-      if (!r.h) continue;
-      if (r.h <= vao) ys.push(r.y + r.h / 2 - (topo + vao / 2));
-      else for (let y = r.y - topo - 8; y < r.y + r.h - innerHeight + pe; y += vao * 0.85) ys.push(y);
-    }
-    return ys.sort((a, b) => a - b);
-  }
-  function proximaParada() {
-    const ys = paradas().filter((y) => y > scrollY + 40);
-    // paradas muito juntas (dois blocos curtos na mesma tela) viram uma só
-    return ys.length ? ys.find((y) => y - scrollY > innerHeight * 0.3) ?? ys.at(-1) : Infinity;
-  }
-
+  // tour contínuo: a página desce sozinha num ritmo de leitura (cerca de um terço de tela por segundo, vezes a
+  // velocidade da barra) e só desacelera, sem parar, enquanto a parte que está na tela ainda está sendo montada.
+  // Durante a abertura ele espera (a câmera está no símbolo). A velocidade muda suave, sem tranco.
+  const RITMO = 0.36;      // telas por segundo, rolando livre
+  const RITMO_MONTA = 0.1;  // telas por segundo, enquanto a parte na tela se monta
+  const AGENTES_NO_TOUR = 1.4; // os agentes montam 1,4× mais rápido durante o Tour
+  const emVista = (el) => { const r = el.getBoundingClientRect(); return r.top < innerHeight * 0.85 && r.bottom > 80; };
   async function tour() {
     if (emTour) return paraTour();
     emTour = true;
     barra.tour(true);
+    ritmoTour = AGENTES_NO_TOUR;
+    aplicaVel();
     const gen = geracao;
-    while (emTour && gen === geracao) {
-      while (emTour && gen === geracao && (introViva || testePendente() || testando || grupos.some((g) => g.estado === 'montando'))) {
-        await Promise.race([novidade, espera(0.3)]);
-      }
-      if (!emTour || gen !== geracao) break;
-      await espera(0.6);
-      const max = document.documentElement.scrollHeight - innerHeight;
-      if (!emTour || scrollY >= max - 2) break;
-      const alvo = Math.min(max, proximaParada());
-      const p = { y: scrollY };
-      await new Promise((res) => {
-        rolagemTour = gsap.to(p, {
-          y: alvo,
-          duration: Math.max(0.7, ((alvo - scrollY) / innerHeight) * 1.2),
-          ease: 'power2.inOut',
-          onUpdate: () => scrollTo(0, p.y),
-          onComplete: res,
-          onInterrupt: res,
-        });
-      });
-    }
+    let v = 0;
+    let y = scrollY;
+    await new Promise((res) => {
+      let fim = false;
+      const acaba = () => { if (fim) return; fim = true; gsap.ticker.remove(tick); res(); };
+      const tick = (_, dt) => {
+        if (!emTour || gen !== geracao) return acaba();
+        const s = Math.min(dt, 64) / 1000;
+        const max = document.documentElement.scrollHeight - innerHeight;
+        if (y >= max - 1) return acaba();
+        const montando = grupos.some((g) => g.estado === 'montando' && emVista(g.el));
+        const alvo = introViva ? 0 : innerHeight * (montando ? RITMO_MONTA : RITMO) * base;
+        v += (alvo - v) * Math.min(1, s * 2.2);
+        y = Math.min(max, y + v * s);
+        scrollTo(0, y);
+      };
+      rolagemTour = { kill: acaba };
+      gsap.ticker.add(tick);
+    });
     emTour = false;
+    ritmoTour = 1;
+    aplicaVel();
     barra.tour(false);
   }
   for (const ev of ['wheel', 'touchstart']) addEventListener(ev, paraTour, { passive: true });
