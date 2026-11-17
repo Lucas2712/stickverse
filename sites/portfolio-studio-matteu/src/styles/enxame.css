@@ -54,6 +54,24 @@ html.monta [data-camada='titulo'].c-viva .letra { opacity: 0; }
 .ag.is-mira .ag__mira,
 .ag.is-texto .ag__ibeam { display: block; }
 
+/* o agente que arrasta a alça do comparador: cursor maior, por cima de tudo, com a etiqueta do que está fazendo */
+.ag.is-arrasta { z-index: 3; }
+.ag.is-arrasta .ag__seta { transform: scale(1.5); transform-origin: 3.6px 2.4px; }
+.ag__tag {
+  position: absolute;
+  left: 20px;
+  top: 24px;
+  display: none;
+  padding: 5px 8px 4px;
+  border-radius: 6px;
+  background: var(--c);
+  box-shadow: 0 0 0 1.5px #fff, 0 4px 12px rgba(0, 0, 0, 0.45);
+  font: 700 12px / 1 var(--sans);
+  color: #111;
+  white-space: nowrap;
+}
+.ag.is-arrasta .ag__tag { display: block; }
+
 /* clique de um agente ao aplicar uma camada */
 .clique {
   position: absolute;

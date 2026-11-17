@@ -415,13 +415,16 @@ export function enxame(barra) {
     const { el } = t;
     testando++;
     const pode = () => gen === geracao && !('tocado' in el.dataset) && naTela(el);
-    const ponto = (p) => { const r = rectDoc(el); return [r.x + (r.w * p) / 100, r.y + r.h / 2 + 6]; };
+    const ponto = (p) => { const r = rectDoc(el); return [r.x + (r.w * p) / 100 + 2, r.y + r.h / 2 + 2]; };
     try {
       if (!(await espera(0.3))) return;
       let [x, y] = ponto(el.__p ?? 50);
       if (!(await vai(a, x, y)) || !pode()) return;
       clique(a, palco);
       el.classList.add('arrastando');
+      // o cursor que arrasta fica evidente: maior, por cima da alça e com a etiqueta "Arraste" na cor dele
+      if (!a.el.querySelector('.ag__tag')) a.el.insertAdjacentHTML('beforeend', '<span class="ag__tag">Arraste</span>');
+      a.el.classList.add('is-arrasta');
       for (const alvo of [16, 84, 50]) {
         const o = { p: el.__p ?? 50 };
         const ok = await anima(o, {
@@ -439,6 +442,7 @@ export function enxame(barra) {
       }
     } finally {
       el.classList.remove('arrastando');
+      a.el.classList.remove('is-arrasta');
       testando--;
       avisa();
       if (gen === geracao && !('tocado' in el.dataset)) {
@@ -447,7 +451,7 @@ export function enxame(barra) {
           t.repete = true;
           testes.push(t);
           avisa();
-        }, 4500);
+        }, 3000);
       }
     }
   }
@@ -993,9 +997,9 @@ export function enxame(barra) {
   // visível (entre a nav e a linha de 62%, onde as montagens começam), ele desacelera sem parar; se tudo o que está
   // à vista já está pronto, ele segue rápido até o próximo trecho. Durante a abertura espera (a câmera está no
   // símbolo). A velocidade muda suave, sem tranco, e acompanha o 1×/2×/4× da barra.
-  const RITMO = 0.75;       // telas por segundo, quando tudo à vista já está pronto
-  const RITMO_MONTA = 0.12; // telas por segundo, enquanto há camada por montar à vista
-  const AGENTES_NO_TOUR = 1.4; // os agentes montam 1,4× mais rápido durante o Tour
+  const RITMO = 0.825;      // telas por segundo, quando tudo à vista já está pronto
+  const RITMO_MONTA = 0.132; // telas por segundo, enquanto há camada por montar à vista
+  const AGENTES_NO_TOUR = 1.54; // os agentes montam 1,54× mais rápido durante o Tour
   const faltaAVista = () => camadas.some((c) => {
     if (c.estado === 'pronta' || c.grupo?.estado !== 'montando') return false;
     const r = c.el.getBoundingClientRect();
