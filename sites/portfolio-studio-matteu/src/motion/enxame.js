@@ -986,13 +986,18 @@ export function enxame(barra) {
     rolagemTour?.kill();
     barra.tour(false);
   }
-  // tour contínuo: a página desce sozinha num ritmo de leitura (cerca de um terço de tela por segundo, vezes a
-  // velocidade da barra) e só desacelera, sem parar, enquanto a parte que está na tela ainda está sendo montada.
-  // Durante a abertura ele espera (a câmera está no símbolo). A velocidade muda suave, sem tranco.
-  const RITMO = 0.36;      // telas por segundo, rolando livre
-  const RITMO_MONTA = 0.1;  // telas por segundo, enquanto a parte na tela se monta
+  // tour contínuo: a página desce sozinha e acompanha os agentes. Se tem alguma camada ainda por montar na parte
+  // visível (entre a nav e a linha de 62%, onde as montagens começam), ele desacelera sem parar; se tudo o que está
+  // à vista já está pronto, ele segue rápido até o próximo trecho. Durante a abertura espera (a câmera está no
+  // símbolo). A velocidade muda suave, sem tranco, e acompanha o 1×/2×/4× da barra.
+  const RITMO = 0.75;       // telas por segundo, quando tudo à vista já está pronto
+  const RITMO_MONTA = 0.12; // telas por segundo, enquanto há camada por montar à vista
   const AGENTES_NO_TOUR = 1.4; // os agentes montam 1,4× mais rápido durante o Tour
-  const emVista = (el) => { const r = el.getBoundingClientRect(); return r.top < innerHeight * 0.85 && r.bottom > 80; };
+  const faltaAVista = () => camadas.some((c) => {
+    if (c.estado === 'pronta' || c.grupo?.estado !== 'montando') return false;
+    const r = c.el.getBoundingClientRect();
+    return r.height > 0 && r.top < innerHeight * 0.62 && r.bottom > 70;
+  });
   async function tour() {
     if (emTour) return paraTour();
     emTour = true;
@@ -1002,6 +1007,8 @@ export function enxame(barra) {
     const gen = geracao;
     let v = 0;
     let y = scrollY;
+    let falta = false;
+    let conferido = 0;
     await new Promise((res) => {
       let fim = false;
       const acaba = () => { if (fim) return; fim = true; gsap.ticker.remove(tick); res(); };
@@ -1010,9 +1017,10 @@ export function enxame(barra) {
         const s = Math.min(dt, 64) / 1000;
         const max = document.documentElement.scrollHeight - innerHeight;
         if (y >= max - 1) return acaba();
-        const montando = grupos.some((g) => g.estado === 'montando' && emVista(g.el));
-        const alvo = introViva ? 0 : innerHeight * (montando ? RITMO_MONTA : RITMO) * base;
-        v += (alvo - v) * Math.min(1, s * 2.2);
+        conferido -= s;
+        if (conferido <= 0) { falta = faltaAVista(); conferido = 0.12; }
+        const alvo = introViva ? 0 : innerHeight * (falta ? RITMO_MONTA : RITMO) * base;
+        v += (alvo - v) * Math.min(1, s * 3);
         y = Math.min(max, y + v * s);
         scrollTo(0, y);
       };

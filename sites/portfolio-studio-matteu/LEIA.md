@@ -45,6 +45,6 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
   até a pessoa arrastar a alça ela mesma (`arrasta` em `enxame.js`; `comparador` em `interface.js`).
 - Cor do texto: `base.css` define a cor e o tema escuro no `:root` e no `body`, porque a hospedagem do Artifact envolve
   a página num esqueleto com `body { color: #000; background: #fff }`.
-- Tour contínuo (`tour` em `enxame.js`): desce num ritmo de leitura (`RITMO`, 0,36 tela/s vezes a velocidade da barra),
-  desacelera sem parar enquanto a parte na tela se monta (`RITMO_MONTA`) e, durante o Tour, os agentes trabalham 1,4×
+- Tour contínuo (`tour` em `enxame.js`): segue rápido (`RITMO`, 0,75 tela/s vezes a velocidade da barra) quando
+  tudo à vista já está pronto, desacelera sem parar (`RITMO_MONTA`) enquanto há camada por montar à vista e, durante o Tour, os agentes trabalham 1,4×
   mais rápido (`AGENTES_NO_TOUR`). Qualquer toque, roda do mouse ou tecla interrompe.
