@@ -61,3 +61,7 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
 A bateria completa (180 testes: layout em 7 telas, componentes, montagem, Tour, carrossel, movimento reduzido, a página
 dentro do esqueleto do Artifact, teclado e peso) roda com Playwright contra `npm run build` + `npx vite preview --port 5301`.
 
+## Vídeo de divulgação (Reels)
+`ferramentas/grava-reels.js` + `ferramentas/moldura-reels.html` gravam o site rodando em 9:16 (abertura, hero, Tour e
+fila final) e geram a lista de quadros para o ffmpeg montar o MP4 1080×1920 a 30 fps. O vídeo fica em `saida/` (fora do git).
+
