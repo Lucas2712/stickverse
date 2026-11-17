@@ -1,0 +1,12 @@
+/* —— Tour automático (src/motion/tour.js): o pãozinho fixo no canto que liga e desliga a rolagem sozinha —— */
+.tour__botao {
+  --foco: var(--cheddar);
+  position: fixed; z-index: 300; right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom));
+  min-height: 44px; padding: 12px 22px 10px; gap: 10px; font-size: 15px;
+  background: var(--carvao); color: var(--cheddar);
+  box-shadow: 0 0 0 2px var(--cheddar);
+}
+.tour__botao.rodando { background: var(--cheddar); color: var(--carvao); box-shadow: 0 0 0 2px var(--carvao); }
+.tour__botao:focus-visible { outline: 3px solid var(--foco); outline-offset: 4px; }
+.tour__botao.rodando:focus-visible { --foco: var(--carvao); }
+@media (max-width: 767.98px) { .tour__botao { font-size: 14px; padding: 11px 18px 9px; } }

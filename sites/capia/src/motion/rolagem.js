@@ -41,5 +41,11 @@ export function rolaPara(y) {
   if (lenis) lenis.scrollTo(Math.max(0, y));
   else scrollTo({ top: Math.max(0, y), behavior: 'auto' });
 }
+// salto sem suavizar, quadro a quadro (o tour usa para conduzir a rolagem)
+export function rolaJa(y) {
+  const alvo = Math.max(0, y);
+  if (lenis) lenis.scrollTo(alvo, { immediate: true, force: true });
+  else scrollTo({ top: alvo, behavior: 'instant' });
+}
 export const trava = () => lenis?.stop();
 export const solta = () => lenis?.start();

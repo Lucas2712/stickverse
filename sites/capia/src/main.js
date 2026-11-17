@@ -6,6 +6,7 @@ import { iniciaSeletores } from './motion/seletor.js';
 import { iniciaCardapio } from './motion/cardapio.js';
 import { iniciaCasa } from './motion/casa.js';
 import { iniciaMural } from './motion/mural.js';
+import { iniciaTour } from './motion/tour.js';
 
 iniciaRolagem();
 iniciaTopo();
@@ -15,3 +16,4 @@ iniciaSeletores();
 iniciaCardapio();
 iniciaCasa();
 iniciaMural();
+iniciaTour();
