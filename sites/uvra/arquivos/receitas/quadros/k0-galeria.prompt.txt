@@ -1,0 +1,10 @@
+Photograph, 16:9 landscape, 1920x1080. A dim museum gallery, shot at eye level from behind a crowd of visitors.
+
+Center: a single vertical oil painting (portrait orientation, about 3:4) in an ornate, worn gilded frame with a dark inner liner, hanging on a dark warm-brown wall (#140d09 to #261b15). The framed painting is centered horizontally; the top of the frame sits at about 24% of the image height and its bottom at about 86%; the frame is about 22% of the image width. One warm spotlight from above lights the painting and leaves a soft, uneven pool of light on the wall around the frame; everything else falls off into near-black (#0a0704).
+
+The painting: a luminous classical academic oil painting in the manner of 19th-century neoclassical painters. A young woman in white Greek drapery with an ochre-gold sash stands among grapevines on a hillside and lifts a heavy bunch of dark purple grapes toward a bright cerulean blue sky with soft white cumulus clouds; vine leaves in the foreground; far behind her, rolling hills with rows of vines in warm afternoon light. Visible brushwork and fine craquelure. The painting is the brightest thing in the photo, a window of blue sky in a dark room.
+
+Foreground: the backs of heads and shoulders of museum visitors, heavily out of focus (shallow depth of field, f/1.4), dark and soft, filling the bottom third of the image and overlapping the lower part of the frame; bigger, closer heads at the far left and far right edges. Generous empty dark wall to the left and to the right of the painting.
+
+A real photograph, not a render: fine film grain, a faint haze in the light, soft focus falloff, natural imperfections, nothing symmetrical or perfect.
+No text, no wall label, no signage, no logos, no watermark.

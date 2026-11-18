@@ -1,0 +1,19 @@
+/* Fontes servidas do próprio site (public/fonts, licença OFL ao lado), só o subset latino, que cobre o português.
+   As três do hero têm preload no <head>. A serifa do título usa font-display: block: some por um instante em vez de
+   aparecer na fonte reserva, mais larga, e trocar na frente de quem acabou de abrir a página. */
+@font-face {
+  font-family: 'Instrument Serif'; font-style: normal; font-weight: 400; font-display: block;
+  src: url('/fonts/instrument-serif-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Instrument Serif'; font-style: italic; font-weight: 400; font-display: block;
+  src: url('/fonts/instrument-serif-latin-400-italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter Tight Variable'; font-style: normal; font-weight: 100 900; font-display: swap;
+  src: url('/fonts/inter-tight-latin-wght-normal.woff2') format('woff2-variations');
+}
+@font-face {
+  font-family: 'Geist Mono Variable'; font-style: normal; font-weight: 100 900; font-display: swap;
+  src: url('/fonts/geist-mono-latin-wght-normal.woff2') format('woff2-variations');
+}

@@ -1,0 +1,10 @@
+Image 1 is a photograph of a classical oil painting hanging in a dark museum.
+
+Create the world inside that painting as one full-bleed 16:9 image, 1920x1080, as if the camera had flown through the gilded frame and is now inside the painted scene: no frame, no wall, no museum, no visitors.
+
+Keep the same painting: the same young woman in white Greek drapery with the ochre-gold sash, the same heavy bunch of dark purple grapes lifted toward the sky, the same bright cerulean blue sky and soft cumulus clouds, the same vine leaves and distant rolling hills with rows of vines, the same warm afternoon light, the same palette.
+
+Compose for 16:9: the woman stands slightly right of center, seen from the knees up, the grapes high in the upper middle against the blue sky; extend the vineyard hillside and the sky to the left and to the right.
+
+Style: 19th-century academic oil painting with cinematic depth, visible brush strokes and canvas texture, the subject crisp and the far hills soft. It must read as a painting come alive, not as a photo and not as a 3D render.
+No text, no logos, no signature.

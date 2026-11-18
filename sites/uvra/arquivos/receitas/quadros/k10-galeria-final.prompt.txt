@@ -1,0 +1,6 @@
+Image 1 is a photograph of a dim museum gallery: a framed classical painting lit by a spotlight, seen from behind a crowd of visitors. Image 2 is another painting: a banquet under a vine pergola at dusk.
+
+Create the same photograph again as one full-bleed 16:9 image, 1920x1080, with image 2 hanging in place of the painting: the same dark warm-brown wall, the same uneven pool of spotlight, the same out-of-focus heads and shoulders of visitors filling the bottom third, the same camera height and lens. The painting is image 2, unchanged and in its landscape 16:9 proportions, in an ornate worn gilded frame, centered horizontally, about 40% of the image width, with its top at about 26% of the image height. It is the brightest thing in the photo.
+
+A real photograph, not a render: fine film grain, a faint haze in the light, soft focus falloff, natural imperfections.
+No text, no wall label, no signage, no logos, no watermark.

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Uvra · Vinícola de altitude</title>
+  <meta name="description" content="Vinhos de altitude em lotes pequenos, colhidos à mão e guardados em carvalho. Visitas com degustação e clube de assinatura.">
+  <meta name="theme-color" content="#0c0705">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <!-- a foto do hero: deitada no desktop, recortada em pé no celular (o mesmo quadro 0 do filme de cada um) -->
+  <link rel="preload" as="image" href="/img/galeria.webp" fetchpriority="high" media="(min-aspect-ratio: 401/500)">
+  <link rel="preload" as="image" href="/img/galeria-retrato.webp" fetchpriority="high" media="(max-aspect-ratio: 4/5)">
+  <link rel="stylesheet" href="/src/styles/site.css">
+  <link rel="preload" href="/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/instrument-serif-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-tight-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="nav">
+    <nav class="indice" aria-label="Seções">
+      <a class="indice__item is-atual" href="#topo"><span>A casa</span><i>I</i></a>
+      <a class="indice__item" href="#vinhedo"><span>Vinhedo</span><i>II</i></a>
+      <a class="indice__item" href="#colheita"><span>Colheita</span><i>III</i></a>
+      <a class="indice__item" href="#adega"><span>Adega</span><i>IV</i></a>
+      <a class="indice__item" href="#rotulos"><span>Rótulos</span><i>V</i></a>
+      <a class="indice__item" href="#visitas"><span>Visitas</span><i>VI</i></a>
+      <a class="indice__item" href="#clube"><span>Clube</span><i>VII</i></a>
+    </nav>
+
+    <a class="marca" href="#topo" aria-label="Uvra, voltar ao início">
+      <svg class="marca__icone" viewBox="0 0 24 24" aria-hidden="true">
+        <path class="marca__haste" d="M12 6.4V2.6c1.1-.9 2.6-1.2 4.2-.8" />
+        <circle cx="6.6" cy="9.4" r="3" />
+        <circle cx="12" cy="9.4" r="3" />
+        <circle cx="17.4" cy="9.4" r="3" />
+        <circle cx="9.3" cy="14.4" r="3" />
+        <circle cx="14.7" cy="14.4" r="3" />
+        <circle cx="12" cy="19.4" r="3" />
+      </svg>
+      <span class="marca__nome">Uvra</span>
+    </a>
+
+    <div class="acoes">
+      <a class="acoes__loja" href="#loja" aria-haspopup="dialog">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.2 5.2h9.6l-.7 8.3H3.9zM5.7 5.2V4a2.3 2.3 0 0 1 4.6 0v1.2" /></svg>
+        Loja
+      </a>
+      <a class="pilula pilula--linha" href="#visitas">Agendar visita</a>
+      <a class="pilula pilula--cheia" href="#clube">Clube Uvra</a>
+      <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="nav__menu-rotulo">Menu</span>
+        <span class="nav__menu-icone" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- menu do celular: o índice das salas, grande, e as duas ações; abre por baixo da barra da nav -->
+  <nav class="menu" id="menu" aria-label="Seções" hidden data-lenis-prevent>
+    <div class="menu__corpo">
+      <ol class="menu__lista">
+        <li><a class="menu__item is-atual" href="#topo"><span>A casa</span><i>I</i></a></li>
+        <li><a class="menu__item" href="#vinhedo"><span>Vinhedo</span><i>II</i></a></li>
+        <li><a class="menu__item" href="#colheita"><span>Colheita</span><i>III</i></a></li>
+        <li><a class="menu__item" href="#adega"><span>Adega</span><i>IV</i></a></li>
+        <li><a class="menu__item" href="#rotulos"><span>Rótulos</span><i>V</i></a></li>
+        <li><a class="menu__item" href="#visitas"><span>Visitas</span><i>VI</i></a></li>
+        <li><a class="menu__item" href="#clube"><span>Clube</span><i>VII</i></a></li>
+      </ol>
+      <div class="menu__acoes">
+        <a class="pilula pilula--linha" href="#visitas">Agendar visita</a>
+        <a class="pilula pilula--cheia" href="#clube">Clube Uvra</a>
+      </div>
+      <a class="menu__contato" href="mailto:contato@uvra.com.br">contato@uvra.com.br</a>
+    </div>
+  </nav>
+
+  <main id="conteudo" tabindex="-1">
+    <!-- o filme: a trilha dá a altura da rolagem e a tela fica presa enquanto a câmera anda -->
+    <div class="trilha" data-trilha="0">
+      <div class="tela">
+        <div class="palco">
+          <picture>
+            <source media="(max-aspect-ratio: 4/5)" srcset="/img/galeria-retrato.webp" width="608" height="1080">
+            <img class="palco__foto" src="/img/galeria.webp" width="1916" height="1080" fetchpriority="high"
+              alt="Galeria escura com um quadro iluminado: uma moça de túnica branca ergue um cacho de uvas contra o céu azul, diante do público.">
+          </picture>
+          <canvas class="palco__filme" aria-hidden="true"></canvas>
+          <p class="legenda legenda--hero" aria-hidden="true"><b>●</b> Alegoria da vindima</p>
+          <!-- a legenda do quadro do fim (o banquete), na mesma galeria do hero: entra com o clube -->
+          <p class="legenda legenda--fim" data-cap="9" data-de="0.96" data-ate="fim" aria-hidden="true"><span><b>●</b> O banquete da vindima</span></p>
+        </div>
+        <div class="sombra" aria-hidden="true"></div>
+
+        <!-- os textos ficam na altura pequena da tela (100svh): a barra do Safari nunca cobre o pé deles -->
+        <div class="textos">
+        <section class="hero" id="topo" aria-label="Uvra, vinícola de altitude">
+          <p class="hero__texto">Vinhos de altitude, colhidos à mão e guardados <em class="junto">o tempo que pedem</em>.</p>
+          <h1 class="hero__titulo"><span class="linha">Todo vinho tem</span> <span class="linha">uma <em>paisagem</em></span></h1>
+        </section>
+
+        <!-- cenas do filme: data-cap é o capítulo (clipe) e data-de / data-ate a janela, em fração dele
+             (acima de 1 avança no capítulo seguinte; "fim" vai até o fim da trilha). As janelas seguem o conteúdo de
+             cada clipe: a frase entra quando a imagem dela aparece e sai antes da emenda. Onde o quadro tem vazio, a
+             cena mora nele (cena--ceu, --esquerda, --direita) e a janela é o trecho em que o vazio existe. A mesa das
+             garrafas não tem vazio estável: a frase é a legenda do quadro, centrada embaixo (cena--legenda). data-veu
+             escurece o topo ou o pé com um véu liso enquanto a cena está na tela, para o branco ler sobre o claro -->
+        <section class="cena cena--ceu" id="vinhedo" data-cap="2" data-de="0.47" data-ate="0.86" data-pouso="0.75" data-veu="topo" aria-labelledby="vinhedo-titulo">
+          <h2 class="cena__frase" id="vinhedo-titulo">Começa no <em>alto</em>.</h2>
+          <p class="cena__apoio">Dezoito hectares a 1.100 metros, onde a noite fria guarda a acidez da uva.</p>
+        </section>
+
+        <section class="cena" id="colheita" data-cap="3" data-de="0.1" data-ate="0.86" aria-labelledby="colheita-titulo">
+          <h2 class="cena__frase" id="colheita-titulo">Colhido <em>à mão</em>.</h2>
+          <p class="cena__apoio">Cacho por cacho, em caixas de 18 kg, nas primeiras horas da manhã.</p>
+        </section>
+
+        <section class="cena cena--direita" id="adega" data-cap="4" data-de="0.6" data-ate="0.97" data-pouso="0.85" aria-labelledby="adega-titulo">
+          <h2 class="cena__frase" id="adega-titulo">Prensado <em>devagar</em>.</h2>
+          <p class="cena__apoio">A prensa de cesto tira o mosto sem amargar as cascas.</p>
+        </section>
+
+        <section class="cena" id="barrica" data-cap="5" data-de="0.6" data-ate="0.97" aria-labelledby="barrica-titulo">
+          <h2 class="cena__frase" id="barrica-titulo">Guardado <em>sem pressa</em>.</h2>
+          <p class="cena__apoio">De 12 a 18 meses em carvalho francês, numa adega de pedra a 14 °C.</p>
+        </section>
+
+        <section class="cena cena--esquerda" id="prova" data-cap="6" data-de="0.6" data-ate="1.12" data-pouso="0.85" aria-labelledby="prova-titulo">
+          <h2 class="cena__frase" id="prova-titulo">Provado <em>barrica a barrica</em>.</h2>
+          <p class="cena__apoio">Só vai para a garrafa quando o enólogo prova e diz que está pronto.</p>
+        </section>
+
+        <!-- a mesa com as três garrafas: frase, apoio e o botão que abre a vitrine dos rótulos (o filme não para) -->
+        <section class="cena cena--legenda" id="rotulos" data-cap="7" data-de="0.72" data-ate="1.15" data-pouso="0.97" data-veu="pe" aria-labelledby="rotulos-titulo">
+          <h2 class="cena__frase" id="rotulos-titulo">Três rótulos, <em>uma encosta</em>.</h2>
+          <div class="cena__apoio">
+            <p>Da mesma vindima, em lotes pequenos. Frete grátis a partir de duas garrafas.</p>
+            <a class="pilula pilula--cheia" href="#loja" aria-haspopup="dialog">Ver os vinhos</a>
+          </div>
+        </section>
+
+        <section class="cena" id="visitas" data-cap="8" data-de="0.35" data-ate="0.98" aria-labelledby="visitas-titulo">
+          <h2 class="cena__frase" id="visitas-titulo">A mesa fica <em>no vinhedo</em>.</h2>
+          <div class="cena__apoio">
+            <p>Degustação guiada, almoço harmonizado sob a pérgola e a vindima aberta, em março.</p>
+            <a class="pilula pilula--linha" href="#" data-acao="agendar">Agendar uma visita</a>
+          </div>
+        </section>
+
+        <!-- o clube fecha como o hero abriu: a mesma galeria, agora com o banquete na moldura -->
+        <section class="cena cena--clube" id="clube" data-cap="9" data-de="0.88" data-ate="fim" data-pouso="1" aria-labelledby="clube-titulo">
+          <p class="clube__texto">Três garrafas por estação, escolhidas pelo enólogo, e um convite para a vindima.</p>
+          <h2 class="clube__titulo" id="clube-titulo">Um lugar <em>à mesa</em></h2>
+          <a class="pilula pilula--cheia clube__botao" href="#" data-acao="clube">Entrar no clube</a>
+        </section>
+        </div>
+      </div>
+    </div>
+
+    <footer class="rodape">
+      <a class="rodape__marca" href="#topo" aria-label="Uvra, voltar ao início">
+        <svg class="marca__icone" viewBox="0 0 24 24" aria-hidden="true">
+          <path class="marca__haste" d="M12 6.4V2.6c1.1-.9 2.6-1.2 4.2-.8" />
+          <circle cx="6.6" cy="9.4" r="3" /><circle cx="12" cy="9.4" r="3" /><circle cx="17.4" cy="9.4" r="3" />
+          <circle cx="9.3" cy="14.4" r="3" /><circle cx="14.7" cy="14.4" r="3" /><circle cx="12" cy="19.4" r="3" />
+        </svg>
+        <span>Uvra</span>
+      </a>
+      <p class="rodape__frase">Vinhos de altitude em lotes pequenos, desde a safra de 2009.</p>
+      <nav class="rodape__links" aria-label="Rodapé">
+        <a href="#loja" aria-haspopup="dialog">Loja</a>
+        <a href="#visitas">Visitas</a>
+        <a href="#clube">Clube</a>
+        <a href="mailto:contato@uvra.com.br">contato@uvra.com.br</a>
+      </nav>
+      <p class="rodape__aviso">Aprecie com moderação. Venda proibida para menores de 18 anos.</p>
+      <p class="rodape__direitos">© 2026 Uvra Vinhos</p>
+    </footer>
+  </main>
+
+  <!-- a vitrine dos rótulos: abre por cima do filme (que fica esmaecido atrás) e fecha de volta onde se estava -->
+  <div class="loja" id="loja" role="dialog" aria-modal="true" aria-labelledby="loja-titulo" hidden data-lenis-prevent>
+    <div class="loja__fundo" data-fecha></div>
+    <button class="loja__fechar" type="button" data-fecha aria-label="Fechar a loja">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+    </button>
+    <div class="loja__corpo">
+      <header class="loja__topo">
+        <p class="loja__rotulo"><b>●</b> Loja Uvra</p>
+        <h2 class="loja__titulo" id="loja-titulo">Três rótulos, <em>uma encosta</em>.</h2>
+        <p class="loja__apoio">Da mesma vindima, em lotes pequenos. Frete grátis a partir de duas garrafas.</p>
+      </header>
+      <ul class="loja__grade">
+        <li class="garrafa">
+          <img class="garrafa__foto" src="/img/loja/branco.webp" width="640" height="960" loading="lazy" decoding="async"
+            alt="Garrafa de vinho branco, de vidro claro, com um rótulo pintado de vinhedo ao amanhecer.">
+          <div class="garrafa__linha"><h3 class="garrafa__nome">Branco</h3><p class="garrafa__preco">R$ 89</p></div>
+          <p class="garrafa__uva">Sauvignon Blanc · safra 2023</p>
+          <p class="garrafa__texto">Colhido de madrugada, fresco e mineral.</p>
+          <a class="pilula pilula--cheia garrafa__comprar" href="#" data-acao="comprar">Comprar</a>
+        </li>
+        <li class="garrafa">
+          <img class="garrafa__foto" src="/img/loja/rose.webp" width="640" height="960" loading="lazy" decoding="async"
+            alt="Garrafa de vinho rosé, de vidro claro, com um rótulo pintado de rosas e folhas de parreira.">
+          <div class="garrafa__linha"><h3 class="garrafa__nome">Rosé</h3><p class="garrafa__preco">R$ 99</p></div>
+          <p class="garrafa__uva">Pinot Noir · safra 2023</p>
+          <p class="garrafa__texto">De prensa direta, leve e seco.</p>
+          <a class="pilula pilula--cheia garrafa__comprar" href="#" data-acao="comprar">Comprar</a>
+        </li>
+        <li class="garrafa">
+          <img class="garrafa__foto" src="/img/loja/reserva.webp" width="640" height="960" loading="lazy" decoding="async"
+            alt="Garrafa do Reserva, de vidro verde-escuro, com o quadro da moça erguendo as uvas no rótulo.">
+          <div class="garrafa__linha"><h3 class="garrafa__nome">Reserva</h3><p class="garrafa__preco">R$ 189</p></div>
+          <p class="garrafa__uva">Cabernet Franc · safra 2021</p>
+          <p class="garrafa__texto">Doze meses em barrica. No rótulo, a nossa vindima.</p>
+          <a class="pilula pilula--cheia garrafa__comprar" href="#" data-acao="comprar">Comprar</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="veu" aria-hidden="true"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

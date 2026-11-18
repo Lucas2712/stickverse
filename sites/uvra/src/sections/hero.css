@@ -1,0 +1,91 @@
+/* o filme: a trilha dá a altura da rolagem (--telas, do diretor) e a tela fica presa enquanto a câmera anda. A tela
+   tem a altura grande do celular (100lvh): quando a barra do Safari some, o filme continua cobrindo até o pé, e nada
+   muda de tamanho no meio da rolagem (no desktop, lvh = svh = vh) */
+.trilha { position: relative; height: calc((1 + var(--telas, 0)) * 100lvh); background: var(--fundo); }
+.tela { position: sticky; top: 0; height: 100lvh; overflow: clip; }
+/* os textos, na altura pequena (100svh): com a barra do Safari aberta, o pé deles continua acima dela */
+.textos { position: absolute; inset: 0 0 auto; height: 100svh; pointer-events: none; }
+
+/* palco: a foto da galeria cobre a tela; o canvas do filme fica por cima dela, na mesma caixa (o quadro 0 do filme
+   é a própria foto), e a legenda anda presa ao quadro (unidade da foto, --pu) */
+.palco {
+  position: absolute; left: 50%; top: 50%;
+  width: calc(1672 * var(--pu)); height: calc(941 * var(--pu));
+  translate: -50% -50%;
+}
+.palco picture { position: absolute; inset: 0; }
+.palco__foto { width: 100%; height: 100%; object-fit: cover; }
+.palco__filme { position: absolute; inset: 0; width: 100%; height: 100%; visibility: hidden; }
+.palco__filme.is-pronto { visibility: visible; }
+/* parado no topo, no 1º quadro, quem aparece é a foto do hero em resolução cheia (o mesmo quadro, mais nítido) */
+.palco__filme.is-pronto.is-topo { visibility: hidden; }
+
+/* hero: os textos por cima do palco */
+.hero { position: absolute; inset: 0; pointer-events: none; }
+.hero a { pointer-events: auto; }
+
+/* legenda de acervo em cima da moldura, pelo canto esquerdo dela (a moldura começa em 612 px na foto, topo em 222) */
+.legenda {
+  position: absolute; left: calc(612 * var(--pu)); top: calc(198 * var(--pu));
+  translate: 0 -100%;
+  font: 400 calc(13.5 * var(--pu)) / 1 var(--mono); letter-spacing: 0.02em; text-transform: uppercase;
+  color: var(--fraco); white-space: nowrap;
+}
+.legenda b { font-weight: 400; color: var(--apoio); font-size: 0.8em; margin-right: 0.4em; }
+/* a do quadro do fim: canto esquerdo da moldura do banquete (434 px na foto do fim, topo em 245) */
+.legenda--fim { left: calc(434 * var(--pu)); top: calc(221 * var(--pu)); visibility: hidden; }
+
+/* parágrafo à esquerda, em duas linhas, com o fim em serifa itálica */
+.hero__texto {
+  position: absolute; left: calc(22 * var(--u)); bottom: calc(272 * var(--u));
+  width: calc(400 * var(--u));
+  font: 600 calc(21 * var(--u)) / 1.42 var(--sans); letter-spacing: -0.018em;
+  color: rgba(240, 238, 237, 0.94);
+}
+.hero__texto em { font-size: 1.12em; letter-spacing: 0; line-height: 1; }
+.junto { white-space: nowrap; }
+
+/* título gigante encostado no rodapé, passando por cima das cabeças */
+.hero__titulo {
+  position: absolute; left: calc(33 * var(--u)); bottom: calc(12 * var(--u));
+  /* "Todo vinho tem uma paisagem" mede 10,14 em: o corpo faz o título ir de 33 a 1429 px, quase de borda a borda */
+  font: 400 calc(137.7 * var(--u)) / 1 var(--serifa); letter-spacing: -0.022em; white-space: nowrap;
+  color: var(--branco);
+}
+.hero__titulo em { color: var(--acento); letter-spacing: -0.01em; }
+
+/* ---- celular em pé: o filme recortado no meio em 9:16 (608 × 1080, public/filme/retrato). A unidade do palco passa
+   a ser 1 px do recorte, e a moldura do quadro fica centrada nele (de 47 a 561, topo em 255) */
+@media (max-aspect-ratio: 4/5) {
+  :root { --pu: max(100vw / 608, 100lvh / 1080); }
+  .palco { width: calc(608 * var(--pu)); height: calc(1080 * var(--pu)); }
+  /* a legenda centrada em cima da moldura (no recorte, a moldura passa rente às bordas da tela) */
+  .legenda { left: 50%; top: calc(227 * var(--pu)); translate: -50% -100%; font-size: 12px; letter-spacing: 0.06em; }
+  .legenda--fim { top: calc(254 * var(--pu)); }
+}
+/* celular estreito (320 px): a moldura sobe e a legenda encostaria no parágrafo de cima; ela sai */
+@media (max-aspect-ratio: 4/5) and (max-width: 359px) {
+  .legenda { display: none; }
+}
+
+/* ---- celular: o parágrafo na parede escura acima do quadro, e o título em duas linhas no pé, sobre as cabeças */
+@media (max-width: 1023px), (max-aspect-ratio: 4/5) {
+  .hero__texto {
+    left: calc(16px + env(safe-area-inset-left)); right: calc(16px + env(safe-area-inset-right)); width: auto;
+    top: calc(72px + env(safe-area-inset-top)); bottom: auto;
+    font-size: calc(17 * var(--su)); line-height: 1.4; letter-spacing: -0.012em;
+  }
+  .hero__titulo {
+    left: calc(16px + env(safe-area-inset-left)); bottom: calc(14 * var(--u));
+    font-size: calc(64 * var(--u)); line-height: 0.94; letter-spacing: -0.024em;
+  }
+  .hero__titulo .linha { display: block; }
+}
+
+/* ---- celular deitado (tela baixa): os textos voltam para a coluna escura à esquerda do quadro, como no desktop, e a
+   legenda sai (encostaria na nav) */
+@media (max-width: 1023px) and (orientation: landscape) and (max-height: 520px) {
+  .legenda { display: none; }
+  .hero__texto { top: auto; right: auto; bottom: calc(96px + env(safe-area-inset-bottom)); width: 250px; font-size: 15px; }
+  .hero__titulo { font-size: 38px; bottom: 12px; }
+}

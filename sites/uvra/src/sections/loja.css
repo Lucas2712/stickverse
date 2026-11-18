@@ -1,0 +1,109 @@
+/* a vitrine dos rótulos: um diálogo por cima do filme, aberto quando a pessoa pede (o botão da cena da mesa, o
+   "Loja" da nav e do rodapé). O filme fica esmaecido atrás e a pessoa volta para o mesmo ponto ao fechar. As garrafas
+   pintadas recortadas no fundo da marca, sem card */
+.loja {
+  position: fixed; inset: 0; z-index: 70;
+  display: grid; place-items: center; overflow-y: auto; overscroll-behavior: contain;
+}
+.loja[hidden] { display: none; }
+.loja__fundo {
+  position: fixed; inset: 0;
+  background: rgb(12 7 5 / 0.86); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+}
+/* min-width: 0: sem ele, o trilho de garrafas do celular (um flex de uma linha) alargaria a coluna da grade até a soma
+   das três garrafas, e a vitrine rolaria para o lado */
+.loja__corpo { position: relative; min-width: 0; width: min(100%, calc(1120 * var(--su))); padding: calc(56 * var(--su)) calc(24 * var(--su)) calc(44 * var(--su)); }
+
+.loja__topo { text-align: center; }
+.loja__rotulo {
+  font: 400 calc(13 * var(--su)) / 1 var(--mono); letter-spacing: 0.04em; text-transform: uppercase; color: var(--apoio);
+}
+.loja__rotulo b { font-weight: 400; color: var(--acento); font-size: 0.8em; margin-right: 0.5em; }
+.loja__titulo { margin-top: calc(14 * var(--su)); font: 400 calc(60 * var(--su)) / 1.02 var(--serifa); letter-spacing: -0.02em; color: var(--branco); }
+.loja__titulo em { color: var(--acento); letter-spacing: -0.01em; }
+.loja__apoio { margin-top: calc(12 * var(--su)); font: 500 calc(17 * var(--su)) / 1.45 var(--sans); color: var(--apoio); }
+
+/* fechar: no canto das ações da nav, que a vitrine cobre */
+.loja__fechar {
+  position: fixed; top: calc(16 * var(--u)); right: calc(22 * var(--u)); z-index: 1;
+  width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+  border: 1px solid rgba(240, 239, 238, 0.42); color: var(--branco);
+  transition: background-color var(--rapido) var(--curva), border-color var(--rapido) var(--curva), scale var(--rapido) var(--curva);
+}
+.loja__fechar svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; transition: rotate var(--medio) var(--curva); }
+@media (hover: hover) {
+  .loja__fechar:hover { border-color: var(--branco); background: rgba(240, 239, 238, 0.08); }
+  .loja__fechar:hover svg { rotate: 90deg; }
+}
+.loja__fechar:active { scale: 0.94; }
+
+.loja__grade {
+  margin-top: calc(36 * var(--su));
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: calc(44 * var(--su));
+}
+/* foto, nome e preço, uva, texto, botão: o texto absorve a diferença entre as colunas, e os nomes e os botões ficam
+   alinhados de uma garrafa para a outra */
+.garrafa { display: grid; grid-template-rows: auto auto auto 1fr auto; justify-items: center; }
+.garrafa > :not(.garrafa__foto) { width: 100%; max-width: calc(290 * var(--su)); }
+.garrafa__foto {
+  /* em telas baixas a garrafa encolhe pela altura, para a vitrine caber inteira */
+  width: min(calc(260 * var(--su)), 30svh); height: auto; aspect-ratio: 2 / 3; object-fit: cover;
+  mask-image: radial-gradient(ellipse 60% 54% at 50% 50%, #000 64%, transparent 100%);
+  transition: transform var(--medio) var(--curva), filter var(--medio) var(--curva);
+}
+.garrafa__linha {
+  display: flex; align-items: baseline; justify-content: space-between; gap: calc(12 * var(--su));
+  margin-top: calc(12 * var(--su)); padding-bottom: calc(10 * var(--su)); border-bottom: 1px solid var(--linha);
+}
+.garrafa__nome { font: 400 calc(36 * var(--su)) / 1 var(--serifa); letter-spacing: -0.01em; color: var(--branco); }
+.garrafa__preco { font: 600 calc(19 * var(--su)) / 1 var(--sans); letter-spacing: -0.01em; color: var(--branco); }
+.garrafa__uva {
+  margin-top: calc(12 * var(--su));
+  font: 400 calc(12.5 * var(--su)) / 1 var(--mono); letter-spacing: 0.04em; text-transform: uppercase; color: var(--apoio);
+}
+.garrafa__texto { margin-top: calc(8 * var(--su)); font: 500 calc(15 * var(--su)) / 1.45 var(--sans); color: var(--apoio); }
+.pilula.garrafa__comprar {
+  margin-top: calc(16 * var(--su)); height: calc(42 * var(--su)); justify-content: center;
+  font-size: calc(15 * var(--su)); font-weight: 600;
+}
+/* hover: a garrafa sobe um pouco e acende; o foco do teclado faz o mesmo */
+@media (hover: hover) {
+  .garrafa:hover .garrafa__foto { transform: translateY(calc(-8 * var(--su))); filter: brightness(1.1); }
+}
+.garrafa:focus-within .garrafa__foto { transform: translateY(calc(-8 * var(--su))); filter: brightness(1.1); }
+
+/* ---- celular: o título em cima e as três garrafas num trilho lateral nativo, uma por vez e grande, com a ponta da
+   seguinte aparecendo na borda (o arrasto para o lado é do próprio navegador) */
+@media (max-width: 1023px), (max-aspect-ratio: 4/5) {
+  /* tudo cabe na altura útil de um iPhone com as barras do Safari abertas (~664 px), inclusive o "Comprar": o rótulo
+     sai (o título já diz o que é) e a garrafa mede pela altura da tela */
+  .loja { place-items: start center; }
+  .loja__corpo { width: 100%; padding: calc(64px + env(safe-area-inset-top)) 0 calc(24px + env(safe-area-inset-bottom)); }
+  .loja__topo { padding: 0 calc(16px + env(safe-area-inset-right)) 0 calc(16px + env(safe-area-inset-left)); }
+  .loja__rotulo { display: none; }
+  .loja__titulo { margin-top: 0; font-size: calc(34 * var(--su)); text-wrap: balance; }
+  .loja__apoio { margin-top: 8px; font-size: 14px; text-wrap: balance; }
+  .loja__fechar { top: calc(10px + env(safe-area-inset-top)); right: calc(12px + env(safe-area-inset-right)); }
+
+  .loja__grade {
+    margin-top: 20px; display: flex; gap: 14px;
+    overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none;
+    padding: 0 calc(16px + env(safe-area-inset-right)) 4px calc(16px + env(safe-area-inset-left));
+    scroll-padding-inline: calc(16px + env(safe-area-inset-left)) calc(16px + env(safe-area-inset-right));
+  }
+  .loja__grade::-webkit-scrollbar { display: none; }
+  .garrafa { flex: 0 0 min(78%, 320px); scroll-snap-align: start; }
+  .garrafa > :not(.garrafa__foto) { max-width: none; }
+  .garrafa__foto { width: clamp(150px, calc((100svh - 410px) * 0.6667), 230px); }
+  .garrafa__nome { font-size: 34px; }
+  .garrafa__preco { font-size: 18px; }
+  .garrafa__uva { font-size: 12px; }
+  .garrafa__texto { font-size: 15px; }
+  .pilula.garrafa__comprar { height: 46px; font-size: 15px; }
+}
+
+/* celular deitado: a vitrine rola na vertical, com as garrafas pela altura da tela */
+@media (max-width: 1023px) and (orientation: landscape) and (max-height: 520px) {
+  .garrafa { flex-basis: min(46%, 300px); }
+  .garrafa__foto { width: 150px; }
+}

@@ -1,0 +1,195 @@
+/* textos das cenas do filme: uma frase curta em serifa e uma linha de apoio na mesma altura, no pé da tela.
+   Entram e saem por marco (src/motion/filme.js); começam escondidos */
+.cena {
+  position: absolute; left: calc(24 * var(--u)); right: calc(27 * var(--u)); bottom: calc(30 * var(--u));
+  display: flex; align-items: baseline; justify-content: space-between; gap: calc(40 * var(--su));
+  visibility: hidden; pointer-events: none;
+}
+.cena__frase {
+  font: 400 calc(64 * var(--su)) / 1.02 var(--serifa); letter-spacing: -0.02em; color: var(--branco);
+  white-space: nowrap;
+}
+.cena__frase em { color: var(--acento); letter-spacing: -0.01em; }
+.cena__apoio {
+  max-width: calc(340 * var(--su));
+  display: grid; justify-items: start; gap: calc(16 * var(--su));
+  font: 500 calc(17 * var(--su)) / 1.4 var(--sans); letter-spacing: -0.01em; color: rgba(240, 238, 237, 0.84);
+}
+.cena a { pointer-events: auto; }
+
+/* ---- cenas que moram no vazio do quadro: no meio da tela, integradas à imagem, não legenda no pé.
+   Cada uma só fica na janela em que o vazio existe no clipe (medido quadro a quadro): o céu sobre o vinhedo e o escuro
+   ao lado do fio de mosto e da taça */
+.cena--esquerda, .cena--direita, .cena--ceu {
+  /* justify-content volta ao normal: o space-between do .cena (feito para a linha do desktop) encolheria a coluna da
+     grade ao item mais largo, encostada à esquerda, e o texto centrado sairia do meio da tela */
+  bottom: auto; display: grid; justify-content: normal; justify-items: start; align-content: center; gap: calc(18 * var(--su));
+}
+.cena--esquerda .cena__frase, .cena--direita .cena__frase,
+.cena--ceu .cena__frase { font-size: calc(72 * var(--su)); white-space: normal; text-wrap: balance; }
+.cena--esquerda { left: calc(72 * var(--u)); right: auto; top: 50%; translate: 0 -50%; width: calc(480 * var(--su)); }
+.cena--direita { right: calc(72 * var(--u)); left: auto; top: 50%; translate: 0 -50%; width: calc(450 * var(--su)); }
+.cena--ceu {
+  left: 50%; right: auto; top: calc(112 * var(--u)); translate: -50% 0; width: calc(840 * var(--su));
+  justify-items: center; text-align: center;
+}
+.cena--ceu .cena__apoio { justify-items: center; max-width: calc(470 * var(--su)); }
+/* no céu claro, o branco lê sobre o véu do topo (data-veu="topo") e uma sombra larga e leve na letra */
+.cena--ceu .cena__frase, .cena--ceu .cena__apoio { text-shadow: 0 1px 24px rgb(12 7 5 / 0.4); }
+
+/* a mesa das garrafas não tem vazio estável (as garrafas ocupam o meio e sobem até o topo): a frase é a legenda do
+   quadro, centrada embaixo da natureza-morta, sobre o véu do pé (data-veu="pe") */
+.cena--legenda {
+  left: 50%; right: auto; bottom: calc(34 * var(--u)); translate: -50% 0; width: calc(900 * var(--su));
+  display: grid; justify-content: normal; justify-items: center; text-align: center; gap: calc(14 * var(--su));
+}
+.cena--legenda .cena__apoio { justify-items: center; max-width: none; gap: calc(14 * var(--su)); }
+
+/* clube: fecha como o hero abriu, com o parágrafo à esquerda e o título gigante no pé, sobre a mesma galeria */
+.cena--clube { inset: 0; display: block; }
+/* o parágrafo cresce para cima a partir do botão, que fica embaixo dele */
+.clube__texto {
+  position: absolute; left: calc(22 * var(--u)); bottom: calc(294 * var(--u));
+  width: calc(310 * var(--u)); /* a moldura do banquete é larga: o parágrafo para antes dela */
+  font: 600 calc(21 * var(--u)) / 1.42 var(--sans); letter-spacing: -0.018em; color: rgba(240, 238, 237, 0.94);
+}
+.pilula.clube__botao {
+  position: absolute; left: calc(22 * var(--u)); bottom: calc(242 * var(--u));
+  height: calc(34 * var(--u)); padding: 0 calc(18 * var(--u)); font-size: calc(15 * var(--u));
+}
+.clube__titulo {
+  position: absolute; left: calc(33 * var(--u)); bottom: calc(12 * var(--u));
+  font: 400 calc(137.7 * var(--u)) / 1 var(--serifa); letter-spacing: -0.022em; white-space: nowrap; color: var(--branco);
+}
+.clube__titulo em { color: var(--acento); letter-spacing: -0.01em; }
+
+/* rodapé: sobe por cima da galeria quando o filme acaba */
+.rodape {
+  position: relative; z-index: 1; background: var(--fundo);
+  display: grid; grid-template-columns: 1fr auto; align-items: end; gap: calc(28 * var(--su)) calc(40 * var(--su));
+  padding: calc(72 * var(--su)) calc(24 * var(--su)) calc(28 * var(--su));
+  border-top: 1px solid var(--linha);
+  font-size: calc(15 * var(--su)); color: var(--apoio);
+}
+.rodape__marca { transition: opacity var(--rapido) var(--curva); display: inline-flex; align-items: center; gap: calc(10 * var(--su)); color: var(--branco); font: 600 calc(28 * var(--su)) / 1 var(--sans); letter-spacing: -0.02em; }
+.rodape__marca .marca__icone { width: calc(28 * var(--su)); height: calc(28 * var(--su)); }
+.rodape__frase { grid-column: 1; font: 400 calc(30 * var(--su)) / 1.15 var(--serifa); color: var(--texto); max-width: 18em; }
+.rodape__links { grid-column: 2; grid-row: 1 / span 2; display: grid; justify-items: end; gap: calc(10 * var(--su)); font-weight: 500; color: var(--texto); }
+.rodape__links a { transition: color var(--rapido) var(--curva); }
+@media (hover: hover) {
+  html:not(.is-scrolling) .rodape__links a:hover { color: var(--acento); }
+  html:not(.is-scrolling) .rodape__marca:hover { opacity: 0.8; }
+}
+.rodape__links a:active { opacity: 0.7; }
+.rodape__aviso, .rodape__direitos { font-size: calc(13 * var(--su)); color: var(--fraco); }
+.rodape__direitos { text-align: right; }
+
+/* véu liso por cima do filme, fora do hero: escurece o topo (a nav sobre o céu claro) e o pé (os textos) */
+.sombra {
+  position: absolute; inset: 0; pointer-events: none; opacity: 0;
+  background: linear-gradient(to bottom, rgb(12 7 5 / 0.55), rgb(12 7 5 / 0) 24%, rgb(12 7 5 / 0) 56%, rgb(12 7 5 / 0.66));
+  transition: opacity 0.8s var(--curva);
+}
+.sombra.is-on { opacity: 1; }
+/* véus de cena: mais escuro no topo (o céu do vinhedo) ou no pé (a toalha da mesa) só enquanto a cena que pede está na
+   tela (o diretor marca a tela com data-veu); entram e saem devagar, como a luz mudando */
+.sombra::before, .sombra::after { content: ''; position: absolute; inset: 0; opacity: 0; transition: opacity 0.6s var(--curva); will-change: opacity; }
+.sombra::before { background: linear-gradient(to bottom, rgb(12 7 5 / 0.6), rgb(12 7 5 / 0.42) 28%, rgb(12 7 5 / 0) 54%); }
+.sombra::after { background: linear-gradient(to top, rgb(12 7 5 / 0.82), rgb(12 7 5 / 0.52) 24%, rgb(12 7 5 / 0) 50%); }
+.tela[data-veu="topo"] .sombra::before, .tela[data-veu="pe"] .sombra::after { opacity: 1; }
+
+/* véu do salto: um link para longe passa por ele em vez de correr o filme */
+.veu { position: fixed; inset: 0; z-index: 40; background: var(--fundo); opacity: 0; visibility: hidden; pointer-events: none; }
+
+/* barra de rolagem própria: um fio que aparece ao rolar (a nativa fica escondida em base.css) */
+.sbar { position: fixed; top: 6px; right: 3px; bottom: 6px; width: 10px; z-index: 60; pointer-events: none; mix-blend-mode: difference; }
+.sbar__thumb {
+  position: absolute; right: 0; width: 3px; border-radius: 3px; background: rgb(255 255 255 / 0.7);
+  opacity: 0; transition: opacity 0.5s, width 0.25s var(--curva); pointer-events: auto; cursor: grab;
+}
+.sbar.is-on .sbar__thumb { opacity: 1; }
+.sbar.is-none { display: none; }
+/* com a página parada por um diálogo (menu, loja), o fio some: ele marcaria a página de trás */
+.lenis-stopped .sbar { display: none; }
+.sbar.is-drag .sbar__thumb { cursor: grabbing; }
+@media (hover: hover) { .sbar__thumb:hover, .sbar.is-drag .sbar__thumb { width: 6px; opacity: 1; } }
+
+/* ---- celular: frase em cima (até duas linhas, equilibradas), a linha de apoio embaixo e o botão por último, tudo no
+   pé da tela e na largura dela. O fecho repete o hero do celular: o parágrafo na parede escura de cima, o título no pé
+   sobre as cabeças e o botão do clube por último */
+@media (max-width: 1023px), (max-aspect-ratio: 4/5) {
+  .pilula { height: 44px; padding: 0 20px; font-size: 15px; }
+  .cena {
+    left: calc(16px + env(safe-area-inset-left)); right: calc(16px + env(safe-area-inset-right));
+    bottom: calc(26px + env(safe-area-inset-bottom));
+    display: grid; justify-items: start; gap: 12px;
+  }
+  .cena__frase { font-size: calc(42 * var(--su)); line-height: 1.02; white-space: normal; text-wrap: balance; }
+  .cena__apoio { max-width: 340px; gap: 18px; font-size: calc(16 * var(--su)); line-height: 1.45; }
+
+  .cena--clube { inset: 0; display: block; }
+  .clube__texto {
+    left: calc(16px + env(safe-area-inset-left)); right: calc(16px + env(safe-area-inset-right)); width: auto;
+    top: calc(72px + env(safe-area-inset-top)); bottom: auto;
+    font-size: calc(17 * var(--su)); line-height: 1.4; letter-spacing: -0.012em;
+  }
+  .pilula.clube__botao {
+    left: calc(16px + env(safe-area-inset-left)); bottom: calc(26px + env(safe-area-inset-bottom));
+    height: 44px; padding: 0 20px; font-size: 15px;
+  }
+  .clube__titulo {
+    left: calc(16px + env(safe-area-inset-left)); bottom: calc(86px + env(safe-area-inset-bottom));
+    font-size: calc(64 * var(--u)); line-height: 0.94; letter-spacing: -0.024em;
+  }
+
+  /* o véu do pé mais escuro: frase, apoio e botão empilhados ocupam mais da tela que no desktop */
+  .sombra { background: linear-gradient(to bottom, rgb(12 7 5 / 0.6), rgb(12 7 5 / 0) 20%, rgb(12 7 5 / 0) 46%, rgb(12 7 5 / 0.82)); }
+
+  .rodape {
+    grid-template-columns: 1fr; gap: 22px;
+    padding: 56px calc(16px + env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left));
+    font-size: 15px;
+  }
+  .rodape__marca { font-size: 26px; min-height: 44px; }
+  .rodape__marca .marca__icone { width: 26px; height: 26px; }
+  .rodape__frase { font-size: 28px; }
+  /* cada link com 44 px de toque: o respiro lateral vira área de clique, e a linha recua para alinhar na margem */
+  .rodape__links { grid-column: 1; grid-row: auto; display: flex; flex-wrap: wrap; gap: 0 10px; margin-left: -6px; }
+  .rodape__links a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; padding: 0 6px; }
+  .rodape__aviso, .rodape__direitos { font-size: 13px; }
+  .rodape__direitos { text-align: left; margin-top: -14px; }
+}
+
+/* celular deitado: a frase e o apoio lado a lado, como no desktop; o fecho na coluna da esquerda */
+@media (max-width: 1023px) and (orientation: landscape) and (max-height: 520px) {
+  .cena { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; bottom: calc(18px + env(safe-area-inset-bottom)); }
+  .cena__frase { font-size: 34px; max-width: 55%; }
+  .cena__apoio { max-width: 300px; font-size: 15px; gap: 12px; }
+  .clube__texto { top: auto; right: auto; bottom: calc(122px + env(safe-area-inset-bottom)); width: 200px; font-size: 15px; }
+  .pilula.clube__botao { bottom: calc(66px + env(safe-area-inset-bottom)); }
+  .clube__titulo { font-size: 38px; bottom: 12px; }
+}
+
+/* ---- celular: o recorte em pé não tem os lados escuros (a prensa e a taça enchem a largura): esquerda e direita
+   voltam para o pé; o céu e a faixa escura de cima continuam no topo, centradas. Por último no arquivo: vale também
+   para o celular deitado */
+@media (max-width: 1023px), (max-aspect-ratio: 4/5) {
+  .cena--esquerda, .cena--direita {
+    top: auto; translate: none; width: auto; display: grid; justify-items: start; gap: 12px;
+    left: calc(16px + env(safe-area-inset-left)); right: calc(16px + env(safe-area-inset-right));
+    bottom: calc(26px + env(safe-area-inset-bottom));
+  }
+  .cena--ceu {
+    top: calc(84px + env(safe-area-inset-top)); bottom: auto; translate: none; width: auto; display: grid; gap: 12px;
+    justify-items: center;
+    left: calc(16px + env(safe-area-inset-left)); right: calc(16px + env(safe-area-inset-right));
+  }
+  .cena--esquerda .cena__frase, .cena--direita .cena__frase,
+  .cena--ceu .cena__frase { font-size: calc(42 * var(--su)); }
+  .cena--legenda {
+    left: calc(16px + env(safe-area-inset-left)); right: calc(16px + env(safe-area-inset-right)); translate: none;
+    width: auto; bottom: calc(26px + env(safe-area-inset-bottom)); justify-items: center; text-align: center;
+  }
+  .cena--legenda .cena__apoio { max-width: 340px; justify-items: center; }
+  .cena--ceu .cena__apoio { max-width: 330px; }
+}

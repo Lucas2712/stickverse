@@ -1,0 +1,7 @@
+Image 1 is a still from inside a classical oil painting of a vineyard at harvest. Image 2 is only a style reference from the same painting: match its brushwork and palette, not its content.
+
+Create a close-up from the same painted world as one full-bleed 16:9 image, 1920x1080. Two hands of a harvester, seen very close, cut a heavy bunch of dark purple grapes from the vine with small old iron pruning shears. Period clothing: loose white linen sleeves gathered into a cuff at each wrist. The bunch hangs in the center of the frame, with a dusty bloom on the grapes; vine leaves, a few turning gold, surround it; behind, a soft blur of vine rows and blue sky (macro lens, very shallow depth of field). Warm afternoon light from the left.
+
+Style: the same 19th-century academic oil painting as the reference, come alive and filmed with a cinema camera: real lens depth of field, visible brush strokes and canvas texture, the subject crisp and the background soft, the same warm palette. It must read as a painting come alive, not as a photo and not as a 3D render.
+Compose for 16:9 and keep the main subject inside the middle third of the width: phones show only a vertical strip from the center.
+No text, no letters, no logos, no signature, no frame, no border.

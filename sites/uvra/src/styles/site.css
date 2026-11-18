@@ -1,0 +1,10 @@
+/* Folha única do site, ligada no <head> do index.html, que segura a primeira pintura até ela chegar. Importada pelo
+   JS, no dev do Vite ela só entrava depois dos módulos: ao recarregar, a página aparecia crua por um instante. */
+@import './fontes.css';
+@import './tokens.css';
+@import './base.css';
+@import '../sections/nav.css';
+@import '../sections/hero.css';
+@import '../sections/cena.css';
+@import '../sections/loja.css';
+@import '../sections/menu.css';

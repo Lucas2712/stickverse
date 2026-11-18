@@ -1,0 +1,44 @@
+:root {
+  /* cor: a galeria é marrom quase preto; o quadro e o filme trazem a cor; o lilás-rosé é da marca */
+  --fundo: #0c0705;
+  --parede: #150e0a;
+  --branco: #f0efee;
+  --texto: rgba(240, 236, 236, 0.88);
+  --apoio: rgba(240, 239, 238, 0.62);
+  --fraco: rgba(240, 239, 238, 0.34);
+  --linha: rgba(255, 255, 255, 0.09);
+  --acento: #e2d0dc;
+  --acento-tinta: #1b1013;
+  --vinho: rgba(143, 60, 57, 0.62);
+  --vinho-borda: rgba(222, 120, 112, 0.5);
+  --vinho-claro: #f4d2cd;
+
+  /* tipo: Instrument Serif (títulos, com itálico), Inter Tight (texto e interface), Geist Mono (legendas) */
+  --serifa: "Instrument Serif", Georgia, serif;
+  --sans: "Inter Tight Variable", "Inter Tight", system-ui, sans-serif;
+  --mono: "Geist Mono Variable", "Geist Mono", ui-monospace, monospace;
+
+  /* escala de cena (hero, filme, rodapé): 1 px de design numa tela de 1456 × 840 */
+  --u: min(100vw / 1456, 100svh / 840);
+  /* palco do hero: a foto da galeria (1672 × 941) cobre a tela; 1 px da foto vale --pu */
+  --pu: max(100vw / 1672, 100svh / 941);
+  /* escala de site (seções comuns): 1 px de verdade a partir de 1280, só encolhe abaixo (docs/escala.md) */
+  --su: min(1px, 100vw / 1280);
+
+  --s-corpo: calc(18 * var(--su));
+  --s-pequeno: calc(14 * var(--su));
+
+  /* movimento das interações */
+  --curva: cubic-bezier(0.23, 1, 0.32, 1);
+  --rapido: 180ms;
+  --medio: 320ms;
+}
+
+@media (max-width: 1023px), (max-aspect-ratio: 4/5) {
+  :root {
+    --u: min(100vw / 390, 100svh / 844);
+    --su: min(1px, 100vw / 390);
+    --s-corpo: calc(16 * var(--su));
+    --s-pequeno: calc(13 * var(--su));
+  }
+}

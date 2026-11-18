@@ -1,0 +1,101 @@
+/* nav fixa por cima do filme: índice das salas à esquerda, marca no centro, ações à direita */
+.nav {
+  position: fixed; inset: 0 0 auto; z-index: 50; pointer-events: none;
+  height: calc(150 * var(--u));
+}
+.nav > * { pointer-events: auto; }
+
+/* índice: nome da sala e o número romano alinhado à direita, com fio fino entre as linhas */
+.indice {
+  position: absolute; left: calc(24 * var(--u)); top: calc(21 * var(--u));
+  width: calc(160 * var(--u));
+  display: grid;
+}
+.indice__item {
+  display: flex; align-items: baseline; justify-content: space-between;
+  height: calc(23.6 * var(--u));
+  font: 600 calc(15.5 * var(--u)) / 1 var(--sans); letter-spacing: -0.014em;
+  color: rgba(240, 239, 238, 0.86);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: color var(--rapido) var(--curva);
+}
+.indice__item:last-child { border-bottom: 0; }
+.indice__item i {
+  font: 400 calc(13 * var(--u)) / 1 var(--serifa); font-style: normal; letter-spacing: 0.02em;
+  color: var(--fraco);
+}
+.indice__item.is-atual { color: var(--branco); }
+.indice__item.is-atual i { color: var(--branco); }
+@media (hover: hover) {
+  html:not(.is-scrolling) .indice__item:hover { color: var(--branco); }
+}
+
+/* marca: cacho de seis bagos e o nome */
+.marca {
+  position: absolute; left: 50%; top: calc(22 * var(--u)); translate: -50% 0;
+  display: flex; align-items: center; gap: calc(8 * var(--u));
+  color: var(--branco);
+}
+.marca__icone { width: calc(22 * var(--u)); height: calc(22 * var(--u)); fill: currentColor; }
+.marca__haste { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
+.marca__nome { font: 600 calc(21 * var(--u)) / 1 var(--sans); letter-spacing: -0.02em; }
+
+/* ações: loja, visita (contorno) e clube (cheio no lilás-rosé) */
+.acoes {
+  position: absolute; right: calc(27 * var(--u)); top: calc(21 * var(--u));
+  display: flex; align-items: center; gap: calc(10 * var(--u));
+}
+.acoes__loja {
+  display: flex; align-items: center; gap: calc(6 * var(--u)); margin-right: calc(10 * var(--u));
+  font: 500 calc(13 * var(--u)) / 1 var(--sans); color: var(--apoio);
+  transition: color var(--rapido) var(--curva);
+}
+.acoes__loja svg { width: calc(14 * var(--u)); height: calc(14 * var(--u)); fill: none; stroke: currentColor; stroke-width: 1.3; stroke-linejoin: round; }
+.pilula {
+  display: inline-flex; align-items: center; height: calc(25 * var(--u)); padding: 0 calc(12 * var(--u));
+  border-radius: 999px; font: 500 calc(12.5 * var(--u)) / 1 var(--sans); letter-spacing: -0.005em; white-space: nowrap;
+  transition: background-color var(--rapido) var(--curva), color var(--rapido) var(--curva), border-color var(--rapido) var(--curva), scale var(--rapido) var(--curva);
+}
+.pilula--linha { border: 1px solid rgba(240, 239, 238, 0.42); color: var(--branco); }
+.pilula--cheia { background: var(--acento); color: var(--acento-tinta); }
+/* o hover descansa enquanto a página rola com o cursor parado (motion/rolando.js) */
+@media (hover: hover) {
+  html:not(.is-scrolling) .acoes__loja:hover { color: var(--branco); }
+  html:not(.is-scrolling) .pilula--linha:hover { border-color: var(--branco); background: rgba(240, 239, 238, 0.08); }
+  html:not(.is-scrolling) .pilula--cheia:hover { background: #f1e3ec; }
+}
+.pilula:active { scale: 0.97; }
+
+/* botão do menu: só no celular */
+.nav__menu { display: none; }
+
+/* ---- celular: a marca à esquerda e, à direita, a loja e o menu (o índice e as pílulas vão para dentro do menu).
+   Tamanhos em px: a barra é interface, não cena, e cada alvo tem 44 px de toque */
+@media (max-width: 1023px), (max-aspect-ratio: 4/5) {
+  .nav { height: calc(64px + env(safe-area-inset-top)); }
+  .indice, .acoes .pilula { display: none; }
+  .marca {
+    left: calc(10px + env(safe-area-inset-left)); top: calc(10px + env(safe-area-inset-top)); translate: none;
+    height: 44px; padding: 0 6px; gap: 8px;
+  }
+  .marca__icone { width: 22px; height: 22px; }
+  .marca__nome { font-size: 21px; }
+  .acoes { right: calc(6px + env(safe-area-inset-right)); top: calc(10px + env(safe-area-inset-top)); gap: 0; }
+  .acoes__loja { height: 44px; padding: 0 10px; margin: 0; gap: 7px; font-size: 15px; color: var(--texto); }
+  .acoes__loja svg { width: 16px; height: 16px; stroke-width: 1.4; }
+  .nav__menu {
+    display: inline-flex; align-items: center; gap: 10px; height: 44px; padding: 0 10px;
+    font: 600 15px / 1 var(--sans); letter-spacing: -0.01em; color: var(--branco);
+  }
+  /* dois fios que viram um × ao abrir */
+  .nav__menu-icone { position: relative; width: 18px; height: 10px; }
+  .nav__menu-icone i {
+    position: absolute; left: 0; right: 0; height: 1.5px; border-radius: 1px; background: currentColor;
+    transition: translate var(--medio) var(--curva), rotate var(--medio) var(--curva);
+  }
+  .nav__menu-icone i:first-child { top: 0; }
+  .nav__menu-icone i:last-child { bottom: 0; }
+  .nav__menu[aria-expanded="true"] .nav__menu-icone i:first-child { translate: 0 4.25px; rotate: 45deg; }
+  .nav__menu[aria-expanded="true"] .nav__menu-icone i:last-child { translate: 0 -4.25px; rotate: -45deg; }
+  .nav__menu:active, .acoes__loja:active { opacity: 0.7; }
+}

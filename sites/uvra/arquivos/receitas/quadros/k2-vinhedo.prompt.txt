@@ -1,0 +1,7 @@
+Image 1 is a still from inside a classical oil painting: a young woman in white Greek drapery lifts a bunch of dark grapes against a blue sky, with a vineyard on rolling hills behind her.
+
+Create the next shot of the same painted world as one full-bleed 16:9 image, 1920x1080. The camera has risen past the woman's raised arm and now flies high above the vineyard behind her, looking forward and down. Long curving rows of grapevines follow the rolling hills toward the horizon and converge toward the center of the frame. Between the rows, a few small harvesters in white linen shirts and straw hats carry woven wicker baskets; a pale dirt path climbs between the vines. The same villa with cypress trees sits on a far hill, the same cerulean sky with soft cumulus clouds fills the top third, and warm afternoon light rakes from the left with long soft shadows.
+
+Style: the same 19th-century academic oil painting as the reference, come alive and filmed with a cinema camera: real lens depth of field, visible brush strokes and canvas texture, the subject crisp and the background soft, the same warm palette. It must read as a painting come alive, not as a photo and not as a 3D render.
+Compose for 16:9 and keep the main subject inside the middle third of the width: phones show only a vertical strip from the center.
+No text, no letters, no logos, no signature, no frame, no border.

@@ -1,0 +1,42 @@
+/* menu do celular: abre por baixo da barra da nav (que continua com a marca, a loja e o "Fechar"), sobre o filme
+   esmaecido. O índice das salas fica grande, em serifa, com o número romano à direita, como o da nav do desktop */
+.menu { display: none; }
+
+@media (max-width: 1023px), (max-aspect-ratio: 4/5) {
+  .menu {
+    display: block; position: fixed; inset: 0; z-index: 45; overflow-y: auto; overscroll-behavior: contain;
+    background: rgb(12 7 5 / 0.9); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  }
+  .menu[hidden] { display: none; }
+  .menu__corpo {
+    min-height: 100%; display: flex; flex-direction: column;
+    padding: calc(84px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left));
+  }
+  .menu__lista { border-top: 1px solid var(--linha); }
+  .menu__item {
+    display: flex; align-items: baseline; justify-content: space-between; min-height: 56px; padding: 12px 2px 0;
+    border-bottom: 1px solid var(--linha);
+    font: 400 calc(34 * var(--su)) / 1.05 var(--serifa); letter-spacing: -0.01em; color: rgba(240, 239, 238, 0.6);
+    transition: color var(--rapido) var(--curva);
+  }
+  .menu__item i { font: 400 16px / 1 var(--serifa); font-style: normal; letter-spacing: 0.02em; color: var(--fraco); }
+  .menu__item.is-atual { color: var(--branco); }
+  .menu__item.is-atual i { color: var(--acento); }
+  .menu__item:active { color: var(--branco); }
+
+  .menu__acoes { display: flex; gap: 10px; margin-top: auto; padding-top: 32px; }
+  .menu__acoes .pilula { flex: 1; justify-content: center; height: 48px; font-size: 15px; font-weight: 600; }
+  .menu__contato {
+    align-self: center; display: inline-flex; align-items: center; min-height: 44px; margin-top: 10px;
+    font-size: 14px; color: var(--apoio);
+  }
+}
+
+/* celular deitado: o índice em duas colunas, para caber na altura */
+@media (max-width: 1023px) and (orientation: landscape) and (max-height: 520px) {
+  .menu__corpo { padding-top: calc(64px + env(safe-area-inset-top)); }
+  .menu__lista { columns: 2; column-gap: 32px; border-top: 0; }
+  .menu__lista li { break-inside: avoid; }
+  .menu__item { min-height: 48px; font-size: 28px; }
+  .menu__acoes { padding-top: 16px; }
+}

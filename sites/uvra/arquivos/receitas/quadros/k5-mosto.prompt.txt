@@ -1,0 +1,7 @@
+Image 1 is a close-up from inside a classical oil painting: a wicker basket full of dark purple grapes in a vineyard. Image 2 is only a style reference from the same painting: match its brushwork and palette, not its content.
+
+Create the next shot of the same painted world as one full-bleed 16:9 image, 1920x1080: a macro close-up of fresh grape must running out of an old oak basket press. A thick, glossy stream of dark purple-red juice pours between the wooden slats, past crushed grape skins, down the middle of the frame into a dark pool below; droplets and wet surfaces catch a warm low light. Around it, the press house falls into deep warm shadow (#120a08). Macro lens, very shallow depth of field.
+
+Style: the same 19th-century academic oil painting as the reference, come alive and filmed with a cinema camera: real lens depth of field, visible brush strokes and canvas texture, the subject crisp and the background soft, the same warm palette. It must read as a painting come alive, not as a photo and not as a 3D render.
+Compose for 16:9 and keep the main subject inside the middle third of the width: phones show only a vertical strip from the center.
+No text, no letters, no logos, no signature, no frame, no border.

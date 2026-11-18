@@ -1,0 +1,7 @@
+Image 1 is a still from inside a classical oil painting: a cellar master draws wine from a barrel with a glass wine thief in a candlelit cellar. Image 2 is only a style reference from the same painting: match its brushwork and palette, not its content.
+
+Create the next shot as one full-bleed 16:9 image, 1920x1080: a close-up of the tip of the same glass wine thief releasing a thin stream of ruby red wine into a crystal wine glass. The glass stands in the center of the frame, half full, the wine glowing ruby where the candlelight passes through it, tiny reflections of the candle on the crystal. The background is near-black warm darkness (#0c0705) with a few soft out-of-focus amber lights. Macro lens, very shallow depth of field.
+
+Style: the same 19th-century academic oil painting as the reference, come alive and filmed with a cinema camera: real lens depth of field, visible brush strokes and canvas texture, the subject crisp and the background soft, the same warm palette. It must read as a painting come alive, not as a photo and not as a 3D render.
+Compose for 16:9 and keep the main subject inside the middle third of the width: phones show only a vertical strip from the center.
+No text, no letters, no logos, no signature, no frame, no border.
