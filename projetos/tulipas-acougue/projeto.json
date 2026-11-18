@@ -1,22 +1,18 @@
 {
   "titulo": "Tulipas · Ofertas do Açougue",
-  "descricao": "",
-  "tema": "",
-  "duracao": 30,
-  "fps": 30,
-  "fontes": ["geist", "geist-mono"],
-  "poster": null,
-  "legendas": {
-    "ativo": true,
-    "y": 1430,
-    "tamanho": 64,
-    "peso": 600,
-    "destaques": [],
-    "ocultar": []
-  },
+  "descricao": "Comercial de 15 s para Tulipas Supermercados: frango, suíno e bovinos com preços, encerramento com endereço e WhatsApp.",
+  "tema": "Ofertas do açougue de supermercado",
+  "duracao": 15,
+  "fps": 60,
+  "fontes": [],
+  "fontesProjeto": [
+    { "familia": "Inter", "arquivo": "fontes/inter.woff2", "descritores": "font-weight:100 900;font-display:block" }
+  ],
+  "poster": 13.6,
+  "legendas": { "ativo": false, "y": 1430, "tamanho": 64, "peso": 600, "destaques": [], "ocultar": [] },
   "audio": {
-    "volumes": { "narracao": 1.0, "musica": 0.3, "efeitos": 0.5 },
-    "musica": null,
-    "ducking": { "ativo": true, "reducao": 0.4 }
+    "volumes": { "narracao": 1.0, "musica": 0.85, "efeitos": 0.55 },
+    "musica": { "arquivo": "musica.mp3", "inicio": 0, "corte": 0, "fadeIn": 0.01, "fadeOut": 0.3 },
+    "ducking": { "ativo": false, "reducao": 1 }
   }
 }

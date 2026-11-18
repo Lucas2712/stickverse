@@ -110,10 +110,8 @@ Fundo vermelho Tulipas com feixes de luz e brasas leves. Logo grande no centro-a
 
 ## Pontos de atenção
 
-- TRILHA: o CLAUDE.md do estúdio proíbe música de fundo e eu não posso gerar nem sintetizar trilha. Você pediu trilha energética: se quiser, envie um MP3 com licença de uso comercial e eu sincronizo os cortes às batidas. Sem arquivo, o comercial sai só com sound design (efeitos reais).
-- Implementação: o repositório já tem o motor do estúdio (HTML/CSS/JS → MP4 H.264), então uso ele em vez de React + Remotion, como o próprio briefing prevê. Exporto em 60 fps.
-- Imagens: recorto os produtos e a logo das próprias imagens enviadas (resolução ~450 px por produto; vai ficar um pouco macia em tela cheia). Alternativa: você envia fotos maiores dos produtos ou da logo em PNG/vetor.
-- Validade copiada como está no encarte: 'ou até o durarem os estoques' (tem um 'o' sobrando no original). Posso corrigir para 'ou enquanto durarem os estoques', como no seu briefing, se você autorizar.
+- Aprovado com: trilha original composta em código (trilha.py, 120 BPM; ElevenLabs Music exige plano pago e o OpenArt não gera música), validade 'ou enquanto durarem os estoques', imagens recortadas dos encartes.
+- Ajuste na produção: os cortes caem nas batidas (produtos em 3, 4, 5, 6 s e 7,5, 8,5, 9,5, 10,5 s); o mosaico dos 4 bovinos foi trocado por recuo + íris para dar ao Rabo Bovino o mesmo tempo de leitura dos outros.
 - Nomes como no encarte: 'Peito s/ Osso', 'Coxa c/ Sobrecoxa', 'Pernil c/ Osso', 'Linguiça Perdigão'. 'Perdigão' é marca de terceiro: aparece só como texto, sem logo.
 - Zona segura: tudo entre y=220 e y=1580 e fora do canto inferior direito. Legibilidade: cada preço parado ≥0,7 s; cartela final parada 1,6 s.
 - Sem assinatura Studio Matteu na tela (comercial do cliente), a menos que você queira.

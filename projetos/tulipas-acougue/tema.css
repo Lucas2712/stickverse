@@ -1,15 +1,69 @@
-/* Tema do vídeo: identidade própria de cada projeto (cores e fontes do palco).
-   Defina a paleta a partir do assunto do vídeo; não reutilize a do projeto anterior. */
+/* Tulipas · Ofertas do Açougue — "Vitrine em brasa"
+   carvão-sangue #140405 · vermelho Tulipas #B3121B · amarelo Tulipas #F5B82E · branco · brasa #FF7A1A (só luz)
+   Inter 4 (tamanho óptico automático) no lugar da SF Pro. */
 :root{
-  --v-bg:#FFFFFF;      /* fundo */
-  --v-ink:#100D0A;     /* texto principal */
-  --v-ink2:#5F5852;    /* texto secundário */
-  --v-mute:#A8A098;    /* rótulos apagados */
-  --v-line:#EEEAE6;    /* linhas, trilhos, wireframes */
-  --v-soft:#F4F1EE;    /* superfícies suaves */
-  --v-ac:#FF5A1F;      /* cor de destaque (1 por vídeo) */
-  --v-ac2:#FF8A3D;     /* variação do destaque */
-  --v-sans:"Geist", "Helvetica Neue", Arial, sans-serif;
-  --v-display:"Geist", "Helvetica Neue", Arial, sans-serif;
-  --v-mono:"Geist Mono", Menlo, monospace;
+  --v-bg:#140405; --v-ink:#FFFFFF; --v-ink2:#F3D9D2; --v-mute:#B98A80; --v-line:#5A1518; --v-soft:#2A0709;
+  --v-ac:#F5B82E; --v-ac2:#FFD35A; --v-red:#B3121B; --v-wine:#5A0A0E;
+  --v-sans:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --v-display:"Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
 }
+#stage{font-optical-sizing:auto}
+.fundo-base{left:0;top:0;width:1080px;height:1920px;
+  background:radial-gradient(120% 70% at 50% 38%, #4A0B0E 0%, #2A0608 42%, #140405 78%, #0B0203 100%)}
+.vinheta{left:0;top:0;width:1080px;height:1920px;pointer-events:none;
+  background:radial-gradient(90% 60% at 50% 45%, transparent 55%, rgba(5,0,1,.72) 100%)}
+.cv{left:0;top:0;width:1080px;height:1920px;pointer-events:none}
+.grp{left:0;top:0;width:1080px;height:1920px}
+.prod{display:block;filter:saturate(1.08) contrast(1.04) drop-shadow(0 30px 34px rgba(0,0,0,.55))}
+.brilho-chao{border-radius:50%;background:radial-gradient(closest-side, rgba(255,120,40,.42), rgba(179,18,27,.18) 55%, transparent 100%)}
+.etq{display:flex;align-items:center;justify-content:center}
+.etq .fd{position:absolute;inset:0;
+  background:linear-gradient(180deg,#FFD866 0%,#F7BC34 48%,#EFA51F 100%);
+  clip-path:polygon(4.5% 0,95.5% 0,100% 50%,95.5% 100%,4.5% 100%,0 50%);
+  filter:drop-shadow(0 14px 22px rgba(0,0,0,.45))}
+.etq .fd::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.38),transparent 34%)}
+.preco{position:relative;display:flex;align-items:flex-start;color:#5A0B0E;font-weight:800;line-height:.8;letter-spacing:-.045em;white-space:nowrap}
+.preco .rs{font-weight:700;letter-spacing:-.02em;margin-right:.08em;margin-top:.2em}
+.preco .col{display:flex;flex-direction:column;align-items:flex-start;margin-left:.06em}
+.preco .ct{font-weight:700;letter-spacing:-.02em}
+.preco .kg{font-weight:600;letter-spacing:0;margin-top:.55em}
+.rot{display:flex;align-items:center;justify-content:center;text-align:center;border-radius:16px;
+  background:linear-gradient(180deg,#7A0D13,#4E070B);color:#fff;font-weight:600;line-height:1.05;letter-spacing:-.01em;
+  box-shadow:0 8px 18px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.18)}
+.faixa{left:240px;top:252px;width:600px;height:84px;display:flex;align-items:center;justify-content:center}
+.faixa::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#D4202A,#9E0F17);
+  clip-path:polygon(5% 0,100% 0,95% 100%,0 100%);box-shadow:0 0 0 4px #F5B82E}
+.faixa::after{content:"";position:absolute;inset:-5px;z-index:-1;background:#F5B82E;clip-path:polygon(5% 0,100% 0,95% 100%,0 100%)}
+.faixa span{position:relative;color:#fff;font-weight:800;font-size:46px;letter-spacing:.06em;text-transform:uppercase}
+.t3d{font-weight:900;letter-spacing:-.035em;line-height:.9;white-space:nowrap;text-align:center}
+.t3d .l{display:inline-block}
+.t-branco{color:#fff;text-shadow:0 2px 0 #C8141E,0 4px 0 #B3121B,0 6px 0 #9E0F17,0 8px 0 #880C13,0 10px 0 #730A10,0 22px 30px rgba(0,0,0,.7)}
+.t-amarelo .l{background:linear-gradient(180deg,#FFE27A 0%,#FFC93A 45%,#F0A01E 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sombra3d{filter:drop-shadow(0 2px 0 #C8141E) drop-shadow(0 3px 0 #B3121B) drop-shadow(0 3px 0 #9E0F17) drop-shadow(0 3px 0 #800C12) drop-shadow(0 3px 0 #6A0A0F) drop-shadow(0 18px 22px rgba(0,0,0,.65))}
+.fantasma{white-space:nowrap;font-weight:900;letter-spacing:-.02em;color:transparent;-webkit-text-stroke:3px rgba(245,184,46,.34);text-align:center}
+.painel{background:linear-gradient(90deg,rgba(179,18,27,0) 0%,rgba(179,18,27,.55) 18%,rgba(214,34,42,.62) 50%,rgba(179,18,27,.55) 82%,rgba(179,18,27,0) 100%);
+  box-shadow:0 0 120px rgba(255,60,40,.25)}
+.painel::before,.painel::after{content:"";position:absolute;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#F5B82E 20%,#F5B82E 80%,transparent)}
+.painel::before{top:0}.painel::after{bottom:0}
+.vermelho{left:0;top:0;width:1080px;height:1920px;
+  background:radial-gradient(90% 55% at 50% 30%, #E3262E 0%, #B3121B 48%, #7A0A10 100%)}
+.raios{left:-420px;top:-1000px;width:1920px;height:1920px;border-radius:50%;
+  background:repeating-conic-gradient(from 0deg, rgba(255,255,255,.075) 0deg 6deg, rgba(255,255,255,0) 6deg 18deg);
+  -webkit-mask-image:radial-gradient(closest-side, #000 20%, transparent 100%);mask-image:radial-gradient(closest-side, #000 20%, transparent 100%)}
+.logo{display:block}
+.brilho-logo{-webkit-mask-size:100% 100%;mask-size:100% 100%;
+  background:linear-gradient(105deg,transparent 0%,transparent 40%,rgba(255,255,255,.85) 50%,transparent 60%,transparent 100%);background-size:300% 100%;background-repeat:no-repeat}
+.card{left:110px;width:820px;display:flex;align-items:center;gap:28px;padding:0 34px;border-radius:30px;
+  background:linear-gradient(180deg,rgba(70,4,8,.62),rgba(50,2,5,.55));box-shadow:inset 0 0 0 2px rgba(255,210,90,.38), 0 24px 40px rgba(40,0,4,.35)}
+.card .ic{flex:none;width:104px;height:104px;border-radius:50%;background:linear-gradient(180deg,#FFD866,#EFA51F);display:grid;place-items:center;box-shadow:0 8px 18px rgba(0,0,0,.3)}
+.card .ic svg{width:56px;height:56px}
+.card .tx{color:#fff;font-weight:500;font-size:40px;line-height:1.18;letter-spacing:-.01em}
+.card .tx b{font-weight:700}
+.card .peq{display:block;font-size:30px;font-weight:600;color:#FFD35A;letter-spacing:.02em;text-transform:uppercase;margin-bottom:4px}
+.card .tel{display:block;font-size:68px;font-weight:700;letter-spacing:-.03em;line-height:1}
+.botao{left:110px;width:820px;height:164px;border-radius:82px;display:flex;align-items:center;justify-content:center;text-align:center;
+  background:linear-gradient(180deg,#FFE27A,#F7BC34 50%,#EFA51F);color:#5A0B0E;font-weight:800;font-size:48px;line-height:1.06;letter-spacing:-.01em;
+  box-shadow:0 0 0 6px rgba(255,255,255,.18), 0 24px 46px rgba(40,0,4,.5)}
+.validade{left:140px;width:800px;text-align:center;color:rgba(255,255,255,.92);font-weight:500;font-size:34px;line-height:1.28}
+.validade b{font-weight:700;color:#FFD35A}
+.anel{border-radius:50%;border:10px solid #FFC93A;box-shadow:0 0 60px #FF8A2A, inset 0 0 40px #FF8A2A}
