@@ -11,22 +11,25 @@ const marcaToque = (el) => {
 };
 const sem = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
 
-// filtro em abas + busca: a aba apaga os de fora sem mexer no layout; a busca tira da grade os que não batem
+// filtro em abas + busca: cada aba (Motion, Website) mostra só os seus projetos; a busca procura dentro da aba aberta.
+// A página abre em Motion. No celular, trocar de aba volta o carrossel ao primeiro card.
 function projetos(sec) {
   const grupo = sec.querySelector('.filtro');
   const bts = [...grupo.querySelectorAll('[data-filtro]')];
   const cards = [...sec.querySelectorAll('.projeto')];
   const campo = sec.querySelector('.busca__campo');
   const vazio = sec.querySelector('.projetos__vazio');
-  let filtro = 'todos';
+  let filtro = grupo.querySelector('[aria-pressed="true"]')?.dataset.filtro ?? 'motion';
+  const grade = sec.querySelector('.projetos__grade');
   const aplica = () => {
     const q = sem(campo.value);
     let algum = false;
     for (const c of cards) {
+      const naAba = c.dataset.tipo === filtro;
       const bate = !q || sem(c.dataset.busca + ' ' + c.textContent).includes(q);
-      c.classList.toggle('some', !bate);
-      c.classList.toggle('fora', bate && filtro !== 'todos' && c.dataset.tipo !== filtro);
-      algum ||= bate;
+      c.classList.toggle('fora', !naAba);
+      c.classList.toggle('some', naAba && !bate);
+      algum ||= naAba && bate;
     }
     vazio.hidden = algum;
   };
@@ -34,7 +37,9 @@ function projetos(sec) {
     filtro = b.dataset.filtro;
     bts.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     aplica();
+    grade.scrollLeft = 0;
   }));
+  aplica();
   campo.addEventListener('input', aplica);
   sec.querySelector('.projetos__limpa').addEventListener('click', () => { campo.value = ''; aplica(); campo.focus(); });
   marcaToque(grupo);

@@ -51,7 +51,7 @@ Tudo o que é do celular fica em `src/styles/celular.css`, carregado por último
 - Os testes dos agentes (arraste do comparador, filtro, sanfona) saem quando o componente está pelo menos 3/4 visível,
   e o Tour desacelera até a primeira demonstração acontecer.
 - Celular: o carrossel dos projetos anda sozinho para o lado (26 px/s, `src/motion/carrossel.js`), para ao toque,
-  volta a andar 5 s depois e, no fim, desliza de volta ao primeiro card.
+  volta a andar 5 s depois e para de vez no último card.
 - O cursor que arrasta a alça cresce (1,5×) e mostra a etiqueta "Arraste" na cor dele (`.ag.is-arrasta`, em `enxame.css`).
 - Vídeos dos cards sem autoplay e com `preload="none"`: só baixam quando o card chega perto da tela (a primeira tela
   caiu de ~2,7 MB para ~0,25 MB).
@@ -70,7 +70,7 @@ corrigido e o ffmpeg monta com `fps=60` (cerca de 68 quadros diferentes por segu
 
 ## Website: Capiá
 - O site da Capiá (hamburgueria de Curitiba) fica em `sites/capia/` (a versão publicada, 94 arquivos). No portfólio ele
-  é o projeto 04, na aba "Website": o card roda `public/video/capia.mp4` (o tour do próprio site no celular, 2× mais
+  é o projeto 04 e só aparece na aba "Website" (a página abre em "Motion", com os três vídeos): o card roda `public/video/capia.mp4` (o tour do próprio site no celular, 2× mais
   rápido) e o link abre `/capia/`, a cópia que vai junto com o portfólio. `public/capia` é um atalho (link simbólico)
   para `../../capia`: o build copia os arquivos de verdade para `dist/capia/` e o repositório guarda o site uma vez só.
 

@@ -42,9 +42,11 @@
   .projetos__grade { display: flex; flex-wrap: wrap; }
   .projeto { flex: var(--ar, 1.6) 1 calc(var(--ar, 1.6) * 330 * var(--su)); min-width: 0; }
   .projetos__grade .projeto__img { aspect-ratio: var(--ar, 1.6); }
+  /* uma aba com poucos projetos (o Website tem um só) não estica o card na largura toda */
+  .projeto { max-width: calc((100% - 56 * var(--su)) / 3); }
 }
 .projeto { transition: opacity 0.35s var(--ease), filter 0.35s var(--ease); }
-.projeto.fora { opacity: 0.22; filter: grayscale(1); pointer-events: none; }
+.projeto.fora { display: none; } /* projeto de outra aba */
 .projeto.some { display: none; }
 .projeto__link { position: relative; display: block; }
 .projeto__img {
