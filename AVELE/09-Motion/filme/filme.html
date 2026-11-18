@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>AVELÉ · Filme institucional 30 s</title>
+<style>
+@font-face{font-family:'Cormorant';font-weight:300;src:url(../../fonts/cormorant-garamond-latin-300-normal.woff2)}
+@font-face{font-family:'Cormorant';font-weight:400;src:url(../../fonts/cormorant-garamond-latin-400-normal.woff2)}
+@font-face{font-family:'Cormorant';font-weight:500;src:url(../../fonts/cormorant-garamond-latin-500-normal.woff2)}
+@font-face{font-family:'Cormorant';font-style:italic;font-weight:300;src:url(../../fonts/cormorant-garamond-latin-300-italic.woff2)}
+@font-face{font-family:'Cormorant';font-style:italic;font-weight:400;src:url(../../fonts/cormorant-garamond-latin-400-italic.woff2)}
+@font-face{font-family:'InterA';font-weight:400;src:url(../../fonts/inter-latin-400-normal.woff2)}
+@font-face{font-family:'InterA';font-weight:500;src:url(../../fonts/inter-latin-500-normal.woff2)}
+:root{--iv:#F4EFE5;--ch:#D8C4A0;--br:#49372D;--br2:#2A1E17}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;background:var(--br2)}
+.L{position:absolute;inset:0;opacity:0;will-change:opacity,transform}
+.L img.full{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.txt{position:absolute;color:var(--iv);font-family:Cormorant;text-align:center;left:0;right:0}
+.ey{font-family:InterA;font-weight:500;font-size:17px;letter-spacing:.42em;text-transform:uppercase;color:var(--ch)}
+.it{font-style:italic;font-weight:300}
+#grain{position:absolute;inset:-40px;background:url(grao.png);opacity:.06;mix-blend-mode:overlay;pointer-events:none}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 55%,rgba(10,6,4,.45));pointer-events:none}
+#bars{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 0 #000}
+.bottle{position:absolute;left:50%;top:50%;transform-origin:0 0}
+.sweep{position:absolute;inset:0;background:linear-gradient(105deg,rgba(255,240,210,0) 40%,rgba(255,240,210,.55) 50%,rgba(255,240,210,0) 60%);mix-blend-mode:screen;
+  -webkit-mask-image:url(../../05-Product-Design/renders/frasco-06-sillage-transparente.png);-webkit-mask-size:100% 100%}
+.fname{position:absolute;left:120px;bottom:110px;color:var(--iv);font-family:Cormorant;text-align:left}
+.fname .n{font-family:InterA;font-weight:500;font-size:16px;letter-spacing:.4em;color:var(--ch)}
+.fname .nm{font-size:120px;font-weight:400;letter-spacing:.12em;line-height:1}
+.fname .fam{font-size:30px;font-style:italic;font-weight:300;color:var(--ch)}
+</style></head><body>
+<div id="stage">
+  <!-- S1 seda -->
+  <div class="L" id="s1"><img class="full" src="../../06-Art-Direction/fotografia/22-sensorial-seda-movimento.png"></div>
+  <!-- S2 silhueta -->
+  <div class="L" id="s2"><img class="full" src="../../06-Art-Direction/fotografia/21-romantica-silhueta-janela.png" style="object-position:50% 35%"></div>
+  <!-- S3 gota -->
+  <div class="L" id="s3"><img class="full" src="../../06-Art-Direction/fotografia/23-romantica-petala-orvalho.png" style="object-position:50% 62%"></div>
+  <!-- S4 frasco: detalhes -->
+  <div class="L" id="s4" style="background:radial-gradient(ellipse at 45% 40%,#5b4335 0%,#2f221a 55%,#1a120d 100%)">
+    <div class="bottle" id="bt"><img src="../../05-Product-Design/renders/frasco-06-sillage-transparente.png" width="1200" height="2190" style="display:block"><div class="sweep" id="sw"></div></div>
+  </div>
+  <!-- S5 identidade -->
+  <div class="L" id="s5" style="background:var(--br)">
+    <svg id="logo" viewBox="0 -300 3976 1340" style="position:absolute;left:50%;top:50%;width:1180px;transform:translate(-50%,-55%);overflow:visible" fill="#D8C4A0"></svg>
+    <div class="txt ey" id="s5e" style="top:820px;font-size:20px">Maison de parfum</div>
+  </div>
+  <!-- S6 coleção -->
+  <div class="L" id="s6"></div>
+  <!-- S7 assinatura -->
+  <div class="L" id="s7"><img class="full" id="s7i" src="../../07-Campaign/key-visuals/kv-08-colecao-wide.png">
+    <div id="s7s" style="position:absolute;inset:0;background:#2A1E17;opacity:0"></div>
+    <svg id="logo2" viewBox="0 -300 3976 1340" style="position:absolute;left:50%;top:36%;width:900px;transform:translate(-50%,-50%);overflow:visible" fill="#D8C4A0"></svg>
+    <div class="txt it" id="s7t" style="top:600px;font-size:66px">L’élégance est une essence.</div>
+    <div class="txt ey" id="s7c" style="top:960px;font-size:15px;letter-spacing:.38em;opacity:.8">Projet conceptuel · Created by Studio Matteu</div>
+  </div>
+  <!-- textos de atmosfera -->
+  <div class="txt ey" id="t1" style="top:900px;opacity:0;font-size:22px">AVELÉ · Maison de parfum</div>
+  <div class="txt it" id="t2" style="top:800px;font-size:76px;opacity:0">O que fica quando você sai.</div>
+  <div id="vig"></div><div id="grain"></div>
+  <div id="fade" style="position:absolute;inset:0;background:#000;pointer-events:none"></div>
+</div>
+<script>
+const POS={"kv-01-rosee": 0.461, "kv-02-eclat": 0.608, "kv-03-ombre": 0.495, "kv-04-heritage": 0.616, "kv-05-aube": 0.711, "kv-06-sillage": 0.573};
+const FR=[["01","ROSÉE","Florale","kv-01-rosee"],["02","ÉCLAT","Florale orientale","kv-02-eclat"],["03","OMBRE","Boisée aromatique","kv-03-ombre"],["04","HÉRITAGE","Boisée épicée","kv-04-heritage"],["05","AUBE","Hespéridée boisée","kv-05-aube"],["06","SILLAGE","Ambrée boisée","kv-06-sillage"]];
+const s6=document.getElementById('s6');
+FR.forEach((f,i)=>{s6.insertAdjacentHTML('beforeend',`<div class="L" id="f${i}"><img class="full" src="../../07-Campaign/key-visuals/${f[3]}.png" style="object-position:50% ${(POS[f[3]]*100).toFixed(1)}%"><div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(20,12,7,.75),rgba(20,12,7,0) 45%)"></div><div class="fname"><div class="n">N° ${f[0]}</div><div class="nm">${f[1]}</div><div class="fam">${f[2]}</div></div></div>`)});
+let LP=null;
+async function boot(){
+  LP=await (await fetch('logo-partes.json')).json();
+  const mk=(id)=>{const s=document.getElementById(id);LP.letters.forEach((d,i)=>s.insertAdjacentHTML('beforeend',`<path class="lt" d="${d}"/>`));s.insertAdjacentHTML('beforeend',`<path class="ac" d="${LP.accent}"/>`);};
+  mk('logo');mk('logo2');
+  await Promise.all([...document.images].map(im=>im.decode().catch(()=>{})));
+  await document.fonts.ready;
+  window.READY=true;
+}
+boot();
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const io=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;       // ease in-out
+const eo=x=>1-Math.pow(1-x,3);                          // ease out
+const seg=(t,a,b)=>cl((t-a)/(b-a));
+function win(t,a,b,fi=.6,fo=.6){return Math.min(io(seg(t,a,a+fi)),1-io(seg(t,b-fo,b)))}
+function seek(t){
+  // S1 seda 0–4.4
+  $('s1').style.opacity=win(t,0,4.6,1.2,.9);
+  $('s1').style.transform=`scale(${1.12-0.08*seg(t,0,4.6)}) translateX(${-30*seg(t,0,4.6)}px)`;
+  $('t1').style.opacity=win(t,1.6,4.2,.8,.6); $('t1').style.transform=`translateY(${8*(1-eo(seg(t,1.6,2.6)))}px)`;
+  // S2 silhueta 3.7–8
+  $('s2').style.opacity=win(t,3.7,8.1,.9,.8);
+  $('s2').querySelector('img').style.transform=`scale(${1.06+0.06*seg(t,3.7,8.1)}) translateY(${20-40*seg(t,3.7,8.1)}px)`;
+  $('t2').style.opacity=win(t,4.6,7.6,.9,.7); $('t2').style.transform=`translateY(${10*(1-eo(seg(t,4.6,5.6)))}px)`;
+  // S3 gota 7.3–10.4 (empurra até a gota)
+  $('s3').style.opacity=win(t,7.3,10.4,.8,.5);
+  $('s3').querySelector('img').style.transformOrigin='47% 70%';
+  $('s3').querySelector('img').style.transform=`scale(${1+0.55*io(seg(t,7.3,10.4))})`;
+  // S4 frasco 10–15.6: tampa → etiqueta → frasco inteiro
+  const s4=win(t,10.0,15.7,.5,.6); $('s4').style.opacity=s4;
+  const bt=$('bt'); let k,cx,cy;
+  if(t<12.1){const p=io(seg(t,10,12.1)); k=1.5+0.18*p; cx=540+10*p; cy=342+18*p;}          // monograma da tampa
+  else if(t<14.0){const p=io(seg(t,12.1,14.0)); k=1.25+0.06*p; cx=520+40*p; cy=1302-20*p;}  // etiqueta
+  else {const p=io(seg(t,14.0,15.7)); k=0.95-0.5*p; cx=560; cy=1160-60*p;}               // recua para o frasco
+  bt.style.transform=`scale(${k}) translate(${-cx}px,${-cy}px)`;
+  const swp=((t-10)%1.9)/1.9; $('sw').style.backgroundPosition=`${-1200+2600*swp}px 0`; $('sw').style.backgroundSize='300% 100%';
+  // S5 identidade 15.4–19.4
+  $('s5').style.opacity=win(t,15.4,19.6,.5,.6);
+  document.querySelectorAll('#logo .lt').forEach((el,i)=>{const p=eo(seg(t,15.8+i*.16,16.8+i*.16)); el.style.opacity=p; el.style.transform=`translateY(${40*(1-p)}px)`});
+  const ac=document.querySelector('#logo .ac'); const pa=seg(t,17.1,17.9);
+  ac.style.opacity=cl(pa*3); ac.style.transform=`translate(${180*(1-eo(pa))}px,${-420*(1-eo(pa))}px)`;
+  $('s5e').style.opacity=win(t,17.8,19.4,.6,.5);
+  // S6 seis fragrâncias 19.2–26.1
+  $('s6').style.opacity=win(t,19.2,26.2,.4,.5);
+  FR.forEach((f,i)=>{const a=19.2+i*1.12, b=a+1.42; const el=$('f'+i); el.style.opacity=i===0?cl(seg(t,a,a+.01))*(1-io(seg(t,b-.3,b))):win(t,a,b,.3,.3);
+    el.querySelector('img').style.transform=`scale(${1.08-0.06*seg(t,a,b)})`;
+    el.querySelector('.fname').style.transform=`translateX(${-24*(1-eo(seg(t,a+.1,a+.7)))}px)`; el.querySelector('.fname').style.opacity=eo(seg(t,a+.1,a+.6));});
+  // S7 assinatura 25.8–30
+  $('s7').style.opacity=io(seg(t,25.8,26.5));
+  $('s7i').style.transform=`scale(${1.04+0.05*seg(t,25.8,30)})`;
+  $('s7s').style.opacity=0.86*io(seg(t,26.4,27.4));
+  document.querySelectorAll('#logo2 .lt').forEach(el=>{el.style.opacity=io(seg(t,26.8,27.8))});
+  const a2=document.querySelector('#logo2 .ac'); const p2=seg(t,27.4,28.1); a2.style.opacity=cl(p2*3); a2.style.transform=`translate(${150*(1-eo(p2))}px,${-360*(1-eo(p2))}px)`;
+  $('s7t').style.opacity=io(seg(t,27.9,28.8)); $('s7t').style.transform=`translateY(${10*(1-eo(seg(t,27.9,28.9)))}px)`;
+  $('s7c').style.opacity=0.8*io(seg(t,28.5,29.2));
+  // abertura e fecho
+  $('fade').style.opacity=Math.max(1-io(seg(t,0,1.0)), io(seg(t,29.45,30)));
+  $('grain').style.transform=`translate(${(Math.sin(t*91.7)*20)|0}px,${(Math.cos(t*53.3)*20)|0}px)`;
+}
+window.seek=seek;
+</script></body></html>
