@@ -106,6 +106,33 @@ export function capitulo(base, { simultaneos = 6, janela: JANELA = 14, sobra: SO
       if (Math.abs(i - pedido) <= JANELA) agenda();
     }, () => {});
 
+  const deBase64 = (txt) => {
+    const bin = atob(txt);
+    const u8 = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i);
+    return u8.buffer;
+  };
+
+  // build empacotado (scripts/pacotes.mjs): o pacote "a" (começo + um a cada 8) desce já; o "b" (o resto) depois do
+  // primeiro gesto, ou já, se o quadro pedido (página aberta por âncora) só estiver nele
+  const baixaPacote = (p) => (vivo ? fetch(`${base}/${p.arq}`) : Promise.resolve(null))
+    .then((r) => (!r?.ok ? null : p.arq.endsWith('.json') ? r.json().then(deBase64) : r.arrayBuffer()))
+    .then((buf) => {
+      if (!buf || !vivo) return;
+      for (const [i, off, len] of p.quadros) blobs[i] = new Blob([new Uint8Array(buf, off, len)], { type: 'image/webp' });
+      agenda();
+    }, () => {});
+
+  async function carregaPacotes(m) {
+    const [a, b] = m.pacotes;
+    const noB = b.quadros.some(([i]) => i === pedido);
+    const pa = baixaPacote(a);
+    const pb = noB ? baixaPacote(b) : pa.then(quandoLivre).then(() => baixaPacote(b));
+    await (noB ? Promise.all([pa, pb]) : pa);
+    if (vivo && blobs[pedido] && !bitmaps.has(pedido)) bitmaps.set(pedido, await createImageBitmap(blobs[pedido]));
+    return c;
+  }
+
   /** baixa o manifest e o primeiro quadro (a promessa resolve com ele pronto); o resto segue por trás */
   c.carrega = () => {
     if (c.pronto) return c.pronto;
@@ -115,6 +142,7 @@ export function capitulo(base, { simultaneos = 6, janela: JANELA = 14, sobra: SO
       c.altura = m.height;
       c.cum = m.cum || null;
       blobs = new Array(m.count);
+      if (m.pacotes) return carregaPacotes(m);
       const url = (i) => `${base}/${String(i + 1).padStart(4, '0')}.${m.ext}`;
       await baixa(url(pedido), pedido);
       if (vivo && blobs[pedido] && !bitmaps.has(pedido)) bitmaps.set(pedido, await createImageBitmap(blobs[pedido]));
