@@ -68,3 +68,9 @@ Para 60 fps de verdade, grave em câmera lenta com `K=0.5`: `ferramentas/camera-
 temporizadores, vídeos) andar na metade da velocidade só durante a gravação; a lista de quadros já sai com o tempo
 corrigido e o ffmpeg monta com `fps=60` (cerca de 68 quadros diferentes por segundo de vídeo).
 
+## Website: Capiá
+- O site da Capiá (hamburgueria de Curitiba) fica em `sites/capia/` (a versão publicada, 94 arquivos). No portfólio ele
+  é o projeto 04, na aba "Website": o card roda `public/video/capia.mp4` (o tour do próprio site no celular, 2× mais
+  rápido) e o link abre `/capia/`, a cópia que vai junto com o portfólio. `public/capia` é um atalho (link simbólico)
+  para `../../capia`: o build copia os arquivos de verdade para `dist/capia/` e o repositório guarda o site uma vez só.
+

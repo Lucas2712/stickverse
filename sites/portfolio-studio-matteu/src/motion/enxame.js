@@ -759,7 +759,8 @@ export function enxame(barra) {
     const v = velocidade(), R = raio();
     const A = areaLivre();
     // começa (ou recomeça, se a tela pulou para longe) num ponto qualquer da área livre
-    const longe = cobra.ponta && (cobra.ponta[1] < scrollY - innerHeight * 0.4 || cobra.ponta[1] > scrollY + innerHeight * 1.4);
+    // fora da tela (a pessoa ou o Tour rolaram): a cabeça recomeça dentro da área livre, e os outros correm atrás
+    const longe = cobra.ponta && (cobra.ponta[1] < scrollY - 40 || cobra.ponta[1] > scrollY + innerHeight + 40);
     if (!cobra.ponta || longe) {
       cobra.ponta = [A.x0 + Math.random() * (A.x1 - A.x0), A.y0 + Math.random() * (A.y1 - A.y0)];
       cobra.rumo = Math.random() * Math.PI * 2;
@@ -831,8 +832,9 @@ export function enxame(barra) {
   async function naFila(a, gen, r0) {
     para(a);
     modo(a, 'seta');
-    if (a.y < scrollY - 80) a.y = scrollY - 30;
-    else if (a.y > scrollY + innerHeight + 80) a.y = scrollY + innerHeight + 30;
+    // quem está fora da tela surge já na borda visível e corre até o seu lugar na fila
+    if (a.y < scrollY + 8) a.y = scrollY + 8;
+    else if (a.y > scrollY + innerHeight - 8) a.y = scrollY + innerHeight - 8;
     a.naFila = true;
     ligaFila();
     while (gen === geracao && a.naFila) {

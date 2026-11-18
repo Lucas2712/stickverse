@@ -14,6 +14,7 @@
       <div class="abas filtro" role="group" aria-label="Filtrar projetos" data-teste="1,0">
         <button class="aba" type="button" data-filtro="todos" aria-pressed="true" data-camada="texto">Todos</button>
         <button class="aba" type="button" data-filtro="motion" aria-pressed="false" data-camada="texto">Motion</button>
+        <button class="aba" type="button" data-filtro="website" aria-pressed="false" data-camada="texto">Website</button>
       </div>
       <label class="busca">
         <svg class="ico" aria-hidden="true"><use href="#u-busca"/></svg>
@@ -22,7 +23,7 @@
       </label>
     </div>
 
-    <!-- 01 a 03: projetos de motion em vídeo, todos verticais 9:16 (loop sem som; o link abre o vídeo com som). --ar é a proporção da
+    <!-- 01 a 03: projetos de motion em vídeo; 04: website. Todos verticais 9:16 (loop sem som; o link abre o vídeo com som). --ar é a proporção da
          tela de cada card: no desktop as telas de uma linha ficam com a mesma altura e cada vídeo no seu formato, sem corte. -->
     <ul class="projetos__grade" data-duplica>
       <li class="projeto" style="--ar: 0.5625; --arm: 0.5625" data-tipo="motion" data-busca="kavora app hotel gestão hotelaria lançamento motion cliente">
@@ -57,6 +58,20 @@
             <strong class="projeto__num" data-camada="texto">03</strong>
             <span class="projeto__nome" data-camada="texto">Most Used Apps</span>
             <span class="projeto__meta" data-camada="texto">Motion / 2026</span>
+            <svg class="ico projeto__seta" aria-hidden="true"><use href="#u-ne"/></svg>
+          </span>
+        </a>
+      </li>
+      <!-- 04: website. O card roda a gravação do site no celular (o tour do próprio site, 2× mais rápido); o link abre a
+           cópia do site que vai junto com o portfólio (public/capia → sites/capia). -->
+      <li class="projeto" style="--ar: 0.5625; --arm: 0.5625" data-tipo="website" data-busca="capiá capia website site hamburgueria burger lanchonete curitiba">
+        <a class="projeto__link" href="/capia/" target="_blank" rel="noopener">
+          <span class="projeto__img projeto__img--video" data-camada="foto"><video muted loop playsinline preload="none" poster="/img/capia-capa.webp" aria-label="Site da Capiá, hamburgueria de Curitiba, rolando no celular: lanches, acompanhamentos, bebidas e sobremesas"><source src="/video/capia.mp4" type="video/mp4" /></video></span>
+          <span class="projeto__etiqueta" data-camada="texto">Website</span>
+          <span class="projeto__pe" data-camada="bloco">
+            <strong class="projeto__num" data-camada="texto">04</strong>
+            <span class="projeto__nome" data-camada="texto">Capiá</span>
+            <span class="projeto__meta" data-camada="texto">Website / 2026</span>
             <svg class="ico projeto__seta" aria-hidden="true"><use href="#u-ne"/></svg>
           </span>
         </a>
