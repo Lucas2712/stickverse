@@ -45,6 +45,7 @@ Vite sem framework: HTML, CSS e JavaScript puros, GSAP e Lenis pelo npm, com as 
 - `scrollbar.js`: a barra de rolagem própria (um fio que aparece ao rolar).
 - `rolando.js`: o hover descansa enquanto a página rola com o cursor parado (`.is-scrolling`).
 - `ease.js`: as curvas da marca (`uv-out`, `uv-in`) e o movimento reduzido.
+- `tour.js`: o botão "Tour" da nav (`.acoes__tour`) rola a página sozinho até o rodapé, a `VEL` telas por segundo (0,5: o ritmo natural do filme). Qualquer gesto da pessoa devolve a rolagem; parado no meio vira "Continuar", no fim recomeça do topo.
 
 ## Design system
 

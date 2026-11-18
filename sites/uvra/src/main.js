@@ -7,6 +7,7 @@ import { scrollbar } from './motion/scrollbar.js';
 import { criarFilme } from './motion/filme.js';
 import { criarLoja } from './motion/loja.js';
 import { criarMenu } from './motion/menu.js';
+import { criarTour } from './motion/tour.js';
 
 document.documentElement.classList.add('js');
 // recarregar volta sempre ao topo: o hero é o carregamento, e a altura do filme só existe depois do JS (com a
@@ -19,3 +20,4 @@ scrollbar({ lenis });
 criarFilme({ lenis });
 criarLoja({ lenis });
 criarMenu({ lenis });
+criarTour({ lenis });

@@ -50,6 +50,14 @@
   font: 500 calc(13 * var(--u)) / 1 var(--sans); color: var(--apoio);
   transition: color var(--rapido) var(--curva);
 }
+.acoes__tour {
+  display: flex; align-items: center; gap: calc(6 * var(--u));
+  font: 500 calc(13 * var(--u)) / 1 var(--sans); color: var(--apoio);
+  transition: color var(--rapido) var(--curva);
+}
+.acoes__tour svg { width: calc(13 * var(--u)); height: calc(13 * var(--u)); fill: currentColor; stroke: currentColor; stroke-width: 1.3; stroke-linejoin: round; stroke-linecap: round; }
+.acoes__tour.is-rodando { color: var(--branco); }
+.acoes__tour.is-rodando svg { fill: none; stroke-width: 1.8; }
 .acoes__loja svg { width: calc(14 * var(--u)); height: calc(14 * var(--u)); fill: none; stroke: currentColor; stroke-width: 1.3; stroke-linejoin: round; }
 .pilula {
   display: inline-flex; align-items: center; height: calc(25 * var(--u)); padding: 0 calc(12 * var(--u));
@@ -60,7 +68,7 @@
 .pilula--cheia { background: var(--acento); color: var(--acento-tinta); }
 /* o hover descansa enquanto a página rola com o cursor parado (motion/rolando.js) */
 @media (hover: hover) {
-  html:not(.is-scrolling) .acoes__loja:hover { color: var(--branco); }
+  html:not(.is-scrolling) .acoes__loja:hover, html:not(.is-scrolling) .acoes__tour:hover { color: var(--branco); }
   html:not(.is-scrolling) .pilula--linha:hover { border-color: var(--branco); background: rgba(240, 239, 238, 0.08); }
   html:not(.is-scrolling) .pilula--cheia:hover { background: #f1e3ec; }
 }
@@ -83,6 +91,8 @@
   .acoes { right: calc(6px + env(safe-area-inset-right)); top: calc(10px + env(safe-area-inset-top)); gap: 0; }
   .acoes__loja { height: 44px; padding: 0 10px; margin: 0; gap: 7px; font-size: 15px; color: var(--texto); }
   .acoes__loja svg { width: 16px; height: 16px; stroke-width: 1.4; }
+  .acoes__tour { height: 44px; padding: 0 10px; gap: 7px; font-size: 15px; color: var(--texto); }
+  .acoes__tour svg { width: 14px; height: 14px; }
   .nav__menu {
     display: inline-flex; align-items: center; gap: 10px; height: 44px; padding: 0 10px;
     font: 600 15px / 1 var(--sans); letter-spacing: -0.01em; color: var(--branco);
@@ -97,5 +107,5 @@
   .nav__menu-icone i:last-child { bottom: 0; }
   .nav__menu[aria-expanded="true"] .nav__menu-icone i:first-child { translate: 0 4.25px; rotate: 45deg; }
   .nav__menu[aria-expanded="true"] .nav__menu-icone i:last-child { translate: 0 -4.25px; rotate: -45deg; }
-  .nav__menu:active, .acoes__loja:active { opacity: 0.7; }
+  .nav__menu:active, .acoes__loja:active, .acoes__tour:active { opacity: 0.7; }
 }
