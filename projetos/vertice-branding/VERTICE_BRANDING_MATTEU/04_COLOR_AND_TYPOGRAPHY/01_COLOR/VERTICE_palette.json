@@ -1,0 +1,67 @@
+{
+  "Obsidian": {
+    "hex": "#171717",
+    "rgb": [
+      23,
+      23,
+      23
+    ],
+    "cmyk_reference": [
+      0,
+      0,
+      0,
+      91
+    ],
+    "role": "Institutional base",
+    "share_percent": 46
+  },
+  "Ivory": {
+    "hex": "#E9E4DA",
+    "rgb": [
+      233,
+      228,
+      218
+    ],
+    "cmyk_reference": [
+      0,
+      2,
+      6,
+      9
+    ],
+    "role": "Editorial backgrounds",
+    "share_percent": 38
+  },
+  "Concrete": {
+    "hex": "#85827D",
+    "rgb": [
+      133,
+      130,
+      125
+    ],
+    "cmyk_reference": [
+      0,
+      2,
+      6,
+      48
+    ],
+    "role": "Support & information",
+    "share_percent": 11
+  },
+  "Champagne": {
+    "hex": "#A98C63",
+    "rgb": [
+      169,
+      140,
+      99
+    ],
+    "cmyk_reference": [
+      0,
+      17,
+      41,
+      34
+    ],
+    "role": "Premium details, used sparingly",
+    "share_percent": 5
+  },
+  "_note": "CMYK = conversão de referência a partir do RGB; validar com prova de impressão. Áreas grandes de Obsidian em offset: preto calçado C60 M50 Y50 K100."
+}
