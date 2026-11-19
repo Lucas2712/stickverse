@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cortes de live sem palavrão (regra permanente do Studio Matteu).
+"""Cortes de live sem palavrão (opcional: usar só quando o usuário pedir censura).
 
 Envolve o render.py da Skill clipador-ia sem modificá-la:
 - todo palavrão da legenda vira símbolos (ex.: "porra!" -> "@#%!");

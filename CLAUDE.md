@@ -64,18 +64,6 @@ textos, assinaturas), use esse nome; não use nomes antigos ou provisórios da p
 10. **Consultar o usuário** antes de gastar créditos (OpenArt), liberar rede ou mudar algo que afete
     todos os projetos.
 
-## Cortes de live (Skill clipador-ia)
-
-- **Nenhum palavrão (regra permanente).** Todo palavrão é censurado em todos os cortes:
-  - na legenda vira símbolos, ex.: "porra!" → "@#%!";
-  - no áudio leva bip, inclusive palavrão em inglês na voz do jogo (`--bip-extra S-E`, achado
-    transcrevendo o trecho com `--lang en`);
-  - palavrão escrito na tela (ex.: tela de morte do jogo) é desfocado.
-- Renderizar com `python3 -I studio/ferramentas/clipes_sem_palavrao.py` (mesmos argumentos do
-  `render.py` da Skill; força `--censor beep` e troca os asteriscos por @#%). Títulos e legendas
-  de post também sem palavrão.
-- Conferir os quadros nos momentos censurados antes de entregar.
-
 ## Onde fica cada coisa
 
     .claude/skills/motion-design-studio/   a Skill (regras, referências, fluxo)
