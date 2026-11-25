@@ -9,10 +9,27 @@
   "modelo": "gpt_image_2_6 · 9:16 · 2k · high",
   "como_anexar": "nos generate_* use medias: [{value: <job_id>, role: \"image_references\"}]",
   "fichas": {
-    "gabriel":   {"job_id": "39c3038c-1e8c-47ff-971a-cc9265e0d170", "versao": 2, "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Mae38WPzIHUFIL07EG4e8VAdwE/hf_20261125_220107_39c3038c-1e8c-47ff-971a-cc9265e0d170.png"},
-    "ayla":      {"job_id": "ba24b1fa-3fe4-43ee-afe7-a6a576cd3167", "versao": 2, "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Mae38WPzIHUFIL07EG4e8VAdwE/hf_20261125_220107_ba24b1fa-3fe4-43ee-afe7-a6a576cd3167.png"},
-    "seraphine": {"job_id": "6cd42c8c-9c30-4656-84c6-0b0be53b0060", "versao": 2, "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Mae38WPzIHUFIL07EG4e8VAdwE/hf_20261125_220108_6cd42c8c-9c30-4656-84c6-0b0be53b0060.png"},
-    "lyra":      {"job_id": "c79aec7c-546f-4f7b-8ef5-09caad9d823f", "versao": 2, "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Mae38WPzIHUFIL07EG4e8VAdwE/hf_20261125_220108_c79aec7c-546f-4f7b-8ef5-09caad9d823f.png"}
+    "gabriel": {
+      "job_id": "2ac3f3e8-0ebb-43c3-8603-3c0e3316542b",
+      "versao": 3,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Mae38WPzIHUFIL07EG4e8VAdwE/hf_20261125_221633_2ac3f3e8-0ebb-43c3-8603-3c0e3316542b.png",
+      "nota": "feita com a ficha da Ayla anexada só como referência de estilo de render"
+    },
+    "ayla": {
+      "job_id": "ba24b1fa-3fe4-43ee-afe7-a6a576cd3167",
+      "versao": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Mae38WPzIHUFIL07EG4e8VAdwE/hf_20261125_220107_ba24b1fa-3fe4-43ee-afe7-a6a576cd3167.png"
+    },
+    "seraphine": {
+      "job_id": "6cd42c8c-9c30-4656-84c6-0b0be53b0060",
+      "versao": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Mae38WPzIHUFIL07EG4e8VAdwE/hf_20261125_220108_6cd42c8c-9c30-4656-84c6-0b0be53b0060.png"
+    },
+    "lyra": {
+      "job_id": "c79aec7c-546f-4f7b-8ef5-09caad9d823f",
+      "versao": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Mae38WPzIHUFIL07EG4e8VAdwE/hf_20261125_220108_c79aec7c-546f-4f7b-8ef5-09caad9d823f.png"
+    }
   },
   "versao_1_descartada": {
     "motivo": "rostos fotográficos demais (aparência de ator real), contra a seção 15",
@@ -20,5 +37,9 @@
     "ayla": "f97975c5-3219-4412-a417-3ab00d052b7e",
     "seraphine": "cccb04f8-da5d-47a6-8a5d-13d3a7772c5b",
     "lyra": "984545e5-7f92-4e90-9ab1-b313a2af2e56"
+  },
+  "gabriel_versao_2_descartada": {
+    "job_id": "39c3038c-1e8c-47ff-971a-cc9265e0d170",
+    "motivo": "rosto ainda quase fotográfico"
   }
 }
