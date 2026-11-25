@@ -41,5 +41,16 @@
   "gabriel_versao_2_descartada": {
     "job_id": "39c3038c-1e8c-47ff-971a-cc9265e0d170",
     "motivo": "rosto ainda quase fotográfico"
+  },
+  "apoio_ep01_03": {
+    "ayla_prisioneira": "851a3d13-5d1f-416f-81a8-32a12aa74608",
+    "guarda_masmorra": "272323b7-9480-486f-a3e6-6969e2f82fee",
+    "cenario_masmorra": "71e33cde-952c-4b7d-b621-77e1ece05c78"
+  },
+  "ep01_clipes": {
+    "c1": "8baceca3-ecb2-41c2-b6a8-4394004c95e3",
+    "c2": "b403486b-1154-4000-8992-2e966530d80e",
+    "c3": "60523a87-6b74-4c4a-9b8b-7d6ef835ba89",
+    "c4": "476fe33c-9ffe-4e3e-9304-bfca909d9618"
   }
 }
