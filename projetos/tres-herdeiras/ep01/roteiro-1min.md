@@ -54,3 +54,14 @@ A mão de Gabriel sobe em direção ao painel. Close nos olhos. CORTE SECO PARA 
 Três horas sem respirar (paga no 22) · bainha vazia (espada no 18) · "Bem-vindo, Gabriel" (23) ·
 "Como você sabe o meu nome?" dito pelos dois (19) · "Recusa indisponível" (29) · o amanhecer como sentença (30) ·
 cronômetro 04:12:09 · cela aberta pelo Sistema · guarda de espada e o "Aceitar?" que abre o Ep. 02.
+
+## Entrega (aprovada pelo usuário em 2026-11-25)
+Arquivo: `saida/ep01/ep-001.mp4` (61,5 s, 1080x1920, H.264 + AAC, +faststart). Clipes e apoios em `fichas.json`.
+O Sistema aparece só nos painéis (sem voz) nesta versão.
+Falhas aceitas pelo usuário (não repetir nos próximos episódios; a bíblia continua valendo):
+- cabo de espada visível na bainha do Gabriel (clipes 1 e 3) — na série a bainha é VAZIA até o ep. 18;
+- olhos da Ayla brilhando dourados no fim do clipe 2;
+- Gabriel descalço no início do clipe 4;
+- guarda entrando pelo fundo, não pela esquerda;
+- flor-de-lis num estandarte (brasão de Eldoria ainda em aberto).
+Para o Ep. 02: reforçar no prompt "empty scabbard, no hilt, no sword" e "boots on" e "Ayla's eyes normal blue-grey, no glow".
