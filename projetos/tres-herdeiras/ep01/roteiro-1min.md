@@ -57,7 +57,7 @@ cronômetro 04:12:09 · cela aberta pelo Sistema · guarda de espada e o "Aceita
 
 ## Entrega (aprovada pelo usuário em 2026-11-25)
 Arquivo: `saida/ep01/ep-001.mp4` (61,5 s, 1080x1920, H.264 + AAC, +faststart). Clipes e apoios em `fichas.json`.
-O Sistema aparece só nos painéis (sem voz) nesta versão.
+Voz do Sistema: Higgsfield elevenlabs_v4_turbo, voz preset "Vesper" (c3204739-4084-41a3-9dc5-c805b307ec18), job 52f3a7d1-8495-4705-aca2-3431ef74a5d0 (0,45 crédito). Usar a mesma voz em todos os episódios.
 Falhas aceitas pelo usuário (não repetir nos próximos episódios; a bíblia continua valendo):
 - cabo de espada visível na bainha do Gabriel (clipes 1 e 3) — na série a bainha é VAZIA até o ep. 18;
 - olhos da Ayla brilhando dourados no fim do clipe 2;

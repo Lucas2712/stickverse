@@ -1,22 +1,22 @@
 [
  {
   "png": "p1_bemvindo",
-  "ini": 30.71,
+  "ini": 30.41,
   "fim": 33.61
  },
  {
   "png": "p2_missao",
-  "ini": 35.91,
-  "fim": 40.81
+  "ini": 35.76,
+  "fim": 42.41
  },
  {
   "png": "p3_recusa",
-  "ini": 40.81,
-  "fim": 42.61
+  "ini": 42.41,
+  "fim": 45.16
  },
  {
   "png": "p4_aceitar",
-  "ini": 54.61,
+  "ini": 54.91,
   "fim": 59.91
  }
 ]
