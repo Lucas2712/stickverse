@@ -2,6 +2,14 @@
 
 Ler antes de cada episódio, junto com a bíblia (seções 13, 14 e 15). Valem para TODOS os episódios.
 
+## Estilo (decisão confirmada em 2026-11-26)
+- Mantido o 3D de cinemática de jogo AAA da bíblia (seção 15). O estilo Pixar foi considerado e descartado:
+  contraria a bíblia, o tom adulto e o público da série, e obrigaria a refazer fichas e o Ep. 01.
+- Fichas aprovadas em `fichas.json` continuam valendo para todos os episódios.
+
+## Status
+- Ep. 01 aprovado pelo usuário como está (2026-11-26): `saida/ep01/ep-001.mp4`.
+
 ## Legendas
 - **Sempre centralizadas** no eixo do quadro (x = 540 em 1080x1920). Nunca deslocar para um lado. (pedido do usuário após o Ep. 01)
 - Largura máxima 640 px (220–860), para continuar fora da zona dos botões da PrendeFlix

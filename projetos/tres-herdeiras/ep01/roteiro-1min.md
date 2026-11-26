@@ -55,7 +55,7 @@ Três horas sem respirar (paga no 22) · bainha vazia (espada no 18) · "Bem-vin
 "Como você sabe o meu nome?" dito pelos dois (19) · "Recusa indisponível" (29) · o amanhecer como sentença (30) ·
 cronômetro 04:12:09 · cela aberta pelo Sistema · guarda de espada e o "Aceitar?" que abre o Ep. 02.
 
-## Entrega (aprovada pelo usuário em 2026-11-25)
+## Entrega (aprovada pelo usuário em 2026-11-25; versão final aprovada em 2026-11-26 com legendas centralizadas e painel só nos planos do Gabriel)
 Arquivo: `saida/ep01/ep-001.mp4` (61,5 s, 1080x1920, H.264 + AAC, +faststart). Clipes e apoios em `fichas.json`.
 Voz do Sistema: Higgsfield elevenlabs_v4_turbo, voz preset "Vesper" (c3204739-4084-41a3-9dc5-c805b307ec18), job 52f3a7d1-8495-4705-aca2-3431ef74a5d0 (0,45 crédito). Usar a mesma voz em todos os episódios.
 Falhas aceitas pelo usuário (não repetir nos próximos episódios; a bíblia continua valendo):
