@@ -68,6 +68,8 @@ textos, assinaturas), use esse nome; não use nomes antigos ou provisórios da p
 
     .claude/skills/motion-design-studio/   a Skill (regras, referências, fluxo)
     .claude/skills/real-sfx/               Real SFX (Clipwing, MIT) com config apontando para studio/sons
+    .claude/skills/ig-*/                   Instagram Agent Skill (MIT, 13 skills /ig-reel, /ig-caption, /ig-plan...);
+                                           dados e voice.md em .claude/instagram/ (ver README de lá)
     studio/motor, studio/componentes        motor de animação e componentes
     studio/ferramentas/                     novo_projeto · transcrever · storyboard · montar · revisar · exportar
                                             sfx_real · sons (Openverse) · biblioteca_earshot · preparar_ambiente.sh
