@@ -1,9 +1,10 @@
-"""Legendas queimadas (Inter) como PNGs 1080x1920, dentro de 8%–76% da largura para não entrar na zona dos botões."""
+"""Legendas queimadas (Inter) como PNGs 1080x1920, SEMPRE centralizadas no eixo do quadro (x=540).
+Largura máxima 640 px (220–860): centralizada e ainda fora da zona dos botões (nada à direita de 80% = 864 px entre 35% e 95% da altura)."""
 import json, sys
 from PIL import Image, ImageDraw, ImageFont
 W, H = 1080, 1920
 FT = ImageFont.truetype("/usr/share/fonts/opentype/inter/Inter-SemiBold.otf", 46)
-X0, X1, YB = 86, 820, 1560
+X0, X1, YB = 220, 860, 1560
 def quebra(txt):
     d = ImageDraw.Draw(Image.new("L", (1, 1))); linhas, atual = [], ""
     for p in txt.split():
