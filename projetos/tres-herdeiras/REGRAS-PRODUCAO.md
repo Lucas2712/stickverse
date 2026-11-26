@@ -23,6 +23,13 @@ Ler antes de cada episódio, junto com a bíblia (seções 13, 14 e 15). Valem p
 - Guarda entra pela esquerda (bíblia, seção 13).
 - Sem brasões reais (flor-de-lis etc.) enquanto o brasão de Eldoria estiver em aberto.
 
+## Painel do Sistema
+- O painel SÓ aparece na frente do Gabriel: apenas em planos em que ele está em quadro (ou a mão/os olhos dele),
+  nunca em plano só da Ayla, do guarda ou de objetos (bíblia, seção 13). (reforçado pelo usuário após o Ep. 01)
+- Antes de montar, detectar os cortes de cada clipe e encaixar o painel só dentro dos planos dele.
+  Se a fala do Sistema continuar num plano sem o Gabriel, a voz segue e o painel some.
+- O painel nunca é gerado pelo modelo de vídeo; entra na montagem. Azul em geral, dourado em alerta de combate.
+
 ## Áudio
 - Voz do Sistema: Higgsfield elevenlabs_v4_turbo, voz "Vesper" (c3204739-4084-41a3-9dc5-c805b307ec18), mesma em todos os episódios.
 - As falas dos personagens vêm do próprio Seedance; o usuário confere a pronúncia de ouvido.
