@@ -48,5 +48,12 @@ Ler antes de cada episódio, junto com a bíblia (seções 13, 14 e 15). Valem p
 - Voz do Sistema: Higgsfield elevenlabs_v4_turbo, voz "Vesper" (c3204739-4084-41a3-9dc5-c805b307ec18), mesma em todos os episódios.
 - As falas dos personagens vêm do próprio Seedance; o usuário confere a pronúncia de ouvido.
 
+## Publicação no Instagram (@prendeflix)
+- Publicar pelo conector Windsor.ai (create_video_post), só com legenda e horário aprovados pelo usuário.
+- Datas e horários sempre no fuso de Brasília (America/Sao_Paulo): "amanhã" é o dia seguinte em Brasília,
+  não em UTC. (erro no agendamento do Ep. 02)
+- Se a publicação der timeout, conferir no perfil antes de qualquer nova tentativa (evita post duplicado).
+- Registro de cada post em `publicacao/epNN.json`.
+
 ## Créditos
 - Acertar de primeira; nenhuma refação sem consultar o usuário, com o custo dito antes.
