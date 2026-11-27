@@ -9,6 +9,12 @@ Ler antes de cada episódio, junto com a bíblia (seções 13, 14 e 15). Valem p
 
 ## Status
 - Ep. 01 aprovado pelo usuário como está (2026-11-26): `saida/ep01/ep-001.mp4`.
+- Ep. 02 aprovado pelo usuário como está (2026-11-27): `saida/ep02/ep-002.mp4`.
+
+## Alerta: bainha do Gabriel
+- Em 5 de 8 clipes o modelo encheu a bainha com uma espada, mesmo com "empty scabbard, no hilt" no prompt.
+  Causa provável: a ficha aprovada mostra a bainha inteira. Antes do Ep. 03, sugerir ao usuário uma ficha nova
+  com a boca da bainha vazia bem visível (2 créditos).
 
 ## Legendas
 - **Sempre centralizadas** no eixo do quadro (x = 540 em 1080x1920). Nunca deslocar para um lado. (pedido do usuário após o Ep. 01)

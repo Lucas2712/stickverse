@@ -41,3 +41,13 @@ Close de Gabriel. Corte seco para preto.
 
 ## Pistas
 Primeiro custo no corpo (parar de respirar) · manopla de 30 s · "Sobreviver" (relógio da T1 continua: horas até o amanhecer).
+
+## Entrega (aprovada pelo usuário em 2026-11-27, sem refação)
+Arquivo: `saida/ep02/ep-002.mp4` (61,5 s). Clipes, ficha da manopla e voz em `fichas.json`. Custo: 62,4 créditos.
+Falhas aceitas pelo usuário:
+- guarda termina o clipe 2 segurando a espada inteira (deveria estar desarmado);
+- cabo de espada na bainha do Gabriel (clipes 1, 2 e 4);
+- no clipe 1 a lâmina parece presa a um cabo, não saindo da manopla;
+- manopla ausente no clipe 4;
+- olho do Gabriel brilha laranja no 1º plano do clipe 1; flor-de-lis no estandarte.
+Para o Ep. 03: o guarda segue vivo; Gabriel sai do Ep. 02 sem fôlego, com a manopla apagada, soldados bloqueando a escada.
