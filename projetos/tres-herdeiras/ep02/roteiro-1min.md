@@ -1,4 +1,4 @@
-# Ep. 02 — A Primeira Missão · versão de 1 minuto (proposta)
+# Ep. 02 — A Primeira Missão · versão de 1 minuto (aprovada em 2026-11-27)
 
 Base: sinopse da bíblia v2.0 (seção 7): Gabriel aceita e recebe a manopla que forma uma lâmina de luz sólida
 por 30 s; desarma o guarda sem matá-lo; corta as correntes de Ayla; para de respirar por alguns segundos
@@ -25,7 +25,7 @@ a ponta cai tilintando. O guarda recua e cai sentado, desarmado, vivo.
 - GABRIEL: Fica no chão. Eu não quero te machucar.
 
 ## Clipe 3 (30–45 s) · As correntes
-Gabriel corta a fechadura da cela de Ayla, entra e corta as correntes dela. Ela se levanta, livre.
+A cela de Ayla já está aberta (a fechadura quebrou no Ep. 01): Gabriel só entra e corta as correntes dela. Ela se levanta, livre.
 - AYLA: Quem é você, estrangeiro?
 - GABRIEL: Alguém que também não sabe.
 A lâmina se apaga. Gabriel para de respirar, cai de joelhos, sem ar. Ayla o segura pelos ombros.
