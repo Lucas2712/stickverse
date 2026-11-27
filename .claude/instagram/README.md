@@ -10,3 +10,8 @@ Origem: https://github.com/Jakeschincariol/instagram-agent-skill (commit d03c56b
   (ou mandar 3 reels e pedir "escreve meu voice.md a partir destes").
 - Feitas para inglês: ganchos, nota de gancho e o humanizador funcionam melhor em inglês.
 - Nada é postado, curtido ou enviado: as skills só escrevem; quem posta é o usuário.
+
+## Conexão com o perfil
+A @prendeflix está conectada pelo conector **Windsor.ai** (do usuário, plano de teste: só os últimos 30 dias).
+Usar só para LER (perfil, legendas, alcance, comentários). O conector também permite postar, comentar, responder
+e apagar: nunca usar essas ações sem pedido explícito do usuário para aquele post.
