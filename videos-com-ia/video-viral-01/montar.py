@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Monta o Reel 'Brasil de tricô' (1080x1920, 30 fps, sem áudio) a partir de clipes/cena-1..4.mp4.
 
-Uso: python3 montar.py   (gera saida/brasil-de-trico.mp4)
+Uso: python3 montar.py              (versão com o Cristo: saida/brasil-de-trico.mp4)
+     python3 montar.py --sem-cristo (versão sem o Cristo: saida/brasil-de-trico-sem-cristo.mp4)
 Requer: ffmpeg com drawtext e xfade, fontes Inter instaladas.
 """
-import os, subprocess, tempfile
+import os, subprocess, sys, tempfile
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 FONTES = "/usr/share/fonts/opentype/inter"
@@ -16,6 +17,10 @@ DUR = 5.04          # duração de cada clipe
 XF = 0.3            # transição entre cenas
 FINAL = 3.6         # cartela final com o prompt
 LUGARES = ["Foz do Iguaçu · PR", "Rio de Janeiro · RJ", "Salvador · BA", "Lençóis Maranhenses · MA"]
+
+SEM_CRISTO = "--sem-cristo" in sys.argv
+CLIPES = ["cena-1.mp4", "cena-2-sem-cristo.mp4" if SEM_CRISTO else "cena-2.mp4", "cena-3.mp4", "cena-4.mp4"]
+NOME = "brasil-de-trico-sem-cristo.mp4" if SEM_CRISTO else "brasil-de-trico.mp4"
 
 tmp = tempfile.mkdtemp()
 def arq(nome, txt):
@@ -33,7 +38,7 @@ def texto(arquivo, fonte, tam, y, ini, fim, cor="white", borda=True):
 
 entradas, filtros = [], []
 for i in range(4):
-    entradas += ["-i", os.path.join(AQUI, "clipes", f"cena-{i+1}.mp4")]
+    entradas += ["-i", os.path.join(AQUI, "clipes", CLIPES[i])]
     filtros.append(f"[{i}:v]scale=1080:1920:flags=lanczos,fps=30,setsar=1,trim=0:{DUR},setpts=PTS-STARTPTS[c{i}]")
 
 # cartela final: último quadro da cena 4, desfocado e escurecido
@@ -78,7 +83,7 @@ for j, (txt, fonte, tam, y, cor) in enumerate(linhas):
 filtros.append("[base]" + ",".join(camadas) + ",format=yuv420p[out]")
 
 os.makedirs(os.path.join(AQUI, "saida"), exist_ok=True)
-saida = os.path.join(AQUI, "saida", "brasil-de-trico.mp4")
+saida = os.path.join(AQUI, "saida", NOME)
 cmd = ["ffmpeg", "-v", "error", "-y", *entradas, "-filter_complex", ";".join(filtros),
        "-map", "[out]", "-t", f"{total:.3f}", "-c:v", "libx264", "-preset", "slow", "-crf", "18",
        "-profile:v", "high", "-movflags", "+faststart", saida]

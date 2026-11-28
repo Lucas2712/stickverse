@@ -20,10 +20,13 @@ Os PNGs originais estão em `imagens/` e também na sua conta da Higgsfield.
 |---|---|---|---|
 | 2B sem o Cristo (`imagens/cena-2B-sem-cristo.png`) | Seedream 5.5, 1k | d51eb4c6-8f1e-408b-9913-88c62d034fa2 | 1 |
 | Clipe cena 1 (1A) | Seedance 2.0 Mini, 5 s, 720p, sem áudio | deef96de-e1c6-4b29-bbb5-4b46ca255678 | 5 |
-| Clipe cena 2 (2B sem Cristo) | Seedance 2.0 Mini | b54cc424-2815-4876-b8ff-91434d5462a1 | 5 |
+| Clipe cena 2 sem Cristo (`clipes/cena-2-sem-cristo.mp4`) | Seedance 2.0 Mini | b54cc424-2815-4876-b8ff-91434d5462a1 | 5 |
+| Clipe cena 2 com Cristo (`clipes/cena-2.mp4`, versão principal) | Seedance 2.0 Mini | 71d7100e-041e-446f-bdb3-7b296fb1e2de | 5 |
 | Clipe cena 3 (3A) | Seedance 2.0 Mini | 5ad0b46e-86b9-4b83-ba83-5f13f686ebaf | 5 |
 | Clipe cena 4 (4A) | Seedance 2.0 Mini | 7cedef6a-eb36-4328-a9c2-c6073422de45 | 5 |
 
-**Total gasto no vídeo: cerca de 27 créditos** (6 nas imagens + 1 na edição + 20 nos clipes), de um limite aprovado de 36.
+**Total gasto no vídeo: cerca de 32 créditos** (6 nas imagens + 1 na edição + 25 nos clipes), de um limite aprovado de 36.
 
-Montagem: `python3 montar.py` gera `saida/brasil-de-trico.mp4` (1080×1920, 30 fps, 22,4 s, sem áudio, fonte Inter).
+Montagem (1080×1920, 30 fps, 22,4 s, sem áudio, fonte Inter):
+- `python3 montar.py` → `saida/brasil-de-trico.mp4` (com o Cristo, versão principal)
+- `python3 montar.py --sem-cristo` → `saida/brasil-de-trico-sem-cristo.mp4` (para usar em anúncio)
