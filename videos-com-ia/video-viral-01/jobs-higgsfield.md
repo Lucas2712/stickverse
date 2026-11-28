@@ -1,7 +1,7 @@
 # Jobs na Higgsfield · vídeo viral 01
 
 Imagens (GPT Image 2.6, qualidade baixa, 1k, 9:16, 0,75 crédito cada; total ≈ 6 créditos).
-Os arquivos PNG ficam na sua conta da Higgsfield e não foram para o git (são grandes).
+Os PNGs originais estão em `imagens/` e também na sua conta da Higgsfield.
 
 | Opção | Cena | job_id |
 |---|---|---|
