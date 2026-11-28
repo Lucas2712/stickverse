@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vídeos com IA do zero</title>
+<meta name="description" content="Curso online para iniciantes: aprenda a criar vídeos curtos com inteligência artificial, da ideia ao vídeo postado no Instagram.">
+<meta property="og:title" content="Vídeos com IA do zero">
+<meta property="og:description" content="Da ideia ao vídeo postado: roteiro, imagens, vídeo e narração com IA, edição no CapCut e postagem.">
+<meta property="og:type" content="website">
+<!-- (Opcional) Cole aqui o código do Pixel da Meta quando criar a campanha (Etapa 5). -->
+<style>
+  :root {
+    --fundo: #fbf8f3;
+    --fundo-2: #f1ebe1;
+    --texto: #1d1b18;
+    --texto-2: #5b554c;
+    --linha: #e2d9cb;
+    --destaque: #e8590c;
+    --destaque-escuro: #c2410c;
+    --cartao: #ffffff;
+    --raio: 16px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { width: 100%; max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 56px 0; }
+  section + section { border-top: 1px solid var(--linha); }
+  h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; }
+  h1 { font-size: clamp(32px, 7vw, 48px); font-weight: 800; }
+  h2 { font-size: clamp(26px, 5vw, 34px); font-weight: 800; margin-bottom: 20px; }
+  h3 { font-size: 19px; font-weight: 700; }
+  p + p { margin-top: 14px; }
+  .etiqueta {
+    display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--destaque-escuro); margin-bottom: 14px;
+  }
+  .sub { color: var(--texto-2); font-size: 19px; margin-top: 18px; }
+  .botao {
+    display: inline-block; background: var(--destaque); color: #fff; text-decoration: none;
+    font-weight: 700; font-size: 18px; padding: 18px 28px; border-radius: 999px;
+    text-align: center; transition: background .2s;
+  }
+  .botao:hover, .botao:focus-visible { background: var(--destaque-escuro); }
+  .botao-bloco { display: block; width: 100%; }
+  .nota { font-size: 14px; color: var(--texto-2); margin-top: 12px; }
+
+  /* Topo */
+  .topo { padding: 64px 0 56px; }
+  .etapas { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 32px; list-style: none; }
+  .etapas li {
+    background: var(--cartao); border: 1px solid var(--linha); border-radius: 999px;
+    padding: 6px 14px; font-size: 15px; font-weight: 600;
+  }
+
+  /* Listas */
+  .lista { list-style: none; display: grid; gap: 12px; }
+  .lista li { padding-left: 32px; position: relative; }
+  .lista li::before { position: absolute; left: 0; top: 0; font-weight: 700; }
+  .lista.x li::before { content: "✕"; color: #9a8f80; }
+  .lista.ok li::before { content: "✓"; color: var(--destaque-escuro); }
+
+  /* Módulos */
+  .modulos { display: grid; gap: 12px; }
+  .modulo {
+    background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio);
+    padding: 20px;
+  }
+  .modulo .num { font-size: 13px; font-weight: 700; color: var(--destaque-escuro); letter-spacing: .05em; text-transform: uppercase; }
+  .modulo h3 { margin: 4px 0 6px; }
+  .modulo p { color: var(--texto-2); font-size: 16px; }
+  .resumo { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; color: var(--texto-2); font-weight: 600; }
+  .resumo strong { color: var(--texto); font-size: 22px; display: block; }
+
+  /* Duas colunas */
+  .colunas { display: grid; gap: 20px; }
+  @media (min-width: 680px) { .colunas { grid-template-columns: 1fr 1fr; } }
+  .caixa { background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); padding: 24px; }
+  .caixa h3 { margin-bottom: 14px; }
+
+  /* Preço */
+  .preco-caixa {
+    background: var(--cartao); border: 2px solid var(--destaque); border-radius: 20px;
+    padding: 32px 24px; text-align: center;
+  }
+  .preco { font-size: clamp(48px, 12vw, 64px); font-weight: 800; letter-spacing: -0.03em; line-height: 1; margin: 12px 0 6px; }
+  .preco small { font-size: 0.45em; font-weight: 700; vertical-align: top; position: relative; top: 0.35em; margin-right: 4px; }
+  .preco-caixa .lista { text-align: left; margin: 24px 0 28px; }
+
+  /* Garantia */
+  .garantia { display: flex; gap: 20px; align-items: flex-start; }
+  .selo {
+    flex: 0 0 88px; height: 88px; border-radius: 50%; background: var(--fundo-2);
+    border: 2px dashed var(--destaque); display: flex; flex-direction: column;
+    align-items: center; justify-content: center; font-weight: 800; line-height: 1.05;
+  }
+  .selo span { font-size: 30px; }
+  .selo small { font-size: 12px; font-weight: 700; }
+
+  /* FAQ */
+  details { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 0 20px; }
+  details + details { margin-top: 10px; }
+  summary {
+    cursor: pointer; list-style: none; font-weight: 700; padding: 18px 28px 18px 0; position: relative;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; position: absolute; right: 0; top: 14px; font-size: 24px; color: var(--destaque-escuro); }
+  details[open] summary::after { content: "–"; }
+  details p { padding-bottom: 18px; color: var(--texto-2); }
+
+  /* Rodapé */
+  footer { background: var(--fundo-2); padding: 40px 0 120px; font-size: 14px; color: var(--texto-2); }
+  footer p + p { margin-top: 10px; }
+  footer a { color: var(--texto-2); }
+
+  /* Botão fixo no celular */
+  .barra-fixa {
+    position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: rgba(251, 248, 243, 0.96); border-top: 1px solid var(--linha);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  }
+  .barra-fixa .botao { padding: 15px 20px; font-size: 17px; }
+  @media (min-width: 900px) { .barra-fixa { display: none; } footer { padding-bottom: 40px; } }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     ANTES DE PUBLICAR, troque tudo que está entre [colchetes]:
+     - [LINK_DO_CHECKOUT]  link do checkout da Kiwify ou Hotmart (aparece 4 vezes)
+     - [Seu nome], [seu @], [e-mail de contato], [CPF/CNPJ]
+     - [tempo de acesso]   ex.: "1 ano" ou "enquanto o curso existir"
+     - [número] de prompts/roteiros, se for citar o Pack Atalho
+     ============================================================ -->
+
+<main>
+
+  <!-- TOPO -->
+  <section class="topo">
+    <div class="container">
+      <span class="etiqueta">Curso online para iniciantes</span>
+      <h1>Aprenda a criar vídeos com IA do zero, da ideia ao vídeo postado</h1>
+      <p class="sub">Um passo a passo simples para quem nunca fez um vídeo com inteligência artificial: roteiro, imagens, movimento, narração, edição no CapCut e postagem no Instagram.</p>
+      <ul class="etapas" aria-label="Etapas do curso">
+        <li>Roteiro com IA</li>
+        <li>Imagens com IA</li>
+        <li>Vídeo com IA</li>
+        <li>Narração</li>
+        <li>Edição no CapCut</li>
+        <li>Postagem</li>
+      </ul>
+      <a class="botao" href="[LINK_DO_CHECKOUT]">Quero aprender por R$ 37</a>
+      <p class="nota">Acesso imediato · Garantia de 7 dias</p>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section>
+    <div class="container">
+      <h2>Você já viu esses vídeos feitos com IA e pensou: "como fazem isso?"</h2>
+      <p>Você abre uma ferramenta, escreve um pedido e o resultado sai estranho. Procura tutorial e encontra vídeos soltos, cada um usando um programa diferente, sem mostrar como juntar tudo.</p>
+      <ul class="lista x" style="margin-top:20px">
+        <li>Não sabe por onde começar nem quais ferramentas usar.</li>
+        <li>As imagens saem diferentes a cada cena e o personagem muda de rosto.</li>
+        <li>A voz de IA soa robótica.</li>
+        <li>Não sabe como juntar imagem, vídeo e narração num vídeo só.</li>
+        <li>Acaba desistindo antes de postar o primeiro vídeo.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section>
+    <div class="container">
+      <span class="etiqueta">A solução</span>
+      <h2>Um caminho único, em ordem, do começo ao fim</h2>
+      <p>No <strong>Vídeos com IA do zero</strong> você segue uma sequência de aulas curtas, gravadas mostrando a tela de verdade, enquanto o vídeo é feito.</p>
+      <p>Cada módulo resolve uma etapa. No final, você faz o seu primeiro vídeo completo junto comigo e sai com checklists para repetir o processo sozinho.</p>
+    </div>
+  </section>
+
+  <!-- MÓDULOS -->
+  <section id="modulos">
+    <div class="container">
+      <span class="etiqueta">O que você vai aprender</span>
+      <h2>Conteúdo do curso</h2>
+      <div class="resumo">
+        <div><strong>8</strong>módulos</div>
+        <div><strong>26</strong>aulas curtas</div>
+        <div><strong>~4 h</strong>de conteúdo</div>
+        <div><strong>10</strong>materiais de apoio</div>
+      </div>
+      <div class="modulos">
+        <div class="modulo"><span class="num">Módulo 0</span><h3>Boas-vindas e preparação</h3><p>Como o curso funciona, quais ferramentas usar, opções grátis e pagas, e os cuidados com direitos de uso.</p></div>
+        <div class="modulo"><span class="num">Módulo 1</span><h3>Da ideia ao roteiro</h3><p>Escolher o tema, encontrar ideias e escrever um roteiro curto com IA, com gancho, meio e final.</p></div>
+        <div class="modulo"><span class="num">Módulo 2</span><h3>Imagens com IA</h3><p>Fórmula de prompt, formato vertical e como manter o mesmo estilo e o mesmo personagem em todas as cenas.</p></div>
+        <div class="modulo"><span class="num">Módulo 3</span><h3>Vídeos com IA</h3><p>Transformar imagens em clipes com movimento e saber o que fazer quando o resultado sai estranho.</p></div>
+        <div class="modulo"><span class="num">Módulo 4</span><h3>Narração com IA</h3><p>Gerar a narração, deixar a voz mais natural e entender o que pode e o que não pode no uso de vozes.</p></div>
+        <div class="modulo"><span class="num">Módulo 5</span><h3>Edição no CapCut</h3><p>Montar a linha do tempo, legendas automáticas, texto na tela, efeitos sonoros e exportação em boa qualidade.</p></div>
+        <div class="modulo"><span class="num">Módulo 6</span><h3>Postagem no Instagram</h3><p>Legenda, capa, rótulo de conteúdo de IA e como ler os números básicos do Reel.</p></div>
+        <div class="modulo"><span class="num">Módulo 7</span><h3>Projeto final</h3><p>Um vídeo completo feito do zero, da ideia à postagem, para você acompanhar e repetir.</p></div>
+      </div>
+      <p class="nota" style="margin-top:20px"><strong>Materiais de apoio:</strong> lista de ferramentas, prompts de roteiro e de imagem, modelo de roteiro, comandos de câmera e checklists de narração, edição e postagem.</p>
+    </div>
+  </section>
+
+  <!-- PARA QUEM É -->
+  <section>
+    <div class="container">
+      <h2>Este curso é para você?</h2>
+      <div class="colunas">
+        <div class="caixa">
+          <h3>É para você se…</h3>
+          <ul class="lista ok">
+            <li>Nunca fez um vídeo com IA e quer aprender do zero.</li>
+            <li>Quer criar vídeos curtos para o seu perfil, negócio ou projeto.</li>
+            <li>Prefere aulas curtas e práticas, mostrando a tela.</li>
+            <li>Tem celular ou computador e alguns minutos por dia.</li>
+          </ul>
+        </div>
+        <div class="caixa">
+          <h3>Não é para você se…</h3>
+          <ul class="lista x">
+            <li>Procura um jeito de ganhar dinheiro rápido.</li>
+            <li>Espera garantia de seguidores ou de visualizações.</li>
+            <li>Já cria vídeos com IA em nível avançado.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM ENSINA -->
+  <section>
+    <div class="container">
+      <span class="etiqueta">Quem ensina</span>
+      <h2>[Seu nome]</h2>
+      <p>Eu crio vídeos com inteligência artificial e mostro o processo no Instagram (<strong>[seu @]</strong>). Organizei neste curso o passo a passo que eu uso, do jeito que eu queria ter encontrado quando comecei: em ordem, simples e mostrando tudo na tela.</p>
+      <p class="nota">Ajuste este texto para contar a sua história real, sem exagerar.</p>
+    </div>
+  </section>
+
+  <!-- PREÇO -->
+  <section id="preco">
+    <div class="container">
+      <div class="preco-caixa">
+        <span class="etiqueta">Investimento</span>
+        <h2 style="margin-bottom:0">Vídeos com IA do zero</h2>
+        <p class="preco"><small>R$</small>37</p>
+        <p class="nota" style="margin-top:0">pagamento único · ou parcelado no cartão (as condições aparecem no checkout)</p>
+        <ul class="lista ok">
+          <li>26 aulas em 8 módulos (cerca de 4 horas)</li>
+          <li>10 materiais de apoio para baixar</li>
+          <li>Acesso por [tempo de acesso], no celular ou no computador</li>
+          <li>Garantia incondicional de 7 dias</li>
+        </ul>
+        <a class="botao botao-bloco" href="[LINK_DO_CHECKOUT]">Quero me inscrever</a>
+        <p class="nota">Compra segura pela [Kiwify / Hotmart]. Acesso liberado por e-mail após a confirmação do pagamento.</p>
+        <p class="nota">As ferramentas de IA usadas no curso não estão incluídas no preço. Muitas têm plano gratuito com limites; o curso mostra as opções.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTIA -->
+  <section>
+    <div class="container">
+      <div class="garantia">
+        <div class="selo" aria-hidden="true"><span>7</span><small>DIAS</small></div>
+        <div>
+          <h2 style="margin-bottom:12px">Garantia de 7 dias</h2>
+          <p>Você tem 7 dias, contados a partir da compra, para assistir às aulas e decidir. Se não gostar, por qualquer motivo, é só pedir o reembolso pela própria plataforma e você recebe 100% do valor de volta, sem precisar justificar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="perguntas">
+    <div class="container">
+      <h2>Perguntas frequentes</h2>
+      <details>
+        <summary>Preciso ter experiência com IA ou edição?</summary>
+        <p>Não. O curso começa do zero, explicando cada ferramenta e cada botão que vamos usar.</p>
+      </details>
+      <details>
+        <summary>Dá para fazer tudo pelo celular?</summary>
+        <p>A maior parte, sim. Algumas ferramentas de IA funcionam melhor no navegador do computador; quando for o caso, isso é avisado na aula.</p>
+      </details>
+      <details>
+        <summary>Vou precisar pagar pelas ferramentas de IA?</summary>
+        <p>Não é obrigatório para começar. Muitas ferramentas têm plano gratuito, com limites. O curso mostra as opções grátis e pagas para você escolher. Os preços e planos são definidos por cada ferramenta e podem mudar.</p>
+      </details>
+      <details>
+        <summary>O curso garante seguidores, visualizações ou dinheiro?</summary>
+        <p>Não. O curso ensina a criar vídeos com IA. Os resultados no Instagram dependem de muitos fatores, como o tema, a constância e o próprio algoritmo, e ninguém pode garantir.</p>
+      </details>
+      <details>
+        <summary>Por quanto tempo terei acesso?</summary>
+        <p>Você terá acesso por [tempo de acesso], com as aulas liberadas logo após a confirmação do pagamento.</p>
+      </details>
+      <details>
+        <summary>Como recebo o acesso?</summary>
+        <p>Após a confirmação do pagamento, você recebe um e-mail da plataforma com o login da área de alunos. No Pix e no cartão, a liberação costuma ser imediata; no boleto, pode levar até 3 dias úteis.</p>
+      </details>
+      <details>
+        <summary>E se eu não gostar?</summary>
+        <p>Você tem 7 dias de garantia. É só pedir o reembolso pela plataforma e o valor é devolvido integralmente, sem perguntas.</p>
+      </details>
+      <details>
+        <summary>Posso usar os vídeos que eu criar para fins comerciais?</summary>
+        <p>Depende dos termos de uso de cada ferramenta de IA e do plano que você usar. No curso, mostramos onde conferir isso em cada ferramenta.</p>
+      </details>
+      <details>
+        <summary>Tenho uma dúvida que não está aqui.</summary>
+        <p>Escreva para [e-mail de contato] ou chame no Instagram [seu @].</p>
+      </details>
+      <div style="margin-top:32px; text-align:center">
+        <a class="botao" href="[LINK_DO_CHECKOUT]">Quero aprender por R$ 37</a>
+        <p class="nota">Acesso imediato · Garantia de 7 dias</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p><strong>Vídeos com IA do zero</strong> · [Seu nome] · [CPF/CNPJ] · Contato: [e-mail de contato]</p>
+    <p>Este é um curso educacional sobre criação de vídeos com inteligência artificial. Não há promessa de ganhos financeiros, seguidores ou visualizações. Os resultados variam de pessoa para pessoa.</p>
+    <p>Este site não é afiliado ao Instagram, ao Facebook, à Meta, ao CapCut nem às ferramentas de IA citadas. Os nomes dessas marcas pertencem aos seus donos.</p>
+    <p><a href="[LINK_POLITICA_DE_PRIVACIDADE]">Política de privacidade</a> · <a href="[LINK_TERMOS_DE_USO]">Termos de uso</a></p>
+  </div>
+</footer>
+
+<div class="barra-fixa">
+  <a class="botao botao-bloco" href="[LINK_DO_CHECKOUT]">Quero me inscrever · R$ 37</a>
+</div>
+
+</body>
+</html>
