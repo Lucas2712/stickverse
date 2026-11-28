@@ -18,4 +18,7 @@ hand-knitted wool miniature diorama, every surface made of yarn, visible knit st
 
 ## Resultado
 
-(preenchido depois da publicação)
+- **Publicado em:** 28/11/2026 às 12h (horário de Brasília), pela tarefa agendada.
+- **Media id no Instagram:** 17946505023375259
+- **Formato:** Reel, também no feed.
+- **Pendências do usuário:** ativar o rótulo "Informações de IA" no app (a API não permite) e acompanhar se a música embutida (biblioteca do Instagram, exportada) gera aviso de direitos ou fica sem som.
